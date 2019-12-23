@@ -1,0 +1,41 @@
+@import 'variables';
+
+body.sb-show-main {
+  background-color: transparent;
+}
+
+input:focus,
+.form-control:focus
+button:focus,
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.table-bordered {
+  border-radius: $border-radius;
+}
+
+.table-bordered thead th, .table-bordered thead td {
+    border-bottom-width: 1px;
+}
+
+.table-primary th, .table-primary td, .table-primary thead th, .table-primary tbody+tbody {
+    border-color: $primary;
+}
+
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.blkhash-tag {
+    max-width: 250px;
+    display: inline-block;
+}
+
+.txid-tag {
+    max-width: 380px;
+    display: inline-block;
+}

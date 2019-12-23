@@ -1,0 +1,3 @@
+# ⚛️ Subtitle
+
+Simple subtitle component.

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test to see if the Navbar renders correctly 1`] = `
+<div
+  className="__duk-navbar  nav"
+  onKeyDown={[Function]}
+>
+  Smoke Test
+</div>
+`;

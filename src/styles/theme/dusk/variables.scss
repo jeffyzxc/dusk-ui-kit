@@ -1,0 +1,150 @@
+/* Colors */
+$white: #fff;
+$gray-100: #dbd9d6;
+$gray-200: #c6c4c2;
+$gray-300: #b1b0ae;
+$gray-400: #9c9b99;
+$gray-500: #888785;
+$gray-600: #737271;
+$gray-700: #5e5d5d;
+$gray-800: #494948;
+$gray-900: #343434;
+$black: #000;
+
+$violet: #3b218c;
+$indigo: #523b97;
+$purple: #6854a3;
+$pink: #cf7284;
+$red: #d82e60;
+$orange: #f37236;
+$yellow: #f7ca72;
+$green: #74c059;
+$teal: #5f9a9a;
+$cyan: #c9c4de;
+
+$primary: $violet;
+$secondary: $orange;
+$success: $green;
+$info: $purple;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+
+// Components
+$border-radius: 0.3125rem;
+
+// Spacing
+$spacer: 1rem;
+$spacers: (
+  6: ($spacer * 3.5),
+  7: ($spacer * 4),
+  8: ($spacer * 4.5),
+  9: ($spacer * 5),
+  10: ($spacer * 5.5)
+);
+
+// Body
+$body-bg: $gray-100;
+$body-color: $gray-800;
+
+// Cards
+$card-spacer-x: 1rem;
+$card-spacer-y: 0.9375rem;
+
+// Jumbotron
+$jumbotron-bg: transparent;
+
+// Forms
+$input-padding-y-lg:  1.5rem;
+$input-focus-box-shadow: none;
+
+// Navs
+$nav-link-padding-x: 0.5rem;
+$nav-divider-color: $white;
+$nav-divider-margin-y: 0.5rem;
+
+// Pagination
+$pagination-padding-y:              .35rem;
+$pagination-padding-x:              .75rem;
+$pagination-padding-y-sm:           .25rem;
+$pagination-padding-x-sm:           .5rem;
+$pagination-padding-y-lg:           .75rem;
+$pagination-padding-x-lg:           1.5rem;
+
+$pagination-color:                  $dark;
+$pagination-bg:                     transparent;
+$pagination-margin-left:            1rem;
+$pagination-border-color:           transparent;
+
+$pagination-hover-color:            $dark;
+$pagination-hover-bg:               transparent;
+$pagination-hover-border-color:     transparent;
+
+$pagination-active-color:           $white;
+$pagination-active-bg:              $info;
+$pagination-active-border-color:    $info;
+
+$pagination-disabled-color:         $gray-600;
+$pagination-disabled-bg:            $white;
+$pagination-disabled-border-color:  $gray-300 ;
+
+// Navbar
+$navbar-padding-y: 1rem;
+$navbar-padding-x: 1rem;
+$navbar-nav-link-padding-x: .5rem;
+$navbar-brand-font-size: 1rem;
+$navbar-brand-padding-y: 0;
+$navbar-toggler-padding-y: 0;
+$navbar-toggler-padding-x: 0;
+$navbar-toggler-font-size: 1rem;
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: $white;
+$navbar-dark-active-color: $white;
+$navbar-dark-disabled-color: $white;
+$navbar-dark-toggler-border-color: $white;
+
+// Tables
+$table-border-color: $primary;
+
+// Typography
+$font-size-base: 1rem;
+$font-size-lg: $font-size-base * 1.25;
+$font-size-sm: $font-size-base * .875;
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+$font-weight-bolder: bolder;
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$font-family-sans-serif: 'Hind Siliguri', sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+$headings-color: $gray-800;
+$headings-font-weight: $font-weight-light;
+
+// $colors: map-merge(
+//   (
+//     "violet": $violet
+//   ),
+//   $colors
+// );
+// $colors: map-remove($colors, "blue");
+// $theme-colors: (
+//   "primary": $primary,
+//   "secondary": $secondary,
+//   "success": $success,
+//   "info": $info,
+//   "warning": $warning,
+//   "danger": $danger,
+//   "light": $light,
+//   "dark": $dark
+//
+// );

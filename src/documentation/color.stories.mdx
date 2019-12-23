@@ -1,0 +1,57 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
+
+import colors from '../styles/theme/dusk/export/colors.scss';
+
+<Meta title="Documentation/Colors" />
+
+# Colors
+
+## The palette
+
+The following colors are the only colors allowed or use in *any* Dusk products.
+
+<ColorPalette>
+  <ColorItem title="Violet" subtitle="$violet" colors={[colors.violet]} />
+  <ColorItem title="Indigo" subtitle="$indigo" colors={[colors.indigo]} />
+  <ColorItem title="Purple" subtitle="$purple" colors={[colors.purple]} />
+  <ColorItem title="Red" subtitle="$red" colors={[colors.red]} />
+  <ColorItem title="Pink" subtitle="$pink" colors={[colors.pink]} />
+  <ColorItem title="Orange" subtitle="$orange" colors={[colors.orange]} />
+  <ColorItem title="Yellow" subtitle="$yellow" colors={[colors.yellow]} />
+  <ColorItem title="Green" subtitle="$green" colors={[colors.green]} />
+  <ColorItem title="Teal" subtitle="$teal" colors={[colors.teal]} />
+  <ColorItem title="Cyan" subtitle="$cyan" colors={[colors.cyan]} />
+  <ColorItem title="White" subtitle="$white" colors={[colors.white]} />
+  <ColorItem
+    title="Greyscale"
+    subtitle="$grey100 to $grey900"
+    colors={[
+      colors.gray100,
+      colors.gray200,
+      colors.gray300,
+      colors.gray400,
+      colors.gray500,
+      colors.gray600,
+      colors.gray700,
+      colors.gray800,
+      colors.gray900
+    ]}
+  />
+  <ColorItem title="Black" subtitle="$black" colors={[colors.black]} />
+</ColorPalette>
+
+## Context color
+
+Below is a selection of colors, derived from the color palette which provide colors for
+use in the various contexts we have defined.
+
+<ColorPalette>
+  <ColorItem title="Primary" subtitle="$primary" colors={[colors.primary]} />
+  <ColorItem title="Secondary" subtitle="$secondary" colors={[colors.secondary]} />
+  <ColorItem title="Info" subtitle="$info" colors={[colors.info]} />
+  <ColorItem title="Success" subtitle="$success" colors={[colors.success]} />
+  <ColorItem title="Warning" subtitle="$warning" colors={[colors.warning]} />
+  <ColorItem title="Danger" subtitle="$danger" colors={[colors.danger]} />
+  <ColorItem title="Light" subtitle="$light" colors={[colors.light]} />
+  <ColorItem title="Dark" subtitle="$dark" colors={[colors.dark]} />
+</ColorPalette>

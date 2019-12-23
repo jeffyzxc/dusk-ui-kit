@@ -1,0 +1,33 @@
+@import "../variables";
+
+:export {
+  white:     $white;
+  gray100:   $gray-100;
+  gray200:   $gray-200;
+  gray300:   $gray-300;
+  gray400:   $gray-400;
+  gray500:   $gray-500;
+  gray600:   $gray-600;
+  gray700:   $gray-700;
+  gray800:   $gray-800;
+  gray900:   $gray-900;
+  black:     $black;
+  violet:    $violet;
+  indigo:    $indigo;
+  purple:    $purple;
+  pink:      $pink;
+  red:       $red;
+  orange:    $orange;
+  yellow:    $yellow;
+  green:     $green;
+  teal:      $teal;
+  cyan:      $cyan;
+  primary:   $primary;
+  secondary: $secondary;
+  success:   $success;
+  info:      $info;
+  warning:   $warning;
+  danger:    $danger;
+  light:     $light;
+  dark:      $dark;
+}

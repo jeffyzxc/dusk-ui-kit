@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test to see if the Card renders correctly 1`] = `
+<div
+  className="__duk-card  card"
+>
+  <div
+    className="card-body"
+  />
+</div>
+`;
