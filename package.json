@@ -2,7 +2,7 @@
   "name": "dusk-network/ui",
   "version": "1.0.0-alpha",
   "description": "Dusk Web Kit",
-  "license": "ISC",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "fix": "yarn fix:eslint",
