@@ -18,6 +18,13 @@
     "build:design-system": "build-storybook -s public",
     "predeploy": "yarn build:design-system"
   },
+  "files": [
+    "pkg/atoms/**/*",
+    "pkg/molecules/**/*",
+    "pkg/organisms/**/*",
+    "pkg/templates/**/*",
+    "pkg/styles/index.css"
+  ],
   "keywords": [
     "dusk",
     "dusk network",
