@@ -24,20 +24,18 @@ By bringing design, user experience, accessibility and functionality into reusab
 
 The components within the UI Kit are organised according to the principles of [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/), providing a high level of composition.
 
-## :construction: ~~Installation~~
-
-~~Run the following commands using [yarn](https://yarnpkg.com/lang/en/)~~
+## Installation
 
 ```bash
-$ yarn add @dusk/ui
+$ yarn add dusk-ui-kit
 ```
 
 Import a [React](https://reactjs.org/) component
 
 ```javascript
-import { Button, Card } from '@dusk/ui/atoms'
-import { Block } from '@dusk/ui/molecules'
-import { Feature } from '@dusk/ui/organisms'
+import { Button, Card } from 'dusk-ui-kit/components/atoms'
+import { Block } from 'dusk-ui-kit/components/molecules'
+import { Feature } from 'dusk-ui-kit/components/organisms'
 ```
 
 Import the styles
