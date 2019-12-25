@@ -1,9 +1,8 @@
 {
-  "name": "@dusk-network/ui",
+  "name": "dusk-network/ui",
   "version": "1.0.0-alpha",
   "description": "Dusk Web Kit",
   "license": "ISC",
-  "private": true,
   "main": "index.js",
   "scripts": {
     "fix": "yarn fix:eslint",
