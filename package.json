@@ -12,7 +12,7 @@
     "test:generate-output": "jest --json --outputFile=.jest-test-results.json || true",
     "build:babel": "babel src/ -d pkg/",
     "build:sass": "node-sass src/styles/app.scss --include-path node_modules -o pkg/styles --output-style compressed",
-    "prepublish": "yarn run build:bable && yarn run build:sass",
+    "prepublish": "yarn run build:babel && yarn run build:sass",
     "design-system": "yarn test:generate-output && start-storybook",
     "prebuild:design-system": "yarn test:generate-output",
     "build:design-system": "build-storybook -s public",
