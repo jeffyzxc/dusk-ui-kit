@@ -11,7 +11,7 @@ import Feature from './components/organisms/feature'
 import Header from './components/organisms/header'
 import Footer from './components/organisms/footer'
 // import view from './components/templates/default/style.scss'
-import './styles/app.scss'
+import './styles/index.scss'
 
 const year = new Date().getFullYear()
 

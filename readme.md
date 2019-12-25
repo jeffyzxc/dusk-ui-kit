@@ -40,8 +40,8 @@ import { Feature } from 'dusk-ui-kit/components/organisms'
 
 Import the styles
 
-```scss
-@import '@dusk/ui/styles';
+```css
+@import 'dusk-ui-kit/styles/index.css';
 ```
 
 ## Development
@@ -68,7 +68,7 @@ $ yarn dev
 _Run the design system server_
 
 ```bash
-$ yarn storybook
+$ yarn design-system
 ```
 
 ~~_Create a new build_~~

@@ -4,7 +4,7 @@ import duskTheme from './themes/dusk/'
 import { withTests } from '@storybook/addon-jest'
 import { withA11y } from '@storybook/addon-a11y';
 
-import '../src/styles/app.scss'
+import '../src/styles/index.scss'
 import colors from '../src/styles/theme/dusk/export/colors.scss'
 import results from '../.jest-test-results.json'
 
@@ -24,13 +24,6 @@ addDecorator(story => (
 
 addDecorator(withA11y)
 
-addParameters({
-  options: {
-    showRoots: false,
-    theme: duskTheme
-  },
-})
-
 let backgrounds = []
 for (const [key, value, index] of Object.entries(colors)) {
   const background = { name: key, value: value, default: key === 'light'}
@@ -38,6 +31,10 @@ for (const [key, value, index] of Object.entries(colors)) {
 }
 
 addParameters({
+  options: {
+    showRoots: false,
+    theme: duskTheme
+  },
   backgrounds: backgrounds,
 })
 

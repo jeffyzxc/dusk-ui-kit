@@ -1,6 +1,6 @@
 {
   "name": "dusk-ui-kit",
-  "version": "1.0.1-alpha",
+  "version": "1.0.2-alpha",
   "description": "Dusk Web Kit",
   "license": "MIT",
   "main": "index.js",
@@ -10,8 +10,8 @@
     "dev": "NODE_ENV=development PORT=5000 node server.dev.js",
     "test": "jest",
     "test:generate-output": "jest --json --outputFile=.jest-test-results.json || true",
-    "build:babel": "babel src/ -d pkg/",
-    "build:sass": "node-sass src/styles/app.scss --include-path node_modules -o pkg/styles --output-style compressed",
+    "build:babel": "babel src/components -d pkg/",
+    "build:sass": "node-sass src/styles/index.scss --include-path node_modules -o pkg/styles --output-style compressed",
     "prepublish": "yarn run build:babel && yarn run build:sass",
     "design-system": "yarn test:generate-output && start-storybook",
     "prebuild:design-system": "yarn test:generate-output",
