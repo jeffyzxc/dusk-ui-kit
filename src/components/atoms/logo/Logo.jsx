@@ -1,9 +1,9 @@
 /* @flow */
+/** @jsx jsx */
+import { css, jsx } from '@emotion/core'
 import * as React from 'react'
 
 import LogoSvg from './Logo.svg'
-
-import './Logo.scss'
 
 type Props = {
   className: string,
@@ -18,10 +18,19 @@ export const LogoSizes = {
 
 const Logo = (props: Props): React.Element<*> => {
   const { className, title, size } = props
-  let updatedClassName = `__duk-logo ${className}`
-  if (size === LogoSizes.SMALL) updatedClassName += ' __duk-logo--small'
-  if (size === LogoSizes.LARGE) updatedClassName += ' __duk-logo--large'
-  return <LogoSvg className={updatedClassName} title={title} />
+  const updatedClassName = `__duk-logo ${className}`
+  let width
+  if (size === LogoSizes.SMALL) width = '96px'
+  if (size === LogoSizes.LARGE) width = '100%'
+  return (
+    <LogoSvg
+      className={updatedClassName}
+      title={title}
+      css={css`
+        width: ${width};
+      `}
+    />
+  )
 }
 
 Logo.defaultProps = {

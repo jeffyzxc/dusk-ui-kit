@@ -1,7 +1,7 @@
 /* @flow */
+/** @jsx jsx */
+import { css, jsx } from '@emotion/core'
 import * as React from 'react'
-
-import './Footer.scss'
 
 export const FooterVariants = {
   PRIMARY: 'primary',
@@ -15,7 +15,7 @@ export const FooterVariants = {
 type Props = {
   className: string,
   children: React.Node,
-  variant?: string,
+  variant: 'primary' | 'secondary' | 'info' | 'success' | 'warning' | 'danger',
 }
 
 const Footer = (props: Props): React.Element<*> => {
@@ -43,7 +43,17 @@ const Footer = (props: Props): React.Element<*> => {
     default:
       updatedClassname = `bg-primary text-white`
   }
-  return <footer className={updatedClassname}>{children}</footer>
+  return (
+    <footer
+      className={updatedClassname}
+      css={css`
+        width: 100%;
+        line-height: 4rem;
+      `}
+    >
+      {children}
+    </footer>
+  )
 }
 
 Footer.defaultProps = {

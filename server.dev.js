@@ -4,7 +4,7 @@ const webpackDevMiddleware = require('webpack-dev-middleware')
 const webpackHotMiddleware = require('webpack-hot-middleware')
 
 const config = require('./webpack.config.dev')
-const baseHTML = require('./src/index.html')
+const baseHTML = require('./src/index.html.js')
 
 const ip = '0.0.0.0'
 const port = process.env.PORT || 3000
@@ -23,7 +23,7 @@ app.use(webpackHotMiddleware(compiler))
 // index.html links to 2 <script> files,
 // one has to be ignored when developing (yarn dev)
 // that's why we route one of them to 404
-app.get('/static/404', (req, res) => {
+app.get('/404', (req, res) => {
   res.status(404).send('')
 })
 

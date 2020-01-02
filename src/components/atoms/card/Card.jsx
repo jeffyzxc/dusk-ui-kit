@@ -1,8 +1,8 @@
 /* @flow */
+/** @jsx jsx */
+import { css, jsx } from '@emotion/core'
 import * as React from 'react'
 import BootstrapCard from 'react-bootstrap/Card'
-
-import './Card.scss'
 
 export const CardVariants = {
   PRIMARY: 'primary',
@@ -85,9 +85,29 @@ const Card = (props: Props): React.Element<*> => {
   const updatedClassName = `__duk-card ${className}`
 
   return (
-    <BootstrapCard className={updatedClassName} bg={bg} border={border} text={text}>
+    <BootstrapCard
+      className={updatedClassName}
+      bg={bg}
+      border={border}
+      text={text}
+      css={css`
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+      `}
+    >
       <BootstrapCard.Body>
-        {title !== '' && <BootstrapCard.Title className={headerClass}>{title}</BootstrapCard.Title>}
+        {title !== '' &&
+          <BootstrapCard.Title
+            className={headerClass}
+            css={css`
+              {
+                font-weight: 500;
+                font-size: 1rem;
+              }
+            `}
+          >
+            {title}
+          </BootstrapCard.Title>
+        }
         {children}
       </BootstrapCard.Body>
     </BootstrapCard>

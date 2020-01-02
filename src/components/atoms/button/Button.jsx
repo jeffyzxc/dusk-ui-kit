@@ -2,8 +2,6 @@
 import * as React from 'react'
 import BootstrapButton from 'react-bootstrap/Button'
 
-import './Button.scss'
-
 export const ButtonTypes = {
   BUTTON: 'button',
   RESET: 'reset',

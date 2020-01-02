@@ -1,8 +1,8 @@
 /* @flow */
+/** @jsx jsx */
+import { Global, css, jsx } from '@emotion/core'
 import * as React from 'react'
 import BootstrapPaginationItem from 'react-bootstrap/PageItem'
-
-import './PaginationItem.scss'
 
 type Props = {
   className: string,
@@ -15,9 +15,25 @@ const PaginationItem = (props: Props): React.Element<*> => {
   const { className, active, activeLabel, children } = props
   const updatedClassName = `__duk-pagination-item ${className}`
   return (
-    <BootstrapPaginationItem active={active} activeLabel={activeLabel} className={updatedClassName}>
-      {children}
-    </BootstrapPaginationItem>
+    <>
+      <Global
+        styles={{
+          '.__duk-pagination-item.page-item .page-link': {
+            borderRadius: 5,
+          },
+        }}
+      />
+      <BootstrapPaginationItem
+        active={active}
+        activeLabel={activeLabel}
+        className={updatedClassName}
+        css={css`
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        `}
+      >
+        {children}
+      </BootstrapPaginationItem>
+    </>
   )
 }
 

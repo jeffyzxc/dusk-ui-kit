@@ -1,13 +1,20 @@
 const path = require('path')
 
 const webpack = require('webpack')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+
+const devMode = process.env.NODE_ENV !== 'production'
+const SRC_DIR = `${__dirname}/src`
+const DIST_DIR = `${__dirname}/dist`
+
+// console.log(`Serving from: ${DIST_DIR}`)
 
 module.exports = {
-  devtool: 'cheap-module-eval-source-map',
+  entry: [`${SRC_DIR}/index.jsx`],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: DIST_DIR,
     filename: 'bundle.js',
-    publicPath: '/static/',
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -17,19 +24,21 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.scss$/,
+        test: /\.(scss|sass|css)$/,
+        exclude: /node_modules/,
         use: [
-          {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-modules-flow-types-loader',
-          },
+          MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
+            options: {
+              sourceMap: true,
+            },
           },
           {
             loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+            },
           },
         ],
       },
@@ -45,6 +54,9 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
+    new MiniCssExtractPlugin({
+      filename: 'style.css',
+    }),
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify('development'),

@@ -2,7 +2,7 @@
 
 exports[`test to see if the Card renders correctly 1`] = `
 <div
-  className="__duk-card  card"
+  className="__duk-card  css-a1j25c-Card card"
 >
   <div
     className="card-body"
