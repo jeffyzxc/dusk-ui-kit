@@ -22,10 +22,48 @@ exports[`test to see if the SearchBox renders correctly 1`] = `
         disabled={false}
         type="submit"
       >
-        <test-file-stub
+        <svg
           height="24"
+          viewBox="0 0 27.828 27.828"
           width="24"
-        />
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <style>
+              .a,.b
+              {
+              fill:none;stroke:#fff;stroke-miterlimit:10
+              }
+              .a
+              {
+              stroke-width:2px
+              }
+              .b
+              {
+              stroke-linecap:round;stroke-width:4px
+              }
+            </style>
+          </defs>
+          <g
+            transform="translate(-1494.454 -152.51)"
+          >
+            <rect
+              className="a"
+              height="16.873"
+              rx="8.436"
+              transform="translate(1495.454 153.51)"
+              width="16.873"
+            />
+            <path
+              className="a"
+              d="M1510.167 168.222l8.226 8.226"
+            />
+            <path
+              className="b"
+              d="M1513.414 171.47l6.04 6.04"
+            />
+          </g>
+        </svg>
       </button>
     </div>
   </div>

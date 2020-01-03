@@ -2,7 +2,7 @@
 
 exports[`test to see if the Footer renders correctly 1`] = `
 <footer
-  className="__duk-footer  bg-primary text-white"
+  className="__duk-footer  bg-primary text-white css-vqxjk3-Footer"
 >
   Smoke Test
 </footer>

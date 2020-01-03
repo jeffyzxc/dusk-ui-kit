@@ -1,19 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`test to see if the PaginationItem renders correctly 1`] = `
-<div>
-  <li
-    className="__duk-pagination-item  css-8ga7o4-PaginationItem page-item"
+<li
+  className="__duk-pagination-item  css-8ga7o4-PaginationItem page-item"
+>
+  <a
+    className="page-link"
+    href="#"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
   >
-    <a
-      className="page-link"
-      href="#"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      role="button"
-    >
-      Smoke Test
-    </a>
-  </li>
-</div>
+    Smoke Test
+  </a>
+</li>
 `;
