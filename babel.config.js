@@ -5,5 +5,6 @@ module.exports = {
     '@babel/plugin-proposal-object-rest-spread',
     '@babel/plugin-syntax-dynamic-import',
     '@babel/plugin-proposal-export-default-from',
+    'inline-react-svg',
   ],
 }

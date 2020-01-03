@@ -23,19 +23,3 @@ button:focus,
 .table-primary th, .table-primary td, .table-primary thead th, .table-primary tbody+tbody {
     border-color: $primary;
 }
-
-.text-truncate {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.blkhash-tag {
-    max-width: 250px;
-    display: inline-block;
-}
-
-.txid-tag {
-    max-width: 380px;
-    display: inline-block;
-}

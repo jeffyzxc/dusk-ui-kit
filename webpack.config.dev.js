@@ -3,7 +3,7 @@ const path = require('path')
 const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
-const devMode = process.env.NODE_ENV !== 'production'
+// const devMode = process.env.NODE_ENV !== 'production'
 const SRC_DIR = `${__dirname}/src`
 const DIST_DIR = `${__dirname}/dist`
 
