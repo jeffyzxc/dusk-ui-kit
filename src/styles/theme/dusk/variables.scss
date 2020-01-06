@@ -25,11 +25,15 @@ $cyan: #c9c4de;
 $primary: $violet;
 $secondary: $orange;
 $success: $green;
-$info: $purple;
+$info: $indigo;
 $warning: $yellow;
 $danger: $red;
 $light: $gray-100;
 $dark: $gray-800;
+
+$theme-colors: (
+  "subprimary": $indigo
+);
 
 // Components
 $border-radius: 0.3125rem;
@@ -47,6 +51,11 @@ $spacers: (
 // Body
 $body-bg: $gray-100;
 $body-color: $gray-800;
+
+// Breadcrumbs
+$breadcrumb-margin-bottom: 0;
+$breadcrumb-bg: transparent;
+$breadcrumb-border-radius:0;
 
 // Cards
 $card-spacer-x: 1rem;

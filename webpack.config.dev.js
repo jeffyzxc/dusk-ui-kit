@@ -51,6 +51,9 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     modules: [path.join(__dirname, 'node_modules')],
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),

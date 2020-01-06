@@ -23,7 +23,7 @@ const Footer = (props: Props): React.Element<*> => {
   let updatedClassname = `__duk-footer ${className} `
   switch (variant) {
     case 'primary':
-      updatedClassname += `bg-primary text-white`
+      updatedClassname += `bg-subprimary text-white`
       break
     case 'secondary':
       updatedClassname += `bg-secondary text-white`

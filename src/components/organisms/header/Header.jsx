@@ -24,18 +24,29 @@ type Props = {
 
 const Header = (props: Props): React.Element<*> => {
   const { className, url, title, variant, children } = props
-  const updatedClassName = `__duk-header ${className}`
+  const updatedClassname = `__duk-header ${className}`
+  let updatedVariant
+  switch (variant) {
+    case 'primary':
+      updatedVariant = `subprimary`
+      break
+    default:
+      updatedVariant = variant
+  }
+  const collapseId = Math.random()
+    .toString(36)
+    .substring(7)
   return (
-    <header className={updatedClassName}>
-      <BootstrapNavbar variant="dark" bg={variant} expand="lg" className={className}>
+    <header className={updatedClassname}>
+      <BootstrapNavbar variant="dark" bg={updatedVariant} expand="lg" className={className}>
         <BootstrapNavbar.Brand href={url}>
           <Logo size={LogoSizes.SMALL} />
           <h1 className="__duk-header__brand-title ml-5 mb-0 text-white d-inline-block h6">
             {title}
           </h1>
         </BootstrapNavbar.Brand>
-        <BootstrapNavbar.Toggle aria-controls="__DRC-HEADER-NAVBAR__" />
-        <BootstrapNavbar.Collapse id="__DRC-HEADER-NAVBAR__" className="pt-2 pt-lg-0">
+        <BootstrapNavbar.Toggle aria-controls={collapseId} />
+        <BootstrapNavbar.Collapse id={collapseId} className="pt-2 pt-lg-0">
           <Navbar className="ml-auto text-right">{children}</Navbar>
         </BootstrapNavbar.Collapse>
       </BootstrapNavbar>
