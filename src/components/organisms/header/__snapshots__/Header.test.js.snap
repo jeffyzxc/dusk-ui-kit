@@ -42,7 +42,7 @@ exports[`test to see if the Header renders correctly 1`] = `
       </h1>
     </a>
     <button
-      aria-controls="osbfk"
+      aria-controls="__DUK-COLLAPSE__"
       aria-label="Toggle navigation"
       className="navbar-toggler collapsed"
       onClick={[Function]}
@@ -55,7 +55,7 @@ exports[`test to see if the Header renders correctly 1`] = `
     <div
       aria-expanded={null}
       className="pt-2 pt-lg-0 navbar-collapse collapse"
-      id="osbfk"
+      id="__DUK-COLLAPSE__"
     >
       <div
         className="__duk-navbar ml-auto text-right navbar-nav"

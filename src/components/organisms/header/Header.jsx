@@ -33,9 +33,7 @@ const Header = (props: Props): React.Element<*> => {
     default:
       updatedVariant = variant
   }
-  const collapseId = Math.random()
-    .toString(36)
-    .substring(7)
+  const collapseId = '__DUK-COLLAPSE__'
   return (
     <header className={updatedClassname}>
       <BootstrapNavbar variant="dark" bg={updatedVariant} expand="lg" className={className}>
