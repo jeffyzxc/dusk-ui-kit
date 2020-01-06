@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test to see if the Breadcrumb renders correctly 1`] = `
+<nav
+  aria-label="breadcrumb"
+  className="__duk-breadcrumb "
+>
+  <ol
+    className="breadcrumb"
+  >
+    Smoke Test
+  </ol>
+</nav>
+`;

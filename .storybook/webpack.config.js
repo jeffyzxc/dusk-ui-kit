@@ -1,5 +1,5 @@
-const Path = require('path')
-const AppSourceDir = Path.join(__dirname, '..', 'src')
+const path = require('path')
+const AppSourceDir = path.join(__dirname, '..', 'src')
 
 // `mode` has a value of 'DEVELOPMENT' or 'PRODUCTION'
 // You can change the configuration based on that.
@@ -20,6 +20,12 @@ module.exports = async ({ config, mode }) => {
     use: ['style-loader', 'css-loader', 'sass-loader'],
     include: [AppSourceDir]
   })
+
+  // config.resolve = {
+  //   alias: {
+  //     '@': path.resolve(__dirname, 'src'),
+  //   },
+  // }
 
   // Return the altered config
   return config
