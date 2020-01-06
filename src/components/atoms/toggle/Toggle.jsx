@@ -4,7 +4,7 @@ import { Global, jsx } from '@emotion/core'
 import * as React from 'react'
 import ReactToggle from 'react-toggle'
 
-import colors from '../../../styles/theme/dusk/export/colors.scss'
+import colors from '../../../config/colors'
 
 export const ToggleVariants = {
   PRIMARY: 'primary',
@@ -203,7 +203,7 @@ const Toggle = (props: Props): React.Element<*> => {
         disabled={disabled}
         icons={false}
       />
-  </>
+    </>
   )
 }
 
