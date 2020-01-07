@@ -1,9 +1,9 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import NavbarItem from './'
+import BreadcrumbItem from './'
 
-it('test to see if the NavbarItem renders correctly', () => {
-  const tree = renderer.create(<NavbarItem>Smoke Test</NavbarItem>).toJSON()
+it('test to see if the BreadcrumbItem renders correctly', () => {
+  const tree = renderer.create(<BreadcrumbItem>Smoke Test</BreadcrumbItem>).toJSON()
   expect(tree).toMatchSnapshot()
 })
