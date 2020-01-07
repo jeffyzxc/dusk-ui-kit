@@ -2,7 +2,7 @@
 
 exports[`test to see if the KeyValueList renders correctly 1`] = `
 <dl
-  className="__duk-key-value-list "
+  className="__duk-key-value-list row "
 >
   Smoke Test
 </dl>

@@ -14,18 +14,3 @@ exports[`test to see if the BreadcrumbItem renders correctly 1`] = `
   </a>
 </li>
 `;
-
-exports[`test to see if the NavbarItem renders correctly 1`] = `
-<li
-  className="breadcrumb-item"
->
-  <a
-    href="#"
-    onClick={[Function]}
-    onKeyDown={[Function]}
-    role="button"
-  >
-    Smoke Test
-  </a>
-</li>
-`;
