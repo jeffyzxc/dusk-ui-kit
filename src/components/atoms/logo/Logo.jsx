@@ -7,8 +7,6 @@ import colors from '../../../styles/theme/dusk/export/colors.scss'
 
 import LogoSvg from './logo.svg'
 
-// import colors from '../../../config/colors'
-
 type Props = {
   className: string,
   title: string,
