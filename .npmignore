@@ -1,4 +1,5 @@
 __snapshots__
 .md
+.flow
 .test.js
 .stories.js

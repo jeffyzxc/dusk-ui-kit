@@ -7,5 +7,5 @@ module.exports = {
     '@babel/plugin-proposal-export-default-from',
     'inline-react-svg',
   ],
-  ignore: ['src/**/*.test.js', 'src/**/*.stories.js', 'src/**/*.md'],
+  ignore: ['src/**/*.md'],
 }
