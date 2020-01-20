@@ -71,11 +71,14 @@ _Run the design system server_
 $ yarn design-system
 ```
 
-~~_Create a new build_~~
+_Create a new build_
 
 ```bash
 $ yarn build
 ```
+
+_Latest Design_
+https://xd.adobe.com/view/f3f6eb08-9076-47d8-4261-75b8af8e3424-85c7/grid
 
 ### Roadmap
 
