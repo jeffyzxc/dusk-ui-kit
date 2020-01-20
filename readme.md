@@ -77,7 +77,7 @@ _Create a new build_
 $ yarn build
 ```
 
-_Latest Design_
+### Latest Design
 https://xd.adobe.com/view/f3f6eb08-9076-47d8-4261-75b8af8e3424-85c7/grid
 
 ### Roadmap
