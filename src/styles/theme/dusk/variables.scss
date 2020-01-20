@@ -1,24 +1,30 @@
 /* Colors */
 $white: #fff;
-$gray-100: #dbd9d6;
-$gray-200: #c6c4c2;
-$gray-300: #b1b0ae;
-$gray-400: #9c9b99;
-$gray-500: #888785;
-$gray-600: #737271;
-$gray-700: #5e5d5d;
-$gray-800: #494948;
+$gray-100: #f5f5f5;
+$gray-200: #dddddd;
+$gray-300: #c5c5c5;
+$gray-400: #adadad;
+$gray-500: #7c7c7c;
+$gray-600: #959595;
+$gray-700: #818181;
+$gray-800: #4c4c4c;
 $gray-900: #343434;
 $black: #000;
 
-$violet: #3b218c;
-$indigo: #523b97;
-$purple: #6854a3;
+$violet: #7362a6;
+$violet-variant: #3b218c;
+$indigo: #9183b5;
+$indigo-variant: #523b97;
+//$purple: #6854a3;
+$orange: #eb966e;
+$orange-variant: #f15912;
+$red: #d96a8a;
+$red-variant: #d82e60;
 $pink: #cf7284;
-$red: #d82e60;
-$orange: #f37236;
-$yellow: #f7ca72;
-$green: #74c059;
+$yellow: #edcf95;
+$yellow-variant: #fed586;
+$green: #98c985;
+$green-variant: #88b178;
 $teal: #5f9a9a;
 $cyan: #c9c4de;
 
@@ -32,20 +38,25 @@ $light: $gray-100;
 $dark: $gray-800;
 
 $theme-colors: (
-  "subprimary": $indigo
+  "primary-variant": $violet-variant,
+  "secondary-variant": $orange-variant,
+  "success-variant": $green-variant,
+  "info-variant": $indigo-variant,
+  "warning-variant": $yellow-variant,
+  "danger-variant": $red-variant
 );
 
 // Components
-$border-radius: 0.3125rem;
+$border-radius: 0.375rem;
 
 // Spacing
 $spacer: 1rem;
 $spacers: (
-  6: ($spacer * 3.5),
-  7: ($spacer * 4),
-  8: ($spacer * 4.5),
-  9: ($spacer * 5),
-  10: ($spacer * 5.5)
+  6: ($spacer * 3.25),
+  7: ($spacer * 3.5),
+  8: ($spacer * 3.75),
+  9: ($spacer * 4),
+  10: ($spacer * 4.5)
 );
 
 // Body
@@ -138,22 +149,3 @@ $font-family-base: $font-family-sans-serif;
 
 $headings-color: $gray-800;
 $headings-font-weight: $font-weight-light;
-
-// $colors: map-merge(
-//   (
-//     "violet": $violet
-//   ),
-//   $colors
-// );
-// $colors: map-remove($colors, "blue");
-// $theme-colors: (
-//   "primary": $primary,
-//   "secondary": $secondary,
-//   "success": $success,
-//   "info": $info,
-//   "warning": $warning,
-//   "danger": $danger,
-//   "light": $light,
-//   "dark": $dark
-//
-// );

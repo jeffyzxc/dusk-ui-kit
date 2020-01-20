@@ -28,3 +28,11 @@ export const sizes = () => (
     ))}
   </>
 )
+
+export const variants = () => (
+  <>
+    <Logo className="m-3" title="Dusk (primary)" variant="primary" />
+    <Logo className="m-3" title="Dusk (dark)" variant="dark" />
+    <Logo className="m-3" title="Dusk (light)" variant="light" />
+  </>
+)

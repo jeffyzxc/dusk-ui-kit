@@ -15,6 +15,13 @@ export const ButtonVariants = {
   SUCCESS: 'success',
   WARNING: 'warning',
   DANGER: 'danger',
+  LIGHT: 'light',
+  DARK: 'dark',
+  OUTLINE_SUCCESS: 'outline-success',
+  OUTLINE_WARNING: 'outline-warning',
+  OUTLINE_DANGER: 'outline-danger',
+  OUTLINE_LIGHT: 'outline-light',
+  OUTLINE_DARK: 'outline-dark',
 }
 
 export const ButtonSizes = {
@@ -25,7 +32,22 @@ export const ButtonSizes = {
 type Props = {
   className: string,
   type: 'button' | 'reset' | 'submit',
-  variant?: 'primary' | 'secondary' | 'info' | 'success' | 'warning' | 'danger',
+  variant?: 'primary'
+    | 'secondary'
+    | 'info'
+    | 'success'
+    | 'warning'
+    | 'danger'
+    | 'light'
+    | 'dark'
+    | 'outline-primary'
+    | 'outline-secondary'
+    | 'outline-info'
+    | 'outline-success'
+    | 'outline-warning'
+    | 'outline-danger'
+    | 'outline-light'
+    | 'outline-dark',
   size?: 'small' | 'large',
   onClick: Function,
   children: React.Node,

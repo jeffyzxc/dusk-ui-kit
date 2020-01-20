@@ -39,6 +39,41 @@ export const buttons = () => (
     <Button className="mr-3" variant="danger">
       Danger
     </Button>
+    <Button className="mr-3" variant="light">
+      Light
+    </Button>
+    <Button className="mr-3" variant="dark">
+      Dark
+    </Button>
+  </>
+)
+
+export const outlinedButtons = () => (
+  <>
+    <Button className="mr-3" variant="outline-primary">
+      Primary
+    </Button>
+    <Button className="mr-3" variant="outline-secondary">
+      Secondary
+    </Button>
+    <Button className="mr-3" variant="outline-info">
+      Info
+    </Button>
+    <Button className="mr-3" variant="outline-success">
+      Success
+    </Button>
+    <Button className="mr-3" variant="outline-warning">
+      Warning
+    </Button>
+    <Button className="mr-3" variant="outline-danger">
+      Danger
+    </Button>
+    <Button className="mr-3" variant="outline-light">
+      Light
+    </Button>
+    <Button className="mr-3" variant="outline-dark">
+      Dark
+    </Button>
   </>
 )
 
@@ -73,6 +108,12 @@ export const disabled = () => (
     </Button>
     <Button className="mr-3" variant="danger" disabled>
       Danger
+    </Button>
+    <Button className="mr-3" variant="light" disabled>
+      Light
+    </Button>
+    <Button className="mr-3" variant="dark" disabled>
+      Dark
     </Button>
   </>
 )
