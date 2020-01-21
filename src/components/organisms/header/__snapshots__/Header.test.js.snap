@@ -5,14 +5,13 @@ exports[`test to see if the Header renders correctly 1`] = `
   className="__duk-header "
 >
   <nav
-    className="navbar navbar-expand-lg navbar-dark bg-subprimary"
+    className="navbar navbar-expand-lg navbar-dark bg-primary"
   >
     <a
       className="navbar-brand"
       href="#"
     >
       <svg
-        'data-name'="__DUK-Logo"
         className="__duk-logo  css-umaa8q-Logo"
         title=""
         viewBox="0 0 291.36 63.27"

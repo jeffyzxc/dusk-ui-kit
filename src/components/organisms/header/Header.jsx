@@ -28,7 +28,7 @@ const Header = (props: Props): React.Element<*> => {
   let updatedVariant
   switch (variant) {
     case 'primary':
-      updatedVariant = `subprimary`
+      updatedVariant = `primary`
       break
     default:
       updatedVariant = variant

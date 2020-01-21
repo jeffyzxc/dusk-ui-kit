@@ -7,6 +7,7 @@ import Subtitle from './components/atoms/subtitle'
 import Title from './components/atoms/title'
 import Card from './components/atoms/card'
 import NavbarItem from './components/atoms/navbar-item'
+import SearchBox from './components/molecules/search-box'
 import Feature from './components/organisms/feature'
 import Header from './components/organisms/header'
 import Footer from './components/organisms/footer'
@@ -17,11 +18,16 @@ const year = new Date().getFullYear()
 
 const App = (): React.Element<*> => {
   return (
-    <div>
+    <>
       <Header title="UI Kit Demo Page">
         <NavbarItem>Home</NavbarItem>
         <NavbarItem>Testing</NavbarItem>
       </Header>
+      <section className="bg-dark py-3">
+        <Container>
+          <SearchBox className="mx-auto" />
+        </Container>
+      </section>
       <Feature className="rounded-0">
         <Card>
           <Title>Atoms</Title>
@@ -50,7 +56,7 @@ const App = (): React.Element<*> => {
           <small>&copy; {year} Dusk Network</small>
         </p>
       </Footer>
-    </div>
+    </>
   )
 }
 

@@ -2,7 +2,6 @@
 
 exports[`test to see if the Logo renders correctly 1`] = `
 <svg
-  'data-name'="__DUK-Logo"
   className="__duk-logo  css-c6rtuy-Logo"
   title=""
   viewBox="0 0 291.36 63.27"

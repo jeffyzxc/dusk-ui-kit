@@ -19,16 +19,11 @@ const SearchBox = (props: Props): React.Element<*> => {
   const updatedClassName = `__duk-search-box ${className}`
   return (
     <BootstrapForm inline onSubmit={onSubmit} className={updatedClassName}>
-      <BootstrapInputGroup>
-        <BootstrapFormControl
-          onChange={onChange}
-          size="lg"
-          type="search"
-          placeholder={placeholder}
-        />
+      <BootstrapInputGroup className="w-100">
+        <BootstrapFormControl onChange={onChange} type="search" placeholder={placeholder} />
         <BootstrapInputGroup.Append>
-          <BootstrapButton type="submit" variant="primary" size="lg">
-            <MagnifierSvg width="24" height="24" />
+          <BootstrapButton type="submit" variant="primary">
+            <MagnifierSvg width="20" height="20" />
           </BootstrapButton>
         </BootstrapInputGroup.Append>
       </BootstrapInputGroup>

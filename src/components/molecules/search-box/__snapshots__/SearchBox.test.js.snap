@@ -6,10 +6,10 @@ exports[`test to see if the SearchBox renders correctly 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="input-group"
+    className="w-100 input-group"
   >
     <input
-      className="form-control form-control-lg"
+      className="form-control"
       onChange={[Function]}
       placeholder="Search"
       type="search"
@@ -18,14 +18,14 @@ exports[`test to see if the SearchBox renders correctly 1`] = `
       className="input-group-append"
     >
       <button
-        className="btn btn-primary btn-lg"
+        className="btn btn-primary"
         disabled={false}
         type="submit"
       >
         <svg
-          height="24"
+          height="20"
           viewBox="0 0 27.828 27.828"
-          width="24"
+          width="20"
           xmlns="http://www.w3.org/2000/svg"
         >
           <defs>

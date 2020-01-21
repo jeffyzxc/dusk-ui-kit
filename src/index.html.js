@@ -3,8 +3,8 @@
 // const spriteContent = sprite.stringify()
 
 const DEFAULT_PATHS = {
-  styles: { path: 'style.css', sri: '' },
-  production: { path: 'bundle.js', sri: '' },
+  styles: { path: 'dist/style.css', sri: '' },
+  production: { path: 'dist/duk-bundle.js', sri: '' },
   vendor: { path: '404', sri: '' },
 }
 
@@ -21,7 +21,7 @@ module.exports = (initialHtml = '', paths = DEFAULT_PATHS) =>
 </head>
 <body class="h-100">
   <div id="root">${initialHtml}</div>
-  <script src="/${paths.vendor.path}"></script>
+  <!-- <script src="/${paths.vendor.path}"></script> -->
   <script src="/${paths.production.path}"></script>
   <noscript>
   Por favor, habilite o javascript no seu navegador.

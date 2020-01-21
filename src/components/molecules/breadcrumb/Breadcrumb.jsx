@@ -4,8 +4,9 @@ import { Global, jsx } from '@emotion/core'
 import * as React from 'react'
 import BootstrapBreadcrumb from 'react-bootstrap/Breadcrumb'
 
-import BreadcrumbItem from '../../atoms/breadcrumb-item'
-import colors from '../../../styles/theme/dusk/export/colors.scss'
+import BreadcrumbItem from '../../atoms/breadcrumb-item/'
+
+import colors from './colors.scss'
 
 type Props = {
   children: React.Node,

@@ -1,5 +1,5 @@
 const path = require('path')
-const AppSourceDir = path.join(__dirname, '..', 'src')
+const AppSourceDir = path.resolve(__dirname, '../src')
 
 // `mode` has a value of 'DEVELOPMENT' or 'PRODUCTION'
 // You can change the configuration based on that.
@@ -23,7 +23,7 @@ module.exports = async ({ config, mode }) => {
 
   // config.resolve = {
   //   alias: {
-  //     '@': path.resolve(__dirname, 'src'),
+  //     '@': AppSourceDir,
   //   },
   // }
 

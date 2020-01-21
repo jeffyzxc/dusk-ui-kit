@@ -3,8 +3,7 @@
 import { css, jsx } from '@emotion/core'
 import * as React from 'react'
 
-import colors from '../../../styles/theme/dusk/export/colors.scss'
-
+import colors from './colors.scss'
 import LogoSvg from './logo.svg'
 
 type Props = {
