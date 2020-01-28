@@ -8,7 +8,8 @@ import BootstrapDropdown from 'react-bootstrap/Dropdown'
 import DropdownItem from '../../atoms/dropdown-item/DropdownItem'
 
 type Props = {
-  as: elementType,
+  id: string,
+  as: React.ElementType,
   children: React.Node,
   className: string,
   onToggle: Function,
@@ -17,11 +18,11 @@ type Props = {
 }
 
 const Dropdown = (props: Props): React.Element<*> => {
-  const { children, className, onToggle, onSelect, variant, as } = props
+  const { children, className, onToggle, onSelect, variant, as, id } = props
   const updatedClassName = `__duk-dropdown ${className}`
   return (
     <BootstrapDropdown as={as} className={updatedClassName} onToggle={onToggle} onSelect={onSelect}>
-      <BootstrapDropdown.Toggle variant={variant} id={uuid()}>
+      <BootstrapDropdown.Toggle variant={variant} id={id}>
         Dropdown
       </BootstrapDropdown.Toggle>
       <BootstrapDropdown.Menu>{children}</BootstrapDropdown.Menu>
@@ -30,7 +31,8 @@ const Dropdown = (props: Props): React.Element<*> => {
 }
 
 Dropdown.defaultProps = {
-  as: React.createElement('div'),
+  id: uuid(),
+  as: 'div',
   className: '',
   onToggle: () => {},
   onSelect: () => {},

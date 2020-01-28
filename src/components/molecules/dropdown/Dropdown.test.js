@@ -8,12 +8,18 @@ import Dropdown from './Dropdown'
 //   v4: jest.fn(() => 1),
 // }))
 
-// it('renders Dropdown', () => {
+it('renders a Dropdown', () => {
+  const tree = renderer
+    .create(
+      <Dropdown id="test">
+        <Dropdown.Item>Smoke Test</Dropdown.Item>
+      </Dropdown>
+    )
+    .toJSON()
+  expect(tree).toMatchSnapshot()
+})
+
+// it('renders Dropdown with any uuid number', () => {
 //   const tree = renderer.create(<Dropdown>Smoke Test</Dropdown>).toJSON()
 //   expect(tree).toMatchSnapshot()
 // })
-
-it('renders Dropdown with any uuid number', () => {
-  const tree = renderer.create(<Dropdown>Smoke Test</Dropdown>).toJSON()
-  expect(tree).toMatchSnapshot()
-})

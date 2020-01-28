@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders Dropdown with any uuid number 1`] = `
+exports[`renders a Dropdown 1`] = `
 <div
   className="__duk-dropdown  dropdown"
   onKeyDown={[Function]}
@@ -10,7 +10,7 @@ exports[`renders Dropdown with any uuid number 1`] = `
     aria-haspopup={true}
     className="dropdown-toggle btn btn-primary"
     disabled={false}
-    id="484e6dc-0117-e068-e8e7-330f056fa"
+    id="test"
     onClick={[Function]}
     type="button"
   >
