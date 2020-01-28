@@ -4,9 +4,8 @@ import { Global, jsx } from '@emotion/core'
 import * as React from 'react'
 import BootstrapBreadcrumb from 'react-bootstrap/Breadcrumb'
 
-import BreadcrumbItem from '../../atoms/breadcrumb-item/'
-
-import colors from './colors.scss'
+import BreadcrumbItem from '../../atoms/breadcrumb-item/BreadcrumbItem'
+import theme from '../../../config/dusk.theme'
 
 type Props = {
   children: React.Node,
@@ -23,7 +22,7 @@ const Breadcrumb = (props: Props): React.Element<*> => {
           '.__duk-breadcrumb .breadcrumb-item': {
             a: {
               opacity: 0.5,
-              color: `${colors.gray900}`,
+              color: `${theme.colors.gray900}`,
             },
             '&:last-child': {
               a: {

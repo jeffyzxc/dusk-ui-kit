@@ -3,7 +3,8 @@
 import { css, jsx } from '@emotion/core'
 import * as React from 'react'
 
-import colors from './colors.scss'
+import theme from '../../../config/dusk.theme'
+
 import LogoSvg from './logo.svg'
 
 type Props = {
@@ -25,9 +26,9 @@ const Logo = (props: Props): React.Element<*> => {
   if (size === LogoSizes.SMALL) width = '96px'
   if (size === LogoSizes.LARGE) width = '100%'
   let color
-  if (variant === 'primary') color = colors.primary
-  if (variant === 'dark') color = colors.dark
-  if (variant === 'light') color = colors.light
+  if (variant === 'primary') color = theme.colors.primary
+  if (variant === 'dark') color = theme.colors.dark
+  if (variant === 'light') color = theme.colors.light
   return (
     <LogoSvg
       className={updatedClassName}
@@ -35,6 +36,7 @@ const Logo = (props: Props): React.Element<*> => {
       css={css`
         fill: ${color};
         width: ${width};
+        vertical-align: top;
       `}
     />
   )
@@ -44,7 +46,7 @@ Logo.defaultProps = {
   className: '',
   size: '',
   title: '',
-  variant: 'light'
+  variant: 'light',
 }
 
 export default Logo

@@ -1,3 +1,9 @@
+// $colorVariables: get("colors");
+// $typographyVariables: get("typography");
+
+// @debug $colorVariables;
+// @debug $typographyVariables;
+
 /* Colors */
 $white: #fff;
 $gray-100: #f5f5f5;
@@ -51,13 +57,13 @@ $border-radius: 0.375rem;
 
 // Spacing
 $spacer: 1rem;
-$spacers: (
-  6: ($spacer * 3.25),
-  7: ($spacer * 3.5),
-  8: ($spacer * 3.75),
-  9: ($spacer * 4),
-  10: ($spacer * 4.5)
-);
+// $spacers: (
+//   6: ($spacer * 3.25),
+//   7: ($spacer * 3.5),
+//   8: ($spacer * 3.75),
+//   9: ($spacer * 4),
+//   10: ($spacer * 4.5)
+// );
 
 // Body
 $body-bg: $gray-100;

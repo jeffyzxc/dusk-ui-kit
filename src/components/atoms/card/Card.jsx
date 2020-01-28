@@ -95,11 +95,11 @@ const Card = (props: Props): React.Element<*> => {
       `}
     >
       <BootstrapCard.Body>
-        {title !== '' &&
+        {title !== '' && (
           <BootstrapCard.Title
             className={headerClass}
             css={css`
-              {
+               {
                 font-weight: 500;
                 font-size: 1rem;
               }
@@ -107,7 +107,7 @@ const Card = (props: Props): React.Element<*> => {
           >
             {title}
           </BootstrapCard.Title>
-        }
+        )}
         {children}
       </BootstrapCard.Body>
     </BootstrapCard>

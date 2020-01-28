@@ -1,6 +1,8 @@
 import React from 'react'
 // import { action } from '@storybook/addon-actions'
 
+import DropdownItem from '../../atoms/dropdown-item/DropdownItem'
+
 import SearchBox from './SearchBox'
 import readme from './readme.md'
 
@@ -16,5 +18,14 @@ export default {
 export const searchbox = () => (
   <>
     <SearchBox />
+  </>
+)
+
+export const searchboxWithDropDown = () => (
+  <>
+    <SearchBox>
+      <DropdownItem>Testing</DropdownItem>
+      <DropdownItem>Testing</DropdownItem>
+    </SearchBox>
   </>
 )

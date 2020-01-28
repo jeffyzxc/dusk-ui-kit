@@ -2,6 +2,40 @@ const path = require('path')
 
 const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const sass = require('node-sass')
+const sassUtils = require('node-sass-utils')(sass)
+
+const duskTheme = require('./src/config/dusk.theme.js')
+
+function convertStringToSassDimension(result) {
+  if (typeof result !== 'string') {
+    return result
+  }
+  const cssUnits = [
+    'rem',
+    'em',
+    'vh',
+    'vw',
+    'vmin',
+    'vmax',
+    'ex',
+    '%',
+    'px',
+    'cm',
+    'mm',
+    'in',
+    'pt',
+    'pc',
+    'ch',
+  ]
+  const parts = result.match(/[a-zA-Z]+|[0-9]+/g)
+  const value = parts[0]
+  const unit = parts[parts.length - 1]
+  if (cssUnits.indexOf(unit) !== -1) {
+    result = new sassUtils.SassDimension(parseInt(value, 10), unit)
+  }
+  return result
+}
 
 // const devMode = process.env.NODE_ENV !== 'production'
 const SRC_DIR = `${__dirname}/src`
@@ -41,6 +75,32 @@ module.exports = {
             loader: 'sass-loader',
             options: {
               sourceMap: true,
+              sassOptions: {
+                functions: {
+                  'get($keys)': function(keys) {
+                    // console.log('getting key...')
+                    keys = keys.getValue().split('.')
+                    let result = duskTheme
+                    let i
+                    // console.log(keys)
+                    for (i = 0; i < keys.length; i++) {
+                      result = result[keys[i]]
+                      if (typeof result === 'string') {
+                        result = convertStringToSassDimension(result)
+                      } else if (typeof result === 'object') {
+                        Object.keys(result).forEach(function(key) {
+                          const value = result[key]
+                          result[key] = convertStringToSassDimension(value)
+                        })
+                      }
+                    }
+                    // console.log(result)
+                    result = sassUtils.castToSass(result)
+                    // console.log(result)
+                    return result
+                  }
+                },
+              },
             },
           },
         ],

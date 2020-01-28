@@ -4,7 +4,7 @@ import { Global, jsx } from '@emotion/core'
 import * as React from 'react'
 import ReactToggle from 'react-toggle'
 
-import colors from './colors.scss'
+import theme from '../../../config/dusk.theme'
 
 export const ToggleVariants = {
   PRIMARY: 'primary',
@@ -82,19 +82,19 @@ const Toggle = (props: Props): React.Element<*> => {
             height: 24,
             padding: 0,
             borderRadius: 30,
-            backgroundColor: colors.white,
+            backgroundColor: theme.colors.white,
             WebkitTransition: 'all 0.2s ease',
             MozTransition: 'all 0.2s ease',
             transition: 'all 0.2s ease',
           },
           '.react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track': {
-            backgroundColor: colors.white,
+            backgroundColor: theme.colors.white,
           },
           '.react-toggle--checked .react-toggle-track': {
-            backgroundColor: colors.white,
+            backgroundColor: theme.colors.white,
           },
           '.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track': {
-            backgroundColor: colors.white,
+            backgroundColor: theme.colors.white,
           },
           '.react-toggle-track-check': {
             position: 'absolute',
@@ -142,9 +142,9 @@ const Toggle = (props: Props): React.Element<*> => {
             left: 1,
             width: 22,
             height: 22,
-            border: '1px solid colors.dark',
+            border: '1px solid theme.colors.dark',
             borderRadius: '50%',
-            backgroundColor: colors.dark,
+            backgroundColor: theme.colors.dark,
             WebkitBoxSizing: 'border-box',
             MozBoxSizing: 'border-box',
             boxSizing: 'border-box',
@@ -153,8 +153,8 @@ const Toggle = (props: Props): React.Element<*> => {
           },
           '.react-toggle--checked .react-toggle-thumb': {
             left: 27,
-            borderColor: colors.primary,
-            backgroundColor: colors.primary,
+            borderColor: theme.colors.primary,
+            backgroundColor: theme.colors.primary,
           },
           '.react-toggle--focus .react-toggle-thumb': {
             WebkitBoxShadow: '0px 0px 3px 2px #0099E0',
@@ -167,28 +167,28 @@ const Toggle = (props: Props): React.Element<*> => {
             boxShadow: '0px 0px 5px 5px #0099E0',
           },
           '.__duk-button-toggle--primary.react-toggle--checked .react-toggle-thumb': {
-            backgroundColor: colors.primary,
-            borderColor: colors.primary,
+            backgroundColor: theme.colors.primary,
+            borderColor: theme.colors.primary,
           },
           '.__duk-button-toggle--secondary.react-toggle--checked .react-toggle-thumb': {
-            backgroundColor: colors.secondary,
-            borderColor: colors.secondary,
+            backgroundColor: theme.colors.secondary,
+            borderColor: theme.colors.secondary,
           },
           '.__duk-button-toggle--info.react-toggle--checked .react-toggle-thumb': {
-            backgroundColor: colors.info,
-            borderColor: colors.info,
+            backgroundColor: theme.colors.info,
+            borderColor: theme.colors.info,
           },
           '.__duk-button-toggle--success.react-toggle--checked .react-toggle-thumb': {
-            backgroundColor: colors.success,
-            borderColor: colors.success,
+            backgroundColor: theme.colors.success,
+            borderColor: theme.colors.success,
           },
           '.__duk-button-toggle--warning.react-toggle--checked .react-toggle-thumb': {
-            backgroundColor: colors.warning,
-            borderColor: colors.warning,
+            backgroundColor: theme.colors.warning,
+            borderColor: theme.colors.warning,
           },
           '.__duk-button-toggle--danger.react-toggle--checked .react-toggle-thumb': {
-            backgroundColor: colors.danger,
-            borderColor: colors.danger,
+            backgroundColor: theme.colors.danger,
+            borderColor: theme.colors.danger,
           },
         }}
       />
