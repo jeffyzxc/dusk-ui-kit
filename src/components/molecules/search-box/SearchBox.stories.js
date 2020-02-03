@@ -1,7 +1,9 @@
 import React from 'react'
 // import { action } from '@storybook/addon-actions'
 
-import DropdownItem from '../../atoms/dropdown-item/DropdownItem'
+import { InputGroup } from "react-bootstrap"
+
+import Dropdown from '../../molecules/dropdown'
 
 import SearchBox from './SearchBox'
 import readme from './readme.md'
@@ -24,8 +26,10 @@ export const searchbox = () => (
 export const searchboxWithDropDown = () => (
   <>
     <SearchBox>
-      <DropdownItem>Testing</DropdownItem>
-      <DropdownItem>Testing</DropdownItem>
+      <Dropdown as={InputGroup.Prepend} title="Search Options">
+        <Dropdown.Item>Testing</Dropdown.Item>
+        <Dropdown.Item>Testing</Dropdown.Item>
+      </Dropdown>
     </SearchBox>
   </>
 )

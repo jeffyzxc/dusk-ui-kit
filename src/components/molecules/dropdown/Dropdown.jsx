@@ -9,6 +9,7 @@ import DropdownItem from '../../atoms/dropdown-item/DropdownItem'
 
 type Props = {
   id: string,
+  title: string,
   as: React.ElementType,
   children: React.Node,
   className: string,
@@ -18,12 +19,12 @@ type Props = {
 }
 
 const Dropdown = (props: Props): React.Element<*> => {
-  const { children, className, onToggle, onSelect, variant, as, id } = props
+  const { children, className, onToggle, onSelect, variant, as, id, title } = props
   const updatedClassName = `__duk-dropdown ${className}`
   return (
     <BootstrapDropdown as={as} className={updatedClassName} onToggle={onToggle} onSelect={onSelect}>
       <BootstrapDropdown.Toggle variant={variant} id={id}>
-        Dropdown
+        {title}
       </BootstrapDropdown.Toggle>
       <BootstrapDropdown.Menu>{children}</BootstrapDropdown.Menu>
     </BootstrapDropdown>
