@@ -1,6 +1,6 @@
 {
   "name": "dusk-ui-kit",
-  "version": "1.0.14-alpha",
+  "version": "1.0.15-alpha",
   "description": "Dusk UI Kit",
   "main": "pkg/index.js",
   "license": "MIT",
