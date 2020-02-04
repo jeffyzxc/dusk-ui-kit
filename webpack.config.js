@@ -32,7 +32,7 @@ function convertStringToSassDimension(result) {
   const value = parts[0]
   const unit = parts[parts.length - 1]
   if (cssUnits.indexOf(unit) !== -1) {
-    result = new sassUtils.SassDimension(parseInt(value, 10), unit)
+    return new sassUtils.SassDimension(parseInt(value, 10), unit)
   }
   return result
 }
@@ -113,7 +113,7 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx'],
-    modules: [path.join(__dirname, 'node_modules')],
+    modules: [path.resolve(__dirname, 'node_modules'), 'node_modules'],
     alias: {
       '@': path.resolve(__dirname, 'src'),
       // react: path.resolve(__dirname, './node_modules/react'),

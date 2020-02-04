@@ -2,7 +2,8 @@
 @import "../../node_modules/bootstrap-scss/_variables";
 @import "./theme/dusk/variables";
 @import "../../node_modules/bootstrap-scss/bootstrap";
-
+@import "../../node_modules/react-bootstrap-table-next/dist/react-bootstrap-table2";
+@import "../../node_modules/react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator";
 body.sb-show-main {
   background-color: transparent;
 }

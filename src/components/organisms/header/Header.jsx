@@ -18,7 +18,7 @@ type Props = {
   className: string,
   url?: string,
   title?: string,
-  variant: 'primary' | 'secondary' | 'info' | 'success' | 'warning' | 'danger',
+  variant: 'string',
   children: React.Node,
 }
 

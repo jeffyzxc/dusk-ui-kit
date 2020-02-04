@@ -11,10 +11,113 @@ import SearchBox from './components/molecules/search-box'
 import Feature from './components/organisms/feature'
 import Header from './components/organisms/header'
 import Footer from './components/organisms/footer'
+import PagingTable from './components/organisms/paging-table'
 // import view from './components/templates/default/style.scss'
 import './styles/index.scss'
 
 const year = new Date().getFullYear()
+
+const data = [
+  {
+    id: 1,
+    name: 'Dusk Chicken',
+    price: '$1000',
+  },
+  {
+    id: 2,
+    name: 'Dusk Chicken',
+    price: '$1000',
+  },
+  {
+    id: 3,
+    name: 'Dusk Chicken',
+    price: '$1000',
+  },
+  {
+    id: 4,
+    name: 'Dusk Chicken',
+    price: '$1000',
+  },
+  {
+    id: 5,
+    name: 'Dusk Chicken',
+    price: '$1000',
+  },
+  {
+    id: 6,
+    name: 'Dusk Chicken',
+    price: '$1000',
+  },
+  {
+    id: 7,
+    name: 'Dusk Chicken',
+    price: '$1000',
+  },
+  {
+    id: 8,
+    name: 'Dusk Chicken',
+    price: '$1000',
+  },
+  {
+    id: 9,
+    name: 'Dusk Chicken',
+    price: '$1000',
+  },
+  {
+    id: 10,
+    name: 'Dusk Chicken',
+    price: '$1000',
+  },
+  {
+    id: 11,
+    name: 'Dusk Chicken',
+    price: '$1000',
+  },
+  {
+    id: 12,
+    name: 'Dusk Chicken',
+    price: '$1000',
+  },
+  {
+    id: 13,
+    name: 'Dusk Chicken',
+    price: '$1000',
+  },
+  {
+    id: 14,
+    name: 'Dusk Chicken',
+    price: '$1000',
+  },
+  {
+    id: 15,
+    name: 'Dusk Chicken',
+    price: '$1000',
+  },
+  {
+    id: 16,
+    name: 'Dusk Chicken',
+    price: '$1000',
+  },
+  {
+    id: 17,
+    name: 'Dusk Chicken',
+    price: '$1000',
+  },
+]
+const columns = [
+  {
+    dataField: 'id',
+    text: 'Product ID',
+  },
+  {
+    dataField: 'name',
+    text: 'Product Name',
+  },
+  {
+    dataField: 'price',
+    text: 'Product Price',
+  },
+]
 
 const App = (): React.Element<*> => {
   return (
@@ -47,6 +150,9 @@ const App = (): React.Element<*> => {
               <Subtitle>First evidence-based theory</Subtitle>
               <p>Blah</p>
               <Button>Testing</Button>
+            </Card>
+            <Card>
+              <PagingTable data={data} columns={columns} />
             </Card>
           </Col>
         </Row>
