@@ -1,4 +1,6 @@
 /* @flow */
+/** @jsx jsx */
+import { css, jsx, Global } from '@emotion/core'
 import * as React from 'react'
 import BootstrapTable from 'react-bootstrap-table-next'
 import paginationFactory from 'react-bootstrap-table2-paginator'
@@ -14,8 +16,8 @@ export const PagingTableVariants = {
 
 type Props = {
   className: string,
-  data: array,
-  columns: array,
+  data: Array<Object>,
+  columns: Array<Object>,
   variant: 'primary' | 'secondary' | 'info' | 'success' | 'warning' | 'danger',
 }
 
@@ -28,7 +30,7 @@ const pagingOptions = {
 
 const PagingTable = (props: Props): React.Element<*> => {
   const { className, data, columns, variant } = props
-  let updatedClassname = `__duk-paging-table ${className}`
+  let updatedClassname = `__duk-paging-table table-borderless ${className}`
   switch (variant) {
     case 'primary':
       updatedClassname += '__duk-paging-table--primary'
@@ -37,19 +39,31 @@ const PagingTable = (props: Props): React.Element<*> => {
       break
   }
   return (
-    <BootstrapTable
-      classes={updatedClassname}
-      keyField="id"
-      data={data}
-      columns={columns}
-      bootstrap4
-      pagination={paginationFactory(pagingOptions)}
-      bordered={false}
-    />
+    <>
+      <Global
+        styles={css`
+          .react-bootstrap-table .__duk-paging-table {
+            table-layout: auto;
+            thead, tbody {
+              border-bottom: 1px solid #dbd9d6;
+            }
+          }
+        `}
+      />
+      <BootstrapTable
+        classes={updatedClassname}
+        keyField="id"
+        data={data}
+        columns={columns}
+        bootstrap4
+        pagination={paginationFactory(pagingOptions)}
+        bordered={false}
+      />
+  </>
   )
 }
 
-PagingTableVariants.defaultProps = {
+PagingTable.defaultProps = {
   className: '',
   data: [],
   columns: [],

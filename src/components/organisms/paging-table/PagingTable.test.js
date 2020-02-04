@@ -25,7 +25,7 @@ const columns = [
   },
 ]
 
-it('test to see if the Header renders correctly', () => {
+it('test to see if the PagingTable renders correctly', () => {
   const tree = renderer.create(<PagingTable data={data} columns={columns} />).toJSON()
   expect(tree).toMatchSnapshot()
 })

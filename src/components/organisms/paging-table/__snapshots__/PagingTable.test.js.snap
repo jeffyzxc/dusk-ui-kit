@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test to see if the Header renders correctly 1`] = `
+exports[`test to see if the PagingTable renders correctly 1`] = `
 Array [
   <div
     className="react-bootstrap-table"
   >
     <table
-      className="table __duk-paging-table undefined"
+      className="table __duk-paging-table table-borderless __duk-paging-table--primary"
     >
       <thead>
         <tr>
