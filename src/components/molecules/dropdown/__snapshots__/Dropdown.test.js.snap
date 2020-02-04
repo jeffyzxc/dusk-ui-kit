@@ -13,8 +13,6 @@ exports[`renders a Dropdown 1`] = `
     id="test"
     onClick={[Function]}
     type="button"
-  >
-    Dropdown
-  </button>
+  />
 </div>
 `;

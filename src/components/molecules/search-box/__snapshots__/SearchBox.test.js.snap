@@ -13,6 +13,7 @@ exports[`test to see if the SearchBox renders correctly 1`] = `
       onChange={[Function]}
       placeholder="Search"
       type="search"
+      value=""
     />
     <div
       className="input-group-append"
