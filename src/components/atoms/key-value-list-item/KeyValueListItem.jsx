@@ -1,6 +1,4 @@
 /* @flow */
-/** @jsx jsx */
-import { css, jsx } from '@emotion/core'
 import * as React from 'react'
 
 type Props = {
@@ -16,18 +14,20 @@ const KeyValueListItem = (props: Props): React.Element<*> => {
     <>
       <dt
         className={keyTitleClass}
-        css={css`
-          font-weight: 400;
-        `}
+        style={{
+          fontWeight: 400,
+          paddingLeft: 0,
+        }}
       >
         {keyTitle}
       </dt>
       <dd
         className={keyValueClass}
-        css={css`
-          text-align: right;
-          font-weight: 500;
-        `}
+        style={{
+          textAlign: 'right',
+          fontWeight: 500,
+          paddingRight: 0,
+        }}
       >
         {keyValue}
       </dd>
