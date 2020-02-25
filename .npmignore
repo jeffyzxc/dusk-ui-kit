@@ -1,6 +1,3 @@
-__snapshots__
-documentation
 *.md
-*.flow
 *.test.js
 *.stories.js
