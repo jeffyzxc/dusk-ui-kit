@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`test to see if the Subtitle renders correctly 1`] = `
-<h4
-  className="__duk-subtitle "
->
-  Smoke Test
-</h4>
-`;

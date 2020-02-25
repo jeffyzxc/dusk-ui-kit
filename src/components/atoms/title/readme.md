@@ -1,3 +1,0 @@
-# ⚛️ Title
-
-Simple title component.

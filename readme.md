@@ -1,90 +1,111 @@
-# <div align="center">:sparkles: Dusk UI Kit :sparkles:</div>
+# sapper-template
 
-<div align="center"><a href="https://travis-ci.com/dusk-network/dusk-ui-kit">
-  <img src="https://travis-ci.com/dusk-network/dusk-ui-kit.svg?token=epVgoKeysWpeWXA7Vyxt&amp;branch=master" alt="TravisCI">
-</a> <a href="https://dusk-network.github.io/dusk-ui-kit">
-  <img src="https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg" alt="Storybook">
-</a></div>
+The default [Sapper](https://github.com/sveltejs/sapper) template, available for Rollup and webpack.
 
-## About the UI Kit
 
-The UI Kit is based on Dusk's [media kit](https://dusk.network/pages/media-kit). Dusk launched it's new branding in 2019, with a focus on marketing. Moving into 2020, we will begin to develop an overarching Branding Guidance document which will provide a single source of truth for all of Dusk's communication channels.
+## Getting started
 
-Presently, we have built on the existing guidelines, however, we expect to transition to using a typical _Brand Guidance_ approach.
 
-## Purpose
+### Using `degit`
 
-The purpose of the UI Kit is to create a unified toolkit that is used by designers and developers in their projects, ensuring all Dusk projects are accessible and have a consistent look and feel.
-
-**The guidelines contained herein are to be applied to all of Dusk's digital products.**
-
-## Web Toolkit
-
-By bringing design, user experience, accessibility and functionality into reusable components, we can accelerate the speed of development and increase consistency and reliability of Dusk products.
-
-The components within the UI Kit are organised according to the principles of [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/), providing a high level of composition.
-
-## Installation
+[`degit`](https://github.com/Rich-Harris/degit) is a scaffolding tool that lets you create a directory from a branch in a repository. Use either the `rollup` or `webpack` branch in `sapper-template`:
 
 ```bash
-$ yarn add dusk-ui-kit
+# for Rollup
+npx degit "sveltejs/sapper-template#rollup" my-app
+# for webpack
+npx degit "sveltejs/sapper-template#webpack" my-app
 ```
 
-Import a [React](https://reactjs.org/) component
 
-```javascript
-import { Button, Card } from 'dusk-ui-kit/components/atoms'
-import { Block } from 'dusk-ui-kit/components/molecules'
-import { Feature } from 'dusk-ui-kit/components/organisms'
-```
+### Using GitHub templates
 
-Import the styles
+Alternatively, you can use GitHub's template feature with the [sapper-template-rollup](https://github.com/sveltejs/sapper-template-rollup) or [sapper-template-webpack](https://github.com/sveltejs/sapper-template-webpack) repositories.
 
-```css
-@import 'dusk-ui-kit/styles/index.css';
-```
 
-## Development
+### Running the project
 
-_Clone and install_
+However you get the code, you can install dependencies and run the project in development mode with:
 
 ```bash
-$ git clone https://github.com/dusk-network/dusk-ui-kit
-$ cd dusk-ui-kit
-$ yarn
+cd my-app
+npm install # or yarn
+npm run dev
 ```
 
-_Run the dev server_
+Open up [localhost:3000](http://localhost:3000) and start clicking around.
+
+Consult [sapper.svelte.dev](https://sapper.svelte.dev) for help getting started.
+
+
+## Structure
+
+Sapper expects to find two directories in the root of your project —  `src` and `static`.
+
+
+### src
+
+The [src](src) directory contains the entry points for your app — `client.js`, `server.js` and (optionally) a `service-worker.js` — along with a `template.html` file and a `routes` directory.
+
+
+#### src/routes
+
+This is the heart of your Sapper app. There are two kinds of routes — *pages*, and *server routes*.
+
+**Pages** are Svelte components written in `.svelte` files. When a user first visits the application, they will be served a server-rendered version of the route in question, plus some JavaScript that 'hydrates' the page and initialises a client-side router. From that point forward, navigating to other pages is handled entirely on the client for a fast, app-like feel. (Sapper will preload and cache the code for these subsequent pages, so that navigation is instantaneous.)
+
+**Server routes** are modules written in `.js` files, that export functions corresponding to HTTP methods. Each function receives Express `request` and `response` objects as arguments, plus a `next` function. This is useful for creating a JSON API, for example.
+
+There are three simple rules for naming the files that define your routes:
+
+* A file called `src/routes/about.svelte` corresponds to the `/about` route. A file called `src/routes/blog/[slug].svelte` corresponds to the `/blog/:slug` route, in which case `params.slug` is available to the route
+* The file `src/routes/index.svelte` (or `src/routes/index.js`) corresponds to the root of your app. `src/routes/about/index.svelte` is treated the same as `src/routes/about.svelte`.
+* Files and directories with a leading underscore do *not* create routes. This allows you to colocate helper modules and components with the routes that depend on them — for example you could have a file called `src/routes/_helpers/datetime.js` and it would *not* create a `/_helpers/datetime` route
+
+
+### static
+
+The [static](static) directory contains any static assets that should be available. These are served using [sirv](https://github.com/lukeed/sirv).
+
+In your [service-worker.js](src/service-worker.js) file, you can import these as `files` from the generated manifest...
+
+```js
+import { files } from '@sapper/service-worker';
+```
+
+...so that you can cache them (though you can choose not to, for example if you don't want to cache very large files).
+
+
+## Bundler config
+
+Sapper uses Rollup or webpack to provide code-splitting and dynamic imports, as well as compiling your Svelte components. With webpack, it also provides hot module reloading. As long as you don't do anything daft, you can edit the configuration files to add whatever plugins you'd like.
+
+
+## Production mode and deployment
+
+To start a production version of your app, run `npm run build && npm start`. This will disable live reloading, and activate the appropriate bundler plugins.
+
+You can deploy your application to any environment that supports Node 10 or above. As an example, to deploy to [ZEIT Now](https://zeit.co/now) when using `sapper export`, run these commands:
 
 ```bash
-$ yarn dev
+npm install -g now
+now
 ```
 
-- Develop components in the `/components` folder
-- Tell component stories in `*.stories.js`
-- Override Bootstrap variables in `/styles/theme/dusk/variables.scss`
-- Override Bootstrap styles in `/styles/theme/dusk/styles.scss`
+If your app can't be exported to a static site, you can use the [now-sapper](https://github.com/thgh/now-sapper) builder. You can find instructions on how to do so in its [README](https://github.com/thgh/now-sapper#basic-usage).
 
-_Run the design system server_
+
+## Using external components
+
+When using Svelte components installed from npm, such as [@sveltejs/svelte-virtual-list](https://github.com/sveltejs/svelte-virtual-list), Svelte needs the original component source (rather than any precompiled JavaScript that ships with the component). This allows the component to be rendered server-side, and also keeps your client-side app smaller.
+
+Because of that, it's essential that the bundler doesn't treat the package as an *external dependency*. You can either modify the `external` option under `server` in [rollup.config.js](rollup.config.js) or the `externals` option in [webpack.config.js](webpack.config.js), or simply install the package to `devDependencies` rather than `dependencies`, which will cause it to get bundled (and therefore compiled) with your app:
 
 ```bash
-$ yarn design-system
+npm install -D @sveltejs/svelte-virtual-list
 ```
 
-_Create a new build_
 
-```bash
-$ yarn build
-```
+## Bugs and feedback
 
-### Latest Design
-https://xd.adobe.com/view/f3f6eb08-9076-47d8-4261-75b8af8e3424-85c7/grid
-
-### Roadmap
-
-- ~~Integrate with [Storybook](https://storybook.js.org/) for Design System presentation~~
-- ~~Integrate [Jest](https://jestjs.io/) and write initial tests~~
-- Migrate to [Emotion](https://emotion.sh/) for styling
-- Integrate with [Bit](https://bit.dev/) for component management
-
-**If there is a component you need or if you have any questions please open an issue!**
+Sapper is in early development, and may have the odd rough edge here and there. Please be vocal over on the [Sapper issue tracker](https://github.com/sveltejs/sapper/issues).

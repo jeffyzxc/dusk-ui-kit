@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`test to see if the Feature renders correctly 1`] = `
-<div
-  className="__duk-feature  css-sbmh8s-Feature jumbotron"
->
-  Smoke Test
-</div>
-`;

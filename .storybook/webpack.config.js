@@ -1,32 +1,55 @@
-const path = require('path')
-const AppSourceDir = path.resolve(__dirname, '../src')
+const path = require("path");
+const tailwindConfig = require("../tailwind.config.js");
+const mode = process.env.NODE_ENV;
+const dev = mode === "development";
 
-// `mode` has a value of 'DEVELOPMENT' or 'PRODUCTION'
-// You can change the configuration based on that.
-// 'PRODUCTION' is used when building the static version of storybook.
-module.exports = async ({ config, mode }) => {
-  // Disable the Storybook internal-`.svg`-rule for components loaded from our app.
-  const svgRule = config.module.rules.find((rule) => 'test.svg'.match(rule.test));
-  svgRule.exclude = [AppSourceDir];
+const PACKAGES_DIR = path.resolve(__dirname, "../packages/");
+
+const preprocessOptions = {
+  transformers: {
+    postcss: {
+      plugins: [
+        require("postcss-import")(),
+        require("postcss-url")(),
+        require("postcss-nesting")(),
+        require("tailwindcss")(tailwindConfig)
+      ]
+    }
+  }
+};
+module.exports = ({ config, mode }) => {
+  const svelteLoader = config.module.rules.find(
+    r => r.loader && r.loader.includes("svelte-loader")
+  );
+
+  svelteLoader.options = {
+    ...svelteLoader.options,
+    preprocess: require("svelte-preprocess")(preprocessOptions),
+    emitCss: true,
+    hotReload: false
+  };
 
   config.module.rules.push({
-      test: /\.svg$/i,
-      include: [ AppSourceDir ],
-      use: ["@svgr/webpack"]
-  })
+    test: /\.css$/,
+    loaders: [
+      {
+        loader: "postcss-loader",
+        options: {
+          ident: "postcss",
+          sourceMap: true,
+          plugins: preprocessOptions.transformers.postcss.plugins
+        }
+      }
+    ],
+    include: [PACKAGES_DIR]
+  });
 
   config.module.rules.push({
-    test: /\.scss$/,
-    use: ['style-loader', 'css-loader', 'sass-loader'],
-    include: [AppSourceDir]
-  })
+    test: /\.stories\.js?$/,
+    loaders: [require.resolve("@storybook/source-loader")],
+    include: [PACKAGES_DIR],
+    enforce: "pre"
+  });
 
-  // config.resolve = {
-  //   alias: {
-  //     '@': AppSourceDir,
-  //   },
-  // }
-
-  // Return the altered config
-  return config
+  return config;
 };

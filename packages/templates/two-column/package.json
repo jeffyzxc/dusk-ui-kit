@@ -1,0 +1,24 @@
+{
+  "name": "@dusk/ui-kit-two-column",
+  "description": "Dusk UI Kit - Two Column",
+  "version": "1.0.0-alpha-1",
+  "author": "Kieran Hall <kieran@dusk.network>",
+  "bugs": {
+    "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"LOL\" && exit 1"
+  },
+  "dependencies": {
+    "@dusk/ui-kit-helpers": "1.0.0-alpha-1",
+    "@dusk/ui-kit-elements": "1.0.0-alpha-1"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.0.6",
+    "postcss": "^7.0.26",
+    "postcss-load-config": "^2.1.0",
+    "svelte-preprocess": "^3.4.0",
+    "tailwindcss": "^1.2.0"
+  }
+}

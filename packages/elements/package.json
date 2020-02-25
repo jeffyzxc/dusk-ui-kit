@@ -1,0 +1,16 @@
+{
+  "name": "@dusk/ui-kit-elements",
+  "description": "Dusk UI Kit - Elements",
+  "version": "1.0.0-alpha-1",
+  "author": "Kieran Hall <kieran@dusk.network>",
+  "bugs": {
+    "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"LOL\" && exit 1"
+  },
+  "dependencies": {
+    "@dusk/ui-kit-helpers": "1.0.0-alpha-1"
+  }
+}

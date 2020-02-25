@@ -1,0 +1,16 @@
+{
+  "name": "@dusk/ui-kit-helpers",
+  "description": "Dusk UI Kit - Helpers",
+  "version": "1.0.0-alpha-1",
+  "author": "Kieran Hall <kieran@dusk.network>",
+  "bugs": {
+    "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"LOL\" && exit 1"
+  },
+  "devDependencies": {
+    "svelte": "^3.0.0"
+  }
+}

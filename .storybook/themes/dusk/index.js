@@ -1,39 +1,48 @@
-import { create } from '@storybook/theming/create'
+import { create } from "@storybook/theming/create";
+import resolveConfig from "tailwindcss/resolveConfig";
+import tailwindConfig from "../../../tailwind.config.js";
+import logo from "./logo.svg";
 
-import colors from '../../../src/styles/theme/dusk/export/colors.scss'
+const config = resolveConfig(tailwindConfig);
+const backgroundColors = config.theme.backgroundColor;
+const borderColors = config.theme.borderColor;
+const textColors = config.theme.textColor;
+const fontFamily = config.theme.fontFamily;
 
 export default create({
-  base: 'light',
+  base: "light",
 
-  colorPrimary: colors.primary,
-  colorSecondary: colors.secondary,
+  colorPrimary: backgroundColors.brand,
+  colorSecondary: backgroundColors.cta,
 
   // UI
-  appBg: colors.cyan,
-  appContentBg: colors.white,
-  appBorderColor: colors.info,
+  appBg: backgroundColors.light,
+  appContentBg: "#fff",
+  appBorderColor: borderColors.info,
   appBorderRadius: 5,
 
   // Typography
-  fontBase: '"Hind Siliguri", sans-serif',
-  fontCode: 'monospace',
+  fontBase: fontFamily.sans.join(", "),
+  fontCode: fontFamily.mono.join(", "),
 
   // Text colors
-  textColor: colors.dark,
-  textInverseColor: colors.light,
+  textColor: textColors.dark,
+  textInverseColor: textColors.light,
 
   // Toolbar default and active colors
-  barTextColor: colors.dark,
-  barSelectedColor: colors.secondary,
-  barBg: colors.white,
+  barTextColor: textColors.light,
+  barSelectedColor: backgroundColors.cta,
+  barBg: backgroundColors.dark,
 
   // Form colors
-  inputBg: colors.white,
-  inputBorder: colors.secondary,
-  inputTextColor: colors.dark,
+  inputBg: "#fff",
+  inputBorder: borderColors.info,
+  inputTextColor: textColors.dark,
   inputBorderRadius: 5,
 
-  brandTitle: 'Dusk Design System',
-  brandUrl: 'https://dusk.network',
-  brandImage: 'https://dusk.network/lib/img/logo_dusk.svg',
-})
+  brandTitle: "Dusk Design System",
+  brandUrl: "https://dusk.network",
+  brandImage: logo
+});
+
+export { backgroundColors };

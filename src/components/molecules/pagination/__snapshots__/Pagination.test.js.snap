@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`test to see if Pagination renders correctly 1`] = `
-<ul
-  className="__duk-pagination  pagination"
-/>
-`;

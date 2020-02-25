@@ -1,3 +1,0 @@
-# ⚛️ Subtitle
-
-Simple subtitle component.
