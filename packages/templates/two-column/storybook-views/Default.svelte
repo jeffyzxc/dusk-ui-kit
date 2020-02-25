@@ -10,10 +10,10 @@
     style="border-bottom: 2px dashed gray">
     <p>Header Slot</p>
   </div>
-  <div slot="west" class="bg-white pt-5 h-128">
+  <div slot="west" class="bg-white pt-5 min-h-screen">
     <p>West Content Slot</p>
   </div>
-  <div slot="east" class="bg-white pt-5 h-128">
+  <div slot="east" class="bg-white pt-5 min-h-screen">
     <p>East Content Slot</p>
   </div>
   <div

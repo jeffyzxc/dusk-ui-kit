@@ -45,7 +45,7 @@
   <div class="duk-template__three-column__header">
     <slot name="header" />
   </div>
-  <div class="duk-template__content duk-template__content__three-column">
+  <div class="duk-template__content duk-template__three-column__content">
     <div class="duk-template__column duk-template__three-column__content__west">
       <slot name="west" />
     </div>
