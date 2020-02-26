@@ -3,6 +3,7 @@
   "description": "Dusk UI Kit",
   "version": "0.0.1-alpha",
   "license": "MIT",
+  "private": "true",
   "scripts": {
     "prepublish": "rollup -c --config rollup-publish.config.js",
     "build-storybook": "build-storybook",
@@ -15,13 +16,14 @@
     "test": "run-p --race dev cy:run",
     "storybook": "start-storybook -p 6006"
   },
+  "homepage": "https://dusk-network.github.io/dusk-ui-kit/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dusk-network/dusk-ui-kit.git"
   },
   "author": "Kieran Hall <kieran@dusk.network>",
   "bugs": {
-    "url": "https://github.com/dusk-network//issues"
+    "url": "https://github.com/dusk-network/issues"
   },
   "workspaces": [
     "packages/**"
@@ -32,9 +34,13 @@
     "@dusk/card": "1.0.0-alpha-1",
     "@dusk/list": "1.0.0-alpha-1",
     "@dusk/logo": "1.0.0-alpha-1",
-    "compression": "^1.7.1",
-    "polka": "next",
-    "sirv": "^0.4.0"
+    "@dusk/menu": "1.0.0-alpha-1",
+    "@dusk/navbar": "1.0.0-alpha-1",
+    "@dusk/one-column": "1.0.0-alpha-1",
+    "@dusk/two-column": "1.0.0-alpha-1",
+    "@dusk/three-column": "1.0.0-alpha-1",
+    "@dusk/elements": "1.0.0-alpha-1",
+    "@dusk/helpers": "1.0.0-alpha-1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -81,6 +87,9 @@
     "svelte": "^3.0.0",
     "svelte-loader": "^2.13.6",
     "svelte-preprocess": "^3.4.0",
-    "tailwindcss": "^1.2.0"
+    "tailwindcss": "^1.2.0",
+    "compression": "^1.7.1",
+    "polka": "next",
+    "sirv": "^0.4.0"
   }
 }
