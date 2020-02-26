@@ -1,0 +1,14 @@
+language: node_js
+
+before_script:
+  - yarn storybook
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local_dir: storybook-static
+  repo: dusk-network/dusk-ui-kit
+  target_branch: gh-pages
+  on:
+    branch: master
