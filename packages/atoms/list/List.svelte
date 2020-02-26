@@ -8,8 +8,8 @@
     orientations,
     types,
     contexts
-  } from "@dusk/ui-kit-helpers";
-  import { Ol, Ul } from "@dusk/ui-kit-elements";
+  } from "@dusk/helpers";
+  import { Ol, Ul } from "@dusk/elements";
   const forwardEvents = forwardEventsBuilder(current_component);
   export let use = [];
   let className = "";

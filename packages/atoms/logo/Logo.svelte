@@ -7,8 +7,8 @@
     useActions,
     contexts,
     variants
-  } from "@dusk/ui-kit-helpers";
-  import { A, Div } from "@dusk/ui-kit-elements";
+  } from "@dusk/helpers";
+  import { A, Div } from "@dusk/elements";
 
   const forwardEvents = forwardEventsBuilder(current_component);
 

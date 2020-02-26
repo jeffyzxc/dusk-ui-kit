@@ -6,7 +6,7 @@ import {
   optionsKnob as options
 } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
-import { variants } from "@dusk/ui-kit-helpers";
+import { variants } from "@dusk/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import TitleView from "./storybook-views/Title.svelte";
 import ActionsView from "./storybook-views/Actions.svelte";

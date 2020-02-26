@@ -9,11 +9,7 @@
 <script>
   import { setContext } from "svelte";
   import { current_component } from "svelte/internal";
-  import {
-    forwardEventsBuilder,
-    exclude,
-    useActions
-  } from "@dusk/ui-kit-helpers";
+  import { forwardEventsBuilder, exclude, useActions } from "@dusk/helpers";
   export let use = [];
   let className = "";
   export { className as class };

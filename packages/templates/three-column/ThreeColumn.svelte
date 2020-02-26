@@ -6,7 +6,7 @@
     exclude,
     useActions,
     variants
-  } from "@dusk/ui-kit-helpers";
+  } from "@dusk/helpers";
 
   const forwardEvents = forwardEventsBuilder(current_component);
 

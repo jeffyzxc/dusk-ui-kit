@@ -1,4 +1,4 @@
-import Base, { internals } from "@dusk/ui-kit-elements/Base";
+import Base, { internals } from "@dusk/elements/Base";
 
 export function baseBuilder(props) {
   function Component(...args) {

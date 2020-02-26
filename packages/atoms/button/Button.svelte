@@ -8,8 +8,8 @@
     variants,
     sizes,
     contexts
-  } from "@dusk/ui-kit-helpers";
-  import { A, Button } from "@dusk/ui-kit-elements";
+  } from "@dusk/helpers";
+  import { A, Button } from "@dusk/elements";
 
   const forwardEvents = forwardEventsBuilder(current_component);
 
