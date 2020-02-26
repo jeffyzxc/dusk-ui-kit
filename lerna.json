@@ -1,15 +1,23 @@
 {
   "npmClient": "yarn",
-  "packages": ["packages/*/**"],
-  "version": "0.0.1-alpha",
+  "packages": [
+    "packages/*/**"
+  ],
+  "version": "0.0.2-alpha.0",
   "command": {
     "publish": {
-      "ignoreChanges": ["**/storybook-views/**", "**/*.stories.js", "**/*.md"],
+      "ignoreChanges": [
+        "**/storybook-views/**",
+        "**/*.stories.js",
+        "**/*.md"
+      ],
       "message": "chore(release): publish",
       "registry": "https://npm.dusk.network:4873"
     },
     "bootstrap": {
-      "npmClientArgs": ["--pure-lockfile"]
+      "npmClientArgs": [
+        "--pure-lockfile"
+      ]
     }
   }
 }
