@@ -11,7 +11,6 @@ const preprocessOptions = {
       plugins: [
         require("postcss-import")(),
         require("postcss-url")(),
-        require("postcss-nesting")(),
         require("tailwindcss")(tailwindConfig)
       ]
     }
