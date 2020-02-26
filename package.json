@@ -1,25 +1,37 @@
 {
-  "name": "@dusk/ui-kit",
+  "name": "dusk-ui-kit",
   "description": "Dusk UI Kit",
   "version": "0.0.1-alpha",
   "license": "MIT",
-  "private": "true",
   "scripts": {
-    "build": "sapper build --legacy",
+    "prepublish": "rollup -c --config rollup-publish.config.js",
     "build-storybook": "build-storybook",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
     "dev": "sapper dev",
     "export": "sapper export --legacy",
-    "lint": "prettier --write --plugin-search-dir=. ./src/**/*",
+    "lint": "prettier --write --plugin-search-dir=. ./packages/**/*",
     "start": "node __sapper__/build",
     "test": "run-p --race dev cy:run",
     "storybook": "start-storybook -p 6006"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dusk-network/dusk-ui-kit.git"
+  },
+  "author": "Kieran Hall <kieran@dusk.network>",
+  "bugs": {
+    "url": "https://github.com/dusk-network//issues"
+  },
   "workspaces": [
     "packages/**"
   ],
+  "files": [],
   "dependencies": {
+    "@dusk/button": "1.0.0-alpha-1",
+    "@dusk/card": "1.0.0-alpha-1",
+    "@dusk/list": "1.0.0-alpha-1",
+    "@dusk/logo": "1.0.0-alpha-1",
     "compression": "^1.7.1",
     "polka": "next",
     "sirv": "^0.4.0"
@@ -48,16 +60,21 @@
     "@storybook/source-loader": "^5.3.13",
     "@storybook/svelte": "^5.3.12",
     "babel-loader": "^8.0.6",
+    "lerna": "^3.20.2",
     "npm-run-all": "^4.1.5",
     "postcss": "^7.0.26",
     "postcss-import": "^12.0.1",
     "postcss-load-config": "^2.1.0",
-    "postcss-nesting": "^7.0.1",
     "postcss-url": "^8.0.0",
     "prettier": "^1.19.1",
     "prettier-plugin-svelte": "^0.7.0",
     "rollup": "^1.20.0",
+    "rollup-plugin-analyzer": "^3.2.2",
     "rollup-plugin-babel": "^4.0.2",
+    "rollup-plugin-bundle-size": "^1.0.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^2.1.1",
     "rollup-plugin-svelte": "^5.0.1",
     "rollup-plugin-terser": "^4.0.4",
     "sapper": "^0.27.0",

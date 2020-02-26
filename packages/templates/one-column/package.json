@@ -1,6 +1,6 @@
 {
-  "name": "@dusk/ui-kit-one-column",
-  "description": "Dusk UI Kit - One Column",
+  "name": "@dusk/one-column",
+  "description": "Dusk UI Kit - One Column Template",
   "version": "1.0.0-alpha-1",
   "author": "Kieran Hall <kieran@dusk.network>",
   "bugs": {
@@ -11,8 +11,8 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk/ui-kit-helpers": "1.0.0-alpha-1",
-    "@dusk/ui-kit-elements": "1.0.0-alpha-1"
+    "@dusk/helpers": "1.0.0-alpha-1",
+    "@dusk/elements": "1.0.0-alpha-1"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.0.6",

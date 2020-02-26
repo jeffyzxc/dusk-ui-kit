@@ -1,5 +1,5 @@
 {
-  "name": "@dusk/ui-kit-elements",
+  "name": "@dusk/elements",
   "description": "Dusk UI Kit - Elements",
   "version": "1.0.0-alpha-1",
   "author": "Kieran Hall <kieran@dusk.network>",
@@ -11,6 +11,6 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk/ui-kit-helpers": "1.0.0-alpha-1"
+    "@dusk/helpers": "1.0.0-alpha-1"
   }
 }

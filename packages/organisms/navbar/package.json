@@ -1,5 +1,5 @@
 {
-  "name": "@dusk/ui-kit-navbar",
+  "name": "@dusk/navbar",
   "description": "Dusk UI Kit - Navbar",
   "version": "1.0.0-alpha-1",
   "author": "Kieran Hall <kieran@dusk.network>",
@@ -11,8 +11,8 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk/ui-kit-helpers": "1.0.0-alpha-1",
-    "@dusk/ui-kit-elements": "1.0.0-alpha-1"
+    "@dusk/helpers": "1.0.0-alpha-1",
+    "@dusk/elements": "1.0.0-alpha-1"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.0.6",
