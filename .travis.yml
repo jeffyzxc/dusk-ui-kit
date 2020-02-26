@@ -2,7 +2,7 @@ language: node_js
 os: linux
 
 before_install:
-  - echo "//npm.dusk.network:4873/:_authToken=\${NPM_TOKEN}" > .npmrc
+  - echo "//npm.dusk.network:4873/:_authToken="${NPM_TOKEN}"" > .npmrc
 
 before_script:
   - yarn sb:build
