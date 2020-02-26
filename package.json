@@ -14,6 +14,7 @@
     "lint": "prettier --write --plugin-search-dir=. ./packages/**/*",
     "start": "node __sapper__/build",
     "test": "run-p --race dev cy:run",
+    "sb:build": "build-storybook",
     "storybook": "start-storybook -p 6006"
   },
   "homepage": "https://dusk-network.github.io/dusk-ui-kit/",

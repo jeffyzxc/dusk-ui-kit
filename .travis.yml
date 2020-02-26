@@ -1,11 +1,7 @@
 language: node_js
 
 before_script:
-  - yarn build:design-system
-
-script:
-  - yarn flow
-  - yarn test --runInBand
+  - yarn sb:build
 
 deploy:
   provider: pages
