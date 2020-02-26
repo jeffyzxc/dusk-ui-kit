@@ -1,7 +1,7 @@
 {
   "name": "dusk-ui-kit",
   "description": "Dusk UI Kit",
-  "version": "0.0.1-alpha",
+  "version": "0.0.2-alpha.0",
   "license": "MIT",
   "private": "true",
   "scripts": {
@@ -31,17 +31,17 @@
   ],
   "files": [],
   "dependencies": {
-    "@dusk/button": "1.0.0-alpha-1",
-    "@dusk/card": "1.0.0-alpha-1",
-    "@dusk/list": "1.0.0-alpha-1",
-    "@dusk/logo": "1.0.0-alpha-1",
-    "@dusk/menu": "1.0.0-alpha-1",
-    "@dusk/navbar": "1.0.0-alpha-1",
-    "@dusk/one-column": "1.0.0-alpha-1",
-    "@dusk/two-column": "1.0.0-alpha-1",
-    "@dusk/three-column": "1.0.0-alpha-1",
-    "@dusk/elements": "1.0.0-alpha-1",
-    "@dusk/helpers": "1.0.0-alpha-1"
+    "@dusk/button": "0.0.2-alpha.0",
+    "@dusk/card": "0.0.2-alpha.0",
+    "@dusk/list": "0.0.2-alpha.0",
+    "@dusk/logo": "0.0.2-alpha.0",
+    "@dusk/menu": "0.0.2-alpha.0",
+    "@dusk/navbar": "0.0.2-alpha.0",
+    "@dusk/one-column": "0.0.2-alpha.0",
+    "@dusk/two-column": "0.0.2-alpha.0",
+    "@dusk/three-column": "0.0.2-alpha.0",
+    "@dusk/elements": "0.0.2-alpha.0",
+    "@dusk/helpers": "0.0.2-alpha.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

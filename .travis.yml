@@ -2,8 +2,8 @@ language: node_js
 os: linux
 
 before_install:
-  - echo "always-auth=true\n@dusk:registry=https://npm.dusk.network:4873/\n//npm.dusk.network:4873/:_authToken="${NPM_TOKEN}"" > .npmrc
-
+  # - echo "always-auth=true\n@dusk:registry=https://npm.dusk.network:4873/\n//npm.dusk.network:4873/:_authToken="${NPM_TOKEN}"" > .npmrc
+  - yarn config set registry "https://npm.dusk.network:4873"
 before_script:
   - yarn sb:build
 
