@@ -13,7 +13,7 @@
     "export": "sapper export --legacy",
     "lint": "prettier --write --plugin-search-dir=. ./packages/**/*",
     "start": "node __sapper__/build",
-    "test": "run-p --race dev cy:run",
+    "test": "echo \"LOL\" && exit 1",
     "sb:build": "build-storybook",
     "storybook": "start-storybook -p 6006"
   },
