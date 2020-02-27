@@ -1,8 +1,8 @@
 <script>
   import Navbar from "../";
-  import Menu from "../../../molecules/menu";
-  import List, { Item } from "../../../atoms/list";
-  import Logo from "../../../atoms/logo";
+  import Menu from "@dusk/menu";
+  import List, { Item } from "@dusk/list";
+  import Logo from "@dusk/logo";
   export let variant;
   export let logoVariant;
 </script>

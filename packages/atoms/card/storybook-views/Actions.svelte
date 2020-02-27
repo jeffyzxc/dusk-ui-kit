@@ -1,6 +1,6 @@
 <script>
   import Card, { Content, Title, Actions } from "../";
-  import Button from "../../button";
+  import Button from "@dusk/button";
   export let variant;
   export let content;
   export let title;

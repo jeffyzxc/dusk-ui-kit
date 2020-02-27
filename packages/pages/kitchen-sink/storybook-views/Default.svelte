@@ -1,11 +1,11 @@
 <script>
-  import TwoColumn, { Footer } from "../../../templates/two-column";
-  import Navbar from "../../../organisms/navbar";
-  import Menu from "../../../molecules/menu";
-  import List, { Item } from "../../../atoms/list";
-  import Logo from "../../../atoms/logo";
-  import Card, { Content, Title, Actions } from "../../../atoms/card";
-  import { variants, types } from "../../../helpers";
+  import TwoColumn, { Footer } from "@dusk/two-column";
+  import Navbar from "@dusk/navbar";
+  import Menu from "@dusk/menu";
+  import List, { Item } from "@dusk/list";
+  import Logo from "@dusk/logo";
+  import Card, { Content, Title, Actions } from "@dusk/card";
+  import { variants, types } from "@dusk/helpers";
 </script>
 
 <TwoColumn class="bg-dark">

@@ -1,6 +1,6 @@
 <script>
   import Menu from "../";
-  import List, { Item } from "../../../atoms/list";
+  import List, { Item } from "@dusk/list";
   export let orientation;
 </script>
 
