@@ -30,7 +30,10 @@ The components within the UI Kit are organised according to the principles of [A
 ## Installation
 
 ```bash
-$ yarn add dusk-ui-kit
+$ yarn add @dusk/button
+$ yarn add @dusk/list
+$ yarn add @dusk/navbar
+...
 ```
 
 Import a component

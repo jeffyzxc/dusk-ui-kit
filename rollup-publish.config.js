@@ -17,13 +17,13 @@ const postcssProcessor = () => {
 export default {
   input: "./packages/helpers/util.css",
   output: {
-    file: "./packages/themes/global.css",
+    file: "./static/global.css",
     format: "cjs"
   },
   plugins: [
     postcss({
       plugins: postcssProcessor(),
-      extract: path.resolve("./packages/themes/global.css")
+      extract: path.resolve("./static/global.css")
     })
   ]
 };
