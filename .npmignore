@@ -1,4 +1,4 @@
-*.md
-*.test.js
-*.stories.js
-storybook-views
+**/*.stories.js
+**/*.md
+**/*.test.js
+**/storybook-views
