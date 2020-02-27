@@ -1,4 +1,4 @@
-import Base, { internals } from "@dusk/elements/Base";
+import Base, { internals } from "Base.svelte";
 
 export function baseBuilder(props) {
   function Component(...args) {

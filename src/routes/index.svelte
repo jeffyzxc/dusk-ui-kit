@@ -36,8 +36,6 @@
 
 <script>
   import Button, { Label } from "@dusk/button";
-
-  export let segment;
 </script>
 
 <svelte:head>

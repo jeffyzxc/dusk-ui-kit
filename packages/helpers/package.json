@@ -10,6 +10,9 @@
   "scripts": {
     "test": "echo \"LOL\" && exit 1"
   },
+  "dependencies": {
+    "@dusk/elements": "^0.0.2-alpha.0"
+  },
   "devDependencies": {
     "svelte": "^3.0.0"
   }

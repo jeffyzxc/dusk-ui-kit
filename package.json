@@ -33,15 +33,15 @@
   "dependencies": {
     "@dusk/button": "0.0.2-alpha.0",
     "@dusk/card": "0.0.2-alpha.0",
+    "@dusk/elements": "0.0.2-alpha.0",
+    "@dusk/helpers": "0.0.2-alpha.0",
     "@dusk/list": "0.0.2-alpha.0",
     "@dusk/logo": "0.0.2-alpha.0",
     "@dusk/menu": "0.0.2-alpha.0",
     "@dusk/navbar": "0.0.2-alpha.0",
     "@dusk/one-column": "0.0.2-alpha.0",
-    "@dusk/two-column": "0.0.2-alpha.0",
     "@dusk/three-column": "0.0.2-alpha.0",
-    "@dusk/elements": "0.0.2-alpha.0",
-    "@dusk/helpers": "0.0.2-alpha.0"
+    "@dusk/two-column": "0.0.2-alpha.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -51,6 +51,7 @@
     "@babel/runtime": "^7.0.0",
     "@fullhuman/postcss-purgecss": "^2.0.6",
     "@rollup/plugin-commonjs": "^11.0.0",
+    "@rollup/plugin-json": "^4.0.2",
     "@rollup/plugin-node-resolve": "^7.0.0",
     "@rollup/plugin-replace": "^2.2.0",
     "@storybook/addon-a11y": "^5.3.13",
@@ -67,8 +68,10 @@
     "@storybook/source-loader": "^5.3.13",
     "@storybook/svelte": "^5.3.12",
     "babel-loader": "^8.0.6",
+    "compression": "^1.7.1",
     "lerna": "^3.20.2",
     "npm-run-all": "^4.1.5",
+    "polka": "next",
     "postcss": "^7.0.26",
     "postcss-import": "^12.0.1",
     "postcss-load-config": "^2.1.0",
@@ -85,12 +88,10 @@
     "rollup-plugin-svelte": "^5.0.1",
     "rollup-plugin-terser": "^4.0.4",
     "sapper": "^0.27.0",
+    "sirv": "^0.4.0",
     "svelte": "^3.0.0",
     "svelte-loader": "^2.13.6",
     "svelte-preprocess": "^3.4.0",
-    "tailwindcss": "^1.2.0",
-    "compression": "^1.7.1",
-    "polka": "next",
-    "sirv": "^0.4.0"
+    "tailwindcss": "^1.2.0"
   }
 }

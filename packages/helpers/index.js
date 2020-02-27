@@ -1,4 +1,3 @@
-import { baseBuilder } from "./baseBuilder.js";
 import { exclude } from "./exclude.js";
 import { forwardEventsBuilder } from "./forwardEvents.js";
 import { useActions } from "./useActions.js";
@@ -9,7 +8,6 @@ import orientations from "./orientations.js";
 import types from "./types.js";
 
 export {
-  baseBuilder,
   exclude,
   forwardEventsBuilder,
   useActions,
