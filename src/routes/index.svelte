@@ -49,7 +49,7 @@
 <figure>
   <img alt="Borat" src="great-success.png" />
   <figcaption>
-    <Button variant="brand" size="lg">
+    <Button variant="brand">
       <Label>Yakshemash!</Label>
     </Button>
   </figcaption>
