@@ -11,7 +11,14 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk/elements": "^0.0.5-alpha.0"
+    "@dusk/elements": "^0.0.5-alpha.0",
+    "tailwindcss": "^1.2.0",
+    "postcss": "^7.0.26",
+    "postcss-import": "^12.0.1",
+    "postcss-load-config": "^2.1.0",
+    "postcss-nested": "^4.2.1",
+    "postcss-url": "^8.0.0",
+    "@fullhuman/postcss-purgecss": "^2.0.6"
   },
   "devDependencies": {
     "svelte": "^3.0.0"

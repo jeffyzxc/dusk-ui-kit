@@ -1,34 +1,7 @@
 const plugin = require("tailwindcss/plugin");
-// const buttonPlugin = require("./packages/atoms/button/tailwind.config.js");
-// const cardPlugin = require("./packages/atoms/card/tailwind.config.js");
 
 module.exports = {
   theme: {
-    // backgroundColor: theme => ({
-    //   transparent: "transparent",
-    //   brand: theme("colors.purple.600"),
-    //   cta: theme("colors.orange.500"),
-    //   info: theme("colors.purple.500"),
-    //   success: theme("colors.green.500"),
-    //   warning: theme("colors.yellow.900"),
-    //   danger: theme("colors.red.200"),
-    //   light: theme("colors.gray.100"),
-    //   dark: theme("colors.gray.900"),
-    //   white: theme("colors.white"),
-    //   black: theme("colors.black")
-    // }),
-    // borderColor: theme => ({
-    //   white: theme("colors.white"),
-    //   black: theme("colors.black"),
-    //   brand: theme("colors.purple.600"),
-    //   cta: theme("colors.orange.500"),
-    //   info: theme("colors.purple.500"),
-    //   success: theme("colors.green.500"),
-    //   warning: theme("colors.yellow.900"),
-    //   danger: theme("colors.red.500"),
-    //   light: theme("colors.gray.100"),
-    //   dark: theme("colors.gray.900")
-    // }),
     borderRadius: {
       none: "0",
       sm: ".1875rem",
@@ -178,20 +151,6 @@ module.exports = {
       96: "224px",
       128: "256"
     }
-    // textColor: theme => ({
-    //   anchor: theme("colors.purple.700"),
-    //   "anchor-hover": theme("colors.purple.500"),
-    //   white: theme("colors.white"),
-    //   black: theme("colors.black"),
-    //   brand: theme("colors.purple.600"),
-    //   cta: theme("colors.orange.500"),
-    //   info: theme("colors.purple.500"),
-    //   success: theme("colors.green.500"),
-    //   warning: theme("colors.yellow.900"),
-    //   danger: theme("colors.red.500"),
-    //   light: theme("colors.gray.100"),
-    //   dark: theme("colors.gray.900")
-    // })
   },
   plugins: [
     plugin(function({ addBase, theme }) {
