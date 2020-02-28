@@ -91,6 +91,8 @@ Import font
 />
 ```
 
+**Check out the [examples repository](https://github.com/dusk-network/dusk-ui-kit-examples) for assistance!**
+
 ## Development
 
 _Clone and install_
