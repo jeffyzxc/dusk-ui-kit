@@ -30,28 +30,66 @@ The components within the UI Kit are organised according to the principles of [A
 ## Installation
 
 ```bash
+$ yarn add @dusk/styles
 $ yarn add @dusk/button
 $ yarn add @dusk/list
 $ yarn add @dusk/navbar
 ...
 ```
 
-Import a component
+### Import a component
 
 ```javascript
 import Button, { Label } from "@dusk/button";
-let clicked = 0;
 ```
 
-```
-<Button variant="brand" on:click={() => clicked++}>
-  <Label>Dusk UI Kit is awesome x{clicked}</Label>
-</Button>
+```html
+<button variant="brand">
+  <label>Dusk UI Kit is awesome x{clicked}</label>
+</button>
 ```
 
-Import the styles
+### Import styles
 
-😕
+Install `@dusk/styles` if you have not already.
+
+```bash
+$ yarn add @dusk/styles
+```
+
+Include the rollup plugin and configure accordingly...
+
+```javascript
+// rollup.config.js
+
+const duk = require('@dusk/styles/rollup-plugin-duk');
+...
+plugins: [
+  ...
+  duk({
+    output: 'public/global.css'
+  })
+]
+```
+
+Import Tailwind styles
+
+```javascript
+// main.js
+
+import "@dusk/styles/tailwind.css";
+```
+
+Import font
+
+```html
+// index.html
+
+<link
+  href="https://fonts.googleapis.com/css?family=Hind+Siliguri:400,500,600&display=swap"
+  rel="stylesheet"
+/>
+```
 
 ## Development
 
@@ -67,18 +105,6 @@ _Start Storybook_
 
 ```bash
 $ yarn storybook
-```
-
-_Start Website_
-
-```bash
-$ yarn start
-```
-
-_Start Website (development mode)_
-
-```bash
-$ yarn dev
 ```
 
 ### Latest Design

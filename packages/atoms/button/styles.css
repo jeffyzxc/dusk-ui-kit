@@ -2,6 +2,7 @@
   @apply text-center;
 }
 .duk-button {
+  color: pink;
   @apply border border-solid rounded text-sm py-2 px-4;
   &--brand {
     @apply bg-purple-600 border-purple-600 text-white;

@@ -1998,7 +1998,7 @@
   dependencies:
     "@rollup/pluginutils" "^3.0.4"
 
-"@rollup/plugin-node-resolve@^7.0.0":
+"@rollup/plugin-node-resolve@^7.0.0", "@rollup/plugin-node-resolve@^7.1.1":
   version "7.1.1"
   resolved "https://npm.dusk.network:4873/@rollup%2fplugin-node-resolve/-/plugin-node-resolve-7.1.1.tgz#8c6e59c4b28baf9d223028d0e450e06a485bb2b7"
   integrity sha512-14ddhD7TnemeHE97a4rLOhobfYvUVcaYuqTnL8Ti7Jxi9V9Jr5LY7Gko4HZ5k4h4vqQM0gBQt6tsp9xXW94WPA==
@@ -10121,13 +10121,6 @@ postcss-nested@^4.1.1, postcss-nested@^4.2.1:
   dependencies:
     postcss "^7.0.21"
     postcss-selector-parser "^6.0.2"
-
-postcss-nesting@^7.0.1:
-  version "7.0.1"
-  resolved "https://npm.dusk.network:4873/postcss-nesting/-/postcss-nesting-7.0.1.tgz#b50ad7b7f0173e5b5e3880c3501344703e04c052"
-  integrity sha512-FrorPb0H3nuVq0Sff7W2rnc3SmIcruVC6YwpcS+k687VxyxO33iE1amna7wHuRVzM8vfiYofXSBHNAZ3QhLvYg==
-  dependencies:
-    postcss "^7.0.2"
 
 postcss-normalize-charset@^4.0.1:
   version "4.0.1"

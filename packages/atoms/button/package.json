@@ -15,10 +15,7 @@
     "@dusk/helpers": "^0.0.5-alpha.0"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.0.6",
     "postcss": "^7.0.26",
-    "postcss-load-config": "^2.1.0",
-    "svelte-preprocess": "^3.4.0",
     "tailwindcss": "^1.2.0"
   }
 }
