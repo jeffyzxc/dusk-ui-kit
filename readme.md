@@ -83,7 +83,7 @@ import "@dusk/styles/tailwind.css";
 Import font
 
 ```html
-// index.html
+<!-- index.html -->
 
 <link
   href="https://fonts.googleapis.com/css?family=Hind+Siliguri:400,500,600&display=swap"
