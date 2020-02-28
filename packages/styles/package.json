@@ -1,6 +1,6 @@
 {
-  "name": "@dusk/styles",
-  "description": "Dusk UI Kit - Styles",
+  "name": "@dusk/helpers",
+  "description": "Dusk UI Kit - Helpers",
   "version": "0.0.3-alpha.0",
   "author": "Kieran Hall <kieran@dusk.network>",
   "bugs": {
@@ -9,6 +9,9 @@
   "license": "MIT",
   "scripts": {
     "test": "echo \"LOL\" && exit 1"
+  },
+  "dependencies": {
+    "@dusk/elements": "^0.0.3-alpha.0"
   },
   "devDependencies": {
     "svelte": "^3.0.0"

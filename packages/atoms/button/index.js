@@ -3,5 +3,6 @@ import Group from "./Group.svelte";
 import GroupItem from "./GroupItem.js";
 import Label from "@dusk/elements/Label.svelte";
 import Icon from "@dusk/elements/Icon.svelte";
+import styles from "./tailwind.config.js";
 export default Button;
-export { Group, GroupItem, Label, Icon };
+export { Group, GroupItem, Label, Icon, styles };

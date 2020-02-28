@@ -10,6 +10,7 @@
     contexts
   } from "@dusk/helpers";
   import { A, Button } from "@dusk/elements";
+  import "./styles.css";
 
   const forwardEvents = forwardEventsBuilder(current_component);
 

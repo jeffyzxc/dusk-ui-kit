@@ -11,7 +11,7 @@
 <div
   use:useActions="{use}"
   use:forwardEvents
-  class=" duk-button__group {className}
+  class=" duk-button-group {className}
   "
   {...exclude($$props, ['use', 'class'])}>
   <slot />

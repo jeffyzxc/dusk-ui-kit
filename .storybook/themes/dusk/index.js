@@ -4,21 +4,21 @@ import tailwindConfig from "../../../tailwind.config.js";
 import logo from "./logo.svg";
 
 const config = resolveConfig(tailwindConfig);
-const backgroundColors = config.theme.backgroundColor;
-const borderColors = config.theme.borderColor;
-const textColors = config.theme.textColor;
+const colors = config.theme.colors;
+// const backgroundColors = config.theme.backgroundColor;
+// const borderColors = config.theme.borderColor;
+// const textColors = config.theme.textColor;
 const fontFamily = config.theme.fontFamily;
 
 export default create({
   base: "light",
-
-  colorPrimary: backgroundColors.brand,
-  colorSecondary: backgroundColors.cta,
+  colorPrimary: colors.purple["600"],
+  colorSecondary: colors.orange["600"],
 
   // UI
-  appBg: backgroundColors.light,
+  appBg: colors.gray["200"],
   appContentBg: "#fff",
-  appBorderColor: borderColors.info,
+  appBorderColor: colors.purple["700"],
   appBorderRadius: 5,
 
   // Typography
@@ -26,18 +26,18 @@ export default create({
   fontCode: fontFamily.mono.join(", "),
 
   // Text colors
-  textColor: textColors.dark,
-  textInverseColor: textColors.light,
+  textColor: colors.gray["800"],
+  textInverseColor: colors.gray["200"],
 
   // Toolbar default and active colors
-  barTextColor: textColors.light,
-  barSelectedColor: backgroundColors.cta,
-  barBg: backgroundColors.dark,
+  barTextColor: colors.gray["200"],
+  barSelectedColor: colors.orange["600"],
+  barBg: colors.gray["800"],
 
   // Form colors
   inputBg: "#fff",
-  inputBorder: borderColors.info,
-  inputTextColor: textColors.dark,
+  inputBorder: colors.purple["700"],
+  inputTextColor: colors.gray["800"],
   inputBorderRadius: 5,
 
   brandTitle: "Dusk Design System",
@@ -45,4 +45,4 @@ export default create({
   brandImage: logo
 });
 
-export { backgroundColors };
+export { colors as backgroundColors };

@@ -1,0 +1,75 @@
+.duk-button__group {
+  @apply text-center;
+}
+.duk-button {
+  @apply border border-solid rounded text-sm py-2 px-4;
+  &--brand {
+    @apply bg-purple-600 border-purple-600 text-white;
+    &.duk-button--outline {
+      @apply bg-transparent text-purple-600;
+    }
+  }
+  &--cta {
+    @apply bg-orange-600 border-orange-600 text-white;
+    &.duk-button--outline {
+      @apply bg-transparent text-orange-600;
+    }
+  }
+  &--info {
+    @apply bg-purple-600 border-purple-600 text-white;
+    &.duk-button--outline {
+      @apply bg-transparent text-purple-600;
+    }
+  }
+  &--success {
+    @apply bg-green-600 border-green-600 text-white;
+    &.duk-button--outline {
+      @apply bg-transparent text-green-600;
+    }
+  }
+  &--warning {
+    @apply bg-yellow-600 border-yellow-600 text-white;
+    &.duk-button--outline {
+      @apply bg-transparent text-yellow-600;
+    }
+  }
+  &--danger {
+    @apply bg-red-600 border-red-600 text-white;
+    &.duk-button--outline {
+      @apply bg-transparent text-red-600;
+    }
+  }
+  &--light {
+    @apply bg-gray-200 border-gray-200 text-gray-900;
+    &.duk-button--outline {
+      @apply bg-transparent text-gray-200;
+    }
+  }
+  &--dark {
+    @apply bg-gray-900 border-gray-900 text-gray-200;
+    &.duk-button--outline {
+      @apply bg-transparent text-gray-900;
+    }
+  }
+  &--black {
+    @apply bg-black border-black text-white;
+    &.duk-button--outline {
+      @apply bg-transparent text-black;
+    }
+  }
+  &--white {
+    @apply bg-white border-white text-black;
+    &.duk-button--outline {
+      @apply bg-transparent text-black;
+    }
+  }
+  &--large {
+    @apply text-lg py-3 px-5;
+  }
+  &--small {
+    @apply text-sm;
+  }
+  &:disabled {
+    @apply opacity-75 cursor-not-allowed;
+  }
+}
