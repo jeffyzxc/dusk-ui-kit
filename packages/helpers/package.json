@@ -1,6 +1,6 @@
 {
-  "name": "@dusk/styles",
-  "description": "Dusk UI Kit - Styles",
+  "name": "@dusk/helpers",
+  "description": "Dusk UI Kit - Helpers",
   "version": "0.0.4-alpha.0",
   "author": "Kieran Hall <kieran@dusk.network>",
   "bugs": {
