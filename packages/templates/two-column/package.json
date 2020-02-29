@@ -1,7 +1,7 @@
 {
   "name": "@dusk/two-column",
   "description": "Dusk UI Kit - Two Column Template",
-  "version": "0.0.7-alpha.0",
+  "version": "0.0.8-alpha.0",
   "author": "Kieran Hall <kieran@dusk.network>",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
