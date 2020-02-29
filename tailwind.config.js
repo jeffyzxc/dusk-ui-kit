@@ -4,31 +4,6 @@ const plugin = require("tailwindcss/plugin");
 
 module.exports = {
   theme: {
-    // backgroundColor: theme => ({
-    //   transparent: "transparent",
-    //   brand: theme("colors.purple.600"),
-    //   cta: theme("colors.orange.500"),
-    //   info: theme("colors.purple.500"),
-    //   success: theme("colors.green.500"),
-    //   warning: theme("colors.yellow.900"),
-    //   danger: theme("colors.red.200"),
-    //   light: theme("colors.gray.100"),
-    //   dark: theme("colors.gray.900"),
-    //   white: theme("colors.white"),
-    //   black: theme("colors.black")
-    // }),
-    // borderColor: theme => ({
-    //   white: theme("colors.white"),
-    //   black: theme("colors.black"),
-    //   brand: theme("colors.purple.600"),
-    //   cta: theme("colors.orange.500"),
-    //   info: theme("colors.purple.500"),
-    //   success: theme("colors.green.500"),
-    //   warning: theme("colors.yellow.900"),
-    //   danger: theme("colors.red.500"),
-    //   light: theme("colors.gray.100"),
-    //   dark: theme("colors.gray.900")
-    // }),
     borderRadius: {
       none: "0",
       sm: ".1875rem",
@@ -178,20 +153,6 @@ module.exports = {
       96: "224px",
       128: "256"
     }
-    // textColor: theme => ({
-    //   anchor: theme("colors.purple.700"),
-    //   "anchor-hover": theme("colors.purple.500"),
-    //   white: theme("colors.white"),
-    //   black: theme("colors.black"),
-    //   brand: theme("colors.purple.600"),
-    //   cta: theme("colors.orange.500"),
-    //   info: theme("colors.purple.500"),
-    //   success: theme("colors.green.500"),
-    //   warning: theme("colors.yellow.900"),
-    //   danger: theme("colors.red.500"),
-    //   light: theme("colors.gray.100"),
-    //   dark: theme("colors.gray.900")
-    // })
   },
   plugins: [
     plugin(function({ addBase, theme }) {
@@ -206,331 +167,131 @@ module.exports = {
         p: { marginBottom: theme("spacing.4") },
         code: { fontFamily: theme("fontFamily.mono") }
       });
+    }),
+    plugin(function({ addComponents, theme }) {
+      const screens = theme("screens", {});
+      const template = {
+        ".duk-template": {
+          "&__footer": {
+            ".duk-navbar": {
+              "&__collapse": {
+                display: "none"
+              },
+              ".duk-menu": {
+                display: "block",
+                ".duk-list": {
+                  display: "flex",
+                  flexDirection: "row",
+                  "&__item": {
+                    padding: `0 theme("spacing.2")`
+                  }
+                }
+              }
+            }
+          },
+          "&__column": {
+            padding: `0 theme("spacing.3")`,
+            "&:first-of-type": {
+              paddingLeft: theme("spacing.6")
+            },
+            "&:last-of-type": {
+              paddingRight: theme("spacing.6")
+            }
+          },
+          "&__one-column": {
+            "&__content": {
+              height: "100vh"
+            }
+          },
+          "&__two-column": {
+            "&__content": {
+              height: "100vh"
+            },
+            "@media (min-width: 640px)": {
+              "&__content": {
+                display: "flex"
+              },
+              "&--5050": {
+                ".duk-template__two-column__content": {
+                  "&__west": {
+                    width: "50%"
+                  },
+                  "&__east": {
+                    width: "50%"
+                  }
+                }
+              },
+              "&--2080": {
+                ".duk-template__two-column__content": {
+                  "&__west": {
+                    width: "20%"
+                  },
+                  "&__east": {
+                    width: "80%"
+                  }
+                }
+              },
+              "&--8020": {
+                ".duk-template__two-column__content": {
+                  "&__west": {
+                    width: "80%"
+                  },
+                  "&__east": {
+                    width: "20%"
+                  }
+                }
+              }
+            }
+          },
+          "&__three-column": {
+            "&__content": {
+              display: "flex",
+              height: "100vh"
+            },
+            "&--333333": {
+              ".duk-template__three-column__content": {
+                "&__west": {
+                  width: "33.333333%"
+                },
+                "&__central": {
+                  width: "33.333333%"
+                },
+                "&__east": {
+                  width: "33.333333%"
+                }
+              }
+            },
+            "&--204040": {
+              ".duk-template__three-column__content": {
+                "&__west": {
+                  width: "20%"
+                },
+                "&__central": {
+                  width: "40%"
+                },
+                "&__east": {
+                  width: "40%"
+                }
+              }
+            },
+            "&--404020": {
+              ".duk-template__three-column__content": {
+                "&__west": {
+                  width: "40%"
+                },
+                "&__central": {
+                  width: "40%"
+                },
+                "&__east": {
+                  width: "20%"
+                }
+              }
+            }
+          }
+        }
+      };
+
+      addComponents([template]);
     })
-    // buttonPlugin,
-    // cardPlugin,
-    // plugin(function({ addComponents, theme }) {
-    //   const screens = theme("screens", {});
-    //   const list = {
-    //     ".duk-list": {
-    //       listStyle: "none",
-    //       "&--numbered": {
-    //         listStyle: "decimal"
-    //       },
-    //       "&--bulleted": {
-    //         listStyle: "disc"
-    //       }
-    //     }
-    //   };
-    //
-    //   const logo = {
-    //     ".duk-logo": {
-    //       display: "inline-block",
-    //       "&--brand": {
-    //         color: theme("colors.purple.500"),
-    //         fill: "currentColor"
-    //       },
-    //       "&--dark": {
-    //         color: theme("colors.gray.800"),
-    //         fill: "currentColor"
-    //       },
-    //       "&--light": {
-    //         color: theme("colors.gray.200"),
-    //         fill: "currentColor"
-    //       },
-    //       "&--black": {
-    //         color: theme("colors.black"),
-    //         fill: "currentColor"
-    //       },
-    //       "&--white": {
-    //         color: theme("colors.white"),
-    //         fill: "currentColor"
-    //       }
-    //     }
-    //   };
-    //
-    //   const menu = {
-    //     ".duk-menu": {
-    //       "&--vertical": {
-    //         ".duk-list--menu": {
-    //           display: "flex",
-    //           flexDirection: "column",
-    //           ".duk-list-item": {
-    //             "a, div": {
-    //               display: "block",
-    //               padding: `0 theme("spacing.3") 0 theme("spacing.3")`,
-    //               textAlign: "left"
-    //             }
-    //           }
-    //         }
-    //       },
-    //       "&--horizontal": {
-    //         ".duk-list--menu": {
-    //           display: "flex",
-    //           flexDirection: "row",
-    //           ".duk-list-item": {
-    //             "a, div": {
-    //               display: "block",
-    //               padding: `theme("spacing.3")`,
-    //               textAlign: "center"
-    //             }
-    //           }
-    //         }
-    //       }
-    //     }
-    //   };
-    //
-    //   const navbar = {
-    //     ".duk-navbar": {
-    //       alignItems: "center",
-    //       display: "flex",
-    //       fontSize: theme("fontSize.lg"),
-    //       flexWrap: "wrap",
-    //       justifyContent: "space-between",
-    //       padding: `theme("spacing.8") theme("spacing.6")`,
-    //       width: "100vw",
-    //       "&__collapse": {
-    //         display: "block",
-    //         "@media (min-width: 1024px)": {
-    //           display: "none"
-    //         }
-    //       },
-    //       "&__logo": {
-    //         display: "inline-block",
-    //         alignSelf: "center",
-    //         padding: 0
-    //       },
-    //       "&__menu": {
-    //         flexGrow: 1,
-    //         width: "100%",
-    //         "&--hidden": {
-    //           display: "none"
-    //         },
-    //         ".duk-list--menu": {
-    //           flexDirection: "column",
-    //           marginTop: theme("spacing.5")
-    //         },
-    //         ".duk-list__item": {
-    //           a: {
-    //             color: theme("colors.white")
-    //           },
-    //           "a:hover": {
-    //             color: theme("colors.white")
-    //           },
-    //           padding: `theme("spacing.2") 0`
-    //         },
-    //         "@media (min-width: 1024px)": {
-    //           alignItems: "center",
-    //           display: "flex",
-    //           flexShrink: 0,
-    //           width: "auto",
-    //           ".duk-list--menu": {
-    //             flexDirection: "row",
-    //             marginTop: "0",
-    //             flex: "1 1 0%",
-    //             justifyContent: "flex-end"
-    //           },
-    //           ".duk-list__item": {
-    //             padding: `0 theme("spacing.2")`
-    //           }
-    //         }
-    //       },
-    //       "&--brand": {
-    //         backgroundColor: theme("colors.purple.200"),
-    //         color: theme("colors.white")
-    //       },
-    //       "&--cta": {
-    //         backgroundColor: theme("colors.orange.200"),
-    //         color: theme("colors.white")
-    //       },
-    //       "&--info": {
-    //         backgroundColor: theme("colors.purple.200"),
-    //         color: theme("colors.white")
-    //       },
-    //       "&--success": {
-    //         backgroundColor: theme("colors.green.200"),
-    //         color: theme("colors.white")
-    //       },
-    //       "&--warning": {
-    //         backgroundColor: theme("colors.yellow.200"),
-    //         color: theme("colors.white")
-    //       },
-    //       "&--danger": {
-    //         backgroundColor: theme("colors.red.200"),
-    //         color: theme("colors.white")
-    //       },
-    //       "&--light": {
-    //         backgroundColor: theme("colors.gray.200"),
-    //         color: theme("colors.gray.800"),
-    //         ".duk-navbar__menu": {
-    //           ".duk-list__item": {
-    //             a: {
-    //               color: theme("colors.gray.800")
-    //             },
-    //             "a:hover": {
-    //               color: theme("colors.gray.800")
-    //             }
-    //           }
-    //         }
-    //       },
-    //       "&--dark": {
-    //         backgroundColor: theme("colors.gray.800"),
-    //         color: theme("colors.gray.200"),
-    //         ".duk-navbar__menu": {
-    //           ".duk-list__item": {
-    //             a: {
-    //               color: theme("colors.gray.200")
-    //             },
-    //             "a:hover": {
-    //               color: theme("colors.gray.200")
-    //             }
-    //           }
-    //         }
-    //       },
-    //       "&--black": {
-    //         backgroundColor: theme("colors.black"),
-    //         color: theme("colors.white")
-    //       },
-    //       "&--white": {
-    //         backgroundColor: theme("colors.white"),
-    //         borderColor: theme("colors.white"),
-    //         color: theme("colors.black"),
-    //         ".duk-navbar__menu": {
-    //           ".duk-list__item": {
-    //             a: {
-    //               color: theme("colors.black")
-    //             },
-    //             "a:hover": {
-    //               color: theme("colors.black")
-    //             }
-    //           }
-    //         }
-    //       }
-    //     }
-    //   };
-    //
-    //   const template = {
-    //     ".duk-template": {
-    //       "&__footer": {
-    //         ".duk-navbar": {
-    //           "&__collapse": {
-    //             display: "none"
-    //           },
-    //           ".duk-menu": {
-    //             display: "block",
-    //             ".duk-list": {
-    //               display: "flex",
-    //               flexDirection: "row",
-    //               "&__item": {
-    //                 padding: `0 theme("spacing.2")`
-    //               }
-    //             }
-    //           }
-    //         }
-    //       },
-    //       "&__column": {
-    //         padding: `0 theme("spacing.3")`,
-    //         "&:first-of-type": {
-    //           paddingLeft: theme("spacing.6")
-    //         },
-    //         "&:last-of-type": {
-    //           paddingRight: theme("spacing.6")
-    //         }
-    //       },
-    //       "&__one-column": {
-    //         "&__content": {
-    //           height: "100vh"
-    //         }
-    //       },
-    //       "&__two-column": {
-    //         "&__content": {
-    //           height: "100vh"
-    //         },
-    //         "@media (min-width: 640px)": {
-    //           "&__content": {
-    //             display: "flex"
-    //           },
-    //           "&--5050": {
-    //             ".duk-template__two-column__content": {
-    //               "&__west": {
-    //                 width: "50%"
-    //               },
-    //               "&__east": {
-    //                 width: "50%"
-    //               }
-    //             }
-    //           },
-    //           "&--2080": {
-    //             ".duk-template__two-column__content": {
-    //               "&__west": {
-    //                 width: "20%"
-    //               },
-    //               "&__east": {
-    //                 width: "80%"
-    //               }
-    //             }
-    //           },
-    //           "&--8020": {
-    //             ".duk-template__two-column__content": {
-    //               "&__west": {
-    //                 width: "80%"
-    //               },
-    //               "&__east": {
-    //                 width: "20%"
-    //               }
-    //             }
-    //           }
-    //         }
-    //       },
-    //       "&__three-column": {
-    //         "&__content": {
-    //           display: "flex",
-    //           height: "100vh"
-    //         },
-    //         "&--333333": {
-    //           ".duk-template__three-column__content": {
-    //             "&__west": {
-    //               width: "33.333333%"
-    //             },
-    //             "&__central": {
-    //               width: "33.333333%"
-    //             },
-    //             "&__east": {
-    //               width: "33.333333%"
-    //             }
-    //           }
-    //         },
-    //         "&--204040": {
-    //           ".duk-template__three-column__content": {
-    //             "&__west": {
-    //               width: "20%"
-    //             },
-    //             "&__central": {
-    //               width: "40%"
-    //             },
-    //             "&__east": {
-    //               width: "40%"
-    //             }
-    //           }
-    //         },
-    //         "&--404020": {
-    //           ".duk-template__three-column__content": {
-    //             "&__west": {
-    //               width: "40%"
-    //             },
-    //             "&__central": {
-    //               width: "40%"
-    //             },
-    //             "&__east": {
-    //               width: "20%"
-    //             }
-    //           }
-    //         }
-    //       }
-    //     }
-    //   };
-    //
-    //   addComponents([list, logo, menu, navbar, template]);
-    // })
   ]
 };

@@ -9,6 +9,7 @@
     types,
     contexts
   } from "@dusk/helpers";
+  import "./styles.css";
   import { Ol, Ul } from "@dusk/elements";
   const forwardEvents = forwardEventsBuilder(current_component);
   export let use = [];

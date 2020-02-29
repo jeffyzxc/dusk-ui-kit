@@ -1,0 +1,91 @@
+.duk-navbar {
+  @apply items-center flex text-lg flex-wrap justify-between py-8 px-6 w-screen;
+  &__collapse {
+    @apply block;
+    @media (min-width: 1024px) {
+      @apply hidden;
+    }
+  }
+  &__logo {
+    @apply inline-block self-center;
+  }
+  &__menu {
+    @apply flex-grow w-full;
+    &--hidden {
+      @apply hidden;
+    }
+    .duk-list--menu {
+      @apply flex-col my-5;
+    }
+    .duk-list__item {
+      @apply py-2;
+      a,
+      a:hover {
+        @apply text-white;
+      }
+    }
+    @media (min-width: 1024px) {
+      @apply self-center flex flex-shrink w-auto;
+      .duk-list--menu {
+        @apply flex-row flex-1 justify-end;
+      }
+      .duk-list__item {
+        @apply px-2;
+      }
+    }
+  }
+  &--brand {
+    @apply bg-purple-200 text-white;
+  }
+  &--cta {
+    @apply bg-orange-200 text-white;
+  }
+  &--info {
+    @apply bg-purple-200 text-white;
+  }
+  &--success {
+    @apply bg-green-200 text-white;
+  }
+  &--warning {
+    @apply bg-yellow-200 text-white;
+  }
+  &--danger {
+    @apply bg-red-200 text-white;
+  }
+  &--light {
+    @apply bg-gray-200 text-gray-800;
+    .duk-navbar__menu {
+      .duk-list__item {
+        a,
+        a:hover {
+          @apply text-gray-800;
+        }
+      }
+    }
+  }
+  &--dark {
+    @apply bg-gray-800 text-gray-200;
+    .duk-navbar__menu {
+      .duk-list__item {
+        a,
+        a:hover {
+          @apply text-gray-200;
+        }
+      }
+    }
+  }
+  &--black {
+    @apply bg-black text-white;
+  }
+  &--white {
+    @apply bg-white text-black;
+    .duk-navbar__menu {
+      .duk-list__item {
+        a,
+        a:hover {
+          @apply text-black;
+        }
+      }
+    }
+  }
+}

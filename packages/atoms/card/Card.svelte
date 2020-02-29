@@ -6,6 +6,7 @@
     useActions,
     variants
   } from "@dusk/helpers";
+  import "./styles.css";
   const forwardEvents = forwardEventsBuilder(current_component);
   export let use = [];
   let className = "";

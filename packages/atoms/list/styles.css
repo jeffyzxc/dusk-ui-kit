@@ -1,0 +1,10 @@
+.duk-list {
+  @apply list-none;
+  &--numbered {
+    @apply list-decimal;
+  }
+
+  &--bulleted {
+    @apply list-disc;
+  }
+}

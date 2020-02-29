@@ -8,6 +8,7 @@
     contexts,
     variants
   } from "@dusk/helpers";
+  import "./styles.css";
   import { A, Div } from "@dusk/elements";
 
   const forwardEvents = forwardEventsBuilder(current_component);
