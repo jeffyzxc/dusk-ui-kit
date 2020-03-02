@@ -1,5 +1,5 @@
 <script>
-  import TwoColumn, { Footer } from "@dusk/two-column";
+  import TwoColumn, { Header, Footer } from "@dusk/two-column";
   import Navbar from "@dusk/navbar";
   import Menu from "@dusk/menu";
   import List, { Item } from "@dusk/list";
@@ -8,24 +8,28 @@
   import { variants, types } from "@dusk/helpers";
 </script>
 
-<TwoColumn class="bg-dark">
-  <div slot="header" class="mb-4">
-    <Navbar variant="brand">
-      <span slot="logo">
-        <Logo variant="white" class="w-48" />
-      </span>
-      <Menu orientation="horizontal">
-        <List>
-          <Item href="#">Explore</Item>
-          <Item href="#">Profile</Item>
-        </List>
-      </Menu>
-    </Navbar>
+<TwoColumn class="bg-gray-200">
+  <div slot="header">
+    <Header>
+      <Navbar variant="brand">
+        <span slot="logo">
+          <Logo variant="white" class="w-48" />
+        </span>
+        <Menu orientation="horizontal">
+          <List>
+            <Item href="#">Explore</Item>
+            <Item href="#">Profile</Item>
+          </List>
+        </Menu>
+      </Navbar>
+    </Header>
   </div>
   <div slot="west">
-    <Card class="w-full mb-4" variant="cta">
+    <Card class="w-full mb-6" variant="cta">
+      <Title>
+        <h2>Milestones</h2>
+      </Title>
       <Content>
-        <h3>Milestones</h3>
         <List type="{types.ATOM.LIST.NUMBERED}" class="ml-3">
           <Item>
             <del>Implement in Svelte</del>
@@ -33,12 +37,14 @@
           <Item>
             <del>Write stories</del>
           </Item>
-          <Item>Package and deploy</Item>
+          <Item>
+            <del>Package and deploy</del>
+          </Item>
           <Item>💰</Item>
         </List>
       </Content>
     </Card>
-    <Card class="w-full mb-4">
+    <Card class="w-full mb-6">
       <Content>
         <p>
           Contact
@@ -50,7 +56,9 @@
   </div>
   <div slot="east">
     <Card class="w-full min-h-screen">
-      <Title>Dusk UI Kit</Title>
+      <Title>
+        <h1>Dusk UI Kit</h1>
+      </Title>
       <Content>
         <p>
           This is a
@@ -68,19 +76,17 @@
       </Content>
     </Card>
   </div>
-  <div slot="footer" class="mt-4">
+  <div slot="footer">
     <Footer>
       <Navbar variant="dark">
-        <small>
-          <Menu orientation="horizontal">
-            <List>
-              <Item href="#test">Legal</Item>
-              <Item href="#test">Terms</Item>
-              <Item>Dummy</Item>
-            </List>
-          </Menu>
-        </small>
-        <small>Copyright 2020 Dusk Network</small>
+        <Menu orientation="horizontal" class="mb-3">
+          <List>
+            <Item href="#test">Legal</Item>
+            <Item href="#test">Terms</Item>
+            <Item>Dummy</Item>
+          </List>
+        </Menu>
+        <small class="text-gray-400">Dusk Network 2020</small>
       </Navbar>
     </Footer>
   </div>
