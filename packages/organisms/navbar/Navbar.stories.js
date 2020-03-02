@@ -7,7 +7,7 @@ import { action } from "@storybook/addon-actions";
 import { variants } from "@dusk/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import readme from "./readme.stories.md";
-import "../../helpers/util.css";
+import "@dusk/styles/tailwind.css";
 
 export default {
   title: "Components/Organisims/Navbar",

@@ -2,6 +2,7 @@
   &--vertical {
     > .duk-list--menu {
       @apply flex flex-col;
+
       .duk-list__item {
         a,
         div {
@@ -10,9 +11,11 @@
       }
     }
   }
+
   &--horizontal {
     > .duk-list--menu {
       @apply flex flex-row;
+
       .duk-list__item {
         a,
         div {
