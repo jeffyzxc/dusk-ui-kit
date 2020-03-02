@@ -1,5 +1,5 @@
 const path = require("path");
-const tailwindConfig = require("../tailwind.config.js");
+const tailwindConfig = require("../packages/styles/dusk.tailwind.config.js");
 const mode = process.env.NODE_ENV;
 const dev = mode === "development";
 
