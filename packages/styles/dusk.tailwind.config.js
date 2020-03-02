@@ -158,147 +158,175 @@ module.exports = {
       addBase({
         a: { color: theme("colors.purple.700") },
         "a:hover": { color: theme("colors.purple.500") },
-        body: { lineHeight: "1.5", letterSpacing: "0" },
+        body: {
+          color: theme("colors.gray.900"),
+          lineHeight: "1.5",
+          letterSpacing: "0"
+        },
         "button:focus": { outline: "none" },
         h1: { fontSize: theme("fontSize.2xl") },
         h2: { fontSize: theme("fontSize.xl") },
         h3: { fontSize: theme("fontSize.lg") },
         p: { marginBottom: theme("spacing.4") },
-        code: { fontFamily: theme("fontFamily.mono") }
+        code: {
+          color: theme("colors.gray.700"),
+          fontFamily: theme("fontFamily.mono")
+        }
       });
+    }),
+    plugin(function({ addComponents, theme }) {
+      const screens = theme("screens", {});
+      const gap = theme("spacing.3", {});
+      const doubleGap = theme("spacing.6", {});
+      const template = {
+        ".duk-template": {
+          "&__header": {
+            marginBottom: `${doubleGap}`
+          },
+          "&__footer": {
+            textAlign: "center",
+            marginTop: `${doubleGap}`,
+            ".duk-navbar": {
+              display: "block",
+              fontSize: "inherit",
+              "&__collapse": {
+                display: "none"
+              },
+              ".duk-menu": {
+                display: "block",
+                ".duk-list": {
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-around",
+                  "&__item": {
+                    margin: `0 theme("spacing.2")`
+                  }
+                }
+              }
+            },
+            "@media (min-width: 640px)": {
+              ".duk-navbar": {
+                ".duk-menu": {
+                  ".duk-list": {
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "flex-start",
+                    "&__item": {
+                      margin: `0 theme("spacing.2")`
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "&__content": {
+            overflow: "hidden",
+            padding: `0 theme("spacing.6")`,
+            margin: `0 -${gap}`
+          },
+          "&__column": {
+            margin: `0 ${gap}`
+          },
+          "&__one-column": {
+            "&__content": {
+              height: "100vh"
+            }
+          },
+          "&__two-column": {
+            "&__content": {
+              height: "100vh"
+            },
+            // [`@media (${screens.sm})`]: {
+            "@media (min-width: 640px)": {
+              "&__content": {
+                display: "flex"
+              },
+              "&--5050": {
+                ".duk-template__two-column__content": {
+                  "&__west": {
+                    width: "50%"
+                  },
+                  "&__east": {
+                    width: "50%"
+                  }
+                }
+              },
+              "&--2080": {
+                ".duk-template__two-column__content": {
+                  "&__west": {
+                    width: "20%"
+                  },
+                  "&__east": {
+                    width: "80%"
+                  }
+                }
+              },
+              "&--8020": {
+                ".duk-template__two-column__content": {
+                  "&__west": {
+                    width: "80%"
+                  },
+                  "&__east": {
+                    width: "20%"
+                  }
+                }
+              }
+            }
+          },
+          "&__three-column": {
+            "&__content": {
+              height: "100vh"
+            },
+            "@media (min-width: 640px)": {
+              "&__content": {
+                display: "flex",
+                height: "100vh"
+              },
+              "&--333333": {
+                ".duk-template__three-column__content": {
+                  "&__west": {
+                    width: "33.333333%"
+                  },
+                  "&__central": {
+                    width: "33.333333%"
+                  },
+                  "&__east": {
+                    width: "33.333333%"
+                  }
+                }
+              },
+              "&--204040": {
+                ".duk-template__three-column__content": {
+                  "&__west": {
+                    width: "20%"
+                  },
+                  "&__central": {
+                    width: "40%"
+                  },
+                  "&__east": {
+                    width: "40%"
+                  }
+                }
+              },
+              "&--404020": {
+                ".duk-template__three-column__content": {
+                  "&__west": {
+                    width: "40%"
+                  },
+                  "&__central": {
+                    width: "40%"
+                  },
+                  "&__east": {
+                    width: "20%"
+                  }
+                }
+              }
+            }
+          }
+        }
+      };
+
+      addComponents([template]);
     })
-    // buttonPlugin,
-    // cardPlugin,
-    // plugin(function({ addComponents, theme }) {
-    //   const screens = theme("screens", {});
-
-    //
-
-    //
-
-    //
-    //   const template = {
-    //     ".duk-template": {
-    //       "&__footer": {
-    //         ".duk-navbar": {
-    //           "&__collapse": {
-    //             display: "none"
-    //           },
-    //           ".duk-menu": {
-    //             display: "block",
-    //             ".duk-list": {
-    //               display: "flex",
-    //               flexDirection: "row",
-    //               "&__item": {
-    //                 padding: `0 theme("spacing.2")`
-    //               }
-    //             }
-    //           }
-    //         }
-    //       },
-    //       "&__column": {
-    //         padding: `0 theme("spacing.3")`,
-    //         "&:first-of-type": {
-    //           paddingLeft: theme("spacing.6")
-    //         },
-    //         "&:last-of-type": {
-    //           paddingRight: theme("spacing.6")
-    //         }
-    //       },
-    //       "&__one-column": {
-    //         "&__content": {
-    //           height: "100vh"
-    //         }
-    //       },
-    //       "&__two-column": {
-    //         "&__content": {
-    //           height: "100vh"
-    //         },
-    //         "@media (min-width: 640px)": {
-    //           "&__content": {
-    //             display: "flex"
-    //           },
-    //           "&--5050": {
-    //             ".duk-template__two-column__content": {
-    //               "&__west": {
-    //                 width: "50%"
-    //               },
-    //               "&__east": {
-    //                 width: "50%"
-    //               }
-    //             }
-    //           },
-    //           "&--2080": {
-    //             ".duk-template__two-column__content": {
-    //               "&__west": {
-    //                 width: "20%"
-    //               },
-    //               "&__east": {
-    //                 width: "80%"
-    //               }
-    //             }
-    //           },
-    //           "&--8020": {
-    //             ".duk-template__two-column__content": {
-    //               "&__west": {
-    //                 width: "80%"
-    //               },
-    //               "&__east": {
-    //                 width: "20%"
-    //               }
-    //             }
-    //           }
-    //         }
-    //       },
-    //       "&__three-column": {
-    //         "&__content": {
-    //           display: "flex",
-    //           height: "100vh"
-    //         },
-    //         "&--333333": {
-    //           ".duk-template__three-column__content": {
-    //             "&__west": {
-    //               width: "33.333333%"
-    //             },
-    //             "&__central": {
-    //               width: "33.333333%"
-    //             },
-    //             "&__east": {
-    //               width: "33.333333%"
-    //             }
-    //           }
-    //         },
-    //         "&--204040": {
-    //           ".duk-template__three-column__content": {
-    //             "&__west": {
-    //               width: "20%"
-    //             },
-    //             "&__central": {
-    //               width: "40%"
-    //             },
-    //             "&__east": {
-    //               width: "40%"
-    //             }
-    //           }
-    //         },
-    //         "&--404020": {
-    //           ".duk-template__three-column__content": {
-    //             "&__west": {
-    //               width: "40%"
-    //             },
-    //             "&__central": {
-    //               width: "40%"
-    //             },
-    //             "&__east": {
-    //               width: "20%"
-    //             }
-    //           }
-    //         }
-    //       }
-    //     }
-    //   };
-    //
-    //   addComponents([list, logo, menu, navbar, template]);
-    // })
   ]
 };
