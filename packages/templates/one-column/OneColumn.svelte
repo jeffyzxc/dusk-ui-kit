@@ -18,9 +18,12 @@
   <div class="duk-template__one-column__header">
     <slot name="header" />
   </div>
-  <div class="duk-template__column duk-template__one-column__content">
-    <slot name="central" />
-    <slot />
+  <div class="duk-template__content duk-template__one-column__content">
+    <div
+      class="duk-template__column duk-template__one-column__content__central">
+      <slot name="central" />
+      <slot />
+    </div>
   </div>
   <div class="duk-template__one-column__footer">
     <slot name="footer" />

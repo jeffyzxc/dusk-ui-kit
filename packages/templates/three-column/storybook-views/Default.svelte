@@ -5,7 +5,7 @@
 
 <ThreeColumn
   {variant}
-  class="bg-purple-300 text-dark text-sm text-center w-screen">
+  class="bg-purple-100 text-dark text-sm text-center w-screen">
   <div
     slot="header"
     class="bg-white pt-5 h-32"

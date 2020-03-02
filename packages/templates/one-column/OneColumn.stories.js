@@ -5,7 +5,7 @@ import {
 } from "@storybook/addon-knobs";
 import DefaultView from "./storybook-views/Default.svelte";
 import readme from "./readme.stories.md";
-import "../../helpers/util.css";
+import "@dusk/styles/tailwind.css";
 
 export default {
   title: "Components/Templates/1 Column",
