@@ -9,7 +9,7 @@ import { action } from "@storybook/addon-actions";
 import { variants, sizes } from "@dusk/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import GroupView from "./storybook-views/Group.svelte";
-import "../../helpers/util.css";
+import "@dusk/styles/tailwind.css";
 import readme from "./readme.stories.md";
 
 export default {
