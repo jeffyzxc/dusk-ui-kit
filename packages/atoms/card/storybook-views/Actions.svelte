@@ -2,13 +2,14 @@
   import Card, { Content, Title, Actions } from "../";
   import Button from "@dusk/button";
   export let variant;
+  export let elevation;
   export let content;
   export let title;
   export let buttonText;
   export let buttonVariant;
 </script>
 
-<Card {variant} style="width: 305px">
+<Card {variant} {elevation} style="width: 305px">
   <Title>{title}</Title>
   <Content>{content}</Content>
   <Actions>

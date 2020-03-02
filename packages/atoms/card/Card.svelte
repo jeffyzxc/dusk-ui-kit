@@ -4,7 +4,8 @@
     forwardEventsBuilder,
     exclude,
     useActions,
-    variants
+    variants,
+    elevations
   } from "@dusk/helpers";
   import "./styles.css";
   const forwardEvents = forwardEventsBuilder(current_component);
@@ -12,8 +13,9 @@
   let className = "";
   export { className as class };
   export let variant = variants.ATOM.CARD.WHITE;
+  export let elevation = elevations.ATOM.CARD.SMALL;
 
-  function getClassNames(variant) {
+  function getClassNames(variant, elevation) {
     let classNames = "";
     switch (variant) {
       case variants.ATOM.CARD.BRAND:
@@ -50,6 +52,21 @@
         classNames += "";
     }
 
+    switch (elevation) {
+      case elevations.ATOM.CARD.SMALL:
+        classNames += " duk-card--elevated-small";
+        break;
+      case elevations.ATOM.CARD.MEDIUM:
+        classNames += " duk-card--elevated-medium";
+        break;
+      case elevations.ATOM.CARD.LARGE:
+        classNames += " duk-card--elevated-large";
+        break;
+      case elevations.ATOM.CARD.NONE:
+      default:
+        classNames += "";
+    }
+
     return classNames;
   }
 </script>
@@ -58,7 +75,7 @@
   use:useActions="{use}"
   use:forwardEvents
   class="duk-card {className}
-  {getClassNames(variant)}"
+  {getClassNames(variant, elevation)}"
   {...exclude($$props, ['use', 'class', 'variant'])}>
   <slot />
 </div>
