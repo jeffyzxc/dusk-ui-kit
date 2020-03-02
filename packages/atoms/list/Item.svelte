@@ -16,7 +16,11 @@
   class="duk-list__item {className}"
   {...exclude($$props, ['use', 'class', 'href'])}>
   <slot name="wrapper">
-    <svelte:component this="{wrapper}">
+    <svelte:component
+      this="{wrapper}"
+      aria-disabled="{!href}"
+      {href}
+      class="duk-list__item__wrapper">
       <slot />
     </svelte:component>
   </slot>
