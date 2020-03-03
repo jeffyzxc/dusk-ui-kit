@@ -2,7 +2,6 @@ import { configure, addParameters, addDecorator } from "@storybook/svelte";
 import { withA11y } from "@storybook/addon-a11y";
 import { backgroundColors as colors } from "./themes/dusk";
 import Centered from "@storybook/addon-centered/svelte";
-// import "../static/global.css";
 
 // let backgrounds = [];
 // for (const [key, value, index] of Object.entries(colors)) {

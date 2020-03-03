@@ -7,9 +7,8 @@ const postcssProcessor = (config = {}) => {
   const plugins = [
     require("postcss-import")(),
     require("postcss-url")(),
-    require("autoprefixer")(),
-    require("postcss-nested")(),
     require("tailwindcss")(tailwindConfig),
+    require("postcss-nested")(),
     require("cssnano")({
       preset: "default"
     })

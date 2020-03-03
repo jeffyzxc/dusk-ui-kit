@@ -7,8 +7,8 @@ import "@storybook/addon-viewport/register";
 import "@storybook/addon-a11y/register";
 import "@storybook/addon-links/register";
 import "@storybook/addon-knobs/register";
-import duskTheme from "./themes/dusk";
+import dusk from "./themes/dusk";
 
 addons.setConfig({
-  theme: duskTheme
+  theme: dusk
 });
