@@ -180,12 +180,8 @@ module.exports = {
       const doubleGap = theme("spacing.6", {});
       const template = {
         ".duk-template": {
-          "&__header": {
-            marginBottom: `${doubleGap}`
-          },
           "&__footer": {
             textAlign: "center",
-            marginTop: `${doubleGap}`,
             ".duk-navbar": {
               display: "block",
               fontSize: "inherit",

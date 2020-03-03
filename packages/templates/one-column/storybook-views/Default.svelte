@@ -1,5 +1,5 @@
 <script>
-  import OneColumn, { Header, Footer } from "../";
+  import OneColumn from "../";
 </script>
 
 <OneColumn class="bg-purple-100 text-dark text-sm text-center w-screen">

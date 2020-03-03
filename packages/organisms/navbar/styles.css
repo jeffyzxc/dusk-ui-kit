@@ -18,7 +18,7 @@
     &--hidden {
       @apply hidden;
       @screen lg {
-        display: block;
+        @apply block;
       }
     }
 

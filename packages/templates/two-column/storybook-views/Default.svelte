@@ -1,5 +1,5 @@
 <script>
-  import TwoColumn, { Header, Footer } from "../";
+  import TwoColumn from "../";
   export let variant;
 </script>
 

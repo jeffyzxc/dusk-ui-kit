@@ -45,7 +45,7 @@ import Button, { Label } from "@dusk/button";
 
 ```html
 <button variant="brand">
-  <label>Dusk UI Kit is awesome x{clicked}</label>
+  <label>Dusk UI Kit 🚀</label>
 </button>
 ```
 
