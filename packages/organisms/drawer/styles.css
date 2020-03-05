@@ -1,0 +1,127 @@
+.duk-drawer {
+  @apply py-8 px-6;
+
+  /* &__logo {
+    @apply inline-block self-center;
+  } */
+
+  &__content {
+    @apply flex flex-col justify-between h-screen;
+  }
+
+  /* &__menu {
+    @apply flex-grow w-full;
+
+    &--hidden {
+      @apply hidden;
+      @screen lg {
+        @apply block;
+      }
+    }
+
+    & > .duk-list--menu {
+      @apply flex-col my-5;
+      @screen lg {
+        @apply flex-row flex-1 justify-end my-0;
+      }
+    }
+
+    & > .duk-list__item {
+      @apply py-2;
+      @screen lg {
+        @apply px-2 py-0;
+      }
+    }
+    &:hover {
+      & a {
+        @apply opacity-50;
+      }
+      & a:hover {
+        @apply opacity-100;
+      }
+    }
+    @screen lg {
+      @apply self-center flex flex-shrink flex-grow-0 w-auto;
+    }
+  } */
+
+  &--brand {
+    @apply bg-purple-200 text-white;
+    & a,
+    a:hover {
+      @apply text-white;
+    }
+  }
+
+  &--cta {
+    @apply bg-orange-200 text-white;
+    & a,
+    a:hover {
+      @apply text-white;
+    }
+  }
+
+  &--info {
+    @apply bg-purple-200 text-white;
+    & a,
+    a:hover {
+      @apply text-white;
+    }
+  }
+
+  &--success {
+    @apply bg-green-200 text-white;
+    & a,
+    a:hover {
+      @apply text-white;
+    }
+  }
+
+  &--warning {
+    @apply bg-yellow-200 text-white;
+    & a,
+    a:hover {
+      @apply text-white;
+    }
+  }
+
+  &--danger {
+    @apply bg-red-200 text-white;
+    & a,
+    a:hover {
+      @apply text-white;
+    }
+  }
+
+  &--white {
+    @apply bg-white text-black;
+    & a,
+    a:hover {
+      @apply text-black;
+    }
+  }
+
+  &--light {
+    @apply bg-gray-200 text-gray-800;
+    & a,
+    a:hover {
+      @apply text-gray-200;
+    }
+  }
+
+  &--dark {
+    @apply bg-gray-800 text-gray-200;
+    & a,
+    a:hover {
+      @apply text-gray-200;
+    }
+  }
+
+  &--black {
+    @apply bg-black text-white;
+    & a,
+    a:hover {
+      @apply text-white;
+    }
+  }
+}
