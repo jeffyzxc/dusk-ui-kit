@@ -14,6 +14,7 @@
   import { Div, A } from "@dusk/elements";
 
   import ArrowLeftCircle from "./icons/ArrowLeftCircle.svelte";
+  import ArrowRightCircle from "./icons/ArrowRightCircle.svelte";
   import Brightness4 from "./icons/Brightness4.svelte";
   import Decimal from "./icons/Decimal.svelte";
   import AlertOutline from "./icons/AlertOutline.svelte";
@@ -120,6 +121,9 @@
         break;
       case icons.ARROW_LEFT_CIRCLE:
         selectedIcon = ArrowLeftCircle;
+        break;
+      case icons.ARROW_RIGHT_CIRCLE:
+        selectedIcon = ArrowRightCircle;
         break;
       case icons.CARD_SEARCH_OUTLINE:
         selectedIcon = CardSearchOutline;

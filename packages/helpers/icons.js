@@ -1,6 +1,7 @@
 export default {
   ALERT_OUTLINE: "alert-outline",
   ARROW_LEFT_CIRCLE: "arrow-left-circle",
+  ARROW_RIGHT_CIRCLE: "arrow-right-circle",
   BRIGHTNESS_4: "brightness-4",
   CARD_SEARCH_OUTLINE: "card-search-outline",
   CHART_LINE_VARIANT: "chart-line-variant",
