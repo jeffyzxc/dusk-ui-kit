@@ -1,0 +1,53 @@
+.duk-icon {
+  &--brand {
+    @apply text-purple-500 fill-current;
+  }
+
+  &--info {
+    @apply text-purple-500 fill-current;
+  }
+
+  &--success {
+    @apply text-green-500 fill-current;
+  }
+
+  &--warning {
+    @apply text-yellow-500 fill-current;
+  }
+
+  &--danger {
+    @apply text-red-500 fill-current;
+  }
+
+  &--dark {
+    @apply text-gray-800 fill-current;
+  }
+
+  &--light {
+    @apply text-gray-200 fill-current;
+  }
+
+  &--black {
+    @apply text-black fill-current;
+  }
+
+  &--white {
+    @apply text-white fill-current;
+  }
+
+  & > svg {
+    @apply h-6 w-6;
+  }
+
+  &--large {
+    > svg {
+      @apply h-16 w-16;
+    }
+  }
+
+  &--small {
+    > svg {
+      @apply h-4 w-4;
+    }
+  }
+}

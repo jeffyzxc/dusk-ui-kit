@@ -22,8 +22,8 @@ export default {
 
 const buttonVariants = variants.ATOM.BUTTON;
 const buttonVariantDefault = variants.ATOM.BUTTON.BRAND;
-const buttonSizes = sizes.BUTTON;
-const buttonSizeDefault = sizes.BUTTON.BASE;
+const buttonSizes = sizes.ATOM.BUTTON;
+const buttonSizeDefault = sizes.ATOM.BUTTON.BASE;
 
 export const Default = () => ({
   Component: DefaultView,

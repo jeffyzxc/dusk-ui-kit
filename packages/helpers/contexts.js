@@ -15,6 +15,7 @@ export default {
     NAVBAR: "logo:navbar"
   },
   MENU: {
+    DRAWER: "menu:drawer",
     NAVBAR: "menu:navbar"
   }
 };

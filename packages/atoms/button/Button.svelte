@@ -21,7 +21,7 @@
 
   export let variant = variants.ATOM.BUTTON.BRAND;
   export let outline = false;
-  export let size = sizes.BUTTON.BASE;
+  export let size = sizes.ATOM.BUTTON.BASE;
   export let href = null;
   export let component = href == null ? Button : A;
 
@@ -68,10 +68,10 @@
         classNames += "";
     }
     switch (size) {
-      case sizes.BUTTON.SMALL:
+      case sizes.ATOM.BUTTON.SMALL:
         classNames += " duk-button--small";
         break;
-      case sizes.BUTTON.LARGE:
+      case sizes.ATOM.BUTTON.LARGE:
         classNames += " duk-button--large";
         break;
       default:

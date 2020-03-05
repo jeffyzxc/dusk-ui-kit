@@ -1,7 +1,8 @@
 const path = require("path");
 const tailwindConfig = require("../packages/styles/dusk.tailwind.config.js");
 const mode = process.env.NODE_ENV;
-const dev = mode === "development";
+console.log(mode);
+const production = mode !== "development";
 
 const PACKAGES_DIR = path.resolve(__dirname, "../packages/");
 
@@ -17,7 +18,7 @@ const preprocessOptions = {
     }
   }
 };
-module.exports = ({ config, mode }) => {
+module.exports = ({ config }) => {
   const svelteLoader = config.module.rules.find(
     r => r.loader && r.loader.includes("svelte-loader")
   );
@@ -25,6 +26,7 @@ module.exports = ({ config, mode }) => {
   svelteLoader.options = {
     ...svelteLoader.options,
     preprocess: require("svelte-preprocess")(preprocessOptions),
+    dev: production,
     emitCss: true,
     hotReload: false
   };

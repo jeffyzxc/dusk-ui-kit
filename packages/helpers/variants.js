@@ -22,6 +22,18 @@ export default {
       WHITE: "white",
       BLACK: "black"
     },
+    ICON: {
+      BRAND: "brand",
+      CTA: "cta",
+      INFO: "info",
+      SUCCESS: "success",
+      WARNING: "warning",
+      DANGER: "danger",
+      LIGHT: "light",
+      DARK: "dark",
+      WHITE: "white",
+      BLACK: "black"
+    },
     LOGO: {
       BRAND: "brand",
       LIGHT: "light",
@@ -32,6 +44,18 @@ export default {
   },
   MOLECULE: {},
   ORGANISM: {
+    DRAWER: {
+      BRAND: "brand",
+      CTA: "cta",
+      INFO: "info",
+      SUCCESS: "success",
+      WARNING: "warning",
+      DANGER: "danger",
+      LIGHT: "light",
+      DARK: "dark",
+      WHITE: "white",
+      BLACK: "black"
+    },
     NAVBAR: {
       BRAND: "brand",
       CTA: "cta",

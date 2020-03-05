@@ -7,6 +7,7 @@ import contexts from "./contexts.js";
 import orientations from "./orientations.js";
 import types from "./types.js";
 import elevations from "./elevations.js";
+import icons from "./icons.js";
 
 // export default forwardEventsBuilder;
 export {
@@ -18,5 +19,6 @@ export {
   contexts,
   orientations,
   types,
-  elevations
+  elevations,
+  icons
 };
