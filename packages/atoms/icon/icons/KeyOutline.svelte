@@ -1,8 +1,8 @@
-<script context="module">
-  export let viewBox;
+<script>
+  export let viewbox;
 </script>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewbox="{viewBox}">
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="{viewbox}">
   <path
     d="M22,19H16V15H13.32C12.18,17.42 9.72,19 7,19C3.14,19 0,15.86 0,12C0,8.14
     3.14,5 7,5C9.72,5 12.17,6.58

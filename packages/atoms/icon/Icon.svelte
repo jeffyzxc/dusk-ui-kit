@@ -56,7 +56,7 @@
   export let name = null;
   export let href = null;
   export let size = sizes.ATOM.ICON.BASE;
-  export let viewBox = "0 0 24 24";
+  export let viewbox = "0 0 24 24";
   export let wrapper = href == null ? Div : A;
   export let variant = variants.ATOM.ICON.DARK;
 
@@ -132,9 +132,6 @@
         break;
       case icons.CHECKBOX_BLANK_CIRCLE:
         selectedIcon = CheckboxBlankCircle;
-        break;
-      case icons.CHECK_CIRCLE_CLOSE:
-        selectedIcon = CheckCircleClose;
         break;
       case icons.CHECK_CIRCLE_OUTLINE:
         selectedIcon = CheckCircleOutline;
@@ -224,6 +221,6 @@
   use="{[forwardEvents, ...use]}"
   class="duk-icon {className}
   {getClassNames(variant)}"
-  {...exclude($$props, ['use', 'class', 'variant', 'href', 'name'])}>
-  <svelte:component this="{getSelectedIcon(name)}" {viewBox} />
+  {...exclude($$props, ['use', 'class', 'variant', 'href', 'name', 'size'])}>
+  <svelte:component this="{getSelectedIcon(name)}" {viewbox} />
 </svelte:component>
