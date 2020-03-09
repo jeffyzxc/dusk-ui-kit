@@ -59,11 +59,13 @@
   export let size = sizes.ATOM.ICON.BASE;
   export let viewbox = "0 0 24 24";
   export let wrapper = href == null ? Div : A;
-  export let variant = variants.ATOM.ICON.DARK;
+  export let variant = null;
 
   let context = getContext("DUK:icon:context");
 
-  function getClassNames(variant) {
+  console.log(context);
+
+  function getClassNames(variant, size, context) {
     let classNames = "";
     switch (variant) {
       case variants.ATOM.ICON.BRAND:
@@ -102,6 +104,16 @@
         break;
       case sizes.ATOM.ICON.LARGE:
         classNames += " duk-icon--large";
+        break;
+      default:
+        classNames += "";
+    }
+    switch (context) {
+      case contexts.ICON.BUTTON:
+        classNames += " duk-button__icon";
+        break;
+      case contexts.ICON.LIST:
+        classNames += " duk-list__icon";
         break;
       default:
         classNames += "";
@@ -224,7 +236,7 @@
   this="{wrapper}"
   use="{[forwardEvents, ...use]}"
   class="duk-icon {className}
-  {getClassNames(variant)}"
+  {getClassNames(variant, size, context)}"
   {...exclude($$props, ['use', 'class', 'variant', 'href', 'name', 'size'])}>
   <svelte:component this="{getSelectedIcon(name)}" {viewbox} />
 </svelte:component>

@@ -1,4 +1,5 @@
 .duk-icon {
+  @apply fill-current;
   &--brand {
     @apply text-purple-500 fill-current;
   }
@@ -41,13 +42,13 @@
 
   &--large {
     > svg {
-      @apply h-16 w-16;
+      @apply h-8 w-8;
     }
   }
 
   &--small {
     > svg {
-      @apply h-4 w-4;
+      @apply h-5 w-5;
     }
   }
 }

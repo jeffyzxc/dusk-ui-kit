@@ -5,6 +5,10 @@ export default {
       DIALOG: "button:action:dialog"
     }
   },
+  ICON: {
+    BUTTON: "icon:button",
+    LIST: "icon:list"
+  },
   LABEL: {
     BUTTON: "label:button"
   },
