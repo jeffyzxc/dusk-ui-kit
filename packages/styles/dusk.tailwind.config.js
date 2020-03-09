@@ -322,7 +322,32 @@ module.exports = {
         }
       };
 
-      addComponents([template]);
+      const ripple = {
+        ".ripple": {
+          borderRadius: "50%",
+          position: "absolute",
+          transform: "scale(0)",
+          animation: "rippleffect 0.6s",
+          "&--brand": { backgroundColor: theme("colors.purple.100") },
+          "&--cta": { backgroundColor: theme("colors.orange.100") },
+          "&--info": { backgroundColor: theme("colors.purple.100") },
+          "&--success": { backgroundColor: theme("colors.green.100") },
+          "&--warning": { backgroundColor: theme("colors.yellow.100") },
+          "&--danger": { backgroundColor: theme("colors.red.100") },
+          "&--light": { backgroundColor: theme("colors.gray.300") },
+          "&--dark": { backgroundColor: theme("colors.gray.700") },
+          "&--black": { backgroundColor: theme("colors.gray.900") },
+          "&--white": { backgroundColor: theme("colors.gray.100") }
+        },
+        "@keyframes rippleffect": {
+          to: {
+            transform: "scale(2.5)",
+            opacity: "0"
+          }
+        }
+      };
+
+      addComponents([template, ripple]);
     })
   ]
 };

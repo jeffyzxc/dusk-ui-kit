@@ -8,6 +8,7 @@ import orientations from "./orientations.js";
 import types from "./types.js";
 import elevations from "./elevations.js";
 import icons from "./icons.js";
+import ripple from "./ripple.js";
 
 // export default forwardEventsBuilder;
 export {
@@ -20,5 +21,6 @@ export {
   orientations,
   types,
   elevations,
-  icons
+  icons,
+  ripple
 };

@@ -6,9 +6,10 @@ import {
   optionsKnob as options
 } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
-import { variants, sizes } from "@dusk/helpers";
+import { variants, sizes, icons } from "@dusk/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import GroupView from "./storybook-views/Group.svelte";
+import IconView from "./storybook-views/Icon.svelte";
 import "@dusk/styles/tailwind.css";
 import readme from "./readme.stories.md";
 
@@ -24,6 +25,8 @@ const buttonVariants = variants.ATOM.BUTTON;
 const buttonVariantDefault = variants.ATOM.BUTTON.BRAND;
 const buttonSizes = sizes.ATOM.BUTTON;
 const buttonSizeDefault = sizes.ATOM.BUTTON.BASE;
+const buttonIcons = icons;
+const buttonIconDefault = icons.DUSK_TICKER;
 
 export const Default = () => ({
   Component: DefaultView,
@@ -79,6 +82,25 @@ export const Group = () => ({
     button3_disabled: boolean("Button 3 Disabled", false),
     button3_outline: boolean("Button 3 Outline", false),
     button3_buttonText: text("Button 3 Value", "Group Button 3")
+  },
+  on: {
+    click: event => {
+      action(event);
+    }
+  }
+});
+
+export const withIcons = () => ({
+  Component: IconView,
+  props: {
+    variant: select("Variant", buttonVariants, buttonVariantDefault),
+    size: options("Size", buttonSizes, buttonSizeDefault, {
+      display: "radio"
+    }),
+    disabled: boolean("Disabled", false),
+    outline: boolean("Outline", false),
+    buttonText: text("Button Value", "Basic"),
+    iconName: select("Icon", buttonIcons, buttonIconDefault)
   },
   on: {
     click: event => {

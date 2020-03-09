@@ -4,7 +4,15 @@
 
 .duk-button {
   color: pink;
-  @apply border border-solid rounded text-sm py-2 px-4;
+  @apply border border-solid rounded text-sm py-2 px-4 relative overflow-hidden;
+
+  &__icon {
+    @apply inline-block align-middle pr-2;
+  }
+
+  &__label {
+    @apply inline-block align-middle;
+  }
 
   &--brand {
     @apply bg-purple-600 border-purple-600 text-white;

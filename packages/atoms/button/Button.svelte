@@ -11,6 +11,7 @@
   } from "@dusk/helpers";
   import { A, Button } from "@dusk/elements";
   import "./styles.css";
+  import createRipple from "@dusk/helpers/ripple.js";
 
   const forwardEvents = forwardEventsBuilder(current_component);
 
@@ -25,8 +26,8 @@
   export let href = null;
   export let component = href == null ? Button : A;
 
-  const contextId = "DUK:button:context";
-  let context = getContext(contextId);
+  let context = getContext("DUK:button:context");
+
   $: actionProp =
     context === contexts.BUTTON.ACTION.DIALOG && action !== null
       ? { "data-duk-card-button-action": action }
@@ -35,7 +36,11 @@
     context === contexts.BUTTON.ACTION.DIALOG && defaultAction
       ? { "data-duk-card-button-default": "" }
       : {};
-  setContext(contextId, contexts.LABEL.BUTTON);
+
+  setContext("DUK:label:context", contexts.LABEL.BUTTON);
+  setContext("DUK:icon:context", contexts.ICON.BUTTON);
+
+  const ripple = createRipple(variant);
 
   function getClassNames(variant, size, context, outline) {
     let classNames = "";
@@ -95,7 +100,7 @@
 
 <svelte:component
   this="{component}"
-  use="{[forwardEvents, ...use]}"
+  use="{[forwardEvents, ripple, ...use]}"
   class="duk-button {className}
   {getClassNames(variant, size, context, outline)}"
   {...actionProp}
