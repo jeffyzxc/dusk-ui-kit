@@ -1,5 +1,5 @@
 .duk-logo {
-  @apply inline-block;
+  @apply inline-block fill-current;
 
   &--brand {
     @apply text-purple-500 fill-current;

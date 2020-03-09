@@ -20,7 +20,7 @@
 
   export let href = null;
   export let wrapper = href == null ? Div : A;
-  export let variant = variants.ATOM.LOGO.DARK;
+  export let variant = null;
 
   let context = getContext("DUK:logo:context");
 
