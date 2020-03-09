@@ -6,8 +6,8 @@
 
 <Menu {orientation}>
   <List>
-    <Item href="#test">Navigation item</Item>
-    <Item href="#test">Another navigation item</Item>
+    <Item href="javascript://(0)">Navigation item</Item>
+    <Item href="javascript://(0)">Another navigation item</Item>
     <Item>More navigation here, with no link</Item>
   </List>
 </Menu>

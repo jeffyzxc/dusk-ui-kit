@@ -11,10 +11,10 @@
   <span slot="logo">
     <Logo variant="{logoVariant}" style="width: 90px" />
   </span>
-  <Menu orientation="horizontal">
+  <Menu orientation="horizontal" name="Website Navigation">
     <List>
-      <Item href="#test">Nav Item</Item>
-      <Item href="#test">Another Item</Item>
+      <Item href="javascript:;">Nav Item</Item>
+      <Item href="javascript:;">Another Item</Item>
       <Item>Not a link</Item>
     </List>
   </Menu>
