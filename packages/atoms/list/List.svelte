@@ -1,5 +1,5 @@
 <script>
-  import { getContext } from "svelte";
+  import { getContext, setContext } from "svelte";
   import { current_component } from "svelte/internal";
   import {
     forwardEventsBuilder,
@@ -19,6 +19,8 @@
   export let component = type == types.ATOM.LIST.NUMBERED ? Ol : Ul;
   let context = getContext("DUK:list:context");
 
+  setContext("DUK:icon:context", contexts.ICON.LIST);
+
   function getClassNames(type, context) {
     let classNames = "";
     switch (type) {
@@ -34,7 +36,6 @@
       default:
       //TODO: Exception handling
     }
-
     switch (context) {
       case contexts.LIST.MENU:
         classNames += " duk-list--menu";

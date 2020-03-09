@@ -6,6 +6,7 @@ import {
 import { action } from "@storybook/addon-actions";
 import { variants, sizes, types } from "@dusk/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
+import IconView from "./storybook-views/Icon.svelte";
 import readme from "./readme.stories.md";
 import "@dusk/styles/tailwind.css";
 
@@ -19,6 +20,13 @@ export default {
 
 export const Default = () => ({
   Component: DefaultView,
+  props: {
+    type: select("Type", types.ATOM.LIST, types.ATOM.LIST.NONE)
+  }
+});
+
+export const WithIcons = () => ({
+  Component: IconView,
   props: {
     type: select("Type", types.ATOM.LIST, types.ATOM.LIST.NONE)
   }
