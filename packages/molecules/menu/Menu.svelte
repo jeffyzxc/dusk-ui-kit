@@ -15,6 +15,7 @@
 
   let className = "";
   export { className as class };
+  export let name = null;
   export let orientation = orientations.MENU.VERTICAL;
 
   let context = getContext("DUK:menu:context");
@@ -63,6 +64,8 @@
   class="duk-menu {className}
   {getClassNames(orientation, context)}"
   id="{getId(context)}"
-  {...exclude($$props, ['use', 'class', 'orientation'])}>
+  role="navigation"
+  aria-label="{name || ''}"
+  {...exclude($$props, ['use', 'class', 'orientation', 'name'])}>
   <slot />
 </nav>

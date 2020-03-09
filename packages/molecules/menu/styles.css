@@ -1,12 +1,18 @@
 .duk-menu {
+  > .duk-list--menu {
+    [aria-disabled="true"] {
+      @apply opacity-50 cursor-not-allowed;
+    }
+  }
+
   &--vertical {
     > .duk-list--menu {
       @apply flex flex-col;
 
       .duk-list__item {
         a,
-        div {
-          @apply block px-3 py-1 text-left;
+        span {
+          @apply block px-3 py-2 text-left;
         }
       }
     }
@@ -18,7 +24,7 @@
 
       .duk-list__item {
         a,
-        div {
+        span {
           @apply block p-3 text-center;
         }
       }

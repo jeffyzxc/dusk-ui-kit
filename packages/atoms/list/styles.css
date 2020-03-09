@@ -1,11 +1,30 @@
 .duk-list {
   @apply list-none;
 
+  &__item__wrapper {
+    @apply align-middle relative overflow-hidden;
+
+    &__wrapper {
+      @apply block;
+    }
+  }
+
+  &__icon {
+    @apply inline-block align-middle pr-2;
+  }
+
   &--numbered {
     @apply list-decimal;
+
+    & > .duk-list__item__wrapper {
+      @apply overflow-visible;
+    }
   }
 
   &--bulleted {
     @apply list-disc;
+    & > .duk-list__item__wrapper {
+      @apply overflow-visible;
+    }
   }
 }
