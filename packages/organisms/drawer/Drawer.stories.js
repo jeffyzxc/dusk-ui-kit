@@ -24,11 +24,6 @@ export const Default = () => ({
       "Drawer Variant",
       variants.ORGANISM.DRAWER,
       variants.ORGANISM.DRAWER.BRAND
-    ),
-    logoVariant: select(
-      "Logo Variant",
-      variants.ATOM.LOGO,
-      variants.ATOM.LOGO.WHITE
     )
   }
 });
