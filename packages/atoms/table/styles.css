@@ -1,0 +1,7 @@
+.duk-table {
+  @apply table-auto border-collapse;
+
+  &--fixed {
+    @apply table-fixed;
+  }
+}

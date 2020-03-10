@@ -5,6 +5,13 @@ export default {
       DIALOG: "button:action:dialog"
     }
   },
+  DATUM: {
+    ROW: {
+      BODY: "datum:row:body",
+      HEAD: "datum:row:head",
+      FOOT: "datum:row:foot"
+    }
+  },
   ICON: {
     BUTTON: "icon:button",
     LIST: "icon:list"
