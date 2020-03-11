@@ -158,6 +158,13 @@ module.exports = {
       addBase({
         a: { color: theme("colors.purple.700") },
         "a:hover": { color: theme("colors.purple.500") },
+        "abbr[title]": {
+          textDecoration: "none"
+        },
+        "abbr[title]:hover": {
+          cursor: "help",
+          textDecoration: `underline dotted theme("colors.purple.500")`
+        },
         body: {
           color: theme("colors.gray.900"),
           lineHeight: "1.5",
