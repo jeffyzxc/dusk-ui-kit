@@ -224,21 +224,12 @@ module.exports = {
           },
           "&__content": {
             overflow: "hidden",
-            padding: `0 theme("spacing.6")`,
-            margin: `0 -${gap}`
+            padding: `0 theme("spacing.3")`
           },
           "&__column": {
             margin: `0 ${gap}`
           },
-          "&__one-column": {
-            "&__content": {
-              height: "100vh"
-            }
-          },
           "&__two-column": {
-            "&__content": {
-              height: "100vh"
-            },
             // [`@media (${screens.sm})`]: {
             "@media (min-width: 640px)": {
               "&__content": {
@@ -277,13 +268,9 @@ module.exports = {
             }
           },
           "&__three-column": {
-            "&__content": {
-              height: "100vh"
-            },
-            "@media (min-width: 640px)": {
+            "@media (min-width: 1024px)": {
               "&__content": {
-                display: "flex",
-                height: "100vh"
+                display: "flex"
               },
               "&--333333": {
                 ".duk-template__three-column__content": {
