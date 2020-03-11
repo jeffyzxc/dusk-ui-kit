@@ -4,12 +4,13 @@
   import { A, Span, Li } from "@dusk/elements";
   import createRipple from "@dusk/helpers/ripple.js";
   const forwardEvents = forwardEventsBuilder(current_component);
-  const ripple = createRipple();
   export let use = [];
   let className = "";
   export { className as class };
   export let href = null;
   export let wrapper = href == null ? Span : A;
+  const ripple = createRipple();
+  if (href) use.push(ripple);
 </script>
 
 <svelte:component
@@ -19,8 +20,7 @@
   <slot name="wrapper">
     <svelte:component
       this="{wrapper}"
-      use="{[forwardEvents, ripple, ...use]}"
-      aria-disabled="{!href}"
+      use="{[forwardEvents, ...use]}"
       {href}
       class="duk-list__item__wrapper">
       <slot />
