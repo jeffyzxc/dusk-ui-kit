@@ -17,11 +17,8 @@
   export { className as class };
   export let type = types.ATOM.TABLE.BASE;
   export let fixed = false;
-  // export let component = type == types.ATOM.LIST.NUMBERED ? Ol : Ul;
 
-  // setContext("DUK:icon:context", contexts.ICON.LIST);
-
-  function getClassNames(type) {
+  function getClassNames(type, fixed) {
     let classNames = "";
     switch (type) {
       case types.ATOM.TABLE.BASE:
@@ -45,7 +42,7 @@
 <Table
   use="{[forwardEvents, ...use]}"
   class="duk-table {className}
-  {getClassNames(type)}"
+  {getClassNames(type, fixed)}"
   {...exclude($$props, ['use', 'class'])}>
   <slot name="head" />
   <slot />

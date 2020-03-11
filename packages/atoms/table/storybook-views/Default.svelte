@@ -5,23 +5,23 @@
 <Table>
   <thead slot="head">
     <Row type="head">
-      <Datum class="px-4 py-2">Col Head 1</Datum>
-      <Datum class="px-4 py-2">Col Head 2</Datum>
-      <Datum class="px-4 py-2">Col Head 3</Datum>
+      <Datum>Col 1 Head</Datum>
+      <Datum>Col 2 Head</Datum>
+      <Datum>Col 3 Head</Datum>
     </Row>
   </thead>
   <tbody>
     <Row>
-      <Datum class="px-4 py-2">Col 1 data</Datum>
-      <Datum class="px-4 py-2">Col 2 data</Datum>
-      <Datum class="px-4 py-2">Col 3 data</Datum>
+      <Datum>Col 1 data</Datum>
+      <Datum>Col 2 data</Datum>
+      <Datum>Col 3 data</Datum>
     </Row>
   </tbody>
   <tfoot slot="foot">
     <Row type="foot">
-      <Datum class="px-4 py-2">Col 1 Foot</Datum>
-      <Datum class="px-4 py-2">Col 2 Foot</Datum>
-      <Datum class="px-4 py-2">Col 3 Foot</Datum>
+      <Datum>Col 1 Foot</Datum>
+      <Datum>Col 2 Foot</Datum>
+      <Datum>Col 3 Foot</Datum>
     </Row>
   </tfoot>
 </Table>

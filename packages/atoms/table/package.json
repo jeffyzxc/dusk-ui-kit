@@ -1,6 +1,6 @@
 {
-  "name": "@dusk/list",
-  "description": "Dusk UI Kit - List",
+  "name": "@dusk/table",
+  "description": "Dusk UI Kit - Table",
   "version": "0.0.15-alpha.0",
   "author": "Kieran Hall <kieran@dusk.network>",
   "bugs": {

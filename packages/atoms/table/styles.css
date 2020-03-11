@@ -4,4 +4,20 @@
   &--fixed {
     @apply table-fixed;
   }
+
+  & > thead > tr {
+    @apply border-gray-300;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+
+    & > th {
+      @apply text-left;
+    }
+  }
+
+  &__row {
+    &__datum {
+      @apply px-8 py-4;
+    }
+  }
 }
