@@ -12,6 +12,7 @@
   const forwardEvents = forwardEventsBuilder(current_component);
 
   export let use = [];
+  export let title = null;
 
   let className = "";
   export { className as class };
@@ -72,8 +73,11 @@
   use:forwardEvents
   class="duk-navbar {className}
   {getClassNames(variant)}"
-  {...exclude($$props, ['use', 'class', 'variant'])}>
+  {...exclude($$props, ['use', 'class', 'variant', 'title'])}>
   <slot name="logo" />
+  {#if title}
+    <h1>{title}</h1>
+  {/if}
   <div class="duk-navbar__collapse">
     <button
       id="__DUK-navbar-toggle"
