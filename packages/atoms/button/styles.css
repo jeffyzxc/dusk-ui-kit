@@ -15,50 +15,50 @@
   }
 
   &--brand {
-    @apply bg-purple-600 border-purple-600 text-white;
+    @apply bg-purple-500 text-white border-none;
 
     &.duk-button--outline {
-      @apply bg-transparent text-purple-600;
+      @apply bg-transparent text-white border-white;
     }
   }
 
   &--cta {
-    @apply bg-orange-600 border-orange-600 text-white;
+    @apply bg-orange-500 border-none text-white;
 
     &.duk-button--outline {
-      @apply bg-transparent text-orange-600;
+      @apply bg-transparent text-white border-white;
     }
   }
 
   &--info {
-    @apply bg-purple-600 border-purple-600 text-white;
+    @apply bg-purple-300 border-none text-white;
 
     &.duk-button--outline {
-      @apply bg-transparent text-purple-600;
+      @apply bg-transparent text-white border-white;
     }
   }
 
   &--success {
-    @apply bg-green-600 border-green-600 text-white;
+    @apply bg-green-500 border-none text-white;
 
     &.duk-button--outline {
-      @apply bg-transparent text-green-600;
+      @apply bg-transparent text-white border-white;
     }
   }
 
   &--warning {
-    @apply bg-yellow-600 border-yellow-600 text-white;
+    @apply bg-yellow-900 border-none text-white;
 
     &.duk-button--outline {
-      @apply bg-transparent text-yellow-600;
+      @apply bg-transparent text-white border-white;
     }
   }
 
   &--danger {
-    @apply bg-red-600 border-red-600 text-white;
+    @apply bg-red-500 border-none text-white;
 
     &.duk-button--outline {
-      @apply bg-transparent text-red-600;
+      @apply bg-transparent text-white border-white;
     }
   }
 
