@@ -11,27 +11,27 @@
   }
 
   &--brand {
-    @apply bg-purple-200 border-purple-200 text-white;
+    @apply bg-purple-500 border-none text-white;
   }
 
   &--cta {
-    @apply bg-orange-200 border-orange-200 text-white;
+    @apply bg-orange-500 border-none text-white;
   }
 
   &--info {
-    @apply bg-purple-200 border-purple-200 text-white;
+    @apply bg-purple-400 border-none text-white;
   }
 
   &--success {
-    @apply bg-green-200 border-green-200 text-white;
+    @apply bg-green-500 border-none text-white;
   }
 
   &--warning {
-    @apply bg-yellow-200 border-yellow-200 text-white;
+    @apply bg-yellow-500 border-none text-white;
   }
 
   &--danger {
-    @apply bg-red-200 border-red-200 text-white;
+    @apply bg-red-500 border-none text-white;
   }
 
   &--light {
