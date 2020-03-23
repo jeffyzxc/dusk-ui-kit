@@ -46,7 +46,7 @@
   } */
 
   &--brand {
-    @apply bg-purple-200 text-white;
+    @apply bg-purple-600 text-white;
     & a,
     a:hover {
       @apply text-white;
@@ -54,7 +54,7 @@
   }
 
   &--cta {
-    @apply bg-orange-200 text-white;
+    @apply bg-orange-500 text-white;
     & a,
     a:hover {
       @apply text-white;
@@ -62,7 +62,7 @@
   }
 
   &--info {
-    @apply bg-purple-200 text-white;
+    @apply bg-purple-400 text-white;
     & a,
     a:hover {
       @apply text-white;
@@ -70,7 +70,7 @@
   }
 
   &--success {
-    @apply bg-green-200 text-white;
+    @apply bg-green-500 text-white;
     & a,
     a:hover {
       @apply text-white;
@@ -78,7 +78,7 @@
   }
 
   &--warning {
-    @apply bg-yellow-200 text-white;
+    @apply bg-yellow-900 text-white;
     & a,
     a:hover {
       @apply text-white;
@@ -86,7 +86,7 @@
   }
 
   &--danger {
-    @apply bg-red-200 text-white;
+    @apply bg-red-500 text-white;
     & a,
     a:hover {
       @apply text-white;
@@ -102,7 +102,7 @@
   }
 
   &--light {
-    @apply bg-gray-200 text-gray-800;
+    @apply bg-gray-900 text-white;
     & a,
     a:hover {
       @apply text-gray-200;
