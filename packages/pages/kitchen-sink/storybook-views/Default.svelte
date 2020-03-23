@@ -8,7 +8,7 @@
   import { variants, types } from "@dusk/helpers";
 </script>
 
-<TwoColumn class="bg-gray-300">
+<TwoColumn class="bg-gray-100">
   <div slot="header">
     <Header class="mb-6">
       <Navbar variant="brand">
@@ -25,7 +25,7 @@
     </Header>
   </div>
   <div slot="west">
-    <Card class="w-full mb-6" variant="cta">
+    <Card class="w-full mb-6" variant="brand">
       <Title>
         <h2>Milestones</h2>
       </Title>
@@ -78,7 +78,7 @@
   </div>
   <div slot="footer">
     <Footer class="mt-6">
-      <Navbar variant="dark">
+      <Navbar variant="brand">
         <Menu orientation="horizontal" class="mb -3">
           <List>
             <Item href="javascript:;">Legal</Item>
@@ -87,7 +87,7 @@
             <Item>Disabled</Item>
           </List>
         </Menu>
-        <small class="text-gray-400">Dusk Network 2020</small>
+        <small class="text-white">Dusk Network 2020</small>
       </Navbar>
     </Footer>
   </div>
