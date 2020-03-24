@@ -5,6 +5,9 @@ export default {
       DIALOG: "button:action:dialog"
     }
   },
+  CARD: {
+    ALERT: "alert:card"
+  },
   DATUM: {
     ROW: {
       BODY: "datum:row:body",

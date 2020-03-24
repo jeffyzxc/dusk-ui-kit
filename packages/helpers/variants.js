@@ -40,9 +40,30 @@ export default {
       DARK: "dark",
       WHITE: "white",
       BLACK: "black"
+    },
+    SWITCH: {
+      BRAND: "brand",
+      CTA: "cta",
+      INFO: "info",
+      SUCCESS: "success",
+      WARNING: "warning",
+      DANGER: "danger",
+      LIGHT: "light",
+      DARK: "dark"
     }
   },
-  MOLECULE: {},
+  MOLECULE: {
+    ALERT: {
+      BRAND: "brand",
+      CTA: "cta",
+      INFO: "info",
+      SUCCESS: "success",
+      WARNING: "warning",
+      DANGER: "danger",
+      LIGHT: "light",
+      DARK: "dark"
+    }
+  },
   ORGANISM: {
     DRAWER: {
       BRAND: "brand",
