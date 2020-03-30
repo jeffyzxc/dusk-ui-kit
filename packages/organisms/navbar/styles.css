@@ -28,31 +28,31 @@
     @apply inline-block self-center;
   }
 
-  &__menu {
+  &__menu--hidden {
+    @apply hidden;
+    @screen lg {
+      @apply block;
+    }
+  }
+
+  &__menu.duk-menu--horizontal {
     @apply flex-grow w-full;
 
-    &--hidden {
-      @apply hidden;
-      @screen lg {
-        @apply block;
-      }
-    }
-
-    & > .duk-list--menu {
+    & .duk-list--menu {
       @apply flex-col my-5;
       @screen lg {
         @apply flex-row flex-1 justify-end my-0;
       }
     }
 
-    & > .duk-list__item {
-      @apply py-2;
+    & .duk-list__item {
+      @apply py-0;
       @screen lg {
         @apply px-2 py-0;
       }
 
-      &__wrapper {
-        @apply opacity-50;
+      &__wrapper:is(a) {
+        @apply opacity-50 text-right py-2;
       }
     }
 

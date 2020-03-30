@@ -6,12 +6,11 @@
   }
 
   &--vertical {
-    > .duk-list--menu {
+    & .duk-list--menu {
       @apply flex flex-col;
 
-      .duk-list__item {
-        a,
-        span {
+      & .duk-list__item {
+        &__wrapper {
           @apply block px-3 py-2 text-left;
         }
       }
@@ -19,12 +18,11 @@
   }
 
   &--horizontal {
-    > .duk-list--menu {
+    & .duk-list--menu {
       @apply flex flex-row;
 
-      .duk-list__item {
-        a,
-        span {
+      & .duk-list__item {
+        &__wrapper {
           @apply block p-3 text-center;
         }
       }
