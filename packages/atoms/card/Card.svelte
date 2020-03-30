@@ -76,6 +76,6 @@
   use:forwardEvents
   class="duk-card {className}
   {getClassNames(variant, elevation)}"
-  {...exclude($$props, ['use', 'class', 'variant'])}>
+  {...exclude($$props, ['use', 'class', 'variant', 'elevation'])}>
   <slot />
 </div>
