@@ -8,6 +8,7 @@
   let className = "";
   export { className as class };
   export let href = null;
+  export let active = null;
   export let wrapper = href == null ? Span : A;
   const ripple = createRipple();
   if (href) use.push(ripple);
@@ -22,7 +23,7 @@
       this="{wrapper}"
       use="{[forwardEvents, ...use]}"
       {href}
-      class="duk-list__item__wrapper">
+      class="duk-list__item__wrapper {active ? 'duk-list__item__wrapper--active' : ''}">
       <slot />
     </svelte:component>
   </slot>

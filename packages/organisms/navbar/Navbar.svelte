@@ -77,7 +77,7 @@
   <div class="duk-navbar__title">
     <slot name="logo" />
     {#if title}
-      <h1>{title}</h1>
+      <h1 class="duk-navbar__title__heading">{title}</h1>
     {/if}
   </div>
   <div class="duk-navbar__collapse">

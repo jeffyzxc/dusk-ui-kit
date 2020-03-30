@@ -14,8 +14,9 @@
   <Menu orientation="horizontal" name="Website Navigation">
     <List>
       <Item href="javascript:;">Nav Item</Item>
-      <Item href="javascript:;">Another Item</Item>
-      <Item>Not a link</Item>
+      <Item href="javascript:;">Nav Item</Item>
+      <Item href="javascript:;" active>Active Item</Item>
+      <Item>Static Item</Item>
     </List>
   </Menu>
 </Navbar>

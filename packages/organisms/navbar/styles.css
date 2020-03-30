@@ -12,7 +12,7 @@
       @apply block fill-current h-8;
     }
 
-    h1 {
+    &__heading {
       @apply text-base ml-10;
     }
   }
@@ -46,13 +46,29 @@
     }
 
     & .duk-list__item {
-      @apply py-0;
+      @apply py-0 px-0;
       @screen lg {
-        @apply px-2 py-0;
+        @apply mx-3;
       }
 
-      &__wrapper:is(a) {
-        @apply opacity-50 text-right py-2;
+      &__wrapper {
+        @apply text-right py-2 px-0 border-r-2 border-transparent;
+
+        &:is(a):not(:disabled) {
+          @apply opacity-50;
+        }
+
+        &--active {
+          @apply border-gray-100 pr-5;
+
+          @screen lg {
+            @apply pr-0;
+          }
+        }
+
+        @screen lg {
+          @apply border-r-0 border-t-2;
+        }
       }
     }
 
