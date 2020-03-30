@@ -1,5 +1,21 @@
 .duk-navbar {
-  @apply items-center flex text-lg flex-wrap justify-between py-8 px-6 w-screen;
+  @apply items-center flex flex-wrap justify-between py-6 px-16 w-screen;
+
+  &__title {
+    @apply flex items-center flex-shrink-0;
+
+    & > div[slot="logo"] {
+      @apply inline-flex;
+    }
+
+    svg {
+      @apply block fill-current h-8;
+    }
+
+    h1 {
+      @apply text-base ml-10;
+    }
+  }
 
   &__collapse {
     @apply block;

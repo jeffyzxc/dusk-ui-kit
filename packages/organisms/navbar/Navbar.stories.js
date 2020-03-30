@@ -1,6 +1,7 @@
 import {
   withKnobs,
   select,
+  text,
   optionsKnob as options
 } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
@@ -24,11 +25,18 @@ export const Default = () => ({
       "Navbar Variant",
       variants.ORGANISM.NAVBAR,
       variants.ORGANISM.NAVBAR.BRAND
-    ),
-    logoVariant: select(
-      "Logo Variant",
-      variants.ATOM.LOGO,
-      variants.ATOM.LOGO.WHITE
+    )
+  }
+});
+
+export const WithTitle = () => ({
+  Component: DefaultView,
+  props: {
+    title: text("Navbar Title", "App Title"),
+    variant: select(
+      "Navbar Variant",
+      variants.ORGANISM.NAVBAR,
+      variants.ORGANISM.NAVBAR.BRAND
     )
   }
 });

@@ -4,13 +4,13 @@
   import List, { Item } from "@dusk/list";
   import Logo from "@dusk/logo";
   export let variant;
-  export let logoVariant;
+  export let title;
 </script>
 
-<Navbar {variant}>
-  <span slot="logo">
-    <Logo variant="{logoVariant}" style="width: 90px" />
-  </span>
+<Navbar {variant} {title}>
+  <div slot="logo">
+    <Logo />
+  </div>
   <Menu orientation="horizontal" name="Website Navigation">
     <List>
       <Item href="javascript:;">Nav Item</Item>
