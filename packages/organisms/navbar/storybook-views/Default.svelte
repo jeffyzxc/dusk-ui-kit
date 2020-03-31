@@ -7,7 +7,7 @@
   export let title;
 </script>
 
-<Navbar {variant} {title}>
+<Navbar {variant} {title} class="absolute top-0 left-0">
   <div slot="logo">
     <Logo />
   </div>

@@ -8,6 +8,7 @@
     contexts,
     variants
   } from "@dusk/helpers";
+  import Icon from "@dusk/icon";
   import "./styles.css";
   const forwardEvents = forwardEventsBuilder(current_component);
 
@@ -16,6 +17,8 @@
 
   let className = "";
   export { className as class };
+
+  let expanded = false;
 
   export let variant = variants.ORGANISM.NAVBAR.BRAND;
   setContext("DUK:menu:context", contexts.MENU.NAVBAR);
@@ -65,6 +68,8 @@
     document
       .getElementById("__DUK-navbar-menu")
       .classList.toggle("duk-navbar__menu--hidden");
+
+    expanded = !document.getElementById("__DUK-navbar-menu").classList.contains("duk-navbar__menu--hidden");
   };
 </script>
 
@@ -84,15 +89,12 @@
     <button
       id="__DUK-navbar-toggle"
       on:click="{toggleNavbar}"
-      class="duk-navbar__collapse__button flex items-center px-3 py-2 border
-      rounded">
-      <svg
-        class="duk-navbar__collapse__button__icon fill-current h-3 w-3"
-        viewbox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg">
-        <title>Menu</title>
-        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-      </svg>
+      class="duk-navbar__collapse__button">
+      {#if !expanded}
+        <Icon name="menu-burger" />
+      {:else}
+        <Icon name="menu-burger-close" />
+      {/if}
     </button>
   </div>
   <slot />

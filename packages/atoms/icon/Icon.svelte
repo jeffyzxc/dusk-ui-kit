@@ -63,8 +63,6 @@
 
   let context = getContext("DUK:icon:context");
 
-  console.log(context);
-
   function getClassNames(variant, size, context) {
     let classNames = "";
     switch (variant) {

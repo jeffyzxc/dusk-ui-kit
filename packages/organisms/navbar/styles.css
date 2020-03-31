@@ -1,5 +1,5 @@
 .duk-navbar {
-  @apply items-center flex flex-wrap justify-between py-6 px-16 w-screen;
+  @apply items-center flex flex-wrap justify-between py-5 px-5 w-screen;
 
   &__title {
     @apply flex items-center flex-shrink-0;
@@ -9,11 +9,11 @@
     }
 
     svg {
-      @apply block fill-current h-8;
+      @apply block fill-current h-6;
     }
 
     &__heading {
-      @apply text-base ml-10;
+      @apply font-semibold leading-relaxed text-base ml-12;
     }
   }
 
@@ -21,6 +21,10 @@
     @apply block;
     @screen lg {
       @apply hidden;
+    }
+
+    &__button {
+      @apply flex items-center;
     }
   }
 
@@ -39,35 +43,40 @@
     @apply flex-grow w-full;
 
     & .duk-list--menu {
-      @apply flex-col my-5;
+      @apply flex-col mt-5;
       @screen lg {
         @apply flex-row flex-1 justify-end my-0;
       }
     }
 
     & .duk-list__item {
-      @apply py-0 px-0;
+      @apply py-0 px-0 mb-5 leading-relaxed font-normal;
+
+      &:last-child {
+        @apply mb-0;
+      }
+
       @screen lg {
-        @apply mx-3;
+        @apply mb-0 mx-3;
       }
 
       &__wrapper {
-        @apply text-right py-2 px-0 border-r-2 border-transparent;
+        @apply text-right py-0 px-0;
 
-        &:is(a):not(:disabled) {
+        &:is(a) {
           @apply opacity-50;
         }
 
-        &--active {
-          @apply border-gray-100 pr-5;
-
-          @screen lg {
-            @apply pr-0;
-          }
+        @screen lg {
+          @apply shadow-none;
         }
 
-        @screen lg {
-          @apply border-r-0 border-t-2;
+        &--active {
+          @apply pr-5 shadow-active-r font-medium;
+
+          @screen lg {
+            @apply pr-0 shadow-active-t;
+          }
         }
       }
     }
