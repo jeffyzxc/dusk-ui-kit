@@ -23,6 +23,13 @@
 
   function getClassNames(orientation, context) {
     let classNames = "";
+    switch (context) {
+      case contexts.MENU.NAVBAR:
+        classNames += " duk-navbar__menu duk-navbar__menu--hidden";
+        break;
+      default:
+        classNames += "";
+    }
     switch (orientation) {
       case orientations.MENU.HORIZONTAL:
         classNames += " duk-menu--horizontal";
@@ -32,13 +39,6 @@
         break;
       default:
       //TODO: Exception handling
-    }
-    switch (context) {
-      case contexts.MENU.NAVBAR:
-        classNames += " duk-navbar__menu duk-navbar__menu--hidden";
-        break;
-      default:
-        classNames += "";
     }
 
     return classNames;
