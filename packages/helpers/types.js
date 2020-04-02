@@ -9,6 +9,10 @@ export default {
       BASE: "base",
       COMPACT: "compact",
       SPACIOUS: "spacious"
+    },
+    TEXT_FIELD: {
+      TEXT: "text",
+      PASSWORD: "password"
     }
   }
 };

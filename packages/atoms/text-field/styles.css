@@ -1,0 +1,11 @@
+.duk-text-field {
+  @apply rounded outline-none text-sm px-4 py-1;
+
+  &--light {
+    @apply bg-white text-gray-900;
+  }
+
+  &--dark {
+    @apply bg-gray-800 text-gray-100;
+  }
+}

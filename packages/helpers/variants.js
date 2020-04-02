@@ -34,6 +34,10 @@ export default {
       WHITE: "white",
       BLACK: "black"
     },
+    TEXT_FIELD: {
+      LIGHT: "light",
+      DARK: "dark"
+    },
     LOGO: {
       BRAND: "brand",
       LIGHT: "light",

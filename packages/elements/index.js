@@ -2,6 +2,7 @@ import A from "./A.svelte";
 import Button from "./Button.svelte";
 import Div from "./Div.svelte";
 import Group from "./Group.svelte";
+import Input from "./Input.svelte";
 import Label from "./Label.svelte";
 import Li from "./Li.svelte";
 import Ol from "./Ol.svelte";
@@ -20,6 +21,7 @@ export {
   Button,
   Div,
   Group,
+  Input,
   Label,
   Li,
   Ol,

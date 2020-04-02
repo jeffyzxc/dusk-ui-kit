@@ -19,6 +19,9 @@ export default {
     BUTTON: "icon:button",
     LIST: "icon:list"
   },
+  INPUT: {
+    TEXT: "input:text"
+  },
   LABEL: {
     BUTTON: "label:button"
   },
