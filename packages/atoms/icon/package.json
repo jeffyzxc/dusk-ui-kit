@@ -1,7 +1,7 @@
 {
   "name": "@dusk/icon",
   "description": "Dusk UI Kit - Icon",
-  "version": "0.0.21-alpha.0",
+  "version": "0.0.22-alpha.0",
   "author": "Kieran Hall <kieran@dusk.network>",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -11,8 +11,8 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk/elements": "^0.0.21-alpha.0",
-    "@dusk/helpers": "^0.0.21-alpha.0"
+    "@dusk/elements": "^0.0.22-alpha.0",
+    "@dusk/helpers": "^0.0.22-alpha.0"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.0.6",
