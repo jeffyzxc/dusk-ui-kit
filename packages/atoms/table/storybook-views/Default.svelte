@@ -1,8 +1,10 @@
 <script>
   import Table, { Row, Datum } from "../";
+
+  export let fixed;
 </script>
 
-<Table>
+<Table {fixed} class="w-screen">
   <thead slot="head">
     <Row type="head">
       <Datum>Col 1 Head</Datum>
@@ -16,12 +18,35 @@
       <Datum>Col 2 data</Datum>
       <Datum>Col 3 data</Datum>
     </Row>
-  </tbody>
-  <tfoot slot="foot">
-    <Row type="foot">
-      <Datum>Col 1 Foot</Datum>
-      <Datum>Col 2 Foot</Datum>
-      <Datum>Col 3 Foot</Datum>
+    <Row>
+      <Datum>Col 1 data</Datum>
+      <Datum>Col 2 data</Datum>
+      <Datum>Col 3 data</Datum>
     </Row>
-  </tfoot>
+    <Row>
+      <Datum>Col 1 data</Datum>
+      <Datum>Col 2 data</Datum>
+      <Datum>Col 3 data</Datum>
+    </Row>
+    <Row>
+      <Datum>Col 1 data</Datum>
+      <Datum>Col 2 data</Datum>
+      <Datum>Col 3 data</Datum>
+    </Row>
+    <Row>
+      <Datum>Col 1 data</Datum>
+      <Datum>Col 2 data</Datum>
+      <Datum>Col 3 data</Datum>
+    </Row>
+    <Row>
+      <Datum>Col 1 data</Datum>
+      <Datum>Col 2 data</Datum>
+      <Datum>Col 3 data</Datum>
+    </Row>
+    <Row>
+      <Datum>Col 1 data</Datum>
+      <Datum>Col 2 data</Datum>
+      <Datum>Col 3 data</Datum>
+    </Row>
+  </tbody>
 </Table>

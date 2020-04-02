@@ -1,23 +1,21 @@
 .duk-table {
-  @apply table-auto border-collapse;
+  @apply table-auto border-collapse leading-7;
 
   &--fixed {
     @apply table-fixed;
   }
 
-  & > thead > tr {
-    @apply border-gray-300;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
+  & > thead > tr > th {
+    @apply text-left font-bold;
+  }
 
-    & > th {
-      @apply text-left;
-    }
+  & > tbody > tr:nth-child(odd) {
+    @apply bg-gray-100;
   }
 
   &__row {
     &__datum {
-      @apply px-8 py-4;
+      @apply px-5 py-2;
     }
   }
 }

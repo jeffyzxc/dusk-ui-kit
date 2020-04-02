@@ -1,6 +1,6 @@
 import {
   withKnobs,
-  select,
+  boolean,
   optionsKnob as options
 } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
@@ -18,8 +18,8 @@ export default {
 };
 
 export const Default = () => ({
-  Component: DefaultView
-  // props: {
-  //   type: select("Type", types.ATOM.LIST, types.ATOM.LIST.NONE)
-  // }
+  Component: DefaultView,
+  props: {
+    fixed: boolean("Fixed Layout", false)
+  }
 });
