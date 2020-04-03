@@ -10,7 +10,7 @@
   import Icon from "@dusk/icon";
   import "./styles.css";
 
-  let title = "Alert!";
+  export let title = "Alert!";
   let className = "";
   export { className as class };
   export let variant = variants.MOLECULE.ALERT.WARNING;
@@ -53,10 +53,7 @@
   }
 
   const dismiss = () => {
-    document
-      .getElementById("__DUK-alert").remove()
-
-    expanded = !document.getElementById("__DUK-navbar-menu").classList.contains("duk-navbar__menu--hidden");
+    document.getElementById("__DUK-alert").remove();
   };
 </script>
 
@@ -66,7 +63,7 @@
   {getClassNames(variant, context)}"
   {variant}
   role="alertdialog" aria-labelledby="__DUK-alert-title" aria-describedby="__DUK-alert-content"
-  {...exclude($$props, ['class', 'variant'])}>
+  {...exclude($$props, ['class', 'variant', 'title'])}>
   <Title id="__DUK-alert-title" class="duk-alert__title">
     {title}
     <button

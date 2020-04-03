@@ -1,6 +1,7 @@
 import {
   withKnobs,
   select,
+  text,
   optionsKnob as options
 } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
@@ -24,6 +25,7 @@ export const Default = () => ({
       "Variant",
       variants.MOLECULE.ALERT,
       variants.MOLECULE.ALERT.WARNING
-    )
+    ),
+    title: text("Alert title", "Alert!")
   }
 });

@@ -1,2 +1,5 @@
 .duk-alert {
+  &__dismiss {
+    @apply pl-4;
+  }
 }

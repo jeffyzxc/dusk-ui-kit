@@ -89,7 +89,7 @@
     <button
       id="__DUK-navbar-toggle"
       aria-controls="__DUK-navbar-content"
-      aria-expanded="{expanded}" 
+      aria-expanded="{expanded}"
       aria-label="Toggle navigation"
       on:click="{toggleNavbar}"
       class="duk-navbar__collapse__button">
