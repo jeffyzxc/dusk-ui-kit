@@ -47,7 +47,7 @@
   }
 
   &--warning {
-    @apply bg-yellow-900 border-none text-white;
+    @apply bg-yellow-900 border-none text-gray-900;
 
     &.duk-button--outline {
       @apply bg-transparent text-white border-white;

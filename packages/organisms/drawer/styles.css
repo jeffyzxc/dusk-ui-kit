@@ -78,7 +78,8 @@
   }
 
   &--warning {
-    @apply bg-yellow-900 text-white;
+    @apply bg-yellow-900 text-gray-900;
+
     & a,
     a:hover {
       @apply text-white;
