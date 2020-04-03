@@ -73,7 +73,7 @@
   };
 </script>
 
-<div
+<nav
   use:useActions="{use}"
   use:forwardEvents
   class="duk-navbar {className}
@@ -85,9 +85,12 @@
       <h1 class="duk-navbar__title__heading">{title}</h1>
     {/if}
   </div>
-  <div class="duk-navbar__collapse">
+  <div id="__DUK-navbar-content" class="duk-navbar__collapse">
     <button
       id="__DUK-navbar-toggle"
+      aria-controls="__DUK-navbar-content"
+      aria-expanded="{expanded}" 
+      aria-label="Toggle navigation"
       on:click="{toggleNavbar}"
       class="duk-navbar__collapse__button">
       {#if !expanded}
@@ -98,4 +101,4 @@
     </button>
   </div>
   <slot />
-</div>
+</nav>

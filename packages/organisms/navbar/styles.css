@@ -129,7 +129,7 @@
   }
 
   &--warning {
-    @apply bg-yellow-500 text-white;
+    @apply bg-yellow-500 text-gray-900;
     & a,
     a:hover {
       @apply text-white;
