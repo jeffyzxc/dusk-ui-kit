@@ -1,7 +1,7 @@
 {
   "name": "@dusk/button",
   "description": "Dusk UI Kit - Button",
-  "version": "0.0.23-alpha.0",
+  "version": "0.0.24-alpha.0",
   "author": "Kieran Hall <kieran@dusk.network>",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -11,9 +11,9 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk/elements": "^0.0.23-alpha.0",
-    "@dusk/helpers": "^0.0.23-alpha.0",
-    "@dusk/icon": "^0.0.23-alpha.0"
+    "@dusk/elements": "^0.0.24-alpha.0",
+    "@dusk/helpers": "^0.0.24-alpha.0",
+    "@dusk/icon": "^0.0.24-alpha.0"
   },
   "devDependencies": {
     "postcss": "^7.0.26",
