@@ -7,6 +7,6 @@
 </script>
 
 <Card {variant} {elevation} style="width: 305px">
-  <Title>{title}</Title>
+  <Title><h3>{title}</h3></Title>
   <Content>{content}</Content>
 </Card>

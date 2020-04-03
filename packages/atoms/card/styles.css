@@ -1,53 +1,67 @@
 .duk-card {
-  @apply border border-solid rounded;
+  @apply rounded px-5 py-3;
 
   &__actions {
-    @apply py-3 px-4;
+    @apply pt-2;
   }
 
-  &__content,
   &__title {
-    @apply p-4;
+    @apply flex items-center justify-between pb-2 text-xl;
+
+    & > h1,
+    & > h2,
+    & > h3,
+    & > h4,
+    & > h5,
+    & > h6 {
+      @apply text-xl font-normal;
+    }
+  }
+
+  &__content {
+    & > p:last-child {
+      @apply m-0;
+    }
   }
 
   &--brand {
-    @apply bg-purple-500 border-none text-white;
+    @apply bg-purple-500 text-white;
   }
 
   &--cta {
-    @apply bg-orange-500 border-none text-white;
+    @apply bg-orange-500 text-white;
   }
 
   &--info {
-    @apply bg-purple-400 border-none text-white;
+    @apply bg-purple-400 text-white;
   }
 
   &--success {
-    @apply bg-green-500 border-none text-white;
+    @apply bg-green-500 text-white;
   }
 
   &--warning {
-    @apply bg-yellow-500 border-none text-white;
+    @apply bg-yellow-500 text-gray-900;
   }
 
   &--danger {
-    @apply bg-red-500 border-none text-white;
+    @apply bg-red-500 text-white;
   }
 
   &--light {
-    @apply bg-gray-200 border-gray-200 text-gray-800;
+    @apply bg-gray-200 text-gray-800;
   }
 
   &--dark {
-    @apply bg-gray-800 border-gray-800 text-gray-200;
+    @apply bg-gray-800 text-gray-200;
   }
 
   &--black {
-    @apply bg-black border-black text-white;
+    @apply bg-black text-white;
   }
 
   &--white {
-    @apply bg-white border-white text-black;
+    @apply bg-white text-black;
   }
 
   &--elevated-small {
