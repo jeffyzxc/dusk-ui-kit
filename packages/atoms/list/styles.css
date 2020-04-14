@@ -10,7 +10,7 @@
   }
 
   &__icon {
-    @apply inline-block align-middle pr-2;
+    @apply inline-block align-middle pr-1;
   }
 
   &--numbered {

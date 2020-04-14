@@ -1,79 +1,87 @@
 .duk-drawer {
-  @apply py-6 px-5;
+  @apply pt-8 pb-5 w-56;
 
   &__header {
-    @apply flex flex-wrap items-center mb-3;
+    @apply flex flex-wrap items-center justify-center mb-8;
+
+    & > .duk-logo svg {
+      @apply fill-current;
+    }
   }
 
   &__content {
     @apply flex flex-col justify-between h-screen;
+
+    & > .duk-menu--vertical .duk-list--menu .duk-list__item__wrapper {
+      @apply text-sm leading-relaxed pl-5;
+
+      & .duk-list--menu {
+        @apply mt-2;
+
+        & .duk-list__item__wrapper {
+          @apply pl-3 pr-0 pt-0 pb-2;
+        }
+      }
+    }
   }
-
-  /* &__menu {
-    @apply flex-grow w-full;
-
-    &--hidden {
-      @apply hidden;
-      @screen lg {
-        @apply block;
-      }
-    }
-
-    & > .duk-list--menu {
-      @apply flex-col my-5;
-      @screen lg {
-        @apply flex-row flex-1 justify-end my-0;
-      }
-    }
-
-    & > .duk-list__item {
-      @apply py-2;
-      @screen lg {
-        @apply px-2 py-0;
-      }
-    }
-    &:hover {
-      & a {
-        @apply opacity-50;
-      }
-      & a:hover {
-        @apply opacity-100;
-      }
-    }
-    @screen lg {
-      @apply self-center flex flex-shrink flex-grow-0 w-auto;
-    }
-  } */
 
   &--brand {
     @apply bg-purple-600 text-white;
+
     & a,
     a:hover {
       @apply text-white;
+    }
+
+    & > .duk-drawer__content {
+      & > .duk-menu--vertical .duk-list--menu .duk-list__item__wrapper--active {
+        @apply bg-gray-900 text-yellow-900;
+      }
     }
   }
 
   &--cta {
     @apply bg-orange-500 text-white;
+
     & a,
     a:hover {
       @apply text-white;
+    }
+
+    & > .duk-drawer__content {
+      & > .duk-menu--vertical .duk-list--menu .duk-list__item__wrapper--active {
+        @apply bg-gray-900 text-yellow-900;
+      }
     }
   }
 
   &--info {
     @apply bg-purple-400 text-white;
+
     & a,
     a:hover {
       @apply text-white;
+    }
+
+    & > .duk-drawer__content {
+      & > .duk-menu--vertical .duk-list--menu .duk-list__item__wrapper--active {
+        @apply bg-gray-900 text-yellow-900;
+      }
     }
   }
 
   &--success {
     @apply bg-green-500 text-white;
+
     & a,
     a:hover {
       @apply text-white;
+    }
+
+    & > .duk-drawer__content {
+      & > .duk-menu--vertical .duk-list--menu .duk-list__item__wrapper--active {
+        @apply bg-gray-900 text-green-900;
+      }
     }
   }
 
@@ -82,47 +90,88 @@
 
     & a,
     a:hover {
-      @apply text-white;
+      @apply text-gray-900;
+    }
+
+    & > .duk-drawer__content {
+      & > .duk-menu--vertical .duk-list--menu .duk-list__item__wrapper--active {
+        @apply bg-gray-900 text-yellow-900;
+      }
     }
   }
 
   &--danger {
     @apply bg-red-500 text-white;
+
     & a,
     a:hover {
       @apply text-white;
+    }
+
+    & > .duk-drawer__content {
+      & > .duk-menu--vertical .duk-list--menu .duk-list__item__wrapper--active {
+        @apply bg-gray-900 text-red-900;
+      }
     }
   }
 
   &--white {
     @apply bg-white text-black;
+
     & a,
     a:hover {
       @apply text-black;
     }
+
+    & > .duk-drawer__content {
+      & > .duk-menu--vertical .duk-list--menu .duk-list__item__wrapper--active {
+        @apply bg-black text-white;
+      }
+    }
   }
 
   &--light {
-    @apply bg-gray-900 text-white;
+    @apply bg-gray-200 text-gray-900;
+
     & a,
     a:hover {
-      @apply text-gray-200;
+      @apply text-gray-900;
+    }
+
+    & > .duk-drawer__content {
+      & > .duk-menu--vertical .duk-list--menu .duk-list__item__wrapper--active {
+        @apply bg-gray-900 text-gray-200;
+      }
     }
   }
 
   &--dark {
     @apply bg-gray-800 text-gray-200;
+
     & a,
     a:hover {
       @apply text-gray-200;
+    }
+
+    & > .duk-drawer__content {
+      & > .duk-menu--vertical .duk-list--menu .duk-list__item__wrapper--active {
+        @apply bg-gray-200 text-gray-900;
+      }
     }
   }
 
   &--black {
     @apply bg-black text-white;
+
     & a,
     a:hover {
       @apply text-white;
+    }
+
+    & > .duk-drawer__content {
+      & > .duk-menu--vertical .duk-list--menu .duk-list__item__wrapper--active {
+        @apply bg-white text-black;
+      }
     }
   }
 }
