@@ -13,6 +13,7 @@
   let className = "";
   export { className as class };
   export let type = null;
+  export let highlight = false;
 
   function getDatumContext(type) {
     let context = contexts.DATUM.ROW.BODY;
@@ -21,12 +22,19 @@
     return context;
   }
 
-  setContext("DUK:table:row:datum:context", getDatumContext(type));
+  const context = getDatumContext(type);
+  setContext("DUK:table:row:datum:context", context);
+
+  function getClassNames(highlight, context) {
+    let classNames = "";
+    if (highlight && context === contexts.DATUM.ROW.BODY) classNames += " duk-table__row--highlight";
+    return classNames;
+  }
 </script>
 
 <Tr
-  class="duk-table__row {className}"
+  class="duk-table__row {className} {getClassNames(highlight, context)}"
   use="{[forwardEvents, ...use]}"
-  {...exclude($$props, ['use', 'class'])}>
+  {...exclude($$props, ['use', 'class', 'highlight'])}>
   <slot />
 </Tr>
