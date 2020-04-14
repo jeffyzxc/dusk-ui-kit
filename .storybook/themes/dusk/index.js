@@ -5,9 +5,6 @@ import logo from "./logo.svg";
 
 const config = resolveConfig(tailwindConfig);
 const colors = config.theme.colors;
-// const backgroundColors = config.theme.backgroundColor;
-// const borderColors = config.theme.borderColor;
-// const textColors = config.theme.textColor;
 const fontFamily = config.theme.fontFamily;
 
 export default create({
