@@ -38,13 +38,13 @@
         classNames += " duk-menu--vertical";
         break;
       default:
-      //TODO: Exception handling
+        classNames += ""
     }
 
     return classNames;
   }
 
-  function getId() {
+  function getId(context) {
     let id = "";
     switch (context) {
       case contexts.MENU.NAVBAR:

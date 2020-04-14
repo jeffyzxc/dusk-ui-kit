@@ -5,12 +5,36 @@
     @apply table-fixed;
   }
 
-  & > thead > tr > th {
-    @apply text-left font-bold;
+  &--light {
+    @apply bg-white;
   }
 
-  & > tbody > tr:nth-child(odd) {
-    @apply bg-gray-100;
+  &--dark {
+    @apply bg-gray-900 text-white;
+  }
+
+  &--light&--striped {
+    & > tbody > tr:nth-child(odd) {
+      @apply bg-gray-100;
+    }
+
+    & > tbody > tr:nth-child(even) {
+      @apply bg-white;
+    }
+  }
+
+  &--dark&--striped {
+    & > tbody > tr:nth-child(odd) {
+      @apply bg-gray-700;
+    }
+
+    & > tbody > tr:nth-child(even) {
+      @apply bg-gray-900;
+    }
+  }
+
+  & > thead > tr > th {
+    @apply text-left font-bold;
   }
 
   &__row {

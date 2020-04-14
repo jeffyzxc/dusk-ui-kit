@@ -34,6 +34,10 @@ export default {
       WHITE: "white",
       BLACK: "black"
     },
+    TABLE: {
+      LIGHT: "light",
+      DARK: "dark"
+    },
     TEXT_FIELD: {
       LIGHT: "light",
       DARK: "dark"

@@ -2,9 +2,11 @@
   import Table, { Row, Datum } from "../";
 
   export let fixed;
+  export let striped;
+  export let variant;
 </script>
 
-<Table {fixed} class="w-screen">
+<Table {fixed} {striped} {variant} class="w-screen">
   <thead slot="head">
     <Row type="head">
       <Datum>Col 1 Head</Datum>

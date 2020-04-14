@@ -34,14 +34,14 @@
         classNames += " duk-list--bulleted";
         break;
       default:
-      //TODO: Exception handling
+        classNames += "";
     }
     switch (context) {
       case contexts.LIST.MENU:
         classNames += " duk-list--menu";
         break;
       default:
-      //TODO: Exception handling
+        classNames += "";
     }
 
     return classNames;
@@ -53,6 +53,6 @@
   use="{[forwardEvents, ...use]}"
   class="duk-list {className}
   {getClassNames(type, context)}"
-  {...exclude($$props, ['use', 'class', 'orientation', 'type'])}>
+  {...exclude($$props, ['use', 'class', 'type'])}>
   <slot />
 </svelte:component>
