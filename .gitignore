@@ -7,3 +7,4 @@ yarn-error.log
 /dev/
 /build/
 /static/global.css
+/storybook-static
