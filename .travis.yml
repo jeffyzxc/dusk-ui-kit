@@ -19,3 +19,6 @@ deploy:
   target_branch: gh-pages
   on:
     branch: master
+
+notifications:
+  webhooks: https://chat.dusk.network/hooks/j8w8YcFwMpuFJ7mgZ/a4KFgp9QbwfsyQbaQ6TDJYRZfdegjPT4e6ZjHzZ3gtDr4YDv
