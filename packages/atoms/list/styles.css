@@ -23,6 +23,7 @@
 
   &--bulleted {
     @apply list-disc;
+
     & > .duk-list__item__wrapper {
       @apply overflow-visible;
     }

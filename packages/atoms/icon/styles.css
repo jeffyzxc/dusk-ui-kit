@@ -1,5 +1,6 @@
 .duk-icon {
   @apply fill-current;
+
   &--brand {
     @apply text-purple-500 fill-current;
   }

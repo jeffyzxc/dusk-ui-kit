@@ -106,6 +106,7 @@
 
   &--cta {
     @apply bg-orange-500 text-white;
+
     & a,
     a:hover {
       @apply text-white;
@@ -114,6 +115,7 @@
 
   &--info {
     @apply bg-purple-400 text-white;
+
     & a,
     a:hover {
       @apply text-white;
@@ -122,6 +124,7 @@
 
   &--success {
     @apply bg-green-500 text-white;
+
     & a,
     a:hover {
       @apply text-white;
@@ -130,6 +133,7 @@
 
   &--warning {
     @apply bg-yellow-500 text-gray-900;
+
     & a,
     a:hover {
       @apply text-white;
@@ -138,6 +142,7 @@
 
   &--danger {
     @apply bg-red-500 text-white;
+
     & a,
     a:hover {
       @apply text-white;
@@ -146,6 +151,7 @@
 
   &--white {
     @apply bg-white text-black;
+
     & a,
     a:hover {
       @apply text-black;
@@ -154,6 +160,7 @@
 
   &--light {
     @apply bg-gray-200 text-gray-800;
+
     & a,
     a:hover {
       @apply text-gray-200;
@@ -162,6 +169,7 @@
 
   &--dark {
     @apply bg-gray-900 text-gray-200;
+
     & a,
     a:hover {
       @apply text-gray-200;
@@ -170,6 +178,7 @@
 
   &--black {
     @apply bg-black text-white;
+
     & a,
     a:hover {
       @apply text-white;
