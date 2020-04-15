@@ -1,6 +1,9 @@
 # <div align="center">:sparkles: Dusk UI Kit :sparkles:</div>
 
-<div align="center"><a href="https://travis-ci.com/dusk-network/dusk-ui-kit">
+<div align="center"><a href="https://npm.dusk.network:4873">
+  <img src="https://img.shields.io/npm/v/@dusk/helpers.svg?registry_uri=https://npm.dusk.network:4873" alt="TravisCI">
+</a>
+<a href="https://travis-ci.com/dusk-network/dusk-ui-kit">
   <img src="https://travis-ci.com/dusk-network/dusk-ui-kit.svg?token=epVgoKeysWpeWXA7Vyxt&amp;branch=master" alt="TravisCI">
 </a> <a href="https://dusk-network.github.io/dusk-ui-kit">
   <img src="https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg" alt="Storybook">
@@ -111,6 +114,6 @@ $ yarn storybook
 
 ### Latest Design
 
-<https://xd.adobe.com/view/f3f6eb08-9076-47d8-4261-75b8af8e3424-85c7/grid>
+<https://www.figma.com/file/ffGd6h7b4DlAycsxzk2whB/Dusk-Ui-Kit>
 
 **If there is a component you need or if you have any questions please open an issue!**
