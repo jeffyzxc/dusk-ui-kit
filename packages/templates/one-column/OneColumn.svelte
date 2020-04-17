@@ -5,16 +5,26 @@
   const forwardEvents = forwardEventsBuilder(current_component);
 
   export let use = [];
+  export let gutters = true;
 
   let className = "";
   export { className as class };
+
+  function getClassNames(gutters) {
+    let classNames = "";
+
+    if (gutters) classNames += "duk-template--gutters";
+
+    return classNames;
+  }
 </script>
 
 <div
   use:useActions="{use}"
   use:forwardEvents
-  class="duk-template duk-template__one-column {className}"
-  {...exclude($$props, ['use', 'class'])}>
+  class="duk-template duk-template__one-column {className}
+  {getClassNames(gutters)}"
+  {...exclude($$props, ['use', 'class', 'gutters'])}>
   <div class="duk-template__one-column__header">
     <slot name="header" />
   </div>

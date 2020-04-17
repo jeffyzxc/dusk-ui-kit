@@ -1,6 +1,6 @@
 import {
   withKnobs,
-  select,
+  boolean,
   optionsKnob as options
 } from "@storybook/addon-knobs";
 import DefaultView from "./storybook-views/Default.svelte";
@@ -16,5 +16,8 @@ export default {
 };
 
 export const Default = () => ({
-  Component: DefaultView
+  Component: DefaultView,
+  props: {
+    gutters: boolean("Gutters", true)
+  }
 });

@@ -1,8 +1,9 @@
 <script>
   import OneColumn from "../";
+  export let gutters;
 </script>
 
-<OneColumn class="bg-purple-100 text-dark text-sm text-center w-screen">
+<OneColumn {gutters} class="bg-purple-100 text-dark text-sm text-center w-screen">
   <div
     slot="header"
     class="bg-white pt-5 h-32"
