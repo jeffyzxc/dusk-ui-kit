@@ -206,7 +206,9 @@ module.exports = {
       const doubleGap = theme("spacing.6", {});
       const template = {
         ".duk-template": {
-          height: "100%",
+          display: "flex",
+          "min-height": "100vh",
+          "flex-direction": "column",
           width: "100%",
           "&__footer": {
             textAlign: "center",
@@ -244,19 +246,25 @@ module.exports = {
             }
           },
           "&__content": {
-            "min-height": "100vh",
-            overflow: "hidden",
-            padding: `0 theme("spacing.3")`
+            // padding: `0 theme("spacing.3")`,
+            display: "flex",
+            "flex-direction": "column",
+            flex: 1
           },
-          "&__column": {
-            height: "100%",
-            margin: `0 ${gap}`
+          "@media (min-width: 640px)": {
+            "&__content": {
+              "flex-direction": "row"
+            }
+          },
+          "&__one-column": {
+            "@media (min-width: 640px)": {
+              ".duk-template__one-column__content__central": {
+                width: "100%"
+              }
+            }
           },
           "&__two-column": {
             "@media (min-width: 640px)": {
-              "&__content": {
-                display: "flex"
-              },
               "&--5050": {
                 ".duk-template__two-column__content": {
                   "&__west": {
@@ -290,14 +298,10 @@ module.exports = {
             },
             "&--fixed": {
               ".duk-template__column": {
-                "min-height": 0,
-                overflow: "hidden",
-                margin: 0,
+                // margin: "0 !important",
                 width: "100%"
               },
               ".duk-template__two-column__content": {
-                display: "flex",
-                "flex-direction": "column",
                 "&__west": {
                   flex: "none",
                   order: "2 !important"
@@ -308,11 +312,7 @@ module.exports = {
                 }
               },
               "@media (min-width: 640px)": {
-                ".duk-template__column": {
-                  margin: `0 ${gap}`
-                },
                 ".duk-template__two-column__content": {
-                  "flex-direction": "row",
                   "&__west": {
                     "max-width": "128px",
                     order: "1 !important"
@@ -327,9 +327,6 @@ module.exports = {
           },
           "&__three-column": {
             "@media (min-width: 640px)": {
-              "&__content": {
-                display: "flex"
-              },
               "&--333333": {
                 ".duk-template__three-column__content": {
                   "&__west": {
@@ -368,6 +365,22 @@ module.exports = {
                     width: "20%"
                   }
                 }
+              }
+            }
+          },
+          "&--gutters": {
+            ".duk-template__content": {
+              padding: `0 ${gap}`,
+            },
+            ".duk-template__column": {
+              margin: `0 ${gap}`
+            },
+          },
+          "&--gutters.duk-template__two-column--fixed": {
+            ".duk-template__column": {
+              "margin": 0,
+              "@media (min-width: 640px)": {
+                margin: `0 ${gap}`
               }
             }
           }
