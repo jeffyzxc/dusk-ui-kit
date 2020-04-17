@@ -1,6 +1,7 @@
 import {
   withKnobs,
   select,
+  boolean,
   optionsKnob as options
 } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
@@ -24,6 +25,7 @@ export const Default = () => ({
       "Variants",
       variants.TEMPLATE.TWO_COL,
       variants.TEMPLATE.TWO_COL.TWENTY_EIGHTY
-    )
+    ),
+    gutters: boolean("Gutters", true)
   }
 });
