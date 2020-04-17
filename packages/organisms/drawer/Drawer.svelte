@@ -73,7 +73,7 @@
   class="duk-drawer {className}
   {getClassNames(variant)}"
   {...exclude($$props, ['use', 'class', 'variant'])}>
-  <div class="duk-drawer__header">
+  <div class="duk-drawer__header hidden sm:flex">
     <slot name="logo" />
   </div>
   <div class="duk-drawer__content">

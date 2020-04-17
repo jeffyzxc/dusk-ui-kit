@@ -1,5 +1,5 @@
 .duk-drawer {
-  @apply pt-8 pb-5 w-56;
+  @apply pt-8 pb-5 w-56 h-full;
 
   &__header {
     @apply flex flex-wrap items-center justify-center mb-8;
@@ -10,7 +10,7 @@
   }
 
   &__content {
-    @apply flex flex-col justify-between h-screen;
+    @apply flex flex-col justify-between h-full;
 
     & > .duk-menu--vertical .duk-list--menu .duk-list__item__wrapper {
       @apply text-sm leading-relaxed pl-5;
