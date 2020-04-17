@@ -102,7 +102,9 @@ export default {
     TWO_COL: {
       FIFTY_FIFTY: "50/50",
       TWENTY_EIGHTY: "20/80",
-      EIGHTY_TWENTY: "80/20"
+      EIGHTY_TWENTY: "80/20",
+      SIDEBAR_LEFT: "sidebar-left",
+      SIDEBAR_RIGHT: "sidebar-right",
     },
     THREE_COL: {
       THIRTY_THIRTY_THIRTY: "33/33/33",

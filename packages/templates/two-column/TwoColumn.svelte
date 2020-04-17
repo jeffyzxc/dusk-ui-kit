@@ -19,13 +19,19 @@
     let classNames = "";
     switch (variant) {
       case variants.TEMPLATE.TWO_COL.FIFTY_FIFTY:
-        classNames += " duk-template__two-column--5050";
+        classNames += "duk-template__two-column--5050";
         break;
       case variants.TEMPLATE.TWO_COL.TWENTY_EIGHTY:
-        classNames += " duk-template__two-column--2080";
+        classNames += "duk-template__two-column--2080";
         break;
       case variants.TEMPLATE.TWO_COL.EIGHTY_TWENTY:
-        classNames += " duk-template__two-column--8020";
+        classNames += "duk-template__two-column--8020";
+        break;
+      case variants.TEMPLATE.TWO_COL.SIDEBAR_LEFT:
+        classNames += "duk-template__two-column--fixed duk-template__two-column--sidebar-left";
+        break;
+      case variants.TEMPLATE.TWO_COL.SIDEBAR_RIGHT:
+        classNames += "duk-template__two-column--fixed duk-template__two-column--sidebar-left";
         break;
       default:
         classNames += "";

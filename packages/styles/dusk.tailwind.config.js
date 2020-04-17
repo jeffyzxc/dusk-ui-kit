@@ -184,6 +184,7 @@ module.exports = {
         },
         body: {
           color: theme("colors.gray.900"),
+          height: "100%",
           lineHeight: "1.5",
           letterSpacing: "0"
         },
@@ -191,6 +192,7 @@ module.exports = {
         h1: { fontSize: theme("fontSize.2xl") },
         h2: { fontSize: theme("fontSize.xl") },
         h3: { fontSize: theme("fontSize.lg") },
+        html: { height: "100%" },
         p: { marginBottom: theme("spacing.4") },
         code: {
           color: theme("colors.gray.700"),
@@ -204,6 +206,8 @@ module.exports = {
       const doubleGap = theme("spacing.6", {});
       const template = {
         ".duk-template": {
+          height: "100%",
+          width: "100%",
           "&__footer": {
             textAlign: "center",
             ".duk-navbar": {
@@ -240,14 +244,15 @@ module.exports = {
             }
           },
           "&__content": {
+            "min-height": "100vh",
             overflow: "hidden",
             padding: `0 theme("spacing.3")`
           },
           "&__column": {
+            height: "100%",
             margin: `0 ${gap}`
           },
           "&__two-column": {
-            // [`@media (${screens.sm})`]: {
             "@media (min-width: 640px)": {
               "&__content": {
                 display: "flex"
@@ -282,10 +287,46 @@ module.exports = {
                   }
                 }
               }
+            },
+            "&--fixed": {
+              ".duk-template__column": {
+                "min-height": 0,
+                overflow: "hidden",
+                margin: 0,
+                width: "100%"
+              },
+              ".duk-template__two-column__content": {
+                display: "flex",
+                "flex-direction": "column",
+                "&__west": {
+                  flex: "none",
+                  order: "2 !important"
+                },
+                "&__east": {
+                  flex: 1,
+                  order: "1 !important"
+                }
+              },
+              "@media (min-width: 640px)": {
+                ".duk-template__column": {
+                  margin: `0 ${gap}`
+                },
+                ".duk-template__two-column__content": {
+                  "flex-direction": "row",
+                  "&__west": {
+                    "max-width": "128px",
+                    order: "1 !important"
+                  },
+                  "&__east": {
+                    flex: "1",
+                    order: "2 !important"
+                  }
+                }
+              }
             }
           },
           "&__three-column": {
-            "@media (min-width: 1024px)": {
+            "@media (min-width: 640px)": {
               "&__content": {
                 display: "flex"
               },
