@@ -14,9 +14,13 @@
   let className = "";
   export { className as class };
   export let variant = variants.TEMPLATE.THREE_COL.THIRTY_THIRTY_THIRTY;
+  export let gutters = true;
 
-  function getClassNames(variant) {
+  function getClassNames(variant, gutters) {
     let classNames = "";
+
+    if (gutters) classNames += "duk-template--gutters";
+
     switch (variant) {
       case variants.TEMPLATE.THREE_COL.THIRTY_THIRTY_THIRTY:
         classNames += " duk-template__three-column--333333";
@@ -39,8 +43,8 @@
   use:useActions="{use}"
   use:forwardEvents
   class="duk-template duk-template__three-column {className}
-  {getClassNames(variant)}"
-  {...exclude($$props, ['use', 'class', 'variant'])}>
+  {getClassNames(variant, gutters)}"
+  {...exclude($$props, ['use', 'class', 'variant', 'gutters'])}>
   <div class="duk-template__three-column__header">
     <slot name="header" />
   </div>
