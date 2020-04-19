@@ -186,7 +186,8 @@ module.exports = {
           color: theme("colors.gray.900"),
           height: "100%",
           lineHeight: "1.5",
-          letterSpacing: "0"
+          letterSpacing: "0",
+          "-webkit-app-region": "drag"
         },
         "button:focus": { outline: "none" },
         h1: { fontSize: theme("fontSize.2xl") },
@@ -246,7 +247,6 @@ module.exports = {
             }
           },
           "&__content": {
-            // padding: `0 theme("spacing.3")`,
             display: "flex",
             "flex-direction": "column",
             flex: 1
@@ -298,7 +298,6 @@ module.exports = {
             },
             "&--fixed": {
               ".duk-template__column": {
-                // margin: "0 !important",
                 width: "100%"
               },
               ".duk-template__two-column__content": {
