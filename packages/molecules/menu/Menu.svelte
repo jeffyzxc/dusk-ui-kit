@@ -27,6 +27,9 @@
       case contexts.MENU.NAVBAR:
         classNames += " duk-navbar__menu duk-navbar__menu--hidden";
         break;
+      case contexts.MENU.DRAWER:
+        classNames += " duk-drawer__menu";
+        break;
       default:
         classNames += "";
     }

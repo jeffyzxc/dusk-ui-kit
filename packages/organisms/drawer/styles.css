@@ -1,25 +1,79 @@
 .duk-drawer {
-  @apply pt-8 pb-5 w-56 h-full;
-
   &__header {
-    @apply flex flex-wrap items-center justify-center mb-8;
+    @apply hidden px-5;
 
     & > .duk-logo svg {
       @apply fill-current;
     }
+
+    @screen sm {
+      @apply flex flex-wrap items-center justify-center mb-8;
+    }
+  }
+
+  @screen sm {
+    @apply pt-8 pb-5 flex flex-col;
   }
 
   &__content {
-    @apply flex flex-col justify-between h-full;
+    @apply flex flex-row w-screen;
 
-    & > .duk-menu--vertical .duk-list--menu .duk-list__item__wrapper {
-      @apply text-sm leading-relaxed pl-5;
+    & > .duk-drawer__menu {
+      @apply flex-1;
 
-      & .duk-list--menu {
-        @apply mt-2;
+      & > .duk-list--menu {
+        @apply flex-row;
+
+        & > .duk-list__item {
+          @apply flex-1;
+        }
 
         & .duk-list__item__wrapper {
-          @apply pl-3 pr-0 pt-0 pb-2;
+          @apply text-center text-sm leading-relaxed;
+
+          & > .duk-list__icon {
+            @apply block p-0 py-4;
+
+            & > svg {
+              @apply mx-auto;
+            }
+          }
+        }
+
+        & .duk-list--menu {
+          @apply hidden;
+        }
+      }
+    }
+
+    @screen sm {
+      @apply flex-col flex-grow justify-between h-full w-auto;
+
+      & > .duk-drawer__menu {
+        @apply flex-initial;
+
+        & > .duk-list--menu {
+          @apply mt-2 flex-col;
+
+          & > .duk-list__item {
+            @apply flex-1;
+          }
+
+          & .duk-list__item__wrapper {
+            @apply text-left;
+
+            & > .duk-list__icon {
+              @apply inline-block pr-1 py-0;
+
+              & > svg {
+                @apply m-0;
+              }
+            }
+          }
+
+          & .duk-list--menu {
+            @apply flex;
+          }
         }
       }
     }
