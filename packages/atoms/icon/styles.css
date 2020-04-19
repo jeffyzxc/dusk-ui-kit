@@ -1,6 +1,16 @@
 .duk-icon {
   @apply fill-current;
 
+  & > svg {
+    @apply h-6 w-6;
+  }
+
+  &.inline {
+    & > svg {
+      display: inline;
+    }
+  }
+
   &--brand {
     @apply text-purple-500 fill-current;
   }
@@ -35,10 +45,6 @@
 
   &--white {
     @apply text-white fill-current;
-  }
-
-  & > svg {
-    @apply h-6 w-6;
   }
 
   &--large {
