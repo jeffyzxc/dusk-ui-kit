@@ -10,6 +10,9 @@
 </a>
 <a href="https://lerna.js.org/">
   <img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg" alt="lerna">
+</a>
+<a href="https://svelte.dev">
+  <img src="https://img.shields.io/badge/svelte-v3-red.svg" alt="Svelte v3">
 </a></div>
 
 ## About the UI Kit
