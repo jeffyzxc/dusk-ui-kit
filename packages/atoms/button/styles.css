@@ -3,7 +3,7 @@
 }
 
 .duk-button {
-  @apply inline-block border border-solid rounded text-sm py-2 px-4 relative overflow-hidden;
+  @apply inline-block border border-solid rounded text-sm leading-relaxed py-2 px-4 relative overflow-hidden;
 
   &__icon {
     @apply inline-block align-middle pr-2;
@@ -158,7 +158,7 @@
   }
 
   &--large {
-    @apply text-xl py-2 px-5;
+    @apply text-xl py-3 px-5 leading-loose;
   }
 
   &--small {
