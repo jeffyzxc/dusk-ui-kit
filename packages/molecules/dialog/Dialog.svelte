@@ -61,7 +61,7 @@
         classNames += "";
     }
 
-    if (!title) classNames += "duk-dialog--empty-title"
+    if (!title) classNames += " duk-dialog--empty-title"
 
     return classNames;
   }
