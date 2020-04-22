@@ -203,4 +203,28 @@
     title="view-dashboard-outline"
     {variant}
     {size} />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="earth"
+    title="earth"
+    {variant}
+    {size} />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="magnify"
+    title="magnify"
+    {variant}
+    {size} />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="minus-circle-outline"
+    title="minus-circle-outline"
+    {variant}
+    {size} />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="store-outline"
+    title="store-outline"
+    {variant}
+    {size} />
 </div>

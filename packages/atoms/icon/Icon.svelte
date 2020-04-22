@@ -26,6 +26,7 @@
   import ContentCopy from "./icons/ContentCopy.svelte";
   import CloseCircleOutline from "./icons/CloseCircleOutline.svelte";
   import DuskTicker from "./icons/DuskTicker.svelte";
+  import Earth from "./icons/Earth.svelte";
   import EmailOutline from "./icons/EmailOutline.svelte";
   import EmailSendOutline from "./icons/EmailSendOutline.svelte";
   import EyeSettingsOutline from "./icons/EyeSettingsOutline.svelte";
@@ -38,10 +39,13 @@
   import FolderSearchOutline from "./icons/FolderSearchOutline.svelte";
   import HelpCircleOutline from "./icons/HelpCircleOutline.svelte";
   import KeyOutline from "./icons/KeyOutline.svelte";
+  import Magnify from "./icons/Magnify.svelte";
   import MenuBurger from "./icons/MenuBurger.svelte";
   import MenuBurgerClose from "./icons/MenuBurgerClose.svelte";
+  import MinusCircleOutline from "./icons/MinusCircleOutline.svelte";
   import Refresh from "./icons/Refresh.svelte";
   import ShareVariant from "./icons/ShareVariant.svelte";
+  import StoreOutline from "./icons/StoreOutline.svelte";
   import TrashCanOutline from "./icons/TrashCanOutline.svelte";
   import ViewDashboardOutline from "./icons/ViewDashboardOutline.svelte";
   import Wallet from "./icons/Wallet.svelte";
@@ -162,6 +166,9 @@
       case icons.DUSK_TICKER:
         selectedIcon = DuskTicker;
         break;
+      case icons.EARTH:
+        selectedIcon = Earth;
+        break;
       case icons.EMAIL_OUTLINE:
         selectedIcon = EmailOutline;
         break;
@@ -198,17 +205,26 @@
       case icons.KEY_OUTLINE:
         selectedIcon = KeyOutline;
         break;
+      case icons.MAGNIFY:
+        selectedIcon = Magnify;
+        break;
       case icons.MENU_BURGER:
         selectedIcon = MenuBurger;
         break;
       case icons.MENU_BURGER_CLOSE:
         selectedIcon = MenuBurgerClose;
         break;
+      case icons.MINUS_CIRCLE_OUTLINE:
+        selectedIcon = MinusCircleOutline;
+        break;
       case icons.REFRESH:
         selectedIcon = Refresh;
         break;
       case icons.SHARE_VARIANT:
         selectedIcon = ShareVariant;
+        break;
+      case icons.STORE_OUTLINE:
+        selectedIcon = StoreOutline;
         break;
       case icons.TRASH_CAN_OUTLINE:
         selectedIcon = TrashCanOutline;
