@@ -15,6 +15,10 @@
     @apply text-purple-500 fill-current;
   }
 
+  &--cta {
+    @apply text-orange-500 fill-current;
+  }
+
   &--info {
     @apply text-purple-500 fill-current;
   }

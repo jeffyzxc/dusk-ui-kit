@@ -73,6 +73,9 @@
       case variants.ATOM.ICON.BRAND:
         classNames += " duk-icon--brand";
         break;
+      case variants.ATOM.ICON.CTA:
+        classNames += " duk-icon--cta";
+        break;
       case variants.ATOM.ICON.INFO:
         classNames += " duk-icon--info";
         break;
