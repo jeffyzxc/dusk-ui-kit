@@ -82,6 +82,16 @@ export default {
       DANGER: "danger",
       LIGHT: "light",
       DARK: "dark"
+    },
+    DIALOG: {
+      BRAND: "brand",
+      CTA: "cta",
+      INFO: "info",
+      SUCCESS: "success",
+      WARNING: "warning",
+      DANGER: "danger",
+      LIGHT: "light",
+      DARK: "dark"
     }
   },
   ORGANISM: {

@@ -9,8 +9,8 @@ import types from "./types.js";
 import elevations from "./elevations.js";
 import icons from "./icons.js";
 import ripple from "./ripple.js";
+import Scrim from "./views/Scrim.svelte";
 
-// export default forwardEventsBuilder;
 export {
   exclude,
   forwardEventsBuilder,
@@ -22,5 +22,6 @@ export {
   types,
   elevations,
   icons,
-  ripple
+  ripple,
+  Scrim
 };

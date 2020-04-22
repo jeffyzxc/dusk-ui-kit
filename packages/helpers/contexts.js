@@ -6,7 +6,8 @@ export default {
     }
   },
   CARD: {
-    ALERT: "alert:card"
+    ALERT: "card:alert",
+    DIALOG: "card:dialog"
   },
   DATUM: {
     ROW: {

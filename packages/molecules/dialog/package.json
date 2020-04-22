@@ -1,0 +1,24 @@
+{
+  "name": "@dusk/dialog",
+  "description": "Dusk UI Kit - Dialog",
+  "version": "0.0.30-alpha.0",
+  "author": "Kieran Hall <kieran@dusk.network>",
+  "bugs": {
+    "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"LOL\" && exit 1"
+  },
+  "dependencies": {
+    "@dusk/elements": "^0.0.30-alpha.0",
+    "@dusk/helpers": "^0.0.30-alpha.0"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.0.6",
+    "postcss": "^7.0.26",
+    "postcss-load-config": "^2.1.0",
+    "svelte-preprocess": "^3.4.0",
+    "tailwindcss": "^1.2.0"
+  }
+}

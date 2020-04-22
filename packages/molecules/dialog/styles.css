@@ -1,0 +1,17 @@
+.duk-dialog {
+  @apply items-center z-50;
+
+  &--empty-title {
+    & .duk-dialog__title {
+      @apply justify-end;
+    }
+
+    & .duk-dialog__dismiss {
+      @apply pl-0;
+    }
+  }
+
+  &__dismiss {
+    @apply pl-4;
+  }
+}
