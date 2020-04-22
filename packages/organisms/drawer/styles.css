@@ -1,4 +1,6 @@
 .duk-drawer {
+  @apply font-light;
+
   &__header {
     @apply hidden px-5;
 
