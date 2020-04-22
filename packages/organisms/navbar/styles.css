@@ -1,5 +1,5 @@
 .duk-navbar {
-  @apply items-center flex flex-wrap justify-between py-5 px-5 w-screen;
+  @apply font-light items-center flex flex-wrap justify-between py-5 px-5 w-screen;
 
   &__title {
     @apply flex items-center flex-shrink-0;
@@ -50,7 +50,7 @@
     }
 
     & .duk-list--menu .duk-list__item {
-      @apply py-0 px-0 mb-5 leading-relaxed font-normal;
+      @apply py-0 px-0 mb-5 leading-relaxed font-light;
 
       &:last-child {
         @apply mb-0;
@@ -72,7 +72,7 @@
         }
 
         &--active {
-          @apply pr-5 shadow-active-r font-medium;
+          @apply pr-5 shadow-active-r font-normal;
 
           @screen lg {
             @apply pr-0 shadow-active-t;
