@@ -1,7 +1,7 @@
 {
   "name": "@dusk/helpers",
   "description": "Dusk UI Kit - Helpers",
-  "version": "0.0.30-alpha.0",
+  "version": "0.0.31-alpha.0",
   "author": "Kieran Hall <kieran@dusk.network>",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
