@@ -13,7 +13,7 @@
     }
 
     &__heading {
-      @apply font-semibold leading-relaxed text-base ml-12;
+      @apply font-medium leading-relaxed text-base ml-12;
     }
   }
 
