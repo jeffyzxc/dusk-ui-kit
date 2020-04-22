@@ -2,6 +2,8 @@ import {
   withKnobs,
   select,
   text,
+  boolean,
+  number,
   optionsKnob as options
 } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
@@ -18,6 +20,13 @@ export default {
   decorators: [withKnobs]
 };
 
+const opacityOptions = {
+   range: true,
+   min: 0,
+   max: 1,
+   step: 0.1,
+};
+
 export const Default = () => ({
   Component: DefaultView,
   props: {
@@ -26,6 +35,8 @@ export const Default = () => ({
       variants.MOLECULE.DIALOG,
       variants.MOLECULE.DIALOG.WHITE
     ),
-    title: text("Dialog title", "")
+    title: text("Dialog title", ""),
+    persistent: boolean("Persistent", false),
+    opacity: number("Overlay opacity", 0.5, opacityOptions)
   }
 });
