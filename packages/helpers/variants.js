@@ -42,6 +42,18 @@ export default {
       LIGHT: "light",
       DARK: "dark"
     },
+    LOADING_INDICATOR: {
+      BRAND: "brand",
+      CTA: "cta",
+      INFO: "info",
+      SUCCESS: "success",
+      WARNING: "warning",
+      DANGER: "danger",
+      LIGHT: "light",
+      DARK: "dark",
+      WHITE: "white",
+      BLACK: "black"
+    },
     LOGO: {
       BRAND: "brand",
       LIGHT: "light",
