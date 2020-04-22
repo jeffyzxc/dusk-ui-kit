@@ -8,7 +8,8 @@
     Scrim,
     exclude,
     contexts,
-    variants
+    variants,
+    elevations
   } from "@dusk/helpers";
   import Card, { Title, Content } from "@dusk/card";
   import Icon from "@dusk/icon";
@@ -75,6 +76,7 @@
         class="duk-dialog {className}
         {getClassNames(variant, context, title)}"
         {variant}
+        elevation="{elevations.ATOM.CARD.LARGE}"
         role="alertdialog"
         aria-modal="true"
         aria-labelledby="__DUK-dialog-title"
@@ -88,7 +90,7 @@
             aria-label="Dismiss dialog"
             on:click="{() => value = false}"
             class="duk-dialog__dismiss">
-            <Icon name="menu-burger-close" />
+            <Icon name="close-circle-outline" />
           </button>
         </Title>
         <Content id="__DUK-dialog-content" class="duk-dialog__content">
