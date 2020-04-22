@@ -86,17 +86,6 @@ Import Tailwind styles
 import "@dusk/styles/tailwind.css";
 ```
 
-Import font
-
-```html
-<!-- index.html -->
-
-<link
-  href="https://fonts.googleapis.com/css?family=Hind+Siliguri:400,500,600&display=swap"
-  rel="stylesheet"
-/>
-```
-
 **Check out the [examples repository](https://github.com/dusk-network/dusk-ui-kit-examples) for assistance!**
 
 ## Development
