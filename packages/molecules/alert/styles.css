@@ -1,4 +1,14 @@
 .duk-alert {
+  &--empty-title {
+    & .duk-alert__title {
+      @apply justify-end;
+    }
+
+    & .duk-alert__dismiss {
+      @apply pl-0;
+    }
+  }
+
   &__dismiss {
     @apply pl-4;
   }

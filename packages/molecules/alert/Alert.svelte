@@ -4,12 +4,14 @@
   import {
     exclude,
     contexts,
-    variants
+    variants,
+    elevations
   } from "@dusk/helpers";
   import Card, { Title, Content } from "@dusk/card";
   import Icon from "@dusk/icon";
   import "./styles.css";
 
+  export let value;
   export let title = "Alert!";
   let className = "";
   export { className as class };
@@ -18,7 +20,7 @@
   let context = getContext("DUK:alert:context");
   setContext("DUK:card:context", contexts.CARD.ALERT);
 
-  function getClassNames(variant, context) {
+  function getClassNames(variant, context, title) {
     let classNames = "";
     switch (variant) {
       case variants.MOLECULE.ALERT.BRAND:
@@ -49,33 +51,34 @@
         classNames += "";
     }
 
+    if (!title) classNames += " duk-alert--empty-title"
+
     return classNames;
   }
-
-  const dismiss = () => {
-    document.getElementById("__DUK-alert").remove();
-  };
 </script>
 
-<Card
-  id="__DUK-alert"
-  class="duk-alert {className}
-  {getClassNames(variant, context)}"
-  {variant}
-  role="alertdialog" aria-labelledby="__DUK-alert-title" aria-describedby="__DUK-alert-content"
-  {...exclude($$props, ['class', 'variant', 'title'])}>
-  <Title id="__DUK-alert-title" class="duk-alert__title">
-    {title}
-    <button
-      id="__DUK-alert-dismiss"
-      aria-controls="__DUK-alert"
-      aria-label="Dismiss alert"
-      on:click="{dismiss}"
-      class="duk-alert__dismiss">
-      <Icon name="menu-burger-close" />
-    </button>
-  </Title>
-  <Content id="__DUK-alert-content" class="duk-alert__content">
-    <slot />
-  </Content>
-</Card>
+{#if value}
+  <Card
+    id="__DUK-alert"
+    class="duk-alert {className}
+    {getClassNames(variant, context, title)}"
+    {variant}
+    elevation="{elevations.ATOM.CARD.MEDIUM}"
+    role="alertdialog" aria-labelledby="__DUK-alert-title" aria-describedby="__DUK-alert-content"
+    {...exclude($$props, ['class', 'variant', 'title'])}>
+    <Title id="__DUK-alert-title" class="duk-alert__title">
+      {title}
+      <button
+        id="__DUK-alert-dismiss"
+        aria-controls="__DUK-alert"
+        aria-label="Dismiss alert"
+        on:click="{() => value = false}"
+        class="duk-alert__dismiss">
+        <Icon name="close-circle-outline" />
+      </button>
+    </Title>
+    <Content id="__DUK-alert-content" class="duk-alert__content">
+      <slot />
+    </Content>
+  </Card>
+{/if}

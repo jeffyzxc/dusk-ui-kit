@@ -1,10 +1,10 @@
 <script>
   import Alert from "../";
-  import Card, { Title, Content } from "@dusk/card";
   export let variant;
   export let title;
+  let value = true;
 </script>
 
-<Alert {variant} {title}>
+<Alert {variant} {title} {value}>
   <p>This is an alert!</p>
 </Alert>
