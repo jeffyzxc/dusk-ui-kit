@@ -206,6 +206,15 @@ module.exports = {
       const gap = theme("spacing.3", {});
       const doubleGap = theme("spacing.6", {});
       const template = {
+        ".duk-scrim": {
+          backgroundColor: "black",
+          position: "fixed",
+          top: 0,
+          left: 0,
+          zIndex: 10,
+          width: "100%",
+          height: "100%"
+        },
         ".duk-template": {
           display: "flex",
           "min-height": "100vh",
