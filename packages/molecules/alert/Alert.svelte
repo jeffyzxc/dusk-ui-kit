@@ -13,6 +13,7 @@
 
   export let value;
   export let title = "Alert!";
+  export let dismissable = true;
   let className = "";
   export { className as class };
   export let variant = variants.MOLECULE.ALERT.WARNING;
@@ -68,14 +69,16 @@
     {...exclude($$props, ['class', 'variant', 'title'])}>
     <Title id="__DUK-alert-title" class="duk-alert__title">
       {title}
-      <button
-        id="__DUK-alert-dismiss"
-        aria-controls="__DUK-alert"
-        aria-label="Dismiss alert"
-        on:click="{() => value = false}"
-        class="duk-alert__dismiss">
-        <Icon name="close-circle-outline" />
-      </button>
+      {#if dismissable}
+        <button
+          id="__DUK-alert-dismiss"
+          aria-controls="__DUK-alert"
+          aria-label="Dismiss alert"
+          on:click="{() => value = false}"
+          class="duk-alert__dismiss">
+          <Icon name="close-circle-outline" />
+        </button>
+      {/if}
     </Title>
     <Content id="__DUK-alert-content" class="duk-alert__content">
       <slot />

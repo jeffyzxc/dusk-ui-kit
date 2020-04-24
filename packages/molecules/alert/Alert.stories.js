@@ -2,6 +2,7 @@ import {
   withKnobs,
   select,
   text,
+  boolean,
   optionsKnob as options
 } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
@@ -26,6 +27,7 @@ export const Default = () => ({
       variants.MOLECULE.ALERT,
       variants.MOLECULE.ALERT.WARNING
     ),
-    title: text("Alert title", "Alert!")
+    title: text("Alert title", "Alert!"),
+    dismissable: boolean("Dismissable?", true)
   }
 });
