@@ -19,6 +19,8 @@
   }
 
   &__content {
+    @apply font-light;
+
     & > p:last-child {
       @apply m-0;
     }
