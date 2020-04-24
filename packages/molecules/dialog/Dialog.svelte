@@ -1,5 +1,9 @@
 <script>
-  import { setContext, getContext, onMount } from "svelte";
+  import {
+    setContext,
+    getContext,
+    createEventDispatcher
+  } from "svelte";
   import { get_current_component } from "svelte/internal";
   // import { scale } from "svelte/transition";
   // import { quadIn } from "svelte/easing";
@@ -15,12 +19,13 @@
   import Icon from "@dusk/icon";
   import "./styles.css";
 
-  const forwardEvents = forwardEventsBuilder(get_current_component(), ['Dialog:opening', 'Dialog:opened', 'Dialog:closing', 'Dialog:closed']);
+  // const forwardEvents = forwardEventsBuilder(get_current_component(), ['Dialog:opening', 'Dialog:opened', 'Dialog:closing', 'Dialog:closed']);
+  const dispatch = createEventDispatcher();
 
-  export let value;
-  export let title = "";
   let className = "";
-  export { className as class };
+  export { className as class }
+  export let value;
+  export let title = "";;
   export let variant = variants.MOLECULE.DIALOG.WHITE;
   export let opacity = 0.5;
   export let persistent = false;
@@ -65,11 +70,20 @@
 
     return classNames;
   }
+
+  function closeDialog() {
+    // console.log('closing dialog')
+    value = false
+    dispatch("dialogClose", {
+      componentId: '__DUK-dialog'
+    });
+
+  }
 </script>
 
 {#if value}
   <div class="fixed w-full h-full top-0 left-0 z-30">
-    <Scrim {opacity} on:click={() => !persistent && (value = false)} />
+    <Scrim {opacity} on:click={() => !persistent && closeDialog()} />
     <div class="h-full w-full absolute flex items-center justify-center">
       <Card
         id="__DUK-dialog"
@@ -88,7 +102,7 @@
             id="__DUK-dialog-dismiss"
             aria-controls="__DUK-dialog"
             aria-label="Dismiss dialog"
-            on:click="{() => value = false}"
+            on:click="{closeDialog}"
             class="duk-dialog__dismiss">
             <Icon name="close-circle-outline" />
           </button>

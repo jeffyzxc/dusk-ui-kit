@@ -20,6 +20,10 @@ export default {
   decorators: [withKnobs]
 };
 
+export const actionsData = {
+  onDialogClose: action("onDialogClose")
+};
+
 const opacityOptions = {
    range: true,
    min: 0,
@@ -38,5 +42,8 @@ export const Default = () => ({
     title: text("Dialog title", ""),
     persistent: boolean("Persistent", false),
     opacity: number("Overlay opacity", 0.5, opacityOptions)
+  },
+  on: {
+    ...actionsData
   }
 });
