@@ -12,5 +12,8 @@
   },
   "dependencies": {
     "@dusk/helpers": "^0.0.33-alpha.0"
+  },
+  "peerDependencies": {
+    "svelte": "^3.0.0"
   }
 }

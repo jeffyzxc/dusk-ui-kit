@@ -17,6 +17,7 @@
     "postcss-load-config": "^2.1.0",
     "postcss-nested": "^4.2.1",
     "postcss-url": "^8.0.0",
+    "cssnano": "^4.1.10",
     "rollup-plugin-postcss": "^2.1.1",
     "tailwindcss": "^1.2.0"
   },

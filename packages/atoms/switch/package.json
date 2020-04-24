@@ -15,8 +15,7 @@
     "@dusk/helpers": "^0.0.33-alpha.0",
     "@dusk/icon": "^0.0.33-alpha.0"
   },
-  "devDependencies": {
-    "postcss": "^7.0.26",
-    "tailwindcss": "^1.2.0"
+  "peerDependencies": {
+    "svelte": "^3.0.0"
   }
 }
