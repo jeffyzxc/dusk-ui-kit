@@ -16,14 +16,14 @@
   &--brand {
     @apply bg-purple-500 text-white border-none;
 
-    &:hover {
+    &:hover, &.active {
       @apply bg-purple-900 text-white;
     }
 
     &.duk-button--outline {
       @apply bg-transparent text-white border border-solid border-white;
 
-      &:hover {
+      &:hover, &.active {
         @apply bg-purple-900 border-purple-900;
       }
     }
@@ -39,7 +39,7 @@
     &.duk-button--outline {
       @apply bg-transparent text-white border border-solid border-white;
 
-      &:hover {
+      &:hover, &.active {
         @apply bg-orange-900 border-orange-900;
       }
     }
@@ -48,7 +48,7 @@
   &--info {
     @apply bg-purple-300 border-none text-white;
 
-    &:hover {
+    &:hover, &.active {
       @apply bg-purple-500 text-white;
     }
 
@@ -64,14 +64,14 @@
   &--success {
     @apply bg-green-500 border-none text-white;
 
-    &:hover {
+    &:hover, &.active {
       @apply bg-green-900 text-white;
     }
 
     &.duk-button--outline {
       @apply bg-transparent text-white border border-solid border-white;
 
-      &:hover {
+      &:hover, &.active {
         @apply bg-green-900 border-green-900;
       }
     }
@@ -96,14 +96,14 @@
   &--danger {
     @apply bg-red-500 border-none text-white;
 
-    &:hover {
+    &:hover, &.active {
       @apply bg-red-900 text-white;
     }
 
     &.duk-button--outline {
       @apply bg-transparent text-white border border-solid border-white;
 
-      &:hover {
+      &:hover, &.active {
         @apply bg-red-900 border-red-900;
       }
     }
@@ -112,14 +112,14 @@
   &--light {
     @apply bg-gray-200 border-none text-gray-900;
 
-    &:hover {
+    &:hover, &.active {
       @apply bg-gray-600 text-white;
     }
 
     &.duk-button--outline {
       @apply bg-transparent text-white border border-solid border-white;
 
-      &:hover {
+      &:hover, &.active {
         @apply bg-gray-600 border-gray-600;
       }
     }
@@ -128,14 +128,14 @@
   &--dark {
     @apply bg-gray-900 border-none text-gray-200;
 
-    &:hover {
+    &:hover, &.active {
       @apply bg-gray-600 text-white;
     }
 
     &.duk-button--outline {
       @apply bg-transparent text-white border border-solid border-white;
 
-      &:hover {
+      &:hover, &.active {
         @apply bg-gray-900 border-gray-900;
       }
     }
