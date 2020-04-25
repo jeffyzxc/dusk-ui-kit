@@ -9,7 +9,7 @@
     types,
     contexts
   } from "@dusk/helpers";
-  import { Input } from "@dusk/elements";
+  import { Input, Textarea } from "@dusk/elements";
   import "./styles.css";
 
   const forwardEvents = forwardEventsBuilder(current_component);
@@ -22,9 +22,9 @@
   export let variant = variants.ATOM.TEXT_FIELD.LIGHT;
   export let type = types.ATOM.TEXT_FIELD.TEXT;
   export let placeholder = "";
-  export let component = Input;
+  export let component = type === types.ATOM.TEXT_FIELD.MULTI_LINE ? Textarea : Input;
 
-  function getClassNames(variant, size, context, outline) {
+  function getClassNames(variant, type) {
     let classNames = "";
     switch (variant) {
       case variants.ATOM.BUTTON.LIGHT:
@@ -32,16 +32,6 @@
         break;
       case variants.ATOM.BUTTON.DARK:
         classNames += " duk-text-field--dark";
-        break;
-      default:
-        classNames += "";
-    }
-    switch (type) {
-      case types.ATOM.TEXT_FIELD.TEXT:
-        classNames += " duk-text-field--text";
-        break;
-      case types.ATOM.TEXT_FIELD.PASSWORD:
-        classNames += " duk-text-field--password";
         break;
       default:
         classNames += "";

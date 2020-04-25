@@ -5,21 +5,31 @@
     forwardEventsBuilder,
     exclude,
     useActions,
-    contexts
+    types
   } from "@dusk/helpers";
   const forwardEvents = forwardEventsBuilder(current_component);
   export let use = [];
   export let type = "text";
+  export let id = "";
   export let placeholder = "";
   let className = "";
   export { className as class };
-  const context = getContext("DUK:input:context");
-  function getClassNames(context) {
+
+  function getClassNames(type) {
     let classNames = "";
 
-    switch (context) {
-      case contexts.INPUT.TEXT:
-        classNames += " duk-input__text";
+    switch (type) {
+      case types.ATOM.TEXT_FIELD.MULTI_LINE:
+        classNames += " duk-text-field--textarea";
+        break;
+      case types.ATOM.TEXT_FIELD.TEXT:
+        classNames += " duk-text-field--text";
+        break;
+      case types.ATOM.TEXT_FIELD.PASSWORD:
+        classNames += " duk-text-field--text--password";
+        break;
+      case types.ATOM.RADIO:
+        classNames += " duk-radio";
         break;
       default:
         classNames += "";
@@ -33,7 +43,8 @@
   use:useActions="{use}"
   use:forwardEvents
   class="{className}
-  {getClassNames(context)}"
+  {getClassNames(type)}"
   {type}
+  {id}
   {placeholder}
   {...exclude($$props, ['use', 'class'])} />

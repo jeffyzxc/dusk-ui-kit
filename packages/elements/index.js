@@ -7,6 +7,7 @@ import Label from "./Label.svelte";
 import Li from "./Li.svelte";
 import Ol from "./Ol.svelte";
 import Table from "./Table.svelte";
+import Textarea from "./Textarea.svelte";
 import Tbody from "./Tbody.svelte";
 import Thead from "./Thead.svelte";
 import Tfoot from "./Tfoot.svelte";
@@ -27,6 +28,7 @@ export {
   Ol,
   Span,
   Table,
+  Textarea,
   Thead,
   Tfoot,
   Tr,
