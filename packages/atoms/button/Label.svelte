@@ -1,5 +1,5 @@
 <script>
-  import { getContext } from "svelte";
+  import { setContext } from "svelte";
   import { current_component } from "svelte/internal";
   import {
     forwardEventsBuilder,
@@ -13,10 +13,11 @@
   export { className as class };
 </script>
 
-<label
+<div
   use:useActions="{use}"
   use:forwardEvents
-  class="{className}"
+  class="duk-button__label {className}
+  "
   {...exclude($$props, ['use', 'class'])}>
   <slot />
-</label>
+</div>

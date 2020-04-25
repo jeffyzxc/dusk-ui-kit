@@ -80,15 +80,15 @@
   &--warning {
     @apply bg-yellow-900 border-none text-gray-900;
 
-    &:hover {
+    &:hover, &.active {
       @apply bg-yellow-500 border-none text-gray-900;
     }
 
     &.duk-button--outline {
       @apply bg-transparent text-white border border-solid border-white;
 
-      &:hover {
-        @apply bg-yellow-900 border-yellow-900;
+      &:hover, &.active {
+        @apply bg-yellow-900 border-yellow-900 text-gray-900;
       }
     }
   }
