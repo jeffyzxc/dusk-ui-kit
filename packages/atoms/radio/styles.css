@@ -1,43 +1,71 @@
-.duk-loading-indicator {
-  @apply inline-block fill-current;
+.duk-radio {
+  @apply inline-block text-xs;
 
-  &--brand {
-    @apply text-purple-500 fill-current;
+  &__label {
+    @apply leading-tight z-50 px-4 py-1 inline-block text-white bg-transparent border border-white rounded;
   }
 
-  &--cta {
-    @apply text-orange-500 fill-current;
+  &__button {
+    @apply hidden;
+  }
+
+  &--brand {
+    & > input:checked + label {
+      @apply border-purple-500 bg-purple-500;
+    }
   }
 
   &--info {
-    @apply text-purple-500 fill-current;
+    & > input:checked + label {
+      @apply border-purple-500 bg-purple-500;
+    }
+  }
+
+  &--cta {
+    & > input:checked + label {
+      @apply border-orange-500 bg-orange-500;
+    }
   }
 
   &--success {
-    @apply text-green-500 fill-current;
+    & > input:checked + label {
+      @apply border-green-500 bg-green-500;
+    }
   }
 
   &--warning {
-    @apply text-yellow-500 fill-current;
+    & > input:checked + label {
+      @apply border-yellow-500 bg-yellow-500 text-gray-900;
+    }
   }
 
   &--danger {
-    @apply text-red-500 fill-current;
+    & > input:checked + label {
+      @apply border-red-500 bg-red-500;
+    }
   }
 
   &--dark {
-    @apply text-gray-800 fill-current;
+    & > input:checked + label {
+      @apply text-gray-300 bg-gray-800;
+    }
   }
 
   &--light {
-    @apply text-gray-200 fill-current;
-  }
-
-  &--black {
-    @apply text-black fill-current;
+    & > input:checked + label {
+      @apply text-gray-800 bg-gray-300;
+    }
   }
 
   &--white {
-    @apply text-white fill-current;
+    & > input:checked + label {
+      @apply text-black bg-white;
+    }
+  }
+
+  &--black {
+    & > input:checked + label {
+      @apply border-white text-white bg-black;
+    }
   }
 }

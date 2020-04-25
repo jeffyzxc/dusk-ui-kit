@@ -17,6 +17,8 @@
   let className = "";
   export { className as class };
   export let variant = variants.ATOM.RADIO.BRAND;
+  export let name = "";
+  export let id = "";
   export const use = [];
 
   const forwardEvents = forwardEventsBuilder(current_component);
@@ -68,14 +70,20 @@
   }
 </script>
 
-<Label
-  use="{[forwardEvents, ripple, ...use]}"
-  class="duk-radio {className}
-  {getClassNames(variant, context)}"
-  {...exclude($$props, ['use', 'class', 'variant'])}
-  {...actionProp}
-  {...defaultProp}
-  >
-  <Input class="duk-radio__button" type="{types.ATOM.RADIO}" />
-  <slot />
-</Label>
+<div
+  class="duk-radio {className} {getClassNames(variant, context)}"
+  {...exclude($$props, ['use', 'class', 'variant', 'id', 'name', 'type'])}
+>
+  <Input
+    use="{[forwardEvents, ripple, ...use]}"
+    class="duk-radio__button"
+    type="{types.ATOM.RADIO}"
+    {name}
+    id="{id}"
+    {...actionProp}
+    {...defaultProp}
+  />
+  <Label class="duk-radio__label" for="{id}">
+    <slot />
+  </Label>
+</div>
