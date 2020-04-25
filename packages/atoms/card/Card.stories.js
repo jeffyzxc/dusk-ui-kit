@@ -10,6 +10,7 @@ import { variants, elevations } from "@dusk/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import TitleView from "./storybook-views/Title.svelte";
 import ActionsView from "./storybook-views/Actions.svelte";
+import FooterView from "./storybook-views/Footer.svelte";
 import readme from "./readme.stories.md";
 import "@dusk/styles/tailwind.css";
 
@@ -44,6 +45,15 @@ export const WithTitle = () => ({
     elevation: select("Card Elevation", cardElevations, cardElevationDefault),
     content: text("Card Content", "Lorem ipsum..."),
     title: text("Card Title", "I am a Card!")
+  }
+});
+
+export const WithFooter = () => ({
+  Component: FooterView,
+  props: {
+    variant: select("Card Variant", cardVariants, cardVariantDefault),
+    elevation: select("Card Elevation", cardElevations, cardElevationDefault),
+    content: text("Card Content", "Lorem ipsum...")
   }
 });
 

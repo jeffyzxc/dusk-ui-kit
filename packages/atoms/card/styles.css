@@ -18,6 +18,23 @@
     }
   }
 
+  &__footer {
+    @apply flex items-center justify-between text-xs;
+
+    & > h1,
+    & > h2,
+    & > h3,
+    & > h4,
+    & > h5,
+    & > h6 {
+      @apply text-xs leading-tight font-light;
+    }
+
+    & > p {
+      @apply mb-0;
+    }
+  }
+
   &__content {
     @apply font-light;
 

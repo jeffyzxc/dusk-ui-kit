@@ -15,7 +15,7 @@
 <div
   use:useActions="{use}"
   use:forwardEvents
-  class="duk-card__title {className}
+  class="duk-card__footer {className}
   "
   {...exclude($$props, ['use', 'class'])}>
   <slot />
