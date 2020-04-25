@@ -1,0 +1,15 @@
+.duk-switch {
+  @apply inline-flex items-center mb-2 cursor-pointer z-10;
+
+  &__track {
+    @apply relative w-10 h-auto z-0 rounded-full overflow-visible flex items-center justify-center;
+
+    &__thumb {
+      @apply rounded-full p-2 w-5 h-5 absolute elevation-3 transition-fast;
+    }
+  }
+
+  &__label {
+    @apply pl-2 cursor-pointer;
+  }
+}
