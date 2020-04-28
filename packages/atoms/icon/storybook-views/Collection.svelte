@@ -227,4 +227,16 @@
     title="store-outline"
     {variant}
     {size} />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="cube-outline"
+    title="cube-outline"
+    {variant}
+    {size} />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="check-network-outline"
+    title="check-network-outline"
+    {variant}
+    {size} />
 </div>

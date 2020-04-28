@@ -30,6 +30,21 @@
       case variants.ATOM.LOGO.BRAND:
         classNames += " duk-logo--brand";
         break;
+      case variants.ATOM.LOGO.CTA:
+        classNames += " duk-logo--cta";
+        break;
+      case variants.ATOM.LOGO.INFO:
+        classNames += " duk-logo--info";
+        break;
+      case variants.ATOM.LOGO.SUCCESS:
+        classNames += " duk-logo--success";
+        break;
+      case variants.ATOM.LOGO.WARNING:
+        classNames += " duk-logo--warning";
+        break;
+      case variants.ATOM.LOGO.DANGER:
+        classNames += " duk-logo--danger";
+        break;
       case variants.ATOM.LOGO.LIGHT:
         classNames += " duk-logo--light";
         break;

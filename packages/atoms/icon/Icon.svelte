@@ -22,9 +22,11 @@
   import ChartLineVariant from "./icons/ChartLineVariant.svelte";
   import CheckboxBlankCircle from "./icons/CheckboxBlankCircle.svelte";
   import CheckCircleOutline from "./icons/CheckCircleOutline.svelte";
+  import CheckNetworkOutline from "./icons/CheckNetworkOutline.svelte";
   import CogOutline from "./icons/CogOutline.svelte";
   import ContentCopy from "./icons/ContentCopy.svelte";
   import CloseCircleOutline from "./icons/CloseCircleOutline.svelte";
+  import CubeOutline from "./icons/CubeOutline.svelte";
   import DuskTicker from "./icons/DuskTicker.svelte";
   import Earth from "./icons/Earth.svelte";
   import EmailOutline from "./icons/EmailOutline.svelte";
@@ -157,11 +159,17 @@
       case icons.CHECK_CIRCLE_OUTLINE:
         selectedIcon = CheckCircleOutline;
         break;
+      case icons.CHECK_NETWORK_OUTLINE:
+        selectedIcon = CheckNetworkOutline;
+        break;
       case icons.CONTENT_COPY:
         selectedIcon = ContentCopy;
         break;
       case icons.COG_OUTLINE:
         selectedIcon = CogOutline;
+        break;
+      case icons.CUBE_OUTLINE:
+        selectedIcon = CubeOutline;
         break;
       case icons.DECIMAL:
         selectedIcon = Decimal;
