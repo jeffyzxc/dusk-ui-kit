@@ -1,7 +1,7 @@
 {
   "name": "@dusk/menu",
   "description": "Dusk UI Kit - Menu",
-  "version": "0.0.36-alpha.0",
+  "version": "0.0.37-alpha.0",
   "author": "Kieran Hall <kieran@dusk.network>",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -11,7 +11,7 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk/helpers": "^0.0.36-alpha.0"
+    "@dusk/helpers": "^0.0.37-alpha.0"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"
