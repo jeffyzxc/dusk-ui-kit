@@ -262,6 +262,6 @@
   use="{[forwardEvents, ...use]}"
   class="duk-icon {className}
   {getClassNames(variant, size, context)}"
-  {...exclude($$props, ['use', 'class', 'variant', 'href', 'name', 'size'])}>
+  {...exclude($$props, ['use', 'class', 'variant', 'name', 'size'])}>
   <svelte:component this="{getSelectedIcon(name)}" {viewbox} />
 </svelte:component>

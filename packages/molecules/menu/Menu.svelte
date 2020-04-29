@@ -18,7 +18,7 @@
   export { className as class };
   export let name = null;
   export let orientation = orientations.MENU.VERTICAL;
-  export let variant = variants.MOLECULE.MENU.DARK;
+  export let variant = null;
 
   let context = getContext("DUK:menu:context");
   setContext("DUK:list:context", contexts.LIST.MENU);
