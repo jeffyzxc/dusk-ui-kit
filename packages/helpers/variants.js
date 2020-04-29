@@ -109,7 +109,19 @@ export default {
       DANGER: "danger",
       LIGHT: "light",
       DARK: "dark"
-    }
+    },
+    MENU: {
+      BRAND: "brand",
+      CTA: "cta",
+      INFO: "info",
+      SUCCESS: "success",
+      WARNING: "warning",
+      DANGER: "danger",
+      LIGHT: "light",
+      DARK: "dark",
+      WHITE: "white",
+      BLACK: "black"
+    },
   },
   ORGANISM: {
     DRAWER: {

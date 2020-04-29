@@ -3,8 +3,7 @@ import {
   select,
   optionsKnob as options
 } from "@storybook/addon-knobs";
-import { action } from "@storybook/addon-actions";
-import { variants, sizes, orientations } from "@dusk/helpers";
+import { variants, orientations } from "@dusk/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import readme from "./readme.stories.md";
 import "@dusk/styles/tailwind.css";
@@ -24,6 +23,11 @@ export const Default = () => ({
       "Orientation",
       orientations.MENU,
       orientations.MENU.VERTICAL
-    )
+    ),
+    variant: select(
+      "Variant",
+      variants.MOLECULE.MENU,
+      variants.MOLECULE.MENU.BRAND
+    ),
   }
 });
