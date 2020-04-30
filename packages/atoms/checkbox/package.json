@@ -1,0 +1,19 @@
+{
+  "name": "@dusk/radio",
+  "description": "Dusk UI Kit - Checkbox",
+  "version": "0.0.38-alpha.0",
+  "author": "Kieran Hall <kieran@dusk.network>",
+  "bugs": {
+    "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"LOL\" && exit 1"
+  },
+  "dependencies": {
+    "@dusk/helpers": "^0.0.38-alpha.0"
+  },
+  "peerDependencies": {
+    "svelte": "^3.0.0"
+  }
+}

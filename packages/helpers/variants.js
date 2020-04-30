@@ -22,6 +22,18 @@ export default {
       WHITE: "white",
       BLACK: "black"
     },
+    CHECKBOX: {
+      BRAND: "brand",
+      CTA: "cta",
+      INFO: "info",
+      SUCCESS: "success",
+      WARNING: "warning",
+      DANGER: "danger",
+      LIGHT: "light",
+      DARK: "dark",
+      WHITE: "white",
+      BLACK: "black"
+    },
     ICON: {
       BRAND: "brand",
       CTA: "cta",

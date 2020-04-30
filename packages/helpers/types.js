@@ -1,5 +1,6 @@
 export default {
   ATOM: {
+    CHECKBOX: "checkbox",
     LIST: {
       NONE: "none",
       NUMBERED: "numbered",
