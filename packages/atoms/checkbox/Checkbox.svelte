@@ -18,6 +18,7 @@
   export { className as class };
   export let variant = variants.ATOM.CHECKBOX.BRAND;
   export let name = "";
+  export let checked = false;
   export let id = "";
   export const use = [];
 
@@ -79,6 +80,7 @@
     class="duk-checkbox__button"
     type="{types.ATOM.CHECKBOX}"
     {name}
+    {checked}
     id="{id}"
     {...actionProp}
     {...defaultProp}
