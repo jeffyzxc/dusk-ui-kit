@@ -7,9 +7,10 @@
   export let title;
   export let buttonText;
   export let buttonVariant;
+  export let size;
 </script>
 
-<Card {variant} {elevation} style="width: 305px">
+<Card {variant} {elevation} {size} style="width: 305px">
   <Title>{title}</Title>
   <Content>{content}</Content>
   <Actions>

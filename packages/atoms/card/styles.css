@@ -30,7 +30,7 @@
       @apply text-xs leading-tight font-light;
     }
 
-    & > p {
+    & p {
       @apply mb-0;
     }
   }
@@ -38,9 +38,30 @@
   &__content {
     @apply font-light;
 
-    & > p:last-child {
+    & p:last-child {
       @apply m-0;
     }
+  }
+
+  &--small {
+    @apply rounded-sm px-2 py-1 text-xs;
+
+    & .duk-card__title {
+      @apply pb-0 text-sm;
+
+      & > h1,
+      & > h2,
+      & > h3,
+      & > h4,
+      & > h5,
+      & > h6 {
+        @apply text-sm font-normal;
+      }
+    }
+  }
+
+  &--large {
+    @apply rounded-lg px-8 py-5;
   }
 
   &--brand {

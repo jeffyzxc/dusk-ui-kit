@@ -3,8 +3,9 @@
   export let variant;
   export let elevation;
   export let content;
+  export let size;
 </script>
 
-<Card {variant} {elevation} style="width: 305px">
+<Card {variant} {elevation} {size} style="width: 305px">
   <Content>{content}</Content>
 </Card>
