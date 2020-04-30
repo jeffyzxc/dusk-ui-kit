@@ -239,4 +239,10 @@
     title="check-network-outline"
     {variant}
     {size} />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="information-variant"
+    title="information-variant"
+    {variant}
+    {size} />
 </div>

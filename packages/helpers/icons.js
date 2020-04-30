@@ -26,6 +26,7 @@ export default {
   FOLDER_UPLOAD_OUTLINE: "folder-upload-outline",
   FOLDER_SEARCH_OUTLINE: "folder-search-outline",
   HELP_CIRCLE_OUTLINE: "help-circle-outline",
+  INFORMATION_VARIANT: "information-variant",
   KEY_OUTLINE: "key-outline",
   MAGNIFY: "magnify",
   MENU_BURGER: "menu-burger",

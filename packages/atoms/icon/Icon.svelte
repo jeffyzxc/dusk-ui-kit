@@ -40,6 +40,7 @@
   import FolderOpenOutline from "./icons/FolderOpenOutline.svelte";
   import FolderSearchOutline from "./icons/FolderSearchOutline.svelte";
   import HelpCircleOutline from "./icons/HelpCircleOutline.svelte";
+  import InformationVariant from "./icons/InformationVariant.svelte";
   import KeyOutline from "./icons/KeyOutline.svelte";
   import Magnify from "./icons/Magnify.svelte";
   import MenuBurger from "./icons/MenuBurger.svelte";
@@ -209,6 +210,9 @@
         break;
       case icons.FOLDER_SEARCH_OUTLINE:
         selectedIcon = FolderSearchOutline;
+        break;
+      case icons.INFORMATION_VARIANT:
+        selectedIcon = InformationVariant;
         break;
       case icons.HELP_CIRCLE_OUTLINE:
         selectedIcon = HelpCircleOutline;
