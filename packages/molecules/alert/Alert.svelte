@@ -5,18 +5,20 @@
     exclude,
     contexts,
     variants,
-    elevations
+    elevations,
+    sizes
   } from "@dusk/helpers";
   import Card, { Title, Content } from "@dusk/card";
   import Icon from "@dusk/icon";
   import "./styles.css";
 
   export let value;
-  export let title = "Alert!";
+  export let title;
   export let dismissable = true;
   let className = "";
   export { className as class };
   export let variant = variants.MOLECULE.ALERT.WARNING;
+  export let size = sizes.MOLECULE.ALERT.BASE;
 
   let context = getContext("DUK:alert:context");
   setContext("DUK:card:context", contexts.CARD.ALERT);
@@ -64,11 +66,12 @@
     class="duk-alert {className}
     {getClassNames(variant, context, title)}"
     {variant}
+    {size}
     elevation="{elevations.ATOM.CARD.MEDIUM}"
     role="alertdialog" aria-labelledby="__DUK-alert-title" aria-describedby="__DUK-alert-content"
     {...exclude($$props, ['class', 'variant', 'title'])}>
     <Title id="__DUK-alert-title" class="duk-alert__title">
-      {title}
+      {#if title}{title}{/if}
       {#if dismissable}
         <button
           id="__DUK-alert-dismiss"
@@ -76,7 +79,7 @@
           aria-label="Dismiss alert"
           on:click="{() => value = false}"
           class="duk-alert__dismiss">
-          <Icon name="close-circle-outline" />
+          <Icon {size} name="close-circle-outline" />
         </button>
       {/if}
     </Title>

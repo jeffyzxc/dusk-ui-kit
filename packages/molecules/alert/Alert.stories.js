@@ -6,7 +6,7 @@ import {
   optionsKnob as options
 } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
-import { variants } from "@dusk/helpers";
+import { variants, sizes } from "@dusk/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import readme from "./readme.stories.md";
 import "@dusk/styles/tailwind.css";
@@ -28,6 +28,9 @@ export const Default = () => ({
       variants.MOLECULE.ALERT.WARNING
     ),
     title: text("Alert title", "Alert!"),
-    dismissable: boolean("Dismissable?", true)
+    dismissable: boolean("Dismissable?", true),
+    size: options("Size", sizes.MOLECULE.ALERT, sizes.MOLECULE.ALERT.BASE, {
+      display: "radio"
+    })
   }
 });

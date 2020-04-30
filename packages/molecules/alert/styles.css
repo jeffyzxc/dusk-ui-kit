@@ -9,6 +9,10 @@
     }
   }
 
+  &__content {
+    @apply flex items-center;
+  }
+
   &__dismiss {
     @apply pl-4;
   }
