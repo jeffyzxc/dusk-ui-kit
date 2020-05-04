@@ -20,6 +20,7 @@
   export let name = "";
   export let checked = false;
   export let id = "";
+  export let value = "";
   export const use = [];
 
   const forwardEvents = forwardEventsBuilder(current_component);
@@ -81,6 +82,7 @@
     type="{types.ATOM.CHECKBOX}"
     {name}
     {checked}
+    {value}
     id="{id}"
     {...actionProp}
     {...defaultProp}
