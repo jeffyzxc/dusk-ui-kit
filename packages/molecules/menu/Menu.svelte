@@ -1,29 +1,56 @@
 <script>
-  import { setContext, getContext } from "svelte";
+  import { setContext, getContext, onMount, afterUpdate } from "svelte";
   import { current_component } from "svelte/internal";
+  import { watchResize } from "svelte-watch-resize";
   import {
     forwardEventsBuilder,
     exclude,
     useActions,
     contexts,
     orientations,
-    variants
+    variants,
+    icons
   } from "@dusk/helpers";
+  import Icon from "@dusk/icon";
   import "./styles.css";
-  const forwardEvents = forwardEventsBuilder(current_component);
-
-  export let use = [];
 
   let className = "";
   export { className as class };
+  export let use = [];
   export let name = null;
   export let orientation = orientations.MENU.VERTICAL;
   export let variant = null;
+  export let carousel = false;
+  export let scrollBy = 1;
 
-  let context = getContext("DUK:menu:context");
+  let container;
+  let paginationFactor;
+  let items = [];
+  let offset = 0;
+  let isAtEnd = false;
+  let itemWidth;
+  let currentItemIndex = 0;
+
+  $:isAtStart = currentItemIndex === 0;
+
+  const forwardEvents = forwardEventsBuilder(current_component);
+  const context = getContext("DUK:menu:context");
+
+  $:totalPaginationPixels = scrollBy * paginationFactor;
+
   setContext("DUK:list:context", contexts.LIST.MENU);
 
-  function getClassNames(variant, orientation, context) {
+  onMount(async () => {
+    items = container.firstChild.children;
+    setIsAtEnd();
+  });
+
+  function setIsAtEnd() {
+    const itemsLength = items ? items.length : 0;
+    isAtEnd = offset <= paginationFactor * (itemsLength - scrollBy) * -1;
+  }
+
+  function getClassNames(variant, orientation, context, carousel) {
     let classNames = "";
     switch (variant) {
       case variants.MOLECULE.MENU.BRAND:
@@ -59,6 +86,7 @@
       default:
         classNames += "";
     }
+
     switch (context) {
       case contexts.MENU.NAVBAR:
         classNames += " duk-navbar__menu duk-navbar__menu--hidden";
@@ -69,6 +97,7 @@
       default:
         classNames += "";
     }
+
     switch (orientation) {
       case orientations.MENU.HORIZONTAL:
         classNames += " duk-menu--horizontal";
@@ -79,6 +108,8 @@
       default:
         classNames += ""
     }
+
+    if (carousel) classNames += " duk-menu--carousel";
 
     return classNames;
   }
@@ -95,16 +126,49 @@
 
     return id;
   }
+
+  function setPaginationFactor(node) {
+    node = container;
+    paginationFactor = node.children.item(0).children.item(currentItemIndex).clientWidth;
+  }
+
+  const move = direction => {
+    if (direction > 0 && !isAtEnd) {
+      const newOffset = offset - totalPaginationPixels;
+      offset -= totalPaginationPixels;
+      currentItemIndex++;
+    } else if (direction < 0 && !isAtStart) {
+      offset += totalPaginationPixels;
+      if (currentItemIndex != 0) currentItemIndex--;
+    }
+    setPaginationFactor();
+    setIsAtEnd();
+  };
 </script>
 
 <nav
   use:useActions="{use}"
   use:forwardEvents
   class="duk-menu {className}
-  {getClassNames(variant, orientation, context)}"
+  {getClassNames(variant, orientation, context, carousel)}"
   id="{getId(context)}"
   role="navigation"
   aria-label="{name || ''}"
-  {...exclude($$props, ['use', 'class', 'orientation', 'name', 'variant'])}>
-  <slot />
+  {...exclude($$props, ['use', 'class', 'orientation', 'name', 'variant', 'carousel'])}>
+  {#if carousel}
+    <Icon class="duk-menu--carousel__icon duk-menu--carousel__icon--prev" href="javascript:;" disabled="{isAtStart}" on:click="{() => move(-1)}" name="{icons.ARROW_LEFT_CIRCLE}" />
+    <Icon class="duk-menu--carousel__icon duk-menu--carousel__icon--next" href="javascript:;" disabled="{isAtEnd}" on:click="{() => move(1)}" name="{icons.ARROW_RIGHT_CIRCLE}" />
+  {/if}
+  {#if items}
+    <div bind:this="{container}" use:watchResize={setPaginationFactor} style="transform: translateX({offset}px);">
+      <slot />
+    </div>
+    <!-- <div class="details">
+      index: {currentItemIndex}<br>
+      paginationFactor: {paginationFactor}<br>
+      offset: {offset}px<br>
+      atStart: {isAtStart}<br>
+      atEnd: {isAtEnd}
+    </div> -->
+  {/if}
 </nav>

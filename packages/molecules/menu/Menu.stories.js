@@ -1,6 +1,7 @@
 import {
   withKnobs,
   select,
+  boolean,
   optionsKnob as options
 } from "@storybook/addon-knobs";
 import { variants, orientations } from "@dusk/helpers";
@@ -29,5 +30,9 @@ export const Default = () => ({
       variants.MOLECULE.MENU,
       variants.MOLECULE.MENU.BRAND
     ),
+    carousel: boolean(
+      "Carousel?",
+      false
+    )
   }
 });
