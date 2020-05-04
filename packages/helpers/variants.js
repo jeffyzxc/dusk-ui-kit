@@ -133,7 +133,7 @@ export default {
       DARK: "dark",
       WHITE: "white",
       BLACK: "black"
-    },
+    }
   },
   ORGANISM: {
     DRAWER: {

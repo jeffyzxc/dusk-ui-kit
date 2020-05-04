@@ -67,6 +67,7 @@
   export let viewbox = "0 0 24 24";
   export let wrapper = href == null ? Div : A;
   export let variant = null;
+  export let disabled = false;
 
   let context = getContext("DUK:icon:context");
 
@@ -265,6 +266,7 @@
   this="{wrapper}"
   use="{[forwardEvents, ...use]}"
   class="duk-icon {className}
+  {disabled}
   {getClassNames(variant, size, context)}"
   {...exclude($$props, ['use', 'class', 'variant', 'name', 'size'])}>
   <svelte:component this="{getSelectedIcon(name)}" {viewbox} />
