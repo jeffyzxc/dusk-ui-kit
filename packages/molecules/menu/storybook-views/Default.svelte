@@ -13,14 +13,17 @@
     { id: "6", value: "Navigation item 6"},
     { id: "7", value: "Navigation item 7"},
     { id: "8", value: "Navigation item 8"},
-    { id: "9", value: "Navigation item 9"}
+    { id: "9", value: "Navigation item 9"},
+    { id: "9", value: "Navigation item 10"},
+    { id: "9", value: "Navigation item 11"},
+    { id: "9", value: "Navigation item 12"}
   ];
 </script>
 
-<Menu {orientation} {variant} {carousel} class="w-256">
+<Menu {orientation} {variant} {carousel} class="w-full">
   <List>
     {#each items as {id, value}}
-      <Item href="javascript://(0)" class="w-64">{value}</Item>
+      <Item href="javascript://(0)" class="flex-0 w-1/5">{value}</Item>
     {/each}
   </List>
 </Menu>
