@@ -2,7 +2,7 @@
   "name": "dusk-ui-kit",
   "description": "Dusk UI Kit",
   "license": "MIT",
-  "private": "true",
+  "private": true,
   "scripts": {
     "lint": "prettier --write --plugin-search-dir=. ./packages/**/* && stylelint \"**/*.css\" --fix",
     "test": "echo \"LOL\" && exit 1",

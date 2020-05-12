@@ -1,8 +1,6 @@
 <script>
   import { setContext, getContext, onMount, afterUpdate } from "svelte";
   import { current_component } from "svelte/internal";
-  import { watchResize } from "svelte-watch-resize";
-  import priorityPlus from "priority-plus";
   import {
     forwardEventsBuilder,
     exclude,
