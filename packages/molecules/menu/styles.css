@@ -1,11 +1,13 @@
 .duk-menu {
-  > .duk-list--menu {
-    [aria-disabled="true"] {
+  & > .duk-list--menu {
+    & [aria-disabled="true"] {
       @apply opacity-50 cursor-not-allowed;
     }
   }
 
   &--vertical {
+    @apply overflow-y-hidden;
+
     & .duk-list {
       @apply flex flex-col;
 
@@ -18,45 +20,17 @@
   }
 
   &--horizontal {
+    @apply overflow-x-hidden;
+
     & .duk-list {
-      @apply flex flex-row;
+      @apply relative;
 
       &__item {
+        @apply inline-block;
+
         &__wrapper {
-          @apply block p-3 text-center;
+          @apply inline-block text-center;
         }
-      }
-    }
-  }
-
-  &--carousel {
-    overflow: hidden;
-
-    &__icon {
-      color: unset;
-      position: absolute;
-      width: 22px;
-      top: calc(50% - 11px);
-      z-index: 1;
-
-      &--prev {
-        left: 0;
-      }
-
-      &--next {
-        right: 0;
-      }
-    }
-
-    & .duk-list {
-      display: flex;
-      transition: transform 0.4s ease-in-out;
-      transform: translateX(0);
-      padding: 0 16px;
-
-      &__item {
-        display: inline-block;
-        padding: 0 5px;
       }
     }
   }

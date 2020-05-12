@@ -1,7 +1,7 @@
 <script>
   import Menu from "../";
   import List, { Item } from "@dusk/list";
-  export let orientation;
+  import { orientations } from "@dusk/helpers";
   export let variant;
   let items = [
     { id: "1", value: "Navigation item 1"},
@@ -19,7 +19,7 @@
   ];
 </script>
 
-<Menu {orientation} {variant}>
+<Menu orientation="{orientations.MENU.HORIZONTAL}" {variant} class="w-256">
   <List>
     {#each items as {id, value}}
       <Item href="javascript://(0)">{value}</Item>

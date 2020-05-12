@@ -188,8 +188,7 @@ module.exports = {
           color: theme("colors.gray.900"),
           height: "100%",
           lineHeight: "1.5",
-          letterSpacing: "0",
-          "-webkit-app-region": "drag"
+          letterSpacing: "0"
         },
         "button:focus": { outline: "none" },
         h1: { fontSize: theme("fontSize.2xl") },

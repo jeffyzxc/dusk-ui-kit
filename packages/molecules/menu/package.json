@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@dusk/helpers": "^0.0.39-alpha.0",
-    "svelte-watch-resize": "^1.0.3"
+    "priority-plus": "^1.1.0"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"

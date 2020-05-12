@@ -12071,6 +12071,11 @@ pretty-hrtime@^1.0.3:
   resolved "https://npm.dusk.network:4873/pretty-hrtime/-/pretty-hrtime-1.0.3.tgz#b7e3ea42435a4c9b2759d99e0f201eb195802ee1"
   integrity sha1-t+PqQkNaTJsnWdmeDyAesZWALuE=
 
+priority-plus@^1.1.0:
+  version "1.1.0"
+  resolved "https://npm.dusk.network:4873/priority-plus/-/priority-plus-1.1.0.tgz#2998a7b6bdbbe1f55044c11ddd8e35ac332101f2"
+  integrity sha512-HJmsG87lKdL+m1o+tVAmxKv8RkuBu17eLflHmXRErSzVOJdAKQ19h5IEp+cz00MQXzITKOOVWQrRV+LWuzSDzQ==
+
 prismjs@^1.8.4:
   version "1.19.0"
   resolved "https://npm.dusk.network:4873/prismjs/-/prismjs-1.19.0.tgz#713afbd45c3baca4b321569f2df39e17e729d4dc"

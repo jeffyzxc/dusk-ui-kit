@@ -2,53 +2,29 @@
   import { setContext, getContext, onMount, afterUpdate } from "svelte";
   import { current_component } from "svelte/internal";
   import { watchResize } from "svelte-watch-resize";
+  import priorityPlus from "priority-plus";
   import {
     forwardEventsBuilder,
     exclude,
     useActions,
     contexts,
     orientations,
-    variants,
-    icons
+    variants
   } from "@dusk/helpers";
-  import Icon from "@dusk/icon";
   import "./styles.css";
 
   let className = "";
   export { className as class };
+  export let id;
   export let use = [];
   export let name = null;
   export let orientation = orientations.MENU.VERTICAL;
   export let variant = null;
-  export let carousel = false;
-  export let scrollBy = 1;
-
-  let container;
-  let paginationFactor;
-  let items = [];
-  let offset = 0;
-  let isAtEnd = false;
-  let itemWidth;
-  let currentItemIndex = 0;
-
-  $:isAtStart = currentItemIndex === 0;
 
   const forwardEvents = forwardEventsBuilder(current_component);
   const context = getContext("DUK:menu:context");
 
-  $:totalPaginationPixels = scrollBy * paginationFactor;
-
   setContext("DUK:list:context", contexts.LIST.MENU);
-
-  onMount(async () => {
-    items = container.firstChild.children;
-    setIsAtEnd();
-  });
-
-  function setIsAtEnd() {
-    const itemsLength = items ? items.length : 0;
-    isAtEnd = offset <= paginationFactor * (itemsLength - scrollBy) * -1;
-  }
 
   function getClassNames(variant, orientation, context, carousel) {
     let classNames = "";
@@ -109,66 +85,19 @@
         classNames += ""
     }
 
-    if (carousel) classNames += " duk-menu--carousel";
-
     return classNames;
   }
 
-  function getId(context) {
-    let id = "";
-    switch (context) {
-      case contexts.MENU.NAVBAR:
-        id = "__DUK-navbar-menu";
-        break;
-      default:
-        id = "";
-    }
-
-    return id;
-  }
-
-  function setPaginationFactor(node) {
-    node = container;
-    paginationFactor = node.children.item(0).children.item(currentItemIndex).clientWidth;
-  }
-
-  const move = direction => {
-    if (direction > 0 && !isAtEnd) {
-      const newOffset = offset - totalPaginationPixels;
-      offset -= totalPaginationPixels;
-      currentItemIndex++;
-    } else if (direction < 0 && !isAtStart) {
-      offset += totalPaginationPixels;
-      if (currentItemIndex != 0) currentItemIndex--;
-    }
-    setPaginationFactor();
-    setIsAtEnd();
-  };
 </script>
 
 <nav
   use:useActions="{use}"
   use:forwardEvents
   class="duk-menu {className}
-  {getClassNames(variant, orientation, context, carousel)}"
-  id="{getId(context)}"
+  {getClassNames(variant, orientation, context)}"
+  {id}
   role="navigation"
   aria-label="{name || ''}"
-  {...exclude($$props, ['use', 'class', 'orientation', 'name', 'variant', 'carousel'])}>
-  {#if carousel}
-    <Icon class="duk-menu--carousel__icon duk-menu--carousel__icon--prev" href="javascript:;" disabled="{isAtStart}" on:click="{() => move(-1)}" name="{icons.ARROW_LEFT_CIRCLE}" />
-    <Icon class="duk-menu--carousel__icon duk-menu--carousel__icon--next" href="javascript:;" disabled="{isAtEnd}" on:click="{() => move(1)}" name="{icons.ARROW_RIGHT_CIRCLE}" />
-  {/if}
-  {#if items}
-    <div bind:this="{container}" use:watchResize={setPaginationFactor} style="transform: translateX({offset}px);">
-      <slot />
-    </div>
-    <!-- <div class="details">
-      index: {currentItemIndex}<br>
-      paginationFactor: {paginationFactor}<br>
-      offset: {offset}px<br>
-      atStart: {isAtStart}<br>
-      atEnd: {isAtEnd}
-    </div> -->
-  {/if}
+  {...exclude($$props, ['use', 'class', 'orientation', 'name', 'variant'])}>
+  <slot />
 </nav>

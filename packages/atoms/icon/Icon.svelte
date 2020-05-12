@@ -114,6 +114,15 @@
       case sizes.ATOM.ICON.LARGE:
         classNames += " duk-icon--large";
         break;
+    case sizes.ATOM.ICON.XL:
+        classNames += " duk-icon--xl";
+        break;
+    case sizes.ATOM.ICON.XXL:
+        classNames += " duk-icon--xxl";
+        break;
+    case sizes.ATOM.ICON.XXXL:
+        classNames += " duk-icon--xxxl";
+        break;
       default:
         classNames += "";
     }

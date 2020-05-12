@@ -1,11 +1,11 @@
 import {
   withKnobs,
   select,
-  boolean,
-  optionsKnob as options
+  boolean
 } from "@storybook/addon-knobs";
 import { variants, orientations } from "@dusk/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
+import PriorityView from "./storybook-views/PriorityPlus.svelte";
 import readme from "./readme.stories.md";
 import "@dusk/styles/tailwind.css";
 
@@ -29,10 +29,17 @@ export const Default = () => ({
       "Variant",
       variants.MOLECULE.MENU,
       variants.MOLECULE.MENU.BRAND
-    ),
-    carousel: boolean(
-      "Carousel?",
-      false
+    )
+  }
+});
+
+export const PriorityPlus = () => ({
+  Component: PriorityView,
+  props: {
+    variant: select(
+      "Variant",
+      variants.MOLECULE.MENU,
+      variants.MOLECULE.MENU.BRAND
     )
   }
 });
