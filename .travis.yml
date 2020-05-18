@@ -1,14 +1,26 @@
 language: node_js
 os: linux
+node_js:
+  - lts/* # latest LTS
 
 before_install:
-  # - echo "always-auth=true\n@dusk:registry=https://npm.dusk.network:4873/\n//npm.dusk.network:4873/:_authToken="${NPM_TOKEN}"" > .npmrc
   - yarn config set registry "https://npm.dusk.network:4873"
 before_script:
   - yarn sb:build
 
 script:
   - echo "skipping tests"
+
+jobs:
+  include:
+    - stage: release
+      node_js: lts/*
+      script: skip
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - npx semantic-release
 
 deploy:
   provider: pages
