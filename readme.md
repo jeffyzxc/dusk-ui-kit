@@ -1,7 +1,7 @@
 # <div align="center">:sparkles: Dusk UI Kit :sparkles:</div>
 
 <div align="center"><a href="https://npm.dusk.network:4873">
-  <img src="https://img.shields.io/npm/v/@dusk/helpers.svg?registry_uri=https://npm.dusk.network:4873" alt="TravisCI">
+  <img src="https://img.shields.io/npm/v/@dusk/helpers.svg?registry_uri=https://npm.dusk.network:4873" alt="NPM">
 </a>
 <a href="https://travis-ci.com/dusk-network/dusk-ui-kit">
   <img src="https://travis-ci.com/dusk-network/dusk-ui-kit.svg?token=epVgoKeysWpeWXA7Vyxt&amp;branch=master" alt="TravisCI">
