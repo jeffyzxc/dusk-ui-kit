@@ -21,7 +21,7 @@
       <Datum>Col 2 data</Datum>
       <Datum>Col 3 data</Datum>
     </Row>
-    <Row highlight={true}>
+    <Row highlight="{true}">
       <Datum>Col 1 data</Datum>
       <Datum>Col 2 data</Datum>
       <Datum>Col 3 data</Datum>

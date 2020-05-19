@@ -38,5 +38,5 @@ export default {
   TRASH_CAN_OUTLINE: "trash-can-outline",
   VIEW_DASHBOARD_OUTLINE: "view-dashboard-outline",
   WALLET: "wallet",
-  WALLET_PLUS: "wallet-plus"
+  WALLET_PLUS: "wallet-plus",
 };

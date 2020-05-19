@@ -4,25 +4,22 @@ module.exports = {
   theme: {
     boxShadow: {
       default: "0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06)",
-      md:
-        " 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06)",
-      lg:
-        " 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05)",
-      xl:
-        " 0 20px 25px -5px rgba(0, 0, 0, .1), 0 10px 10px -5px rgba(0, 0, 0, .04)",
+      md: " 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06)",
+      lg: " 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05)",
+      xl: " 0 20px 25px -5px rgba(0, 0, 0, .1), 0 10px 10px -5px rgba(0, 0, 0, .04)",
       "2xl": "0 25px 50px -12px rgba(0, 0, 0, .25)",
       inner: "inset 0 2px 4px 0 rgba(0,0,0,0.06)",
       outline: "0 0 0 3px rgba(66,153,225,0.5)",
       "active-t": "0 -2px 0 rgba(245, 245, 245, 1);",
       "active-r": "2px 0 0 rgba(245, 245, 245, 1);",
-      none: "none"
+      none: "none",
     },
     borderRadius: {
       none: "0",
       sm: ".1875rem",
       default: ".375rem",
       lg: ".5625rem",
-      full: "9999px"
+      full: "9999px",
     },
     colors: {
       transparent: "transparent",
@@ -37,7 +34,7 @@ module.exports = {
         "600": "#7c7c7c",
         "700": "#646464",
         "800": "#4c4c4c",
-        "900": "#343434"
+        "900": "#343434",
       },
       red: {
         "100": "#e8a5b9",
@@ -48,7 +45,7 @@ module.exports = {
         "600": "#d95b80",
         "700": "#d94c75",
         "800": "#d83d6b",
-        "900": "#d82e60"
+        "900": "#d82e60",
       },
       orange: {
         "100": "#bdb4d2",
@@ -59,7 +56,7 @@ module.exports = {
         "600": "#ed8757",
         "700": "#ee7840",
         "800": "#f06829",
-        "900": "#f15912"
+        "900": "#f15912",
       },
       yellow: {
         "100": "#c1deb6",
@@ -70,7 +67,7 @@ module.exports = {
         "600": "#fad48a",
         "700": "#f6d28e",
         "800": "#f1d191",
-        "900": "#edcf95"
+        "900": "#edcf95",
       },
       green: {
         "100": "#c1deb6",
@@ -81,7 +78,7 @@ module.exports = {
         "600": "#94c382",
         "700": "#90bd7f",
         "800": "#8cb77b",
-        "900": "#88b178"
+        "900": "#88b178",
       },
       purple: {
         "100": "#bdb4d2",
@@ -92,8 +89,8 @@ module.exports = {
         "600": "#7362a6",
         "700": "#624d9f",
         "800": "#523b97",
-        "900": "#3b218c"
-      }
+        "900": "#3b218c",
+      },
     },
     fontFamily: {
       sans: [
@@ -101,25 +98,18 @@ module.exports = {
         "system-ui",
         "-apple-system",
         "BlinkMacSystemFont",
-        '"Segoe UI"',
-        '"Helvetica Neue"',
+        "'Segoe UI'",
+        "'Helvetica Neue'",
         "Arial",
-        '"Noto Sans"',
+        "'Noto Sans'",
         "sans-serif",
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
-        '"Noto Color Emoji"'
+        "'Apple Color Emoji'",
+        "'Segoe UI Emoji'",
+        "'Segoe UI Symbol'",
+        "'Noto Color Emoji'",
       ],
-      serif: ["Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
-      mono: [
-        "Menlo",
-        "Monaco",
-        "Consolas",
-        '"Liberation Mono"',
-        '"Courier New"',
-        "monospace"
-      ]
+      serif: ["Georgia", "Cambria", "'Times New Roman'", "Times", "serif"],
+      mono: ["Menlo", "Monaco", "Consolas", "'Liberation Mono'", "'Courier New'", "monospace"],
     },
     fontSize: {
       xs: "0.75rem",
@@ -133,7 +123,7 @@ module.exports = {
       "5xl": "3rem",
       "6xl": "4rem",
       "7xl": "5rem",
-      "8xl": "6rem"
+      "8xl": "6rem",
     },
     fontWeight: {
       hairline: "100",
@@ -144,7 +134,7 @@ module.exports = {
       semibold: "600",
       bold: "700",
       extrabold: "800",
-      black: "900"
+      black: "900",
     },
     spacing: {
       0: "0",
@@ -169,8 +159,8 @@ module.exports = {
       96: "224px",
       128: "256px",
       225: "420px",
-      256: "512px"
-    }
+      256: "512px",
+    },
   },
   plugins: [
     plugin(function({ addBase, theme }) {
@@ -178,17 +168,17 @@ module.exports = {
         a: { color: theme("colors.purple.700") },
         "a:hover": { color: theme("colors.purple.500") },
         "abbr[title]": {
-          textDecoration: "none"
+          textDecoration: "none",
         },
         "abbr[title]:hover": {
           cursor: "help",
-          textDecoration: `underline dotted theme("colors.purple.500")`
+          textDecoration: `underline dotted theme("colors.purple.500")`,
         },
         body: {
           color: theme("colors.gray.900"),
           height: "100%",
           lineHeight: "1.5",
-          letterSpacing: "0"
+          letterSpacing: "0",
         },
         "button:focus": { outline: "none" },
         h1: { fontSize: theme("fontSize.2xl") },
@@ -198,14 +188,14 @@ module.exports = {
         p: { marginBottom: theme("spacing.4") },
         code: {
           color: theme("colors.gray.700"),
-          fontFamily: theme("fontFamily.mono")
-        }
+          fontFamily: theme("fontFamily.mono"),
+        },
       });
     }),
     plugin(function({ addComponents, theme }) {
-      const screens = theme("screens", {});
+      // const screens = theme("screens", {});
       const gap = theme("spacing.3", {});
-      const doubleGap = theme("spacing.6", {});
+      // const doubleGap = theme("spacing.6", {});
       const template = {
         ".duk-scrim": {
           backgroundColor: "black",
@@ -214,7 +204,7 @@ module.exports = {
           left: 0,
           zIndex: 10,
           width: "100%",
-          height: "100%"
+          height: "100%",
         },
         ".duk-template": {
           display: "flex",
@@ -227,7 +217,7 @@ module.exports = {
               display: "block",
               fontSize: "inherit",
               "&__collapse": {
-                display: "none"
+                display: "none",
               },
               ".duk-menu": {
                 display: "block",
@@ -236,10 +226,10 @@ module.exports = {
                   flexDirection: "row",
                   justifyContent: "space-around",
                   "&__item": {
-                    margin: `0 theme("spacing.2")`
-                  }
-                }
-              }
+                    margin: `0 theme("spacing.2")`,
+                  },
+                },
+              },
             },
             "@media (min-width: 640px)": {
               ".duk-navbar": {
@@ -249,151 +239,151 @@ module.exports = {
                     flexDirection: "row",
                     justifyContent: "flex-start",
                     "&__item": {
-                      margin: `0 theme("spacing.2")`
-                    }
-                  }
-                }
-              }
-            }
+                      margin: `0 theme("spacing.2")`,
+                    },
+                  },
+                },
+              },
+            },
           },
           "&__content": {
             display: "flex",
             "flex-direction": "column",
-            flex: 1
+            flex: 1,
           },
           "@media (min-width: 640px)": {
             "&__content": {
-              "flex-direction": "row"
-            }
+              "flex-direction": "row",
+            },
           },
           "&__one-column": {
             "@media (min-width: 640px)": {
               ".duk-template__one-column__content__central": {
-                width: "100%"
-              }
-            }
+                width: "100%",
+              },
+            },
           },
           "&__two-column": {
             "@media (min-width: 640px)": {
               "&--5050": {
                 ".duk-template__two-column__content": {
                   "&__west": {
-                    width: "50%"
+                    width: "50%",
                   },
                   "&__east": {
-                    width: "50%"
-                  }
-                }
+                    width: "50%",
+                  },
+                },
               },
               "&--2080": {
                 ".duk-template__two-column__content": {
                   "&__west": {
-                    width: "20%"
+                    width: "20%",
                   },
                   "&__east": {
-                    width: "80%"
-                  }
-                }
+                    width: "80%",
+                  },
+                },
               },
               "&--8020": {
                 ".duk-template__two-column__content": {
                   "&__west": {
-                    width: "80%"
+                    width: "80%",
                   },
                   "&__east": {
-                    width: "20%"
-                  }
-                }
-              }
+                    width: "20%",
+                  },
+                },
+              },
             },
             "&--fixed": {
               ".duk-template__column": {
-                width: "100%"
+                width: "100%",
               },
               ".duk-template__two-column__content": {
                 "&__west": {
                   flex: "none",
-                  order: "2 !important"
+                  order: "2 !important",
                 },
                 "&__east": {
                   flex: 1,
-                  order: "1 !important"
-                }
+                  order: "1 !important",
+                },
               },
               "@media (min-width: 640px)": {
                 ".duk-template__two-column__content": {
                   "&__west": {
                     "max-width": "128px",
-                    order: "1 !important"
+                    order: "1 !important",
                   },
                   "&__east": {
                     flex: "1",
-                    order: "2 !important"
-                  }
-                }
-              }
-            }
+                    order: "2 !important",
+                  },
+                },
+              },
+            },
           },
           "&__three-column": {
             "@media (min-width: 640px)": {
               "&--333333": {
                 ".duk-template__three-column__content": {
                   "&__west": {
-                    width: "33.333333%"
+                    width: "33.333333%",
                   },
                   "&__central": {
-                    width: "33.333333%"
+                    width: "33.333333%",
                   },
                   "&__east": {
-                    width: "33.333333%"
-                  }
-                }
+                    width: "33.333333%",
+                  },
+                },
               },
               "&--204040": {
                 ".duk-template__three-column__content": {
                   "&__west": {
-                    width: "20%"
+                    width: "20%",
                   },
                   "&__central": {
-                    width: "40%"
+                    width: "40%",
                   },
                   "&__east": {
-                    width: "40%"
-                  }
-                }
+                    width: "40%",
+                  },
+                },
               },
               "&--404020": {
                 ".duk-template__three-column__content": {
                   "&__west": {
-                    width: "40%"
+                    width: "40%",
                   },
                   "&__central": {
-                    width: "40%"
+                    width: "40%",
                   },
                   "&__east": {
-                    width: "20%"
-                  }
-                }
-              }
-            }
+                    width: "20%",
+                  },
+                },
+              },
+            },
           },
           "&--gutters": {
             ".duk-template__content": {
               padding: `0 ${gap}`,
             },
             ".duk-template__column": {
-              margin: `0 ${gap}`
+              margin: `0 ${gap}`,
             },
           },
           "&--gutters.duk-template__two-column--fixed": {
             ".duk-template__column": {
-              "margin": 0,
+              margin: 0,
               "@media (min-width: 640px)": {
-                margin: `0 ${gap}`
-              }
-            }
-          }
-        }
+                margin: `0 ${gap}`,
+              },
+            },
+          },
+        },
       };
 
       const ripple = {
@@ -411,17 +401,17 @@ module.exports = {
           "&--light": { backgroundColor: theme("colors.gray.300") },
           "&--dark": { backgroundColor: theme("colors.gray.700") },
           "&--black": { backgroundColor: theme("colors.gray.900") },
-          "&--white": { backgroundColor: theme("colors.gray.100") }
+          "&--white": { backgroundColor: theme("colors.gray.100") },
         },
         "@keyframes rippleffect": {
           to: {
             transform: "scale(2.5)",
-            opacity: "0"
-          }
-        }
+            opacity: "0",
+          },
+        },
       };
 
       addComponents([template, ripple]);
-    })
-  ]
+    }),
+  ],
 };

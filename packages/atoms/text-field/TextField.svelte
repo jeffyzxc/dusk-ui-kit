@@ -1,14 +1,6 @@
 <script>
-  import { setContext, getContext } from "svelte";
   import { current_component } from "svelte/internal";
-  import {
-    exclude,
-    forwardEventsBuilder,
-    useActions,
-    variants,
-    types,
-    contexts
-  } from "@dusk/helpers";
+  import { exclude, forwardEventsBuilder, variants, types } from "@dusk/helpers";
   import { Input, Textarea } from "@dusk/elements";
   import "./styles.css";
 
@@ -24,7 +16,7 @@
   export let placeholder = "";
   export let component = type === types.ATOM.TEXT_FIELD.MULTI_LINE ? Textarea : Input;
 
-  function getClassNames(variant, type) {
+  function getClassNames(variant) {
     let classNames = "";
     switch (variant) {
       case variants.ATOM.BUTTON.LIGHT:
@@ -45,7 +37,7 @@
   this="{component}"
   use="{[forwardEvents, ...use]}"
   class="duk-text-field {className}
-  {getClassNames(variant, type)}"
+  {getClassNames(variant)}"
   {placeholder}
   {type}
   {...exclude($$props, ['use', 'class', 'variant', 'type', 'placeholder'])}>

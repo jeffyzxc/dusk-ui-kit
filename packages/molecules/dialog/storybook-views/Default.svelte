@@ -8,12 +8,12 @@
   let showDialog = false;
 </script>
 
-<Dialog {variant} {title} {persistent} {opacity} bind:value={showDialog}>
+<Dialog {variant} {title} {persistent} {opacity} bind:value="{showDialog}">
   <p>This is a basic Dialog!</p>
 </Dialog>
 
 <div class="py-2">
-  <Button on:click={() => showDialog = true}>
+  <Button on:click="{() => (showDialog = true)}">
     <Label>Show dialog</Label>
   </Button>
 </div>

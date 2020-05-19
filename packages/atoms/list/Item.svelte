@@ -1,6 +1,6 @@
 <script>
   import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, exclude, useActions } from "@dusk/helpers";
+  import { forwardEventsBuilder, exclude } from "@dusk/helpers";
   import { A, Span, Li } from "@dusk/elements";
   import createRipple from "@dusk/helpers/ripple.js";
   const forwardEvents = forwardEventsBuilder(current_component);

@@ -7,24 +7,24 @@ module.exports = {
         except: [
           "blockless-after-blockless",
           "blockless-after-same-name-blockless",
-          "first-nested"
+          "first-nested",
         ],
         ignore: ["after-comment", "inside-block"],
-        ignoreAtRules: ["apply", "screen", "font-face", "nest"]
-      }
+        ignoreAtRules: ["apply", "screen", "font-face", "nest"],
+      },
     ],
     "at-rule-no-unknown": [
       true,
       {
-        ignoreAtRules: ["tailwind", "variants", "responsive", "apply", "screen"]
-      }
+        ignoreAtRules: ["tailwind", "variants", "responsive", "apply", "screen"],
+      },
     ],
     "property-no-unknown": [
       true,
       {
-        ignoreProperties: ["font-path"]
-      }
+        ignoreProperties: ["font-path"],
+      },
     ],
-    "selector-nested-pattern": "^&"
-  }
+    "selector-nested-pattern": "^&",
+  },
 };

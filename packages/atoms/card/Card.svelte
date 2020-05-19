@@ -6,7 +6,7 @@
     useActions,
     variants,
     elevations,
-    sizes
+    sizes,
   } from "@dusk/helpers";
   import "./styles.css";
 

@@ -1,12 +1,6 @@
 <script>
-  import { getContext } from "svelte";
   import { current_component } from "svelte/internal";
-  import {
-    forwardEventsBuilder,
-    exclude,
-    useActions,
-    types
-  } from "@dusk/helpers";
+  import { forwardEventsBuilder, exclude, useActions, types } from "@dusk/helpers";
   const forwardEvents = forwardEventsBuilder(current_component);
   export let use = [];
   export let type = "text";

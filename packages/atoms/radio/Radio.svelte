@@ -1,18 +1,10 @@
 <script>
-  import { getContext } from "svelte";
+  // import { getContext } from "svelte";
   import { current_component } from "svelte/internal";
-  import {
-    forwardEventsBuilder,
-    exclude,
-    useActions,
-    contexts,
-    variants,
-    types
-  } from "@dusk/helpers";
+  import { forwardEventsBuilder, exclude, variants, types } from "@dusk/helpers";
   import "./styles.css";
   import { Input, Label } from "@dusk/elements";
   import createRipple from "@dusk/helpers/ripple.js";
-
 
   let className = "";
   export { className as class };
@@ -24,12 +16,12 @@
   const forwardEvents = forwardEventsBuilder(current_component);
   const ripple = createRipple(variant);
 
-  let context = getContext("DUK:button:context");
+  // let context = getContext("DUK:button:context");
 
   $: actionProp = {};
   $: defaultProp = {};
 
-  function getClassNames(variant, context) {
+  function getClassNames(variant) {
     let classNames = "";
     switch (variant) {
       case variants.ATOM.RADIO.BRAND:
@@ -71,18 +63,17 @@
 </script>
 
 <div
-  class="duk-radio {className} {getClassNames(variant, context)}"
-  {...exclude($$props, ['use', 'class', 'variant', 'id', 'name', 'type'])}
->
+  class="duk-radio {className}
+  {getClassNames(variant)}"
+  {...exclude($$props, ['use', 'class', 'variant', 'id', 'name', 'type'])}>
   <Input
     use="{[forwardEvents, ripple, ...use]}"
     class="duk-radio__button"
     type="{types.ATOM.RADIO}"
     {name}
-    id="{id}"
+    {id}
     {...actionProp}
-    {...defaultProp}
-  />
+    {...defaultProp} />
   <Label class="duk-radio__label" for="{id}">
     <slot />
   </Label>

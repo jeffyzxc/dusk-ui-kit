@@ -10,12 +10,10 @@ export function baseBuilder(props) {
 
   // SSR support
   if (Base.$$render) {
-    Component.$$render = (...args) =>
-      Object.assign(internals, props) && Base.$$render(...args);
+    Component.$$render = (...args) => Object.assign(internals, props) && Base.$$render(...args);
   }
   if (Base.render) {
-    Component.render = (...args) =>
-      Object.assign(internals, props) && Base.render(...args);
+    Component.render = (...args) => Object.assign(internals, props) && Base.render(...args);
   }
 
   return Component;

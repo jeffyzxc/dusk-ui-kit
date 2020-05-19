@@ -49,7 +49,7 @@ export function forwardEventsBuilder(component, additionalEvents = []) {
     "pointerleave",
     "gotpointercapture",
     "lostpointercapture",
-    ...additionalEvents
+    ...additionalEvents,
   ];
 
   function forward(e) {
@@ -68,7 +68,7 @@ export function forwardEventsBuilder(component, additionalEvents = []) {
         for (let i = 0; i < destructors.length; i++) {
           destructors[i]();
         }
-      }
+      },
     };
   };
 }

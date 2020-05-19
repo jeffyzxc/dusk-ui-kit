@@ -1,11 +1,4 @@
-import {
-  withKnobs,
-  select,
-  text,
-  boolean,
-  number,
-  optionsKnob as options
-} from "@storybook/addon-knobs";
+import { withKnobs, select, text, boolean, number } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
 import { variants } from "@dusk/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
@@ -15,35 +8,31 @@ import "@dusk/styles/tailwind.css";
 export default {
   title: "Components/Molecules/Dialog",
   parameters: {
-    notes: readme
+    notes: readme,
   },
-  decorators: [withKnobs]
+  decorators: [withKnobs],
 };
 
 export const actionsData = {
-  onDialogClose: action("onDialogClose")
+  onDialogClose: action("onDialogClose"),
 };
 
 const opacityOptions = {
-   range: true,
-   min: 0,
-   max: 1,
-   step: 0.1,
+  range: true,
+  min: 0,
+  max: 1,
+  step: 0.1,
 };
 
 export const Default = () => ({
   Component: DefaultView,
   props: {
-    variant: select(
-      "Variant",
-      variants.MOLECULE.DIALOG,
-      variants.MOLECULE.DIALOG.WHITE
-    ),
+    variant: select("Variant", variants.MOLECULE.DIALOG, variants.MOLECULE.DIALOG.WHITE),
     title: text("Dialog title", ""),
     persistent: boolean("Persistent", false),
-    opacity: number("Overlay opacity", 0.5, opacityOptions)
+    opacity: number("Overlay opacity", 0.5, opacityOptions),
   },
   on: {
-    ...actionsData
-  }
+    ...actionsData,
+  },
 });

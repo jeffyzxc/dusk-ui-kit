@@ -1,12 +1,12 @@
 {
   "name": "@dusk/navbar",
-  "description": "Dusk UI Kit - Navbar",
   "version": "0.0.41-alpha.0",
-  "author": "Kieran Hall <kieran@dusk.network>",
+  "description": "Dusk UI Kit - Navbar",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
   },
   "license": "MIT",
+  "author": "Kieran Hall <kieran@dusk.network>",
   "scripts": {
     "test": "echo \"LOL\" && exit 1"
   },

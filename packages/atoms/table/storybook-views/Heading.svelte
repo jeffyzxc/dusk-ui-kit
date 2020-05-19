@@ -10,7 +10,7 @@
 <Table {fixed} {striped} {variant} {type} class="w-screen">
   <thead slot="head">
     <Row type="head">
-      <Datum colspan="3" prominent={true}>
+      <Datum colspan="3" prominent="{true}">
         <h3>Mega Heading</h3>
       </Datum>
     </Row>
@@ -21,7 +21,7 @@
       <Datum>Col 2 data</Datum>
       <Datum>Col 3 data</Datum>
     </Row>
-    <Row highlight={true}>
+    <Row highlight="{true}">
       <Datum>Col 1 data</Datum>
       <Datum>Col 2 data</Datum>
       <Datum>Col 3 data</Datum>

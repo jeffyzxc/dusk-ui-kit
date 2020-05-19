@@ -1,14 +1,7 @@
 <script>
   import { setContext, getContext } from "svelte";
   import { current_component } from "svelte/internal";
-  import {
-    exclude,
-    forwardEventsBuilder,
-    useActions,
-    variants,
-    sizes,
-    contexts
-  } from "@dusk/helpers";
+  import { exclude, forwardEventsBuilder, variants, sizes, contexts } from "@dusk/helpers";
   import { A, Button } from "@dusk/elements";
   import "./styles.css";
   import createRipple from "@dusk/helpers/ripple.js";
@@ -27,6 +20,8 @@
   export let component = href == null ? Button : A;
 
   let context = getContext("DUK:button:context");
+  let action;
+  let defaultAction;
 
   $: actionProp =
     context === contexts.BUTTON.ACTION.DIALOG && action !== null

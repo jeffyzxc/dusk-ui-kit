@@ -4,18 +4,18 @@ export default {
     LIST: {
       NONE: "none",
       NUMBERED: "numbered",
-      BULLETED: "bulleted"
+      BULLETED: "bulleted",
     },
     TABLE: {
       BASE: "base",
       COMPACT: "compact",
-      SPACIOUS: "spacious"
+      SPACIOUS: "spacious",
     },
     TEXT_FIELD: {
       MULTI_LINE: "multi",
       TEXT: "text",
-      PASSWORD: "password"
+      PASSWORD: "password",
     },
-    RADIO: "radio"
-  }
+    RADIO: "radio",
+  },
 };

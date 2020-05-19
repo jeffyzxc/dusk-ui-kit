@@ -24,7 +24,7 @@ export default function r(variant = "brand") {
   return function(node) {
     node.addEventListener("click", ripple(variant));
     return {
-      onDestroy: () => node.removeEventListener("click")
+      onDestroy: () => node.removeEventListener("click"),
     };
   };
 }

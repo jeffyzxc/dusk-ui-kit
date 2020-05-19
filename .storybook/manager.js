@@ -10,5 +10,5 @@ import "@storybook/addon-knobs/register";
 import dusk from "./themes/dusk";
 
 addons.setConfig({
-  theme: dusk
+  theme: dusk,
 });

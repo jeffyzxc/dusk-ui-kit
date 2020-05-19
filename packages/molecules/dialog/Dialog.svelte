@@ -1,20 +1,8 @@
 <script>
-  import {
-    setContext,
-    getContext,
-    createEventDispatcher
-  } from "svelte";
-  import { get_current_component } from "svelte/internal";
+  import { setContext, getContext, createEventDispatcher } from "svelte";
   // import { scale } from "svelte/transition";
   // import { quadIn } from "svelte/easing";
-  import {
-    forwardEventsBuilder,
-    Scrim,
-    exclude,
-    contexts,
-    variants,
-    elevations
-  } from "@dusk/helpers";
+  import { Scrim, exclude, contexts, variants, elevations } from "@dusk/helpers";
   import Card, { Title, Content } from "@dusk/card";
   import Icon from "@dusk/icon";
   import "./styles.css";
@@ -23,9 +11,9 @@
   const dispatch = createEventDispatcher();
 
   let className = "";
-  export { className as class }
+  export { className as class };
   export let value;
-  export let title = "";;
+  export let title = "";
   export let variant = variants.MOLECULE.DIALOG.WHITE;
   export let opacity = 0.5;
   export let persistent = false;
@@ -66,24 +54,23 @@
         classNames += "";
     }
 
-    if (!title) classNames += " duk-dialog--empty-title"
+    if (!title) classNames += " duk-dialog--empty-title";
 
     return classNames;
   }
 
   function closeDialog() {
     // console.log('closing dialog')
-    value = false
+    value = false;
     dispatch("dialogClose", {
-      componentId: '__DUK-dialog'
+      componentId: "__DUK-dialog",
     });
-
   }
 </script>
 
 {#if value}
   <div class="fixed w-full h-full top-0 left-0 z-30">
-    <Scrim {opacity} on:click={() => !persistent && closeDialog()} />
+    <Scrim {opacity} on:click="{() => !persistent && closeDialog()}" />
     <div class="h-full w-full absolute flex items-center justify-center">
       <Card
         id="__DUK-dialog"

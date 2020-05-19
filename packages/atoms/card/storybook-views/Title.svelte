@@ -8,6 +8,8 @@
 </script>
 
 <Card {variant} {elevation} {size} style="width: 305px">
-  <Title><h3>{title}</h3></Title>
+  <Title>
+    <h3>{title}</h3>
+  </Title>
   <Content>{content}</Content>
 </Card>

@@ -10,7 +10,7 @@ function getBackgrounds(colors) {
       for (const [colorTone, colorToneValue] of Object.entries(colorValue)) {
         collection.push({ name: `${colorName}-${colorTone}`, value: colorToneValue });
       }
-    } else if (typeof colorValue === "string"){
+    } else if (typeof colorValue === "string") {
       collection.push({ name: colorName, value: colorValue, default: colorName === "white" });
     } else {
       throw Error("Unknown type found in backgroundColors!");
@@ -24,8 +24,8 @@ function getBackgrounds(colors) {
 addParameters({
   backgrounds: getBackgrounds(backgroundColors),
   options: {
-    showRoots: false
-  }
+    showRoots: false,
+  },
 });
 
 addDecorator(Centered);

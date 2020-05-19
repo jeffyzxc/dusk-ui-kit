@@ -4,6 +4,6 @@ export default function GroupItem(node) {
   return {
     destroy() {
       node.classList.remove("duk-button__group__item");
-    }
+    },
   };
 }

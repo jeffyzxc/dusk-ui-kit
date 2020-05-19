@@ -1,5 +1,5 @@
 <script>
-  import { setContext, getContext, onMount, afterUpdate } from "svelte";
+  import { setContext, getContext } from "svelte";
   import { current_component } from "svelte/internal";
   import {
     forwardEventsBuilder,
@@ -7,7 +7,7 @@
     useActions,
     contexts,
     orientations,
-    variants
+    variants,
   } from "@dusk/helpers";
   import "./styles.css";
 
@@ -24,7 +24,7 @@
 
   setContext("DUK:list:context", contexts.LIST.MENU);
 
-  function getClassNames(variant, orientation, context, carousel) {
+  function getClassNames(variant, orientation, context) {
     let classNames = "";
     switch (variant) {
       case variants.MOLECULE.MENU.BRAND:
@@ -80,12 +80,11 @@
         classNames += " duk-menu--vertical";
         break;
       default:
-        classNames += ""
+        classNames += "";
     }
 
     return classNames;
   }
-
 </script>
 
 <nav

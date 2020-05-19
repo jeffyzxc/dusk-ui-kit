@@ -1,10 +1,5 @@
-import {
-  withKnobs,
-  select,
-  optionsKnob as options
-} from "@storybook/addon-knobs";
-import { action } from "@storybook/addon-actions";
-import { variants, sizes, types } from "@dusk/helpers";
+import { withKnobs, select } from "@storybook/addon-knobs";
+import { types } from "@dusk/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import IconView from "./storybook-views/Icon.svelte";
 import readme from "./readme.stories.md";
@@ -13,21 +8,21 @@ import "@dusk/styles/tailwind.css";
 export default {
   title: "Components/Atoms/List",
   parameters: {
-    notes: readme
+    notes: readme,
   },
-  decorators: [withKnobs]
+  decorators: [withKnobs],
 };
 
 export const Default = () => ({
   Component: DefaultView,
   props: {
-    type: select("Type", types.ATOM.LIST, types.ATOM.LIST.NONE)
-  }
+    type: select("Type", types.ATOM.LIST, types.ATOM.LIST.NONE),
+  },
 });
 
 export const WithIcons = () => ({
   Component: IconView,
   props: {
-    type: select("Type", types.ATOM.LIST, types.ATOM.LIST.NONE)
-  }
+    type: select("Type", types.ATOM.LIST, types.ATOM.LIST.NONE),
+  },
 });

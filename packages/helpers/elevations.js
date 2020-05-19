@@ -4,7 +4,7 @@ export default {
       NONE: "none",
       SMALL: "sm",
       MEDIUM: "md",
-      LARGE: "lg"
-    }
-  }
+      LARGE: "lg",
+    },
+  },
 };

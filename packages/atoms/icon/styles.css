@@ -1,83 +1,83 @@
 .duk-icon {
-    @apply fill-current;
+  @apply fill-current;
 
+  & > svg {
+    @apply h-6 w-6;
+  }
+
+  &.inline {
     & > svg {
-        @apply h-6 w-6;
+      display: inline;
     }
+  }
 
-    &.inline {
-        & > svg {
-            display: inline;
-        }
-    }
+  &--brand {
+    @apply text-purple-500 fill-current;
+  }
 
-    &--brand {
-        @apply text-purple-500 fill-current;
-    }
+  &--cta {
+    @apply text-orange-500 fill-current;
+  }
 
-    &--cta {
-        @apply text-orange-500 fill-current;
-    }
+  &--info {
+    @apply text-purple-500 fill-current;
+  }
 
-    &--info {
-        @apply text-purple-500 fill-current;
-    }
+  &--success {
+    @apply text-green-500 fill-current;
+  }
 
-    &--success {
-        @apply text-green-500 fill-current;
-    }
+  &--warning {
+    @apply text-yellow-500 fill-current;
+  }
 
-    &--warning {
-        @apply text-yellow-500 fill-current;
-    }
+  &--danger {
+    @apply text-red-500 fill-current;
+  }
 
-    &--danger {
-        @apply text-red-500 fill-current;
-    }
+  &--dark {
+    @apply text-gray-800 fill-current;
+  }
 
-    &--dark {
-        @apply text-gray-800 fill-current;
-    }
+  &--light {
+    @apply text-gray-200 fill-current;
+  }
 
-    &--light {
-        @apply text-gray-200 fill-current;
-    }
+  &--black {
+    @apply text-black fill-current;
+  }
 
-    &--black {
-        @apply text-black fill-current;
-    }
+  &--white {
+    @apply text-white fill-current;
+  }
 
-    &--white {
-        @apply text-white fill-current;
+  &--large {
+    > svg {
+      @apply h-8 w-8;
     }
+  }
 
-    &--large {
-        > svg {
-            @apply h-8 w-8;
-        }
+  &--xl {
+    > svg {
+      @apply h-10 w-10;
     }
+  }
 
-    &--xl {
-        > svg {
-            @apply h-10 w-10;
-        }
+  &--xxl {
+    > svg {
+      @apply h-12 w-12;
     }
+  }
 
-    &--xxl {
-        > svg {
-            @apply h-12 w-12;
-        }
+  &--xxxl {
+    > svg {
+      @apply h-16 w-16;
     }
+  }
 
-    &--xxxl {
-        > svg {
-            @apply h-16 w-16;
-        }
+  &--small {
+    > svg {
+      @apply h-5 w-5;
     }
-
-    &--small {
-        > svg {
-            @apply h-5 w-5;
-        }
-    }
+  }
 }

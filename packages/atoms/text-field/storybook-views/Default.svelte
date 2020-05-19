@@ -6,7 +6,7 @@
   export let type;
   export let placeholder;
 
-  const events = actions({ onFocus: 'focused', onMouseOver: 'hovered' });
+  const events = actions({ onFocus: "focused", onMouseOver: "hovered" });
 </script>
 
 <TextField {...events} {variant} {type} {placeholder} />

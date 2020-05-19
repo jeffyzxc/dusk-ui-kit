@@ -1,13 +1,7 @@
 <script>
   import { setContext } from "svelte";
   import { current_component } from "svelte/internal";
-  import {
-    forwardEventsBuilder,
-    exclude,
-    useActions,
-    contexts,
-    variants
-  } from "@dusk/helpers";
+  import { forwardEventsBuilder, exclude, useActions, contexts, variants } from "@dusk/helpers";
   import Icon from "@dusk/icon";
   import "./styles.css";
   const forwardEvents = forwardEventsBuilder(current_component);
@@ -65,11 +59,11 @@
   }
 
   const toggleNavbar = () => {
-    document
-      .getElementById("__DUK-navbar-menu")
-      .classList.toggle("duk-navbar__menu--hidden");
+    document.getElementById("__DUK-navbar-menu").classList.toggle("duk-navbar__menu--hidden");
 
-    expanded = !document.getElementById("__DUK-navbar-menu").classList.contains("duk-navbar__menu--hidden");
+    expanded = !document
+      .getElementById("__DUK-navbar-menu")
+      .classList.contains("duk-navbar__menu--hidden");
   };
 </script>
 

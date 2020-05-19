@@ -10,8 +10,8 @@ const postcssProcessor = (config = {}) => {
     require("tailwindcss")(tailwindConfig),
     require("postcss-nested")(),
     require("cssnano")({
-      preset: "default"
-    })
+      preset: "default",
+    }),
   ].filter(Boolean);
   return plugins;
 };
@@ -19,5 +19,5 @@ const postcssProcessor = (config = {}) => {
 module.exports = (config = {}) =>
   postcss({
     plugins: postcssProcessor(config),
-    extract: path.resolve(config.output || "./static/global.css")
+    extract: path.resolve(config.output || "./static/global.css"),
   });

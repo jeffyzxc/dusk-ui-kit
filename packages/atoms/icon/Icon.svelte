@@ -1,15 +1,7 @@
 <script>
   import { getContext } from "svelte";
   import { current_component } from "svelte/internal";
-  import {
-    forwardEventsBuilder,
-    exclude,
-    useActions,
-    contexts,
-    variants,
-    icons,
-    sizes
-  } from "@dusk/helpers";
+  import { forwardEventsBuilder, exclude, contexts, variants, icons, sizes } from "@dusk/helpers";
   import "./styles.css";
   import { Div, A } from "@dusk/elements";
 
@@ -114,13 +106,13 @@
       case sizes.ATOM.ICON.LARGE:
         classNames += " duk-icon--large";
         break;
-    case sizes.ATOM.ICON.XL:
+      case sizes.ATOM.ICON.XL:
         classNames += " duk-icon--xl";
         break;
-    case sizes.ATOM.ICON.XXL:
+      case sizes.ATOM.ICON.XXL:
         classNames += " duk-icon--xxl";
         break;
-    case sizes.ATOM.ICON.XXXL:
+      case sizes.ATOM.ICON.XXXL:
         classNames += " duk-icon--xxxl";
         break;
       default:

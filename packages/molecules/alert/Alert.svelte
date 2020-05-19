@@ -1,13 +1,6 @@
 <script>
   import { setContext, getContext } from "svelte";
-  import { current_component } from "svelte/internal";
-  import {
-    exclude,
-    contexts,
-    variants,
-    elevations,
-    sizes
-  } from "@dusk/helpers";
+  import { exclude, contexts, variants, elevations, sizes } from "@dusk/helpers";
   import Card, { Title, Content } from "@dusk/card";
   import Icon from "@dusk/icon";
   import "./styles.css";
@@ -54,7 +47,7 @@
         classNames += "";
     }
 
-    if (!title) classNames += " duk-alert--empty-title"
+    if (!title) classNames += " duk-alert--empty-title";
 
     return classNames;
   }
@@ -68,7 +61,9 @@
     {variant}
     {size}
     elevation="{elevations.ATOM.CARD.MEDIUM}"
-    role="alertdialog" aria-labelledby="__DUK-alert-title" aria-describedby="__DUK-alert-content"
+    role="alertdialog"
+    aria-labelledby="__DUK-alert-title"
+    aria-describedby="__DUK-alert-content"
     {...exclude($$props, ['class', 'variant', 'title'])}>
     <Title id="__DUK-alert-title" class="duk-alert__title">
       {#if title}{title}{/if}
@@ -77,7 +72,7 @@
           id="__DUK-alert-dismiss"
           aria-controls="__DUK-alert"
           aria-label="Dismiss alert"
-          on:click="{() => value = false}"
+          on:click="{() => (value = false)}"
           class="duk-alert__dismiss">
           <Icon {size} name="close-circle-outline" />
         </button>

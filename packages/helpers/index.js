@@ -23,5 +23,5 @@ export {
   elevations,
   icons,
   ripple,
-  Scrim
+  Scrim,
 };

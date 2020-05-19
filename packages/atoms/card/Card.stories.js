@@ -1,14 +1,6 @@
-import {
-  withKnobs,
-  select,
-  text,
-  boolean,
-  optionsKnob as options
-} from "@storybook/addon-knobs";
-import { action } from "@storybook/addon-actions";
+import { withKnobs, select, text, optionsKnob as options } from "@storybook/addon-knobs";
 import { variants, elevations, sizes } from "@dusk/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
-import TitleView from "./storybook-views/Title.svelte";
 import ActionsView from "./storybook-views/Actions.svelte";
 import FooterView from "./storybook-views/Footer.svelte";
 import readme from "./readme.stories.md";
@@ -17,9 +9,9 @@ import "@dusk/styles/tailwind.css";
 export default {
   title: "Components/Atoms/Card",
   parameters: {
-    notes: readme
+    notes: readme,
   },
-  decorators: [withKnobs]
+  decorators: [withKnobs],
 };
 
 const cardVariants = variants.ATOM.CARD;
@@ -38,9 +30,9 @@ export const Default = () => ({
     elevation: select("Card Elevation", cardElevations, cardElevationDefault),
     content: text("Card Content", "Lorem ipsum..."),
     size: options("Size", cardSizes, cardSizeDefault, {
-      display: "radio"
-    })
-  }
+      display: "radio",
+    }),
+  },
 });
 
 export const WithFooter = () => ({
@@ -50,9 +42,9 @@ export const WithFooter = () => ({
     elevation: select("Card Elevation", cardElevations, cardElevationDefault),
     content: text("Card Content", "Lorem ipsum..."),
     size: options("Size", cardSizes, cardSizeDefault, {
-      display: "radio"
-    })
-  }
+      display: "radio",
+    }),
+  },
 });
 
 export const WithTitleAndActions = () => ({
@@ -63,13 +55,9 @@ export const WithTitleAndActions = () => ({
     content: text("Card Content", "Lorem ipsum..."),
     title: text("Card Title", "I am a Card!"),
     buttonText: text("Button Text", "Action!"),
-    buttonVariant: select(
-      "Button Variant",
-      buttonVariants,
-      buttonVariantDefault
-    ),
+    buttonVariant: select("Button Variant", buttonVariants, buttonVariantDefault),
     size: options("Size", cardSizes, cardSizeDefault, {
-      display: "radio"
-    })
-  }
+      display: "radio",
+    }),
+  },
 });

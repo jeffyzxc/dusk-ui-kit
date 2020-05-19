@@ -8,10 +8,6 @@ before_install:
 before_script:
   - yarn sb:build
 
-after_success:
-  - "[[ $TRAVIS_PULL_REQUEST != 'false' ]] && npx semantic-release-github-pr --debug"
-  - npx semantic-release --debug
-
 script:
   - echo "skipping tests"
 
@@ -27,14 +23,19 @@ script:
 #           - npx semantic-release
 
 deploy:
-  provider: pages
-  skip_cleanup: true
-  token: $GITHUB_TOKEN
-  local_dir: storybook-static
-  repo: dusk-network/dusk-ui-kit
-  target_branch: gh-pages
-  on:
-    branch: master
+  - provider: script
+    skip_cleanup: true
+    script:
+      - yarn lerna exec --concurrency 1 "npx --no-install semantic-release -e semantic-release-monorepo" && node -e "require('semantic-release-monorepo-hooks').hookAfterAll()"
+
+  - provider: pages
+    skip_cleanup: true
+    token: $GITHUB_TOKEN
+    local_dir: storybook-static
+    repo: dusk-network/dusk-ui-kit
+    target_branch: gh-pages
+    on:
+      branch: master
 
 notifications:
   webhooks: https://chat.dusk.network/hooks/j8w8YcFwMpuFJ7mgZ/a4KFgp9QbwfsyQbaQ6TDJYRZfdegjPT4e6ZjHzZ3gtDr4YDv

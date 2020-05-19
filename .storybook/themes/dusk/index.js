@@ -39,7 +39,7 @@ export default create({
 
   brandTitle: "Dusk Design System",
   brandUrl: "https://dusk.network",
-  brandImage: logo
+  brandImage: logo,
 });
 
 export { colors as backgroundColors };

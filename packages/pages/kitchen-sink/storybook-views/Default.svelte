@@ -4,8 +4,8 @@
   import Menu from "@dusk/menu";
   import List, { Item } from "@dusk/list";
   import Logo from "@dusk/logo";
-  import Card, { Content, Title, Actions } from "@dusk/card";
-  import { variants, types } from "@dusk/helpers";
+  import Card, { Content, Title } from "@dusk/card";
+  import { types } from "@dusk/helpers";
 </script>
 
 <TwoColumn class="bg-gray-100">
@@ -65,8 +65,8 @@
           <code>Page</code>
           component example. However, a
           <code>Page</code>
-          is not implemented in the UI Kit directly. This would be created in
-          your client application and rendered after routing.
+          is not implemented in the UI Kit directly. This would be created in your client
+          application and rendered after routing.
         </p>
         <p>
           This

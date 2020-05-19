@@ -6,10 +6,6 @@
   export let href = "javascript:void(0);";
 </script>
 
-<a
-  use:useActions="{use}"
-  use:forwardEvents
-  {href}
-  {...exclude($$props, ['use', 'href'])}>
+<a use:useActions="{use}" use:forwardEvents {href} {...exclude($$props, ['use', 'href'])}>
   <slot />
 </a>

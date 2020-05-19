@@ -39,6 +39,6 @@ export function useActions(node, actions) {
           objects[i].destroy();
         }
       }
-    }
+    },
   };
 }

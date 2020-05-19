@@ -8,7 +8,7 @@ export default {
       WARNING: "warning",
       DANGER: "danger",
       LIGHT: "light",
-      DARK: "dark"
+      DARK: "dark",
     },
     CARD: {
       BRAND: "brand",
@@ -20,7 +20,7 @@ export default {
       LIGHT: "light",
       DARK: "dark",
       WHITE: "white",
-      BLACK: "black"
+      BLACK: "black",
     },
     CHECKBOX: {
       BRAND: "brand",
@@ -32,7 +32,7 @@ export default {
       LIGHT: "light",
       DARK: "dark",
       WHITE: "white",
-      BLACK: "black"
+      BLACK: "black",
     },
     ICON: {
       BRAND: "brand",
@@ -44,15 +44,15 @@ export default {
       LIGHT: "light",
       DARK: "dark",
       WHITE: "white",
-      BLACK: "black"
+      BLACK: "black",
     },
     TABLE: {
       LIGHT: "light",
-      DARK: "dark"
+      DARK: "dark",
     },
     TEXT_FIELD: {
       LIGHT: "light",
-      DARK: "dark"
+      DARK: "dark",
     },
     LOADING_INDICATOR: {
       BRAND: "brand",
@@ -64,7 +64,7 @@ export default {
       LIGHT: "light",
       DARK: "dark",
       WHITE: "white",
-      BLACK: "black"
+      BLACK: "black",
     },
     LOGO: {
       BRAND: "brand",
@@ -76,7 +76,7 @@ export default {
       LIGHT: "light",
       DARK: "dark",
       WHITE: "white",
-      BLACK: "black"
+      BLACK: "black",
     },
     RADIO: {
       BRAND: "brand",
@@ -88,7 +88,7 @@ export default {
       LIGHT: "light",
       DARK: "dark",
       WHITE: "white",
-      BLACK: "black"
+      BLACK: "black",
     },
     SWITCH: {
       BRAND: "brand",
@@ -98,8 +98,8 @@ export default {
       WARNING: "warning",
       DANGER: "danger",
       LIGHT: "light",
-      DARK: "dark"
-    }
+      DARK: "dark",
+    },
   },
   MOLECULE: {
     ALERT: {
@@ -110,7 +110,7 @@ export default {
       WARNING: "warning",
       DANGER: "danger",
       LIGHT: "light",
-      DARK: "dark"
+      DARK: "dark",
     },
     DIALOG: {
       BRAND: "brand",
@@ -120,7 +120,7 @@ export default {
       WARNING: "warning",
       DANGER: "danger",
       LIGHT: "light",
-      DARK: "dark"
+      DARK: "dark",
     },
     MENU: {
       BRAND: "brand",
@@ -132,8 +132,8 @@ export default {
       LIGHT: "light",
       DARK: "dark",
       WHITE: "white",
-      BLACK: "black"
-    }
+      BLACK: "black",
+    },
   },
   ORGANISM: {
     DRAWER: {
@@ -146,7 +146,7 @@ export default {
       LIGHT: "light",
       DARK: "dark",
       WHITE: "white",
-      BLACK: "black"
+      BLACK: "black",
     },
     NAVBAR: {
       BRAND: "brand",
@@ -158,8 +158,8 @@ export default {
       LIGHT: "light",
       DARK: "dark",
       WHITE: "white",
-      BLACK: "black"
-    }
+      BLACK: "black",
+    },
   },
   TEMPLATE: {
     TWO_COL: {
@@ -172,7 +172,7 @@ export default {
     THREE_COL: {
       THIRTY_THIRTY_THIRTY: "33/33/33",
       TWENTY_FORTY_FORTY: "20/40/40",
-      FORTY_FORTY_TWENTY: "40/40/20"
-    }
-  }
+      FORTY_FORTY_TWENTY: "40/40/20",
+    },
+  },
 };

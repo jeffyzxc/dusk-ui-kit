@@ -13,14 +13,14 @@ const preprocessOptions = {
         require("postcss-import")(),
         require("postcss-url")(),
         require("tailwindcss")(tailwindConfig),
-        require("postcss-nested")()
-      ]
-    }
-  }
+        require("postcss-nested")(),
+      ],
+    },
+  },
 };
 module.exports = ({ config }) => {
   const svelteLoader = config.module.rules.find(
-    r => r.loader && r.loader.includes("svelte-loader")
+    r => r.loader && r.loader.includes("svelte-loader"),
   );
 
   svelteLoader.options = {
@@ -28,7 +28,7 @@ module.exports = ({ config }) => {
     preprocess: require("svelte-preprocess")(preprocessOptions),
     dev: production,
     emitCss: true,
-    hotReload: false
+    hotReload: false,
   };
 
   config.module.rules.push({
@@ -39,18 +39,18 @@ module.exports = ({ config }) => {
         options: {
           ident: "postcss",
           sourceMap: true,
-          plugins: preprocessOptions.transformers.postcss.plugins
-        }
-      }
+          plugins: preprocessOptions.transformers.postcss.plugins,
+        },
+      },
     ],
-    include: [PACKAGES_DIR]
+    include: [PACKAGES_DIR],
   });
 
   config.module.rules.push({
     test: /\.stories\.js?$/,
     loaders: [require.resolve("@storybook/source-loader")],
     include: [PACKAGES_DIR],
-    enforce: "pre"
+    enforce: "pre",
   });
 
   return config;

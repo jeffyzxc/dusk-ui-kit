@@ -1,5 +1,4 @@
 <script>
-  import { setContext } from "svelte";
   import { current_component } from "svelte/internal";
   import { forwardEventsBuilder, exclude, useActions } from "@dusk/helpers";
   const forwardEvents = forwardEventsBuilder(current_component);
@@ -29,8 +28,7 @@
     <slot name="header" />
   </div>
   <div class="duk-template__content duk-template__one-column__content">
-    <div
-      class="duk-template__column duk-template__one-column__content__central">
+    <div class="duk-template__column duk-template__one-column__content__central">
       <slot name="central" />
       <slot />
     </div>

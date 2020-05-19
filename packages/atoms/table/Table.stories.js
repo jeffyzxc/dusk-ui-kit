@@ -1,10 +1,4 @@
-import {
-  withKnobs,
-  boolean,
-  select,
-  optionsKnob as options
-} from "@storybook/addon-knobs";
-import { action } from "@storybook/addon-actions";
+import { withKnobs, boolean, select } from "@storybook/addon-knobs";
 import { variants, types } from "@dusk/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import HeadingView from "./storybook-views/Heading.svelte";
@@ -19,9 +13,9 @@ const tableTypeDefault = types.ATOM.TABLE.BASE;
 export default {
   title: "Components/Atoms/Table",
   parameters: {
-    notes: readme
+    notes: readme,
   },
-  decorators: [withKnobs]
+  decorators: [withKnobs],
 };
 
 export const Default = () => ({
@@ -30,8 +24,8 @@ export const Default = () => ({
     variant: select("Variant", tableVariants, tableVariantDefault),
     type: select("Type", tableTypes, tableTypeDefault),
     fixed: boolean("Fixed Layout", false),
-    striped: boolean("Striped rows", true)
-  }
+    striped: boolean("Striped rows", true),
+  },
 });
 
 export const WithHeading = () => ({
@@ -40,6 +34,6 @@ export const WithHeading = () => ({
     variant: select("Variant", tableVariants, tableVariantDefault),
     type: select("Type", tableTypes, tableTypeDefault),
     fixed: boolean("Fixed Layout", false),
-    striped: boolean("Striped rows", true)
-  }
+    striped: boolean("Striped rows", true),
+  },
 });

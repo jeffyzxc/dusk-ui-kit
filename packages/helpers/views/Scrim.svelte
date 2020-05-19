@@ -11,7 +11,6 @@
   id="__DUK-scrim"
   class="duk-scrim"
   style="opacity: {opacity}"
-  in:fade={inProps}
-  out:fade={outProps}
-  on:click
-/>
+  in:fade="{inProps}"
+  out:fade="{outProps}"
+  on:click></div>

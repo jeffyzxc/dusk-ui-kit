@@ -30,9 +30,10 @@ export {
   Table,
   Textarea,
   Thead,
+  Tbody,
   Tfoot,
   Tr,
   Td,
   Th,
-  Ul
+  Ul,
 };

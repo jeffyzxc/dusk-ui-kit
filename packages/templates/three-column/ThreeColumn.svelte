@@ -1,12 +1,6 @@
 <script>
-  import { setContext } from "svelte";
   import { current_component } from "svelte/internal";
-  import {
-    forwardEventsBuilder,
-    exclude,
-    useActions,
-    variants
-  } from "@dusk/helpers";
+  import { forwardEventsBuilder, exclude, useActions, variants } from "@dusk/helpers";
   const forwardEvents = forwardEventsBuilder(current_component);
 
   export let use = [];
@@ -52,8 +46,7 @@
     <div class="duk-template__column duk-template__three-column__content__west">
       <slot name="west" />
     </div>
-    <div
-      class="duk-template__column duk-template__three-column__content__central">
+    <div class="duk-template__column duk-template__three-column__content__central">
       <slot name="central" />
     </div>
     <div class="duk-template__column duk-template__three-column__content__east">
