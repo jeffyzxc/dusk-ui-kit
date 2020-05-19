@@ -29,7 +29,6 @@
       "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true && npx --no-install devmoji -e --lint",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "post-commit": "git update-index --again",
-      "pre-push": "yarn test",
       "commit": "npx git-cz"
     }
   },
@@ -84,6 +83,7 @@
     "prettier-plugin-packagejson": "^2.2.3",
     "prettier-plugin-svelte": "^0.7.0",
     "semantic-release": "^17.0.7",
+    "semantic-release-monorepo": "^7.0.2",
     "stylelint": "^13.2.0",
     "stylelint-config-standard": "^20.0.0",
     "svelte": "^3.0.0",
@@ -93,5 +93,12 @@
   },
   "publishConfig": {
     "registry": "https://npm.dusk.network:4873"
+  },
+  "release": {
+    "extends": "semantic-release-monorepo",
+    "branches": [
+      "master",
+      "next"
+    ]
   }
 }

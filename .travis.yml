@@ -8,19 +8,23 @@ before_install:
 before_script:
   - yarn sb:build
 
+after_success:
+  - "[[ $TRAVIS_PULL_REQUEST != 'false' ]] && npx semantic-release-github-pr --debug"
+  - npx semantic-release --debug
+
 script:
   - echo "skipping tests"
 
-jobs:
-  include:
-    - stage: release
-      node_js: lts/*
-      script: skip
-      deploy:
-        provider: script
-        skip_cleanup: true
-        script:
-          - npx semantic-release
+# jobs:
+#   include:
+#     - stage: release
+#       node_js: lts/*
+#       script: skip
+#       deploy:
+#         provider: script
+#         skip_cleanup: true
+#         script:
+#           - npx semantic-release
 
 deploy:
   provider: pages
