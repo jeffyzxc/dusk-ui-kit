@@ -5,9 +5,13 @@
   "packages": ["packages/*/**"],
   "command": {
     "publish": {
-      "ignoreChanges": ["**/storybook-views/**", "**/*.stories.js", "**/*.md"],
+      "ignoreChanges": ["/storybook-views/*", "*.stories.js", "*.md"],
       "message": "chore(release): publish",
       "registry": "https://npm.dusk.network:4873"
+    },
+    "version": {
+      "allowBranch": ["master"],
+      "conventionalCommits": true
     },
     "bootstrap": {
       "npmClientArgs": ["--pure-lockfile"]

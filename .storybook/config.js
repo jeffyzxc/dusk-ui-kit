@@ -31,4 +31,11 @@ addParameters({
 addDecorator(Centered);
 addDecorator(withA11y);
 
+function loadStories() {
+  const req = require.context("../packages", true, /\.stories\.js$/);
+  let keys = req.keys();
+  keys.unshift("./documentation/Intro/Intro-story.js");
+  keys.forEach(filename => req(filename));
+}
+
 configure([require.context("../packages", true, /\.stories\.js$/)], module);

@@ -92,7 +92,7 @@
     "postcss-url": "^8.0.0",
     "prettier": "^1.19.1",
     "prettier-plugin-packagejson": "^2.2.3",
-    "prettier-plugin-svelte": "^0.7.0",
+    "prettier-plugin-svelte": "^1.1.0",
     "semantic-release": "^17.0.7",
     "semantic-release-monorepo": "^7.0.2",
     "semantic-release-monorepo-hooks": "^2.9.5",
