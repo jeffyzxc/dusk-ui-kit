@@ -11,7 +11,7 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk/helpers": "^1.1.0",
+    "@dusk/helpers": "^1.2.0",
     "priority-plus": "^1.1.0"
   },
   "peerDependencies": {

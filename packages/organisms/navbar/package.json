@@ -11,8 +11,8 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk/helpers": "^1.1.0",
-    "@dusk/icon": "^1.0.0"
+    "@dusk/helpers": "^1.2.0",
+    "@dusk/icon": "^1.1.0"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"
