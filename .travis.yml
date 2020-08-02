@@ -2,7 +2,9 @@ language: node_js
 os: linux
 node_js:
   - lts/* # latest LTS
-
+branches:
+  only:
+    - master
 before_install:
   - yarn config set registry "https://npm.dusk.network:4873"
 before_script:
