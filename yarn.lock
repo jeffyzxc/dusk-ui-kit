@@ -1087,6 +1087,46 @@
   resolved "https://npm.dusk.network:4873/@commitlint%2ftypes/-/types-9.1.1.tgz#d97ebc35d20eed6d8458361cbca5c7cb85d45184"
   integrity sha512-SXY8bCQ1qacJ8AUTUxjabY8G6OjSmMPLN9MBCzGaKOjpPNX6z8zbXTbk9oU3GHZLtcxweWLCi2n49IRS4iQlwg==
 
+"@dusk/card@^1.1.0":
+  version "1.1.0"
+  resolved "https://npm.dusk.network:4873/@dusk%2fcard/-/card-1.1.0.tgz#8ebae7418582050a7c28d1124cb13eb66a79a820"
+  integrity sha512-CJRqPvFwpnpCUAUzNnl9yhDmAWlnjRmzHsQmjaaYJC9elvz20ZCorANwuhJtDaX8/XydSzziyo6OQ6I3SG01xA==
+  dependencies:
+    "@dusk/elements" "^0.0.41-alpha.0"
+    "@dusk/helpers" "^0.0.41-alpha.0"
+
+"@dusk/elements@^0.0.41-alpha.0":
+  version "0.0.41-alpha.0"
+  resolved "https://npm.dusk.network:4873/@dusk%2felements/-/elements-0.0.41-alpha.0.tgz#69a4f595b74d004547fd2d6c509b3f660d4057ea"
+  integrity sha512-mV0mk6cEEH2XVaYxt2sjLFta9K1i+kPaP77cSrIRSiX0/SeYGFfXDhNu3LCcYo8XckDupY89zWnx96rOhlHKJg==
+  dependencies:
+    "@dusk/helpers" "^0.0.41-alpha.0"
+
+"@dusk/elements@^1.0.0":
+  version "1.0.0"
+  resolved "https://npm.dusk.network:4873/@dusk%2felements/-/elements-1.0.0.tgz#e92987b688491ad3bfa8567a7a5c2376dc3bf769"
+  integrity sha512-9NGYNiF5C8W7ETuR7yFrlMpKlw4/DR25LnOtVbdv/EWBYjXFBzokIPXVwxYdEAaO7P8uch9Ip7H8i1+oLECHrA==
+  dependencies:
+    "@dusk/helpers" "^0.0.41-alpha.0"
+
+"@dusk/helpers@^0.0.41-alpha.0":
+  version "0.0.41-alpha.0"
+  resolved "https://npm.dusk.network:4873/@dusk%2fhelpers/-/helpers-0.0.41-alpha.0.tgz#76e394f69be9e6cc7e0383725752de8d5ffd9ba3"
+  integrity sha512-C1nIBuVE3DlOd24aCWf44oQXACMYXAv5OGljHaaDlScj1M5LrIws4F3PARN8skv5WrX0EeVKCmtSvuqamZ2awQ==
+
+"@dusk/helpers@^1.1.0":
+  version "1.1.0"
+  resolved "https://npm.dusk.network:4873/@dusk%2fhelpers/-/helpers-1.1.0.tgz#bd87bfbe5f1c88991d411181c0ae28232999b7dd"
+  integrity sha512-YpcyM3kNeCdtChhL+RewaXTL5rfSfw4BMFwQtd+kRlbeGK1RHBZs+GpR5HKEaBRokA6p2MBkjBsZLlcfsJzsWg==
+
+"@dusk/icon@^1.0.0":
+  version "1.0.0"
+  resolved "https://npm.dusk.network:4873/@dusk%2ficon/-/icon-1.0.0.tgz#0dbceae671329e0585470d693367c72031495c96"
+  integrity sha512-r7dcedYhtsAEStIRbA94a4alUHk1EZYQsbtgn2qbl+SLd5T6HagGvuffy0fOv0LgeRlbuhq1f9cCVn6WDWPx7w==
+  dependencies:
+    "@dusk/elements" "^0.0.41-alpha.0"
+    "@dusk/helpers" "^0.0.41-alpha.0"
+
 "@egoist/vue-to-react@^1.1.0":
   version "1.1.0"
   resolved "https://npm.dusk.network:4873/@egoist%2fvue-to-react/-/vue-to-react-1.1.0.tgz#83c884b8608e8ee62e76c03e91ce9c26063a91ad"
