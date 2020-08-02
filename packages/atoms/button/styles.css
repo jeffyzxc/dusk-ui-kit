@@ -179,7 +179,31 @@
     @apply text-xs rounded-sm leading-tight;
   }
 
+  &--marketing {
+    @apply shadow-marketing;
+
+    &:hover {
+      @apply shadow-marketing-hover;
+    }
+  }
+
   &:disabled {
     @apply opacity-75 cursor-not-allowed;
   }
+}
+
+.duk-button--marketing.duk-button--brand {
+  @apply bg-indigo-500 text-white;
+}
+
+.duk-button--marketing.duk-button--cta {
+  @apply bg-gold-500 text-gray-900;
+}
+
+.duk-button--marketing.duk-button--info {
+  @apply bg-blue-500 text-gray-900;
+}
+
+.duk-button--marketing.duk-button--danger {
+  @apply bg-red-100 text-gray-900;
 }

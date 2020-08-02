@@ -5,8 +5,9 @@
   export let buttonText;
   export let disabled;
   export let outline;
+  export let tone;
 </script>
 
-<Button {variant} {size} {disabled} {outline} on:click>
+<Button {tone} {variant} {size} {disabled} {outline} on:click>
   <Label>{buttonText}</Label>
 </Button>
