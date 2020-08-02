@@ -115,4 +115,20 @@
   &--elevated-large {
     @apply shadow-lg;
   }
+
+  &--marketing {
+    @apply shadow-marketing;
+  }
+}
+
+.duk-card--marketing.duk-card--cta {
+  @apply bg-gold-500 text-gray-900;
+}
+
+.duk-card--marketing.duk-card--info {
+  @apply bg-blue-500 text-gray-900;
+}
+
+.duk-card--marketing.duk-card--danger {
+  @apply bg-red-100 text-gray-900;
 }

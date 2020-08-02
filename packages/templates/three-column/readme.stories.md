@@ -1,4 +1,4 @@
-# ⚛️ Three Column Template
+# 📄 Three Column Template
 
 ## Variants
 

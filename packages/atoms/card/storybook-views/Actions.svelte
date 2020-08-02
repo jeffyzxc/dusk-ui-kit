@@ -8,9 +8,10 @@
   export let buttonText;
   export let buttonVariant;
   export let size;
+  export let tone;
 </script>
 
-<Card {variant} {elevation} {size} style="width: 305px">
+<Card {variant} {tone} {elevation} {size} style="width: 305px">
   <Title>{title}</Title>
   <Content>{content}</Content>
   <Actions>

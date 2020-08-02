@@ -12,6 +12,8 @@ module.exports = {
       outline: "0 0 0 3px rgba(66,153,225,0.5)",
       "active-t": "0 -2px 0 rgba(245, 245, 245, 1);",
       "active-r": "2px 0 0 rgba(245, 245, 245, 1);",
+      marketing: "1px 1px 0px #D82E60;",
+      "marketing-hover": "8px 8px 0px #D82E60;",
       none: "none",
     },
     borderRadius: {
@@ -107,7 +109,7 @@ module.exports = {
         "200": "#F8FBFF",
         "300": "#F6F9FE",
         "400": "#C9D9F8",
-        "500": "9DBAF2",
+        "500": "#9DBAF2",
         "600": "#6F98EC",
         "700": "#4178E6",
         "800": "#1C5BD9",

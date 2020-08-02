@@ -5,9 +5,10 @@
   export let content;
   export let title;
   export let size;
+  export let tone;
 </script>
 
-<Card {variant} {elevation} {size} style="width: 305px">
+<Card {variant} {tone} {elevation} {size} style="width: 305px">
   <Title>
     <h3>{title}</h3>
   </Title>
