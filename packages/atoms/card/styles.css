@@ -130,5 +130,5 @@
 }
 
 .duk-card--marketing.duk-card--danger {
-  @apply bg-red-100 text-gray-900;
+  @apply bg-red-900 text-gray-100;
 }

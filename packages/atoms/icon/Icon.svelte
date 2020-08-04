@@ -31,6 +31,7 @@
   import FolderOutline from "./icons/FolderOutline.svelte";
   import FolderOpenOutline from "./icons/FolderOpenOutline.svelte";
   import FolderSearchOutline from "./icons/FolderSearchOutline.svelte";
+  import Github from "./icons/Github.svelte";
   import HelpCircleOutline from "./icons/HelpCircleOutline.svelte";
   import InformationVariant from "./icons/InformationVariant.svelte";
   import KeyOutline from "./icons/KeyOutline.svelte";
@@ -45,6 +46,7 @@
   import ViewDashboardOutline from "./icons/ViewDashboardOutline.svelte";
   import Wallet from "./icons/Wallet.svelte";
   import WalletPlus from "./icons/WalletPlus.svelte";
+  import YouTube from "./icons/YouTube.svelte";
 
   const forwardEvents = forwardEventsBuilder(current_component);
 
@@ -213,6 +215,9 @@
       case icons.FOLDER_SEARCH_OUTLINE:
         selectedIcon = FolderSearchOutline;
         break;
+      case icons.GITHUB:
+        selectedIcon = Github;
+        break;
       case icons.INFORMATION_VARIANT:
         selectedIcon = InformationVariant;
         break;
@@ -254,6 +259,9 @@
         break;
       case icons.WALLET_PLUS:
         selectedIcon = WalletPlus;
+        break;
+      case icons.YOUTUBE:
+        selectedIcon = YouTube;
         break;
       default:
         selectedIcon = null;

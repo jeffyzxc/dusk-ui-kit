@@ -25,6 +25,7 @@ export default {
   FOLDER_DOWNLOAD_OUTLINE: "folder-download-outline",
   FOLDER_UPLOAD_OUTLINE: "folder-upload-outline",
   FOLDER_SEARCH_OUTLINE: "folder-search-outline",
+  GITHUB: "github",
   HELP_CIRCLE_OUTLINE: "help-circle-outline",
   INFORMATION_VARIANT: "information-variant",
   KEY_OUTLINE: "key-outline",
@@ -39,4 +40,5 @@ export default {
   VIEW_DASHBOARD_OUTLINE: "view-dashboard-outline",
   WALLET: "wallet",
   WALLET_PLUS: "wallet-plus",
+  YOUTUBE: "youtube",
 };

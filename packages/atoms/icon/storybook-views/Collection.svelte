@@ -245,4 +245,16 @@
     title="information-variant"
     {variant}
     {size} />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="github"
+    title="github"
+    {variant}
+    {size} />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="youtube"
+    title="youtube"
+    {variant}
+    {size} />
 </div>
