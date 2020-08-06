@@ -14,6 +14,7 @@
 
   let expanded = false;
 
+  export let id;
   export let variant = variants.ORGANISM.NAVBAR.BRAND;
   setContext("DUK:menu:context", contexts.MENU.NAVBAR);
   setContext("DUK:logo:context", contexts.LOGO.NAVBAR);
@@ -59,11 +60,13 @@
   }
 
   const toggleNavbar = () => {
-    document.getElementById("__DUK-navbar-menu").classList.toggle("duk-navbar__menu--hidden");
+    // console.log(id);
+    // console.log(document.getElementById(`#${id}`));
+    const navbarElement = document.querySelector(`#${id}`);
+    const menuElement = navbarElement.querySelector(".duk-navbar__menu");
+    menuElement.classList.toggle("duk-navbar__menu--hidden");
 
-    expanded = !document
-      .getElementById("__DUK-navbar-menu")
-      .classList.contains("duk-navbar__menu--hidden");
+    expanded = !menuElement.classList.contains("duk-navbar__menu--hidden");
   };
 </script>
 
@@ -79,10 +82,10 @@
       <h1 class="duk-navbar__title__heading">{title}</h1>
     {/if}
   </div>
-  <div id="__DUK-navbar-content" class="duk-navbar__collapse">
+  <div id="{id}-content" class="duk-navbar__collapse">
     <button
       id="__DUK-navbar-toggle"
-      aria-controls="__DUK-navbar-content"
+      aria-controls="{id}-content"
       aria-expanded="{expanded}"
       aria-label="Toggle navigation"
       on:click="{toggleNavbar}"

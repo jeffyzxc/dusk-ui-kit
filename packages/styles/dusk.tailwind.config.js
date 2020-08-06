@@ -13,6 +13,8 @@ module.exports = {
       outline: "0 0 0 3px rgba(66,153,225,0.5)",
       "active-t": "0 -2px 0 rgba(245, 245, 245, 1);",
       "active-r": "2px 0 0 rgba(245, 245, 245, 1);",
+      "active-t-purple": "0 -2px 0 #3b218c",
+      "active-r-purple": "2px 0 0 #3b218c;",
       marketing: "1px 1px 0px #D82E60;",
       "marketing-hover": "8px 8px 0px #D82E60;",
       none: "none",
