@@ -1,0 +1,21 @@
+{
+  "name": "@dusk/cookie-banner",
+  "version": "1.4.0",
+  "description": "Dusk UI Kit - Cookie Banner",
+  "bugs": {
+    "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
+  },
+  "license": "MIT",
+  "author": "Kieran Hall <kieran@dusk.network>",
+  "scripts": {
+    "test": "echo \"LOL\" && exit 1"
+  },
+  "dependencies": {
+    "@beyonk/gdpr-cookie-consent-banner": "^7.0.1",
+    "@dusk/helpers": "^1.2.0",
+    "@dusk/icon": "^1.1.0"
+  },
+  "peerDependencies": {
+    "svelte": "^3.0.0"
+  }
+}

@@ -42,4 +42,4 @@ export default create({
   brandImage: logo,
 });
 
-export { colors as backgroundColors };
+export { colors };

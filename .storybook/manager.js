@@ -11,4 +11,5 @@ import dusk from "./themes/dusk";
 
 addons.setConfig({
   theme: dusk,
+  showRoots: false,
 });

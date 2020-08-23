@@ -223,6 +223,12 @@
     {size} />
   <Icon
     class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="plus-circle-outline"
+    title="plus-circle-outline"
+    {variant}
+    {size} />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
     name="store-outline"
     title="store-outline"
     {variant}
@@ -255,6 +261,48 @@
     class="h-32 w-32 flex flex-wrap content-center justify-center"
     name="youtube"
     title="youtube"
+    {variant}
+    {size} />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="contract"
+    title="contract"
+    {variant}
+    {size} />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="contacts"
+    title="contacts"
+    {variant}
+    {size} />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="notification"
+    title="notification"
+    {variant}
+    {size} />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="twitter"
+    title="twitter"
+    {variant}
+    {size} />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="linked-in"
+    title="linked-in"
+    {variant}
+    {size} />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="telegram"
+    title="telegram"
+    {variant}
+    {size} />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="coin-market-cap"
+    title="coin-market-cap"
     {variant}
     {size} />
 </div>

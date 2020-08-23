@@ -1,8 +1,16 @@
 {
-  "version": "1.4.0",
+  "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true,
-  "packages": ["packages/*/**"],
+  "packages": [
+    "packages/helpers/**",
+    "packages/elements/**",
+    "packages/atoms/*/**",
+    "packages/molecules/*/**",
+    "packages/organisms/*/**",
+    "packages/templates/*/**",
+    "packages/pages/*"
+  ],
   "command": {
     "publish": {
       "ignoreChanges": ["/storybook-views/*", "*.stories.js", "*.md"],

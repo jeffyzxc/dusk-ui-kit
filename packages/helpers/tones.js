@@ -8,5 +8,15 @@ export default {
       APP: "app",
       MARKETING: "marketing",
     },
+    SWITCH: {
+      APP: "app",
+      MARKETING: "marketing",
+    },
+  },
+  ORGANISM: {
+    COOKIE_BANNER: {
+      APP: "app",
+      MARKETING: "marketing",
+    },
   },
 };

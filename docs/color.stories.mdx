@@ -1,0 +1,29 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
+import { colors } from "../.storybook/themes/dusk";
+
+<Meta title="Design System/Color" />
+
+# Color 🌈
+
+<ColorPalette>
+  {Object.entries(colors).map(([k,v]) => {
+    if (typeof v === 'string' && (v.match(/^#/) || v.match(/^rgb/) || k.match(/color/i))) {
+      return (
+        <ColorItem
+          key={k}
+          title={k}
+          colors={{ [k]: v }}
+        />
+      );
+    } else if (typeof v === 'object') {
+      return (
+        <ColorItem
+          key={k}
+          title={k}
+          colors={Object.entries(v).reduce((acc, [key, value]) => (typeof value === 'string' && (value.match(/^#/) || value.match(/^rgb/) || key.match(/color/i))) ? {...acc, [key]: value} : acc, {})}
+        />
+      );
+    }
+    return null;
+  })}
+</ColorPalette>

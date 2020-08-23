@@ -72,7 +72,7 @@
   {#if value}
     <div class="fixed w-full h-full top-0 left-0 z-30">
       <Scrim {opacity} on:click="{() => !persistent && closeDialog()}" />
-      <div class="h-full w-full absolute flex items-center justify-center">
+      <div class="h-full w-full absolute flex items-center justify-center overflow-y-scroll">
         <Card
           id="__DUK-dialog"
           class="duk-dialog {className}

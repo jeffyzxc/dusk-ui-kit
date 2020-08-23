@@ -16,7 +16,10 @@
   import CheckCircleOutline from "./icons/CheckCircleOutline.svelte";
   import CheckNetworkOutline from "./icons/CheckNetworkOutline.svelte";
   import CogOutline from "./icons/CogOutline.svelte";
+  import CoinMarketCap from "./icons/CoinMarketCap.svelte";
   import ContentCopy from "./icons/ContentCopy.svelte";
+  import Contract from "./icons/Contract.svelte";
+  import Contacts from "./icons/Contacts.svelte";
   import CloseCircleOutline from "./icons/CloseCircleOutline.svelte";
   import CubeOutline from "./icons/CubeOutline.svelte";
   import DuskTicker from "./icons/DuskTicker.svelte";
@@ -35,14 +38,19 @@
   import HelpCircleOutline from "./icons/HelpCircleOutline.svelte";
   import InformationVariant from "./icons/InformationVariant.svelte";
   import KeyOutline from "./icons/KeyOutline.svelte";
+  import LinkedIn from "./icons/LinkedIn.svelte";
   import Magnify from "./icons/Magnify.svelte";
   import MenuBurger from "./icons/MenuBurger.svelte";
   import MenuBurgerClose from "./icons/MenuBurgerClose.svelte";
+  import Notification from "./icons/Notification.svelte";
   import MinusCircleOutline from "./icons/MinusCircleOutline.svelte";
+  import PlusCircleOutline from "./icons/PlusCircleOutline.svelte";
   import Refresh from "./icons/Refresh.svelte";
   import ShareVariant from "./icons/ShareVariant.svelte";
   import StoreOutline from "./icons/StoreOutline.svelte";
+  import Telegram from "./icons/Telegram.svelte";
   import TrashCanOutline from "./icons/TrashCanOutline.svelte";
+  import Twitter from "./icons/Twitter.svelte";
   import ViewDashboardOutline from "./icons/ViewDashboardOutline.svelte";
   import Wallet from "./icons/Wallet.svelte";
   import WalletPlus from "./icons/WalletPlus.svelte";
@@ -167,8 +175,17 @@
       case icons.CHECK_NETWORK_OUTLINE:
         selectedIcon = CheckNetworkOutline;
         break;
+      case icons.COIN_MARKET_CAP:
+        selectedIcon = CoinMarketCap;
+        break;
       case icons.CONTENT_COPY:
         selectedIcon = ContentCopy;
+        break;
+      case icons.CONTACTS:
+        selectedIcon = Contacts;
+        break;
+      case icons.CONTRACT:
+        selectedIcon = Contract;
         break;
       case icons.COG_OUTLINE:
         selectedIcon = CogOutline;
@@ -227,6 +244,9 @@
       case icons.KEY_OUTLINE:
         selectedIcon = KeyOutline;
         break;
+      case icons.LINKED_IN:
+        selectedIcon = LinkedIn;
+        break;
       case icons.MAGNIFY:
         selectedIcon = Magnify;
         break;
@@ -239,6 +259,12 @@
       case icons.MINUS_CIRCLE_OUTLINE:
         selectedIcon = MinusCircleOutline;
         break;
+      case icons.PLUS_CIRCLE_OUTLINE:
+        selectedIcon = PlusCircleOutline;
+        break;
+      case icons.NOTIFICATION:
+        selectedIcon = Notification;
+        break;
       case icons.REFRESH:
         selectedIcon = Refresh;
         break;
@@ -248,8 +274,14 @@
       case icons.STORE_OUTLINE:
         selectedIcon = StoreOutline;
         break;
+      case icons.TELEGRAM:
+        selectedIcon = Telegram;
+        break;
       case icons.TRASH_CAN_OUTLINE:
         selectedIcon = TrashCanOutline;
+        break;
+      case icons.TWITTER:
+        selectedIcon = Twitter;
         break;
       case icons.VIEW_DASHBOARD_OUTLINE:
         selectedIcon = ViewDashboardOutline;
