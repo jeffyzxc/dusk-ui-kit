@@ -18,5 +18,9 @@ export default {
       APP: "app",
       MARKETING: "marketing",
     },
+    FOOTER: {
+      APP: "app",
+      MARKETING: "marketing",
+    },
   },
 };

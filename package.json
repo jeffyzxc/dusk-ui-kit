@@ -101,7 +101,7 @@
     "svelte": "^3.0.0",
     "svelte-loader": "^2.13.6",
     "svelte-preprocess": "^3.4.0",
-    "tailwindcss": "^1.2.0"
+    "tailwindcss": "^1.7.0"
   },
   "publishConfig": {
     "registry": "https://npm.dusk.network:4873"

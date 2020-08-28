@@ -3,6 +3,11 @@ const plugin = require("tailwindcss/plugin");
 module.exports = {
   purge: false,
   theme: {
+    extend: {
+      rotate: {
+        "360": "360deg",
+      },
+    },
     boxShadow: {
       default: "0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06)",
       md: " 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06)",
@@ -203,8 +208,6 @@ module.exports = {
   plugins: [
     plugin(function({ addBase, theme }) {
       addBase({
-        a: { color: theme("colors.purple.700") },
-        "a:hover": { color: theme("colors.purple.500") },
         "abbr[title]": {
           textDecoration: "none",
         },
@@ -219,11 +222,7 @@ module.exports = {
           letterSpacing: "0",
         },
         "button:focus": { outline: "none" },
-        h1: { fontSize: theme("fontSize.2xl") },
-        h2: { fontSize: theme("fontSize.xl") },
-        h3: { fontSize: theme("fontSize.lg") },
         html: { height: "100%" },
-        p: { marginBottom: theme("spacing.4") },
         code: {
           color: theme("colors.gray.700"),
           fontFamily: theme("fontFamily.mono"),

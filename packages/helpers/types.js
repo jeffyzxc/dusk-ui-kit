@@ -18,4 +18,9 @@ export default {
     },
     RADIO: "radio",
   },
+  ORGANISM: {
+    FOOTER: {
+      MINIMAL: "minimal",
+    },
+  },
 };

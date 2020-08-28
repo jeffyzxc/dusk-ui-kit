@@ -7,6 +7,7 @@ import sizes from "./sizes.js";
 import contexts from "./contexts.js";
 import orientations from "./orientations.js";
 import types from "./types.js";
+import states from "./states.js";
 import elevations from "./elevations.js";
 import icons from "./icons.js";
 import ripple from "./ripple.js";
@@ -22,6 +23,7 @@ export {
   contexts,
   orientations,
   types,
+  states,
   elevations,
   icons,
   ripple,

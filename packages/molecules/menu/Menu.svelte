@@ -18,13 +18,14 @@
   export let name = null;
   export let orientation = orientations.MENU.VERTICAL;
   export let variant = null;
+  export let separator = null;
 
   const forwardEvents = forwardEventsBuilder(current_component);
   const context = getContext("DUK:menu:context");
 
   setContext("DUK:list:context", contexts.LIST.MENU);
 
-  function getClassNames(variant, orientation, context) {
+  function getClassNames(variant, orientation, context, separator) {
     let classNames = "";
     switch (variant) {
       case variants.MOLECULE.MENU.BRAND:
@@ -83,6 +84,20 @@
         classNames += "";
     }
 
+    switch (separator) {
+      case "dot":
+        classNames += " duk-menu--separator-dot";
+        break;
+      case "dash":
+        classNames += " duk-menu--separator-dash";
+        break;
+      case "bar":
+        classNames += " duk-menu--separator-bar";
+        break;
+      default:
+        classNames += "";
+    }
+
     return classNames;
   }
 </script>
@@ -91,10 +106,10 @@
   use:useActions="{use}"
   use:forwardEvents
   class="duk-menu {className}
-  {getClassNames(variant, orientation, context)}"
+  {getClassNames(variant, orientation, context, separator)}"
   {id}
   role="navigation"
   aria-label="{name || ''}"
-  {...exclude($$props, ['use', 'class', 'orientation', 'name', 'variant'])}>
+  {...exclude($$props, ['use', 'class', 'orientation', 'name', 'variant', 'separator'])}>
   <slot />
 </nav>

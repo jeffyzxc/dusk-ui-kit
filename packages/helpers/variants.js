@@ -148,6 +148,15 @@ export default {
       WHITE: "white",
       BLACK: "black",
     },
+    FOOTER: {
+      BRAND: "brand",
+      CTA: "cta",
+      SUCCESS: "success",
+      WARNING: "warning",
+      DANGER: "danger",
+      LIGHT: "light",
+      DARK: "dark",
+    },
     NAVBAR: {
       BRAND: "brand",
       CTA: "cta",

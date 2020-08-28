@@ -1,0 +1,181 @@
+.duk-footer {
+  @apply w-screen;
+
+  &__social-media-menu {
+    &__item {
+      &:not(:last-child) {
+        @apply pr-3;
+      }
+
+      & .duk-icon {
+        @apply p-0 transform duration-200 ease-in-out transition-all;
+
+        &:hover {
+          @apply rotate-360;
+        }
+      }
+    }
+  }
+
+  & .duk-logo {
+    @apply p-0 transform duration-200 ease-in-out transition-all flex items-center justify-center;
+
+    &:hover {
+      @apply scale-105;
+    }
+
+    @screen md {
+      @apply justify-start;
+    }
+
+    & > svg {
+      @apply w-40;
+    }
+  }
+
+  &__minimal {
+    @apply px-5 py-8 mx-auto flex items-center flex-col;
+
+    @screen sm {
+      @apply flex-row;
+    }
+
+    &__copyright {
+      @apply block text-sm text-center mt-4;
+
+      @screen sm {
+        @apply inline-block text-left mt-0 mx-4 py-2 pl-4;
+      }
+    }
+
+    &__legal-menu {
+      @apply text-sm;
+    }
+
+    &__social-media-menu {
+      @apply inline-flex mt-4 justify-center;
+
+      @screen sm {
+        @apply ml-auto mt-0 justify-start;
+      }
+    }
+  }
+
+  &--app {
+    &--brand {
+      @apply text-gray-500 bg-purple-900;
+
+      & a {
+        @apply text-white;
+      }
+    }
+
+    &--cta {
+      @apply text-white bg-orange-900;
+
+      & a {
+        @apply text-white;
+      }
+    }
+
+    &--dark {
+      @apply text-white bg-gray-900;
+
+      & a {
+        @apply text-white;
+      }
+    }
+
+    &--light {
+      @apply text-gray-800 bg-gray-400;
+
+      & a {
+        @apply text-gray-800;
+      }
+    }
+
+    &--success {
+      @apply text-white bg-green-900;
+
+      & a {
+        @apply text-white;
+      }
+    }
+
+    &--warning {
+      @apply text-gray-400 bg-yellow-900;
+
+      & a {
+        @apply text-white;
+      }
+    }
+
+    &--danger {
+      @apply text-white bg-red-900;
+
+      & a {
+        @apply text-white;
+      }
+    }
+  }
+
+  &--marketing {
+    @apply mt-40 py-20;
+
+    &--brand {
+      @apply text-white bg-indigo-600;
+
+      & a {
+        @apply text-white;
+      }
+    }
+
+    &--cta {
+      @apply text-gray-400 bg-orange-400;
+
+      & a {
+        @apply text-white;
+      }
+    }
+
+    &--dark {
+      @apply text-white bg-gray-900;
+
+      & a {
+        @apply text-white;
+      }
+    }
+
+    &--light {
+      @apply text-gray-800 bg-gray-400;
+
+      & a {
+        @apply text-gray-800;
+      }
+    }
+
+    &--success {
+      @apply text-white bg-green-900;
+
+      & a {
+        @apply text-white;
+      }
+    }
+
+    &--warning {
+      @apply text-gray-400 bg-yellow-900;
+
+      & a {
+        @apply text-white;
+      }
+    }
+
+    &--danger {
+      @apply text-white bg-red-900;
+
+      & a {
+        @apply text-white;
+      }
+    }
+  }
+}

@@ -9,6 +9,9 @@ export default {
     ALERT: "card:alert",
     DIALOG: "card:dialog",
   },
+  CONTROL: {
+    TEXT_FIELD: "control:text-field",
+  },
   DATUM: {
     ROW: {
       BODY: "datum:row:body",

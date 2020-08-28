@@ -8,6 +8,7 @@ const postcssProcessor = (config = {}) => {
     require("postcss-import")(),
     require("postcss-url")(),
     require("tailwindcss")(tailwindConfig),
+    require("postcss-nested-ancestors")(),
     require("postcss-nested")(),
     require("cssnano")({
       preset: "default",

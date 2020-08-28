@@ -155,3 +155,36 @@
     }
   }
 }
+
+.duk-menu.duk-menu--horizontal.duk-menu--separator-dot {
+  & .duk-list {
+    &__item:not(:last-child) {
+      &::after {
+        content: "•";
+        @apply mx-2;
+      }
+    }
+  }
+}
+
+.duk-menu.duk-menu--horizontal.duk-menu--separator-dash {
+  & .duk-list {
+    &__item:not(:last-child) {
+      &::after {
+        content: "-";
+        @apply mx-2;
+      }
+    }
+  }
+}
+
+.duk-menu.duk-menu--horizontal.duk-menu--separator-bar {
+  & .duk-list {
+    &__item:not(:last-child) {
+      &::after {
+        content: "|";
+        @apply mx-2;
+      }
+    }
+  }
+}
