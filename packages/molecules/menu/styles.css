@@ -20,7 +20,7 @@
   }
 
   &--horizontal {
-    @apply overflow-x-hidden;
+    @apply overflow-hidden;
 
     & .duk-list {
       @apply relative;

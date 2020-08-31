@@ -12,6 +12,7 @@
   export let type = types.ORGANISM.FOOTER.MINIMAL;
   export let use = [];
   export let social;
+  export let categories;
 
   let today = new Date();
   let year = today.getFullYear();
@@ -26,22 +27,6 @@
 
     return classNames;
   }
-
-  function getSelectedType(type) {
-    let selectedType;
-    switch (type) {
-      case types.ORGANISM.FOOTER.MINIMAL:
-        selectedType = Minimal;
-        break;
-      case types.ORGANISM.FOOTER.MAXIMAL:
-        selectedType = Maximal;
-        break;
-      default:
-        selectedType = Minimal;
-    }
-
-    return selectedType;
-  }
 </script>
 
 <footer
@@ -49,6 +34,9 @@
   use:forwardEvents
   class="duk-footer {className}
   {getClassNames(variant, tone)}"
-  {...exclude($$props, ['use', 'class', 'tone', 'variant', 'social'])}>
-  <svelte:component this="{getSelectedType(type)}" {copyright} {social} />
+  {...exclude($$props, ['use', 'class', 'type', 'tone', 'variant', 'social', 'categories'])}>
+  {#if type === types.ORGANISM.FOOTER.MAXIMAL}
+    <Maximal {categories} {tone} />
+  {/if}
+  <Minimal {copyright} {social} {categories} />
 </footer>

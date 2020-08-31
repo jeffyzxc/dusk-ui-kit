@@ -1,5 +1,5 @@
-import { withKnobs, select, text, boolean, optionsKnob as options } from "@storybook/addon-knobs";
-import { variants, sizes } from "@dusk/helpers";
+import { withKnobs, select, text } from "@storybook/addon-knobs";
+import { variants, tones, states, types } from "@dusk/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import readme from "./readme.stories.md";
 import "@dusk/styles/tailwind.css";
@@ -8,6 +8,7 @@ export default {
   title: "Components/Molecules/Control",
   parameters: {
     notes: readme,
+    layout: "centered",
   },
   decorators: [withKnobs],
 };
@@ -15,11 +16,12 @@ export default {
 export const Default = () => ({
   Component: DefaultView,
   props: {
-    variant: select("Variant", variants.MOLECULE.ALERT, variants.MOLECULE.ALERT.WARNING),
-    title: text("Alert title", "Alert!"),
-    dismissable: boolean("Dismissable?", true),
-    size: options("Size", sizes.MOLECULE.ALERT, sizes.MOLECULE.ALERT.BASE, {
-      display: "radio",
-    }),
+    type: select("Type", types.MOLECULE.CONTROL, types.MOLECULE.CONTROL.APP),
+    tone: select("Tone", tones.MOLECULE.CONTROL, tones.MOLECULE.CONTROL.APP),
+    variant: select("Variant", variants.MOLECULE.CONTROL, variants.MOLECULE.CONTROL.LIGHT),
+    state: select("State", states.MOLECULE.CONTROL, states.MOLECULE.CONTROL.BASE),
+    label: text("Label (optional)", "Field label"),
+    placeholder: text("Placeholder (optional)", "Enter your stuff..."),
+    message: text("Message (optional)", "Something useful regarding the input"),
   },
 });

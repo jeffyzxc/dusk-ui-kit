@@ -9,9 +9,6 @@ export default {
     ALERT: "card:alert",
     DIALOG: "card:dialog",
   },
-  CONTROL: {
-    TEXT_FIELD: "control:text-field",
-  },
   DATUM: {
     ROW: {
       BODY: "datum:row:body",
@@ -38,5 +35,8 @@ export default {
   MENU: {
     DRAWER: "menu:drawer",
     NAVBAR: "menu:navbar",
+  },
+  TEXT_FIELD: {
+    CONTROL: "text-field:control",
   },
 };

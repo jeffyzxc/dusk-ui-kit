@@ -7,6 +7,7 @@ export default {
   title: "Components/Pages/Kitchen Sink",
   parameters: {
     notes: readme,
+    layout: "fullscreen",
   },
   decorators: [withKnobs],
 };

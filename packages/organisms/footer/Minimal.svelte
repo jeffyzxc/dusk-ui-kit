@@ -11,11 +11,10 @@
 <div
   class="duk-footer__minimal container "
   {...exclude($$props, ['use', 'class', 'copyright', 'social'])}>
-  <Logo href="https://dusk.network" />
-  <p class="duk-footer__minimal__copyright">{copyright}</p>
-  <LegalMenu orientation="horizontal" separator="dot" class="duk-footer__minimal__legal-menu" />
-  <SocialMediaMenu
-    orientation="horizontal"
-    class="duk-footer__minimal__social-media-menu"
-    {social} />
+  <Logo class="duk-footer__logo" href="https://dusk.network" />
+  <p class="duk-footer__copyright">{copyright}</p>
+  <LegalMenu orientation="horizontal" separator="dot" class="duk-footer__legal-menu" />
+  {#if social}
+    <SocialMediaMenu orientation="horizontal" class="duk-footer__social-media-menu" {social} />
+  {/if}
 </div>

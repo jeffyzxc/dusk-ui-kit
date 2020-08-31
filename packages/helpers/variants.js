@@ -34,6 +34,18 @@ export default {
       WHITE: "white",
       BLACK: "black",
     },
+    DATE_PICKER: {
+      BRAND: "brand",
+      CTA: "cta",
+      INFO: "info",
+      SUCCESS: "success",
+      WARNING: "warning",
+      DANGER: "danger",
+      LIGHT: "light",
+      DARK: "dark",
+      WHITE: "white",
+      BLACK: "black",
+    },
     ICON: {
       BRAND: "brand",
       CTA: "cta",
@@ -112,6 +124,10 @@ export default {
       LIGHT: "light",
       DARK: "dark",
     },
+    CONTROL: {
+      LIGHT: "light",
+      DARK: "dark",
+    },
     DIALOG: {
       BRAND: "brand",
       CTA: "cta",
@@ -149,6 +165,15 @@ export default {
       BLACK: "black",
     },
     FOOTER: {
+      BRAND: "brand",
+      CTA: "cta",
+      SUCCESS: "success",
+      WARNING: "warning",
+      DANGER: "danger",
+      LIGHT: "light",
+      DARK: "dark",
+    },
+    FORM: {
       BRAND: "brand",
       CTA: "cta",
       SUCCESS: "success",

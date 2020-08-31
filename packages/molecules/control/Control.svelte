@@ -1,48 +1,44 @@
 <script>
-  import { useActions, forwardEvents } from "svelte";
-  import { exclude, variants } from "@dusk/helpers";
+  import { setContext } from "svelte";
+  import { exclude, variants, states, tones, contexts, types } from "@dusk/helpers";
+  import Icon from "@dusk/icon";
+  import { Label } from "@dusk/elements";
   import "./styles.css";
 
   let className = "";
   export { className as class };
-  export let variant = variants.MOLECULE.CONTROL.WARNING;
-  export let use = [];
+  export let type = types.MOLECULE.CONTROL.STACKED;
+  export let tone = tones.MOLECULE.CONTROL.APP;
+  export let variant = variants.MOLECULE.CONTROL.LIGHT;
+  export let state = states.MOLECULE.CONTROL.BASE;
+  export let id;
+  export let label;
+  export let message = "";
 
-  function getClassNames(variant) {
-    let classNames = "";
-    switch (variant) {
-      case variants.MOLECULE.CONTROL.BRAND:
-        classNames += " duk-control--brand";
-        break;
-      case variants.MOLECULE.CONTROL.CTA:
-        classNames += " duk-control--cta";
-        break;
-      case variants.MOLECULE.CONTROL.INFO:
-        classNames += " duk-control--info";
-        break;
-      case variants.MOLECULE.CONTROL.SUCCESS:
-        classNames += " duk-control--success";
-        break;
-      case variants.MOLECULE.CONTROL.WARNING:
-        classNames += " duk-control--warning";
-        break;
-      case variants.MOLECULE.CONTROL.DANGER:
-        classNames += " duk-control--danger";
-        break;
-      default:
-        classNames += "";
-    }
+  setContext("DUK:text-field:context", contexts.TEXT_FIELD.CONTROL);
 
-    return classNames;
+  function getClassNames(type, variant, state, tone) {
+    return ` duk-control--${type} duk-control--${tone} duk-control--${variant} duk-control--${state}`;
   }
 </script>
 
 <div
-  use:useActions="{use}"
-  use:forwardEvents
   class="duk-control {className}
-  {getClassNames(variant)}
+  {getClassNames(type, variant, state, tone)}
   "
-  {...exclude($$props, ['use', 'class'])}>
-  <p>coming soon</p>
+  {...exclude($$props, ['use', 'class', 'type', 'tone', 'variant', 'state', 'label', 'message'])}>
+  <div class="duk-control__wrapper">
+    {#if label}
+      <Label control="{id}" class="duk-control__label">{label}</Label>
+    {/if}
+    <slot />
+  </div>
+  <div class="duk-control__message">
+    {#if (state === states.MOLECULE.CONTROL.WARNING || state === states.MOLECULE.CONTROL.DANGER) && message !== ''}
+      <Icon name="alert-outline" class="duk-control__message__icon" />
+    {/if}
+    <p>
+      {#if state !== states.MOLECULE.CONTROL.SUCCESS && message !== ''}{message}{/if}
+    </p>
+  </div>
 </div>

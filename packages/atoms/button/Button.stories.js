@@ -11,6 +11,7 @@ export default {
   title: "Components/Atoms/Button",
   parameters: {
     notes: readme,
+    layout: "centered",
   },
   decorators: [withKnobs],
 };

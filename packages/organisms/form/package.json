@@ -1,0 +1,20 @@
+{
+  "name": "@dusk/form",
+  "version": "1.4.0",
+  "description": "Dusk UI Kit - Form",
+  "bugs": {
+    "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
+  },
+  "license": "MIT",
+  "author": "Kieran Hall <kieran@dusk.network>",
+  "scripts": {
+    "test": "echo \"LOL\" && exit 1"
+  },
+  "dependencies": {
+    "@dusk/helpers": "^1.2.0",
+    "@dusk/icon": "^1.1.0"
+  },
+  "peerDependencies": {
+    "svelte": "^3.0.0"
+  }
+}

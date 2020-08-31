@@ -1,3 +1,137 @@
 .duk-control {
-  @apply block;
+  &__label {
+    @apply pr-3;
+  }
+
+  &__input {
+    @apply w-full;
+  }
+
+  &__message {
+    @apply flex items-center justify-end text-sm pr-1;
+
+    & > p:empty::before {
+      content: "\00a0";
+    }
+
+    &__icon {
+      @apply mr-2;
+    }
+  }
+
+  /* &--app {
+    @apply p-3;
+  }
+
+  &--marketing {
+    @apply p-5;
+  } */
+
+  &--stacked {
+    & .duk-control__label {
+      @apply mb-1;
+    }
+
+    & .duk-control__input {
+      flex: 2;
+    }
+  }
+
+  &--inline-fixed {
+    & .duk-control__wrapper {
+      @apply flex w-full justify-center items-center mb-3 text-right;
+
+      @screen md {
+        @apply justify-start;
+      }
+    }
+
+    & .duk-control__label {
+      flex: 1;
+    }
+
+    & .duk-control__input {
+      flex: 2;
+    }
+  }
+
+  &--inline-flex {
+    & .duk-control__wrapper {
+      @apply flex w-full justify-center items-center mb-3;
+
+      @screen md {
+        @apply justify-start;
+      }
+    }
+
+    & .duk-control__input {
+      flex: 1;
+    }
+  }
+
+  &--dark {
+    @apply text-gray-100;
+
+    & .duk-control__label {
+      @apply text-gray-300;
+    }
+
+    & .duk-control__message {
+      @apply text-gray-400 italic;
+    }
+  }
+
+  &--light {
+    @apply text-gray-900;
+
+    & .duk-control__label {
+      @apply text-gray-600;
+    }
+
+    & .duk-control__message {
+      @apply text-gray-600 italic;
+    }
+  }
+
+  &--light&--success {
+    & .duk-control__label,
+    & .duk-control__message {
+      @apply text-green-900 not-italic;
+    }
+  }
+
+  &--light&--warning {
+    & .duk-control__label,
+    & .duk-control__message {
+      @apply text-yellow-900 not-italic;
+    }
+  }
+
+  &--light&--danger {
+    & .duk-control__label,
+    & .duk-control__message {
+      @apply text-red-900 not-italic;
+    }
+  }
+
+  &--dark&--success {
+    & .duk-control__label,
+    & .duk-control__message {
+      @apply text-green-900 not-italic;
+    }
+  }
+
+  &--dark&--warning {
+    & .duk-control__label,
+    & .duk-control__message {
+      @apply text-yellow-900 not-italic;
+    }
+  }
+
+  &--dark&--danger {
+    & .duk-control__label,
+    & .duk-control__message {
+      @apply text-red-900 not-italic;
+    }
+  }
 }

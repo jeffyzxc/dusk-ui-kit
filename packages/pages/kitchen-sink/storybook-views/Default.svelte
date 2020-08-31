@@ -1,16 +1,20 @@
 <script>
-  import TwoColumn, { Header, Footer } from "@dusk/two-column";
+  import TwoColumn, { Header } from "@dusk/two-column";
   import Navbar from "@dusk/navbar";
   import Menu from "@dusk/menu";
   import List, { Item } from "@dusk/list";
   import Logo from "@dusk/logo";
   import Card, { Content, Title } from "@dusk/card";
   import { types } from "@dusk/helpers";
+  import Form from "@dusk/form";
+  import Control from "@dusk/control";
+  import TextField from "@dusk/text-field";
+  import Footer from "@dusk/footer";
 </script>
 
 <TwoColumn class="bg-gray-100">
   <div slot="header">
-    <Header class="mb-6">
+    <Header class="mb-5">
       <Navbar variant="brand">
         <span slot="logo">
           <Logo variant="white" class="w-48" />
@@ -25,7 +29,7 @@
     </Header>
   </div>
   <div slot="west">
-    <Card class="w-full mb-6" variant="brand">
+    <Card class="w-full mb-5" variant="brand">
       <Title>
         <h2>Milestones</h2>
       </Title>
@@ -55,9 +59,9 @@
     </Card>
   </div>
   <div slot="east">
-    <Card class="w-full min-h-screen">
+    <Card class="w-full mb-5">
       <Title>
-        <h1>Dusk UI Kit</h1>
+        <h2>Dusk UI Kit</h2>
       </Title>
       <Content>
         <p>
@@ -75,20 +79,32 @@
         </p>
       </Content>
     </Card>
+    <Card class="w-full mb-5">
+      <Title>
+        <h2>Form Example</h2>
+      </Title>
+      <Content>
+        <Form class="px-5">
+          <Control label="Name">
+            <TextField placeholder="Enter your full name" />
+          </Control>
+          <Control label="Email">
+            <TextField type="email" placeholder="Enter your email address" />
+          </Control>
+          <Control label="Password">
+            <TextField type="password" />
+          </Control>
+          <Control label="Repeat Password">
+            <TextField type="password" />
+          </Control>
+          <Control label="Date of birth">
+            <TextField type="password" />
+          </Control>
+        </Form>
+      </Content>
+    </Card>
   </div>
   <div slot="footer">
-    <Footer class="mt-6">
-      <Navbar variant="brand">
-        <Menu orientation="horizontal" class="mb -3">
-          <List>
-            <Item href="javascript:;">Legal</Item>
-            <Item href="javascript:;">Terms</Item>
-            <Item href="javascript:;">Privacy</Item>
-            <Item>Disabled</Item>
-          </List>
-        </Menu>
-        <small class="text-white">Dusk Network 2020</small>
-      </Navbar>
-    </Footer>
+    <Footer />
   </div>
 </TwoColumn>

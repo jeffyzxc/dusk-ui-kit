@@ -7640,6 +7640,11 @@ flat-cache@^2.0.1:
     rimraf "2.6.3"
     write "1.0.3"
 
+flatpickr@^4.5.2:
+  version "4.6.6"
+  resolved "https://npm.dusk.network:4873/flatpickr/-/flatpickr-4.6.6.tgz#34d2ad80adfa34254e62583a34264d472f1038d6"
+  integrity sha512-EZ48CJMttMg3maMhJoX+GvTuuEhX/RbA1YeuI19attP3pwBdbYy6+yqAEVm0o0hSBFYBiLbVxscLW6gJXq6H3A==
+
 flatted@^2.0.0:
   version "2.0.2"
   resolved "https://npm.dusk.network:4873/flatted/-/flatted-2.0.2.tgz#4575b21e2bcee7434aa9be662f4b7b5f9c2b5138"
@@ -12957,11 +12962,6 @@ pretty-hrtime@^1.0.3:
   resolved "https://npm.dusk.network:4873/pretty-hrtime/-/pretty-hrtime-1.0.3.tgz#b7e3ea42435a4c9b2759d99e0f201eb195802ee1"
   integrity sha1-t+PqQkNaTJsnWdmeDyAesZWALuE=
 
-priority-plus@^1.1.0:
-  version "1.1.0"
-  resolved "https://npm.dusk.network:4873/priority-plus/-/priority-plus-1.1.0.tgz#2998a7b6bdbbe1f55044c11ddd8e35ac332101f2"
-  integrity sha512-HJmsG87lKdL+m1o+tVAmxKv8RkuBu17eLflHmXRErSzVOJdAKQ19h5IEp+cz00MQXzITKOOVWQrRV+LWuzSDzQ==
-
 prismjs@^1.8.4:
   version "1.21.0"
   resolved "https://npm.dusk.network:4873/prismjs/-/prismjs-1.21.0.tgz#36c086ec36b45319ec4218ee164c110f9fc015a3"
@@ -15406,6 +15406,13 @@ svelte-dev-helper@^1.1.9:
   resolved "https://npm.dusk.network:4873/svelte-dev-helper/-/svelte-dev-helper-1.1.9.tgz#7d187db5c6cdbbd64d75a32f91b8998bde3273c3"
   integrity sha1-fRh9tcbNu9ZNdaMvkbiZi94yc8M=
 
+svelte-flatpickr@^2.4.0:
+  version "2.4.0"
+  resolved "https://npm.dusk.network:4873/svelte-flatpickr/-/svelte-flatpickr-2.4.0.tgz#190871fc3305956c8c8fd3601cd036b8ac71ef49"
+  integrity sha512-UUC5Te+b0qi4POg7VDwfGh0m5W3Hf64OwkfOTj6FEe/dYZN4cBzpQ82EuuQl0CTbbBAsMkcjJcixV1d2V6EHCQ==
+  dependencies:
+    flatpickr "^4.5.2"
+
 svelte-loader@^2.13.6:
   version "2.13.6"
   resolved "https://npm.dusk.network:4873/svelte-loader/-/svelte-loader-2.13.6.tgz#3d5efd5886c2bab034606d5af0cce659da3ee555"
@@ -15480,32 +15487,6 @@ table@^5.2.3, table@^5.4.6:
     lodash "^4.17.14"
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
-
-tailwindcss@^1.2.0:
-  version "1.7.1"
-  resolved "https://npm.dusk.network:4873/tailwindcss/-/tailwindcss-1.7.1.tgz#2660f71e2d6735a311965a5b8e574f0b051c3963"
-  integrity sha512-gc8dvU/Oxp+z+ow3+UblVE3MB40xmau3yIMDTM4VRVhW5Rqb2tDY7MyDH9YjjnlvBqtvQaWseLk7kk6Gpk3NPA==
-  dependencies:
-    "@fullhuman/postcss-purgecss" "^2.1.2"
-    autoprefixer "^9.4.5"
-    browserslist "^4.12.0"
-    bytes "^3.0.0"
-    chalk "^3.0.0 || ^4.0.0"
-    color "^3.1.2"
-    detective "^5.2.0"
-    fs-extra "^8.0.0"
-    lodash "^4.17.15"
-    node-emoji "^1.8.1"
-    normalize.css "^8.0.1"
-    postcss "^7.0.11"
-    postcss-functions "^3.0.0"
-    postcss-js "^2.0.0"
-    postcss-nested "^4.1.1"
-    postcss-selector-parser "^6.0.0"
-    postcss-value-parser "^4.1.0"
-    pretty-hrtime "^1.0.3"
-    reduce-css-calc "^2.1.6"
-    resolve "^1.14.2"
 
 tailwindcss@^1.7.0:
   version "1.7.5"

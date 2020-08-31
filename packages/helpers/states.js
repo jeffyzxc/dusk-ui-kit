@@ -7,8 +7,16 @@ export default {
       DANGER: "danger",
     },
   },
-  ORGANISM: {
+  MOLECULE: {
     CONTROL: {
+      BASE: "base",
+      SUCCESS: "success",
+      WARNING: "warning",
+      DANGER: "danger",
+    },
+  },
+  ORGANISM: {
+    FORM: {
       BASE: "base",
       SUCCESS: "success",
       WARNING: "warning",

@@ -1,43 +1,87 @@
 .duk-text-field {
   @apply rounded outline-none text-sm px-4 py-1;
 
-  &--light {
-    @apply bg-gray-100 text-gray-900 border border-gray-900;
+  &--app {
+    &.duk-text-field--light {
+      @apply bg-gray-100 text-gray-900 border border-gray-900;
 
-    &--success {
-      @apply border-green-600 text-green-600;
+      &.duk-text-field--success {
+        @apply border-green-600 text-green-600;
+      }
+
+      &.duk-text-field--warning {
+        @apply border-yellow-600 text-yellow-600;
+      }
+
+      &.duk-text-field--danger {
+        @apply border-red-600 text-red-600;
+      }
+
+      &::placeholder {
+        @apply text-gray-600;
+      }
     }
 
-    &--warning {
-      @apply border-yellow-600 text-yellow-600;
-    }
+    &.duk-text-field--dark {
+      @apply bg-gray-800 text-gray-100 border border-gray-100;
 
-    &--danger {
-      @apply border-red-600 text-red-600;
-    }
+      &.duk-text-field--success {
+        @apply border-green-400 text-green-400;
+      }
 
-    &::placeholder {
-      @apply text-gray-600;
+      &.duk-text-field--warning {
+        @apply border-yellow-400 text-yellow-400;
+      }
+
+      &.duk-text-field--danger {
+        @apply border-red-400 text-red-400;
+      }
+
+      &::placeholder {
+        @apply text-gray-400;
+      }
     }
   }
 
-  &--dark {
-    @apply bg-gray-800 text-gray-100 border border-gray-100;
+  &--marketing {
+    &.duk-text-field--light {
+      @apply bg-gray-100 text-gray-900 border border-gray-900;
 
-    &--success {
-      @apply border-green-400 text-green-400;
+      &.duk-text-field--success {
+        @apply border-green-600 text-green-600;
+      }
+
+      &.duk-text-field--warning {
+        @apply border-yellow-600 text-yellow-600;
+      }
+
+      &.duk-text-field--danger {
+        @apply border-red-600 text-red-600;
+      }
+
+      &::placeholder {
+        @apply text-gray-600;
+      }
     }
 
-    &--warning {
-      @apply border-yellow-400 text-yellow-400;
-    }
+    &.duk-text-field--dark {
+      @apply bg-gray-800 text-gray-100 border border-gray-100;
 
-    &--danger {
-      @apply border-red-400 text-red-400;
-    }
+      &.duk-text-field--success {
+        @apply border-green-400 text-green-400;
+      }
 
-    &::placeholder {
-      @apply text-gray-400;
+      &.duk-text-field--warning {
+        @apply border-yellow-400 text-yellow-400;
+      }
+
+      &.duk-text-field--danger {
+        @apply border-red-400 text-red-400;
+      }
+
+      &::placeholder {
+        @apply text-gray-400;
+      }
     }
   }
 

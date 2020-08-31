@@ -1,23 +1,7 @@
 .duk-footer {
   @apply w-screen;
 
-  &__social-media-menu {
-    &__item {
-      &:not(:last-child) {
-        @apply pr-3;
-      }
-
-      & .duk-icon {
-        @apply p-0 transform duration-200 ease-in-out transition-all;
-
-        &:hover {
-          @apply rotate-360;
-        }
-      }
-    }
-  }
-
-  & .duk-logo {
+  &__logo {
     @apply p-0 transform duration-200 ease-in-out transition-all flex items-center justify-center;
 
     &:hover {
@@ -33,31 +17,67 @@
     }
   }
 
+  &__title {
+    @apply text-lg mb-4;
+  }
+
+  &__copyright {
+    @apply block text-sm text-center mt-4;
+
+    @screen sm {
+      @apply inline-block text-left mt-0 mx-4 py-2 pl-4;
+    }
+  }
+
+  &__legal-menu {
+    @apply text-sm;
+  }
+
+  &__social-media-menu {
+    @apply inline-flex mt-4 justify-center;
+
+    @screen sm {
+      @apply ml-auto mt-0 justify-start;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        @apply pr-3;
+      }
+
+      & .duk-icon {
+        @apply p-0 transform duration-200 ease-in-out transition-all;
+
+        &:hover {
+          @apply rotate-360;
+        }
+      }
+    }
+  }
+
+  &__category-menu {
+    &:not(:last-child) {
+      @apply pr-5;
+    }
+
+    &__item > .duk-list__item__wrapper {
+      @apply p-0 mb-4;
+    }
+  }
+
+  &__maximal {
+    @apply px-5 py-8 mx-auto flex items-start justify-between flex-col;
+
+    @screen sm {
+      @apply flex-row;
+    }
+  }
+
   &__minimal {
     @apply px-5 py-8 mx-auto flex items-center flex-col;
 
     @screen sm {
       @apply flex-row;
-    }
-
-    &__copyright {
-      @apply block text-sm text-center mt-4;
-
-      @screen sm {
-        @apply inline-block text-left mt-0 mx-4 py-2 pl-4;
-      }
-    }
-
-    &__legal-menu {
-      @apply text-sm;
-    }
-
-    &__social-media-menu {
-      @apply inline-flex mt-4 justify-center;
-
-      @screen sm {
-        @apply ml-auto mt-0 justify-start;
-      }
     }
   }
 
