@@ -1,6 +1,7 @@
 .env
 .DS_Store
 .yarn/
+.yarnrc
 node_modules/
 /src/node_modules/@sapper/
 yarn-error.log
