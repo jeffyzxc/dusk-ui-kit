@@ -16,6 +16,7 @@
   export let message = "";
 
   setContext("DUK:text-field:context", contexts.TEXT_FIELD.CONTROL);
+  setContext("DUK:date-picker:context", contexts.DATE_PICKER.CONTROL);
 
   function getClassNames(type, variant, state, tone) {
     return ` duk-control--${type} duk-control--${tone} duk-control--${variant} duk-control--${state}`;

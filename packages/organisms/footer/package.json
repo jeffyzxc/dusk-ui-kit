@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "@dusk/helpers": "^1.2.0",
-    "@dusk/icon": "^1.1.0"
+    "@dusk/icon": "^1.1.0",
+    "@dusk/text-field": "^1.4.0"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"

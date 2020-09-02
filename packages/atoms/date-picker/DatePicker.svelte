@@ -1,7 +1,8 @@
 <script>
-  import { exclude, variants, tones } from "@dusk/helpers";
+  import { createEventDispatcher, getContext } from "svelte";
+  import { exclude, variants, tones, contexts } from "@dusk/helpers";
   import FlatPickr from "svelte-flatpickr";
-  import { Label } from "@dusk/elements";
+  // import { Label } from "@dusk/elements";
 
   import "flatpickr/dist/flatpickr.css";
   import "flatpickr/dist/themes/light.css";
@@ -10,47 +11,47 @@
   let className = "";
   export { className as class };
 
-  export let id;
-  // export let name;
-  export let variant = variants.ATOM.DATE_PICKER.BRAND;
+  export let value;
+  export let options;
+  // export let handler;
+  export let variant = variants.ATOM.DATE_PICKER.LIGHT;
   export let tone = tones.ATOM.DATE_PICKER.APP;
-  // export let disabled = false;
+  export let placeholder = "";
   export const use = [];
 
-  // const forwardEvents = forwardEventsBuilder(current_component);
+  let context = getContext("DUK:date-picker:context") || "";
+
+  const dispatch = createEventDispatcher();
 
   function getClassNames(variant, tone) {
     let classNames = `duk-date-picker--${variant} duk-date-picker--${tone}`;
+
+    switch (context) {
+      case contexts.DATE_PICKER.CONTROL:
+        classNames += " duk-control__input duk-control__input--date-picker";
+        break;
+      default:
+        classNames += "";
+    }
+
     return classNames;
   }
 
-  let date = null;
-  const flatpickrOptions = {
-    enableTime: true,
-    onChange: (selectedDates, dateStr, instance) => {
-      console.log("Options onChange handler");
-      console.log(selectedDates);
-      console.log(dateStr);
-      console.log(instance);
-    },
-  };
-
-  function handleChange(selectedDates, dateStr, instance) {
-    console.log("Handle change.");
-    console.log(selectedDates);
-    console.log(dateStr);
-    console.log(instance);
-  }
+  const change = () => dispatch("change");
 </script>
 
-<Label
-  for="{id}"
+<div
   class="duk-date-picker {className}
-  {getClassNames(variant, tone)}"
-  {...exclude($$props, ['use', 'class', 'variant', 'id', 'name', 'type'])}>
-  <FlatPickr
-    options="{flatpickrOptions}"
-    bind:value="{date}"
-    placeholder="optional placeholder"
-    on:change="{handleChange()}" />
-</Label>
+  {getClassNames(variant, tone, context)}"
+  {...exclude($$props, [
+    'use',
+    'class',
+    'tone',
+    'variant',
+    'name',
+    'options',
+    'handler',
+    'placeholder',
+  ])}>
+  <FlatPickr {options} bind:value {placeholder} on:change="{change}" />
+</div>

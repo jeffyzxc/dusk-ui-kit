@@ -35,16 +35,8 @@ export default {
       BLACK: "black",
     },
     DATE_PICKER: {
-      BRAND: "brand",
-      CTA: "cta",
-      INFO: "info",
-      SUCCESS: "success",
-      WARNING: "warning",
-      DANGER: "danger",
       LIGHT: "light",
       DARK: "dark",
-      WHITE: "white",
-      BLACK: "black",
     },
     ICON: {
       BRAND: "brand",

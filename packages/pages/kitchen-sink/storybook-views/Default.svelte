@@ -10,6 +10,7 @@
   import Control from "@dusk/control";
   import TextField from "@dusk/text-field";
   import Footer from "@dusk/footer";
+  import DatePicker from "@dusk/date-picker";
 </script>
 
 <TwoColumn class="bg-gray-100">
@@ -98,7 +99,7 @@
             <TextField type="password" />
           </Control>
           <Control label="Date of birth">
-            <TextField type="password" />
+            <DatePicker />
           </Control>
         </Form>
       </Content>

@@ -9,6 +9,9 @@ export default {
     ALERT: "card:alert",
     DIALOG: "card:dialog",
   },
+  DATE_PICKER: {
+    CONTROL: "date-picker:control",
+  },
   DATUM: {
     ROW: {
       BODY: "datum:row:body",

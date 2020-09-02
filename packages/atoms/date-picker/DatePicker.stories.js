@@ -1,12 +1,11 @@
 import { withKnobs, select } from "@storybook/addon-knobs";
-// import { action } from "@storybook/addon-actions";
 import { variants, tones } from "@dusk/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
-import "@dusk/styles/tailwind.css";
 import readme from "./readme.stories.md";
+import "@dusk/styles/tailwind.css";
 
 export default {
-  title: "Components/Atoms/Date Picker",
+  title: "Components/Atoms/DatePicker",
   parameters: {
     notes: readme,
     layout: "centered",
@@ -14,15 +13,10 @@ export default {
   decorators: [withKnobs],
 };
 
-const datepickerVariants = variants.ATOM.DATEPICKER;
-const datepickerVariantDefault = variants.ATOM.DATEPICKER.BRAND;
-const datepickerTones = tones.ATOM.DATEPICKER;
-const datepickerToneDefault = tones.ATOM.DATEPICKER.APP;
-
 export const Default = () => ({
   Component: DefaultView,
   props: {
-    variant: select("Variant", datepickerVariants, datepickerVariantDefault),
-    tone: select("Tone", datepickerTones, datepickerToneDefault),
+    tone: select("Tone", tones.ATOM.DATE_PICKER, tones.ATOM.DATE_PICKER.APP),
+    variant: select("Variant", variants.ATOM.DATE_PICKER, variants.ATOM.DATE_PICKER.LIGHT),
   },
 });
