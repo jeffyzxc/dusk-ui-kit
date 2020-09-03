@@ -1,6 +1,6 @@
 {
   "name": "@dusk/three-column",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Dusk UI Kit - Three Column Template",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -11,9 +11,10 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk/helpers": "^1.2.0"
+    "@dusk/helpers": "^1.5.0"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"
-  }
+  },
+  "gitHead": "b54244c100b2003ccb5f768c64ccae2a61c80f7b"
 }

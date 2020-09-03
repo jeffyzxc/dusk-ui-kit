@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.5.0 (2020-09-03)
+
+
+### Features
+
+* ✨ added more form controls ([44a7019](https://github.com/dusk-network/dusk-ui-kit/commit/44a7019f4059b75c2d3f99f49cadd06665f94ae0))
+
+
+
+
+
 # [1.4.0](https://github.com/dusk-network/dusk-ui-kit/compare/v1.0.0...v1.4.0) (2020-08-06)
 
 ### Bug Fixes

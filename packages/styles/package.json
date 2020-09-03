@@ -1,6 +1,6 @@
 {
   "name": "@dusk/styles",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Dusk UI Kit - Styles",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -32,5 +32,6 @@
   "peerDependencies": {
     "rollup": "2.23.0",
     "svelte": "^3.0.0"
-  }
+  },
+  "gitHead": "b54244c100b2003ccb5f768c64ccae2a61c80f7b"
 }
