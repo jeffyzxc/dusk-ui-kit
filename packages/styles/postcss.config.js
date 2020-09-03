@@ -13,8 +13,6 @@ const dev = mode === "development";
 const theme = "dusk";
 const tailwindConfig = require("./" + theme + ".tailwind.config.js");
 
-// console.log(tailwindConfig);
-
 module.exports = {
   plugins: [
     postcssImport(),
