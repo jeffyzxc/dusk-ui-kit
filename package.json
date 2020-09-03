@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/dusk-network/dusk-ui-kit.git"
   },
-  "license": "UNLICENSED",
+  "license": "MPL-2.0",
   "author": "Kieran Hall <kieran@dusk.network>",
   "files": [],
   "workspaces": [

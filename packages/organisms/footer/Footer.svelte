@@ -38,5 +38,5 @@
   {#if type === types.ORGANISM.FOOTER.MAXIMAL}
     <Maximal {categories} {tone} />
   {/if}
-  <Minimal {copyright} {social} {categories} />
+  <Minimal {copyright} {social} />
 </footer>
