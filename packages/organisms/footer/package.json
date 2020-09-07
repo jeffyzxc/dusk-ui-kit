@@ -7,6 +7,7 @@
   },
   "license": "MIT",
   "author": "Kieran Hall <kieran@dusk.network>",
+  "type": "module",
   "scripts": {
     "test": "echo \"LOL\" && exit 1"
   },

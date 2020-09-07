@@ -29,9 +29,9 @@ module.exports = {
     !dev &&
       postcssPurgecss({
         content: ["./src/**/*.svelte", "./node_modules/@dusk/**/*.svelte"],
-        defaultExtractor: (content) =>
+        defaultExtractor: content =>
           [...content.matchAll(/(?:class:)*([\w\d-/:%.]+)/gm)].map(
-            ([_match, group, ..._rest]) => group,
+            ([_match, group, ..._rest]) => group, //eslint-disable-line
           ),
         fontFace: true,
         whitelist: ["html", "body"],

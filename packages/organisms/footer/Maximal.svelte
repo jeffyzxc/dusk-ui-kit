@@ -8,10 +8,10 @@
 </script>
 
 <div
-  class="duk-footer__maximal container "
+  class="duk-footer__maximal container"
   {...exclude($$props, ['use', 'class', 'copyright', 'social', 'categories', 'tone'])}>
   {#each categories as category}
-    <CategoryMenu {category} />
+    <CategoryMenu category="{category}" />
   {/each}
-  <Newsletter {tone} />
+  <Newsletter tone="{tone}" />
 </div>
