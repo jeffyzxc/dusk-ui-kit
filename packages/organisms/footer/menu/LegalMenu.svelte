@@ -8,7 +8,10 @@
   export let separator;
 </script>
 
-<Menu {orientation} {separator} class="duk-footer__legal-menu {className}">
+<Menu
+  orientation="{orientation}"
+  separator="{separator}"
+  class="duk-footer__legal-menu {className}">
   <List>
     <Item href="https://dusk.network/footer-pages/privacy-policies">Privacy policy</Item>
     <Item href="https://dusk.network/footer-pages/terms-of-use">Terms of use</Item>

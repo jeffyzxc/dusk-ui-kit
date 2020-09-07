@@ -4,6 +4,7 @@ import DefaultView from "./storybook-views/Default.svelte";
 import readme from "./readme.stories.md";
 import "@dusk/styles/tailwind.css";
 
+//TODO Export this from the package for default social config?
 const socialMediaConfig = [
   {
     title: "CoinMarketCap",
@@ -37,6 +38,8 @@ const socialMediaConfig = [
   },
 ];
 
+//TODO Eventually this will come from strapi, probably a shared endpoint...
+// The function for fetching this data could be exported, requiring a URL and Apollo client for input.
 const categoryConfig = [
   {
     title: "Blockchain",
