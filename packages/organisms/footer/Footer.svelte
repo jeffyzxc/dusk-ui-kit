@@ -20,10 +20,83 @@
 
   const forwardEvents = forwardEventsBuilder(current_component);
 
+  // function getClassNames(variant, tone) {
+  //   let classNames = "duk-footer";
+  //   classNames += ` duk-footer--${tone}`;
+  //   classNames += ` duk-footer--${tone}--${variant}`;
+
+  //   return classNames;
+  // }
+
   function getClassNames(variant, tone) {
-    let classNames = "duk-footer";
-    classNames += ` duk-footer--${tone}`;
-    classNames += ` duk-footer--${tone}--${variant}`;
+    let classNames = "";
+    if (tone === "marketing") {
+      classNames += " duk-footer--marketing";
+      switch (variant) {
+        case variants.ORGANISM.FOOTER.BRAND:
+          classNames += " duk-footer--marketing--brand";
+          break;
+        case variants.ORGANISM.FOOTER.CTA:
+          classNames += " duk-footer--marketing--cta";
+          break;
+        case variants.ORGANISM.FOOTER.INFO:
+          classNames += " duk-footer--marketing--info";
+          break;
+        case variants.ORGANISM.FOOTER.SUCCESS:
+          classNames += " duk-footer--marketing--success";
+          break;
+        case variants.ORGANISM.FOOTER.WARNING:
+          classNames += " duk-footer--marketing--warning";
+          break;
+        case variants.ORGANISM.FOOTER.DANGER:
+          classNames += " duk-footer--marketing--danger";
+          break;
+        case variants.ORGANISM.FOOTER.LIGHT:
+          classNames += " duk-footer--marketing--light";
+          break;
+        case variants.ORGANISM.FOOTER.DARK:
+          classNames += " duk-footer--marketing--dark";
+          break;
+        default:
+          classNames += "";
+      }
+    } else {
+      classNames += " duk-footer--app";
+      switch (variant) {
+        case variants.ORGANISM.FOOTER.BRAND:
+          classNames += " duk-footer--app--brand";
+          break;
+        case variants.ORGANISM.FOOTER.CTA:
+          classNames += " duk-footer--app--cta";
+          break;
+        case variants.ORGANISM.FOOTER.INFO:
+          classNames += " duk-footer--app--info";
+          break;
+        case variants.ORGANISM.FOOTER.SUCCESS:
+          classNames += " duk-footer--app--success";
+          break;
+        case variants.ORGANISM.FOOTER.WARNING:
+          classNames += " duk-footer--app--warning";
+          break;
+        case variants.ORGANISM.FOOTER.DANGER:
+          classNames += " duk-footer--app--danger";
+          break;
+        case variants.ORGANISM.FOOTER.LIGHT:
+          classNames += " duk-footer--app--light";
+          break;
+        case variants.ORGANISM.FOOTER.DARK:
+          classNames += " duk-footer--app--dark";
+          break;
+        case variants.ORGANISM.FOOTER.BLACK:
+          classNames += " duk-footer--app--black";
+          break;
+        case variants.ORGANISM.FOOTER.WHITE:
+          classNames += " duk-footer--app--white";
+          break;
+        default:
+          classNames += "";
+      }
+    }
 
     return classNames;
   }
@@ -32,11 +105,10 @@
 <footer
   use:useActions="{use}"
   use:forwardEvents
-  class="duk-footer {className}
-  {getClassNames(variant, tone)}"
+  class="duk-footer {className} {getClassNames(variant, tone)}"
   {...exclude($$props, ['use', 'class', 'type', 'tone', 'variant', 'social', 'categories'])}>
   {#if type === types.ORGANISM.FOOTER.MAXIMAL}
-    <Maximal {categories} {tone} />
+    <Maximal categories="{categories}" tone="{tone}" />
   {/if}
-  <Minimal {copyright} {social} />
+  <Minimal copyright="{copyright}" social="{social}" />
 </footer>
