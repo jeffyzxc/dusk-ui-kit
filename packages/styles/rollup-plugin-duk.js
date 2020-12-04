@@ -10,7 +10,6 @@ const defaultWhitelistPatterns = [
 ];
 
 const postcssProcessor = ({
-  // tailwind = {},
   postcss = [],
   whitelist = defaultWhitelist,
   whitelistPatterns = defaultWhitelistPatterns,
@@ -45,8 +44,10 @@ const postcssProcessor = ({
 
 const plugins = (config) => postcssProcessor(config || {});
 
+// console.log("plugins", plugins({}));
+
 module.exports = (config = {}) =>
   postcss({
     plugins: plugins(config),
-    extract: path.resolve(config.output || "./static/global.css"),
+    extract: config.output,
   });
