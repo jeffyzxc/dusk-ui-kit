@@ -11,3 +11,4 @@ yarn-error.log
 /build/
 /static/global.css
 /storybook-static
+/public
