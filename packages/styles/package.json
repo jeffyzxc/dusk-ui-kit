@@ -1,6 +1,6 @@
 {
   "name": "@dusk/styles",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Dusk UI Kit - Styles",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -29,5 +29,5 @@
     "rollup": "^2.3.4",
     "svelte": "^3.0.0"
   },
-  "gitHead": "b54244c100b2003ccb5f768c64ccae2a61c80f7b"
+  "gitHead": "a20d3aac7752bf0280c649480c950ff8219db117"
 }
