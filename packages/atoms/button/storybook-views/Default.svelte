@@ -8,6 +8,6 @@
   export let tone;
 </script>
 
-<Button {tone} {variant} {size} {disabled} {outline} on:click>
+<Button {tone} {variant} {size} {disabled} {outline}>
   <Label>{buttonText}</Label>
 </Button>
