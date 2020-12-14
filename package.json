@@ -24,7 +24,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && test",
+      "pre-commit": "lint-staged",
       "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true && npx --no-install devmoji -e --lint",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "post-commit": "git update-index --again",
