@@ -1,6 +1,6 @@
 <script>
   import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, exclude, variants, types, tones } from "@dusk/helpers";
+  import { forwardEventsBuilder, exclude, variants, types } from "@dusk/helpers";
   import "./styles.css";
   import { Input, Label } from "@dusk/elements";
 
@@ -11,7 +11,6 @@
   export let name;
   export let checked = false;
   export let variant = variants.ATOM.SWITCH.BRAND;
-  export let tone = tones.ATOM.SWITCH.APP;
   export let disabled = false;
   export const use = [];
 
@@ -20,18 +19,8 @@
   $: actionProp = {};
   $: defaultProp = {};
 
-  function getClassNames(variant, tone) {
+  function getClassNames(variant) {
     let classNames = "";
-    switch (tone) {
-      case tones.ATOM.CARD.APP:
-        classNames += "";
-        break;
-      case tones.ATOM.CARD.MARKETING:
-        classNames += " duk-switch--marketing";
-        break;
-      default:
-        classNames += "";
-    }
     switch (variant) {
       case variants.ATOM.SWITCH.BRAND:
         classNames += " duk-switch--brand";
@@ -74,16 +63,16 @@
 <Label
   for="{id}"
   class="duk-switch {className}
-  {getClassNames(variant, tone)}"
+  {getClassNames(variant)}"
   {...exclude($$props, ['use', 'class', 'variant', 'id', 'name', 'type'])}>
   <div class="duk-switch__inner">
     <Input
       use="{[forwardEvents, ...use]}"
       class="duk-switch__inner__checkbox sr-only"
       type="{types.ATOM.CHECKBOX}"
-      {name}
-      {id}
-      {disabled}
+      name="{name}"
+      id="{id}"
+      disabled="{disabled}"
       {...actionProp}
       {...defaultProp}
       bind:checked />

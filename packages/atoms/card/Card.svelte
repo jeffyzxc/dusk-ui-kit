@@ -7,7 +7,6 @@
     variants,
     elevations,
     sizes,
-    tones,
   } from "@dusk/helpers";
   import "./styles.css";
 
@@ -19,21 +18,9 @@
   export let variant = variants.ATOM.CARD.WHITE;
   export let elevation = elevations.ATOM.CARD.SMALL;
   export let size = sizes.ATOM.CARD.BASE;
-  export let tone = tones.ATOM.CARD.BASE;
 
-  function getClassNames(variant, elevation, size, tone) {
+  function getClassNames(variant, elevation, size) {
     let classNames = "";
-
-    switch (tone) {
-      case tones.ATOM.CARD.APP:
-        classNames += "";
-        break;
-      case tones.ATOM.CARD.MARKETING:
-        classNames += " duk-card--marketing";
-        break;
-      default:
-        classNames += "";
-    }
 
     switch (variant) {
       case variants.ATOM.CARD.BRAND:
@@ -104,7 +91,7 @@
   use:useActions="{use}"
   use:forwardEvents
   class="duk-card {className}
-  {getClassNames(variant, elevation, size, tone)}"
-  {...exclude($$props, ['use', 'class', 'variant', 'elevation', 'size', 'tone'])}>
+  {getClassNames(variant, elevation, size)}"
+  {...exclude($$props, ['use', 'class', 'variant', 'elevation', 'size'])}>
   <slot />
 </div>

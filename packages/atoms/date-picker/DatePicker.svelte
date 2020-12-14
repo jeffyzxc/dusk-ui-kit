@@ -1,6 +1,6 @@
 <script>
   import { createEventDispatcher, getContext } from "svelte";
-  import { exclude, variants, tones, contexts } from "@dusk/helpers";
+  import { exclude, variants, contexts } from "@dusk/helpers";
   import FlatPickr from "svelte-flatpickr";
   // import { Label } from "@dusk/elements";
 
@@ -15,7 +15,6 @@
   export let options;
   // export let handler;
   export let variant = variants.ATOM.DATE_PICKER.LIGHT;
-  export let tone = tones.ATOM.DATE_PICKER.APP;
   export let placeholder = "";
   export const use = [];
 
@@ -23,8 +22,8 @@
 
   const dispatch = createEventDispatcher();
 
-  function getClassNames(variant, tone) {
-    let classNames = `duk-date-picker--${variant} duk-date-picker--${tone}`;
+  function getClassNames(variant) {
+    let classNames = `duk-date-picker--${variant}`;
 
     switch (context) {
       case contexts.DATE_PICKER.CONTROL:
@@ -42,16 +41,7 @@
 
 <div
   class="duk-date-picker {className}
-  {getClassNames(variant, tone, context)}"
-  {...exclude($$props, [
-    'use',
-    'class',
-    'tone',
-    'variant',
-    'name',
-    'options',
-    'handler',
-    'placeholder',
-  ])}>
-  <FlatPickr {options} bind:value {placeholder} on:change="{change}" />
+  {getClassNames(variant, context)}"
+  {...exclude($$props, ['use', 'class', 'variant', 'name', 'options', 'handler', 'placeholder'])}>
+  <FlatPickr options="{options}" bind:value placeholder="{placeholder}" on:change="{change}" />
 </div>

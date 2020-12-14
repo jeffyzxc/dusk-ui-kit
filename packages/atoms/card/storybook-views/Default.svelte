@@ -4,9 +4,8 @@
   export let elevation;
   export let content;
   export let size;
-  export let tone;
 </script>
 
-<Card {variant} {tone} {elevation} {size} style="width: 305px">
+<Card variant="{variant}" elevation="{elevation}" size="{size}">
   <Content>{content}</Content>
 </Card>

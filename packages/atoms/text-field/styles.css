@@ -1,6 +1,8 @@
 .duk-text-field {
   @apply rounded outline-none text-sm px-4 py-1;
 
+  min-height: 30px;
+
   &--app {
     &.duk-text-field--light {
       @apply bg-gray-100 text-gray-900 border border-gray-900;

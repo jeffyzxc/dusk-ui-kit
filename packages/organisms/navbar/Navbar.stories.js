@@ -1,8 +1,7 @@
-import { withKnobs, select, text } from "@storybook/addon-knobs";
+import { withKnobs, select, text, array } from "@storybook/addon-knobs";
 import { variants } from "@dusk/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import readme from "./readme.stories.md";
-import "@dusk/styles/tailwind.css";
 
 export default {
   title: "Components/Organisms/Navbar",

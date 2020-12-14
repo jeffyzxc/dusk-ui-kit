@@ -1,5 +1,5 @@
 import { withKnobs, select, text } from "@storybook/addon-knobs";
-import { variants, tones, states, types } from "@dusk/helpers";
+import { variants, states, types } from "@dusk/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import readme from "./readme.stories.md";
 import "@dusk/styles/tailwind.css";
@@ -17,7 +17,6 @@ export const Default = () => ({
   Component: DefaultView,
   props: {
     type: select("Type", types.MOLECULE.CONTROL, types.MOLECULE.CONTROL.APP),
-    tone: select("Tone", tones.MOLECULE.CONTROL, tones.MOLECULE.CONTROL.APP),
     variant: select("Variant", variants.MOLECULE.CONTROL, variants.MOLECULE.CONTROL.LIGHT),
     state: select("State", states.MOLECULE.CONTROL, states.MOLECULE.CONTROL.BASE),
     label: text("Label (optional)", "Field label"),
