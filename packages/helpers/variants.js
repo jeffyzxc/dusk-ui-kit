@@ -176,11 +176,6 @@ export default {
     },
     NAVBAR: {
       BRAND: "brand",
-      CTA: "cta",
-      INFO: "info",
-      SUCCESS: "success",
-      WARNING: "warning",
-      DANGER: "danger",
       LIGHT: "light",
       DARK: "dark",
       WHITE: "white",

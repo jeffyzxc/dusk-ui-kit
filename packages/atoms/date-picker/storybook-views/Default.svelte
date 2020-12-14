@@ -1,7 +1,6 @@
 <script>
   import DatePicker from "../";
   export let variant;
-  export let tone;
 
   let value;
 
@@ -22,6 +21,6 @@
   }
 </script>
 
-<DatePicker {variant} {tone} {options} on:change="{handler}" bind:value />
+<DatePicker variant="{variant}" options="{options}" on:change="{handler}" bind:value />
 
 <p>Selected date: {value}</p>

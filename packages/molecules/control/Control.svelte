@@ -1,6 +1,6 @@
 <script>
   import { setContext } from "svelte";
-  import { exclude, variants, states, tones, contexts, types } from "@dusk/helpers";
+  import { exclude, variants, states, contexts, types } from "@dusk/helpers";
   import Icon from "@dusk/icon";
   import { Label } from "@dusk/elements";
   import "./styles.css";
@@ -8,7 +8,6 @@
   let className = "";
   export { className as class };
   export let type = types.MOLECULE.CONTROL.STACKED;
-  export let tone = tones.MOLECULE.CONTROL.APP;
   export let variant = variants.MOLECULE.CONTROL.LIGHT;
   export let state = states.MOLECULE.CONTROL.BASE;
   export let id;
@@ -18,16 +17,16 @@
   setContext("DUK:text-field:context", contexts.TEXT_FIELD.CONTROL);
   setContext("DUK:date-picker:context", contexts.DATE_PICKER.CONTROL);
 
-  function getClassNames(type, variant, state, tone) {
-    return ` duk-control--${type} duk-control--${tone} duk-control--${variant} duk-control--${state}`;
+  function getClassNames(type, variant, state) {
+    return ` duk-control--${type} duk-control--${variant} duk-control--${state}`;
   }
 </script>
 
 <div
   class="duk-control {className}
-  {getClassNames(type, variant, state, tone)}
+  {getClassNames(type, variant, state)}
   "
-  {...exclude($$props, ['use', 'class', 'type', 'tone', 'variant', 'state', 'label', 'message'])}>
+  {...exclude($$props, ['use', 'class', 'type', 'variant', 'state', 'label', 'message'])}>
   <div class="duk-control__wrapper">
     {#if label}
       <Label control="{id}" class="duk-control__label">{label}</Label>

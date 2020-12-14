@@ -1,7 +1,6 @@
 <script>
   import Switch from "../";
   export let variant;
-  export let tone;
   export let label;
   let demoSwitch = false;
 </script>
@@ -9,8 +8,7 @@
 <Switch
   id="demo-switch"
   name="demo_switch"
-  {variant}
-  {tone}
+  variant="{variant}"
   value="{true}"
   bind:checked="{demoSwitch}">
   {label}

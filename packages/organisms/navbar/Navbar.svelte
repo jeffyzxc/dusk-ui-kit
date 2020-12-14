@@ -2,6 +2,8 @@
   import { setContext } from "svelte";
   import { current_component } from "svelte/internal";
   import { forwardEventsBuilder, exclude, useActions, contexts, variants } from "@dusk/helpers";
+  import Menu from "@dusk/menu";
+  import List, { Item } from "@dusk/list";
   import Icon from "@dusk/icon";
   import "./styles.css";
   const forwardEvents = forwardEventsBuilder(current_component);
@@ -63,10 +65,9 @@
     // console.log(id);
     // console.log(document.getElementById(`#${id}`));
     const navbarElement = document.querySelector(`#${id}`);
-    const menuElement = navbarElement.querySelector(".duk-navbar__menu");
-    menuElement.classList.toggle("duk-navbar__menu--hidden");
+    navbarElement.classList.toggle("duk-navbar--hidden");
 
-    expanded = !menuElement.classList.contains("duk-navbar__menu--hidden");
+    expanded = !navbarElement.classList.contains("duk-navbar--hidden");
   };
 </script>
 
@@ -76,26 +77,39 @@
   class="duk-navbar {className}
   {getClassNames(variant)}"
   {...exclude($$props, ['use', 'class', 'variant', 'title'])}>
-  <div class="duk-navbar__title">
-    <slot name="logo" />
-    {#if title}
-      <h1 class="duk-navbar__title__heading">{title}</h1>
-    {/if}
-  </div>
-  <div id="{id}-content" class="duk-navbar__collapse">
-    <button
-      id="__DUK-navbar-toggle"
-      aria-controls="{id}-content"
-      aria-expanded="{expanded}"
-      aria-label="Toggle navigation"
-      on:click="{toggleNavbar}"
-      class="duk-navbar__collapse__button">
-      {#if !expanded}
-        <Icon name="menu-burger" />
-      {:else}
-        <Icon name="menu-burger-close" />
+  <div class="duk-navbar__wrapper duk-navbar__wrapper--primary">
+    <div class="duk-navbar__brand">
+      <slot name="logo" />
+      {#if title}
+        <h1 class="duk-navbar__brand__heading">{title}</h1>
       {/if}
-    </button>
+      <div class="duk-navbar__navigation duk-navbar__navigation--primary">
+        <slot name="networks" />
+        <slot name="apps" />
+      </div>
+    </div>
+    <div class="duk-navbar__navigation duk-navbar__navigation--tertiary">
+      <slot name="links" />
+    </div>
+    <div id="{id}-content" class="duk-navbar__collapse">
+      <button
+        id="__DUK-navbar-toggle"
+        aria-controls="{id}-content"
+        aria-expanded="{expanded}"
+        aria-label="Toggle navigation"
+        on:click="{toggleNavbar}"
+        class="duk-navbar__collapse__button">
+        {#if !expanded}
+          <Icon name="menu-burger" />
+        {:else}
+          <Icon name="menu-burger-close" />
+        {/if}
+      </button>
+    </div>
   </div>
-  <slot />
+  <div class="duk-navbar__wrapper duk-navbar__wrapper--secondary">
+    <div class="duk-navbar__navigation duk-navbar__navigation--secondary">
+      <slot name="navigation" />
+    </div>
+  </div>
 </nav>

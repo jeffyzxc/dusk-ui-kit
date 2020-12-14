@@ -1,24 +1,64 @@
 .duk-navbar {
-  @apply font-light items-center flex flex-wrap justify-between py-5 px-5 w-screen;
+  @apply font-light flex flex-col w-full h-screen;
 
-  &__title {
-    @apply flex items-center flex-shrink-0;
+  &__wrapper {
+    @apply flex-none flex w-full justify-between items-start;
 
-    & > div[slot="logo"] {
-      @apply inline-flex;
+    @screen lg {
+      @apply items-center;
     }
 
-    svg {
+    &--primary {
+      @apply fill-current;
+
+      @screen lg {
+        @apply pt-2;
+      }
+    }
+
+    &--secondary {
+      @apply px-6 pb-3 pt-4;
+
+      @screen lg {
+        @apply;
+      }
+    }
+  }
+
+  &__brand {
+    @apply flex flex-col items-start flex-grow;
+
+    & [slot="logo"] {
+      @apply inline-flex ml-4 my-5;
+
+      @screen lg {
+        @apply mr-6 mb-2 ml-0 mt-0;
+      }
+    }
+
+    & svg {
       @apply block fill-current h-6;
     }
 
     &__heading {
-      @apply font-medium leading-relaxed text-base ml-12;
+      @apply font-medium leading-relaxed text-base ml-3 w-full block text-center;
+
+      @screen lg {
+        @apply ml-0 mr-5 pb-2 w-auto inline;
+      }
+    }
+
+    @screen lg {
+      @apply flex-row items-center px-6;
     }
   }
 
   &__collapse {
-    @apply block;
+    @apply absolute;
+
+    right: 1rem;
+    top: 1rem;
+
     @screen lg {
       @apply hidden;
     }
@@ -32,52 +72,85 @@
     @apply inline-block self-center;
   }
 
-  &__menu--hidden {
-    @apply hidden;
-    @screen lg {
-      @apply block;
-    }
-  }
-
-  &__menu.duk-menu--horizontal {
+  &__navigation {
     @apply flex-grow w-full;
 
-    & .duk-list--menu {
-      @apply flex flex-col mt-5;
-      @screen lg {
-        @apply flex-row flex-1 justify-end my-0;
-      }
-    }
+    &--primary {
+      & .duk-list__item__wrapper {
+        @apply px-3 pt-4 pb-4;
 
-    & .duk-list--menu .duk-list__item {
-      @apply py-0 pl-0 pr-3 mb-5 leading-relaxed font-light w-full;
+        &--active {
+          @apply px-6;
 
-      &:last-child {
-        @apply mb-0;
-      }
-
-      @screen lg {
-        @apply mb-0 mx-3 w-auto;
-      }
-
-      &__wrapper {
-        @apply py-0 px-0 w-full text-right;
-
-        &:is(a) {
-          @apply opacity-50;
+          @screen lg {
+            @apply px-5 rounded-t;
+          }
         }
 
         @screen lg {
-          @apply text-left;
+          @apply pt-2;
         }
+      }
+    }
+
+    &--secondary {
+      & .duk-list__item__wrapper {
+        @apply mb-5;
 
         &--active {
-          @apply pr-5 font-bold;
+          @apply font-semibold;
 
           @screen lg {
-            @apply pr-0;
+            @apply border-t-2;
           }
         }
+
+        @screen lg {
+          @apply mb-0;
+        }
+      }
+    }
+
+    /* FIXME Temp solution, we need to always show this. */
+    &--tertiary {
+      @apply hidden;
+      @screen lg {
+        @apply block;
+      }
+    }
+
+    & .duk-list {
+      @apply flex flex-col;
+
+      &__item {
+        @apply py-0 pl-0 leading-relaxed font-light w-full;
+
+        &__wrapper {
+          @apply w-full text-left;
+
+          &:is(a) {
+            @apply opacity-50;
+          }
+
+          @screen lg {
+            @apply text-left;
+          }
+        }
+
+        &:last-child {
+          @apply mb-0;
+
+          & .duk-list__item__wrapper {
+            @apply mb-0;
+          }
+        }
+
+        @screen lg {
+          @apply mb-0 pr-0 mr-5 w-auto;
+        }
+      }
+      @screen lg {
+        @apply flex-row flex-1 justify-end mb-0;
       }
     }
 
@@ -91,74 +164,49 @@
       }
     }
     @screen lg {
-      @apply self-center flex flex-shrink flex-grow-0 w-auto;
+      @apply flex flex-shrink flex-grow-0 w-auto h-auto;
+    }
+  }
+
+  &--hidden {
+    @apply h-auto;
+
+    & .duk-navbar__navigation,
+    & .duk-navbar__wrapper--secondary {
+      @apply hidden;
+      @screen lg {
+        @apply block;
+      }
     }
   }
 
   &--brand {
-    @apply bg-purple-600 text-white;
+    & .duk-navbar__wrapper--primary {
+      @apply text-indigo-500;
 
-    & a,
-    a:hover {
-      @apply text-white;
+      & .duk-list__item__wrapper {
+        &--active {
+          @apply bg-indigo-500 text-white;
+        }
+      }
+    }
+
+    & .duk-navbar__wrapper--secondary {
+      @apply bg-indigo-500 text-white;
+
+      & .duk-list__item__wrapper {
+        &--active {
+          @apply bg-indigo-500 text-white;
+
+          @screen lg {
+            @apply border-white;
+          }
+        }
+      }
     }
   }
 
-  &--cta {
-    @apply bg-orange-500 text-white;
-
-    & a,
-    a:hover {
-      @apply text-white;
-    }
-  }
-
-  &--info {
-    @apply bg-purple-400 text-white;
-
-    & a,
-    a:hover {
-      @apply text-white;
-    }
-  }
-
-  &--success {
-    @apply bg-green-500 text-white;
-
-    & a,
-    a:hover {
-      @apply text-white;
-    }
-  }
-
-  &--warning {
-    @apply bg-yellow-500 text-gray-900;
-
-    & a,
-    a:hover {
-      @apply text-white;
-    }
-  }
-
-  &--danger {
-    @apply bg-red-500 text-white;
-
-    & a,
-    a:hover {
-      @apply text-white;
-    }
-  }
-
-  &--white {
-    @apply bg-white text-black;
-
-    & a,
-    a:hover {
-      @apply text-black;
-    }
-  }
-
-  &--light {
+  /* &--light {
     @apply bg-gray-200 text-purple-900;
 
     & a,
@@ -184,4 +232,13 @@
       @apply text-white;
     }
   }
+
+  &--white {
+    @apply bg-white text-black;
+
+    & a,
+    a:hover {
+      @apply text-black;
+    }
+  } */
 }

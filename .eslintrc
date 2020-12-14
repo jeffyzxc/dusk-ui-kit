@@ -9,7 +9,7 @@
     "es6": true
   },
   "plugins": ["svelte3"],
-  "extends": ["eslint:recommended", "plugin:cypress/recommended"],
+  "extends": ["eslint:recommended"],
   "overrides": [
     {
       "files": ["**/*.svelte"],
