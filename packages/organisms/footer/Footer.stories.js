@@ -1,5 +1,5 @@
 import { withKnobs, select, object } from "@storybook/addon-knobs";
-import { tones, variants, types } from "@dusk/helpers";
+import { variants, types } from "@dusk/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import readme from "./readme.stories.md";
 import "@dusk/styles/tailwind.css";
@@ -132,7 +132,6 @@ export const Default = () => ({
   Component: DefaultView,
   props: {
     type: select("Type", types.ORGANISM.FOOTER, types.ORGANISM.FOOTER.MINIMAL),
-    tone: select("Tone", tones.ORGANISM.FOOTER, tones.ORGANISM.FOOTER.APP),
     variant: select("Variant", variants.ORGANISM.FOOTER, variants.ORGANISM.FOOTER.APP),
     social: object("Social Media Config", socialMediaConfig),
     categories: object("Category Config", categoryConfig),

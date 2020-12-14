@@ -1,7 +1,7 @@
 <script>
   import { setContext, getContext } from "svelte";
   import { current_component } from "svelte/internal";
-  import { exclude, forwardEventsBuilder, variants, sizes, contexts, tones } from "@dusk/helpers";
+  import { exclude, forwardEventsBuilder, variants, sizes, contexts } from "@dusk/helpers";
   import { A, Button } from "@dusk/elements";
   import "./styles.css";
   import createRipple from "@dusk/helpers/ripple.js";
@@ -16,7 +16,6 @@
   export let variant = variants.ATOM.BUTTON.BRAND;
   export let outline = false;
   export let size = sizes.ATOM.BUTTON.BASE;
-  export let tone = tones.ATOM.CARD.BASE;
   export let href = null;
   export let component = href == null ? Button : A;
 
@@ -38,18 +37,8 @@
 
   const ripple = createRipple(variant);
 
-  function getClassNames(variant, size, context, outline, tone) {
+  function getClassNames(variant, size, context, outline) {
     let classNames = "";
-    switch (tone) {
-      case tones.ATOM.CARD.APP:
-        classNames += "";
-        break;
-      case tones.ATOM.CARD.MARKETING:
-        classNames += " duk-button--marketing";
-        break;
-      default:
-        classNames += "";
-    }
     switch (variant) {
       case variants.ATOM.BUTTON.BRAND:
         classNames += " duk-button--brand";
@@ -108,9 +97,9 @@
   this="{component}"
   use="{[forwardEvents, ripple, ...use]}"
   class="duk-button {className}
-  {getClassNames(variant, size, context, outline, tone)}"
+  {getClassNames(variant, size, context, outline)}"
   {...actionProp}
   {...defaultProp}
-  {...exclude($$props, ['use', 'class', 'variant', 'size', 'outline', 'tone'])}>
+  {...exclude($$props, ['use', 'class', 'variant', 'size', 'outline'])}>
   <slot />
 </svelte:component>

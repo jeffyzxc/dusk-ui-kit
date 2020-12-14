@@ -1,5 +1,4 @@
-import { withKnobs, select, object, text, button } from "@storybook/addon-knobs";
-import { tones } from "@dusk/helpers";
+import { withKnobs, object, text, button } from "@storybook/addon-knobs";
 import DefaultView from "./storybook-views/Default.svelte";
 import readme from "./readme.stories.md";
 import "@dusk/styles/tailwind.css";
@@ -61,11 +60,6 @@ export const Default = () => ({
     deleteCookie: button("Delete Cookie", () => {
       deleteCookie(COOKIE_NAME);
     }),
-    tones: select(
-      "CookieBanner Tone",
-      tones.ORGANISM.COOKIE_BANNER,
-      tones.ORGANISM.COOKIE_BANNER.APP,
-    ),
     description: text("GDPR Description", defaultDescription),
     config: object("GDPR Config", defaultConfig),
     cookie: COOKIE_NAME,
