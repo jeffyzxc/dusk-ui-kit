@@ -1,6 +1,6 @@
 {
   "name": "@dusk/navbar",
-  "version": "1.5.0",
+  "version": "1.6.1",
   "description": "Dusk UI Kit - Navbar",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -11,11 +11,11 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk/helpers": "^1.5.0",
-    "@dusk/icon": "^1.5.0"
+    "@dusk/helpers": "^1.6.1",
+    "@dusk/icon": "^1.6.1"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"
   },
-  "gitHead": "b54244c100b2003ccb5f768c64ccae2a61c80f7b"
+  "gitHead": "a20d3aac7752bf0280c649480c950ff8219db117"
 }

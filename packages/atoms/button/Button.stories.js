@@ -4,7 +4,7 @@ import { variants, sizes, icons, tones } from "@dusk/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import GroupView from "./storybook-views/Group.svelte";
 import IconView from "./storybook-views/Icon.svelte";
-import "@dusk/styles/tailwind.css";
+// import "@dusk/styles/tailwind.css";
 import readme from "./readme.stories.md";
 
 export default {
