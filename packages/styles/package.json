@@ -11,23 +11,23 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^3.0.0",
-    "autoprefixer": "^10.0.4",
+    "@fullhuman/postcss-purgecss": "^3.1.0",
+    "autoprefixer": "^10.1.0",
     "cssnano": "^4.1.10",
-    "postcss": "^8.1.14",
+    "postcss": "^8.2.1",
     "postcss-import": "^13.0.0",
     "postcss-input-range": "^4.0.0",
-    "postcss-nested": "^5.0.2",
+    "postcss-nested": "^5.0.3",
     "postcss-nested-ancestors": "^2.0.0",
     "postcss-preset-env": "^6.7.0",
     "postcss-url": "^10.1.1",
-    "rollup": "^2.3.4",
-    "rollup-plugin-postcss": "^3.1.8",
-    "tailwindcss": "^2.0.1"
+    "rollup": "^2.35.1",
+    "rollup-plugin-postcss": "^4.0.0",
+    "tailwindcss": "^2.0.2"
   },
   "peerDependencies": {
-    "rollup": "^2.3.4",
-    "svelte": "^3.0.0"
+    "rollup": "^2.35.1",
+    "svelte": "^3.31.0"
   },
   "gitHead": "a20d3aac7752bf0280c649480c950ff8219db117"
 }
