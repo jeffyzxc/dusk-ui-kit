@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: "14.x"
       - run: yarn config set registry "https://npm.dusk.network:4873"
-      - run: yarn global add -W rollup
+      - run: yarn
       - run: yarn sb:build
       - run: yarn lerna exec --concurrency 1 "npx --no-install semantic-release -e semantic-release-monorepo" && node -e "require('semantic-release-monorepo-hooks').hookAfterAll()"
       - name: 🚀 deploy
