@@ -52,7 +52,7 @@ module.exports = {
     cssRule.use[loaderIndex] = "postcss-loader";
 
     // Uncomment the following to debug
-    // console.dir(config, { depth: null })
+    // console.dir(config, { depth: null });
     return config;
   },
 };
