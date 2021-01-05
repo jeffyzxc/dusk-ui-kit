@@ -1,4 +1,6 @@
 .duk-control {
+  @apply p-5;
+
   &__label {
     @apply pr-3;
   }
@@ -18,14 +20,6 @@
       @apply mr-2;
     }
   }
-
-  /* &--app {
-    @apply p-3;
-  }
-
-  &--marketing {
-    @apply p-5;
-  } */
 
   &--stacked {
     & .duk-control__label {

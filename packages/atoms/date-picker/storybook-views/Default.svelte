@@ -21,6 +21,11 @@
   }
 </script>
 
-<DatePicker variant="{variant}" options="{options}" on:change="{handler}" bind:value />
+<DatePicker
+  class="border border-2"
+  variant="{variant}"
+  options="{options}"
+  on:change="{handler}"
+  bind:value />
 
 <p>Selected date: {value}</p>

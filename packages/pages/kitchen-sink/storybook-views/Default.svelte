@@ -16,16 +16,43 @@
 <TwoColumn class="bg-gray-100">
   <div slot="header">
     <Header class="mb-5">
-      <Navbar variant="brand">
-        <span slot="logo">
-          <Logo variant="white" class="w-48" />
-        </span>
-        <Menu orientation="horizontal">
-          <List>
-            <Item href="javascript:;">Explore</Item>
-            <Item href="javascript:;">Profile</Item>
-          </List>
-        </Menu>
+      <Navbar variant="brand" id="sb-example-nav">
+        <div slot="logo">
+          <Logo />
+        </div>
+        <div slot="networks">
+          <Menu orientation="horizontal" name="Network Navigation">
+            <List>
+              <Item href="javascript:;">Testnet</Item>
+            </List>
+          </Menu>
+        </div>
+        <div slot="apps">
+          <Menu orientation="horizontal" name="Portal Navigation">
+            <List>
+              <Item href="javascript:;" active>Explorer</Item>
+              <Item href="javascript:;">Wallet</Item>
+              <Item href="javascript:;">Staking</Item>
+            </List>
+          </Menu>
+        </div>
+        <div slot="links">
+          <Menu orientation="horizontal" name="Developer Links">
+            <List>
+              <Item href="javascript:;">Github</Item>
+              <Item href="javascript:;">Wiki</Item>
+            </List>
+          </Menu>
+        </div>
+        <div slot="navigation">
+          <Menu orientation="horizontal" name="App Navigation">
+            <List>
+              <Item href="javascript:;">Chain Info</Item>
+              <Item href="javascript:;" active>Blocks</Item>
+              <Item href="javascript:;">Transactions</Item>
+            </List>
+          </Menu>
+        </div>
       </Navbar>
     </Header>
   </div>
@@ -36,26 +63,16 @@
       </Title>
       <Content>
         <List type="{types.ATOM.LIST.NUMBERED}" class="ml-3">
-          <Item>
-            <del>Implement in Svelte</del>
-          </Item>
-          <Item>
-            <del>Write stories</del>
-          </Item>
-          <Item>
-            <del>Package and deploy</del>
-          </Item>
+          <Item><del>Implement in Svelte</del></Item>
+          <Item><del>Write stories</del></Item>
+          <Item><del>Package and deploy</del></Item>
           <Item>💰</Item>
         </List>
       </Content>
     </Card>
     <Card class="w-full mb-6">
       <Content>
-        <p>
-          Contact
-          <a href="mailto:kieran@dusk.network">Kieran</a>
-          for more information
-        </p>
+        <p>Contact <a href="mailto:kieran@dusk.network">Kieran</a> for more information</p>
       </Content>
     </Card>
   </div>
@@ -73,11 +90,7 @@
           is not implemented in the UI Kit directly. This would be created in your client
           application and rendered after routing.
         </p>
-        <p>
-          This
-          <code>Page</code>
-          is constructed using a view for this Storybook demonstration.
-        </p>
+        <p>This <code>Page</code> is constructed using a view for this Storybook demonstration.</p>
       </Content>
     </Card>
     <Card class="w-full mb-5">

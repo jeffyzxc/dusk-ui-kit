@@ -1,5 +1,5 @@
 .duk-card {
-  @apply rounded px-5 py-3;
+  @apply rounded shadow-marketing px-5 py-3;
 
   &__actions {
     @apply flex items-center;
@@ -65,15 +65,15 @@
   }
 
   &--brand {
-    @apply bg-purple-500 text-white;
+    @apply bg-indigo-500 text-white;
   }
 
   &--cta {
-    @apply bg-orange-500 text-white;
+    @apply bg-gold-500 text-gray-900;
   }
 
   &--info {
-    @apply bg-purple-400 text-white;
+    @apply bg-blue-500 text-gray-900;
   }
 
   &--success {
@@ -85,7 +85,7 @@
   }
 
   &--danger {
-    @apply bg-red-500 text-white;
+    @apply bg-red-900 text-gray-100;
   }
 
   &--light {
@@ -103,32 +103,4 @@
   &--white {
     @apply bg-white text-black;
   }
-
-  &--elevated-small {
-    @apply shadow;
-  }
-
-  &--elevated-medium {
-    @apply shadow-md;
-  }
-
-  &--elevated-large {
-    @apply shadow-lg;
-  }
-
-  &--marketing {
-    @apply shadow-marketing;
-  }
-}
-
-.duk-card--marketing.duk-card--cta {
-  @apply bg-gold-500 text-gray-900;
-}
-
-.duk-card--marketing.duk-card--info {
-  @apply bg-blue-500 text-gray-900;
-}
-
-.duk-card--marketing.duk-card--danger {
-  @apply bg-red-900 text-gray-100;
 }

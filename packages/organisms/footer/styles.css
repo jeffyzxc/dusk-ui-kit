@@ -1,5 +1,5 @@
 .duk-footer {
-  @apply w-screen;
+  @apply w-screen mt-40 py-20;
 
   &__logo {
     @apply p-0 transform duration-200 ease-in-out transition-all flex items-center justify-center;
@@ -81,121 +81,59 @@
     }
   }
 
-  &--app {
-    &--brand {
-      @apply text-gray-500 bg-purple-900;
+  &--brand {
+    @apply text-white bg-indigo-600;
 
-      & a {
-        @apply text-white;
-      }
-    }
-
-    &--cta {
-      @apply text-white bg-orange-900;
-
-      & a {
-        @apply text-white;
-      }
-    }
-
-    &--dark {
-      @apply text-white bg-gray-900;
-
-      & a {
-        @apply text-white;
-      }
-    }
-
-    &--light {
-      @apply text-gray-800 bg-gray-400;
-
-      & a {
-        @apply text-gray-800;
-      }
-    }
-
-    &--success {
-      @apply text-white bg-green-900;
-
-      & a {
-        @apply text-white;
-      }
-    }
-
-    &--warning {
-      @apply text-gray-400 bg-yellow-900;
-
-      & a {
-        @apply text-white;
-      }
-    }
-
-    &--danger {
-      @apply text-white bg-red-900;
-
-      & a {
-        @apply text-white;
-      }
+    & a {
+      @apply text-white;
     }
   }
 
-  &--marketing {
-    @apply mt-40 py-20;
+  &--cta {
+    @apply text-gray-400 bg-orange-400;
 
-    &--brand {
-      @apply text-white bg-indigo-600;
-
-      & a {
-        @apply text-white;
-      }
+    & a {
+      @apply text-white;
     }
+  }
 
-    &--cta {
-      @apply text-gray-400 bg-orange-400;
+  &--dark {
+    @apply text-white bg-gray-900;
 
-      & a {
-        @apply text-white;
-      }
+    & a {
+      @apply text-white;
     }
+  }
 
-    &--dark {
-      @apply text-white bg-gray-900;
+  &--light {
+    @apply text-gray-800 bg-gray-400;
 
-      & a {
-        @apply text-white;
-      }
+    & a {
+      @apply text-gray-800;
     }
+  }
 
-    &--light {
-      @apply text-gray-800 bg-gray-400;
+  &--success {
+    @apply text-white bg-green-900;
 
-      & a {
-        @apply text-gray-800;
-      }
+    & a {
+      @apply text-white;
     }
+  }
 
-    &--success {
-      @apply text-white bg-green-900;
+  &--warning {
+    @apply text-gray-400 bg-yellow-900;
 
-      & a {
-        @apply text-white;
-      }
+    & a {
+      @apply text-white;
     }
+  }
 
-    &--warning {
-      @apply text-gray-400 bg-yellow-900;
+  &--danger {
+    @apply text-white bg-red-900;
 
-      & a {
-        @apply text-white;
-      }
-    }
-
-    &--danger {
-      @apply text-white bg-red-900;
-
-      & a {
-        @apply text-white;
-      }
+    & a {
+      @apply text-white;
     }
   }
 }

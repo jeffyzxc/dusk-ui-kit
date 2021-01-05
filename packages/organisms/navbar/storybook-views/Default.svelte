@@ -5,17 +5,9 @@
   import Logo from "@dusk/logo";
   export let variant;
   export let title;
-  export let networks;
-  export let apps;
 </script>
 
-<Navbar
-  variant="{variant}"
-  title="{title}"
-  networks="{networks}"
-  apps="{apps}"
-  class="absolute top-0 left-0"
-  id="sb-example-nav">
+<Navbar variant="{variant}" title="{title}" class="absolute top-0 left-0" id="sb-example-nav">
   <div slot="logo">
     <Logo />
   </div>
