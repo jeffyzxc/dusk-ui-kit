@@ -11,7 +11,7 @@ const cssnano = require("cssnano");
 const mode = process.env.NODE_ENV;
 const dev = mode === "development";
 const theme = "dusk";
-const tailwindConfig = require("./" + theme + ".tailwind.config.js");
+const tailwindConfig = require("./packages/styles/" + theme + ".tailwind.config.js");
 
 module.exports = {
   plugins: [

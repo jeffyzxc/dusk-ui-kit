@@ -7,25 +7,28 @@
   },
   "license": "MIT",
   "author": "Kieran Hall <kieran@dusk.network>",
+  "main": "snowpack.config.js",
   "scripts": {
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^3.1.0",
-    "autoprefixer": "^10.1.0",
+    "@snowpack/plugin-build-script": "^2.0.12",
+    "@snowpack/plugin-svelte": "^3.4.1",
+    "@sveltejs/snowpack-config": "next",
     "cssnano": "^4.1.10",
-    "postcss": "^8.2.1",
-    "postcss-import": "^13.0.0",
+    "postcss-import": "^14.0.0",
     "postcss-input-range": "^4.0.0",
-    "postcss-nested": "^5.0.3",
     "postcss-nested-ancestors": "^2.0.0",
+    "postcss-nesting": "^7.0.1",
     "postcss-preset-env": "^6.7.0",
     "postcss-url": "^10.1.1",
-    "rollup": "^2.35.1",
     "rollup-plugin-postcss": "^4.0.0",
     "tailwindcss": "^2.0.2"
   },
   "peerDependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1",
     "rollup": "^2.35.1",
     "svelte": "^3.31.0"
   },

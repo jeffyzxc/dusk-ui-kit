@@ -19,9 +19,8 @@
     &--secondary {
       @apply px-6 pb-3 pt-4;
 
-      @screen lg {
-        @apply;
-      }
+      /* @screen lg {
+      } */
     }
   }
 

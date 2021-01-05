@@ -1,10 +1,24 @@
 const plugin = require("tailwindcss/plugin");
+const { tailwindExtractor } = require("tailwindcss/lib/lib/purgeUnusedStyles");
 
 module.exports = {
-  purge: false,
+  purge: {
+    content: ["./src/**/*.html", "./src/**/*.svelte"],
+    options: {
+      defaultExtractor: (content) => [
+        ...tailwindExtractor(content),
+        ...[...content.matchAll(/(?:class:)*([\w\d-/:%.]+)/gm)].map(
+          // eslint-disable-next-line
+          ([_match, group, ..._rest]) => group,
+        ),
+      ],
+      keyframes: true,
+    },
+  },
+  darkMode: "class",
   theme: {
     boxShadow: {
-      default: "0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06)",
+      DEFAULT: "0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06)",
       md: " 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06)",
       lg: " 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05)",
       xl: " 0 20px 25px -5px rgba(0, 0, 0, .1), 0 10px 10px -5px rgba(0, 0, 0, .04)",
@@ -22,7 +36,7 @@ module.exports = {
     borderRadius: {
       none: "0",
       sm: ".1875rem",
-      default: ".375rem",
+      DEFAULT: ".375rem",
       lg: ".5625rem",
       full: "9999px",
     },
@@ -213,8 +227,11 @@ module.exports = {
       256: "512px",
     },
   },
+  variants: {
+    extend: {},
+  },
   plugins: [
-    plugin(function({ addBase, theme }) {
+    plugin(function ({ addBase, theme }) {
       addBase({
         "abbr[title]": {
           textDecoration: "none",
@@ -237,7 +254,7 @@ module.exports = {
         },
       });
     }),
-    plugin(function({ addComponents, theme }) {
+    plugin(function ({ addComponents, theme }) {
       // const screens = theme("screens", {});
       const gap = theme("spacing.3", {});
       // const doubleGap = theme("spacing.6", {});

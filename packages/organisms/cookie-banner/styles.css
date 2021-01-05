@@ -37,7 +37,7 @@
       @apply flex flex-wrap items-center mt-6;
 
       @screen lg {
-        @apply flex-no-wrap items-end mt-0;
+        @apply flex-nowrap items-end mt-0;
       }
     }
 
@@ -62,7 +62,7 @@
     }
 
     &__Button {
-      @apply py-5 px-16 ml-3 mr-3 mb-3 block bg-indigo-500 text-white whitespace-no-wrap border-none text-base cursor-pointer;
+      @apply py-5 px-16 ml-3 mr-3 mb-3 block bg-indigo-500 text-white whitespace-nowrap border-none text-base cursor-pointer;
 
       @screen lg {
         @apply mr-0 mb-0;
