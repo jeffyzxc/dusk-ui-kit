@@ -7,7 +7,7 @@ export default {
   },
   plugins: [
     duk({
-      output: "public/global.css",
+      output: "global.css",
     }),
   ],
 };
