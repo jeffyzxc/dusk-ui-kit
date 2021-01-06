@@ -5,7 +5,6 @@
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
   },
-  "license": "MIT",
   "author": "Kieran Hall <kieran@dusk.network>",
   "type": "module",
   "scripts": {
