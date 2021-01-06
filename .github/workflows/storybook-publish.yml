@@ -17,16 +17,17 @@ jobs:
         with:
           node-version: "14.x"
           registry-url: "https://npm.pkg.github.com/"
-      - name: Ensure access
-        run: npm whoami --registry https://npm.pkg.github.com/
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          scope: "@dusk"
+      # - name: Ensure access
+      #   run: npm whoami --registry https://npm.pkg.github.com/
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # - run: yarn config set registry "https://npm.dusk.network:4873"
       - name: Config git user
         run: |
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-      - name: Install Dependencies
+      - name: Install dependencies
         run: yarn
       - name: Build Storybook
         run: yarn sb:build
@@ -45,3 +46,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./storybook-static
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
