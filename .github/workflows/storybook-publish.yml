@@ -31,7 +31,7 @@ jobs:
         run: yarn
       - name: Build Storybook
         run: yarn sb:build
-      - name: Bootstrap lerna
+      - name: Bootstrap Lerna
         run: yarn bootstrap
       - name: Bump versions and publish packages
         run: |
