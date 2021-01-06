@@ -1,4 +1,4 @@
-name: Build and deploy storybook site
+name: Release
 
 on:
   push:
@@ -11,9 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v1
         with:
           node-version: "14.x"
+          registry-url: "https://npm.pkg.github.com/"
       - name: Ensure access
         run: npm whoami --registry https://npm.pkg.github.com/
         env:
