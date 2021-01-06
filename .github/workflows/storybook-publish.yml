@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: "14.x"
       - name: Install git
-        run: sudo apt-get update && apt-get install -y git
+        run: sudo apt-get update && sudo apt-get install -y git
       - run: yarn config set registry "https://npm.dusk.network:4873"
       - run: yarn
       - run: yarn sb:build
