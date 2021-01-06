@@ -1,6 +1,6 @@
 {
   "name": "@dusk/radio",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "Dusk UI Kit - Radio",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -11,7 +11,7 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk/helpers": "^1.6.1"
+    "@dusk/helpers": "^1.7.0"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"
