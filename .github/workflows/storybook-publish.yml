@@ -25,6 +25,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_CONFIG_REGISTRY: ${{ secrets.NPM_CONFIG_REGISTRY }}
       - name: 🚀 deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
