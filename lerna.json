@@ -13,17 +13,16 @@
   ],
   "command": {
     "publish": {
-      "ignoreChanges": ["/storybook-views/*", "*.stories.js", "*.md"],
       "message": "chore(release): publish",
-      "registry": "https://npm.dusk.network:4873"
+      "registry": "https://npm.pkg.github.com/"
     },
     "version": {
       "allowBranch": ["master"],
+      "ignoreChanges": ["/storybook-views/*", "*.stories.js", "*.md"],
       "conventionalCommits": true
     },
     "bootstrap": {
       "npmClientArgs": ["--pure-lockfile"]
     }
-  },
-  "ignoreChanges": ["**/__fixtures__/**", "**/__tests__/**", "**/*.md, **/*.stories.*"]
+  }
 }
