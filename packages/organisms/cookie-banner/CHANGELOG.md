@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.7.0 (2021-01-07)
+
+
+### Features
+
+* ✨ added more form controls ([44a7019](https://github.com/dusk-network/dusk-ui-kit/commit/44a7019f4059b75c2d3f99f49cadd06665f94ae0))
+* ✨ added Switch and Cookie Banner, plus other fixes ([c5de909](https://github.com/dusk-network/dusk-ui-kit/commit/c5de90981fb694067c8f94f82aa2141a77416fb5))
+* ✨ release my stuff and stop complaining ([039b06b](https://github.com/dusk-network/dusk-ui-kit/commit/039b06beb528e36ade5950dc69dfc0b69e14a69c))
+
+
+
+
+
 ## [1.6.6](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk/cookie-banner@1.6.5...@dusk/cookie-banner@1.6.6) (2021-01-07)
 
 **Note:** Version bump only for package @dusk/cookie-banner

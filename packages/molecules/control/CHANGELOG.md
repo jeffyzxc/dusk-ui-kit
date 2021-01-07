@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.7.0 (2021-01-07)
+
+
+### Features
+
+* ✨ added Footer and Control ([f03f332](https://github.com/dusk-network/dusk-ui-kit/commit/f03f33243ed76ba01d0fd45c4ccb283a218368cb))
+* ✨ added Form for wrapping Control and other fixes ([74955c0](https://github.com/dusk-network/dusk-ui-kit/commit/74955c0f77481f3e69619da76a0fa4a0975b17ac))
+* ✨ added more form controls ([44a7019](https://github.com/dusk-network/dusk-ui-kit/commit/44a7019f4059b75c2d3f99f49cadd06665f94ae0))
+* ✨ release my stuff and stop complaining ([039b06b](https://github.com/dusk-network/dusk-ui-kit/commit/039b06beb528e36ade5950dc69dfc0b69e14a69c))
+
+
+
+
+
 ## [1.6.5](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk/control@1.6.4...@dusk/control@1.6.5) (2021-01-07)
 
 **Note:** Version bump only for package @dusk/control

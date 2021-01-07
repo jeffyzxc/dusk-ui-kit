@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/list",
-  "version": "1.6.4",
+  "version": "1.7.0",
   "description": "Dusk UI Kit - List",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -15,8 +15,8 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/elements": "^1.6.4",
-    "@dusk-network/helpers": "^1.7.2"
+    "@dusk-network/elements": "^1.7.0",
+    "@dusk-network/helpers": "^1.8.0"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"
