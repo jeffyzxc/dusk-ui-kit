@@ -1,6 +1,6 @@
 {
   "name": "@dusk/alert",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "Dusk UI Kit - Alert",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -10,10 +10,10 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk/card": "^1.6.2",
-    "@dusk/elements": "^1.6.2",
-    "@dusk/helpers": "^1.7.0",
-    "@dusk/icon": "^1.6.2"
+    "@dusk/card": "^1.6.3",
+    "@dusk/elements": "^1.6.3",
+    "@dusk/helpers": "^1.7.1",
+    "@dusk/icon": "^1.6.3"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"

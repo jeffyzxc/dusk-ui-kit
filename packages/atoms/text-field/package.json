@@ -1,6 +1,6 @@
 {
   "name": "@dusk/text-field",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "Dusk UI Kit - TextField",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -10,8 +10,8 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk/elements": "^1.6.2",
-    "@dusk/helpers": "^1.7.0"
+    "@dusk/elements": "^1.6.3",
+    "@dusk/helpers": "^1.7.1"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"
