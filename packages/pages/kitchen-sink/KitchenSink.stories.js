@@ -1,7 +1,7 @@
 import { withKnobs } from "@storybook/addon-knobs";
 import DefaultView from "./storybook-views/Default.svelte";
 import readme from "./readme.stories.md";
-import "@dusk/styles/tailwind.css";
+import "@dusk-network/styles/tailwind.css";
 
 export default {
   title: "Components/Pages/Kitchen Sink",

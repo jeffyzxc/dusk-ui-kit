@@ -25,7 +25,7 @@ Provides a standard form wrapper.
 
 ```js
 <script>
-  import Form from "@dusk/Form";
+  import Form from "@dusk-network/Form";
 </script>
 
 <Form tone="marketing" variant="brand">

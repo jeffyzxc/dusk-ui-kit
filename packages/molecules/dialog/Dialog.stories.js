@@ -1,9 +1,9 @@
 import { withKnobs, select, text, boolean, number } from "@storybook/addon-knobs";
 // import { action } from "@storybook/addon-actions";
-import { variants } from "@dusk/helpers";
+import { variants } from "@dusk-network/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import readme from "./readme.stories.md";
-import "@dusk/styles/tailwind.css";
+import "@dusk-network/styles/tailwind.css";
 
 export default {
   title: "Components/Molecules/Dialog",

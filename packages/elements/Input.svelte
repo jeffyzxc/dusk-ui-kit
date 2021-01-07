@@ -1,6 +1,6 @@
 <script>
   import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, exclude, useActions, types } from "@dusk/helpers";
+  import { forwardEventsBuilder, exclude, useActions, types } from "@dusk-network/helpers";
   const forwardEvents = forwardEventsBuilder(current_component);
   export let use = [];
   export let type = "text";
@@ -38,7 +38,7 @@
   use:forwardEvents
   class="{className}
   {getClassNames(type)}"
-  {type}
-  {id}
-  {placeholder}
+  type="{type}"
+  id="{id}"
+  placeholder="{placeholder}"
   {...exclude($$props, ['use', 'class'])} />

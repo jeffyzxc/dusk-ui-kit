@@ -1,6 +1,6 @@
 <script>
-  import Menu from "@dusk/menu";
-  import List, { Item } from "@dusk/list";
+  import Menu from "@dusk-network/menu";
+  import List, { Item } from "@dusk-network/list";
 
   let className = "";
   export { className as class };

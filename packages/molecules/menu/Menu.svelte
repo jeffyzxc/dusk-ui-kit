@@ -8,7 +8,7 @@
     contexts,
     orientations,
     variants,
-  } from "@dusk/helpers";
+  } from "@dusk-network/helpers";
   import "./styles.css";
 
   let className = "";
@@ -107,7 +107,7 @@
   use:forwardEvents
   class="duk-menu {className}
   {getClassNames(variant, orientation, context, separator)}"
-  {id}
+  id="{id}"
   role="navigation"
   aria-label="{name || ''}"
   {...exclude($$props, ['use', 'class', 'orientation', 'name', 'variant', 'separator'])}>

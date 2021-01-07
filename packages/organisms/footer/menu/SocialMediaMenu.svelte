@@ -1,8 +1,8 @@
 <script>
-  import { exclude } from "@dusk/helpers";
-  import Icon from "@dusk/icon";
-  import Menu from "@dusk/menu";
-  import List, { Item } from "@dusk/list";
+  import { exclude } from "@dusk-network/helpers";
+  import Icon from "@dusk-network/icon";
+  import Menu from "@dusk-network/menu";
+  import List, { Item } from "@dusk-network/list";
 
   let className = "";
   export { className as class };
@@ -12,14 +12,14 @@
 </script>
 
 <Menu
-  {orientation}
-  {separator}
+  orientation="{orientation}"
+  separator="{separator}"
   class="duk-footer__social-media-menu {className}"
   {...exclude($$props, ['class', 'orientation', 'separator', 'social'])}>
   <List>
     {#each social as { title, icon, url }}
       <Item class="duk-footer__social-media-menu__item" href="{url}">
-        <Icon name="{icon}" {title} />
+        <Icon name="{icon}" title="{title}" />
       </Item>
     {/each}
   </List>

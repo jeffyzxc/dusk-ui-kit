@@ -1,8 +1,8 @@
 import { withKnobs, select } from "@storybook/addon-knobs";
-import { variants, types, states } from "@dusk/helpers";
+import { variants, types, states } from "@dusk-network/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import readme from "./readme.stories.md";
-import "@dusk/styles/tailwind.css";
+import "@dusk-network/styles/tailwind.css";
 
 export default {
   title: "Components/Organisms/Form",

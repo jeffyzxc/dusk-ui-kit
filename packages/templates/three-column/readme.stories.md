@@ -12,7 +12,7 @@
 
 ```js
 <script>
-  import ThreeColumn from "@dusk/three-column";
+  import ThreeColumn from "@dusk-network/three-column";
 </script>
 
 <ThreeColumn variant="33/33/33" gutters="{true}" class="bg-purple-100 text-dark text-sm text-center w-screen">

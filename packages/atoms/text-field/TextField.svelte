@@ -1,8 +1,15 @@
 <script>
   import { getContext } from "svelte";
   import { current_component } from "svelte/internal";
-  import { exclude, forwardEventsBuilder, variants, types, states, contexts } from "@dusk/helpers";
-  import { Input, Textarea } from "@dusk/elements";
+  import {
+    exclude,
+    forwardEventsBuilder,
+    variants,
+    types,
+    states,
+    contexts,
+  } from "@dusk-network/helpers";
+  import { Input, Textarea } from "@dusk-network/elements";
   import "./styles.css";
 
   const forwardEvents = forwardEventsBuilder(current_component);

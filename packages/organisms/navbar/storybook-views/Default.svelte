@@ -1,8 +1,8 @@
 <script>
   import Navbar from "../";
-  import Menu from "@dusk/menu";
-  import List, { Item } from "@dusk/list";
-  import Logo from "@dusk/logo";
+  import Menu from "@dusk-network/menu";
+  import List, { Item } from "@dusk-network/list";
+  import Logo from "@dusk-network/logo";
   export let variant;
   export let title;
 </script>

@@ -1,8 +1,8 @@
 <script>
   import { setContext } from "svelte";
-  import { exclude, variants, states, contexts, types } from "@dusk/helpers";
-  import Icon from "@dusk/icon";
-  import { Label } from "@dusk/elements";
+  import { exclude, variants, states, contexts, types } from "@dusk-network/helpers";
+  import Icon from "@dusk-network/icon";
+  import { Label } from "@dusk-network/elements";
   import "./styles.css";
 
   let className = "";

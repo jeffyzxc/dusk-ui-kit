@@ -1,16 +1,16 @@
 <script>
-  import TwoColumn, { Header } from "@dusk/two-column";
-  import Navbar from "@dusk/navbar";
-  import Menu from "@dusk/menu";
-  import List, { Item } from "@dusk/list";
-  import Logo from "@dusk/logo";
-  import Card, { Content, Title } from "@dusk/card";
-  import { types } from "@dusk/helpers";
-  import Form from "@dusk/form";
-  import Control from "@dusk/control";
-  import TextField from "@dusk/text-field";
-  import Footer from "@dusk/footer";
-  import DatePicker from "@dusk/date-picker";
+  import TwoColumn, { Header } from "@dusk-network/two-column";
+  import Navbar from "@dusk-network/navbar";
+  import Menu from "@dusk-network/menu";
+  import List, { Item } from "@dusk-network/list";
+  import Logo from "@dusk-network/logo";
+  import Card, { Content, Title } from "@dusk-network/card";
+  import { types } from "@dusk-network/helpers";
+  import Form from "@dusk-network/form";
+  import Control from "@dusk-network/control";
+  import TextField from "@dusk-network/text-field";
+  import Footer from "@dusk-network/footer";
+  import DatePicker from "@dusk-network/date-picker";
 </script>
 
 <TwoColumn class="bg-gray-100">

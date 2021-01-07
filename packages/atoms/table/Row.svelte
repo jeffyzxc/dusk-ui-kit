@@ -1,8 +1,8 @@
 <script>
   import { setContext } from "svelte";
   import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, exclude, contexts } from "@dusk/helpers";
-  import { Tr } from "@dusk/elements";
+  import { forwardEventsBuilder, exclude, contexts } from "@dusk-network/helpers";
+  import { Tr } from "@dusk-network/elements";
   const forwardEvents = forwardEventsBuilder(current_component);
   export let use = [];
   let className = "";

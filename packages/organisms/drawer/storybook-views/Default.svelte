@@ -1,21 +1,21 @@
 <script>
   import Drawer from "../";
-  import Menu from "@dusk/menu";
-  import List, { Item } from "@dusk/list";
-  import Logo from "@dusk/logo";
-  import Icon from "@dusk/icon";
-  import { sizes } from "@dusk/helpers";
+  import Menu from "@dusk-network/menu";
+  import List, { Item } from "@dusk-network/list";
+  import Logo from "@dusk-network/logo";
+  import Icon from "@dusk-network/icon";
+  import { sizes } from "@dusk-network/helpers";
   export let variant;
   const active = true;
 </script>
 
-<Drawer {variant} class="sm:min-h-screen">
+<Drawer variant="{variant}" class="sm:min-h-screen">
   <div slot="logo">
     <Logo class="w-48" />
   </div>
   <Menu>
     <List>
-      <Item href="javascript:;" {active}>
+      <Item href="javascript:;" active="{active}">
         <Icon name="view-dashboard-outline" size="{sizes.ATOM.ICON.SMALL}" />
         <div class="hidden sm:inline-block">Dashboard</div>
       </Item>

@@ -1,6 +1,12 @@
 <script>
   import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, exclude, useActions, variants, types } from "@dusk/helpers";
+  import {
+    forwardEventsBuilder,
+    exclude,
+    useActions,
+    variants,
+    types,
+  } from "@dusk-network/helpers";
   import Minimal from "./Minimal.svelte";
   import Maximal from "./Maximal.svelte";
   import "./styles.css";

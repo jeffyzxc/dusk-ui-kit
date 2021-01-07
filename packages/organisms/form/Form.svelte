@@ -7,7 +7,7 @@
     variants,
     types,
     states,
-  } from "@dusk/helpers";
+  } from "@dusk-network/helpers";
   import "./styles.css";
 
   let className = "";

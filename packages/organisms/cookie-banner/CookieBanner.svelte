@@ -1,7 +1,7 @@
 <script>
   import { current_component } from "svelte/internal";
   import GdprBanner from "@beyonk/gdpr-cookie-consent-banner";
-  import { forwardEventsBuilder, exclude, useActions } from "@dusk/helpers";
+  import { forwardEventsBuilder, exclude, useActions } from "@dusk-network/helpers";
   import "./styles.css";
 
   let className = "";

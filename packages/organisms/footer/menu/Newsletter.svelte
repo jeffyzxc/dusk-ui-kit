@@ -1,7 +1,7 @@
 <script>
-  import { exclude } from "@dusk/helpers";
-  import TextField from "@dusk/text-field";
-  import Button from "@dusk/button";
+  import { exclude } from "@dusk-network/helpers";
+  import TextField from "@dusk-network/text-field";
+  import Button from "@dusk-network/button";
 </script>
 
 <form class="duk-footer__newsletter block" {...exclude($$props, ['class'])}>

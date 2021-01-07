@@ -19,7 +19,7 @@ Provides a wrapper for [GRPR Cookie Consent Banner](https://github.com/beyonk-ad
 
 ```js
 <script>
-  import CookieBanner from "@dusk/cookie-banner";
+  import CookieBanner from "@dusk-network/cookie-banner";
 
   const config =
 </script>

@@ -1,6 +1,6 @@
 <script>
-  import { exclude } from "@dusk/helpers";
-  import Logo from "@dusk/logo";
+  import { exclude } from "@dusk-network/helpers";
+  import Logo from "@dusk-network/logo";
   import LegalMenu from "./menu/LegalMenu.svelte";
   import SocialMediaMenu from "./menu/SocialMediaMenu.svelte";
 
@@ -15,6 +15,9 @@
   <p class="duk-footer__copyright">{copyright}</p>
   <LegalMenu orientation="horizontal" separator="dot" class="duk-footer__legal-menu" />
   {#if social}
-    <SocialMediaMenu orientation="horizontal" class="duk-footer__social-media-menu" {social} />
+    <SocialMediaMenu
+      orientation="horizontal"
+      class="duk-footer__social-media-menu"
+      social="{social}" />
   {/if}
 </div>

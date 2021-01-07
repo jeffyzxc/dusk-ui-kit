@@ -2,9 +2,9 @@
   import { setContext, getContext, createEventDispatcher } from "svelte";
   // import { scale } from "svelte/transition";
   // import { quadIn } from "svelte/easing";
-  import { Scrim, exclude, contexts, variants, elevations } from "@dusk/helpers";
-  import Card, { Title, Content } from "@dusk/card";
-  import Icon from "@dusk/icon";
+  import { Scrim, exclude, contexts, variants, elevations } from "@dusk-network/helpers";
+  import Card, { Title, Content } from "@dusk-network/card";
+  import Icon from "@dusk-network/icon";
   import "./styles.css";
 
   // const forwardEvents = forwardEventsBuilder(get_current_component(), ['Dialog:opening', 'Dialog:opened', 'Dialog:closing', 'Dialog:closed']);
@@ -71,13 +71,13 @@
 <div>
   {#if value}
     <div class="fixed w-full h-full top-0 left-0 z-30">
-      <Scrim {opacity} on:click="{() => !persistent && closeDialog()}" />
+      <Scrim opacity="{opacity}" on:click="{() => !persistent && closeDialog()}" />
       <div class="h-full w-full absolute flex items-center justify-center overflow-y-scroll">
         <Card
           id="__DUK-dialog"
           class="duk-dialog {className}
           {getClassNames(variant, context, title)}"
-          {variant}
+          variant="{variant}"
           elevation="{elevations.ATOM.CARD.LARGE}"
           role="alertdialog"
           aria-modal="true"

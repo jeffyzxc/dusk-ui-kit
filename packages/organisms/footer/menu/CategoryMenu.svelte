@@ -1,7 +1,7 @@
 <script>
-  import { exclude } from "@dusk/helpers";
-  import Menu from "@dusk/menu";
-  import List, { Item } from "@dusk/list";
+  import { exclude } from "@dusk-network/helpers";
+  import Menu from "@dusk-network/menu";
+  import List, { Item } from "@dusk-network/list";
 
   let className = "";
   export { className as class };

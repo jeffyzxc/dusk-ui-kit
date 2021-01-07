@@ -9,7 +9,7 @@
 <script>
   import { setContext } from "svelte";
   import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, exclude } from "@dusk/helpers";
+  import { forwardEventsBuilder, exclude } from "@dusk-network/helpers";
   export let use = [];
   let className = "";
   export { className as class };

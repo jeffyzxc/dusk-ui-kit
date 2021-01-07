@@ -1,5 +1,5 @@
 <script>
-  import { exclude } from "@dusk/helpers";
+  import { exclude } from "@dusk-network/helpers";
   import CategoryMenu from "./menu/CategoryMenu.svelte";
   import Newsletter from "./menu/Newsletter.svelte";
 

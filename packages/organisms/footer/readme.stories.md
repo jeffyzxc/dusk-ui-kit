@@ -25,7 +25,7 @@ Provides a standard website or app footer.
 
 ```js
 <script>
-  import Footer from "@dusk/footer";
+  import Footer from "@dusk-network/footer";
 </script>
 
 <Footer tone="marketing" variant="brand" />

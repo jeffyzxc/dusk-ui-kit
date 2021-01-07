@@ -1,10 +1,14 @@
 <script>
   import { setContext } from "svelte";
   import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, exclude, useActions, contexts, variants } from "@dusk/helpers";
-  import Menu from "@dusk/menu";
-  import List, { Item } from "@dusk/list";
-  import Icon from "@dusk/icon";
+  import {
+    forwardEventsBuilder,
+    exclude,
+    useActions,
+    contexts,
+    variants,
+  } from "@dusk-network/helpers";
+  import Icon from "@dusk-network/icon";
   import "./styles.css";
   const forwardEvents = forwardEventsBuilder(current_component);
 

@@ -1,8 +1,8 @@
 <script>
   import { current_component } from "svelte/internal";
   import { getContext } from "svelte";
-  import { forwardEventsBuilder, exclude, contexts } from "@dusk/helpers";
-  import { Td, Th } from "@dusk/elements";
+  import { forwardEventsBuilder, exclude, contexts } from "@dusk-network/helpers";
+  import { Td, Th } from "@dusk-network/elements";
   const forwardEvents = forwardEventsBuilder(current_component);
   export let use = [];
   export let prominent = false;

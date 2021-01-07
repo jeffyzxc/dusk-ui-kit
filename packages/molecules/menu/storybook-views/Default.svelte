@@ -1,6 +1,6 @@
 <script>
   import Menu from "../";
-  import List, { Item } from "@dusk/list";
+  import List, { Item } from "@dusk-network/list";
   export let orientation;
   export let variant;
   let items = [
@@ -19,7 +19,7 @@
   ];
 </script>
 
-<Menu {orientation} {variant}>
+<Menu orientation="{orientation}" variant="{variant}">
   <List>
     {#each items as { id, value }}
       <Item href="javascript://(0)">{value}</Item>

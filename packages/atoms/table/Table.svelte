@@ -1,8 +1,8 @@
 <script>
   import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, exclude, variants, types } from "@dusk/helpers";
+  import { forwardEventsBuilder, exclude, variants, types } from "@dusk-network/helpers";
   import "./styles.css";
-  import { Table } from "@dusk/elements";
+  import { Table } from "@dusk-network/elements";
   const forwardEvents = forwardEventsBuilder(current_component);
   export let use = [];
   let className = "";

@@ -1,7 +1,7 @@
 import { withKnobs, object, text, button } from "@storybook/addon-knobs";
 import DefaultView from "./storybook-views/Default.svelte";
 import readme from "./readme.stories.md";
-import "@dusk/styles/tailwind.css";
+import "@dusk-network/styles/tailwind.css";
 
 const defaultConfig = {
   cookieConfig: {
@@ -40,7 +40,7 @@ function deleteCookie(name, path, domain) {
 }
 
 function getCookie(name) {
-  return document.cookie.split(";").some(c => {
+  return document.cookie.split(";").some((c) => {
     return c.trim().startsWith(name + "=");
   });
 }

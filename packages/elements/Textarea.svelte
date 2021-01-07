@@ -1,6 +1,6 @@
 <script>
   import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, exclude, useActions } from "@dusk/helpers";
+  import { forwardEventsBuilder, exclude, useActions } from "@dusk-network/helpers";
   const forwardEvents = forwardEventsBuilder(current_component);
   export let use = [];
   export let placeholder = "";
@@ -12,5 +12,5 @@
   use:useActions="{use}"
   use:forwardEvents
   class="{className} duk-text-field--textarea"
-  {placeholder}
+  placeholder="{placeholder}"
   {...exclude($$props, ['use', 'class'])}></textarea>
