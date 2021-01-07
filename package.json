@@ -6,10 +6,7 @@
   "bugs": {
     "url": "https://github.com/dusk-network/issues"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dusk-network/dusk-ui-kit.git"
-  },
+  "repository": "https://github.com/dusk-network/dusk-ui-kit",
   "license": "MPL-2.0",
   "author": "Kieran Hall <kieran@dusk.network>",
   "files": [],
