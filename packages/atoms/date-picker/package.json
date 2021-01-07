@@ -1,5 +1,5 @@
 {
-  "name": "@dusk/date-picker",
+  "name": "@dusk-network/date-picker",
   "version": "1.6.4",
   "description": "Dusk UI Kit - Date Picker",
   "bugs": {
@@ -10,14 +10,14 @@
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
     "directory": "packages/atoms/date-picker"
   },
-  "author": "Kieran Hall <kieran@dusk.network>",
+  "author": "Kieran Hall <kieran@dusk-network.network>",
   "scripts": {
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk/elements": "^1.6.4",
-    "@dusk/helpers": "^1.7.2",
-    "@dusk/icon": "^1.6.4",
+    "@dusk-network/elements": "^1.6.4",
+    "@dusk-network/helpers": "^1.7.2",
+    "@dusk-network/icon": "^1.6.4",
     "svelte-flatpickr": "^3.1.0"
   },
   "peerDependencies": {
