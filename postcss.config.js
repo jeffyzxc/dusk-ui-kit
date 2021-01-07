@@ -28,7 +28,7 @@ module.exports = {
     }),
     // !dev &&
     //   postcssPurgecss({
-    //     content: ["./src/**/*.svelte", "./node_modules/@dusk/**/*.svelte"],
+    //     content: ["./src/**/*.svelte", "./node_modules/@dusk-network/**/*.svelte"],
     //     defaultExtractor: (content) =>
     //       [...content.matchAll(/(?:class:)*([\w\d-/:%.]+)/gm)].map(
     //         ([_match, group, ..._rest]) => group, //eslint-disable-line

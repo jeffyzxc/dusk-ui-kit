@@ -1,10 +1,10 @@
 <script>
   import { setContext, getContext } from "svelte";
   import { current_component } from "svelte/internal";
-  import { exclude, forwardEventsBuilder, variants, sizes, contexts } from "@dusk/helpers";
-  import { A, Button } from "@dusk/elements";
+  import { exclude, forwardEventsBuilder, variants, sizes, contexts } from "@dusk-network/helpers";
+  import { A, Button } from "@dusk-network/elements";
   import "./styles.css";
-  import createRipple from "@dusk/helpers/ripple.js";
+  import createRipple from "@dusk-network/helpers/ripple.js";
 
   const forwardEvents = forwardEventsBuilder(current_component);
 

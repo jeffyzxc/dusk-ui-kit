@@ -1,10 +1,10 @@
 <script>
   import List, { Item } from "../";
-  import Icon from "@dusk/icon";
+  import Icon from "@dusk-network/icon";
   export let type;
 </script>
 
-<List {type}>
+<List type="{type}">
   <Item>
     <Icon name="view-dashboard-outline" />
     Dashboard

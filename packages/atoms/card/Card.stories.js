@@ -1,10 +1,10 @@
 import { withKnobs, select, text, optionsKnob as options } from "@storybook/addon-knobs";
-import { variants, elevations, sizes } from "@dusk/helpers";
+import { variants, elevations, sizes } from "@dusk-network/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import ActionsView from "./storybook-views/Actions.svelte";
 import FooterView from "./storybook-views/Footer.svelte";
 import readme from "./readme.stories.md";
-import "@dusk/styles/tailwind.css";
+import "@dusk-network/styles/tailwind.css";
 
 export default {
   title: "Components/Atoms/Card",

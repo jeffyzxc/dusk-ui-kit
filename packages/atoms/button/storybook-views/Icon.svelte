@@ -1,6 +1,6 @@
 <script>
   import Button, { Label } from "../";
-  import Icon from "@dusk/icon";
+  import Icon from "@dusk-network/icon";
   export let variant;
   export let size;
   export let buttonText;
@@ -9,7 +9,7 @@
   export let iconName;
 </script>
 
-<Button {variant} {size} {disabled} {outline} on:click>
-  <Icon name="{iconName}" {size} />
+<Button variant="{variant}" size="{size}" disabled="{disabled}" outline="{outline}" on:click>
+  <Icon name="{iconName}" size="{size}" />
   <Label>{buttonText}</Label>
 </Button>

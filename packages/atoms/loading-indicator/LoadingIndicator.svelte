@@ -1,8 +1,8 @@
 <script>
   import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, exclude, variants } from "@dusk/helpers";
+  import { forwardEventsBuilder, exclude, variants } from "@dusk-network/helpers";
   import "./styles.css";
-  import { Div } from "@dusk/elements";
+  import { Div } from "@dusk-network/elements";
 
   const forwardEvents = forwardEventsBuilder(current_component);
 

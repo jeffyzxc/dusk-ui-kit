@@ -38,7 +38,7 @@ Negative action buttons will be on the left. Positive action buttons should be o
 
 ```js
 <script>
-import Button, { Label, Group } from "@dusk/button";
+import Button, { Label, Group } from "@dusk-network/button";
 
 function onClick() {
   alert("Thanks");

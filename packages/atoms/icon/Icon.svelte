@@ -1,9 +1,16 @@
 <script>
   import { getContext } from "svelte";
   import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, exclude, contexts, variants, icons, sizes } from "@dusk/helpers";
+  import {
+    forwardEventsBuilder,
+    exclude,
+    contexts,
+    variants,
+    icons,
+    sizes,
+  } from "@dusk-network/helpers";
   import "./styles.css";
-  import { Div, A } from "@dusk/elements";
+  import { Div, A } from "@dusk-network/elements";
 
   import ArrowLeftCircle from "./icons/ArrowLeftCircle.svelte";
   import ArrowRightCircle from "./icons/ArrowRightCircle.svelte";
@@ -310,5 +317,5 @@
   {disabled}
   {getClassNames(variant, size, context)}"
   {...exclude($$props, ['use', 'class', 'variant', 'name', 'size'])}>
-  <svelte:component this="{getSelectedIcon(name)}" {viewbox} />
+  <svelte:component this="{getSelectedIcon(name)}" viewbox="{viewbox}" />
 </svelte:component>

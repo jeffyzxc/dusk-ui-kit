@@ -1,8 +1,8 @@
 <script>
   import { createEventDispatcher, getContext } from "svelte";
-  import { exclude, variants, contexts } from "@dusk/helpers";
+  import { exclude, variants, contexts } from "@dusk-network/helpers";
   import FlatPickr from "svelte-flatpickr";
-  // import { Label } from "@dusk/elements";
+  // import { Label } from "@dusk-network/elements";
 
   import "flatpickr/dist/flatpickr.css";
   import "flatpickr/dist/themes/light.css";

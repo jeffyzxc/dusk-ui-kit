@@ -1,7 +1,7 @@
 # <div align="center">:sparkles: Dusk UI Kit :sparkles:</div>
 
 <div align="center"><a href="https://npm.dusk.network:4873">
-  <img src="https://img.shields.io/npm/v/@dusk/helpers.svg?registry_uri=https://npm.dusk.network:4873" alt="NPM">
+  <img src="https://img.shields.io/npm/v/@dusk-network/helpers.svg?registry_uri=https://npm.dusk.network:4873" alt="NPM">
 </a>
 <a href="https://travis-ci.com/dusk-network/dusk-ui-kit">
   <img src="https://travis-ci.com/dusk-network/dusk-ui-kit.svg?token=epVgoKeysWpeWXA7Vyxt&amp;branch=master" alt="TravisCI">
@@ -36,17 +36,17 @@ The components within the UI Kit are organised according to the principles of [A
 ## Installation
 
 ```bash
-$ yarn add @dusk/styles
-$ yarn add @dusk/button
-$ yarn add @dusk/list
-$ yarn add @dusk/navbar
+$ yarn add @dusk-network/styles
+$ yarn add @dusk-network/button
+$ yarn add @dusk-network/list
+$ yarn add @dusk-network/navbar
 ...
 ```
 
 ### Import a component
 
 ```javascript
-import Button, { Label } from "@dusk/button";
+import Button, { Label } from "@dusk-network/button";
 ```
 
 ```html
@@ -57,10 +57,10 @@ import Button, { Label } from "@dusk/button";
 
 ### Import styles
 
-Install `@dusk/styles` if you have not already.
+Install `@dusk-network/styles` if you have not already.
 
 ```bash
-$ yarn add @dusk/styles
+$ yarn add @dusk-network/styles
 ```
 
 Include the rollup plugin and configure accordingly...
@@ -68,7 +68,7 @@ Include the rollup plugin and configure accordingly...
 ```javascript
 // rollup.config.js
 
-const duk = require('@dusk/styles/rollup-plugin-duk');
+const duk = require('@dusk-network/styles/rollup-plugin-duk');
 ...
 plugins: [
   ...
@@ -83,7 +83,7 @@ Import Tailwind styles
 ```javascript
 // main.js
 
-import "@dusk/styles/tailwind.css";
+import "@dusk-network/styles/tailwind.css";
 ```
 
 **Check out the [examples repository](https://github.com/dusk-network/dusk-ui-kit-examples) for assistance!**

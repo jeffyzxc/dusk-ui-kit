@@ -1,10 +1,10 @@
 <script>
   // import { getContext } from "svelte";
   import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, exclude, variants, types } from "@dusk/helpers";
+  import { forwardEventsBuilder, exclude, variants, types } from "@dusk-network/helpers";
   import "./styles.css";
-  import { Input, Label } from "@dusk/elements";
-  import createRipple from "@dusk/helpers/ripple.js";
+  import { Input, Label } from "@dusk-network/elements";
+  import createRipple from "@dusk-network/helpers/ripple.js";
 
   let className = "";
   export { className as class };
@@ -70,8 +70,8 @@
     use="{[forwardEvents, ripple, ...use]}"
     class="duk-radio__button"
     type="{types.ATOM.RADIO}"
-    {name}
-    {id}
+    name="{name}"
+    id="{id}"
     {...actionProp}
     {...defaultProp} />
   <Label class="duk-radio__label" for="{id}">

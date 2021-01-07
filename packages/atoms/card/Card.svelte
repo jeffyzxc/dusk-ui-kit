@@ -7,7 +7,7 @@
     variants,
     elevations,
     sizes,
-  } from "@dusk/helpers";
+  } from "@dusk-network/helpers";
   import "./styles.css";
 
   const forwardEvents = forwardEventsBuilder(current_component);

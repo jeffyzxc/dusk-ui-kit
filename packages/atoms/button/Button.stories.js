@@ -1,10 +1,10 @@
 import { withKnobs, select, text, boolean, optionsKnob as options } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
-import { variants, sizes, icons } from "@dusk/helpers";
+import { variants, sizes, icons } from "@dusk-network/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import GroupView from "./storybook-views/Group.svelte";
 import IconView from "./storybook-views/Icon.svelte";
-// import "@dusk/styles/tailwind.css";
+// import "@dusk-network/styles/tailwind.css";
 import readme from "./readme.stories.md";
 
 export default {
@@ -35,7 +35,7 @@ export const Default = () => ({
     buttonText: text("Button Value", "Basic"),
   },
   on: {
-    click: event => {
+    click: (event) => {
       action(event);
     },
   },
@@ -67,7 +67,7 @@ export const Group = () => ({
     button3_buttonText: text("Button 3 Value", "Group Button 3"),
   },
   on: {
-    click: event => {
+    click: (event) => {
       action(event);
     },
   },
@@ -86,7 +86,7 @@ export const withIcons = () => ({
     iconName: select("Icon", buttonIcons, buttonIconDefault),
   },
   on: {
-    click: event => {
+    click: (event) => {
       action(event);
     },
   },
