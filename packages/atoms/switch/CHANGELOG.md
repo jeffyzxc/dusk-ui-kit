@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.5](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk/switch@1.6.4...@dusk/switch@1.6.5) (2021-01-07)
+
+**Note:** Version bump only for package @dusk/switch
+
+
+
+
+
 ## [1.6.4](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk/switch@1.6.3...@dusk/switch@1.6.4) (2021-01-07)
 
 **Note:** Version bump only for package @dusk/switch
