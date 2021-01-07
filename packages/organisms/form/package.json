@@ -1,5 +1,5 @@
 {
-  "name": "@dusk/form",
+  "name": "@dusk-network/form",
   "version": "1.6.4",
   "description": "Dusk UI Kit - Form",
   "bugs": {
@@ -10,13 +10,13 @@
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
     "directory": "packages/organisms/form"
   },
-  "author": "Kieran Hall <kieran@dusk.network>",
+  "author": "Kieran Hall <kieran@dusk-network.network>",
   "scripts": {
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk/helpers": "^1.7.2",
-    "@dusk/icon": "^1.6.4"
+    "@dusk-network/helpers": "^1.7.2",
+    "@dusk-network/icon": "^1.6.4"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"

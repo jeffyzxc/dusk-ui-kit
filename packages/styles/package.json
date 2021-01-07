@@ -1,5 +1,5 @@
 {
-  "name": "@dusk/styles",
+  "name": "@dusk-network/styles",
   "version": "1.6.4",
   "description": "Dusk UI Kit - Styles",
   "bugs": {
@@ -10,7 +10,7 @@
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
     "directory": "packages/organisms/styles"
   },
-  "author": "Kieran Hall <kieran@dusk.network>",
+  "author": "Kieran Hall <kieran@dusk-network.network>",
   "main": "snowpack.config.js",
   "scripts": {
     "test": "echo \"LOL\" && exit 1"

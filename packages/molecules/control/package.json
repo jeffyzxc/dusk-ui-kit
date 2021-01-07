@@ -1,5 +1,5 @@
 {
-  "name": "@dusk/control",
+  "name": "@dusk-network/control",
   "version": "1.6.4",
   "description": "Dusk UI Kit - Control",
   "bugs": {
@@ -10,13 +10,13 @@
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
     "directory": "packages/molecules/control"
   },
-  "author": "Kieran Hall <kieran@dusk.network>",
+  "author": "Kieran Hall <kieran@dusk-network.network>",
   "scripts": {
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk/elements": "^1.6.4",
-    "@dusk/helpers": "^1.7.2"
+    "@dusk-network/elements": "^1.6.4",
+    "@dusk-network/helpers": "^1.7.2"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"

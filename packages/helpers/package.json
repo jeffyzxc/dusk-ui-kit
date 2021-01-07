@@ -1,5 +1,5 @@
 {
-  "name": "@dusk/helpers",
+  "name": "@dusk-network/helpers",
   "version": "1.7.2",
   "description": "Dusk UI Kit - Helpers",
   "bugs": {
@@ -10,7 +10,7 @@
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
     "directory": "packages/helpers"
   },
-  "author": "Kieran Hall <kieran@dusk.network>",
+  "author": "Kieran Hall <kieran@dusk-network.network>",
   "scripts": {
     "test": "echo \"LOL\" && exit 1"
   },

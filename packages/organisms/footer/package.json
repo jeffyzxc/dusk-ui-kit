@@ -1,5 +1,5 @@
 {
-  "name": "@dusk/footer",
+  "name": "@dusk-network/footer",
   "version": "1.6.4",
   "description": "Dusk UI Kit - Footer",
   "bugs": {
@@ -10,15 +10,15 @@
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
     "directory": "packages/organisms/footer"
   },
-  "author": "Kieran Hall <kieran@dusk.network>",
+  "author": "Kieran Hall <kieran@dusk-network.network>",
   "type": "module",
   "scripts": {
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk/helpers": "^1.7.2",
-    "@dusk/icon": "^1.6.4",
-    "@dusk/text-field": "^1.7.2"
+    "@dusk-network/helpers": "^1.7.2",
+    "@dusk-network/icon": "^1.6.4",
+    "@dusk-network/text-field": "^1.7.2"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"
