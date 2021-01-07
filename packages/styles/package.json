@@ -5,6 +5,11 @@
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dusk-network/dusk-ui-kit.git",
+    "directory": "packages/organisms/styles"
+  },
   "author": "Kieran Hall <kieran@dusk.network>",
   "main": "snowpack.config.js",
   "scripts": {

@@ -5,6 +5,11 @@
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dusk-network/dusk-ui-kit.git",
+    "directory": "packages/organisms/footer"
+  },
   "author": "Kieran Hall <kieran@dusk.network>",
   "type": "module",
   "scripts": {
