@@ -2,7 +2,7 @@ import { withKnobs, select, boolean } from "@storybook/addon-knobs";
 import { variants } from "@dusk-network/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import readme from "./readme.stories.md";
-import "@dusk-network/styles/tailwind.css";
+// import "@dusk-network/styles/tailwind.css";
 
 export default {
   title: "Components/Templates/2 Column",

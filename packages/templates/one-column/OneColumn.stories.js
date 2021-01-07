@@ -1,7 +1,7 @@
 import { withKnobs, boolean } from "@storybook/addon-knobs";
 import DefaultView from "./storybook-views/Default.svelte";
 import readme from "./readme.stories.md";
-import "@dusk-network/styles/tailwind.css";
+// import "@dusk-network/styles/tailwind.css";
 
 export default {
   title: "Components/Templates/1 Column",
