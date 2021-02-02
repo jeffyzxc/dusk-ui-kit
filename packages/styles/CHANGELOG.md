@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/styles@1.7.0...@dusk-network/styles@1.8.0) (2021-02-02)
+
+
+### Features
+
+* ✨ support for rollup v2 ([8a6478c](https://github.com/dusk-network/dusk-ui-kit/commit/8a6478c1ca7786ce8bf33702f91cceb1d5df5da1))
+
+
+
+
+
 # 1.7.0 (2021-01-07)
 
 
