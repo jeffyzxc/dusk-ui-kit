@@ -5,9 +5,5 @@ export default {
   output: {
     file: "public/bundle.js",
   },
-  plugins: [
-    duk({
-      output: "global.css",
-    }),
-  ],
+  plugins: [duk()],
 };
