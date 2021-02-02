@@ -1,3 +1,5 @@
+// TODO Clean up this mess.
+
 const path = require("path");
 const tailwindConfig = require("../packages/styles/dusk.tailwind.config.js");
 const PACKAGES_DIR = path.resolve(__dirname, "../packages/");
