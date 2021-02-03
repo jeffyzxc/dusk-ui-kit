@@ -1,10 +1,9 @@
-import { withKnobs, boolean } from "@storybook/addon-knobs";
+import { withKnobs, text } from "@storybook/addon-knobs";
 import DefaultView from "./storybook-views/Default.svelte";
 import readme from "./readme.stories.md";
-// import "@dusk-network/styles/tailwind.css";
 
 export default {
-  title: "Components/Templates/1 Column",
+  title: "Components/Organisms/CTA",
   parameters: {
     notes: readme,
   },
@@ -14,6 +13,8 @@ export default {
 export const Default = () => ({
   Component: DefaultView,
   props: {
-    gutters: boolean("Gutters", true),
+    heading: text("CTA Heading", "Call to action heading..."),
+    href: text("CTA Link", "#"),
+    buttonText: text("CTA Button Text", "The cake is a lie"),
   },
 });

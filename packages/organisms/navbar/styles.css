@@ -1,5 +1,5 @@
 .duk-navbar {
-  @apply font-light flex flex-col w-full h-screen;
+  @apply font-light flex flex-col w-full;
 
   &__wrapper {
     @apply flex-none flex w-full justify-between items-start;
@@ -127,7 +127,7 @@
         &__wrapper {
           @apply w-full text-left;
 
-          &:is(a) {
+          &:is(a):not(.duk-list__item__wrapper--active) {
             @apply opacity-50;
           }
 
@@ -204,40 +204,4 @@
       }
     }
   }
-
-  /* &--light {
-    @apply bg-gray-200 text-purple-900;
-
-    & a,
-    a:hover {
-      @apply text-purple-900;
-    }
-  }
-
-  &--dark {
-    @apply bg-gray-900 text-gray-200;
-
-    & a,
-    a:hover {
-      @apply text-gray-200;
-    }
-  }
-
-  &--black {
-    @apply bg-black text-white;
-
-    & a,
-    a:hover {
-      @apply text-white;
-    }
-  }
-
-  &--white {
-    @apply bg-white text-black;
-
-    & a,
-    a:hover {
-      @apply text-black;
-    }
-  } */
 }
