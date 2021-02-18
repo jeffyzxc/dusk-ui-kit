@@ -5,7 +5,6 @@
     exclude,
     useActions,
     variants,
-    elevations,
     sizes,
   } from "@dusk-network/helpers";
   import "./styles.css";
@@ -16,10 +15,9 @@
   let className = "";
   export { className as class };
   export let variant = variants.ATOM.CARD.WHITE;
-  export let elevation = elevations.ATOM.CARD.SMALL;
   export let size = sizes.ATOM.CARD.BASE;
 
-  function getClassNames(variant, elevation, size) {
+  function getClassNames(variant, size) {
     let classNames = "";
 
     switch (variant) {
@@ -57,21 +55,6 @@
         classNames += "";
     }
 
-    switch (elevation) {
-      case elevations.ATOM.CARD.SMALL:
-        classNames += " duk-card--elevated-small";
-        break;
-      case elevations.ATOM.CARD.MEDIUM:
-        classNames += " duk-card--elevated-medium";
-        break;
-      case elevations.ATOM.CARD.LARGE:
-        classNames += " duk-card--elevated-large";
-        break;
-      case elevations.ATOM.CARD.NONE:
-      default:
-        classNames += "";
-    }
-
     switch (size) {
       case sizes.ATOM.CARD.SMALL:
         classNames += " duk-card--small";
@@ -91,7 +74,7 @@
   use:useActions="{use}"
   use:forwardEvents
   class="duk-card {className}
-  {getClassNames(variant, elevation, size)}"
-  {...exclude($$props, ['use', 'class', 'variant', 'elevation', 'size'])}>
+  {getClassNames(variant, size)}"
+  {...exclude($$props, ['use', 'class', 'variant', 'size'])}>
   <slot />
 </div>
