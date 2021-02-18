@@ -1,5 +1,5 @@
 .duk-table {
-  @apply table-auto border-collapse leading-7;
+  @apply table-auto border-collapse shadow-marketing leading-7;
 
   &--fixed {
     @apply table-fixed;
@@ -29,10 +29,10 @@
   }
 
   &--light {
-    @apply bg-white;
+    @apply bg-gray-100;
 
     & > thead > tr > th.duk-table__row__datum--prominent {
-      @apply border-t border-b border-orange-500;
+      @apply border-t border-b border-transparent;
     }
 
     & > tbody > tr.duk-table__row--highlight > td {
@@ -41,10 +41,10 @@
   }
 
   &--dark {
-    @apply bg-gray-900 text-white;
+    @apply bg-gray-700 text-white;
 
     & > thead > tr > th.duk-table__row__datum--prominent {
-      @apply border-t border-b border-yellow-500;
+      @apply border-t border-b border-transparent;
     }
 
     & > tbody > tr.duk-table__row--highlight > td {
@@ -54,21 +54,21 @@
 
   &--light&--striped {
     & > tbody > tr:nth-child(odd) {
-      @apply bg-gray-100;
+      @apply bg-gray-200;
     }
 
     & > tbody > tr:nth-child(even) {
-      @apply bg-white;
+      @apply bg-gray-100;
     }
   }
 
   &--dark&--striped {
     & > tbody > tr:nth-child(odd) {
-      @apply bg-gray-700;
+      @apply bg-gray-800;
     }
 
     & > tbody > tr:nth-child(even) {
-      @apply bg-gray-900;
+      @apply bg-gray-700;
     }
   }
 
