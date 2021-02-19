@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.1](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/button@1.8.0...@dusk-network/button@1.8.1) (2021-02-19)
+
+
+### Bug Fixes
+
+* **styling:** 🐛 cleaned up Button styling ([595908d](https://github.com/dusk-network/dusk-ui-kit/commit/595908d8e5a1917f69e83ba2262590bf001fda94)), closes [#40](https://github.com/dusk-network/dusk-ui-kit/issues/40)
+
+
+
+
+
 # 1.8.0 (2021-01-07)
 
 

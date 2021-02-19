@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/drawer",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "Dusk UI Kit - Drawer",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -15,7 +15,7 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/helpers": "^1.8.0"
+    "@dusk-network/helpers": "^1.8.1"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"

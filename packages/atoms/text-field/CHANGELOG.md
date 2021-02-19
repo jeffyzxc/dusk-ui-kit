@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.1](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/text-field@1.8.0...@dusk-network/text-field@1.8.1) (2021-02-19)
+
+**Note:** Version bump only for package @dusk-network/text-field
+
+
+
+
+
 # 1.8.0 (2021-01-07)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.1](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/card@1.7.0...@dusk-network/card@1.7.1) (2021-02-19)
+
+
+### Bug Fixes
+
+* **styling:** 🐛 adjusted styling for Card ([bf8152a](https://github.com/dusk-network/dusk-ui-kit/commit/bf8152a8186800e4c34a0d42210b16fa1f966351)), closes [#43](https://github.com/dusk-network/dusk-ui-kit/issues/43)
+
+
+
+
+
 # 1.7.0 (2021-01-07)
 
 

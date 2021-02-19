@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.1](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/logo@1.7.0...@dusk-network/logo@1.7.1) (2021-02-19)
+
+
+### Bug Fixes
+
+* **styling:** 🐛 updated the Logo and Loading indicator styles ([cb6256e](https://github.com/dusk-network/dusk-ui-kit/commit/cb6256e9a637850232de070989b4786c60eeca99)), closes [#44](https://github.com/dusk-network/dusk-ui-kit/issues/44) [#45](https://github.com/dusk-network/dusk-ui-kit/issues/45)
+
+
+
+
+
 # 1.7.0 (2021-01-07)
 
 
