@@ -20,32 +20,8 @@
       case variants.ATOM.LOADING_INDICATOR.BRAND:
         classNames += " duk-loading-indicator--brand";
         break;
-      case variants.ATOM.LOADING_INDICATOR.CTA:
-        classNames += " duk-loading-indicator--cta";
-        break;
-      case variants.ATOM.LOADING_INDICATOR.INFO:
-        classNames += " duk-loading-indicator--info";
-        break;
-      case variants.ATOM.LOADING_INDICATOR.SUCCESS:
-        classNames += " duk-loading-indicator--success";
-        break;
-      case variants.ATOM.LOADING_INDICATOR.WARNING:
-        classNames += " duk-loading-indicator--warning";
-        break;
-      case variants.ATOM.LOADING_INDICATOR.DANGER:
-        classNames += " duk-loading-indicator--danger";
-        break;
       case variants.ATOM.LOADING_INDICATOR.LIGHT:
         classNames += " duk-loading-indicator--light";
-        break;
-      case variants.ATOM.LOADING_INDICATOR.DARK:
-        classNames += " duk-loading-indicator--dark";
-        break;
-      case variants.ATOM.LOADING_INDICATOR.WHITE:
-        classNames += " duk-loading-indicator--white";
-        break;
-      case variants.ATOM.LOADING_INDICATOR.BLACK:
-        classNames += " duk-loading-indicator--black";
         break;
       default:
         classNames += "";

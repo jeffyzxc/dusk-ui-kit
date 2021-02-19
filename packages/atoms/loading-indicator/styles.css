@@ -2,42 +2,10 @@
   @apply inline-block fill-current;
 
   &--brand {
-    @apply text-purple-500 fill-current;
-  }
-
-  &--cta {
-    @apply text-orange-500 fill-current;
-  }
-
-  &--info {
-    @apply text-purple-500 fill-current;
-  }
-
-  &--success {
-    @apply text-green-500 fill-current;
-  }
-
-  &--warning {
-    @apply text-yellow-500 fill-current;
-  }
-
-  &--danger {
-    @apply text-red-500 fill-current;
-  }
-
-  &--dark {
-    @apply text-gray-800 fill-current;
+    @apply text-indigo-400 fill-current;
   }
 
   &--light {
-    @apply text-gray-200 fill-current;
-  }
-
-  &--black {
-    @apply text-black fill-current;
-  }
-
-  &--white {
-    @apply text-white fill-current;
+    @apply text-gray-500 fill-current;
   }
 }
