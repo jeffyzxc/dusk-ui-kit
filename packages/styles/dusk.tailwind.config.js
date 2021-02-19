@@ -255,211 +255,18 @@ module.exports = {
       });
     }),
     plugin(function ({ addComponents, theme }) {
-      // const screens = theme("screens", {});
-      const gap = theme("spacing.3", {});
-      // const doubleGap = theme("spacing.6", {});
-      const template = {
-        ".duk-scrim": {
-          backgroundColor: "black",
-          position: "fixed",
-          top: 0,
-          left: 0,
-          zIndex: 10,
-          width: "100%",
-          height: "100%",
-        },
-        ".duk-template": {
-          display: "flex",
-          "min-height": "100vh",
-          "flex-direction": "column",
-          width: "100%",
-          "&__footer": {
-            textAlign: "center",
-            ".duk-navbar": {
-              display: "block",
-              fontSize: "inherit",
-              "&__collapse": {
-                display: "none",
-              },
-              ".duk-menu": {
-                display: "block",
-                ".duk-list": {
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "space-around",
-                  "&__item": {
-                    margin: `0 theme("spacing.2")`,
-                  },
-                },
-              },
-            },
-            "@media (min-width: 640px)": {
-              ".duk-navbar": {
-                ".duk-menu": {
-                  ".duk-list": {
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "flex-start",
-                    "&__item": {
-                      margin: `0 theme("spacing.2")`,
-                    },
-                  },
-                },
-              },
-            },
-          },
-          "&__content": {
-            display: "flex",
-            "flex-direction": "column",
-            flex: 1,
-          },
-          "@media (min-width: 640px)": {
-            "&__content": {
-              "flex-direction": "row",
-            },
-          },
-          "&__one-column": {
-            "@media (min-width: 640px)": {
-              ".duk-template__one-column__content__central": {
-                width: "100%",
-              },
-            },
-          },
-          "&__two-column": {
-            "@media (min-width: 640px)": {
-              "&--5050": {
-                ".duk-template__two-column__content": {
-                  "&__west": {
-                    width: "50%",
-                  },
-                  "&__east": {
-                    width: "50%",
-                  },
-                },
-              },
-              "&--2080": {
-                ".duk-template__two-column__content": {
-                  "&__west": {
-                    width: "20%",
-                  },
-                  "&__east": {
-                    width: "80%",
-                  },
-                },
-              },
-              "&--8020": {
-                ".duk-template__two-column__content": {
-                  "&__west": {
-                    width: "80%",
-                  },
-                  "&__east": {
-                    width: "20%",
-                  },
-                },
-              },
-            },
-            "&--fixed": {
-              ".duk-template__column": {
-                width: "100%",
-              },
-              ".duk-template__two-column__content": {
-                "&__west": {
-                  flex: "none",
-                  order: "2 !important",
-                },
-                "&__east": {
-                  flex: 1,
-                  order: "1 !important",
-                },
-              },
-              "@media (min-width: 640px)": {
-                ".duk-template__two-column__content": {
-                  "&__west": {
-                    "max-width": "128px",
-                    order: "1 !important",
-                  },
-                  "&__east": {
-                    flex: "1",
-                    order: "2 !important",
-                  },
-                },
-              },
-            },
-          },
-          "&__three-column": {
-            "@media (min-width: 640px)": {
-              "&--333333": {
-                ".duk-template__three-column__content": {
-                  "&__west": {
-                    width: "33.333333%",
-                  },
-                  "&__central": {
-                    width: "33.333333%",
-                  },
-                  "&__east": {
-                    width: "33.333333%",
-                  },
-                },
-              },
-              "&--204040": {
-                ".duk-template__three-column__content": {
-                  "&__west": {
-                    width: "20%",
-                  },
-                  "&__central": {
-                    width: "40%",
-                  },
-                  "&__east": {
-                    width: "40%",
-                  },
-                },
-              },
-              "&--404020": {
-                ".duk-template__three-column__content": {
-                  "&__west": {
-                    width: "40%",
-                  },
-                  "&__central": {
-                    width: "40%",
-                  },
-                  "&__east": {
-                    width: "20%",
-                  },
-                },
-              },
-            },
-          },
-          "&--gutters": {
-            ".duk-template__content": {
-              padding: `0 ${gap}`,
-            },
-            ".duk-template__column": {
-              margin: `0 ${gap}`,
-            },
-          },
-          "&--gutters.duk-template__two-column--fixed": {
-            ".duk-template__column": {
-              margin: 0,
-              "@media (min-width: 640px)": {
-                margin: `0 ${gap}`,
-              },
-            },
-          },
-        },
-      };
-
       const ripple = {
         ".ripple": {
           borderRadius: "50%",
           position: "absolute",
           transform: "scale(0)",
           animation: "rippleffect 0.6s",
-          "&--brand": { backgroundColor: theme("colors.purple.100") },
-          "&--cta": { backgroundColor: theme("colors.orange.100") },
-          "&--info": { backgroundColor: theme("colors.purple.100") },
-          "&--success": { backgroundColor: theme("colors.green.100") },
-          "&--warning": { backgroundColor: theme("colors.yellow.100") },
-          "&--danger": { backgroundColor: theme("colors.red.100") },
+          "&--brand": { backgroundColor: theme("colors.indigo.300") },
+          "&--cta": { backgroundColor: theme("colors.gold.300") },
+          "&--info": { backgroundColor: theme("colors.blue.300") },
+          "&--success": { backgroundColor: theme("colors.green.300") },
+          "&--warning": { backgroundColor: theme("colors.yellow.300") },
+          "&--danger": { backgroundColor: theme("colors.red.300") },
           "&--light": { backgroundColor: theme("colors.gray.300") },
           "&--dark": { backgroundColor: theme("colors.gray.700") },
           "&--black": { backgroundColor: theme("colors.gray.900") },
@@ -473,7 +280,7 @@ module.exports = {
         },
       };
 
-      addComponents([template, ripple]);
+      addComponents([ripple]);
     }),
   ],
 };

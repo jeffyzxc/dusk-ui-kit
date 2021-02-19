@@ -3,6 +3,7 @@
 }
 
 .duk-button {
+  transition: box-shadow 0.3s ease-in-out;
   @apply inline-block border border-solid rounded text-sm leading-relaxed py-2 px-4 relative overflow-hidden shadow-marketing;
 
   &__icon {
@@ -18,15 +19,19 @@
 
     &:hover,
     &.active {
-      @apply bg-indigo-900 text-white;
+      @apply bg-indigo-600 text-white;
+    }
+
+    &:hover {
+      @apply shadow-marketing-hover;
     }
 
     &.duk-button--outline {
-      @apply bg-transparent text-white border border-solid border-white;
+      @apply bg-transparent text-gray-900 border border-solid border-white;
 
       &:hover,
       &.active {
-        @apply bg-purple-900 border-purple-900;
+        @apply bg-indigo-400 text-white border-indigo-400 shadow-marketing-hover;
       }
     }
   }
@@ -34,16 +39,21 @@
   &--cta {
     @apply bg-gold-500 text-gray-900 border-none;
 
+    &:hover,
+    &.active {
+      @apply bg-gold-400 text-white;
+    }
+
     &:hover {
-      @apply bg-gold-900 text-white;
+      @apply shadow-marketing-hover;
     }
 
     &.duk-button--outline {
-      @apply bg-transparent text-white border border-solid border-white;
+      @apply bg-transparent text-gray-900 border border-solid border-white;
 
       &:hover,
       &.active {
-        @apply bg-orange-900 border-orange-900;
+        @apply bg-gold-400 text-gray-900 border-gold-400 shadow-marketing-hover;
       }
     }
   }
@@ -53,121 +63,130 @@
 
     &:hover,
     &.active {
-      @apply bg-blue-500 text-white;
+      @apply bg-blue-400 text-gray-900;
+    }
+
+    &:hover {
+      @apply shadow-marketing-hover;
     }
 
     &.duk-button--outline {
-      @apply bg-transparent text-white border border-solid border-white;
+      @apply bg-transparent text-gray-900 border border-solid border-white;
 
-      &:hover {
-        @apply bg-blue-500 border-blue-500;
+      &:hover,
+      &.active {
+        @apply bg-blue-400 text-blue-900 border-blue-400 shadow-marketing-hover;
       }
     }
   }
 
   &--success {
-    @apply bg-green-500 border-none text-white;
+    @apply bg-green-500 text-gray-900 border-none;
 
     &:hover,
     &.active {
-      @apply bg-green-900 text-white;
+      @apply bg-green-400 text-gray-900;
+    }
+
+    &:hover {
+      @apply shadow-marketing-hover;
     }
 
     &.duk-button--outline {
-      @apply bg-transparent text-white border border-solid border-white;
+      @apply bg-transparent text-gray-900 border border-solid border-white;
 
       &:hover,
       &.active {
-        @apply bg-green-900 border-green-900;
+        @apply bg-green-400 text-gray-900 border-green-400 shadow-marketing-hover;
       }
     }
   }
 
   &--warning {
-    @apply bg-yellow-900 border-none text-gray-900;
+    @apply bg-yellow-900 text-gray-900 border-none;
 
     &:hover,
     &.active {
-      @apply bg-yellow-500 border-none text-gray-900;
+      @apply bg-yellow-500 text-gray-900;
+    }
+
+    &:hover {
+      @apply shadow-marketing-hover;
     }
 
     &.duk-button--outline {
-      @apply bg-transparent text-white border border-solid border-white;
+      @apply bg-transparent text-gray-900 border border-solid border-white;
 
       &:hover,
       &.active {
-        @apply bg-yellow-900 border-yellow-900 text-gray-900;
+        @apply bg-yellow-900 text-gray-900 border-yellow-900 shadow-marketing-hover;
       }
     }
   }
 
   &--danger {
-    @apply bg-red-100 text-gray-900 border-none;
+    @apply bg-red-300 text-gray-900 border-none;
 
     &:hover,
     &.active {
-      @apply bg-red-500 text-white;
+      @apply bg-red-500 text-black;
+    }
+
+    &:hover {
+      @apply shadow-marketing-hover;
     }
 
     &.duk-button--outline {
-      @apply bg-transparent text-white border border-solid border-white;
+      @apply bg-transparent text-gray-900 border border-solid border-white;
 
       &:hover,
       &.active {
-        @apply bg-red-100 border-red-500;
+        @apply bg-red-400 text-black border-red-400 shadow-marketing-hover;
       }
     }
   }
 
   &--light {
-    @apply bg-gray-200 border-none text-gray-900;
+    @apply bg-gray-200 text-gray-900 border-none;
 
     &:hover,
     &.active {
-      @apply bg-gray-600 text-white;
+      @apply bg-gray-500 text-black;
+    }
+
+    &:hover {
+      @apply shadow-marketing-hover;
     }
 
     &.duk-button--outline {
-      @apply bg-transparent text-white border border-solid border-white;
+      @apply bg-transparent text-gray-900 border border-solid border-white;
 
       &:hover,
       &.active {
-        @apply bg-gray-600 border-gray-600;
+        @apply bg-gray-400 text-black border-gray-400 shadow-marketing-hover;
       }
     }
   }
 
   &--dark {
-    @apply bg-gray-900 border-none text-gray-200;
+    @apply bg-gray-900 text-gray-200 border-none;
 
     &:hover,
     &.active {
       @apply bg-gray-600 text-white;
     }
 
+    &:hover {
+      @apply shadow-marketing-hover;
+    }
+
     &.duk-button--outline {
-      @apply bg-transparent text-white border border-solid border-white;
+      @apply bg-transparent text-gray-800 border border-solid border-white;
 
       &:hover,
       &.active {
-        @apply bg-gray-900 border-gray-900;
+        @apply bg-gray-800 text-white border-gray-800 shadow-marketing-hover;
       }
-    }
-  }
-
-  &--black {
-    @apply bg-black border-none text-white;
-
-    &.duk-button--outline {
-      @apply bg-transparent text-black;
-    }
-  }
-
-  &--white {
-    @apply bg-white border-white text-black;
-
-    &.duk-button--outline {
-      @apply bg-transparent text-black;
     }
   }
 
