@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.3](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/table@1.7.2...@dusk-network/table@1.7.3) (2021-02-24)
+
+
+### Bug Fixes
+
+* **styling:** 🐛 added new Table variants for highlighted thead ([9290c90](https://github.com/dusk-network/dusk-ui-kit/commit/9290c90fafcd0fa3e5e05e1b9b587ffc7fd4254a)), closes [#47](https://github.com/dusk-network/dusk-ui-kit/issues/47)
+
+
+
+
+
 ## [1.7.2](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/table@1.7.1...@dusk-network/table@1.7.2) (2021-02-19)
 
 **Note:** Version bump only for package @dusk-network/table

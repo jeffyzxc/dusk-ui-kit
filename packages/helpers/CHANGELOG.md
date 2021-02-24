@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.2](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/helpers@1.8.1...@dusk-network/helpers@1.8.2) (2021-02-24)
+
+
+### Bug Fixes
+
+* **styling:** 🐛 added new Table variants for highlighted thead ([9290c90](https://github.com/dusk-network/dusk-ui-kit/commit/9290c90fafcd0fa3e5e05e1b9b587ffc7fd4254a)), closes [#47](https://github.com/dusk-network/dusk-ui-kit/issues/47)
+* **styling:** 🐛 resored the overlay backgroun when Dialog is open ([98788f1](https://github.com/dusk-network/dusk-ui-kit/commit/98788f13b6a0674857e67cffd7831fa9f49f5981))
+
+
+
+
+
 ## [1.8.1](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/helpers@1.8.0...@dusk-network/helpers@1.8.1) (2021-02-19)
 
 
