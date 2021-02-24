@@ -53,6 +53,8 @@ export default {
     TABLE: {
       LIGHT: "light",
       DARK: "dark",
+      LIGHT_HIGHLIGHT: "light-highlight",
+      DARK_HIGHLIGHT: "dark-highlight",
     },
     TEXT_FIELD: {
       LIGHT: "light",

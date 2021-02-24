@@ -7,7 +7,7 @@
   export let type;
 </script>
 
-<Table {fixed} {striped} {variant} {type} class="w-screen">
+<Table fixed="{fixed}" striped="{striped}" variant="{variant}" type="{type}" class="w-screen">
   <thead slot="head">
     <Row type="head">
       <Datum>Col 1 Head</Datum>

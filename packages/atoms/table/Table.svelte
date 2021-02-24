@@ -21,6 +21,12 @@
       case variants.ATOM.TABLE.DARK:
         classNames += " duk-table--dark";
         break;
+      case variants.ATOM.TABLE.LIGHT_HIGHLIGHT:
+        classNames += " duk-table--light duk-table--light-highlight";
+        break;
+      case variants.ATOM.TABLE.DARK_HIGHLIGHT:
+        classNames += " duk-table--dark duk-table--dark-highlight";
+        break;
       default:
         classNames += "";
     }
