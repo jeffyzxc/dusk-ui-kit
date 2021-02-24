@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/cta",
-  "version": "1.9.2",
+  "version": "1.9.3",
   "description": "Dusk UI Kit - CTA",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -15,7 +15,7 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/button": "^1.8.2"
+    "@dusk-network/button": "^1.8.3"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"

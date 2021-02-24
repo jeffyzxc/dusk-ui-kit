@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/menu",
-  "version": "1.7.2",
+  "version": "1.7.3",
   "description": "Dusk UI Kit - Menu",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -15,7 +15,7 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/helpers": "^1.8.2"
+    "@dusk-network/helpers": "^1.8.3"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"
