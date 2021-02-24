@@ -12,6 +12,11 @@ export default {
   parameters: {
     notes: readme,
     layout: "centered",
+    design: {
+      type: "figma",
+      url:
+        "https://www.figma.com/proto/Vx8ml25JHmOpdh665boD5x/Buttons?node-id=1%3A4&scaling=min-zoom&hide-ui=1",
+    },
   },
   decorators: [withKnobs],
 };

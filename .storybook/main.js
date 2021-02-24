@@ -17,7 +17,7 @@ const preprocessOptions = {
 };
 module.exports = {
   stories: ["../packages/**/*.stories.js", "../docs/Button.mdx"],
-  addons: ["@storybook/addon-links", "@storybook/addon-essentials"],
+  addons: ["@storybook/addon-links", "@storybook/addon-essentials", "storybook-addon-designs"],
   // webpackFinal: async config => {
   //   config.module.rules.push({
   //     test: /\.css$/,

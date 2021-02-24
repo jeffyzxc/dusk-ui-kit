@@ -123,6 +123,7 @@
     "semantic-release-monorepo": "^7.0.3",
     "semantic-release-monorepo-hooks": "^2.9.7",
     "semantic-release-plugin-decorators": "^3.0.0",
+    "storybook-addon-designs": "^5.4.5",
     "stylelint": "^13.8.0",
     "stylelint-config-standard": "^20.0.0",
     "svelte": "^3.31.0",
