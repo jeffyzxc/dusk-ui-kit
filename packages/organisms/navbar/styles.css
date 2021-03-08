@@ -128,7 +128,7 @@
           @apply w-full text-left;
 
           &:is(a):not(.duk-list__item__wrapper--active) {
-            @apply opacity-50;
+            @apply opacity-50 transition-all duration-700;
           }
 
           @screen lg {
@@ -155,11 +155,11 @@
 
     &:hover {
       & a {
-        @apply opacity-50;
+        @apply opacity-50 transition-all duration-700;
       }
 
       & a:hover {
-        @apply opacity-100;
+        @apply opacity-100 transition-all duration-700;
       }
     }
     @screen lg {
