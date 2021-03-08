@@ -28,15 +28,15 @@
   &--small {
     @apply rounded-sm text-xs;
 
-    & .duk-card__title {
+    & > .duk-card__title {
       @apply rounded-tr-sm rounded-tl-sm py-3 px-5 text-xs font-medium;
     }
 
-    & .duk-card__content {
+    & > .duk-card__content {
       @apply font-light px-5 py-3;
     }
 
-    & .duk-card__actions {
+    & > .duk-card__actions {
       @apply flex items-center py-3 px-5;
     }
   }
@@ -44,15 +44,15 @@
   &--large {
     @apply rounded-sm text-lg;
 
-    & .duk-card__title {
+    & > .duk-card__title {
       @apply py-3 px-5 text-base font-semibold;
     }
 
-    & .duk-card__content {
+    & > .duk-card__content {
       @apply font-light px-5 py-3;
     }
 
-    & .duk-card__actions {
+    & > .duk-card__actions {
       @apply flex items-center px-5 py-3;
     }
   }
@@ -92,7 +92,7 @@
   &--black {
     @apply bg-black text-white;
 
-    & .duk-card__title {
+    & > .duk-card__title {
       @apply bg-gray-800;
     }
   }
@@ -100,7 +100,7 @@
   &--white {
     @apply bg-white text-black;
 
-    & .duk-card__title {
+    & > .duk-card__title {
       @apply bg-gray-200;
     }
   }
