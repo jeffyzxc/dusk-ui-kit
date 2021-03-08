@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/card@1.7.3...@dusk-network/card@1.8.0) (2021-03-08)
+
+
+### Bug Fixes
+
+* **card:** 🐛 increased small variant padding ([b8812b0](https://github.com/dusk-network/dusk-ui-kit/commit/b8812b0b340f69eab01e866e925b9cee5fee3e4c))
+
+
+### Features
+
+* **card:** ✨ added background colour for white and black variants ([24af08e](https://github.com/dusk-network/dusk-ui-kit/commit/24af08e06bc5523980c75620733f17ec7c4b2b96))
+
+
+
+
+
 ## [1.7.3](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/card@1.7.2...@dusk-network/card@1.7.3) (2021-02-24)
 
 **Note:** Version bump only for package @dusk-network/card
