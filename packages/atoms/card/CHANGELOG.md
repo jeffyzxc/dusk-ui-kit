@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.1](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/card@1.8.0...@dusk-network/card@1.8.1) (2021-03-08)
+
+
+### Bug Fixes
+
+* **card:** 🐛 fixed issue causing nested cards to inherit parent styles for title ([83bea53](https://github.com/dusk-network/dusk-ui-kit/commit/83bea53384406e6ac6a92972e410c16bb81be9a7))
+
+
+
+
+
 # [1.8.0](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/card@1.7.3...@dusk-network/card@1.8.0) (2021-03-08)
 
 
