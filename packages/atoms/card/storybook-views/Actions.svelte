@@ -14,6 +14,6 @@
   <Title>{title}</Title>
   <Content>{content}</Content>
   <Actions>
-    <Button variant="{buttonVariant}">{buttonText}</Button>
+    <Button size="{size}" variant="{buttonVariant}">{buttonText}</Button>
   </Actions>
 </Card>

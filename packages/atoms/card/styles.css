@@ -1,34 +1,16 @@
 .duk-card {
-  @apply rounded shadow-marketing px-5 py-3;
+  @apply rounded shadow-marketing;
 
   &__actions {
-    @apply flex items-center pt-2;
+    @apply flex items-center py-4 px-6;
   }
 
   &__title {
-    @apply flex items-center justify-between pb-2 text-xl;
-
-    & > h1,
-    & > h2,
-    & > h3,
-    & > h4,
-    & > h5,
-    & > h6 {
-      @apply text-xl font-normal;
-    }
+    @apply flex items-center justify-between py-4 px-6 text-sm rounded-tl rounded-tr font-semibold;
   }
 
   &__footer {
-    @apply flex items-center justify-between text-xs pt-2;
-
-    & > h1,
-    & > h2,
-    & > h3,
-    & > h4,
-    & > h5,
-    & > h6 {
-      @apply text-xs leading-tight font-light;
-    }
+    @apply flex items-center justify-between text-xs pt-2 px-6 pb-3 leading-tight font-light;
 
     & p {
       @apply mb-0;
@@ -36,7 +18,7 @@
   }
 
   &__content {
-    @apply font-light;
+    @apply font-light px-6 py-6;
 
     & p:last-child {
       @apply m-0;
@@ -44,24 +26,35 @@
   }
 
   &--small {
-    @apply rounded-sm px-5 py-3 text-xs;
+    @apply rounded-sm text-xs;
 
     & .duk-card__title {
-      @apply pb-0 text-sm;
+      @apply rounded-tr-sm rounded-tl-sm py-3 px-5 text-xs font-medium;
+    }
 
-      & > h1,
-      & > h2,
-      & > h3,
-      & > h4,
-      & > h5,
-      & > h6 {
-        @apply text-sm font-normal;
-      }
+    & .duk-card__content {
+      @apply font-light px-5 py-3;
+    }
+
+    & .duk-card__actions {
+      @apply flex items-center py-3 px-5;
     }
   }
 
   &--large {
-    @apply rounded-lg px-8 py-5;
+    @apply rounded-sm text-lg;
+
+    & .duk-card__title {
+      @apply py-3 px-5 text-base font-semibold;
+    }
+
+    & .duk-card__content {
+      @apply font-light px-5 py-3;
+    }
+
+    & .duk-card__actions {
+      @apply flex items-center px-5 py-3;
+    }
   }
 
   &--brand {
@@ -98,9 +91,17 @@
 
   &--black {
     @apply bg-black text-white;
+
+    & .duk-card__title {
+      @apply bg-gray-800;
+    }
   }
 
   &--white {
     @apply bg-white text-black;
+
+    & .duk-card__title {
+      @apply bg-gray-200;
+    }
   }
 }

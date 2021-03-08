@@ -1,6 +1,7 @@
 import { withKnobs, select, text, optionsKnob as options } from "@storybook/addon-knobs";
 import { variants, sizes } from "@dusk-network/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
+import TitleView from "./storybook-views/Title.svelte";
 import ActionsView from "./storybook-views/Actions.svelte";
 import FooterView from "./storybook-views/Footer.svelte";
 import readme from "./readme.stories.md";
@@ -25,6 +26,18 @@ export const Default = () => ({
   Component: DefaultView,
   props: {
     variant: select("Card Variant", cardVariants, cardVariantDefault),
+    content: text("Card Content", "Lorem ipsum..."),
+    size: options("Size", cardSizes, cardSizeDefault, {
+      display: "radio",
+    }),
+  },
+});
+
+export const WithTitle = () => ({
+  Component: TitleView,
+  props: {
+    variant: select("Card Variant", cardVariants, cardVariantDefault),
+    title: text("Card Title", "I am a Card!"),
     content: text("Card Content", "Lorem ipsum..."),
     size: options("Size", cardSizes, cardSizeDefault, {
       display: "radio",
