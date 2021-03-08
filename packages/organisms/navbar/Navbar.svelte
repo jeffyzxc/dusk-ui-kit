@@ -78,7 +78,7 @@
 <nav
   use:useActions="{use}"
   use:forwardEvents
-  class="duk-navbar {className}
+  class="duk-navbar {className} duk-navbar--hidden
   {getClassNames(variant)}"
   {...exclude($$props, ['use', 'class', 'variant', 'title'])}>
   <div class="duk-navbar__wrapper duk-navbar__wrapper--primary">

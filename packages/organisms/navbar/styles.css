@@ -174,7 +174,7 @@
     & .duk-navbar__wrapper--secondary {
       @apply hidden;
       @screen lg {
-        @apply block;
+        @apply flex;
       }
     }
   }
