@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.4](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/navbar@1.9.3...@dusk-network/navbar@1.9.4) (2021-03-08)
+
+
+### Bug Fixes
+
+* **navbar:** 🐛 fixed issue where navbar is always expanded in mobile ([7769f86](https://github.com/dusk-network/dusk-ui-kit/commit/7769f866becfaa73d3abdfa2233efeaaaf019d82))
+
+
+
+
+
 ## [1.9.3](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/navbar@1.9.2...@dusk-network/navbar@1.9.3) (2021-02-24)
 
 **Note:** Version bump only for package @dusk-network/navbar
