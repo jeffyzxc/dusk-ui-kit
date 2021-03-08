@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.5](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/navbar@1.9.4...@dusk-network/navbar@1.9.5) (2021-03-08)
+
+
+### Bug Fixes
+
+* **navbar:** 🐛 fixed the transitions when hovering elements in the navbar ([349bde3](https://github.com/dusk-network/dusk-ui-kit/commit/349bde3135b997b622c7e0a1ce4d81df60487ffa))
+
+
+
+
+
 ## [1.9.4](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/navbar@1.9.3...@dusk-network/navbar@1.9.4) (2021-03-08)
 
 
