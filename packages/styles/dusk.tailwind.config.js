@@ -1,20 +1,6 @@
 const plugin = require("tailwindcss/plugin");
-// const { tailwindExtractor } = require("tailwindcss/lib/lib/purgeUnusedStyles");
-
 module.exports = {
-  // purge: {
-  //   content: ["./src/**/*.html", "./src/**/*.svelte"],
-  //   options: {
-  //     defaultExtractor: (content) => [
-  //       ...tailwindExtractor(content),
-  //       ...[...content.matchAll(/(?:class:)*([\w\d-/:%.]+)/gm)].map(
-  //         // eslint-disable-next-line
-  //         ([_match, group, ..._rest]) => group,
-  //       ),
-  //     ],
-  //     keyframes: true,
-  //   },
-  // },
+  purge: ["./src/**/*.html", "./src/**/*.svelte"],
   darkMode: "class",
   theme: {
     boxShadow: {

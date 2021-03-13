@@ -1,34 +1,19 @@
 const postcss = require("rollup-plugin-postcss");
 const path = require("path");
-const postcssProcessor = ({
-  postcss = [],
-  whitelist = ["html", "body"],
-  whitelistPatterns = [/ripple/],
-  purge = false,
-}) => {
+const postcssProcessor = ({ postcss = [], purge = false }) => {
   const tailwindConfig = require("./dusk.tailwind.config.js");
   return [
     require("postcss-import")(),
     require("postcss-url")(),
     require("postcss-input-range")(),
     require("autoprefixer")(),
-    require("tailwindcss")(tailwindConfig),
     require("postcss-nested-ancestors")(),
     require("postcss-nested")(),
+    require("tailwindcss")(tailwindConfig),
     ...postcss,
     purge &&
       require("cssnano")({
         preset: "default",
-      }),
-    purge &&
-      require("@fullhuman/postcss-purgecss")({
-        content: ["./**/*.svelte"],
-        defaultExtractor: (content) =>
-          [...content.matchAll(/(?:class:)*([\w\d-/:%.]+)/gm)].map(
-            ([_match, group, ..._rest]) => group, //eslint-disable-line
-          ),
-        whitelist: whitelist.filter(Boolean),
-        whitelistPatterns: whitelistPatterns.filter(Boolean),
       }),
   ].filter(Boolean);
 };
