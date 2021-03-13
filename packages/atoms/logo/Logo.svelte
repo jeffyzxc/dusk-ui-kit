@@ -59,6 +59,7 @@
 
 <svelte:component
   this="{wrapper}"
+  href="{href}"
   use="{[forwardEvents, ...use]}"
   class="duk-logo {className}
   {getClassNames(variant, context)}"
