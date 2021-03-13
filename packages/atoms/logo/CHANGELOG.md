@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.4](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/logo@1.7.3...@dusk-network/logo@1.7.4) (2021-03-13)
+
+
+### Bug Fixes
+
+* **logo:** 🐛 restored href attrib for linking the logo ([afd5c6b](https://github.com/dusk-network/dusk-ui-kit/commit/afd5c6b99bc606fa0ce56ffe480992fb4560b6bb))
+
+
+
+
+
 ## [1.7.3](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/logo@1.7.2...@dusk-network/logo@1.7.3) (2021-02-24)
 
 **Note:** Version bump only for package @dusk-network/logo

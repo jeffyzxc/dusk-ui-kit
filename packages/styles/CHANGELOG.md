@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.2](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/styles@1.9.1...@dusk-network/styles@1.9.2) (2021-03-13)
+
+
+### Bug Fixes
+
+* **purgecss:** 🐛 added purge config to rollup plugin ([2db8214](https://github.com/dusk-network/dusk-ui-kit/commit/2db8214fe806ffadaac625ad9051ac4bb3dab1f7))
+
+
+
+
+
 ## [1.9.1](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/styles@1.9.0...@dusk-network/styles@1.9.1) (2021-02-19)
 
 

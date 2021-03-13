@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.3](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/card@1.8.2...@dusk-network/card@1.8.3) (2021-03-13)
+
+**Note:** Version bump only for package @dusk-network/card
+
+
+
+
+
 ## [1.8.2](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/card@1.8.1...@dusk-network/card@1.8.2) (2021-03-08)
 
 **Note:** Version bump only for package @dusk-network/card
