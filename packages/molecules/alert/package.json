@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/alert",
-  "version": "1.7.5",
+  "version": "1.7.6",
   "description": "Dusk UI Kit - Alert",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -15,7 +15,7 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/card": "^1.8.1",
+    "@dusk-network/card": "^1.8.2",
     "@dusk-network/elements": "^1.7.3",
     "@dusk-network/helpers": "^1.8.3",
     "@dusk-network/icon": "^1.7.3"
