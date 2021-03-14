@@ -39,6 +39,7 @@ export default {
   MINUS_CIRCLE_OUTLINE: "minus-circle-outline",
   PLUS_CIRCLE_OUTLINE: "plus-circle-outline",
   NOTIFICATION: "notification",
+  NOTEBOOK_OUTLINE: "notebook-outline",
   REFRESH: "refresh",
   SHARE_VARIANT: "share-variant",
   STORE_OUTLINE: "store-outline",

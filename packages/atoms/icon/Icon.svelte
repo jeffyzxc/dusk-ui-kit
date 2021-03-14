@@ -50,6 +50,7 @@
   import MenuBurger from "./icons/MenuBurger.svelte";
   import MenuBurgerClose from "./icons/MenuBurgerClose.svelte";
   import Notification from "./icons/Notification.svelte";
+  import NoteBookOutline from "./icons/NotebookOutline.svelte";
   import MinusCircleOutline from "./icons/MinusCircleOutline.svelte";
   import PlusCircleOutline from "./icons/PlusCircleOutline.svelte";
   import Refresh from "./icons/Refresh.svelte";
@@ -265,6 +266,9 @@
         break;
       case icons.MINUS_CIRCLE_OUTLINE:
         selectedIcon = MinusCircleOutline;
+        break;
+      case icons.NOTEBOOK_OUTLINE:
+        selectedIcon = NoteBookOutline;
         break;
       case icons.PLUS_CIRCLE_OUTLINE:
         selectedIcon = PlusCircleOutline;
