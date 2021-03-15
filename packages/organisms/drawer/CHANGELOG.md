@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.4](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/drawer@1.7.3...@dusk-network/drawer@1.7.4) (2021-03-15)
+
+**Note:** Version bump only for package @dusk-network/drawer
+
+
+
+
+
 ## [1.7.3](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/drawer@1.7.2...@dusk-network/drawer@1.7.3) (2021-02-24)
 
 **Note:** Version bump only for package @dusk-network/drawer

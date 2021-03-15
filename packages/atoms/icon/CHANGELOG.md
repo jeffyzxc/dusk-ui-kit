@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/icon@1.7.3...@dusk-network/icon@1.8.0) (2021-03-15)
+
+
+### Features
+
+* **icon:** ✨ added a notebook icon ([ff30d5e](https://github.com/dusk-network/dusk-ui-kit/commit/ff30d5e5fdf3c9b6594c7ace5842c304e5d3fa6b))
+
+
+
+
+
 ## [1.7.3](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/icon@1.7.2...@dusk-network/icon@1.7.3) (2021-02-24)
 
 **Note:** Version bump only for package @dusk-network/icon
