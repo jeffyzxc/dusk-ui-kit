@@ -12,7 +12,9 @@
   <List>
     {#each links as { title, url, icon }}
       <Item class="duk-navbar__links-menu__item" href="{url}">
-        <Icon name="{icon}" />
+        {#if icon}
+          <Icon name="{icon}" />
+        {/if}
         {title}
       </Item>
     {/each}
