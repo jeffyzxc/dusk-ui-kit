@@ -9,11 +9,17 @@
     variants,
   } from "@dusk-network/helpers";
   import Icon from "@dusk-network/icon";
+  import Logo from "@dusk-network/logo";
+  import AppsMenu from "./menu/AppsMenu.svelte";
+  import LinksMenu from "./menu/LinksMenu.svelte";
   import "./styles.css";
   const forwardEvents = forwardEventsBuilder(current_component);
 
   export let use = [];
-  export let title = null;
+  export let title;
+  export let apps;
+  export let links;
+  export let appName;
 
   let className = "";
   export { className as class };
@@ -80,20 +86,34 @@
   use:forwardEvents
   class="duk-navbar {className} duk-navbar--hidden
   {getClassNames(variant)}"
-  {...exclude($$props, ['use', 'class', 'variant', 'title'])}>
+  {...exclude($$props, ['use', 'class', 'variant', 'title', 'apps', 'links', 'appName'])}>
   <div class="duk-navbar__wrapper duk-navbar__wrapper--primary">
     <div class="duk-navbar__brand">
-      <slot name="logo" />
+      {#if $$slots.logo}
+        <slot name="logo" />
+      {:else}
+        <Logo class="duk-navbar__logo" href="https://dusk.network" />
+      {/if}
       {#if title}
         <h1 class="duk-navbar__brand__heading">{title}</h1>
       {/if}
       <div class="duk-navbar__navigation duk-navbar__navigation--primary">
-        <slot name="networks" />
-        <slot name="apps" />
+        {#if $$slots.networks}
+          <slot name="networks" />
+        {/if}
+        {#if $$slots.apps}
+          <slot name="apps" />
+        {:else}
+          <AppsMenu apps="{apps}" appName="{appName}" />
+        {/if}
       </div>
     </div>
     <div class="duk-navbar__navigation duk-navbar__navigation--tertiary">
-      <slot name="links" />
+      {#if $$slots.links}
+        <slot name="links" />
+      {:else}
+        <LinksMenu links="{links}" />
+      {/if}
     </div>
     <div id="{id}-content" class="duk-navbar__collapse">
       <button

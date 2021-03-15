@@ -27,7 +27,7 @@
   &__brand {
     @apply flex flex-col items-start flex-grow;
 
-    & [slot="logo"] {
+    & [slot="logo"], .duk-navbar__logo {
       @apply inline-flex ml-4 my-5;
 
       @screen lg {
@@ -59,7 +59,7 @@
     top: 1rem;
 
     @screen lg {
-      @apply hidden;
+      @apply hidden ;
     }
 
     &__button {
@@ -68,7 +68,19 @@
   }
 
   &__logo {
-    @apply inline-block self-center;
+    @apply inline-block;
+
+    @screen lg {
+      @apply self-center;
+    }
+  }
+
+  &__links-menu {
+    &__item {
+      & > .duk-list__item__wrapper {
+        @apply flex items-center;
+      }
+    }
   }
 
   &__navigation {
@@ -128,7 +140,7 @@
           @apply w-full text-left;
 
           &:is(a):not(.duk-list__item__wrapper--active) {
-            @apply opacity-50 transition-all duration-700;
+            @apply opacity-80 transition-all duration-700;
           }
 
           @screen lg {
