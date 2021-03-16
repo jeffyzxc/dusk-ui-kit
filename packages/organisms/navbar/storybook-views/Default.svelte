@@ -5,6 +5,8 @@
   import Logo from "@dusk-network/logo";
   export let variant;
   export let title;
+
+  let url = "https://github.com/dusk-network";
 </script>
 
 <Navbar variant="{variant}" title="{title}" class="absolute top-0 left-0" id="sb-example-nav">
@@ -30,8 +32,10 @@
   <div slot="links">
     <Menu orientation="horizontal" name="Developer Links">
       <List>
-        <Item href="javascript:;">Github</Item>
-        <Item href="javascript:;">Wiki</Item>
+        <Item href="{url}" target="{url.lastIndexOf('dusk.network') === -1 && '_blank'}">
+          Github
+        </Item>
+        <Item href="https://docs.dusk.network">Docs</Item>
       </List>
     </Menu>
   </div>

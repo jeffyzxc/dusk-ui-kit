@@ -1,5 +1,4 @@
 const plugin = require("tailwindcss/plugin");
-console.log("called debugging yo");
 module.exports = {
   purge: {
     // enabled: true,

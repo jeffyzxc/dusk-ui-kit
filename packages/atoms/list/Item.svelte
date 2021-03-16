@@ -8,6 +8,7 @@
   let className = "";
   export { className as class };
   export let href = null;
+  export let target = "_self";
   export let active = null;
   export let wrapper = href == null ? Span : A;
   const ripple = createRipple();
@@ -17,12 +18,13 @@
 <svelte:component
   this="{Li}"
   class="duk-list__item {className}"
-  {...exclude($$props, ['use', 'class', 'href', 'active'])}>
+  {...exclude($$props, ['use', 'class', 'href', 'active', 'target'])}>
   <slot name="wrapper">
     <svelte:component
       this="{wrapper}"
       use="{[forwardEvents, ...use]}"
       href="{href}"
+      target="{target}"
       class="duk-list__item__wrapper {active ? 'duk-list__item__wrapper--active' : ''}">
       <slot />
     </svelte:component>

@@ -11,7 +11,10 @@
 <Menu orientation="vertical" class="duk-navbar__links-menu {className}">
   <List>
     {#each links as { title, url, icon }}
-      <Item class="duk-navbar__links-menu__item" href="{url}">
+      <Item
+        class="duk-navbar__links-menu__item"
+        href="{url}"
+        target="{url.lastIndexOf('dusk.network') === -1 && '_blank'}">
         {#if icon}
           <Icon name="{icon}" />
         {/if}
