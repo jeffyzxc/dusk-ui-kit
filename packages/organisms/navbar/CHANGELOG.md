@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/navbar@1.9.6...@dusk-network/navbar@1.10.0) (2021-03-15)
+
+
+### Features
+
+* **navbar:** ✨ removed slot-first approach allowing for simple api with parameter ([523daf6](https://github.com/dusk-network/dusk-ui-kit/commit/523daf65620257c78ca856191a85cefbb6b9f20d))
+
+
+
+
+
 ## [1.9.6](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/navbar@1.9.5...@dusk-network/navbar@1.9.6) (2021-03-13)
 
 **Note:** Version bump only for package @dusk-network/navbar
