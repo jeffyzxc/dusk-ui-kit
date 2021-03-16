@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/footer@1.7.4...@dusk-network/footer@1.8.0) (2021-03-16)
+
+
+### Features
+
+* **styles:** ✨ added container configuration and applied margins to nav and footer ([d9f407c](https://github.com/dusk-network/dusk-ui-kit/commit/d9f407cdb931101961f436681c426fd138434dd0))
+
+
+
+
+
 ## [1.7.4](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/footer@1.7.3...@dusk-network/footer@1.7.4) (2021-03-15)
 
 **Note:** Version bump only for package @dusk-network/footer

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/navbar@1.10.0...@dusk-network/navbar@1.11.0) (2021-03-16)
+
+
+### Bug Fixes
+
+* **navbar:** 🐛 hide icon unless one is provided ([072f4f6](https://github.com/dusk-network/dusk-ui-kit/commit/072f4f6fac178b0629df24c3b330cd2bc9e6efe0))
+
+
+### Features
+
+* **styles:** ✨ added container configuration and applied margins to nav and footer ([d9f407c](https://github.com/dusk-network/dusk-ui-kit/commit/d9f407cdb931101961f436681c426fd138434dd0))
+
+
+
+
+
 # [1.10.0](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/navbar@1.9.6...@dusk-network/navbar@1.10.0) (2021-03-15)
 
 

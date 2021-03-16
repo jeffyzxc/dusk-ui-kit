@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.6](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/table@1.7.5...@dusk-network/table@1.7.6) (2021-03-16)
+
+**Note:** Version bump only for package @dusk-network/table
+
+
+
+
+
 ## [1.7.5](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/table@1.7.4...@dusk-network/table@1.7.5) (2021-03-15)
 
 **Note:** Version bump only for package @dusk-network/table
