@@ -4,8 +4,7 @@
 @import "tailwindcss/utilities";
 
 body {
-  @apply text-gray-900 dark:text-red-100 bg-gray-100 dark:bg-gray-900 font-sans;
-  @apply leading-normal tracking-normal text-base font-normal break-words;
+  @apply text-gray-900 bg-gray-100 font-sans leading-normal tracking-normal text-base font-normal break-words;
 }
 
 main {
@@ -14,4 +13,28 @@ main {
 
 #sapper {
   @apply flex flex-col min-h-screen;
+}
+
+.markdown a {
+  @apply text-indigo-500 break-all;
+}
+
+.markdown p {
+  @apply mb-6;
+}
+
+.markdown code {
+  @apply text-white bg-gray-900 p-2 break-all rounded;
+}
+
+.markdown ul {
+  @apply list-disc pl-16 mb-6;
+}
+
+.markdown ol {
+  @apply list-decimal pl-16 mb-6;
+}
+
+.markdown img {
+  @apply w-full max-w-md mx-auto mb-6;
 }

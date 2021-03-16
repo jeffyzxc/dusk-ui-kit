@@ -1,5 +1,21 @@
 .duk-navbar {
-  @apply font-light flex flex-col w-full;
+  @apply font-light flex flex-col w-full mb-5;
+
+  @screen sm {
+    @apply mb-12;
+  }
+
+  @screen lg {
+    @apply mb-32;
+  }
+
+  @screen xl {
+    @apply mb-40;
+  }
+
+  @screen 2xl {
+    @apply mb-48;
+  }
 
   &__wrapper {
     @apply flex-none flex w-full justify-between items-start;
@@ -27,7 +43,8 @@
   &__brand {
     @apply flex flex-col items-start flex-grow;
 
-    & [slot="logo"], .duk-navbar__logo {
+    & [slot="logo"],
+    .duk-navbar__logo {
       @apply inline-flex ml-4 my-5;
 
       @screen lg {
@@ -59,7 +76,7 @@
     top: 1rem;
 
     @screen lg {
-      @apply hidden ;
+      @apply hidden;
     }
 
     &__button {

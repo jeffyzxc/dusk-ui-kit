@@ -1,6 +1,13 @@
 const plugin = require("tailwindcss/plugin");
+console.log("called debugging yo");
 module.exports = {
-  purge: ["./src/**/*.html", "./src/**/*.svelte"],
+  purge: {
+    // enabled: true,
+    content: ["./src/**/*.html", "./src/**/*.svelte"],
+    options: {
+      safelist: ["body", "main", "#sapper"],
+    },
+  },
   darkMode: "class",
   theme: {
     boxShadow: {
@@ -128,6 +135,16 @@ module.exports = {
         700: "#A18B1B",
         800: "#766514",
         900: "#4A400D",
+      },
+    },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
       },
     },
     fontFamily: {

@@ -1,5 +1,21 @@
 .duk-footer {
-  @apply w-screen mt-40 py-20;
+  @apply w-screen mt-5 py-20;
+
+  @screen sm {
+    @apply mt-12;
+  }
+
+  @screen lg {
+    @apply mt-32;
+  }
+
+  @screen xl {
+    @apply mt-40;
+  }
+
+  @screen 2xl {
+    @apply mt-48;
+  }
 
   &__logo {
     @apply p-0 transform duration-200 ease-in-out transition-all flex items-center justify-center;
