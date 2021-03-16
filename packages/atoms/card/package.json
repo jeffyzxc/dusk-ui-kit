@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/card",
-  "version": "1.8.4",
+  "version": "1.8.5",
   "description": "Dusk UI Kit - Card",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -15,8 +15,8 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/elements": "^1.7.4",
-    "@dusk-network/helpers": "^1.9.0"
+    "@dusk-network/elements": "^1.7.5",
+    "@dusk-network/helpers": "^1.9.1"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"
