@@ -1,28 +1,27 @@
 {
-  "name": "@dusk-network/rich-text",
+  "name": "@dusk-network/carousel",
   "version": "0.0.0-development",
-  "description": "Dusk UI Kit - Rich Text (Markdown)",
-  "keywords": [
-    "markdown"
-  ],
+  "description": "Dusk UI Kit - Carousel",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
-    "directory": "packages/atoms/rich-text"
+    "directory": "packages/molecules/carousel"
   },
   "author": "Kieran Hall <kieran@dusk-network.network>",
   "scripts": {
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/elements": "^1.7.5",
-    "@dusk-network/helpers": "^1.9.1",
-    "@dusk-network/icon": "^1.8.1"
+    "@beyonk/svelte-carousel": "^2.8.0",
+    "@dusk-network/elements": "^1.7.6",
+    "@dusk-network/helpers": "^1.9.2",
+    "@dusk-network/icon": "^1.8.2"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"
-  }
+  },
+  "gitHead": "a20d3aac7752bf0280c649480c950ff8219db117"
 }
