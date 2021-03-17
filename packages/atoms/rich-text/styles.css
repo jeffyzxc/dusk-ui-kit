@@ -1,0 +1,29 @@
+.rich-text {
+  & a {
+    @apply text-indigo-500 break-all;
+
+    &:hover {
+      @apply underline;
+    }
+  }
+
+  & p {
+    @apply mb-6;
+  }
+
+  & code {
+    @apply text-white bg-gray-900 p-2 break-all rounded;
+  }
+
+  & ul {
+    @apply list-disc pl-16 mb-6;
+  }
+
+  & ol {
+    @apply list-decimal pl-16 mb-6;
+  }
+
+  & img {
+    @apply w-full max-w-md mx-auto mb-6;
+  }
+}
