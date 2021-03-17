@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/button",
-  "version": "1.8.5",
+  "version": "1.8.6",
   "description": "Dusk UI Kit - Button",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -15,9 +15,9 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/elements": "^1.7.5",
-    "@dusk-network/helpers": "^1.9.1",
-    "@dusk-network/icon": "^1.8.1"
+    "@dusk-network/elements": "^1.7.6",
+    "@dusk-network/helpers": "^1.9.2",
+    "@dusk-network/icon": "^1.8.2"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"

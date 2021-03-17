@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/styles@1.10.0...@dusk-network/styles@1.11.0) (2021-03-17)
+
+
+### Features
+
+* **navbar:** ✨ added detection of external links in the navbar links menu ([fd0e8a3](https://github.com/dusk-network/dusk-ui-kit/commit/fd0e8a36aaa4b122e35a4d8a16fe38697db30574))
+
+
+
+
+
 # [1.10.0](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/styles@1.9.2...@dusk-network/styles@1.10.0) (2021-03-16)
 
 
