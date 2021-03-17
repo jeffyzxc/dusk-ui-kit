@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.1](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/styles@1.11.0...@dusk-network/styles@1.11.1) (2021-03-17)
+
+**Note:** Version bump only for package @dusk-network/styles
+
+
+
+
+
 # [1.11.0](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/styles@1.10.0...@dusk-network/styles@1.11.0) (2021-03-17)
 
 
