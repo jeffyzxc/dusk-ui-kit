@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.0.0-development.1](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/carousel@0.0.0-development.0...@dusk-network/carousel@0.0.0-development.1) (2021-03-17)
+
+
+### Bug Fixes
+
+* **carousel:** properly paramerterized carousel and added sb knobs ([8decaf0](https://github.com/dusk-network/dusk-ui-kit/commit/8decaf041ba88ed8d6d8d3880caaace23cdb33fc))
+
+
+
+
+
 # 0.0.0-development.0 (2021-03-17)
 
 
