@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.7](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/checkbox@1.7.6...@dusk-network/checkbox@1.7.7) (2021-03-18)
+
+**Note:** Version bump only for package @dusk-network/checkbox
+
+
+
+
+
 ## [1.7.6](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/checkbox@1.7.5...@dusk-network/checkbox@1.7.6) (2021-03-17)
 
 **Note:** Version bump only for package @dusk-network/checkbox

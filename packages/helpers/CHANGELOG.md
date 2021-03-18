@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/helpers@1.9.2...@dusk-network/helpers@1.10.0) (2021-03-18)
+
+
+### Features
+
+* **icons:** added bank transfer and credit card icons ([dd93a1d](https://github.com/dusk-network/dusk-ui-kit/commit/dd93a1dea48a2dfb989ed6ee2fa15e568440edd2))
+
+
+
+
+
 ## [1.9.2](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/helpers@1.9.1...@dusk-network/helpers@1.9.2) (2021-03-17)
 
 **Note:** Version bump only for package @dusk-network/helpers
