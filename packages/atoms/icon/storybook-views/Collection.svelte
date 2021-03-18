@@ -317,4 +317,16 @@
     title="notebook-outline"
     variant="{variant}"
     size="{size}" />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="bank-transfer"
+    title="bank-transfer"
+    variant="{variant}"
+    size="{size}" />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="credit-card"
+    title="credit-card"
+    variant="{variant}"
+    size="{size}" />
 </div>

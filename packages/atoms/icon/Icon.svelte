@@ -14,6 +14,7 @@
 
   import ArrowLeftCircle from "./icons/ArrowLeftCircle.svelte";
   import ArrowRightCircle from "./icons/ArrowRightCircle.svelte";
+  import BankTransfer from "./icons/BankTransfer.svelte";
   import Brightness4 from "./icons/Brightness4.svelte";
   import Decimal from "./icons/Decimal.svelte";
   import AlertOutline from "./icons/AlertOutline.svelte";
@@ -28,6 +29,7 @@
   import Contract from "./icons/Contract.svelte";
   import Contacts from "./icons/Contacts.svelte";
   import CloseCircleOutline from "./icons/CloseCircleOutline.svelte";
+  import CreditCard from "./icons/CreditCard.svelte";
   import CubeOutline from "./icons/CubeOutline.svelte";
   import DuskTicker from "./icons/DuskTicker.svelte";
   import Earth from "./icons/Earth.svelte";
@@ -156,6 +158,9 @@
       case icons.ALERT_OUTLINE:
         selectedIcon = AlertOutline;
         break;
+      case icons.BANK_TRANSFER:
+        selectedIcon = BankTransfer;
+        break;
       case icons.BRIGHTNESS_4:
         selectedIcon = Brightness4;
         break;
@@ -197,6 +202,9 @@
         break;
       case icons.COG_OUTLINE:
         selectedIcon = CogOutline;
+        break;
+      case icons.CREDIT_CARD:
+        selectedIcon = CreditCard;
         break;
       case icons.CUBE_OUTLINE:
         selectedIcon = CubeOutline;
