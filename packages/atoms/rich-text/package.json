@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/rich-text",
-  "version": "0.0.0-development.2",
+  "version": "0.0.0-development.3",
   "description": "Dusk UI Kit - Rich Text (Markdown)",
   "keywords": [
     "markdown"
@@ -18,9 +18,9 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/elements": "^1.7.7",
-    "@dusk-network/helpers": "^1.10.0",
-    "@dusk-network/icon": "^1.9.0"
+    "@dusk-network/elements": "^1.7.8",
+    "@dusk-network/helpers": "^1.11.0",
+    "@dusk-network/icon": "^1.10.0"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"

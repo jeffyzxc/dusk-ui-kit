@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/icon",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "description": "Dusk UI Kit - Icon",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -15,8 +15,8 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/elements": "^1.7.7",
-    "@dusk-network/helpers": "^1.10.0"
+    "@dusk-network/elements": "^1.7.8",
+    "@dusk-network/helpers": "^1.11.0"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"

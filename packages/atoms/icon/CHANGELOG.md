@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/icon@1.9.0...@dusk-network/icon@1.10.0) (2021-03-22)
+
+
+### Features
+
+* **icons:** added missing icons for explorer ui ([5263749](https://github.com/dusk-network/dusk-ui-kit/commit/5263749c93173a7bf9f3bd99c04a49494e4c65dc))
+
+
+
+
+
 # [1.9.0](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/icon@1.8.2...@dusk-network/icon@1.9.0) (2021-03-18)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/switch",
-  "version": "1.7.7",
+  "version": "1.7.8",
   "description": "Dusk UI Kit - Switch",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -15,9 +15,9 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/elements": "^1.7.7",
-    "@dusk-network/helpers": "^1.10.0",
-    "@dusk-network/icon": "^1.9.0"
+    "@dusk-network/elements": "^1.7.8",
+    "@dusk-network/helpers": "^1.11.0",
+    "@dusk-network/icon": "^1.10.0"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"
