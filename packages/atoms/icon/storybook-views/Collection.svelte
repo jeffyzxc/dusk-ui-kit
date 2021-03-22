@@ -329,4 +329,46 @@
     title="credit-card"
     variant="{variant}"
     size="{size}" />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="timer-sand"
+    title="timer-sand"
+    variant="{variant}"
+    size="{size}" />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="pound-box-outline"
+    title="pound-box-outline"
+    variant="{variant}"
+    size="{size}" />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="gas-limit"
+    title="gas-limit"
+    variant="{variant}"
+    size="{size}" />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="gas-station-outline"
+    title="gas-station-outline"
+    variant="{variant}"
+    size="{size}" />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="gas-average"
+    title="gas-average"
+    variant="{variant}"
+    size="{size}" />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="crown-outline"
+    title="crown-outline"
+    variant="{variant}"
+    size="{size}" />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="eye-circle-outline"
+    title="eye-circle-outline"
+    variant="{variant}"
+    size="{size}" />
 </div>

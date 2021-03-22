@@ -30,12 +30,14 @@
   import Contacts from "./icons/Contacts.svelte";
   import CloseCircleOutline from "./icons/CloseCircleOutline.svelte";
   import CreditCard from "./icons/CreditCard.svelte";
+  import CrownOutline from "./icons/CrownOutline.svelte";
   import CubeOutline from "./icons/CubeOutline.svelte";
   import DuskTicker from "./icons/DuskTicker.svelte";
   import Earth from "./icons/Earth.svelte";
   import EmailOutline from "./icons/EmailOutline.svelte";
   import EmailSendOutline from "./icons/EmailSendOutline.svelte";
   import EyeSettingsOutline from "./icons/EyeSettingsOutline.svelte";
+  import EyeCircleOutline from "./icons/EyeCircleOutline.svelte";
   import EyeOutline from "./icons/EyeOutline.svelte";
   import FileExportOutline from "./icons/FileExportOutline.svelte";
   import FolderDownloadOutline from "./icons/FolderDownloadOutline.svelte";
@@ -43,6 +45,9 @@
   import FolderOutline from "./icons/FolderOutline.svelte";
   import FolderOpenOutline from "./icons/FolderOpenOutline.svelte";
   import FolderSearchOutline from "./icons/FolderSearchOutline.svelte";
+  import GasAverage from "./icons/GasAverage.svelte";
+  import GasLimit from "./icons/GasLimit.svelte";
+  import GasStationOutline from "./icons/GasStationOutline.svelte";
   import Github from "./icons/Github.svelte";
   import HelpCircleOutline from "./icons/HelpCircleOutline.svelte";
   import InformationVariant from "./icons/InformationVariant.svelte";
@@ -54,11 +59,13 @@
   import Notification from "./icons/Notification.svelte";
   import NoteBookOutline from "./icons/NotebookOutline.svelte";
   import MinusCircleOutline from "./icons/MinusCircleOutline.svelte";
+  import PoundBoxOutline from "./icons/PoundBoxOutline.svelte";
   import PlusCircleOutline from "./icons/PlusCircleOutline.svelte";
   import Refresh from "./icons/Refresh.svelte";
   import ShareVariant from "./icons/ShareVariant.svelte";
   import StoreOutline from "./icons/StoreOutline.svelte";
   import Telegram from "./icons/Telegram.svelte";
+  import TimerSand from "./icons/TimerSand.svelte";
   import TrashCanOutline from "./icons/TrashCanOutline.svelte";
   import Twitter from "./icons/Twitter.svelte";
   import ViewDashboardOutline from "./icons/ViewDashboardOutline.svelte";
@@ -206,6 +213,9 @@
       case icons.CREDIT_CARD:
         selectedIcon = CreditCard;
         break;
+      case icons.CROWN_OUTLINE:
+        selectedIcon = CrownOutline;
+        break;
       case icons.CUBE_OUTLINE:
         selectedIcon = CubeOutline;
         break;
@@ -227,6 +237,9 @@
       case icons.EYE_SETTINGS_OUTLINE:
         selectedIcon = EyeSettingsOutline;
         break;
+      case icons.EYE_CIRCLE_OUTLINE:
+        selectedIcon = EyeCircleOutline;
+        break;
       case icons.EYE_OUTLINE:
         selectedIcon = EyeOutline;
         break;
@@ -247,6 +260,15 @@
         break;
       case icons.FOLDER_SEARCH_OUTLINE:
         selectedIcon = FolderSearchOutline;
+        break;
+      case icons.GAS_AVERAGE:
+        selectedIcon = GasAverage;
+        break;
+      case icons.GAS_LIMIT:
+        selectedIcon = GasLimit;
+        break;
+      case icons.GAS_STATION_OUTLINE:
+        selectedIcon = GasStationOutline;
         break;
       case icons.GITHUB:
         selectedIcon = Github;
@@ -278,6 +300,9 @@
       case icons.NOTEBOOK_OUTLINE:
         selectedIcon = NoteBookOutline;
         break;
+      case icons.POUND_BOX_OUTLINE:
+        selectedIcon = PoundBoxOutline;
+        break;
       case icons.PLUS_CIRCLE_OUTLINE:
         selectedIcon = PlusCircleOutline;
         break;
@@ -295,6 +320,9 @@
         break;
       case icons.TELEGRAM:
         selectedIcon = Telegram;
+        break;
+      case icons.TIMER_SAND:
+        selectedIcon = TimerSand;
         break;
       case icons.TRASH_CAN_OUTLINE:
         selectedIcon = TrashCanOutline;
