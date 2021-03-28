@@ -8,11 +8,10 @@
   let className = "";
   export { className as class };
   export let type = types.ATOM.TABLE.BASE;
-  export let fixed = false;
   export let striped = true;
   export let variant = variants.ATOM.TABLE.LIGHT;
 
-  function getClassNames(variant, type, fixed, striped) {
+  function getClassNames(variant, type, striped) {
     let classNames = "";
     switch (variant) {
       case variants.ATOM.TABLE.LIGHT:
@@ -43,7 +42,6 @@
       default:
         classNames += "";
     }
-    classNames += fixed ? " duk-table--fixed" : "";
     classNames += striped ? " duk-table--striped" : "";
 
     return classNames;
@@ -53,8 +51,8 @@
 <Table
   use="{[forwardEvents, ...use]}"
   class="duk-table {className}
-  {getClassNames(variant, type, fixed, striped)}"
-  {...exclude($$props, ['use', 'class', 'type', 'variant', 'fixed', 'striped'])}>
+  {getClassNames(variant, type, striped)}"
+  {...exclude($$props, ['use', 'class', 'type', 'variant', 'striped'])}>
   <slot name="head" />
   <slot />
   <slot name="foot" />

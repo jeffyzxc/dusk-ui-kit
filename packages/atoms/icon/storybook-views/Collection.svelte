@@ -2,6 +2,7 @@
   import Icon from "../";
   export let variant;
   export let size;
+  export let tooltip;
 </script>
 
 <div class="grid grid-cols-5 gap-4">
@@ -10,24 +11,28 @@
     name="wallet"
     title="wallet"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}" />
   <Icon
     class="h-32 w-32 flex flex-wrap content-center justify-center"
     name="wallet-plus"
     title="wallet-plus"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}" />
   <Icon
     class="h-32 w-32 flex flex-wrap content-center justify-center"
     name="arrow-left-circle"
     title="arrow-left-circle"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}" />
   <Icon
     class="h-32 w-32 flex flex-wrap content-center justify-center"
     name="arrow-right-circle"
     title="arrow-right-circle"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}" />
   <Icon
     class="h-32 w-32 flex flex-wrap content-center justify-center"
@@ -40,30 +45,35 @@
     name="folder-open-outline"
     title="folder-open-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}" />
   <Icon
     class="h-32 w-32 flex flex-wrap content-center justify-center"
     name="content-copy"
     title="content-copy"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}" />
   <Icon
     class="h-32 w-32 flex flex-wrap content-center justify-center"
     name="card-search-outline"
     title="card-search-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}" />
   <Icon
     class="h-32 w-32 flex flex-wrap content-center justify-center"
     name="folder-search-outline"
     title="folder-search-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}" />
   <Icon
     class="h-32 w-32 flex flex-wrap content-center justify-center"
     name="email-outline"
     title="email-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}" />
   <Icon
     class="h-32 w-32 flex flex-wrap content-center justify-center"

@@ -1,8 +1,46 @@
 .duk-table {
-  @apply table-auto border-collapse shadow-marketing leading-7;
+  @apply w-full flex flex-row rounded overflow-hidden shadow-marketing leading-7;
 
-  &--fixed {
-    @apply table-fixed;
+  @screen lg {
+    @apply table;
+
+    & thead {
+      & tr {
+        /* @apply rounded-l;
+
+        @screen lg {
+          @apply rounded-none;
+        } */
+
+        &:not(:first-child) {
+          @apply hidden;
+        }
+      }
+    }
+  }
+
+  & tr {
+    @apply flex flex-col mb-2;
+
+    @screen lg {
+      @apply table-row mb-0;
+    }
+  }
+
+  & tbody {
+    @apply flex-1;
+
+    @screen lg {
+      @apply flex-none;
+    }
+
+    /* & tr {
+      @apply rounded-r;
+
+      @screen lg {
+        @apply rounded-none;
+      }
+    } */
   }
 
   &--compact {

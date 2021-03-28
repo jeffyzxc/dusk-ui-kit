@@ -1,4 +1,4 @@
-import { withKnobs, select } from "@storybook/addon-knobs";
+import { withKnobs, select, text } from "@storybook/addon-knobs";
 import { variants, sizes } from "@dusk-network/helpers";
 import CollectionView from "./storybook-views/Collection.svelte";
 import readme from "./readme.stories.md";
@@ -17,5 +17,6 @@ export const Collection = () => ({
   props: {
     variant: select("Variant", variants.ATOM.ICON, variants.ATOM.ICON.DARK),
     size: select("Size", sizes.ATOM.ICON, sizes.ATOM.ICON.BASE),
+    tooltip: text("Tooltip", "I am a tooltip"),
   },
 });

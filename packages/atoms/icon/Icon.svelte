@@ -87,6 +87,7 @@
   export let wrapper = href == null ? Div : A;
   export let variant = null;
   export let disabled = false;
+  export let tooltip = false;
 
   let context = getContext("DUK:icon:context");
 
@@ -356,6 +357,7 @@
   class="duk-icon {className}
   {disabled}
   {getClassNames(variant, size, context)}"
+  data-tooltip="{tooltip}"
   {...exclude($$props, ['use', 'class', 'variant', 'name', 'size'])}>
   <svelte:component this="{getSelectedIcon(name)}" viewbox="{viewbox}" />
 </svelte:component>
