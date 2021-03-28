@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.13](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/alert@1.7.12...@dusk-network/alert@1.7.13) (2021-03-28)
+
+**Note:** Version bump only for package @dusk-network/alert
+
+
+
+
+
 ## [1.7.12](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/alert@1.7.11...@dusk-network/alert@1.7.12) (2021-03-22)
 
 **Note:** Version bump only for package @dusk-network/alert

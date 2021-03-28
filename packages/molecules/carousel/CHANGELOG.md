@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.0.0-development.4](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/carousel@0.0.0-development.3...@dusk-network/carousel@0.0.0-development.4) (2021-03-28)
+
+**Note:** Version bump only for package @dusk-network/carousel
+
+
+
+
+
 # [0.0.0-development.3](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/carousel@0.0.0-development.2...@dusk-network/carousel@0.0.0-development.3) (2021-03-22)
 
 **Note:** Version bump only for package @dusk-network/carousel

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/table@1.7.9...@dusk-network/table@1.8.0) (2021-03-28)
+
+
+### Features
+
+* **table:** added responsive tables ([01bfbb6](https://github.com/dusk-network/dusk-ui-kit/commit/01bfbb6e88faa3ec30b9a330b42e3c2e72d4f8d4))
+
+
+
+
+
 ## [1.7.9](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/table@1.7.8...@dusk-network/table@1.7.9) (2021-03-22)
 
 **Note:** Version bump only for package @dusk-network/table

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.9](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/button@1.8.8...@dusk-network/button@1.8.9) (2021-03-28)
+
+**Note:** Version bump only for package @dusk-network/button
+
+
+
+
+
 ## [1.8.8](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/button@1.8.7...@dusk-network/button@1.8.8) (2021-03-22)
 
 **Note:** Version bump only for package @dusk-network/button
