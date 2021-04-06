@@ -15,11 +15,11 @@ Checkbox is a small interactive box that can be toggled by the user to indicate 
 
 ## Size
 
-Cards assume no specific width to start, so they’ll be 100% wide unless otherwise stated.
+Checkbox is treated as text, which means it's size is the same as the font-size used. Checkbox's placed on the left side of the content unless otherwise is stated. It can be aligned center or right as well.
 
-| Size  | Usage                                                                |
-| ----- | -------------------------------------------------------------------- |
-| 100%  | Wide as the max-width of the element is palced in.                   |
+| Size       | Usage                                                                |
+| -----      | -------------------------------------------------------------------- |
+| font-size  | Same size as the font-size, can be aligned left, center or right.    |
 
 ## Actions
 
@@ -29,9 +29,10 @@ Can toggle between an affermative and negative status.
 
 ```js
 <script>
-  import Checkbox from "@dusk-network/checkbox";
-  export let variant;
+  import Checkbox from "@dusk-network/checkbox"; 
+  import variants from "@dusk-network/helpers";
 </script>
-<Checkbox {variant} name="check_2" id="check_1">Yo! I am a Checkbox</Checkbox>
-<Checkbox {variant} name="check_2" id="check_2">Yo! I am a Checkbox too</Checkbox>
+//<!-- Variants are imported from the helpers dir of dusk-network. -->
+<Checkbox variant="{variants.ATOM.CHECKBOX.BRAND}" name="check_2" id="check_1">Yo! I am a Checkbox</Checkbox>
+<Checkbox variant="{variants.ATOM.CHECKBOX.BRAND}" name="check_2" id="check_2">Yo! I am a Checkbox too</Checkbox>
 ```
