@@ -12,13 +12,21 @@ List of useful icons.
 | Success   | Success buttons are used for a positive action on a page.            |
 | Warning   | Warning buttons are used for a risky action on a page.               |
 | Danger    | Danger buttons are used for a negative action on a page.             |
+| Light     | Color preference depends on the background color.                    |
+| Dark      | Color preference depends on the background color.                    |
+| White     | Color preference depends on the background color.                    |
+| Black     | Color preference depends on the background color.                    |
 
 ## Size
 
 | Size  | Usage                                                                |
-| ----- | -------------------------------------------------------------------- |
-| Large | Primary buttons are used for the principle call to action on a page. |
-| Small | Secondary buttons are used for the secondary actions on a page.      |
+| ----- | ------|
+| sm    | SMALL |
+| base  | BASE  |
+| lg    | LARGE |
+| xl    | XL    |
+| xxl   | XXL   |
+| xxxl  | XXXL  |
 
 ## Actions
 
@@ -29,8 +37,7 @@ No actions using it.
 ```js
 <script>
   import Icon from "@dusk-network/icon";
-  export let variant;
-  export let size;
+  import { varants, sizes } from "@dusk-network/helpers"
   export let tooltip;
 </script>
 
@@ -38,7 +45,7 @@ No actions using it.
     class="h-32 w-32 flex flex-wrap content-center justify-center"
     name="wallet"
     title="wallet"
-    variant="{variant}"
+    variant="{variants.ATOM.ICON.BASE}"
     tooltip="{tooltip}"
-    size="{size}" />
+    size="{sizes.ATOM.ICON.BASE}" />
 ```
