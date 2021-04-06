@@ -10,27 +10,17 @@ Date picker allowes the user to pick a date from a calendar that appears when th
 | Secondary | Secondary buttons are used for the secondary actions on a page.      |
 | Info      | Info buttons are used for a passive action on a page.                |
 | Success   | Success buttons are used for a positive action on a page.            |
-| Warning   | Warning buttons are used for a risky action on a page.               |
-| Danger    | Danger buttons are used for a negative action on a page.             |
-
-## Size
-
-Cards assume no specific width to start, so they’ll be 100% wide unless otherwise stated.
-
-| Size  | Usage                                                                |
-| ----- | -------------------------------------------------------------------- |
-| 100%  | Wide as the max-width of the element is palced in.                   |
 
 ## Actions
 
-By clicking on the Date picker filed a calendar appears and by the date is picked by clicking on it.
+By clicking on the Date picker field a calendar appears and the date is picked by clicking on it.
 
 ## Usage
 
 ```js
 <script>
   import DatePicker from "@dusk-network/date-picker";
-  export let variant;
+  import variants from "@dusk-network/helpers";
   let value;
 
   const options = {
@@ -51,8 +41,9 @@ By clicking on the Date picker filed a calendar appears and by the date is picke
 </script>
 <DatePicker
   class="border border-2"
-  variant="{variant}"
+  variant="{variants.ATOM.DATE_PICKER.LIGHT}"
   options="{options}"
+  placeholder="Choose a date"
   on:change="{handler}"
   bind:value />
 
