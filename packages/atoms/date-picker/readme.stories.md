@@ -20,7 +20,7 @@ By clicking on the Date picker field a calendar appears and the date is picked b
 ```js
 <script>
   import DatePicker from "@dusk-network/date-picker";
-  import variants from "@dusk-network/helpers";
+  import { variants } from "@dusk-network/helpers";
   let value;
 
   const options = {
