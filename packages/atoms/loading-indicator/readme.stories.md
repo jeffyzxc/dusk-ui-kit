@@ -23,5 +23,7 @@ Loading indicator is triggered whenever the action requiers time to process to i
   import { variants } from "@dusk-network/helpers";
 </script>
 
-<LoadingIndicator variant="{variants.ATOM.LOADING_INDICATOR.BRAND}" class="w-48" />
+<div class="p-10 w-6/12 mx-auto">
+  <LoadingIndicator variant="{variants.ATOM.LOADING_INDICATOR.BRAND}" class="w-48" />
+</div>
 ```
