@@ -4,12 +4,10 @@ Date picker allowes the user to pick a date from a calendar that appears when th
 
 ## Variants
 
-| Variant   | Usage                                                                |
-| --------- | -------------------------------------------------------------------- |
-| Primary   | Primary buttons are used for the principle call to action on a page. |
-| Secondary | Secondary buttons are used for the secondary actions on a page.      |
-| Info      | Info buttons are used for a passive action on a page.                |
-| Success   | Success buttons are used for a positive action on a page.            |
+| Variant  | Usage            |
+| -------- | ---------------- |
+| LIGHT    | Light grey color |
+| DARK     | Dark grey color  |
 
 ## Actions
 
@@ -39,13 +37,15 @@ By clicking on the Date picker field a calendar appears and the date is picked b
     console.log(event);
   };
 </script>
-<DatePicker
-  class="border border-2"
-  variant="{variants.ATOM.DATE_PICKER.LIGHT}"
-  options="{options}"
-  placeholder="Choose a date"
-  on:change="{handler}"
-  bind:value />
+<div style="background-color:lightgrey;max-width:400px;margin:0 auto;text-align:center;">
+  <DatePicker
+    class="border border-2"
+    variant="{variants.ATOM.DATE_PICKER.LIGHT}"
+    options="{options}"
+    placeholder="Choose a date"
+    on:change="{handler}"
+    bind:value />
 
-<p>Selected date: {value}</p>
+  <p>Selected date: {value}</p>
+</div>
 ```
