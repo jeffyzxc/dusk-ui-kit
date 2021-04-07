@@ -4,14 +4,18 @@ Checkbox is a small interactive box that can be toggled by the user to indicate 
 
 ## Variants
 
-| Variant   | Usage                                                                |
-| --------- | -------------------------------------------------------------------- |
-| Primary   | Primary buttons are used for the principle call to action on a page. |
-| Secondary | Secondary buttons are used for the secondary actions on a page.      |
-| Info      | Info buttons are used for a passive action on a page.                |
-| Success   | Success buttons are used for a positive action on a page.            |
-| Warning   | Warning buttons are used for a risky action on a page.               |
-| Danger    | Danger buttons are used for a negative action on a page.             |
+| Variant   | Usage            |
+| --------- | ---------------- |
+| BRAND     | Brand's color.   |
+| CTA       | Yellow'ish color.|
+| Info      | Skyblue color.   |
+| Success   | Green color.     |
+| Warning   | Orange color.    |
+| Danger    | Red color.       |
+| LIGHT     | Light grey color.|
+| DARK      | Dark grey color. |
+| WHITE     | White.           |
+| BLACK     | Black.           |
 
 ## Size
 
@@ -33,6 +37,8 @@ Can toggle between an affermative and negative status.
   import { variants } from "@dusk-network/helpers";
 </script>
 //<!-- Variants are imported from the helpers dir of dusk-network. -->
-<Checkbox variant="{variants.ATOM.CHECKBOX.BRAND}" name="check_2" id="check_1">Yo! I am a Checkbox</Checkbox>
-<Checkbox variant="{variants.ATOM.CHECKBOX.BRAND}" name="check_2" id="check_2">Yo! I am a Checkbox too</Checkbox>
+<div style="background-color:lightgrey;max-width:400px;margin:0 auto;text-align:center;">
+  <Checkbox variant="{variants.ATOM.CHECKBOX.BRAND}" name="check_2" id="check_1">Yo! I am a Checkbox</Checkbox>
+  <Checkbox variant="{variants.ATOM.CHECKBOX.BRAND}" name="check_2" id="check_2">Yo! I am a Checkbox too</Checkbox>
+</div>
 ```
