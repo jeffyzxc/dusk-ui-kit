@@ -26,7 +26,7 @@ Logo comes in a variety of colors that should be utilised according to the follo
   export let href;
 </script>
 //variants can be changed by changing 'DARK' to any of the variants options above.
-<div style="background-color:red">
+<div class="p-10 w-6/12 mx-auto">
   <Logo variant="{variants.ATOM.LOGO.DARK}" {href} style="width: 305px" />
 </div>
 ```
