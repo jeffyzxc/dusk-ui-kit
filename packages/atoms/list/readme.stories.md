@@ -17,7 +17,7 @@ Cards are multi-purpose components, used to contain isolated content.
   import List, { Item } from "@dusk-network/list";
   import { types } from "@dusk-network/helpers";
 </script>
-<div style="background-color:lightgrey;max-width:400px;margin:0 auto;text-align:center;">
+<div class="p-10 w-6/12 mx-auto">
   <List type="{types.ATOM.LIST.NONE}">
     <Item>List</Item>
     <Item>Item</Item>
