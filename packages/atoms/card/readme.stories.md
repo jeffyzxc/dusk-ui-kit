@@ -40,7 +40,7 @@ Negative action buttons will be on the left. Positive action buttons should be o
   import { variants, elevations, sizes } from "@dusk-network/helpers";
   export let content;
 </script>
-<div style="background-color:lightgrey;max-width:400px;margin:0 auto;text-align:center;">
+<div class="p-10 w-6/12 mx-auto">
   <Card variant="{variants.ATOM.CARD.BRAND}" elevation="{elevations.ATOM.CARD.NONE}" size="{sizes.ATOM.CARD.BASE}">
     <Content><p>{content}</p></Content>
   </Card>
