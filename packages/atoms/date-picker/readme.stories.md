@@ -37,7 +37,7 @@ By clicking on the Date picker field a calendar appears and the date is picked b
     console.log(event);
   };
 </script>
-<div style="background-color:lightgrey;max-width:400px;margin:0 auto;text-align:center;">
+<div class="p-10 w-6/12 mx-auto">
   <DatePicker
     class="border border-2"
     variant="{variants.ATOM.DATE_PICKER.LIGHT}"
