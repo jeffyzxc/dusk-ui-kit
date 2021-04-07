@@ -30,7 +30,7 @@ Only one radio button in a given group can be selected at the same time.
   import Radio from "@dusk-network/radio";
   import { variants } from "@dusk-network/helpers";
 </script>
-<div style="background-color:lightgrey;max-width:400px;margin:0 auto;text-align:center;">
+<div class="p-10 w-6/12 mx-auto">
   <Radio variant="{variants.ATOM.RADIO.LIGHT}" name="radio" id="radio_1">Yo! I am a Radio</Radio>
   <Radio variant="{variants.ATOM.RADIO.LIGHT}" name="radio" id="radio_2">Yo! I am a Radio too</Radio>
 </div>
