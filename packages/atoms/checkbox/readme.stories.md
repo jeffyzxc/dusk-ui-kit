@@ -37,7 +37,7 @@ Can toggle between an affermative and negative status.
   import { variants } from "@dusk-network/helpers";
 </script>
 //<!-- Variants are imported from the helpers dir of dusk-network. -->
-<div style="background-color:lightgrey;max-width:400px;margin:0 auto;text-align:center;">
+<div class="p-10 w-6/12 mx-auto">
   <Checkbox variant="{variants.ATOM.CHECKBOX.BRAND}" name="check_2" id="check_1">Yo! I am a Checkbox</Checkbox>
   <Checkbox variant="{variants.ATOM.CHECKBOX.BRAND}" name="check_2" id="check_2">Yo! I am a Checkbox too</Checkbox>
 </div>
