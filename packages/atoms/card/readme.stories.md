@@ -19,9 +19,11 @@ Cards come in a variety of flavours that should be utilised according to the fol
 
 Cards assume no specific width to start, so they’ll be 100% wide unless otherwise stated.
 
-| Size  | Usage                                                                |
-| ----- | -------------------------------------------------------------------- |
-| 100%  | Wide as the max-width of the element is palced in.                   |
+| Size   | Usage   |
+| ------ | ------- |
+| SMALL  | Small.  |
+| BASE   | Medium. |
+| LARGE  | Large.  |
 
 ## Actions
 
@@ -38,7 +40,9 @@ Negative action buttons will be on the left. Positive action buttons should be o
   import { variants, elevations, sizes } from "@dusk-network/helpers";
   export let content;
 </script>
-<Card variant="{variants.ATOM.CARD.BRAND}" elevation="{elevations.ATOM.CARD.NONE}" size="{sizes.ATOM.CARD.BASE}">
-  <Content><p>{content}</p></Content>
-</Card>
+<div style="background-color:lightgrey;max-width:400px;margin:0 auto;text-align:center;">
+  <Card variant="{variants.ATOM.CARD.BRAND}" elevation="{elevations.ATOM.CARD.NONE}" size="{sizes.ATOM.CARD.BASE}">
+    <Content><p>{content}</p></Content>
+  </Card>
+</div>
 ```
