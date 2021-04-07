@@ -15,7 +15,7 @@ Can be adjusted as a font-size.
   const richText2 = "**This is a strong text**";
 </script>
 // RichText is using a library 'marked' to style the text.
-<div style="background-color:lightgrey;max-width:400px;margin:0 auto;text-align:center;">
+<div class="p-10 w-6/12 mx-auto bg-gray-100">
   <RichText content="{richText}" />
   <RichText content="{richText2}" />
 </div>
