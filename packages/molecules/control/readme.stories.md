@@ -1,6 +1,6 @@
 # ⚛️ Control
 
-  ??
+  Control makes sure that users input has passed or not the validation process on the text-field.
 
 ## Variants
 
@@ -34,10 +34,10 @@
   import TextField from "@dusk-network/text-field";
   import { variants, states, types } from "@dusk-network/helpers";
   let label = "This is a Text Field";
-  let message = "";
+  let message = "Hi";
   let placeholder="Type here";
 </script>
-
+// the message variable will be connected  to the validation tool used and will display what message the validation process is going throug, valid, invalid input, etc...
 <div class="p-10 w-6/12 mx-auto">
   <Control
     type="{types.MOLECULE.CONTROL.STACKED}"
