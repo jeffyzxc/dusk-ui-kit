@@ -4,26 +4,26 @@ Checkbox is a small interactive box that can be toggled by the user to indicate 
 
 ## Variants
 
-| Variant   | Usage            |
-| --------- | ---------------- |
-| BRAND     | Brand's color.   |
-| CTA       | Yellow'ish color.|
-| Info      | Skyblue color.   |
-| Success   | Green color.     |
-| Warning   | Orange color.    |
-| Danger    | Red color.       |
-| LIGHT     | Light grey color.|
-| DARK      | Dark grey color. |
-| WHITE     | White.           |
-| BLACK     | Black.           |
+| Variant   | Usage                             |
+| --------- | --------------------------------- |
+| BRAND     | Applies a brand styling.          |
+| CTA       | Applies a call to action styling. |
+| Info      | Applies a info styling.           |
+| Success   | Applies a success styling.        |
+| Warning   | Applies a warning styling.        |
+| Danger    | Applies a danger styling.         |
+| LIGHT     | Applies a light styling.          |
+| DARK      | Applies a dark styling.           |
+| WHITE     | Applies a White styling.          |
+| BLACK     | Applies a Black styling.          |
 
 ## Size
 
 Checkbox is treated as text, which means it's size is the same as the font-size used. Checkbox's placed on the left side of the content unless otherwise is stated. It can be aligned center or right as well.
 
-| Size       | Usage                                                                |
-| -----      | -------------------------------------------------------------------- |
-| font-size  | Same size as the font-size, can be aligned left, center or right.    |
+| Size       | Usage                                                                   |
+| -----      | ----------------------------------------------------------------------- |
+| font-size  | Same size as the font-size and can be aligned left, center or right.    |
 
 ## Actions
 
