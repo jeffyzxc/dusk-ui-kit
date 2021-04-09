@@ -1,6 +1,6 @@
 # ⚛️ Table
 
-Cards are multi-purpose components, used to contain isolated content.
+Tables serve several functions. Tables allow for greater control over page layout, allowing creation of more visually interesting pages.
 
 ## Variants
 
@@ -8,8 +8,8 @@ Tables come in a variety of flavours that should be utilised according to the fo
 
 | Variant         | Usage                                                                        |
 | --------------- | ---------------------------------------------------------------------------- |
-| LIGHT           | Colors the table with light grey color.                                      |
-| DARK            | Colors the table with dark grey color.                                       |
+| LIGHT           | Applies a light styling on the table.                                        |
+| DARK            | Applies a dark styling on the table.                                         |
 | LIGHT_HIGHLIGHT | Will highlight the headder of the table to make it dark and the table light. |
 | DARK_HIGHLIGHT  | Will highlight the header of the table to make it light and the table dark.  |
 
