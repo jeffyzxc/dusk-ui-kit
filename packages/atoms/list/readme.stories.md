@@ -1,6 +1,6 @@
 # ⚛️ List
 
-Cards are multi-purpose components, used to contain isolated content.
+Lists are used to group together related pieces of information so they are clearly associated with each other and easy to read.
 
 ## Types
 
