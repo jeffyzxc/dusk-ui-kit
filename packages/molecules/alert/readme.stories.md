@@ -4,24 +4,24 @@ Alert is a type of "pop-up" message to users of a script. An alert could be anyt
 
 ## Variants
 
-| Variant   | Usage            |
-| --------- | ---------------- |
-| BRAND     | Brand's color.   |
-| CTA       | Yellow'ish color.|
-| Info      | Skyblue color.   |
-| Success   | Green color.     |
-| Warning   | Orange color.    |
-| Danger    | Red color.       |
-| LIGHT     | Light grey color.|
-| DARK      | Dark grey color. |
+| Variant   | Usage                             |
+| --------- | --------------------------------- |
+| BRAND     | Applies a brand styling.          |
+| CTA       | Applies a call to action styling. |
+| Info      | Applies a info styling.           |
+| Success   | Applies a success styling.        |
+| Warning   | Applies a warning styling.        |
+| Danger    | Applies a danger styling.         |
+| LIGHT     | Applies a light styling.          |
+| DARK      | Applies a dark styling.           |
 
 ## Sizes
 
-| Size   | Usage   |
-| ------ | ------- |
-| SMALL  | Small.  |
-| BASE   | Medium. |
-| LARGE  | Large.  |
+| Size   | Usage             |
+| ------ | ----------------- |
+| SMALL  | Applies a Small.  |
+| BASE   | Applies a Medium. |
+| LARGE  | Applies a Large.  |
 
 ## Action
 
