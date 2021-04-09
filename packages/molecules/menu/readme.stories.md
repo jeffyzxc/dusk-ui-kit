@@ -6,18 +6,18 @@ Menu is a series of linked items that serve in navigating between the different 
 
 Menu comes in a variety of color options as listed below.
 
-| Variant   | Usage            |
-| --------- | ---------------- |
-| BRAND     | Brand's color.   |
-| CTA       | Yellow'ish color.|
-| Info      | Skyblue color.   |
-| Success   | Green color.     |
-| Warning   | Orange color.    |
-| Danger    | Red color.       |
-| LIGHT     | Light grey color.|
-| DARK      | Dark grey color. |
-| WHITE     | White.           |
-| BLACK     | Black.           |
+| Variant   | Usage                             |
+| --------- | --------------------------------- |
+| BRAND     | Applies a brand styling.          |
+| CTA       | Applies a call to action styling. |
+| Info      | Applies a info styling.           |
+| Success   | Applies a success styling.        |
+| Warning   | Applies a warning styling.        |
+| Danger    | Applies a danger styling.         |
+| LIGHT     | Applies a light styling.          |
+| DARK      | Applies a dark styling.           |
+| WHITE     | Applies a White styling.          |
+| BLACK     | Applies a Black styling.          |
 
 ## Oriantations
 
@@ -25,8 +25,8 @@ Menu can form either horizontally or vertically.
 
 | Oriantation | Usage                   |
 | ----------- | ----------------------- |
-| HORIZONTAL  | Horizontally displayed. |
-| VERTICAL    | Vertically displayed.   |
+| HORIZONTAL  | Displayed Horizontally. |
+| VERTICAL    | Displayed Vertically.   |
 
 ## Usage
 
