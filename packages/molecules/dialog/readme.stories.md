@@ -6,16 +6,16 @@ Dialog is an interactive component, such as a dismissible alert, inspector, or s
 
 Dialog component comes in varaity of colors as below:
 
-| Variant   | Usage            |
-| --------- | ---------------- |
-| BRAND     | Brand's color.   |
-| CTA       | Yellow'ish color.|
-| Info      | Skyblue color.   |
-| Success   | Green color.     |
-| Warning   | Orange color.    |
-| Danger    | Red color.       |
-| LIGHT     | Light grey color.|
-| DARK      | Dark grey color. |
+| Variant   | Usage                             |
+| --------- | --------------------------------- |
+| BRAND     | Applies a brand styling.          |
+| CTA       | Applies a call to action styling. |
+| Info      | Applies a info styling.           |
+| Success   | Applies a success styling.        |
+| Warning   | Applies a warning styling.        |
+| Danger    | Applies a danger styling.         |
+| LIGHT     | Applies a light styling.          |
+| DARK      | Applies a dark styling.           |
 
 ## Action
 
