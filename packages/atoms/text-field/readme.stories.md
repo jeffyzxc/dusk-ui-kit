@@ -4,10 +4,10 @@ A text box, text field or text entry box is a control element of a graphical use
 
 ## Variants
 
-| Variant         | Usage                                        |
-| --------------- | -------------------------------------------- |
-| LIGHT           | Colors the text-field with light grey color. |
-| DARK            | Colors the text-field with dark grey color.  |
+| Variant | Usage                                      |
+| ------- | ------------------------------------------ |
+| LIGHT   | Applies a light styling on the text-field. |
+| DARK    | Applies a dark styling on the text-field.  |
 
 ## Types
 
@@ -20,14 +20,14 @@ A text box, text field or text entry box is a control element of a graphical use
 | NUMBER     | restricts the text field to digits only.                    |
 | TELEPHONE  | restricts the text field to a certain digits formula.       |
 
-## Stats
+## States
 
-| Stats   | Usage  |
-| --------| ------ |
-| BASE    |   -    |
-| SUCCESS |   -    |
-| WARNING |   -    |
-| COLOR   |   -    |
+| Stats   | Usage                                    |
+| --------| ---------------------------------------- |
+| BASE    | Applies a standard styling on the label. |
+| SUCCESS | Applies a success styling on the label.  |
+| WARNING | Applies a warining styling on the label. |
+| DANGER  | Applies a danger styling on the label.   |
 
 ## Action
 
@@ -35,19 +35,14 @@ Text-fields allow users to type in them based on the types above.
 
 ## Usage
 
-<!-- ```js
-<!-- <script>
+```js
+<script>
   import TextField from "@dusk-network/text-field";
   import {variants, states, types} from "@dusk-network/helpers";
-  import { actions } from "@storybook/addon-actions";
-  
-  export let placeholder;
-  export let disabled;
-  export let multiline;
-
-  const events = actions({ onFocus: "focused", onMouseOver: "hovered" });
+  const placeholder="type here";
+  const disabled=false;
 </script>
 <div class="p-10 w-6/12 mx-auto">
-  <TextField {...events} variant="{variants.ATOM.TEXT_FIELD.DARK}" state="{states.ATOM.TEXT_FIELD.SUCCESS}" type="{types.ATOM.TEXT_FIELD.TEXT}" {placeholder} {disabled} {multiline} />
-</div> -->
-``` -->
+  <TextField variant="{variants.ATOM.TEXT_FIELD.DARK}" state="{states.ATOM.TEXT_FIELD.SUCCESS}" type="{types.ATOM.TEXT_FIELD.TEXT}" {placeholder} {disabled} />
+</div>
+```
