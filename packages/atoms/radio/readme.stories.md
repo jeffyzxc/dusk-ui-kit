@@ -6,18 +6,18 @@ Radio's checkbox buttons are generally used in radio groups—collections of rad
 
 Radio buttons come in a variety of flavours that should be utilised according to the following instructions.
 
-| Variant   | Usage            |
-| --------- | ---------------- |
-| BRAND     | Brand's color.   |
-| CTA       | Yellow'ish color.|
-| Info      | Skyblue color.   |
-| Success   | Green color.     |
-| Warning   | Orange color.    |
-| Danger    | Red color.       |
-| LIGHT     | Light grey color.|
-| DARK      | Dark grey color. |
-| WHITE     | White.           |
-| BLACK     | Black.           |
+| Variant   | Usage                             |
+| --------- | --------------------------------- |
+| BRAND     | Applies a brand styling.          |
+| CTA       | Applies a call to action styling. |
+| Info      | Applies a info styling.           |
+| Success   | Applies a success styling.        |
+| Warning   | Applies a warning styling.        |
+| Danger    | Applies a danger styling.         |
+| LIGHT     | Applies a light styling.          |
+| DARK      | Applies a dark styling.           |
+| WHITE     | Applies a White styling.          |
+| BLACK     | Applies a Black styling.          |
 
 ## Actions
 
