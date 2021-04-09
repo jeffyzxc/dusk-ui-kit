@@ -1,6 +1,6 @@
 # ⚛️ Loading indicator
 
-Tell users that the app needs more time to process the last user action.
+Loading-indicator indicates to users that the app needs more time to process the last user action.
 
 
 ## Variant
