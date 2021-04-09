@@ -1,14 +1,14 @@
 # ⚛️ Loading indicator
 
-tell users that the app needs more time to process the last user action.
+Tell users that the app needs more time to process the last user action.
 
 
 ## Variant
 
-| Variant  | Usage          |
-| -------- | -------------- |
-| Brand    | Brand color    |
-| LIGHT    | light version  |
+| Variant  | Usage                    |
+| -------- | ------------------------ |
+| Brand    | Applies a brand styling. |
+| LIGHT    | Applies a light styling. |
 
 
 ## Actions
