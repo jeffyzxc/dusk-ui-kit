@@ -6,16 +6,15 @@ Dusk Network's logo
 
 Logo comes in a variety of colors that should be utilised according to the following instructions.
 
-| Variant | Usage                                                                |
-| ------- | ---------------- |
-| BRAND   | Brand's color    |
-| CTA     | Yellow'ish color |
-| Info    | Skyblue color    |
-| LIGHT   | Light grey color |
-| DARK    | Dark grey color  |
-| WHITE   | White            |
-| BLACK   | Black            |
-
+| Variant   | Usage                             |
+| --------- | --------------------------------- |
+| BRAND     | Applies a brand styling.          |
+| CTA       | Applies a call to action styling. |
+| Info      | Applies a info styling.           |
+| LIGHT     | Applies a light styling.          |
+| DARK      | Applies a dark styling.           |
+| WHITE     | Applies a White styling.          |
+| BLACK     | Applies a Black styling.          |
 
 ## Usage
 
