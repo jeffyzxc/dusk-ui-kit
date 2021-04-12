@@ -1,5 +1,6 @@
 import A from "./A.svelte";
 import Button from "./Button.svelte";
+import CheckboxInput from "./CheckboxInput.svelte";
 import Div from "./Div.svelte";
 import Group from "./Group.svelte";
 import Input from "./Input.svelte";
@@ -20,6 +21,7 @@ import Ul from "./Ul.svelte";
 export {
   A,
   Button,
+  CheckboxInput,
   Div,
   Group,
   Input,

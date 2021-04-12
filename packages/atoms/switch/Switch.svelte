@@ -2,7 +2,7 @@
   import { current_component } from "svelte/internal";
   import { forwardEventsBuilder, exclude, variants, types } from "@dusk-network/helpers";
   import "./styles.css";
-  import { Input, Label } from "@dusk-network/elements";
+  import { CheckboxInput, Label } from "@dusk-network/elements";
 
   let className = "";
   export { className as class };
@@ -66,10 +66,9 @@
   {getClassNames(variant)}"
   {...exclude($$props, ['use', 'class', 'variant', 'id', 'name', 'type'])}>
   <div class="duk-switch__inner">
-    <Input
+    <CheckboxInput
       use="{[forwardEvents, ...use]}"
       class="duk-switch__inner__checkbox sr-only"
-      type="{types.ATOM.CHECKBOX}"
       name="{name}"
       id="{id}"
       bind:value
@@ -79,7 +78,6 @@
     <div class="duk-switch__inner__track"></div>
     <div class="duk-switch__inner__thumb"></div>
   </div>
-  {value}
   <span class="ml-2 cursor-pointer">
     <slot />
   </span>
