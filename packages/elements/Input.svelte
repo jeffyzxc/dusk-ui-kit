@@ -6,8 +6,8 @@
   export let type = "text";
   export let id = "";
   export let placeholder = "";
+  export let value = undefined;
   let className = "";
-  export let checked = false;
   export { className as class };
 
   function getClassNames(type) {
@@ -32,15 +32,41 @@
 
     return classNames;
   }
+
+  const handleInput = (e) => {
+    console.log("value is", e.target.value);
+    if (type.match(/^(number|range)$/)) {
+      console.log("number type needed for", value);
+      value = +e.target.value;
+      // } else if (type.match(/^(radio|checkbox)$/)) {
+      //   console.log("bool type needed for", value);
+      //   value = !Boolean(e.target.value);
+    } else {
+      value = e.target.value;
+    }
+  };
 </script>
 
-<input
-  use:useActions="{use}"
-  use:forwardEvents
-  class="{className}
+{#if type.match(/^(checkbox)$/)}
+  <input
+    use:useActions="{use}"
+    use:forwardEvents
+    class="{className}
   {getClassNames(type)}"
-  type="checkbox"
-  id="{id}"
-  placeholder="{placeholder}"
-  bind:checked
-  {...exclude($$props, ['use', 'class'])} />
+    type="checkbox"
+    id="{id}"
+    placeholder="{placeholder}"
+    bind:checked="{value}"
+    {...exclude($$props, ['use', 'class'])} />
+{:else}
+  <input
+    use:useActions="{use}"
+    use:forwardEvents
+    class="{className}
+  {getClassNames(type)}"
+    type="{type}"
+    id="{id}"
+    placeholder="{placeholder}"
+    on:input="{handleInput}"
+    {...exclude($$props, ['use', 'class'])} />
+{/if}

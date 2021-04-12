@@ -9,7 +9,7 @@
 
   export let id;
   export let name;
-  export let checked = false;
+  export let value = undefined;
   export let variant = variants.ATOM.SWITCH.BRAND;
   export let disabled = false;
   export const use = [];
@@ -72,13 +72,14 @@
       type="{types.ATOM.CHECKBOX}"
       name="{name}"
       id="{id}"
+      bind:value
       disabled="{disabled}"
       {...actionProp}
-      {...defaultProp}
-      bind:checked />
+      {...defaultProp} />
     <div class="duk-switch__inner__track"></div>
     <div class="duk-switch__inner__thumb"></div>
   </div>
+  {value}
   <span class="ml-2 cursor-pointer">
     <slot />
   </span>
