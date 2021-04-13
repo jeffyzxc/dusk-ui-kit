@@ -1,6 +1,7 @@
 import A from "./A.svelte";
 import Button from "./Button.svelte";
-import InputCheckbox from "./CheckboxInput.svelte";
+import InputCheckbox from "./InputCheckbox.svelte";
+import InputRadio from "./InputRadio.svelte";
 import Div from "./Div.svelte";
 import Group from "./Group.svelte";
 import Input from "./Input.svelte";
@@ -22,6 +23,7 @@ export {
   A,
   Button,
   InputCheckbox,
+  InputRadio,
   Div,
   Group,
   Input,
