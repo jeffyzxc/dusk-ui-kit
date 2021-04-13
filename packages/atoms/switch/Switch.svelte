@@ -1,8 +1,8 @@
 <script>
   import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, exclude, variants, types } from "@dusk-network/helpers";
+  import { forwardEventsBuilder, exclude, variants } from "@dusk-network/helpers";
   import "./styles.css";
-  import { CheckboxInput, Label } from "@dusk-network/elements";
+  import { InputCheckbox, Label } from "@dusk-network/elements";
 
   let className = "";
   export { className as class };
@@ -66,7 +66,7 @@
   {getClassNames(variant)}"
   {...exclude($$props, ['use', 'class', 'variant', 'id', 'name', 'type'])}>
   <div class="duk-switch__inner">
-    <CheckboxInput
+    <InputCheckbox
       use="{[forwardEvents, ...use]}"
       class="duk-switch__inner__checkbox sr-only"
       name="{name}"
