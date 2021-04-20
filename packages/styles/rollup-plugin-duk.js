@@ -6,10 +6,10 @@ const postcssProcessor = ({ postcss = [], purge = false }) => {
     require("postcss-import")(),
     require("postcss-url")(),
     require("postcss-input-range")(),
-    require("autoprefixer")(),
     require("postcss-nested-ancestors")(),
     require("postcss-nested")(),
     require("tailwindcss")(tailwindConfig),
+    require("autoprefixer")(),
     ...postcss,
     purge &&
       require("cssnano")({
