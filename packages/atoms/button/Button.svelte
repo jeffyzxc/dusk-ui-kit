@@ -58,12 +58,6 @@
       case variants.ATOM.BUTTON.DANGER:
         classNames += " duk-button--danger";
         break;
-      case variants.ATOM.BUTTON.LIGHT:
-        classNames += " duk-button--light";
-        break;
-      case variants.ATOM.BUTTON.DARK:
-        classNames += " duk-button--dark";
-        break;
       default:
         classNames += "";
     }
@@ -100,6 +94,7 @@
   {getClassNames(variant, size, context, outline)}"
   {...actionProp}
   {...defaultProp}
-  {...exclude($$props, ['use', 'class', 'variant', 'size', 'outline'])}>
+  {...exclude($$props, ["use", "class", "variant", "size", "outline"])}
+>
   <slot />
 </svelte:component>

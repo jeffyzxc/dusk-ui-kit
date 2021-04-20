@@ -1,9 +1,11 @@
+const className = "duk-button__group__item";
+
 export default function GroupItem(node) {
-  node.classList.add("duk-button__group__item");
+  node.classList.add(className);
 
   return {
     destroy() {
-      node.classList.remove("duk-button__group__item");
+      node.classList.remove(className);
     },
   };
 }
