@@ -8,8 +8,8 @@
     contexts,
     variants,
   } from "@dusk-network/helpers";
-  import Icon from "@dusk-network/icon";
-  import Logo from "@dusk-network/logo";
+  import Icon from "@dusk-network/icon/Icon.svelte";
+  import Logo from "@dusk-network/logo/Logo.svelte";
   import AppsMenu from "./menu/AppsMenu.svelte";
   import LinksMenu from "./menu/LinksMenu.svelte";
   import "./styles.css";
@@ -37,33 +37,6 @@
       case variants.ORGANISM.NAVBAR.BRAND:
         classNames += " duk-navbar--brand";
         break;
-      case variants.ORGANISM.NAVBAR.CTA:
-        classNames += " duk-navbar--cta";
-        break;
-      case variants.ORGANISM.NAVBAR.INFO:
-        classNames += " duk-navbar--info";
-        break;
-      case variants.ORGANISM.NAVBAR.SUCCESS:
-        classNames += " duk-navbar--success";
-        break;
-      case variants.ORGANISM.NAVBAR.WARNING:
-        classNames += " duk-navbar--warning";
-        break;
-      case variants.ORGANISM.NAVBAR.DANGER:
-        classNames += " duk-navbar--danger";
-        break;
-      case variants.ORGANISM.NAVBAR.LIGHT:
-        classNames += " duk-navbar--light";
-        break;
-      case variants.ORGANISM.NAVBAR.DARK:
-        classNames += " duk-navbar--dark";
-        break;
-      case variants.ORGANISM.NAVBAR.BLACK:
-        classNames += " duk-navbar--black";
-        break;
-      case variants.ORGANISM.NAVBAR.WHITE:
-        classNames += " duk-navbar--white";
-        break;
       default:
         classNames += "";
     }
@@ -86,7 +59,8 @@
   use:forwardEvents
   class="duk-navbar {className} duk-navbar--hidden
   {getClassNames(variant)}"
-  {...exclude($$props, ['use', 'class', 'variant', 'title', 'apps', 'links', 'appName'])}>
+  {...exclude($$props, ["use", "class", "variant", "title", "apps", "links", "appName"])}
+>
   <div class="duk-navbar__wrapper duk-navbar__wrapper--primary">
     <div class="duk-navbar__brand">
       {#if $$slots.logo}
@@ -122,7 +96,8 @@
         aria-expanded="{expanded}"
         aria-label="Toggle navigation"
         on:click="{toggleNavbar}"
-        class="duk-navbar__collapse__button">
+        class="duk-navbar__collapse__button"
+      >
         {#if !expanded}
           <Icon name="menu-burger" />
         {:else}
