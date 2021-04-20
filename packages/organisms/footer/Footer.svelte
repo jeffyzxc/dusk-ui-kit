@@ -31,33 +31,6 @@
       case variants.ORGANISM.FOOTER.BRAND:
         classNames += " duk-footer--brand";
         break;
-      case variants.ORGANISM.FOOTER.CTA:
-        classNames += " duk-footer--cta";
-        break;
-      case variants.ORGANISM.FOOTER.INFO:
-        classNames += " duk-footer--info";
-        break;
-      case variants.ORGANISM.FOOTER.SUCCESS:
-        classNames += " duk-footer--success";
-        break;
-      case variants.ORGANISM.FOOTER.WARNING:
-        classNames += " duk-footer--warning";
-        break;
-      case variants.ORGANISM.FOOTER.DANGER:
-        classNames += " duk-footer--danger";
-        break;
-      case variants.ORGANISM.FOOTER.LIGHT:
-        classNames += " duk-footer--light";
-        break;
-      case variants.ORGANISM.FOOTER.DARK:
-        classNames += " duk-footer--dark";
-        break;
-      case variants.ORGANISM.FOOTER.BLACK:
-        classNames += " duk-footer--black";
-        break;
-      case variants.ORGANISM.FOOTER.WHITE:
-        classNames += " duk-footer--white";
-        break;
       default:
         classNames += "";
     }
@@ -70,7 +43,8 @@
   use:useActions="{use}"
   use:forwardEvents
   class="duk-footer {className} {getClassNames(variant)}"
-  {...exclude($$props, ['use', 'class', 'type', 'variant', 'social', 'categories'])}>
+  {...exclude($$props, ["use", "class", "type", "variant", "social", "categories"])}
+>
   {#if type === types.ORGANISM.FOOTER.MAXIMAL}
     <Maximal categories="{categories}" />
   {/if}

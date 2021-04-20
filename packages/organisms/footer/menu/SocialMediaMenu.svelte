@@ -1,8 +1,9 @@
 <script>
   import { exclude } from "@dusk-network/helpers";
-  import Icon from "@dusk-network/icon";
-  import Menu from "@dusk-network/menu";
-  import List, { Item } from "@dusk-network/list";
+  import Icon from "@dusk-network/icon/Icon.svelte";
+  import Menu from "@dusk-network/menu/Menu.svelte";
+  import List from "@dusk-network/list/List.svelte";
+  import ListItem from "@dusk-network/list/Item.svelte";
 
   let className = "";
   export { className as class };
@@ -15,12 +16,13 @@
   orientation="{orientation}"
   separator="{separator}"
   class="duk-footer__social-media-menu {className}"
-  {...exclude($$props, ['class', 'orientation', 'separator', 'social'])}>
+  {...exclude($$props, ["class", "orientation", "separator", "social"])}
+>
   <List>
     {#each social as { title, icon, url }}
-      <Item class="duk-footer__social-media-menu__item" href="{url}">
+      <ListItem class="duk-footer__social-media-menu__item" href="{url}">
         <Icon name="{icon}" title="{title}" />
-      </Item>
+      </ListItem>
     {/each}
   </List>
 </Menu>
