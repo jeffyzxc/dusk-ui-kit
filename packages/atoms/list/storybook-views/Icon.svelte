@@ -1,20 +1,21 @@
 <script>
-  import List, { Item } from "../";
-  import Icon from "@dusk-network/icon";
+  import List from "../List.svelte";
+  import ListItem from "../Item.svelte";
+  import Icon from "@dusk-network/icon/Icon.svelte";
   export let type;
 </script>
 
 <List type="{type}">
-  <Item>
+  <ListItem>
     <Icon name="view-dashboard-outline" />
     Dashboard
-  </Item>
-  <Item>
+  </ListItem>
+  <ListItem>
     <Icon name="wallet" />
     Wallet
-  </Item>
-  <Item>
+  </ListItem>
+  <ListItem>
     <Icon name="help-circle-outline" />
     Help
-  </Item>
+  </ListItem>
 </List>

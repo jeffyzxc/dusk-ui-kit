@@ -1,7 +1,9 @@
 <script>
   import { current_component } from "svelte/internal";
   import { forwardEventsBuilder, exclude } from "@dusk-network/helpers";
-  import { A, Span, Li } from "@dusk-network/elements";
+  import A from "@dusk-network/elements/A.svelte";
+  import Span from "@dusk-network/elements/Span.svelte";
+  import Li from "@dusk-network/elements/Li.svelte";
   import createRipple from "@dusk-network/helpers/ripple.js";
   const forwardEvents = forwardEventsBuilder(current_component);
   export let use = [];
@@ -18,14 +20,16 @@
 <svelte:component
   this="{Li}"
   class="duk-list__item {className}"
-  {...exclude($$props, ['use', 'class', 'href', 'active', 'target'])}>
+  {...exclude($$props, ["use", "class", "href", "active", "target"])}
+>
   <slot name="wrapper">
     <svelte:component
       this="{wrapper}"
       use="{[forwardEvents, ...use]}"
       href="{href}"
       target="{target}"
-      class="duk-list__item__wrapper {active ? 'duk-list__item__wrapper--active' : ''}">
+      class="duk-list__item__wrapper {active ? 'duk-list__item__wrapper--active' : ''}"
+    >
       <slot />
     </svelte:component>
   </slot>

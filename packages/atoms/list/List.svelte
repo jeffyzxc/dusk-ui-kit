@@ -3,7 +3,8 @@
   import { current_component } from "svelte/internal";
   import { forwardEventsBuilder, exclude, types, contexts } from "@dusk-network/helpers";
   import "./styles.css";
-  import { Ol, Ul } from "@dusk-network/elements";
+  import Ol from "@dusk-network/elements/Ol.svelte";
+  import Ul from "@dusk-network/elements/Ul.svelte";
   const forwardEvents = forwardEventsBuilder(current_component);
   export let use = [];
   let className = "";
@@ -46,6 +47,7 @@
   use="{[forwardEvents, ...use]}"
   class="duk-list {className}
   {getClassNames(type, context)}"
-  {...exclude($$props, ['use', 'class', 'type'])}>
+  {...exclude($$props, ["use", "class", "type"])}
+>
   <slot />
 </svelte:component>

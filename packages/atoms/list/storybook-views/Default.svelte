@@ -1,10 +1,11 @@
 <script>
-  import List, { Item } from "../";
+  import List from "../List.svelte";
+  import ListItem from "../Item.svelte";
   export let type;
 </script>
 
-<List {type}>
-  <Item>List</Item>
-  <Item>Item</Item>
-  <Item>Test</Item>
+<List type="{type}">
+  <ListItem>List</ListItem>
+  <ListItem>Item</ListItem>
+  <ListItem>Test</ListItem>
 </List>
