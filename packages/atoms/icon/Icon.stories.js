@@ -2,7 +2,6 @@ import { withKnobs, select, text } from "@storybook/addon-knobs";
 import { variants, sizes } from "@dusk-network/helpers";
 import CollectionView from "./storybook-views/Collection.svelte";
 import readme from "./readme.stories.md";
-import "@dusk-network/styles/tailwind.css";
 
 export default {
   title: "Components/Atoms/Icon",
