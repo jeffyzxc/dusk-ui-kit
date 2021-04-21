@@ -1,6 +1,8 @@
 <script>
-  import Button, { Label } from "../";
-  import Icon from "@dusk-network/icon";
+  import Button from "../Button.svelte";
+  import ButtonLabel from "../Label.svelte";
+  import Icon from "@dusk-network/icon/Icon.svelte";
+
   export let variant;
   export let size;
   export let buttonText;
@@ -11,5 +13,5 @@
 
 <Button variant="{variant}" size="{size}" disabled="{disabled}" outline="{outline}" on:click>
   <Icon name="{iconName}" size="{size}" />
-  <Label>{buttonText}</Label>
+  <ButtonLabel>{buttonText}</ButtonLabel>
 </Button>

@@ -2,7 +2,8 @@
   import { setContext, getContext } from "svelte";
   import { current_component } from "svelte/internal";
   import { exclude, forwardEventsBuilder, variants, sizes, contexts } from "@dusk-network/helpers";
-  import { A, Button } from "@dusk-network/elements";
+  import A from "@dusk-network/elements/A.svelte";
+  import Button from "@dusk-network/elements/Button.svelte";
   import "./styles.css";
   import createRipple from "@dusk-network/helpers/ripple.js";
 

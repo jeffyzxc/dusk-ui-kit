@@ -1,8 +1,9 @@
 <script>
-  import Navbar from "../";
-  import Menu from "@dusk-network/menu";
-  import List, { Item } from "@dusk-network/list";
-  import Logo from "@dusk-network/logo";
+  import Navbar from "../Navbar.svelte";
+  import Menu from "@dusk-network/menu/Menu.svelte";
+  import List from "@dusk-network/list/List.svelte";
+  import Item from "@dusk-network/list/Item.svelte";
+  import Logo from "@dusk-network/logo/Logo.svelte";
   export let variant;
   export let title;
 
