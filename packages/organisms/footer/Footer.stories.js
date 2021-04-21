@@ -2,7 +2,6 @@ import { withKnobs, select, object } from "@storybook/addon-knobs";
 import { variants, types } from "@dusk-network/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import readme from "./readme.stories.md";
-import "@dusk-network/styles/tailwind.css";
 
 //TODO Export this from the package for default social config?
 const socialMediaConfig = [
