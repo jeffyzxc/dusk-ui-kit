@@ -1,6 +1,7 @@
 <script>
-  import Menu from "../";
-  import List, { Item } from "@dusk-network/list";
+  import Menu from "../Menu.svelte";
+  import List from "@dusk-network/list/List.svelte";
+  import Item from "@dusk-network/list/Item.svelte";
   export let orientation;
   export let variant;
   let items = [
