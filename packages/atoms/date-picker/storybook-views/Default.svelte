@@ -1,5 +1,5 @@
 <script>
-  import DatePicker from "../";
+  import DatePicker from "../DatePicker.svelte";
   export let variant;
 
   let value;
@@ -26,6 +26,7 @@
   variant="{variant}"
   options="{options}"
   on:change="{handler}"
-  bind:value />
+  bind:value
+/>
 
 <p>Selected date: {value}</p>
