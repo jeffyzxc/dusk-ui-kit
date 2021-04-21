@@ -2,7 +2,8 @@
   import { current_component } from "svelte/internal";
   import { forwardEventsBuilder, exclude, variants, types } from "@dusk-network/helpers";
   import "./styles.css";
-  import { Input, Label } from "@dusk-network/elements";
+  import Input from "@dusk-network/elements/Input.svelte";
+  import Label from "@dusk-network/elements/Label.svelte";
 
   let className = "";
   export { className as class };
@@ -64,7 +65,8 @@
   for="{id}"
   class="duk-switch {className}
   {getClassNames(variant)}"
-  {...exclude($$props, ['use', 'class', 'variant', 'id', 'name', 'type'])}>
+  {...exclude($$props, ["use", "class", "variant", "id", "name", "type"])}
+>
   <div class="duk-switch__inner">
     <Input
       use="{[forwardEvents, ...use]}"
@@ -75,7 +77,8 @@
       disabled="{disabled}"
       {...actionProp}
       {...defaultProp}
-      bind:checked />
+      bind:checked
+    />
     <div class="duk-switch__inner__track"></div>
     <div class="duk-switch__inner__thumb"></div>
   </div>

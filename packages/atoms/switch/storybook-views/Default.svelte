@@ -1,5 +1,5 @@
 <script>
-  import Switch from "../";
+  import Switch from "../Switch.svelte";
   export let variant;
   export let label;
   let demoSwitch = false;
@@ -10,7 +10,8 @@
   name="demo_switch"
   variant="{variant}"
   value="{true}"
-  bind:checked="{demoSwitch}">
+  bind:checked="{demoSwitch}"
+>
   {label}
 </Switch>
 
