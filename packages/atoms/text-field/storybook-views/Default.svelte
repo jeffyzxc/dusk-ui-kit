@@ -1,6 +1,6 @@
 <script>
   import { actions } from "@storybook/addon-actions";
-  import TextField from "../";
+  import TextField from "../TextField.svelte";
 
   export let variant;
   export let state;
@@ -12,4 +12,12 @@
   const events = actions({ onFocus: "focused", onMouseOver: "hovered" });
 </script>
 
-<TextField {...events} {variant} {state} {type} {placeholder} {disabled} {multiline} />
+<TextField
+  {...events}
+  variant="{variant}"
+  state="{state}"
+  type="{type}"
+  placeholder="{placeholder}"
+  disabled="{disabled}"
+  multiline="{multiline}"
+/>

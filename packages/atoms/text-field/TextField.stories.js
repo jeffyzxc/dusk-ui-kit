@@ -1,7 +1,7 @@
 import { withKnobs, select, text, boolean } from "@storybook/addon-knobs";
 import { variants, states, types } from "@dusk-network/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
-import "@dusk-network/styles/tailwind.css";
+
 import readme from "./readme.stories.md";
 
 export default {
