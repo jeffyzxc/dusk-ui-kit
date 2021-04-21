@@ -1,7 +1,12 @@
+<style lang="postcss">
+  :global(.sb-logo) {
+    @apply w-48;
+  }
+</style>
+
 <script>
-  import Logo from "../";
-  export let variant;
+  import Logo from "../Logo.svelte";
   export let href;
 </script>
 
-<Logo {variant} {href} style="width: 305px" />
+<Logo href="{href}" class="sb-logo" />

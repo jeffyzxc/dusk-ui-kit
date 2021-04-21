@@ -1,31 +1,3 @@
 .duk-logo {
   @apply inline-block fill-current;
-
-  &--brand {
-    @apply text-indigo-500 fill-current;
-  }
-
-  &--cta {
-    @apply text-gold-500 fill-current;
-  }
-
-  &--info {
-    @apply text-blue-500 fill-current;
-  }
-
-  &--dark {
-    @apply text-gray-800 fill-current;
-  }
-
-  &--light {
-    @apply text-gray-200 fill-current;
-  }
-
-  &--black {
-    @apply text-black fill-current;
-  }
-
-  &--white {
-    @apply text-white fill-current;
-  }
 }
