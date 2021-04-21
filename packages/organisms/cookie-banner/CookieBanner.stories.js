@@ -1,7 +1,6 @@
 import { withKnobs, object, text, button } from "@storybook/addon-knobs";
 import DefaultView from "./storybook-views/Default.svelte";
 import readme from "./readme.stories.md";
-import "@dusk-network/styles/tailwind.css";
 
 const defaultConfig = {
   cookieConfig: {
