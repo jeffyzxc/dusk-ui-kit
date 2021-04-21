@@ -131,14 +131,10 @@
     "svelte-preprocess": "^4.6.1",
     "tailwindcss": "^2.0.2"
   },
-  "publishConfig": {
-    "registry": "https://npm.dusk.network:4873"
-  },
   "release": {
     "extends": "semantic-release-monorepo",
     "branches": [
-      "master",
-      "next"
+      "main"
     ]
   }
 }
