@@ -1,5 +1,5 @@
 <script>
-  import RichText from "../";
+  import RichText from "../RichText.svelte";
   export let content;
 </script>
 

@@ -1,7 +1,6 @@
 import { withKnobs, text } from "@storybook/addon-knobs";
 import DefaultView from "./storybook-views/Default.svelte";
 import readme from "./readme.stories.md";
-import "@dusk-network/styles/tailwind.css";
 
 export default {
   title: "Components/Atoms/Rich Text (Markdown)",
