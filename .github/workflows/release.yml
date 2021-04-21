@@ -23,7 +23,7 @@ jobs:
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
       - name: Install Dependencies
-        run: yarn
+        run: yarn --frozen-lockfile
       - name: Bump Package Versions
         run: yarn version:ci
       - name: Publish to Github Package Registry
