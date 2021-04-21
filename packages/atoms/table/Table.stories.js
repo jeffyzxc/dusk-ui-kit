@@ -3,7 +3,6 @@ import { variants, types } from "@dusk-network/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import HeadingView from "./storybook-views/Heading.svelte";
 import readme from "./readme.stories.md";
-import "@dusk-network/styles/tailwind.css";
 
 const tableVariants = variants.ATOM.TABLE;
 const tableVariantDefault = variants.ATOM.TABLE.LIGHT;

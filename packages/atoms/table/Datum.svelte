@@ -2,7 +2,8 @@
   import { current_component } from "svelte/internal";
   import { getContext } from "svelte";
   import { forwardEventsBuilder, exclude, contexts } from "@dusk-network/helpers";
-  import { Td, Th } from "@dusk-network/elements";
+  import Td from "@dusk-network/elements/Td.svelte";
+  import Th from "@dusk-network/elements/Th.svelte";
   const forwardEvents = forwardEventsBuilder(current_component);
   export let use = [];
   export let prominent = false;
@@ -24,6 +25,7 @@
   use="{[forwardEvents, ...use]}"
   class="duk-table__row__datum {className}
   {getClassNames(prominent, context)}"
-  {...exclude($$props, ['use', 'class', 'prominent'])}>
+  {...exclude($$props, ["use", "class", "prominent"])}
+>
   <slot />
 </svelte:component>

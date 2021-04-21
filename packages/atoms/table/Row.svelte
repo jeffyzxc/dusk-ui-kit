@@ -2,7 +2,7 @@
   import { setContext } from "svelte";
   import { current_component } from "svelte/internal";
   import { forwardEventsBuilder, exclude, contexts } from "@dusk-network/helpers";
-  import { Tr } from "@dusk-network/elements";
+  import Tr from "@dusk-network/elements/Tr.svelte";
   const forwardEvents = forwardEventsBuilder(current_component);
   export let use = [];
   let className = "";
@@ -32,6 +32,7 @@
   class="duk-table__row {className}
   {getClassNames(highlight, context)}"
   use="{[forwardEvents, ...use]}"
-  {...exclude($$props, ['use', 'class', 'highlight'])}>
+  {...exclude($$props, ["use", "class", "highlight"])}
+>
   <slot />
 </Tr>
