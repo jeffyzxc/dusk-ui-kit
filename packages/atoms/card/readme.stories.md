@@ -1,6 +1,6 @@
 # ⚛️ Card
 
-Cards are multi-purpose components, used to contain isolated content.
+Cards are multi-purpose components, used to contain isolated content. It includes options for title, footer or title and action.
 
 ## Variants
 
@@ -14,3 +14,35 @@ Cards come in a variety of flavours that should be utilised according to the fol
 | Success   | Success cards.  |
 | Warning   | Warning cards.  |
 | Danger    | Danger cards.   |
+
+## Size
+
+Cards assume no specific width to start, so they’ll be 100% wide unless otherwise stated.
+
+| Size   | Usage   |
+| ------ | ------- |
+| SMALL  | Small.  |
+| BASE   | Medium. |
+| LARGE  | Large.  |
+
+## Actions
+
+Only in the case of using title and action which will add buttons within the card build.
+When the action required by a user has more than one option, always use one primary variant button for the most agreeable option, with secondary and info variants being available options.
+
+Negative action buttons will be on the left. Positive action buttons should be on the right.
+
+## Usage
+
+```js
+<script>
+  import Card, { Content } from "@dusk-network/card";
+  import { variants, elevations, sizes } from "@dusk-network/helpers";
+  export let content;
+</script>
+<div class="p-10 w-6/12 mx-auto">
+  <Card variant="{variants.ATOM.CARD.BRAND}" elevation="{elevations.ATOM.CARD.NONE}" size="{sizes.ATOM.CARD.BASE}">
+    <Content><p>{content}</p></Content>
+  </Card>
+</div>
+```

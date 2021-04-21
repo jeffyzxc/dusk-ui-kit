@@ -1,0 +1,48 @@
+# ⚛️ Text Field
+
+A text box, text field or text entry box is a control element of a graphical user interface, that should enable the user to input text information to be used by a program.
+
+## Variants
+
+| Variant | Usage                                      |
+| ------- | ------------------------------------------ |
+| LIGHT   | Applies a light styling on the text-field. |
+| DARK    | Applies a dark styling on the text-field.  |
+
+## Types
+
+| Type       | Usage                                                       |
+| --------   | ----------------------------------------------------------- |
+| MULTI_LINE | Allows to create a multi lines text.                        |
+| TEXT       | Allows to entre a large number of characters.               |
+| PASSWORD   | restricts the text field to a certain validations formulas. |
+| EMAIL      | restricts the text field to a certain validations formulas. |
+| NUMBER     | restricts the text field to digits only.                    |
+| TELEPHONE  | restricts the text field to a certain digits formula.       |
+
+## States
+
+| Stats   | Usage                                    |
+| --------| ---------------------------------------- |
+| BASE    | Applies a standard styling on the label. |
+| SUCCESS | Applies a success styling on the label.  |
+| WARNING | Applies a warining styling on the label. |
+| DANGER  | Applies a danger styling on the label.   |
+
+## Action
+
+Text-fields allow users to type in them based on the types above.
+
+## Usage
+
+```js
+<script>
+  import TextField from "@dusk-network/text-field";
+  import {variants, states, types} from "@dusk-network/helpers";
+  const placeholder="type here";
+  const disabled=false;
+</script>
+<div class="p-10 w-6/12 mx-auto">
+  <TextField variant="{variants.ATOM.TEXT_FIELD.DARK}" state="{states.ATOM.TEXT_FIELD.SUCCESS}" type="{types.ATOM.TEXT_FIELD.TEXT}" {placeholder} {disabled} />
+</div>
+```

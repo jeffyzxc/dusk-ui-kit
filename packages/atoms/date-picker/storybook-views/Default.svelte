@@ -25,6 +25,7 @@
   class="border border-2"
   variant="{variant}"
   options="{options}"
+  placeholder="Choose a date"
   on:change="{handler}"
   bind:value />
 
