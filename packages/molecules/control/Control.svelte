@@ -1,8 +1,8 @@
 <script>
   import { setContext } from "svelte";
   import { exclude, variants, states, contexts, types } from "@dusk-network/helpers";
-  import Icon from "@dusk-network/icon";
-  import { Label } from "@dusk-network/elements";
+  import Icon from "@dusk-network/icon/Icon.svelte";
+  import Label from "@dusk-network/elements/Label.svelte";
   import "./styles.css";
 
   let className = "";
@@ -26,7 +26,8 @@
   class="duk-control {className}
   {getClassNames(type, variant, state)}
   "
-  {...exclude($$props, ['use', 'class', 'type', 'variant', 'state', 'label', 'message'])}>
+  {...exclude($$props, ["use", "class", "type", "variant", "state", "label", "message"])}
+>
   <div class="duk-control__wrapper">
     {#if label}
       <Label control="{id}" class="duk-control__label">{label}</Label>
@@ -34,11 +35,11 @@
     <slot />
   </div>
   <div class="duk-control__message">
-    {#if (state === states.MOLECULE.CONTROL.WARNING || state === states.MOLECULE.CONTROL.DANGER) && message !== ''}
+    {#if (state === states.MOLECULE.CONTROL.WARNING || state === states.MOLECULE.CONTROL.DANGER) && message !== ""}
       <Icon name="alert-outline" class="duk-control__message__icon" />
     {/if}
     <p>
-      {#if state !== states.MOLECULE.CONTROL.SUCCESS && message !== ''}{message}{/if}
+      {#if state !== states.MOLECULE.CONTROL.SUCCESS && message !== ""}{message}{/if}
     </p>
   </div>
 </div>
