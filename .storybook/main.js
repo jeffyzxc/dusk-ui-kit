@@ -1,60 +1,60 @@
-// TODO Clean up this mess.
-
 const path = require("path");
-const tailwindConfig = require("../packages/styles/dusk.tailwind.config.js");
-const PACKAGES_DIR = path.resolve(__dirname, "../packages/");
-const preprocessOptions = {
-  transformers: {
-    postcss: {
-      plugins: [
-        require("postcss-import")(),
-        require("postcss-url")(),
-        require("tailwindcss")(tailwindConfig),
-        require("postcss-nested")(),
-      ],
-    },
-  },
-};
+const postCssConfig = require("../postcss.config");
+const PACKAGES_DIR = path.resolve(__dirname, "../packages/atoms/button");
+const sveltePreprocess = require("svelte-preprocess");
+
 module.exports = {
-  stories: ["../packages/**/*.stories.js", "../docs/Button.mdx"],
-  addons: ["@storybook/addon-links", "@storybook/addon-essentials", "storybook-addon-designs"],
-  // webpackFinal: async config => {
-  //   config.module.rules.push({
-  //     test: /\.css$/,
-  //     loaders: [
-  //       {
-  //         loader: "postcss-loader",
-  //         options: {
-  //           ident: "postcss",
-  //           sourceMap: true,
-  //           plugins: preprocessOptions.transformers.postcss.plugins,
-  //         },
-  //       },
-  //     ],
-  //     include: [PACKAGES_DIR],
-  //   });
-
-  //   return config;
-  // },
+  stories: ["../packages/atoms/button/*.stories.*"],
+  logLevel: "debug",
+  addons: [
+    "@storybook/addon-storysource",
+    "@storybook/addon-actions",
+    {
+      name: "@storybook/addon-docs",
+      options: {
+        configureJSX: true,
+      },
+    },
+    "@storybook/addon-controls",
+    "@storybook/addon-links",
+    "@storybook/addon-backgrounds",
+    "@storybook/addon-viewport",
+    "@storybook/addon-a11y",
+    "storybook-addon-designs",
+  ],
+  svelteOptions: {
+    preprocess: sveltePreprocess({
+      defaults: {
+        style: "postcss",
+      },
+      postcss: true,
+    }),
+  },
   webpackFinal: async (config) => {
-    /**
-     * CSS handling, specifically overriding postcss loader
-     */
-    // Find the only Storybook webpack rule that tests for css
-    const cssRule = config.module.rules.find((rule) => "test.css".match(rule.test));
-    // Which loader in this rule mentions the custom Storybook postcss-loader?
-    const loaderIndex = cssRule.use.findIndex((loader) => {
-      // Loaders can be strings or objects
-      const loaderString = typeof loader === "string" ? loader : loader.loader;
-      // Find the first mention of "postcss-loader", it may be in a string like:
-      // "@storybook/core/node_modules/postcss-loader"
-      return loaderString.includes("postcss-loader");
+    config.module.rules.push({
+      test: [/\.stories\.js$/, /index\.js$/],
+      use: [require.resolve("@storybook/source-loader")],
+      include: [PACKAGES_DIR],
+      enforce: "pre",
     });
-    // Simple loader string form, removes the obsolete "options" key
-    cssRule.use[loaderIndex] = "postcss-loader";
+    config.module.rules.push({
+      test: /\.css$/i,
+      use: [
+        {
+          loader: "postcss-loader",
+          options: {
+            postcssOptions: {
+              ident: "postcss",
+              plugins: [...postCssConfig.plugins],
+            },
+          },
+        },
+      ],
+    });
 
-    // Uncomment the following to debug
-    // console.dir(config, { depth: null });
     return config;
+  },
+  core: {
+    builder: "webpack5",
   },
 };

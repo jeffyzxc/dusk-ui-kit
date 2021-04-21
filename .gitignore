@@ -9,6 +9,5 @@ yarn-error.log
 /__sapper__/
 /dev/
 /build/
-/static/global.css
 /storybook-static
 /public
