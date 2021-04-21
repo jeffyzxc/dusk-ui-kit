@@ -23,16 +23,9 @@ export default {
       BLACK: "black",
     },
     CHECKBOX: {
-      BRAND: "brand",
-      CTA: "cta",
-      INFO: "info",
       SUCCESS: "success",
       WARNING: "warning",
       DANGER: "danger",
-      LIGHT: "light",
-      DARK: "dark",
-      WHITE: "white",
-      BLACK: "black",
     },
     DATE_PICKER: {
       LIGHT: "light",
@@ -59,19 +52,6 @@ export default {
     TEXT_FIELD: {
       LIGHT: "light",
       DARK: "dark",
-    },
-    LOADING_INDICATOR: {
-      BRAND: "brand",
-      LIGHT: "light",
-    },
-    LOGO: {
-      BRAND: "brand",
-      CTA: "cta",
-      INFO: "info",
-      LIGHT: "light",
-      DARK: "dark",
-      WHITE: "white",
-      BLACK: "black",
     },
     RADIO: {
       BRAND: "brand",
