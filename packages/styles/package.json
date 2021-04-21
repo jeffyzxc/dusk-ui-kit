@@ -15,8 +15,8 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.4.0",
     "cssnano": "^5.0.1",
-    "postcss-global-nested": "^1.2.0",
     "postcss-import": "^14.0.1",
     "postcss-input-range": "^4.0.0",
     "postcss-nested-ancestors": "^2.0.0",
@@ -27,10 +27,12 @@
     "tailwindcss": "^2.1.1"
   },
   "peerDependencies": {
-    "postcss": "^8.3.1",
-    "postcss-load-config": "^3.0.1",
-    "svelte": "^3.31.0",
-    "svelte-preprocess": "^4.7.0"
+    "postcss": "^8.2.10",
+    "svelte": "^3.37.0",
+    "svelte-preprocess": "^4.7.2"
+  },
+  "optionalDependencies": {
+    "postcss-load-config": "^3.0.1"
   },
   "gitHead": "a20d3aac7752bf0280c649480c950ff8219db117"
 }
