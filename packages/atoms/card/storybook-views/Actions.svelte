@@ -1,6 +1,9 @@
 <script>
-  import Card, { Content, Title, Actions } from "../";
-  import Button from "@dusk-network/button";
+  import Card from "../Card.svelte";
+  import CardContent from "../Content.svelte";
+  import CardTitle from "../Title.svelte";
+  import CardActions from "../Actions.svelte";
+  import Button from "@dusk-network/button/Button.svelte";
   export let variant;
   export let elevation;
   export let content;
@@ -11,9 +14,9 @@
 </script>
 
 <Card variant="{variant}" elevation="{elevation}" size="{size}">
-  <Title>{title}</Title>
-  <Content>{content}</Content>
-  <Actions>
+  <CardTitle>{title}</CardTitle>
+  <CardContent>{content}</CardContent>
+  <CardActions>
     <Button size="{size}" variant="{buttonVariant}">{buttonText}</Button>
-  </Actions>
+  </CardActions>
 </Card>

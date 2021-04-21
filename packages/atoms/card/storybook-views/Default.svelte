@@ -1,5 +1,6 @@
 <script>
-  import Card, { Content } from "../";
+  import Card from "../Card.svelte";
+  import CardContent from "../Content.svelte";
   export let variant;
   export let elevation;
   export let content;
@@ -7,5 +8,5 @@
 </script>
 
 <Card variant="{variant}" elevation="{elevation}" size="{size}">
-  <Content>{content}</Content>
+  <CardContent>{content}</CardContent>
 </Card>

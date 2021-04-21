@@ -5,7 +5,6 @@ import TitleView from "./storybook-views/Title.svelte";
 import ActionsView from "./storybook-views/Actions.svelte";
 import FooterView from "./storybook-views/Footer.svelte";
 import readme from "./readme.stories.md";
-import "@dusk-network/styles/tailwind.css";
 
 export default {
   title: "Components/Atoms/Card",
