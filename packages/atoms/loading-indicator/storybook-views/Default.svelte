@@ -1,6 +1,6 @@
 <script>
-  import LoadingIndicator from "../";
+  import LoadingIndicator from "../LoadingIndicator";
   export let variant;
 </script>
 
-<LoadingIndicator {variant} class="w-48" />
+<LoadingIndicator variant="{variant}" class="w-48" />
