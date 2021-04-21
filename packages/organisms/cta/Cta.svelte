@@ -1,5 +1,5 @@
 <script>
-  import Button from "@dusk-network/button";
+  import Button from "@dusk-network/button/Button.svelte";
   import "./styles.css";
 
   export let heading = "";
