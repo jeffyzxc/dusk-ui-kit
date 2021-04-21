@@ -9,24 +9,6 @@
     @apply hidden;
   }
 
-  &--brand {
-    & > input:checked + label {
-      @apply border-purple-500 bg-purple-500;
-    }
-  }
-
-  &--info {
-    & > input:checked + label {
-      @apply border-purple-500 bg-purple-500;
-    }
-  }
-
-  &--cta {
-    & > input:checked + label {
-      @apply border-orange-500 bg-orange-500;
-    }
-  }
-
   &--success {
     & > input:checked + label {
       @apply border-green-500 bg-green-500;
@@ -42,30 +24,6 @@
   &--danger {
     & > input:checked + label {
       @apply border-red-500 bg-red-500;
-    }
-  }
-
-  &--dark {
-    & > input:checked + label {
-      @apply text-gray-300 bg-gray-800;
-    }
-  }
-
-  &--light {
-    & > input:checked + label {
-      @apply text-gray-800 bg-gray-300;
-    }
-  }
-
-  &--white {
-    & > input:checked + label {
-      @apply text-black bg-white;
-    }
-  }
-
-  &--black {
-    & > input:checked + label {
-      @apply border-white text-white bg-black;
     }
   }
 }
