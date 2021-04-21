@@ -1,5 +1,5 @@
 <script>
-  import Alert from "../";
+  import Alert from "../Alert.svelte";
   export let variant;
   export let title;
   export let dismissable;
@@ -7,6 +7,12 @@
   let value = true;
 </script>
 
-<Alert {variant} {title} {value} {dismissable} {size}>
+<Alert
+  variant="{variant}"
+  title="{title}"
+  value="{value}"
+  dismissable="{dismissable}"
+  size="{size}"
+>
   <p>This is an alert!</p>
 </Alert>

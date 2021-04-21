@@ -2,7 +2,6 @@ import { withKnobs, select, text, boolean, optionsKnob as options } from "@story
 import { variants, sizes } from "@dusk-network/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import readme from "./readme.stories.md";
-import "@dusk-network/styles/tailwind.css";
 
 export default {
   title: "Components/Molecules/Alert",

@@ -1,8 +1,10 @@
 <script>
   import { setContext, getContext } from "svelte";
   import { exclude, contexts, variants, elevations, sizes } from "@dusk-network/helpers";
-  import Card, { Title, Content } from "@dusk-network/card";
-  import Icon from "@dusk-network/icon";
+  import Card from "@dusk-network/card/Card.svelte";
+  import Title from "@dusk-network/card/Title.svelte";
+  import Content from "@dusk-network/card/Content.svelte";
+  import Icon from "@dusk-network/icon/Icon.svelte";
   import "./styles.css";
 
   export let value;
@@ -64,7 +66,8 @@
     role="alertdialog"
     aria-labelledby="__DUK-alert-title"
     aria-describedby="__DUK-alert-content"
-    {...exclude($$props, ['class', 'variant', 'title'])}>
+    {...exclude($$props, ["class", "variant", "title"])}
+  >
     <Title id="__DUK-alert-title" class="duk-alert__title">
       {#if title}{title}{/if}
       {#if dismissable}
@@ -73,7 +76,8 @@
           aria-controls="__DUK-alert"
           aria-label="Dismiss alert"
           on:click="{() => (value = false)}"
-          class="duk-alert__dismiss">
+          class="duk-alert__dismiss"
+        >
           <Icon size="{size}" name="close-circle-outline" />
         </button>
       {/if}
