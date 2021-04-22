@@ -1,0 +1,44 @@
+# ⚛️ Checkbox
+
+Checkbox is a small interactive box that can be toggled by the user to indicate an affirmative or negative choice.
+
+## Variants
+
+| Variant   | Usage                             |
+| --------- | --------------------------------- |
+| BRAND     | Applies a brand styling.          |
+| CTA       | Applies a call to action styling. |
+| Info      | Applies a info styling.           |
+| Success   | Applies a success styling.        |
+| Warning   | Applies a warning styling.        |
+| Danger    | Applies a danger styling.         |
+| LIGHT     | Applies a light styling.          |
+| DARK      | Applies a dark styling.           |
+| WHITE     | Applies a White styling.          |
+| BLACK     | Applies a Black styling.          |
+
+## Size
+
+Checkbox is treated as text, which means it's size is the same as the font-size used. Checkbox's placed on the left side of the content unless otherwise is stated. It can be aligned center or right as well.
+
+| Size       | Usage                                                                   |
+| -----      | ----------------------------------------------------------------------- |
+| font-size  | Same size as the font-size and can be aligned left, center or right.    |
+
+## Actions
+
+Can toggle between an affermative and negative status.
+
+## Usage
+
+```js
+<script>
+  import Checkbox from "@dusk-network/checkbox"; 
+  import { variants } from "@dusk-network/helpers";
+</script>
+//<!-- Variants are imported from the helpers dir of dusk-network. -->
+<div class="p-10 w-6/12 mx-auto">
+  <Checkbox variant="{variants.ATOM.CHECKBOX.BRAND}" name="check_2" id="check_1">Yo! I am a Checkbox</Checkbox>
+  <Checkbox variant="{variants.ATOM.CHECKBOX.BRAND}" name="check_2" id="check_2">Yo! I am a Checkbox too</Checkbox>
+</div>
+```

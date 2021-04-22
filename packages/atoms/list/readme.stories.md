@@ -1,16 +1,27 @@
-# ⚛️ Card
+# ⚛️ List
 
-Cards are multi-purpose components, used to contain isolated content.
+Lists are used to group together related pieces of information so they are clearly associated with each other and easy to read.
 
-## Variants
+## Types
 
-Cards come in a variety of flavours that should be utilised according to the following instructions.
+| Type     | Usage                   |
+| -------- | ----------------------- |
+| NONE     | None.                   |
+| NUMBERED | listed in numbers.      |
+| BULLETED | listed as bullet points.|
 
-| Variant   | Usage           |
-| --------- | --------------- |
-| Primary   | Primary cards.  |
-| Secondary | Secondary cards |
-| Info      | Info cards.     |
-| Success   | Success cards.  |
-| Warning   | Warning cards.  |
-| Danger    | Danger cards.   |
+## Usage
+
+```js
+<script>
+  import List, { Item } from "@dusk-network/list";
+  import { types } from "@dusk-network/helpers";
+</script>
+<div class="p-10 w-6/12 mx-auto">
+  <List type="{types.ATOM.LIST.NONE}">
+    <Item>List</Item>
+    <Item>Item</Item>
+    <Item>Test</Item>
+  </List>
+</div>
+```

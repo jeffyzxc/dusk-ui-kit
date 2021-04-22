@@ -1,0 +1,46 @@
+# ⚛️ Switch
+
+Switch is a digital on/off switch.
+
+## Variants
+
+| Variant   | Usage                             |
+| --------- | --------------------------------- |
+| BRAND     | Applies a brand styling.          |
+| CTA       | Applies a call to action styling. |
+| Info      | Applies a info styling.           |
+| Success   | Applies a success styling.        |
+| Warning   | Applies a warning styling.        |
+| Danger    | Applies a danger styling.         |
+| LIGHT     | Applies a light styling.          |
+| DARK      | Applies a dark styling.           |
+
+
+## Actions
+
+Switches are best used for changing the state of system functionalities and preferences.
+
+## Usage
+
+```js
+<script>
+  import Switch from "@dusk-network/switch";
+  import { variants } from "@dusk-network/helpers";
+  let demoSwitch = false;
+</script>
+
+<div style="background-color:lightgrey;max-width:400px;margin:0 auto;text-align:center;">
+ <Switch
+   id="demo-switch"
+   name="demo_switch"
+   variant="{variants.ATOM.SWITCH.DANGER}"
+   value="{true}"
+   bind:checked="{demoSwitch}">
+ </Switch>
+ {#if demoSwitch}
+   <p>It's on!</p>
+ {:else}
+   <p>It's off!</p>
+ {/if}
+</div>
+```
