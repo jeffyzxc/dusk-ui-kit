@@ -235,6 +235,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
+    require("@tailwindcss/typography"),
     plugin(function ({ addBase, theme }) {
       addBase({
         "abbr[title]": {
