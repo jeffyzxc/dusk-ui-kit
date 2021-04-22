@@ -3,10 +3,10 @@
   import CardContent from "../Content.svelte";
   export let variant;
   export let elevation;
-  export let content;
+  export let cardText;
   export let size;
 </script>
 
 <Card variant="{variant}" elevation="{elevation}" size="{size}">
-  <CardContent>{content}</CardContent>
+  <CardContent>{cardText}</CardContent>
 </Card>
