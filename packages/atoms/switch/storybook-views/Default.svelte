@@ -1,18 +1,18 @@
 <script>
   import Switch from "../Switch.svelte";
-  export let variant;
-  export let label;
+  import { variants } from "@dusk-network/helpers";
   let demoSwitch = false;
 </script>
 
 <Switch
   id="demo-switch"
   name="demo_switch"
-  variant="{variant}"
+  variant="{variants.ATOM.SWITCH.DANGER}"
   value="{true}"
   bind:checked="{demoSwitch}"
->
-  {label}
-</Switch>
-
-<p>Switch value: {demoSwitch}</p>
+/>
+{#if demoSwitch}
+  <p>It's on!</p>
+{:else}
+  <p>It's off!</p>
+{/if}
