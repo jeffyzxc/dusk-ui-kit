@@ -1,7 +1,8 @@
 {
-  "version": "independent",
+  "version": "1.13.0",
   "npmClient": "yarn",
   "useWorkspaces": true,
+  "includeMergedTags": true,
   "packages": [
     "packages/helpers/**",
     "packages/elements/**",
