@@ -14,7 +14,7 @@
     "packages/**"
   ],
   "scripts": {
-    "bootstrap": "npx lerna bootstrap",
+    "bootstrap": "lerna bootstrap",
     "format": "eslint . --ignore-pattern 'node_modules/' --ignore-pattern 'storybook-static/' --fix && prettier . --write --plugin-search-dir=. \"{,!(node_modules,storybook-static)/**/**/}*.{json,js,svelte}\"",
     "publish:ci": "lerna publish from-package --yes",
     "sb:build": "rollup -c && build-storybook",

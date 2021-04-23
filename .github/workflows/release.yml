@@ -26,13 +26,13 @@ jobs:
         run: yarn cache clean --all
       - name: Install Dependencies
         run: yarn --frozen-lockfile
-      - name: Bump Package Versions
-        run: yarn version:ci
+      - name: Bump Package Versions & Publish Packages
+      - name: Bump versions and publish packages
+        run: |
+          yarn version:ci
+          yarn publish:ci
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Publish to Github Package Registry
-        run: yarn publish:ci
-        env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Install Package Dependencies
         run: yarn bootstrap
