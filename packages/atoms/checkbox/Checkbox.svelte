@@ -2,8 +2,7 @@
   import { current_component } from "svelte/internal";
   import { forwardEventsBuilder, exclude, variants, types } from "@dusk-network/helpers";
   import "./styles.css";
-  import Input from "@dusk-network/elements/Input.svelte";
-  import Label from "@dusk-network/elements/Label.svelte";
+  import { InputCheckbox, Label } from "@dusk-network/elements";
   import createRipple from "@dusk-network/helpers/ripple.js";
 
   let className = "";
@@ -24,6 +23,15 @@
   function getClassNames(variant) {
     let classNames = "";
     switch (variant) {
+      case variants.ATOM.CHECKBOX.BRAND:
+        classNames += " duk-checkbox--brand";
+        break;
+      case variants.ATOM.CHECKBOX.CTA:
+        classNames += " duk-checkbox--cta";
+        break;
+      case variants.ATOM.CHECKBOX.INFO:
+        classNames += " duk-checkbox--info";
+        break;
       case variants.ATOM.CHECKBOX.SUCCESS:
         classNames += " duk-checkbox--success";
         break;
@@ -32,6 +40,18 @@
         break;
       case variants.ATOM.CHECKBOX.DANGER:
         classNames += " duk-checkbox--danger";
+        break;
+      case variants.ATOM.CHECKBOX.LIGHT:
+        classNames += " duk-checkbox--light";
+        break;
+      case variants.ATOM.CHECKBOX.DARK:
+        classNames += " duk-checkbox--dark";
+        break;
+      case variants.ATOM.CHECKBOX.WHITE:
+        classNames += " duk-checkbox--white";
+        break;
+      case variants.ATOM.CHECKBOX.BLACK:
+        classNames += " duk-checkbox--black";
         break;
       default:
         classNames += "";
@@ -46,7 +66,7 @@
   {getClassNames(variant)}"
   {...exclude($$props, ["use", "class", "variant", "id", "name", "type"])}
 >
-  <Input
+  <InputCheckbox
     use="{[forwardEvents, ripple, ...use]}"
     class="duk-checkbox__button"
     type="{types.ATOM.CHECKBOX}"

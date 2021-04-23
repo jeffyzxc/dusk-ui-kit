@@ -3,8 +3,7 @@
   import { current_component } from "svelte/internal";
   import { forwardEventsBuilder, exclude, variants, types } from "@dusk-network/helpers";
   import "./styles.css";
-  import Input from "@dusk-network/elements/Input.svelte";
-  import Label from "@dusk-network/elements/Label.svelte";
+  import { InputRadio, Label } from "@dusk-network/elements";
   import createRipple from "@dusk-network/helpers/ripple.js";
 
   let className = "";
@@ -25,6 +24,15 @@
   function getClassNames(variant) {
     let classNames = "";
     switch (variant) {
+      case variants.ATOM.RADIO.BRAND:
+        classNames += " duk-radio--brand";
+        break;
+      case variants.ATOM.RADIO.CTA:
+        classNames += " duk-radio--cta";
+        break;
+      case variants.ATOM.RADIO.INFO:
+        classNames += " duk-radio--info";
+        break;
       case variants.ATOM.RADIO.SUCCESS:
         classNames += " duk-radio--success";
         break;
@@ -33,6 +41,18 @@
         break;
       case variants.ATOM.RADIO.DANGER:
         classNames += " duk-radio--danger";
+        break;
+      case variants.ATOM.RADIO.LIGHT:
+        classNames += " duk-radio--light";
+        break;
+      case variants.ATOM.RADIO.DARK:
+        classNames += " duk-radio--dark";
+        break;
+      case variants.ATOM.RADIO.WHITE:
+        classNames += " duk-radio--white";
+        break;
+      case variants.ATOM.RADIO.BLACK:
+        classNames += " duk-radio--black";
         break;
       default:
         classNames += "";
@@ -47,7 +67,7 @@
   {getClassNames(variant)}"
   {...exclude($$props, ["use", "class", "variant", "id", "name", "type"])}
 >
-  <Input
+  <InputRadio
     use="{[forwardEvents, ripple, ...use]}"
     class="duk-radio__button"
     type="{types.ATOM.RADIO}"
