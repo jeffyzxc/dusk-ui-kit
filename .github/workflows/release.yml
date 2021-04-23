@@ -70,7 +70,7 @@ jobs:
           prerelease: false
       - name: Bump Package Version & Publish Packages
         run: |
-          yarn lerna version --yes --conventional-commits --create-release github --message 'chore(release): publish'
+          yarn lerna version ${{ env.CURRENT_VERSION }} --yes --conventional-commits --create-release github --message 'chore(release): publish'
           yarn lerna publish from-package --yes
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
