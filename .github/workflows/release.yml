@@ -28,6 +28,8 @@ jobs:
         run: yarn --frozen-lockfile
       - name: Bump Package Versions
         run: yarn version:ci
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
       - name: Publish to Github Package Registry
         run: yarn publish:ci
         env:
