@@ -29,6 +29,9 @@ import Icon from "./Icon.svelte";
 export default {
   title: `components/atoms/Icon`,
   component: Icon,
+  parameters: {
+    layout: "centered",
+  },
   argTypes: {
     variant: {
       control: {
