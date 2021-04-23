@@ -27,7 +27,6 @@ jobs:
       - name: Install Dependencies
         run: yarn --frozen-lockfile
       - name: Bump Package Versions & Publish Packages
-      - name: Bump versions and publish packages
         run: |
           yarn version:ci
           yarn publish:ci
