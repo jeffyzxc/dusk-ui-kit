@@ -29,11 +29,11 @@ jobs:
       - name: Bump Package Versions
         run: yarn version:ci
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Publish to Github Package Registry
         run: yarn publish:ci
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Install Package Dependencies
         run: yarn bootstrap
       - name: Build Storybook
