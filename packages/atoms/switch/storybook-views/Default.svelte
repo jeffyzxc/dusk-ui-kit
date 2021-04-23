@@ -1,5 +1,5 @@
 <script>
-  import Switch from "../";
+  import Switch from "../Switch.svelte";
   export let variant;
   export let label;
   let demoSwitch = false;

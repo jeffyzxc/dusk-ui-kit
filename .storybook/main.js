@@ -4,7 +4,7 @@ const PACKAGES_DIR = path.resolve(__dirname, "../packages/atoms/button");
 const sveltePreprocess = require("svelte-preprocess");
 
 module.exports = {
-  stories: ["../packages/atoms/button/*.stories.*"],
+  stories: ["../packages/**/*.stories.*"],
   logLevel: "debug",
   addons: [
     "@storybook/addon-storysource",

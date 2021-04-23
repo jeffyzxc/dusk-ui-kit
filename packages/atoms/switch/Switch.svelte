@@ -2,7 +2,8 @@
   import { current_component } from "svelte/internal";
   import { forwardEventsBuilder, exclude, variants } from "@dusk-network/helpers";
   import "./styles.css";
-  import { InputCheckbox, Label } from "@dusk-network/elements";
+  import InputCheckbox from "@dusk-network/elements/InputCheckbox.svelte";
+  import Label from "@dusk-network/elements/Label.svelte";
 
   let className = "";
   export { className as class };
