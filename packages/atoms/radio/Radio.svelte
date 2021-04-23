@@ -3,7 +3,8 @@
   import { current_component } from "svelte/internal";
   import { forwardEventsBuilder, exclude, variants, types } from "@dusk-network/helpers";
   import "./styles.css";
-  import { InputRadio, Label } from "@dusk-network/elements";
+  import InputRadio from "@dusk-network/elements/InputRadio.svelte";
+  import Label from "@dusk-network/elements/Label.svelte";
   import createRipple from "@dusk-network/helpers/ripple.js";
 
   let className = "";

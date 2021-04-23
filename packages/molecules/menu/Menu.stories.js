@@ -1,20 +1,44 @@
-import { withKnobs, select } from "@storybook/addon-knobs";
-import { variants, orientations } from "@dusk-network/helpers";
-import DefaultView from "./storybook-views/Default.svelte";
-import readme from "./readme.stories.md";
+// import { withKnobs, select } from "@storybook/addon-knobs";
+// import { variants, orientations } from "@dusk-network/helpers";
+// import DefaultView from "./storybook-views/Default.svelte";
+// import readme from "./readme.stories.md";
+
+// export default {
+//   title: "Components/Molecules/Menu",
+//   parameters: {
+//     notes: readme,
+//   },
+//   decorators: [withKnobs],
+// };
+
+// export const Default = () => ({
+//   Component: DefaultView,
+//   props: {
+//     orientation: select("Orientation", orientations.MENU, orientations.MENU.VERTICAL),
+//     variant: select("Variant", variants.MOLECULE.MENU, variants.MOLECULE.MENU.BRAND),
+//   },
+// });
+
+import Default from "./storybook-views/Default.svelte";
+
+import "@dusk-network/styles/tailwind.css";
+import Menu from "./Menu.svelte";
 
 export default {
-  title: "Components/Molecules/Menu",
+  title: `components/molecules/Menu`,
+  component: Menu,
   parameters: {
-    notes: readme,
+    layout: "centered",
   },
-  decorators: [withKnobs],
+  argTypes: {},
 };
 
-export const Default = () => ({
-  Component: DefaultView,
+const Template = (args) => ({
+  Component: Default,
   props: {
-    orientation: select("Orientation", orientations.MENU, orientations.MENU.VERTICAL),
-    variant: select("Variant", variants.MOLECULE.MENU, variants.MOLECULE.MENU.BRAND),
+    ...args,
   },
 });
+
+export const Basic = Template.bind({});
+Basic.args = {};

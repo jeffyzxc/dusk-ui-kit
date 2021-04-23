@@ -15,7 +15,7 @@
 <!-- <Carousel images="{images}" /> -->
 
 <Carousel
-  class="w-128"
+  style="width: 100%; text-align: center;"
   dots="{dots}"
   loop="{loop}"
   perPage="{perPage}"

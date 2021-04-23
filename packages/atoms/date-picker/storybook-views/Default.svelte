@@ -3,6 +3,7 @@
   export let variant;
 
   let value;
+  export let placeholder;
 
   const options = {
     enableTime: true,
@@ -25,8 +26,9 @@
   class="border border-2"
   variant="{variant}"
   options="{options}"
-  placeholder="Choose a date"
+  placeholder="{placeholder}"
   on:change="{handler}"
-  bind:value />
+  bind:value
+/>
 
 <p>Selected date: {value}</p>

@@ -1,27 +1,61 @@
-import { withKnobs, select } from "@storybook/addon-knobs";
+// import { withKnobs, select } from "@storybook/addon-knobs";
+// import { types } from "@dusk-network/helpers";
+// import DefaultView from "./storybook-views/Default.svelte";
+// import IconView from "./storybook-views/Icon.svelte";
+// import readme from "./readme.stories.md";
+
+// export default {
+//   title: "Components/Atoms/List",
+//   parameters: {
+//     notes: readme,
+//   },
+//   decorators: [withKnobs],
+// };
+
+// export const Default = () => ({
+//   Component: DefaultView,
+//   props: {
+//     type: select("Type", types.ATOM.LIST, types.ATOM.LIST.NONE),
+//   },
+// });
+
+// export const WithIcons = () => ({
+//   Component: IconView,
+//   props: {
+//     type: select("Type", types.ATOM.LIST, types.ATOM.LIST.NONE),
+//   },
+// });
+
 import { types } from "@dusk-network/helpers";
-import DefaultView from "./storybook-views/Default.svelte";
-import IconView from "./storybook-views/Icon.svelte";
-import readme from "./readme.stories.md";
+import Default from "./storybook-views/Default.svelte";
+
+import "@dusk-network/styles/tailwind.css";
+import List from "./List.svelte";
 
 export default {
-  title: "Components/Atoms/List",
+  title: `components/atoms/List`,
+  component: List,
   parameters: {
-    notes: readme,
+    layout: "centered",
   },
-  decorators: [withKnobs],
+  argTypes: {
+    type: {
+      control: {
+        type: "select",
+        options: Object.values(types.ATOM.LIST),
+      },
+    },
+  },
 };
 
-export const Default = () => ({
-  Component: DefaultView,
+const Template = (args) => ({
+  Component: Default,
   props: {
-    type: select("Type", types.ATOM.LIST, types.ATOM.LIST.NONE),
+    ...args,
   },
 });
 
-export const WithIcons = () => ({
-  Component: IconView,
-  props: {
-    type: select("Type", types.ATOM.LIST, types.ATOM.LIST.NONE),
-  },
-});
+export const Basic = Template.bind({});
+Basic.args = {
+  type: types.ATOM.LIST.BULLETED,
+};
