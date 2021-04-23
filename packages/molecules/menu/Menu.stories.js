@@ -19,7 +19,6 @@
 //   },
 // });
 
-import { variants } from "@dusk-network/helpers";
 import Default from "./storybook-views/Default.svelte";
 
 import "@dusk-network/styles/tailwind.css";
@@ -31,14 +30,7 @@ export default {
   parameters: {
     layout: "centered",
   },
-  argTypes: {
-    variant: {
-      control: {
-        type: "select",
-        options: Object.values(variants.MOLECULE.MENU),
-      },
-    },
-  },
+  argTypes: {},
 };
 
 const Template = (args) => ({
@@ -49,6 +41,4 @@ const Template = (args) => ({
 });
 
 export const Basic = Template.bind({});
-Basic.args = {
-  variant: variants.MOLECULE.MENU.BRAND,
-};
+Basic.args = {};
