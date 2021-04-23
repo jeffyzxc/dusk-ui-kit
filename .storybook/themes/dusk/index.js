@@ -1,4 +1,4 @@
-import { create } from "@storybook/theming/create";
+import { create } from "@storybook/theming";
 import resolveConfig from "tailwindcss/resolveConfig";
 import tailwindConfig from "../../../packages/styles/dusk.tailwind.config.js";
 import logo from "./logo.svg";
@@ -10,12 +10,12 @@ const fontFamily = config.theme.fontFamily;
 export default create({
   base: "light",
   colorPrimary: colors.purple["600"],
-  colorSecondary: colors.orange["600"],
+  colorSecondary: colors.green["900"],
 
   // UI
-  appBg: colors.gray["200"],
+  appBg: colors.indigo["700"],
   appContentBg: "#fff",
-  appBorderColor: colors.purple["700"],
+  appBorderColor: colors.purple["900"],
   appBorderRadius: 5,
 
   // Typography
@@ -23,12 +23,12 @@ export default create({
   fontCode: fontFamily.mono.join(", "),
 
   // Text colors
-  textColor: colors.gray["800"],
+  textColor: colors.gray["500"],
   textInverseColor: colors.gray["200"],
 
   // Toolbar default and active colors
   barTextColor: colors.gray["200"],
-  barSelectedColor: colors.orange["600"],
+  barSelectedColor: colors.green["600"],
   barBg: colors.gray["800"],
 
   // Form colors
