@@ -17,7 +17,7 @@
       "registry": "https://npm.pkg.github.com/"
     },
     "version": {
-      "allowBranch": ["main"],
+      "allowBranch": ["main", "next"],
       "ignoreChanges": ["/storybook-views/*", "*.stories.*", "*.md"],
       "conventionalCommits": true
     },
