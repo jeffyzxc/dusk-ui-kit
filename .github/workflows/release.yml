@@ -78,8 +78,10 @@ jobs:
       - name: Install Package Dependencies
         run: yarn bootstrap
       - name: Build Storybook
+        if: github.ref == 'refs/heads/main'
         run: yarn sb:build
       - name: Publish Storybook to Github Pages
+        if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
