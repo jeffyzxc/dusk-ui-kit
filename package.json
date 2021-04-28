@@ -21,7 +21,8 @@
     "sb:build": "build-storybook",
     "stage": "lint-staged",
     "storybook": "start-storybook -p 6006",
-    "test": "jest --watchAll",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
     "version:ci": "lerna version --yes --conventional-commits --create-release github --message 'chore(release): publish'"
   },
   "commitlint": {
@@ -42,7 +43,7 @@
     ],
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-      "\\.(css|scss|stylesheet)$": "<rootDir>/__mocks__/styleMock.js"
+      "\\.(css|postcss)$": "<rootDir>/__mocks__/styleMock.js"
     },
     "setupFilesAfterEnv": [
       "@testing-library/jest-dom/extend-expect"
@@ -54,7 +55,12 @@
     ],
     "transform": {
       "^.+\\.js$": "babel-jest",
-      "^.+\\.svelte$": "jest-transform-svelte"
+      "^.+\\.svelte$": [
+        "svelte-jester",
+        {
+          "debug": false
+        }
+      ]
     }
   },
   "devDependencies": {
@@ -88,6 +94,7 @@
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/svelte": "^3.0.3",
     "autoprefixer": "10.2.5",
+    "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
     "commitizen": "^4.2.3",
     "cssnano": "^5.0.1",
@@ -95,12 +102,12 @@
     "devmoji": "^2.2.0",
     "eslint": "^7.23.0",
     "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-svelte3": "^3.1.2",
     "husky": "^6.0.0",
     "is-ci": "^3.0.0",
     "jest": "^26.6.3",
-    "jest-transform-svelte": "^2.1.1",
     "lerna": "^4.0.0",
     "lint-staged": "^10.5.4",
     "npm-run-all": "^4.1.5",
@@ -126,6 +133,7 @@
     "stylelint": "^13.12.0",
     "stylelint-config-standard": "^21.0.0",
     "svelte": "^3.37.0",
+    "svelte-jester": "^1.5.0",
     "svelte-loader": "^3.1.1",
     "svelte-preprocess": "^4.7.2",
     "tailwindcss": "^2.1.1"

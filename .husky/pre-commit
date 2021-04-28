@@ -1,1 +1,1 @@
-npm run stage
+yarn stage && yarn test

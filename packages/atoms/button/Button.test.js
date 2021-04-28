@@ -1,9 +1,9 @@
-function sum(a, b) {
-  return a + b;
-}
-describe("Sample Test", () => {
-  it("should return 3 as the result of the function", () => {
-    // set timeout to prevent false positives with tests
-    expect(sum(1, 2)).toBe(3);
-  });
+import "@testing-library/jest-dom/extend-expect";
+import { render } from "@testing-library/svelte";
+
+import Button from "./storybook-views/Default.svelte";
+
+test("shows proper label", () => {
+  const results = render(Button, { buttonText: "a button" });
+  expect(() => results.getByText("a button")).not.toThrow();
 });

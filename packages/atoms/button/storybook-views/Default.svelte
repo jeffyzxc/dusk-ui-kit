@@ -1,11 +1,11 @@
 <script>
   import Button from "../Button.svelte";
   import ButtonLabel from "../Label.svelte";
-  export let variant;
-  export let size;
+  export let variant = null;
+  export let size = null;
   export let buttonText;
-  export let disabled;
-  export let outline;
+  export let disabled = null;
+  export let outline = null;
   // import "@dusk-network/styles/tailwind.css";
 </script>
 
