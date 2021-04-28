@@ -10,6 +10,10 @@
       @apply w-20 h-8 bg-white rounded-full shadow;
     }
 
+    &__checkbox {
+      @apply hidden;
+    }
+
     &__checkbox:checked ~ &__thumb {
       @apply transform translate-x-full;
     }
