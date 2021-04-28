@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.1](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/cta@1.9.9...@dusk-network/cta@2.0.0-rc.1) (2021-04-28)
+
+**Note:** Version bump only for package @dusk-network/cta
+
+
+
+
+
 ## [1.9.9](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/cta@1.9.8...@dusk-network/cta@1.9.9) (2021-03-28)
 
 **Note:** Version bump only for package @dusk-network/cta

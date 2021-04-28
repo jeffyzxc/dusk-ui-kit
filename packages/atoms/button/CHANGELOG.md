@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.1](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/button@1.8.9...@dusk-network/button@2.0.0-rc.1) (2021-04-28)
+
+
+### Features
+
+* **jest:** ✨ enabled simple test for Button and added to husky config ([ee31c8e](https://github.com/dusk-network/dusk-ui-kit/commit/ee31c8e2c812baca301cf25fa51bdd3443404847))
+
+
+
+
+
 ## [1.8.9](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/button@1.8.8...@dusk-network/button@1.8.9) (2021-03-28)
 
 **Note:** Version bump only for package @dusk-network/button
