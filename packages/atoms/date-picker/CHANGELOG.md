@@ -3,39 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [1.7.15](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/date-picker@1.7.14...@dusk-network/date-picker@1.7.15) (2021-04-23)
-
-**Note:** Version bump only for package @dusk-network/date-picker
-
-
-
-
-
-## [1.7.14](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/date-picker@1.7.13...@dusk-network/date-picker@1.7.14) (2021-04-23)
-
-**Note:** Version bump only for package @dusk-network/date-picker
-
-
-
-
-
-## [1.7.13](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/date-picker@1.7.12...@dusk-network/date-picker@1.7.13) (2021-04-23)
-
-**Note:** Version bump only for package @dusk-network/date-picker
-
-
-
-
-
-## [1.7.12](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/date-picker@1.7.11...@dusk-network/date-picker@1.7.12) (2021-04-23)
-
-**Note:** Version bump only for package @dusk-network/date-picker
-
-
-
-
-
-## [1.7.11](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/date-picker@1.7.10...@dusk-network/date-picker@1.7.11) (2021-04-23)
+# [2.0.0-rc.1](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/date-picker@1.7.10...@dusk-network/date-picker@2.0.0-rc.1) (2021-04-28)
 
 **Note:** Version bump only for package @dusk-network/date-picker
 

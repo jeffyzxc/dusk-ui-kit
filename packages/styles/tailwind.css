@@ -11,6 +11,8 @@ main {
   @apply flex-grow;
 }
 
-#sapper {
+#dusk,
+#sapper,
+#svelte {
   @apply flex flex-col min-h-screen;
 }

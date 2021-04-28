@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.1](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/list@1.8.2...@dusk-network/list@2.0.0-rc.1) (2021-04-28)
+
+**Note:** Version bump only for package @dusk-network/list
+
+
+
+
+
 ## [1.8.2](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/list@1.8.1...@dusk-network/list@1.8.2) (2021-03-22)
 
 **Note:** Version bump only for package @dusk-network/list

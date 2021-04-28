@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/cookie-banner",
-  "version": "1.7.9",
+  "version": "2.0.0-rc.1",
   "description": "Dusk UI Kit - Cookie Banner",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -16,8 +16,8 @@
   },
   "dependencies": {
     "@beyonk/gdpr-cookie-consent-banner": "^7.0.1",
-    "@dusk-network/helpers": "^1.11.0",
-    "@dusk-network/icon": "^1.11.0"
+    "@dusk-network/helpers": "^2.0.0-rc.1",
+    "@dusk-network/icon": "^2.0.0-rc.1"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.1](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/styles@1.11.2...@dusk-network/styles@2.0.0-rc.1) (2021-04-28)
+
+
+### Features
+
+* **styles:** ✨ enabled tailwind typography plugin ([cafaeed](https://github.com/dusk-network/dusk-ui-kit/commit/cafaeed49b2ed9ea6b2b517505cde0e9cb2c57f0))
+
+
+
+
+
 ## [1.11.2](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/styles@1.11.1...@dusk-network/styles@1.11.2) (2021-03-17)
 
 **Note:** Version bump only for package @dusk-network/styles

@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/dialog",
-  "version": "1.7.13",
+  "version": "2.0.0-rc.1",
   "description": "Dusk UI Kit - Dialog",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -15,10 +15,10 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/card": "^1.8.8",
-    "@dusk-network/elements": "^1.7.8",
-    "@dusk-network/helpers": "^1.11.0",
-    "@dusk-network/icon": "^1.11.0"
+    "@dusk-network/card": "^2.0.0-rc.1",
+    "@dusk-network/elements": "^2.0.0-rc.1",
+    "@dusk-network/helpers": "^2.0.0-rc.1",
+    "@dusk-network/icon": "^2.0.0-rc.1"
   },
   "peerDependencies": {
     "svelte": "^3.0.0"

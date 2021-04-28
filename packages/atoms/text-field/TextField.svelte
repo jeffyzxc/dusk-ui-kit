@@ -9,7 +9,8 @@
     states,
     contexts,
   } from "@dusk-network/helpers";
-  import { Input, Textarea } from "@dusk-network/elements";
+  import Input from "@dusk-network/elements/Input.svelte";
+  import Textarea from "@dusk-network/elements/Textarea.svelte";
   import "./styles.css";
 
   const forwardEvents = forwardEventsBuilder(current_component);
@@ -53,6 +54,7 @@
   placeholder="{placeholder}"
   type="{type}"
   name="{name}"
-  {...exclude($$props, ['use', 'class', 'variant', 'type', 'state', 'placeholder', 'name'])}>
+  {...exclude($$props, ["use", "class", "variant", "type", "state", "placeholder", "name"])}
+>
   <slot />
 </svelte:component>

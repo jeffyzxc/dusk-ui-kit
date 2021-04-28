@@ -3,8 +3,10 @@
   // import { scale } from "svelte/transition";
   // import { quadIn } from "svelte/easing";
   import { Scrim, exclude, contexts, variants, elevations } from "@dusk-network/helpers";
-  import Card, { Title, Content } from "@dusk-network/card";
-  import Icon from "@dusk-network/icon";
+  import Card from "@dusk-network/card/Card.svelte";
+  import Title from "@dusk-network/card/Title.svelte";
+  import Content from "@dusk-network/card/Content.svelte";
+  import Icon from "@dusk-network/icon/Icon.svelte";
   import "./styles.css";
 
   // const forwardEvents = forwardEventsBuilder(get_current_component(), ['Dialog:opening', 'Dialog:opened', 'Dialog:closing', 'Dialog:closed']);
@@ -83,7 +85,8 @@
           aria-modal="true"
           aria-labelledby="__DUK-dialog-title"
           aria-describedby="__DUK-dialog-content"
-          {...exclude($$props, ['class', 'variant', 'title'])}>
+          {...exclude($$props, ["class", "variant", "title"])}
+        >
           <Title id="__DUK-dialog-title" class="duk-dialog__title">
             {title}
             <button
@@ -91,7 +94,8 @@
               aria-controls="__DUK-dialog"
               aria-label="Dismiss dialog"
               on:click="{closeDialog}"
-              class="duk-dialog__dismiss">
+              class="duk-dialog__dismiss"
+            >
               <Icon name="close-circle-outline" />
             </button>
           </Title>

@@ -1,6 +1,8 @@
 <script>
-  import RichText from "../";
-  export let content;
+  import RichText from "../RichText.svelte";
+  const richText = "_This is an italic text_";
+  const richText2 = "**This is a strong text**";
 </script>
 
-<RichText content="{content}" />
+<RichText content="{richText}" />
+<RichText content="{richText2}" />

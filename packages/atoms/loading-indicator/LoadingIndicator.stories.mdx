@@ -1,0 +1,33 @@
+import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
+import LoadingIndicator from "./storybook-views/Default.svelte";
+
+<Meta title="Docs/components/atoms/LoadingIndicator" />
+
+# ⚛️ Loading indicator
+
+Loading-indicator indicates to users that the app needs more time to process the last user action.
+
+
+## Variant
+
+| Variant  | Usage                    |
+| -------- | ------------------------ |
+| Brand    | Applies a brand styling. |
+| LIGHT    | Applies a light styling. |
+
+
+## Actions
+
+Loading indicator is triggered whenever the action requiers time to process to indicate to the user that the action is in progress.
+
+## Usage
+
+```js
+<script>
+  import LoadingIndicator from "@dusk-network/loading-indicator";
+</script>
+
+<div class="p-10 w-6/12 mx-auto">
+  <LoadingIndicator/>
+</div>
+```

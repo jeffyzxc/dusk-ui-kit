@@ -1,15 +1,16 @@
 <script>
   import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, exclude, variants, types } from "@dusk-network/helpers";
+  import { forwardEventsBuilder, exclude, variants } from "@dusk-network/helpers";
   import "./styles.css";
-  import { Input, Label } from "@dusk-network/elements";
+  import InputCheckbox from "@dusk-network/elements/InputCheckbox.svelte";
+  import Label from "@dusk-network/elements/Label.svelte";
 
   let className = "";
   export { className as class };
 
   export let id;
   export let name;
-  export let checked = false;
+  export let value = undefined;
   export let variant = variants.ATOM.SWITCH.BRAND;
   export let disabled = false;
   export const use = [];
@@ -64,18 +65,19 @@
   for="{id}"
   class="duk-switch {className}
   {getClassNames(variant)}"
-  {...exclude($$props, ['use', 'class', 'variant', 'id', 'name', 'type'])}>
+  {...exclude($$props, ["use", "class", "variant", "id", "name", "type"])}
+>
   <div class="duk-switch__inner">
-    <Input
+    <InputCheckbox
       use="{[forwardEvents, ...use]}"
       class="duk-switch__inner__checkbox sr-only"
-      type="{types.ATOM.CHECKBOX}"
       name="{name}"
       id="{id}"
+      bind:value
       disabled="{disabled}"
       {...actionProp}
       {...defaultProp}
-      bind:checked />
+    />
     <div class="duk-switch__inner__track"></div>
     <div class="duk-switch__inner__thumb"></div>
   </div>

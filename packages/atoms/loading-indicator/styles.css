@@ -1,11 +1,3 @@
 .duk-loading-indicator {
   @apply inline-block fill-current;
-
-  &--brand {
-    @apply text-indigo-400 fill-current;
-  }
-
-  &--light {
-    @apply text-gray-500 fill-current;
-  }
 }

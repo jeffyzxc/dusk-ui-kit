@@ -10,7 +10,8 @@
     sizes,
   } from "@dusk-network/helpers";
   import "./styles.css";
-  import { Div, A } from "@dusk-network/elements";
+  import A from "@dusk-network/elements/A.svelte";
+  import Div from "@dusk-network/elements/Div.svelte";
 
   import ArrowLeftCircle from "./icons/ArrowLeftCircle.svelte";
   import ArrowRightCircle from "./icons/ArrowRightCircle.svelte";
@@ -358,6 +359,7 @@
   {disabled}
   {getClassNames(variant, size, context)}"
   data-tooltip="{tooltip}"
-  {...exclude($$props, ['use', 'class', 'variant', 'name', 'size'])}>
+  {...exclude($$props, ["use", "class", "variant", "name", "size"])}
+>
   <svelte:component this="{getSelectedIcon(name)}" viewbox="{viewbox}" />
 </svelte:component>

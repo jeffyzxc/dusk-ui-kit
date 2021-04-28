@@ -1,0 +1,33 @@
+import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
+import CookieBanner from "./storybook-views/Default.svelte";
+
+<Meta title="Docs/components/atoms/CookieBanner" />
+
+# ⚛️ Cookie Banner
+
+Provides a wrapper for [GRPR Cookie Consent Banner](https://github.com/beyonk-adventures/gdpr-cookie-consent-banner)
+
+## Tones
+
+| Value     | Description                             |
+| --------- | --------------------------------------- |
+| app       | Applies styling for an app context      |
+| marketing | Applies styling for a marketing context |
+
+## Config
+
+| Value    | Description                                      |
+| -------- | ------------------------------------------------ |
+| `Object` | Pass in GRPR Cookie Consent Banner configuration |
+
+## Example
+
+```js
+<script>
+  import CookieBanner from "@dusk-network/cookie-banner";
+
+  const config =
+</script>
+
+<CookieBanner tone="app" config="{config}" />
+```

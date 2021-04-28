@@ -1,31 +1,24 @@
 .duk-footer {
   @apply w-screen mt-5 py-20;
+  @apply sm:mt-12;
+  @apply lg:mt-32;
+  @apply xl:mt-40;
+  @apply 2xl:mt-48;
 
-  @screen sm {
-    @apply mt-12;
-  }
+  &--brand {
+    @apply text-white bg-indigo-600;
 
-  @screen lg {
-    @apply mt-32;
-  }
-
-  @screen xl {
-    @apply mt-40;
-  }
-
-  @screen 2xl {
-    @apply mt-48;
+    & a {
+      @apply text-white;
+    }
   }
 
   &__logo {
     @apply p-0 transform duration-200 ease-in-out transition-all flex items-center justify-center;
+    @apply md:justify-start;
 
     &:hover {
       @apply scale-105;
-    }
-
-    @screen md {
-      @apply justify-start;
     }
 
     & > svg {
@@ -39,10 +32,7 @@
 
   &__copyright {
     @apply block text-sm text-center mt-4;
-
-    @screen sm {
-      @apply inline-block text-left mt-0 mx-4 py-2 pl-4;
-    }
+    @apply sm:inline-block sm:text-left sm:mt-0 sm:mx-4 sm:py-2 sm:pl-4;
   }
 
   &__legal-menu {
@@ -51,10 +41,7 @@
 
   &__social-media-menu {
     @apply inline-flex mt-4 justify-center;
-
-    @screen sm {
-      @apply ml-auto mt-0 justify-start;
-    }
+    @apply sm:ml-auto sm:mt-0 sm:justify-start;
 
     &__item {
       &:not(:last-child) {
@@ -83,73 +70,11 @@
 
   &__maximal {
     @apply px-5 py-8 mx-auto flex items-start justify-between flex-col;
-
-    @screen sm {
-      @apply flex-row;
-    }
+    @apply sm:flex-row;
   }
 
   &__minimal {
-    @apply px-5 py-8 mx-auto flex items-center flex-col;
-
-    @screen sm {
-      @apply flex-row;
-    }
-  }
-
-  &--brand {
-    @apply text-white bg-indigo-600;
-
-    & a {
-      @apply text-white;
-    }
-  }
-
-  &--cta {
-    @apply text-gray-400 bg-orange-400;
-
-    & a {
-      @apply text-white;
-    }
-  }
-
-  &--dark {
-    @apply text-white bg-gray-900;
-
-    & a {
-      @apply text-white;
-    }
-  }
-
-  &--light {
-    @apply text-gray-800 bg-gray-400;
-
-    & a {
-      @apply text-gray-800;
-    }
-  }
-
-  &--success {
-    @apply text-white bg-green-900;
-
-    & a {
-      @apply text-white;
-    }
-  }
-
-  &--warning {
-    @apply text-gray-400 bg-yellow-900;
-
-    & a {
-      @apply text-white;
-    }
-  }
-
-  &--danger {
-    @apply text-white bg-red-900;
-
-    & a {
-      @apply text-white;
-    }
+    @apply px-5 py-8 mx-auto flex items-center flex-col; 
+    @apply sm:flex-row;
   }
 }

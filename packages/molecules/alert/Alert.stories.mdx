@@ -1,0 +1,51 @@
+import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
+import Alert from "./storybook-views/Default.svelte";
+
+<Meta title="Docs/components/Molecules/Alert" />
+
+# ⚛️ Alert
+
+Alert is a type of "pop-up" message to users of a script. An alert could be anything from notifying the user of an error to saying a short phrase such as "Hi". ... However, they can also be useful for giving the user information such as instructions for fixing errors in a form field.
+
+## Variants
+
+| Variant   | Usage                             |
+| --------- | --------------------------------- |
+| BRAND     | Applies a brand styling.          |
+| CTA       | Applies a call to action styling. |
+| Info      | Applies a info styling.           |
+| Success   | Applies a success styling.        |
+| Warning   | Applies a warning styling.        |
+| Danger    | Applies a danger styling.         |
+| LIGHT     | Applies a light styling.          |
+| DARK      | Applies a dark styling.           |
+
+## Sizes
+
+| Size   | Usage             |
+| ------ | ----------------- |
+| SMALL  | Applies a Small.  |
+| BASE   | Applies a Medium. |
+| LARGE  | Applies a Large.  |
+
+## Action
+
+After poping up, a user can close the Alert.
+
+## Usage
+
+```js
+<script>
+  import Alert from "@dusk-network/alert";
+  import {variants, sizes} from "@dusk-network/helpers";
+  let title = "IMPORTANT ALERT";
+  let dismissable = "X";
+  let value = true;
+</script>
+
+<div class="p-10 w-6/12 mx-auto">
+  <Alert variant="{variants.MOLECULE.ALERT.BRAND}" {title} {value} {dismissable} size="{sizes.MOLECULE.ALERT.BASE}">
+    <p>This is an alert!</p>
+  </Alert>
+</div>
+```

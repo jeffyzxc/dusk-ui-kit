@@ -1,5 +1,5 @@
 <script>
-  import Footer from "../";
+  import Footer from "../Footer.svelte";
   export let type;
   export let variant;
   export let social;

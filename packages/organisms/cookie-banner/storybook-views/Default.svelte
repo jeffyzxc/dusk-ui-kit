@@ -1,5 +1,5 @@
 <script>
-  import CookieBanner from "../";
+  import CookieBanner from "../CookieBanner.svelte";
   export let cookie;
   export let config;
   export let description;

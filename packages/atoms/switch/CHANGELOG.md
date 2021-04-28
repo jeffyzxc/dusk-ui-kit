@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.1](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/switch@1.7.9...@dusk-network/switch@2.0.0-rc.1) (2021-04-28)
+
+
+### Bug Fixes
+
+* **switch:** solution with duplicated html input ([fa42adb](https://github.com/dusk-network/dusk-ui-kit/commit/fa42adb142f31a611e763847f8b0f6de766b225b))
+* **switch:** split input into CheckboxInput ([3be5197](https://github.com/dusk-network/dusk-ui-kit/commit/3be5197ad1c224cc9bdfe996d1840de06642ec34))
+
+
+
+
+
 ## [1.7.9](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/switch@1.7.8...@dusk-network/switch@1.7.9) (2021-03-28)
 
 **Note:** Version bump only for package @dusk-network/switch

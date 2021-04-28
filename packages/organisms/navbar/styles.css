@@ -1,55 +1,32 @@
 .duk-navbar {
   @apply font-light flex flex-col w-full mb-5;
-
-  @screen sm {
-    @apply mb-12;
-  }
-
-  @screen lg {
-    @apply mb-32;
-  }
-
-  @screen xl {
-    @apply mb-40;
-  }
-
-  @screen 2xl {
-    @apply mb-48;
-  }
+  @apply sm:mb-12;
+  @apply lg:mb-32; 
+  @apply xl:mb-40; 
+  @apply 2xl:mb-48;
 
   &__wrapper {
     @apply flex-none flex w-full justify-between items-start;
-
-    @screen lg {
-      @apply items-center;
-    }
+    @apply lg:items-center;
 
     &--primary {
       @apply fill-current;
-
-      @screen lg {
-        @apply pt-2;
-      }
+      @apply lg:pt-2;
     }
 
     &--secondary {
       @apply px-6 pb-3 pt-4;
-
-      /* @screen lg {
-      } */
     }
   }
 
   &__brand {
     @apply flex flex-col items-start flex-grow;
+    @apply lg:flex-row lg:items-center lg:px-6;
 
     & [slot="logo"],
     .duk-navbar__logo {
       @apply inline-flex ml-4 my-5;
-
-      @screen lg {
-        @apply mr-6 mb-2 ml-0 mt-0;
-      }
+      @apply lg:mr-6 lg:mb-2 lg:ml-0 lg:mt-0
     }
 
     & svg {
@@ -58,26 +35,16 @@
 
     &__heading {
       @apply font-medium leading-relaxed text-base ml-3 w-full block text-center;
-
-      @screen lg {
-        @apply ml-0 mr-5 pb-2 w-auto inline;
-      }
-    }
-
-    @screen lg {
-      @apply flex-row items-center px-6;
+      @apply lg:ml-0 lg:mr-5 lg:pb-2 lg:w-auto lg:inline;
     }
   }
 
   &__collapse {
     @apply absolute;
+    @apply lg:hidden;
 
     right: 1rem;
     top: 1rem;
-
-    @screen lg {
-      @apply hidden;
-    }
 
     &__button {
       @apply flex items-center;
@@ -86,10 +53,7 @@
 
   &__logo {
     @apply inline-block;
-
-    @screen lg {
-      @apply self-center;
-    }
+    @apply lg:self-center;
   }
 
   &__links-menu {
@@ -102,21 +66,16 @@
 
   &__navigation {
     @apply flex-grow w-full;
+    @apply lg:flex lg:flex-shrink lg:flex-grow-0 lg:w-auto lg:h-auto;
 
     &--primary {
       & .duk-list__item__wrapper {
         @apply px-3 pt-4 pb-4;
+        @apply lg:pt-2;
 
         &--active {
           @apply px-6;
-
-          @screen lg {
-            @apply px-5 rounded-t;
-          }
-        }
-
-        @screen lg {
-          @apply pt-2;
+          @apply lg:px-5 lg:rounded-t;
         }
       }
     }
@@ -124,17 +83,11 @@
     &--secondary {
       & .duk-list__item__wrapper {
         @apply mb-5;
+        @apply lg:mb-0;
 
         &--active {
           @apply font-semibold;
-
-          @screen lg {
-            @apply border-t-2;
-          }
-        }
-
-        @screen lg {
-          @apply mb-0;
+          @apply lg:border-t-2;
         }
       }
     }
@@ -142,26 +95,23 @@
     /* FIXME Temp solution, we need to always show this. */
     &--tertiary {
       @apply hidden;
-      @screen lg {
-        @apply block;
-      }
+      @apply lg:block;
     }
 
     & .duk-list {
       @apply flex flex-col;
+      @apply lg:flex-row lg:flex-1 lg:justify-end lg:mb-0;
 
       &__item {
         @apply py-0 pl-0 leading-relaxed font-light w-full;
+        @apply lg:mb-0 lg:pr-0 lg:mr-5 lg:w-auto;
 
         &__wrapper {
           @apply w-full text-left;
+          @apply lg:text-left;
 
           &:is(a):not(.duk-list__item__wrapper--active) {
             @apply opacity-80 transition-all duration-700;
-          }
-
-          @screen lg {
-            @apply text-left;
           }
         }
 
@@ -172,13 +122,6 @@
             @apply mb-0;
           }
         }
-
-        @screen lg {
-          @apply mb-0 pr-0 mr-5 w-auto;
-        }
-      }
-      @screen lg {
-        @apply flex-row flex-1 justify-end mb-0;
       }
     }
 
@@ -191,9 +134,6 @@
         @apply opacity-100 transition-all duration-700;
       }
     }
-    @screen lg {
-      @apply flex flex-shrink flex-grow-0 w-auto h-auto;
-    }
   }
 
   &--hidden {
@@ -202,9 +142,7 @@
     & .duk-navbar__navigation,
     & .duk-navbar__wrapper--secondary {
       @apply hidden;
-      @screen lg {
-        @apply flex;
-      }
+      @apply lg:flex;
     }
   }
 
@@ -224,11 +162,8 @@
 
       & .duk-list__item__wrapper {
         &--active {
-          @apply bg-indigo-500 text-white;
-
-          @screen lg {
-            @apply border-white;
-          }
+          @apply bg-indigo-500 text-white; 
+          @apply lg:border-white;
         }
       }
     }

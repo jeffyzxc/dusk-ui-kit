@@ -1,0 +1,32 @@
+import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
+import List from "./storybook-views/Default.svelte";
+
+<Meta title="Docs/components/atoms/List" />
+
+# ⚛️ List
+
+Lists are used to group together related pieces of information so they are clearly associated with each other and easy to read.
+
+## Types
+
+| Type     | Usage                   |
+| -------- | ----------------------- |
+| NONE     | None.                   |
+| NUMBERED | listed in numbers.      |
+| BULLETED | listed as bullet points.|
+
+## Usage
+
+```js
+<script>
+  import List, { Item } from "@dusk-network/list";
+  import { types } from "@dusk-network/helpers";
+</script>
+<div class="p-10 w-6/12 mx-auto">
+  <List type="{types.ATOM.LIST.NONE}">
+    <Item>List</Item>
+    <Item>Item</Item>
+    <Item>Test</Item>
+  </List>
+</div>
+```

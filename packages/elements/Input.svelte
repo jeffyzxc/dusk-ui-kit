@@ -7,6 +7,7 @@
   export let id = "";
   export let placeholder = "";
   let className = "";
+  export let checked = false;
   export { className as class };
 
   function getClassNames(type) {
@@ -38,7 +39,9 @@
   use:forwardEvents
   class="{className}
   {getClassNames(type)}"
-  type="{type}"
+  type="checkbox"
   id="{id}"
   placeholder="{placeholder}"
-  {...exclude($$props, ['use', 'class'])} />
+  bind:checked
+  {...exclude($$props, ["use", "class"])}
+/>

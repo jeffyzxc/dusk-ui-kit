@@ -1,0 +1,48 @@
+import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
+import Carousel from "./storybook-views/Default.svelte";
+
+<Meta title="Docs/components/Molecules/Carousel" />
+
+# ⚛️ Carousel
+
+Carousel is used to organize content in a rotating carousel of slides.
+
+## Action
+
+By draging a pic left or right a user can rotate between the pictures.
+
+## Usage
+
+```js
+<script>
+  import Carousel, { Item } from "@dusk-network/carousel";
+  let dots = true;
+  let loop = true;
+  let perPage = 1;
+  let autoplay = 0;
+  let duration = 200;
+  let easing = "ease-out";
+  let startIndex = 0;
+  let controls = 0;
+</script>
+
+// <Carousel images="{images}" />
+
+<div class="p-10 w-6/12 mx-auto">
+  <Carousel
+    class="w-128"
+    dots="{dots}"
+    loop="{loop}"
+    perPage="{perPage}"
+    autoplay="{autoplay}"
+    duration="{duration}"
+    easing="{easing}"
+    startIndex="{startIndex}"
+    controls="{controls}">
+    <Item><img src="//placekitten.com/256?image=1" alt="Kitten 1" /></Item>
+    <Item><img src="//placekitten.com/256?image=2" alt="Kitten 2" /></Item>
+    <Item><img src="//placekitten.com/256?image=3" alt="Kitten 3" /></Item>
+    <Item><img src="//placekitten.com/256?image=4" alt="Kitten 4" /></Item>
+  </Carousel>
+</div>
+```

@@ -1,0 +1,62 @@
+import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
+import Control from "./storybook-views/Default.svelte";
+
+<Meta title="Docs/components/Molecules/Control" />
+
+# ⚛️ Control
+
+  Control makes sure that users input has passed or not the validation process on the text-field.
+
+## Variants
+
+| Variant  | Usage                    |
+| -------- | ------------------------ |
+| BRAND    | Applies a brand styling. |
+| LIGHT    | Applies a light styling. |
+
+## Types
+
+| Type         | Usage                                                                          |
+| ------------ | ------------------------------------------------------------------------------ |
+| STACKED      | Stacks the label and text-field on top of each other.                          |
+| INLINE-FIXED | Inlines the label with the text-field but will keep the text field size fixed. |
+| INLINE-FLEX  | Inlines the label with the text-field equally.                                 |
+
+## States
+
+| State   | Usage                      |
+| ------  | -------------------------- |
+| BASE    | Colors the label in black. |
+| SUCCESS | Colors the label in green. |
+| WARNING | Colors the label in orange.|
+| DANGER  | Colors the label in red.   |
+
+## Usage
+
+```js
+<script>
+  import Control from "@dusk-network/control";
+  import TextField from "@dusk-network/text-field";
+  import { variants, states, types } from "@dusk-network/helpers";
+  let label = "This is a Text Field";
+  let message = "Hi";
+  let placeholder="Type here";
+</script>
+// the message variable will be connected  to the validation tool used and will display what message the validation process is going throug, valid, invalid input, etc...
+<div class="p-10 w-6/12 mx-auto">
+  <Control
+    type="{types.MOLECULE.CONTROL.STACKED}"
+    variant="{variants.MOLECULE.CONTROL.LIGHT}"
+    label="{label}"
+    message="{message}"
+    state="{states.MOLECULE.CONTROL.BASE}"
+    id="__control-test__">
+    <TextField
+      variant="{variants.ATOM.TEXT_FIELD.DARK}"
+      state="{states.ATOM.TEXT_FIELD.SUCCESS}"
+      name="control_test"
+      id="__control-test__"
+      placeholder="{placeholder}" />
+  </Control>
+</div>
+```

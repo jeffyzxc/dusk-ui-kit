@@ -1,5 +1,6 @@
 <script>
-  import Carousel, { Item } from "../";
+  import Carousel from "../Carousel.svelte";
+  import Item from "../Item.svelte";
 
   export let dots;
   export let loop;
@@ -14,7 +15,7 @@
 <!-- <Carousel images="{images}" /> -->
 
 <Carousel
-  class="w-128"
+  style="width: 100%; text-align: center;"
   dots="{dots}"
   loop="{loop}"
   perPage="{perPage}"
@@ -22,7 +23,8 @@
   duration="{duration}"
   easing="{easing}"
   startIndex="{startIndex}"
-  controls="{controls}">
+  controls="{controls}"
+>
   <Item><img src="//placekitten.com/256?image=1" alt="Kitten 1" /></Item>
   <Item><img src="//placekitten.com/256?image=2" alt="Kitten 2" /></Item>
   <Item><img src="//placekitten.com/256?image=3" alt="Kitten 3" /></Item>

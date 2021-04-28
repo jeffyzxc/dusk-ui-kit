@@ -1,6 +1,7 @@
 <script>
-  import Menu from "@dusk-network/menu";
-  import List, { Item } from "@dusk-network/list";
+  import Menu from "@dusk-network/menu/Menu.svelte";
+  import List from "@dusk-network/list/List.svelte";
+  import ListItem from "@dusk-network/list/Item.svelte";
 
   let className = "";
   export { className as class };
@@ -11,9 +12,10 @@
 <Menu
   orientation="{orientation}"
   separator="{separator}"
-  class="duk-footer__legal-menu {className}">
+  class="duk-footer__legal-menu {className}"
+>
   <List>
-    <Item href="https://dusk.network/footer-pages/privacy-policies">Privacy policy</Item>
-    <Item href="https://dusk.network/footer-pages/terms-of-use">Terms of use</Item>
+    <ListItem href="https://dusk.network/footer-pages/privacy-policies">Privacy policy</ListItem>
+    <ListItem href="https://dusk.network/footer-pages/terms-of-use">Terms of use</ListItem>
   </List>
 </Menu>

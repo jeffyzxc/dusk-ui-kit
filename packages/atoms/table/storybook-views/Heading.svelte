@@ -1,5 +1,7 @@
 <script>
-  import Table, { Row, Datum } from "../";
+  import Table from "../Table.svelte";
+  import TableRow from "../Row";
+  import TableDatum from "../Datum";
 
   export let fixed;
   export let striped;
@@ -10,48 +12,48 @@
 <div class="p-10 w-full">
   <Table fixed="{fixed}" striped="{striped}" variant="{variant}" type="{type}" class="w-full">
     <thead slot="head">
-      <Row type="head">
-        <Datum colspan="3" prominent="{true}">
+      <TableRow type="head">
+        <TableDatum colspan="3" prominent="{true}">
           <h3>Mega Heading</h3>
-        </Datum>
-      </Row>
+        </TableDatum>
+      </TableRow>
     </thead>
     <tbody>
-      <Row>
-        <Datum>Col 1 data</Datum>
-        <Datum>Col 2 data</Datum>
-        <Datum>Col 3 data</Datum>
-      </Row>
-      <Row highlight="{true}">
-        <Datum>Col 1 data</Datum>
-        <Datum>Col 2 data</Datum>
-        <Datum>Col 3 data</Datum>
-      </Row>
-      <Row>
-        <Datum>Col 1 data</Datum>
-        <Datum>Col 2 data</Datum>
-        <Datum>Col 3 data</Datum>
-      </Row>
-      <Row>
-        <Datum>Col 1 data</Datum>
-        <Datum>Col 2 data</Datum>
-        <Datum>Col 3 data</Datum>
-      </Row>
-      <Row>
-        <Datum>Col 1 data</Datum>
-        <Datum>Col 2 data</Datum>
-        <Datum>Col 3 data</Datum>
-      </Row>
-      <Row>
-        <Datum>Col 1 data</Datum>
-        <Datum>Col 2 data</Datum>
-        <Datum>Col 3 data</Datum>
-      </Row>
-      <Row>
-        <Datum>Col 1 data</Datum>
-        <Datum>Col 2 data</Datum>
-        <Datum>Col 3 data</Datum>
-      </Row>
+      <TableRow>
+        <TableDatum>Col 1 data</TableDatum>
+        <TableDatum>Col 2 data</TableDatum>
+        <TableDatum>Col 3 data</TableDatum>
+      </TableRow>
+      <TableRow highlight="{true}">
+        <TableDatum>Col 1 data</TableDatum>
+        <TableDatum>Col 2 data</TableDatum>
+        <TableDatum>Col 3 data</TableDatum>
+      </TableRow>
+      <TableRow>
+        <TableDatum>Col 1 data</TableDatum>
+        <TableDatum>Col 2 data</TableDatum>
+        <TableDatum>Col 3 data</TableDatum>
+      </TableRow>
+      <TableRow>
+        <TableDatum>Col 1 data</TableDatum>
+        <TableDatum>Col 2 data</TableDatum>
+        <TableDatum>Col 3 data</TableDatum>
+      </TableRow>
+      <TableRow>
+        <TableDatum>Col 1 data</TableDatum>
+        <TableDatum>Col 2 data</TableDatum>
+        <TableDatum>Col 3 data</TableDatum>
+      </TableRow>
+      <TableRow>
+        <TableDatum>Col 1 data</TableDatum>
+        <TableDatum>Col 2 data</TableDatum>
+        <TableDatum>Col 3 data</TableDatum>
+      </TableRow>
+      <TableRow>
+        <TableDatum>Col 1 data</TableDatum>
+        <TableDatum>Col 2 data</TableDatum>
+        <TableDatum>Col 3 data</TableDatum>
+      </TableRow>
     </tbody>
   </Table>
 </div>

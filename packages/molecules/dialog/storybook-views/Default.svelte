@@ -1,6 +1,7 @@
 <script>
-  import Dialog from "../";
-  import Button, { Label } from "@dusk-network/button";
+  import Dialog from "../Dialog.svelte";
+  import Button from "@dusk-network/button/Button.svelte";
+  import Label from "@dusk-network/button/Label.svelte";
   export let variant;
   export let title;
   export let persistent;
@@ -13,7 +14,8 @@
   title="{title}"
   persistent="{persistent}"
   opacity="{opacity}"
-  bind:value="{showDialog}">
+  bind:value="{showDialog}"
+>
   <p>This is a basic Dialog!</p>
 </Dialog>
 

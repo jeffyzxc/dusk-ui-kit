@@ -3,7 +3,8 @@
   import { current_component } from "svelte/internal";
   import { forwardEventsBuilder, exclude, variants, types } from "@dusk-network/helpers";
   import "./styles.css";
-  import { Input, Label } from "@dusk-network/elements";
+  import InputRadio from "@dusk-network/elements/InputRadio.svelte";
+  import Label from "@dusk-network/elements/Label.svelte";
   import createRipple from "@dusk-network/helpers/ripple.js";
 
   let className = "";
@@ -65,15 +66,17 @@
 <div
   class="duk-radio {className}
   {getClassNames(variant)}"
-  {...exclude($$props, ['use', 'class', 'variant', 'id', 'name', 'type'])}>
-  <Input
+  {...exclude($$props, ["use", "class", "variant", "id", "name", "type"])}
+>
+  <InputRadio
     use="{[forwardEvents, ripple, ...use]}"
     class="duk-radio__button"
     type="{types.ATOM.RADIO}"
     name="{name}"
     id="{id}"
     {...actionProp}
-    {...defaultProp} />
+    {...defaultProp}
+  />
   <Label class="duk-radio__label" for="{id}">
     <slot />
   </Label>

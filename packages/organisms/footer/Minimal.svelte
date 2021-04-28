@@ -1,6 +1,6 @@
 <script>
   import { exclude } from "@dusk-network/helpers";
-  import Logo from "@dusk-network/logo";
+  import Logo from "@dusk-network/logo/Logo.svelte";
   import LegalMenu from "./menu/LegalMenu.svelte";
   import SocialMediaMenu from "./menu/SocialMediaMenu.svelte";
 
@@ -10,7 +10,8 @@
 
 <div
   class="duk-footer__minimal container "
-  {...exclude($$props, ['use', 'class', 'copyright', 'social'])}>
+  {...exclude($$props, ["use", "class", "copyright", "social"])}
+>
   <Logo class="duk-footer__logo" href="https://dusk.network" />
   <p class="duk-footer__copyright">{copyright}</p>
   <LegalMenu orientation="horizontal" separator="dot" class="duk-footer__legal-menu" />
@@ -18,6 +19,7 @@
     <SocialMediaMenu
       orientation="horizontal"
       class="duk-footer__social-media-menu"
-      social="{social}" />
+      social="{social}"
+    />
   {/if}
 </div>

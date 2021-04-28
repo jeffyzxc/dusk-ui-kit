@@ -1,2 +1,8 @@
+import { addParameters } from "@storybook/svelte";
 import "../packages/styles/tailwind.css";
-import "../static/global.css";
+
+addParameters({
+  docs: {
+    iframeHeight: 300,
+  },
+});

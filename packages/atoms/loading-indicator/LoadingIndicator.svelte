@@ -1,8 +1,8 @@
 <script>
   import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, exclude, variants } from "@dusk-network/helpers";
+  import { forwardEventsBuilder, exclude } from "@dusk-network/helpers";
   import "./styles.css";
-  import { Div } from "@dusk-network/elements";
+  import Div from "@dusk-network/elements/Div.svelte";
 
   const forwardEvents = forwardEventsBuilder(current_component);
 
@@ -12,31 +12,14 @@
   export { className as class };
 
   export let wrapper = Div;
-  export let variant = variants.ATOM.LOADING_INDICATOR.BRAND;
-
-  function getClassNames(variant) {
-    let classNames = "";
-    switch (variant) {
-      case variants.ATOM.LOADING_INDICATOR.BRAND:
-        classNames += " duk-loading-indicator--brand";
-        break;
-      case variants.ATOM.LOADING_INDICATOR.LIGHT:
-        classNames += " duk-loading-indicator--light";
-        break;
-      default:
-        classNames += "";
-    }
-
-    return classNames;
-  }
 </script>
 
 <svelte:component
   this="{wrapper}"
   use="{[forwardEvents, ...use]}"
-  class="duk-loading-indicator {className}
-  {getClassNames(variant)}"
-  {...exclude($$props, ['use', 'class', 'variant'])}>
+  class="duk-loading-indicator {className}"
+  {...exclude($$props, ["use", "class"])}
+>
   <svg
     version="1.1"
     class="svg-loader"
@@ -45,7 +28,8 @@
     x="0px"
     y="0px"
     viewBox="0 0 80 80"
-    xml:space="preserve">
+    xml:space="preserve"
+  >
     <path
       fill="currentColor"
       d="M10,40c0,0,0-0.4,0-1.1c0-0.3,0-0.8,0-1.3c0-0.3,0-0.5,0-0.8c0-0.3,0.1-0.6,0.1-0.9c0.1-0.6,0.1-1.4,0.2-2.1
@@ -60,7 +44,8 @@
       c-2-1.5-4.4-2.7-6.9-3.6c-0.6-0.2-1.3-0.4-1.9-0.6c-0.7-0.2-1.3-0.3-1.9-0.4c-1.2-0.3-2.8-0.4-4.2-0.5l-2,0c-0.7,0-1.4,0.1-2.1,0.1
       c-0.7,0.1-1.4,0.1-2,0.3c-0.7,0.1-1.3,0.3-2,0.4c-2.6,0.7-5.2,1.7-7.5,3.1c-2.2,1.4-4.3,2.9-6,4.7c-0.9,0.8-1.6,1.8-2.4,2.7
       c-0.7,0.9-1.3,1.9-1.9,2.8c-0.5,1-1,1.9-1.4,2.8c-0.4,0.9-0.8,1.8-1,2.6c-0.3,0.9-0.5,1.6-0.7,2.4c-0.2,0.7-0.3,1.4-0.4,2.1
-      c-0.1,0.3-0.1,0.6-0.2,0.9c0,0.3-0.1,0.6-0.1,0.8c0,0.5-0.1,0.9-0.1,1.3C10,39.6,10,40,10,40z">
+      c-0.1,0.3-0.1,0.6-0.2,0.9c0,0.3-0.1,0.6-0.1,0.8c0,0.5-0.1,0.9-0.1,1.3C10,39.6,10,40,10,40z"
+    >
       <animateTransform
         attributeType="xml"
         attributeName="transform"
@@ -81,7 +66,8 @@
       c0.3,0.6,0.6,1.2,0.9,1.9c0.4,0.6,0.8,1.3,1.2,1.9c0.5,0.6,1,1.3,1.6,1.8c1.1,1.2,2.5,2.3,4,3.2c1.5,0.9,3.2,1.6,5,2.1
       c1.8,0.5,3.6,0.6,5.6,0.6c1.8-0.1,3.7-0.4,5.4-1c1.7-0.6,3.3-1.4,4.7-2.4c1.4-1,2.6-2.1,3.6-3.3c0.5-0.6,0.9-1.2,1.3-1.8
       c0.4-0.6,0.7-1.2,1-1.8c0.3-0.6,0.6-1.2,0.8-1.8c0.2-0.6,0.4-1.1,0.5-1.7c0.1-0.5,0.2-1,0.3-1.5c0.1-0.4,0.1-0.8,0.1-1.2
-      c0-0.2,0-0.4,0.1-0.5c0-0.2,0-0.4,0-0.5c0-0.3,0-0.6,0-0.8c0-0.5,0-0.7,0-0.7c0-1.1,0.9-2,2-2s2,0.9,2,2C62,40,62,40.1,62,40.1z">
+      c0-0.2,0-0.4,0.1-0.5c0-0.2,0-0.4,0-0.5c0-0.3,0-0.6,0-0.8c0-0.5,0-0.7,0-0.7c0-1.1,0.9-2,2-2s2,0.9,2,2C62,40,62,40.1,62,40.1z"
+    >
       <animateTransform
         attributeType="xml"
         attributeName="transform"

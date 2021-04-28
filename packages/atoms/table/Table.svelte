@@ -2,7 +2,7 @@
   import { current_component } from "svelte/internal";
   import { forwardEventsBuilder, exclude, variants, types } from "@dusk-network/helpers";
   import "./styles.css";
-  import { Table } from "@dusk-network/elements";
+  import Table from "@dusk-network/elements/Table.svelte";
   const forwardEvents = forwardEventsBuilder(current_component);
   export let use = [];
   let className = "";
@@ -52,7 +52,8 @@
   use="{[forwardEvents, ...use]}"
   class="duk-table {className}
   {getClassNames(variant, type, striped)}"
-  {...exclude($$props, ['use', 'class', 'type', 'variant', 'striped'])}>
+  {...exclude($$props, ["use", "class", "type", "variant", "striped"])}
+>
   <slot name="head" />
   <slot />
   <slot name="foot" />
