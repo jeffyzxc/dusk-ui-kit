@@ -1,1 +1,1 @@
-yarn stage && yarn test
+yarn stage
