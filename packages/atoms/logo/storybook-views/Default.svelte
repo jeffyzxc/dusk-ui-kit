@@ -7,7 +7,6 @@
 <script>
   import Logo from "../Logo.svelte";
   export let href;
-  export let variant;
 </script>
 
-<Logo variant="{variant}" href="{href}" class="sb-logo" />
+<Logo href="{href}" class="sb-logo" />
