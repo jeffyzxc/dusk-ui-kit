@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+
+
+**Note:** Version bump only for package @dusk-network/styles
+
+
+
+
+
 # [2.0.0-rc.1](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/styles@1.11.2...@dusk-network/styles@2.0.0-rc.1) (2021-04-28)
 
 
