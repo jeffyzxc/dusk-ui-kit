@@ -19,7 +19,6 @@
 //   },
 // });
 
-import { variants, contexts } from "@dusk-network/helpers";
 import Default from "./storybook-views/Default.svelte";
 
 import "@dusk-network/styles/tailwind.css";
@@ -31,20 +30,7 @@ export default {
   parameters: {
     layout: "centered",
   },
-  argTypes: {
-    variant: {
-      control: {
-        type: "select",
-        options: Object.values(variants.ATOM.LOGO),
-      },
-    },
-    context: {
-      control: {
-        type: "radio",
-        options: Object.values(contexts.ICON.LIST),
-      },
-    },
-  },
+  argTypes: {},
 };
 
 const Template = (args) => ({
@@ -55,6 +41,4 @@ const Template = (args) => ({
 });
 
 export const Basic = Template.bind({});
-Basic.args = {
-  variant: variants.ATOM.LOGO.BRAND,
-};
+Basic.args = {};
