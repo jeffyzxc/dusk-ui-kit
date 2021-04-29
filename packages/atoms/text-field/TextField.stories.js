@@ -71,9 +71,10 @@ const Template = (args) => ({
   },
 });
 
-export const DefaultButton = Template.bind({});
-DefaultButton.args = {
+export const Basic = Template.bind({});
+Basic.args = {
   variant: variants.ATOM.TEXT_FIELD.LIGHT,
   state: states.ATOM.TEXT_FIELD.BASE,
   type: types.ATOM.TEXT_FIELD.TEXT,
+  placeholder: "This is text field",
 };
