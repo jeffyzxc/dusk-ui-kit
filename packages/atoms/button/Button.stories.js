@@ -169,8 +169,8 @@ const Template = (args) => ({
   },
 });
 
-export const DefaultButton = Template.bind({});
-DefaultButton.args = {
+export const Basic = Template.bind({});
+Basic.args = {
   variant: variants.ATOM.BUTTON.BRAND,
   size: sizes.ATOM.BUTTON.LARGE,
   buttonText: "Hi I'm a Button",
