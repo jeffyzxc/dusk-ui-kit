@@ -16044,7 +16044,7 @@ store2@^2.12.0:
 
 storybook-addon-designs@beta:
   version "6.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/storybook-addon-designs/-/storybook-addon-designs-6.0.0-beta.0.tgz#a710a2a21d493bb6aa2f0042ca11fe3d557a8190"
+  resolved "https://registry.npmjs.org/storybook-addon-designs/-/storybook-addon-designs-6.0.0-beta.0.tgz"
   integrity sha512-M//KuSlygyrfsBXVhfZ9qaQqTJx3AaDh4A8aMXXjWbIfbduWkOYDQzOZxGa8itSz6HZhpBH86gS+MDJLuJMeUw==
   dependencies:
     "@figspec/react" "^0.1.4"

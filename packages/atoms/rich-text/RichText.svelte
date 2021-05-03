@@ -1,5 +1,5 @@
 <script>
-  import marked from "marked";
+  import * as marked from "marked";
   import "./styles.css";
   export let content;
 </script>

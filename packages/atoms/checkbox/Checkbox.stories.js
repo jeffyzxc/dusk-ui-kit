@@ -56,4 +56,6 @@ const Template = (args) => ({
 export const Basic = Template.bind({});
 Basic.args = {
   variant: variants.ATOM.CHECKBOX.SUCCESS,
+  label1: "Yo! I am a Checkbox",
+  label2: "Yo! I am a Checkbox too",
 };
