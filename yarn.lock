@@ -1064,16 +1064,16 @@
   resolved "https://registry.npmjs.org/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@beyonk/gdpr-cookie-consent-banner@^7.0.1":
+"@beyonk/gdpr-cookie-consent-banner@7.1.1":
   version "7.1.1"
-  resolved "https://registry.npmjs.org/@beyonk/gdpr-cookie-consent-banner/-/gdpr-cookie-consent-banner-7.1.1.tgz"
+  resolved "https://registry.yarnpkg.com/@beyonk/gdpr-cookie-consent-banner/-/gdpr-cookie-consent-banner-7.1.1.tgz#609f690460bdfc6809d094f76927fbd368448717"
   integrity sha512-wyiFQFAvGRjKw7ubJTcWHN2F5QxX+Wf7hE3U4AYxR1QIDG7YxnAKuo16bLPMwy6+IiNkiy8O413cxhp0eXJidA==
   dependencies:
     cookie-universal "^2.1.4"
 
-"@beyonk/svelte-carousel@^2.8.0":
+"@beyonk/svelte-carousel@2.8.0":
   version "2.8.0"
-  resolved "https://registry.npmjs.org/@beyonk/svelte-carousel/-/svelte-carousel-2.8.0.tgz"
+  resolved "https://registry.yarnpkg.com/@beyonk/svelte-carousel/-/svelte-carousel-2.8.0.tgz#f91ddb302b9fa4494db915233d45574f9d77df9b"
   integrity sha512-kWObh9XqI7tfzltySmTZ0/ULE5MjLqd0jhsGhr+GnVfIkCOGwTHwQxzheLjC1dkBk0Z4wucLxBwUeSxqtGF9Ww==
   dependencies:
     siema "^1.5.1"
@@ -16477,9 +16477,9 @@ svelte-dev-helper@^1.1.9:
   resolved "https://registry.npmjs.org/svelte-dev-helper/-/svelte-dev-helper-1.1.9.tgz"
   integrity sha1-fRh9tcbNu9ZNdaMvkbiZi94yc8M=
 
-svelte-flatpickr@^3.1.0:
+svelte-flatpickr@3.1.0:
   version "3.1.0"
-  resolved "https://registry.npmjs.org/svelte-flatpickr/-/svelte-flatpickr-3.1.0.tgz"
+  resolved "https://registry.yarnpkg.com/svelte-flatpickr/-/svelte-flatpickr-3.1.0.tgz#ad83588430dbd55196a1a258b8ba27e7f9c1ee37"
   integrity sha512-zKyV+ukeVuJ8CW0Ing3T19VSekc4bPkou/5Riutt1yATrLvSsanNqcgqi7Q5IePvIoOF9GJ5OtHvn1qK9Wx9BQ==
   dependencies:
     flatpickr "^4.5.2"

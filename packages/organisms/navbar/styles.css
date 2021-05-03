@@ -1,9 +1,8 @@
 .duk-navbar {
   @apply font-light flex flex-col w-full mb-5;
   @apply sm:mb-12;
-  @apply lg:mb-32; 
-  @apply xl:mb-40; 
-  @apply 2xl:mb-48;
+  @apply lg:mb-32;
+  @apply 2xl:mb-40;
 
   &__wrapper {
     @apply flex-none flex w-full justify-between items-start;
@@ -26,7 +25,7 @@
     & [slot="logo"],
     .duk-navbar__logo {
       @apply inline-flex ml-4 my-5;
-      @apply lg:mr-6 lg:mb-2 lg:ml-0 lg:mt-0
+      @apply lg:mr-6 lg:mb-2 lg:ml-0 lg:mt-0;
     }
 
     & svg {
@@ -162,7 +161,7 @@
 
       & .duk-list__item__wrapper {
         &--active {
-          @apply bg-indigo-500 text-white; 
+          @apply bg-indigo-500 text-white;
           @apply lg:border-white;
         }
       }
