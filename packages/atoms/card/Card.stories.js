@@ -53,8 +53,8 @@ Basic.args = {
     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam minus quod neque eligendi eaque aliquam fugit nemo cupiditate odio sapiente?",
 };
 
-export const Tilte = Template.bind({});
-Tilte.args = {
+export const Title = Template.bind({});
+Title.args = {
   ...Basic.args,
   title: "This is a title!",
 };
