@@ -1,74 +1,3 @@
-// import { withKnobs, select, text, optionsKnob as options } from "@storybook/addon-knobs";
-// import { variants, sizes } from "@dusk-network/helpers";
-// import DefaultView from "./storybook-views/Default.svelte";
-// import TitleView from "./storybook-views/Title.svelte";
-// import ActionsView from "./storybook-views/Actions.svelte";
-// import FooterView from "./storybook-views/Footer.svelte";
-// import readme from "./readme.stories.md";
-
-// export default {
-//   title: "Components/Atoms/Card",
-//   parameters: {
-//     notes: readme,
-//   },
-//   decorators: [withKnobs],
-// };
-
-// const cardVariants = variants.ATOM.CARD;
-// const cardVariantDefault = variants.ATOM.CARD.WHITE;
-// const cardSizes = sizes.ATOM.CARD;
-// const cardSizeDefault = sizes.ATOM.CARD.BASE;
-// const buttonVariants = variants.ATOM.BUTTON;
-// const buttonVariantDefault = variants.ATOM.BUTTON.BRAND;
-
-// export const Default = () => ({
-//   Component: DefaultView,
-//   props: {
-//     variant: select("Card Variant", cardVariants, cardVariantDefault),
-//     content: text("Card Content", "Lorem ipsum..."),
-//     size: options("Size", cardSizes, cardSizeDefault, {
-//       display: "radio",
-//     }),
-//   },
-// });
-
-// export const WithTitle = () => ({
-//   Component: TitleView,
-//   props: {
-//     variant: select("Card Variant", cardVariants, cardVariantDefault),
-//     title: text("Card Title", "I am a Card!"),
-//     content: text("Card Content", "Lorem ipsum..."),
-//     size: options("Size", cardSizes, cardSizeDefault, {
-//       display: "radio",
-//     }),
-//   },
-// });
-
-// export const WithFooter = () => ({
-//   Component: FooterView,
-//   props: {
-//     variant: select("Card Variant", cardVariants, cardVariantDefault),
-//     content: text("Card Content", "Lorem ipsum..."),
-//     size: options("Size", cardSizes, cardSizeDefault, {
-//       display: "radio",
-//     }),
-//   },
-// });
-
-// export const WithTitleAndActions = () => ({
-//   Component: ActionsView,
-//   props: {
-//     variant: select("Card Variant", cardVariants, cardVariantDefault),
-//     content: text("Card Content", "Lorem ipsum..."),
-//     title: text("Card Title", "I am a Card!"),
-//     buttonText: text("Button Text", "Action!"),
-//     buttonVariant: select("Button Variant", buttonVariants, buttonVariantDefault),
-//     size: options("Size", cardSizes, cardSizeDefault, {
-//       display: "radio",
-//     }),
-//   },
-// });
-
 import { variants, sizes, elevations } from "@dusk-network/helpers";
 import Default from "./storybook-views/Default.svelte";
 import "@dusk-network/styles/tailwind.css";
@@ -77,6 +6,9 @@ import Card from "./Card.svelte";
 export default {
   title: `components/atoms/Card`,
   component: Card,
+  parameters: {
+    layout: "centered",
+  },
   argTypes: {
     variant: {
       control: {
@@ -96,6 +28,12 @@ export default {
         options: Object.values(elevations.ATOM.CARD),
       },
     },
+    buttonVariant: {
+      control: {
+        type: "select",
+        options: Object.values(variants.ATOM.BUTTON),
+      },
+    },
   },
 };
 
@@ -111,5 +49,28 @@ Basic.args = {
   variant: variants.ATOM.CARD.BRAND,
   size: sizes.ATOM.CARD.LARGE,
   elevation: elevations.ATOM.CARD.LARGE,
-  cardText: "This is a card",
+  cardText:
+    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam minus quod neque eligendi eaque aliquam fugit nemo cupiditate odio sapiente?",
+};
+
+export const Tilte = Template.bind({});
+Tilte.args = {
+  ...Basic.args,
+  title: "This is a title!",
+};
+
+export const Footer = Template.bind({});
+Footer.args = {
+  ...Basic.args,
+  footer: "This is some footer text.",
+};
+
+export const Action = Template.bind({});
+Action.args = {
+  ...Basic.args,
+  title: "This is a title!",
+  action: "ACTION",
+  buttonText: "Card Button!",
+  buttonSize: sizes.ATOM.BUTTON.LARGE,
+  buttonVariant: variants.ATOM.BUTTON.SUCCESS,
 };
