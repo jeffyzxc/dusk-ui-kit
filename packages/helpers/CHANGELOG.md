@@ -19,6 +19,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+
+
+**Note:** Version bump only for package @dusk-network/helpers
+
+
+
+
+
 # [2.0.0-rc.1](https://github.com/dusk-network/dusk-ui-kit/compare/@dusk-network/helpers@1.11.0...@dusk-network/helpers@2.0.0-rc.1) (2021-04-28)
 
 **Note:** Version bump only for package @dusk-network/helpers
