@@ -204,6 +204,9 @@ module.exports = {
         270: "270deg",
         360: "360deg",
       },
+      screens: {
+        xs: "375px",
+      },
       spacing: {
         0: "0",
         1: "4px",
@@ -265,6 +268,14 @@ module.exports = {
           zIndex: 10,
           width: "100%",
           height: "100%",
+        },
+        a: {
+          color: theme("colors.indigo.800"),
+          "&:hover": {
+            backgroundColor: theme("colors.indigo.500"),
+            textDecoration: "underline",
+            transition: "all 0.3s ease-in-out",
+          },
         },
       });
     }),
