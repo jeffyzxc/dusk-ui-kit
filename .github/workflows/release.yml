@@ -70,7 +70,7 @@ jobs:
           prerelease: false
       - name: Publish Packages
         run: |
-          yarn lerna version --conventional-commits --no-git-tag-version --yes
+          #yarn lerna version --conventional-commits --no-git-tag-version --yes
           yarn lerna publish from-package --yes
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
