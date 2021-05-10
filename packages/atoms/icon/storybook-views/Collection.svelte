@@ -19,6 +19,46 @@
   />
   <Icon
     class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="market-cap"
+    title="market-cap"
+    variant="{variant}"
+    tooltip="{tooltip}"
+    size="{size}"
+  />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="average-transaction"
+    title="average-transaction"
+    variant="{variant}"
+    tooltip="{tooltip}"
+    size="{size}"
+  />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="block-generator"
+    title="block-generator"
+    variant="{variant}"
+    tooltip="{tooltip}"
+    size="{size}"
+  />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="provisioner"
+    title="provisioner"
+    variant="{variant}"
+    tooltip="{tooltip}"
+    size="{size}"
+  />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="nodes"
+    title="nodes"
+    variant="{variant}"
+    tooltip="{tooltip}"
+    size="{size}"
+  />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
     name="wallet-plus"
     title="wallet-plus"
     variant="{variant}"
