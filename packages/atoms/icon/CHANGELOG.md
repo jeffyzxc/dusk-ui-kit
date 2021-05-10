@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.6](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.3...v2.0.0-rc.6) (2021-05-10)
+
+
+### Features
+
+* **icon:** ✨ replaced gas icons with new set ([2cc1bb1](https://github.com/dusk-network/dusk-ui-kit/commit/2cc1bb1e282a2e98ca845b27ce74de1913e176a7))
+
+
+
+
+
 
 
 **Note:** Version bump only for package @dusk-network/icon
