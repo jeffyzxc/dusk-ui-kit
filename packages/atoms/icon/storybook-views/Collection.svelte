@@ -5,10 +5,7 @@
   export let tooltip;
 </script>
 
-<div
-  class="grid grid-cols-5 gap-4"
-  style="display:flex;flex-wrap:wrap;text-align:center;justify-content: center;"
->
+<div class="grid grid-cols-5 gap-4">
   <Icon
     class="h-32 w-32 flex flex-wrap content-center justify-center"
     name="wallet"
