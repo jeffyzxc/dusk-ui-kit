@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/checkbox",
-  "version": "2.0.0-rc.7",
+  "version": "2.0.0-rc.8",
   "description": "Dusk UI Kit - Checkbox",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -15,7 +15,7 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/helpers": "^2.0.0-rc.7"
+    "@dusk-network/helpers": "^2.0.0-rc.8"
   },
   "peerDependencies": {
     "svelte": "3.38.2"
