@@ -19,7 +19,7 @@
     "@dusk-network/icon": "^2.0.0-rc.7"
   },
   "peerDependencies": {
-    "svelte": "3.38.1"
+    "svelte": "3.38.2"
   },
   "gitHead": "51be63d76ad5783e86fb1dc710d20e8c08ec1ab4"
 }
