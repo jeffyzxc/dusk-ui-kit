@@ -68,9 +68,9 @@ jobs:
             Release of UI Kit v${{ env.CURRENT_VERSION }}
           draft: false
           prerelease: false
-      - name: Bump Package Version & Publish Packages
+      - name: Publish Packages
         run: |
-          yarn lerna version ${{ env.CURRENT_VERSION }} --conventional-commits --no-git-tag-version --yes'
+          #yarn lerna version --conventional-commits --no-git-tag-version --yes
           yarn lerna publish from-package --yes
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
