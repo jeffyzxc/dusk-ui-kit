@@ -137,16 +137,6 @@ module.exports = {
           900: "#4A400D",
         },
       },
-      container: {
-        center: true,
-        padding: {
-          DEFAULT: "1rem",
-          sm: "2rem",
-          lg: "4rem",
-          xl: "5rem",
-          "2xl": "6rem",
-        },
-      },
       fontFamily: {
         sans: [
           "Hind Siliguri",
@@ -245,6 +235,13 @@ module.exports = {
           textDecoration: "none",
         },
         "abbr[title]:hover": {
+          cursor: "help",
+          textDecoration: `underline dotted theme("colors.purple.500")`,
+        },
+        "acronym[title]": {
+          textDecoration: "none",
+        },
+        "acronym[title]:hover": {
           cursor: "help",
           textDecoration: `underline dotted theme("colors.purple.500")`,
         },

@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/carousel",
-  "version": "2.0.0-rc.5",
+  "version": "2.0.0-rc.6",
   "description": "Dusk UI Kit - Carousel",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -16,9 +16,9 @@
   },
   "dependencies": {
     "@beyonk/svelte-carousel": "2.8.0",
-    "@dusk-network/elements": "^2.0.0-rc.5",
-    "@dusk-network/helpers": "^2.0.0-rc.5",
-    "@dusk-network/icon": "^2.0.0-rc.5"
+    "@dusk-network/elements": "^2.0.0-rc.6",
+    "@dusk-network/helpers": "^2.0.0-rc.6",
+    "@dusk-network/icon": "^2.0.0-rc.6"
   },
   "peerDependencies": {
     "svelte": "3.38.1"
