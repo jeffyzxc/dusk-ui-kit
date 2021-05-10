@@ -15,6 +15,7 @@
 
   import ArrowLeftCircle from "./icons/ArrowLeftCircle.svelte";
   import ArrowRightCircle from "./icons/ArrowRightCircle.svelte";
+  import AverageTransaction from "./icons/AverageTransaction.svelte";
   import BankTransfer from "./icons/BankTransfer.svelte";
   import Brightness4 from "./icons/Brightness4.svelte";
   import Decimal from "./icons/Decimal.svelte";
@@ -55,6 +56,7 @@
   import KeyOutline from "./icons/KeyOutline.svelte";
   import LinkedIn from "./icons/LinkedIn.svelte";
   import Magnify from "./icons/Magnify.svelte";
+  import MarketCap from "./icons/MarketCap.svelte";
   import MenuBurger from "./icons/MenuBurger.svelte";
   import MenuBurgerClose from "./icons/MenuBurgerClose.svelte";
   import Notification from "./icons/Notification.svelte";
@@ -73,6 +75,9 @@
   import Wallet from "./icons/Wallet.svelte";
   import WalletPlus from "./icons/WalletPlus.svelte";
   import YouTube from "./icons/YouTube.svelte";
+  import BlockGenerator from "./icons/BlockGenerator.svelte";
+  import Provisioner from "./icons/Provisioner.svelte";
+  import Nodes from "./icons/Nodes.svelte";
 
   const forwardEvents = forwardEventsBuilder(current_component);
 
@@ -167,8 +172,14 @@
       case icons.ALERT_OUTLINE:
         selectedIcon = AlertOutline;
         break;
+      case icons.AVERAGE_TRANSACTION:
+        selectedIcon = AverageTransaction;
+        break;
       case icons.BANK_TRANSFER:
         selectedIcon = BankTransfer;
+        break;
+      case icons.BLOCK_GENERATOR:
+        selectedIcon = BlockGenerator;
         break;
       case icons.BRIGHTNESS_4:
         selectedIcon = Brightness4;
@@ -290,6 +301,9 @@
       case icons.MAGNIFY:
         selectedIcon = Magnify;
         break;
+      case icons.MARKET_CAP:
+        selectedIcon = MarketCap;
+        break;
       case icons.MENU_BURGER:
         selectedIcon = MenuBurger;
         break;
@@ -302,11 +316,17 @@
       case icons.NOTEBOOK_OUTLINE:
         selectedIcon = NoteBookOutline;
         break;
+      case icons.NODES:
+        selectedIcon = Nodes;
+        break;
       case icons.POUND_BOX_OUTLINE:
         selectedIcon = PoundBoxOutline;
         break;
       case icons.PLUS_CIRCLE_OUTLINE:
         selectedIcon = PlusCircleOutline;
+        break;
+      case icons.PROVISIONER:
+        selectedIcon = Provisioner;
         break;
       case icons.NOTIFICATION:
         selectedIcon = Notification;
