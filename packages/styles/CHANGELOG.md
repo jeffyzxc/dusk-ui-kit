@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.9](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.8...v2.0.0-rc.9) (2021-05-11)
+
+
+### Features
+
+* **styles:** ✨ added a custom dusk vite plugin to work with sveltekit. ([02b2408](https://github.com/dusk-network/dusk-ui-kit/commit/02b2408cf8b6bd93a4e9b075a7b17afc62e949bd))
+
+
+
+
+
 # [2.0.0-rc.8](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.7...v2.0.0-rc.8) (2021-05-10)
 
 **Note:** Version bump only for package @dusk-network/styles
