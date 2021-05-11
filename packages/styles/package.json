@@ -11,6 +11,7 @@
     "directory": "packages/organisms/styles"
   },
   "author": "Kieran Hall <kieran@dusk-network.network>",
+  "type": "module",
   "scripts": {
     "test": "echo \"LOL\" && exit 1"
   },
@@ -25,15 +26,11 @@
     "postcss-preset-env": "^6.7.0",
     "postcss-url": "^10.1.3",
     "rollup-plugin-postcss": "^4.0.0",
+    "tailwind-config-viewer": "^1.5.1",
     "tailwindcss": "^2.1.2"
   },
   "peerDependencies": {
-    "postcss": "^8.2.10",
-    "svelte": "^3.37.0",
-    "svelte-preprocess": "^4.7.2"
-  },
-  "optionalDependencies": {
-    "postcss-load-config": "^3.0.1"
+    "svelte": "^3.38.2"
   },
   "gitHead": "51be63d76ad5783e86fb1dc710d20e8c08ec1ab4"
 }
