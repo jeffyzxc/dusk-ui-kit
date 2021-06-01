@@ -1,25 +1,6 @@
-# <div align="center">:sparkles: Dusk UI Kit :sparkles:</div>
+# :sparkles: Dusk UI Kit
 
-<div align="center"><a href="https://npm.dusk.network:4873">
-  <img src="https://img.shields.io/npm/v/@dusk-network/helpers.svg?registry_uri=https://npm.dusk.network:4873" alt="NPM">
-</a>
-<a href="https://travis-ci.com/dusk-network/dusk-ui-kit">
-  <img src="https://travis-ci.com/dusk-network/dusk-ui-kit.svg?token=epVgoKeysWpeWXA7Vyxt&amp;branch=master" alt="TravisCI">
-</a> <a href="https://dusk-network.github.io/dusk-ui-kit">
-  <img src="https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg" alt="Storybook">
-</a>
-<a href="https://lerna.js.org/">
-  <img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg" alt="lerna">
-</a>
-<a href="https://svelte.dev">
-  <img src="https://img.shields.io/badge/svelte-v3-red.svg" alt="Svelte v3">
-</a></div>
-
-## About the UI Kit
-
-Moving into 2020, we will begin to develop an overarching Branding Guidance document which will provide a single source of truth for all of Dusk's communication channels.
-
-Presently, we have built on the existing guidelines, however, we expect to transition to using a typical _Brand Guidance_ approach.
+[![Powered By Sveltekit](https://img.shields.io/badge/powered%20by-svelte-FF3C02.svg?style=flat&logo=svelte)](https://kit.svelte.dev/) [![ECMAScript: 2020](https://img.shields.io/badge/ES-9-F7DF1E.svg?style=flat&logo=javascript)](https://github.com/tc39/ecma262) [![Tailwindcss](https://img.shields.io/badge/Tailwindcss-CSS--Framework-%2338B2AC?logo=tailwindcss)](https://tailwindcss.com) [![Postcss](https://img.shields.io/badge/Postcss-style-%23DD3A0A?style=flat&logo=postcss)](https://postcss.org) [![StorybookJS](https://img.shields.io/badge/Storybook-UI--Webcomponent--tool-%23FF4785?style=flat&logo=storybook)](https://storybook.js.org/) [![Jest](https://img.shields.io/badge/Jest-Unit--Testing--Framework-%23C21325?style=flat&logo=jest)](https://jestjs.io/) [![Prettier](https://img.shields.io/badge/Prettier-code--formatter-%23F7B93E?style=flat&logo=prettier)](https://prettier.io/) [![Eslint](https://img.shields.io/badge/Eslint-linter-%234B32C3?style=flat&logo=eslint)](https://eslint.org/) [![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat&logo=license)](https://github.com/navneetsharmaui/sveltekit-starter/blob/main/LICENSE)
 
 ## Purpose
 
@@ -36,10 +17,10 @@ The components within the UI Kit are organised according to the principles of [A
 ## Installation
 
 ```bash
-$ yarn add @dusk-network/styles
-$ yarn add @dusk-network/button
-$ yarn add @dusk-network/list
-$ yarn add @dusk-network/navbar
+$ npm i -D @dusk-network/styles
+$ npm i -D @dusk-network/button
+$ npm i -D @dusk-network/list
+$ npm i -D @dusk-network/navbar
 ...
 ```
 
@@ -55,40 +36,9 @@ import Button, { Label } from "@dusk-network/button";
 </button>
 ```
 
-### Import styles
-
-Install `@dusk-network/styles` if you have not already.
-
-```bash
-$ yarn add @dusk-network/styles
-```
-
-Include the rollup plugin and configure accordingly...
-
-```javascript
-// rollup.config.js
-
-const duk = require('@dusk-network/styles/rollup-plugin-duk');
-...
-plugins: [
-  ...
-  duk({
-    output: 'public/global.css'
-  })
-]
-```
-
-Import Tailwind styles
-
-```javascript
-// main.js
-```
-
-**Check out the [examples repository](https://github.com/dusk-network/dusk-ui-kit-examples) for assistance!**
-
 ## Development
 
-_Clone and install_
+### Clone and install
 
 ```bash
 $ git clone https://github.com/dusk-network/dusk-ui-kit
@@ -96,13 +46,13 @@ $ cd dusk-ui-kit
 $ yarn
 ```
 
-_Start Storybook_
+### Start Storybook
 
 ```bash
 $ yarn storybook
 ```
 
-### Latest Design
+## Latest Design
 
 <https://www.figma.com/file/ffGd6h7b4DlAycsxzk2whB/Dusk-Ui-Kit>
 

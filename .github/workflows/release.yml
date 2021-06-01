@@ -68,7 +68,7 @@ jobs:
             Release of UI Kit v${{ env.CURRENT_VERSION }}
           draft: false
           prerelease: false
-      - name: Bump Package Version & Publish Packages
+      - name: Publish Packages
         run: |
           yarn lerna publish from-package --yes
         env:
@@ -76,15 +76,15 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Install Package Dependencies
         run: yarn bootstrap
-      # - name: Build Storybook
-      #   if: github.ref == 'refs/heads/main'
-      #   run: yarn sb:build
-      # - name: Publish Storybook to Github Pages
-      #   if: github.ref == 'refs/heads/main'
-      #   uses: peaceiris/actions-gh-pages@v3
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     publish_dir: ./storybook-static
+      - name: Build Storybook
+        if: github.ref == 'refs/heads/main'
+        run: yarn sb:build
+      - name: Publish Storybook to Github Pages
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./storybook-static
       # - uses: actions/github-script@0.8.0
       #   with:
       #     github-token: ${{secrets.GITHUB_TOKEN}}

@@ -28,17 +28,11 @@
 
   & .cookieConsent {
     @apply block mx-auto justify-between;
-
-    @screen lg {
-      @apply flex;
-    }
+    @apply lg:flex;
 
     &__Right {
       @apply flex flex-wrap items-center mt-6;
-
-      @screen lg {
-        @apply flex-nowrap items-end mt-0;
-      }
+      @apply lg:flex-nowrap lg:items-end lg:mt-0;
     }
 
     &__Content {
@@ -63,10 +57,7 @@
 
     &__Button {
       @apply py-5 px-16 ml-3 mr-3 mb-3 block bg-indigo-500 text-white whitespace-nowrap border-none text-base cursor-pointer;
-
-      @screen lg {
-        @apply mr-0 mb-0;
-      }
+      @apply lg:mr-0 lg:mb-0;
 
       transition: 200ms;
 
@@ -76,10 +67,7 @@
 
       &--Close {
         @apply mt-16 mb-0 mx-auto pt-5 px-24;
-
-        @screen lg {
-          @apply mt-40;
-        }
+        @apply lg:mt-40;
       }
     }
   }

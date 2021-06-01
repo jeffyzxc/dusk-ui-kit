@@ -1,6 +1,6 @@
 import { create } from "@storybook/theming";
 import resolveConfig from "tailwindcss/resolveConfig";
-import tailwindConfig from "../../../packages/styles/dusk.tailwind.config.js";
+import tailwindConfig from "@dusk-network/styles/dusk.tailwind.config.cjs";
 import logo from "./logo.svg";
 
 const config = resolveConfig(tailwindConfig);
