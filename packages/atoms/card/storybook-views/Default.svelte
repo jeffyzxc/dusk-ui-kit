@@ -3,7 +3,7 @@
   import CardContent from "../Content.svelte";
   import CardTitle from "../Title.svelte";
   import CardFooter from "../Footer.svelte";
-  import Button from "@dusk-network/button/Button.svelte";
+  import Button from "@dusk-network/button";
   import CardActions from "../Actions.svelte";
   export let variant;
   export let elevation;

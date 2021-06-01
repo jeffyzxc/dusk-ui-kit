@@ -14,7 +14,6 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-events",
     "@storybook/addon-queryparams",
-    "@storybook/addon-cssresources",
     {
       name: "@storybook/addon-postcss",
       options: {

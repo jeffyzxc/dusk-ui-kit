@@ -1,31 +1,9 @@
-// import { withKnobs, select } from "@storybook/addon-knobs";
-// import { variants } from "@dusk-network/helpers";
-// import DefaultView from "./storybook-views/Default.svelte";
-// import readme from "./readme.stories.md";
-
-// export default {
-//   title: "Components/Atoms/Radio",
-//   parameters: {
-//     notes: readme,
-//   },
-//   decorators: [withKnobs],
-// };
-
-// export const Default = () => ({
-//   Component: DefaultView,
-//   props: {
-//     variant: select("Variant", variants.ATOM.RADIO, variants.ATOM.RADIO.BRAND),
-//   },
-// });
-
 import { variants } from "@dusk-network/helpers";
 import Default from "./storybook-views/Default.svelte";
-
-import "@dusk-network/styles/tailwind.css";
-import Radio from "./Radio.svelte";
+import Radio from "@dusk-network/radio";
 
 export default {
-  title: `components/atoms/Radio`,
+  title: `Components/Atoms/Radio`,
   component: Radio,
   parameters: {
     layout: "centered",

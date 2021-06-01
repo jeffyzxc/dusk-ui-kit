@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.11](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.9...v2.0.0-rc.11) (2021-06-01)
+
+
+### Bug Fixes
+
+* **storybook:** 🐛 compatability with storybook ([5ea17bd](https://github.com/dusk-network/dusk-ui-kit/commit/5ea17bd2a3ffe6790d73e94813dbc2d3c2974649))
+
+
+
+
+
+# [2.0.0-rc.10](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.9...v2.0.0-rc.10) (2021-06-01)
+
+
+### Bug Fixes
+
+* **storybook:** 🐛 compatability with storybook ([5ea17bd](https://github.com/dusk-network/dusk-ui-kit/commit/5ea17bd2a3ffe6790d73e94813dbc2d3c2974649))
+
+
+
+
+
 # [2.0.0-rc.9](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.8...v2.0.0-rc.9) (2021-05-11)
 
 **Note:** Version bump only for package @dusk-network/cta

@@ -125,12 +125,10 @@
 
 import { variants, sizes, contexts } from "@dusk-network/helpers";
 import Default from "./storybook-views/Default.svelte";
-
-import "@dusk-network/styles/tailwind.css";
-import Button from "./Button.svelte";
+import Button from "@dusk-network/button";
 
 export default {
-  title: `components/atoms/Button`,
+  title: `Components/Atoms/Button`,
   component: Button,
   parameters: {
     layout: "centered",
