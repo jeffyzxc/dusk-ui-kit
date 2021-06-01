@@ -42,12 +42,10 @@ function getCookie(name) {
 const COOKIE_NAME = "_dusk-SB-CB-DEMO";
 
 import Default from "./storybook-views/Default.svelte";
-
-import "@dusk-network/styles/tailwind.css";
-import CookieBanner from "./CookieBanner.svelte";
+import CookieBanner from "@dusk-network/cookie-banner";
 
 export default {
-  title: `components/organisms/Cookie Banner`,
+  title: `Components/Organisms/Cookie Banner`,
   component: CookieBanner,
   parameters: {
     layout: "centered",

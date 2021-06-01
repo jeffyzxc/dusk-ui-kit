@@ -1,7 +1,7 @@
 <script>
   import { createEventDispatcher } from "svelte";
   import { exclude } from "@dusk-network/helpers";
-  import * as Carousel from "@beyonk/svelte-carousel/src/Carousel.svelte";
+  import Carousel from "@beyonk/svelte-carousel/src/Carousel.svelte";
   import "./styles.css";
 
   let className = "";

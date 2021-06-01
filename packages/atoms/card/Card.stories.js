@@ -1,10 +1,9 @@
 import { variants, sizes, elevations } from "@dusk-network/helpers";
 import Default from "./storybook-views/Default.svelte";
-import "@dusk-network/styles/tailwind.css";
-import Card from "./Card.svelte";
+import Card from "@dusk-network/card";
 
 export default {
-  title: `components/atoms/Card`,
+  title: `Components/Atoms/Card`,
   component: Card,
   parameters: {
     layout: "centered",

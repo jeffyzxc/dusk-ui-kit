@@ -1,11 +1,9 @@
 import { variants } from "@dusk-network/helpers";
 import Default from "./storybook-views/Default.svelte";
-
-import "@dusk-network/styles/tailwind.css";
-import Switch from "./Switch.svelte";
+import Switch from "@dusk-network/switch";
 
 export default {
-  title: `components/atoms/Switch`,
+  title: `Components/Atoms/Switch`,
   component: Switch,
   parameters: {
     layout: "centered",

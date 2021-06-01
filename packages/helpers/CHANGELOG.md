@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.11](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.9...v2.0.0-rc.11) (2021-06-01)
+
+
+### Features
+
+* **styles:** ✨ added JIT support for instant re-render updates ([f7453a0](https://github.com/dusk-network/dusk-ui-kit/commit/f7453a0e52bc129b917e74e6a5cdfd823d9a9993))
+
+
+
+
+
+# [2.0.0-rc.10](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.9...v2.0.0-rc.10) (2021-06-01)
+
+
+### Features
+
+* **styles:** ✨ added JIT support for instant re-render updates ([f7453a0](https://github.com/dusk-network/dusk-ui-kit/commit/f7453a0e52bc129b917e74e6a5cdfd823d9a9993))
+
+
+
+
+
 # [2.0.0-rc.9](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.8...v2.0.0-rc.9) (2021-05-11)
 
 **Note:** Version bump only for package @dusk-network/helpers

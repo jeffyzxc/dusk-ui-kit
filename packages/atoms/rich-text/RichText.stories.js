@@ -1,29 +1,8 @@
-// import { withKnobs, text } from "@storybook/addon-knobs";
-// import DefaultView from "./storybook-views/Default.svelte";
-// import readme from "./readme.stories.md";
-
-// export default {
-//   title: "Components/Atoms/Rich Text (Markdown)",
-//   parameters: {
-//     notes: readme,
-//   },
-//   decorators: [withKnobs],
-// };
-
-// export const Default = () => ({
-//   Component: DefaultView,
-//   props: {
-//     content: text("Markdown", "I am some _rich_ `text`."),
-//   },
-// });
-
 import Default from "./storybook-views/Default.svelte";
-
-import "@dusk-network/styles/tailwind.css";
-import RichText from "./RichText.svelte";
+import RichText from "@dusk-network/rich-text";
 
 export default {
-  title: `components/atoms/RichText`,
+  title: `Components/Atoms/RichText`,
   component: RichText,
   parameters: {
     layout: "centered",

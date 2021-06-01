@@ -1,32 +1,9 @@
-// import { withKnobs, select } from "@storybook/addon-knobs";
-// import { variants } from "@dusk-network/helpers";
-// import DefaultView from "./storybook-views/Default.svelte";
-// import readme from "./readme.stories.md";
-
-// export default {
-//   title: "Components/Atoms/DatePicker",
-//   parameters: {
-//     notes: readme,
-//     layout: "centered",
-//   },
-//   decorators: [withKnobs],
-// };
-
-// export const Default = () => ({
-//   Component: DefaultView,
-//   props: {
-//     variant: select("Variant", variants.ATOM.DATE_PICKER, variants.ATOM.DATE_PICKER.LIGHT),
-//   },
-// });
-
 import { variants } from "@dusk-network/helpers";
 import Default from "./storybook-views/Default.svelte";
-
-import "@dusk-network/styles/tailwind.css";
-import DatePicker from "./DatePicker.svelte";
+import DatePicker from "@dusk-network/date-picker";
 
 export default {
-  title: `components/atoms/DatePicker`,
+  title: `Components/Atoms/DatePicker`,
   component: DatePicker,
   parameters: {
     layout: "centered",

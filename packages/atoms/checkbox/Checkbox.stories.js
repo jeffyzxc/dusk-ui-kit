@@ -1,31 +1,9 @@
-// import { withKnobs, select } from "@storybook/addon-knobs";
-// import { variants } from "@dusk-network/helpers";
-// import DefaultView from "./storybook-views/Default.svelte";
-// import readme from "./readme.stories.md";
-
-// export default {
-//   title: "Components/Atoms/Checkbox",
-//   parameters: {
-//     notes: readme,
-//   },
-//   decorators: [withKnobs],
-// };
-
-// export const Default = () => ({
-//   Component: DefaultView,
-//   props: {
-//     variant: select("Variant", variants.ATOM.CHECKBOX, variants.ATOM.CHECKBOX.BRAND),
-//   },
-// });
-
 import { variants } from "@dusk-network/helpers";
 import Default from "./storybook-views/Default.svelte";
-
-import "@dusk-network/styles/tailwind.css";
-import Checkbox from "./Checkbox.svelte";
+import Checkbox from "@dusk-network/checkbox";
 
 export default {
-  title: `components/atoms/Checkbox`,
+  title: `Components/Atoms/Checkbox`,
   component: Checkbox,
   parameters: {
     layout: "centered",
