@@ -1,46 +1,23 @@
 .duk-table {
   @apply w-full flex flex-row rounded overflow-hidden shadow-marketing leading-7;
+  @apply lg:table;
 
   @screen lg {
-    @apply table;
-
     & thead {
-      & tr {
-        /* @apply rounded-l;
-
-        @screen lg {
-          @apply rounded-none;
-        } */
-
-        &:not(:first-child) {
-          @apply hidden;
-        }
+      &:not(:first-child) {
+        @apply hidden;
       }
     }
   }
 
   & tr {
     @apply flex flex-col mb-2;
-
-    @screen lg {
-      @apply table-row mb-0;
-    }
+    @apply lg:table-row lg:mb-0;
   }
 
   & tbody {
     @apply flex-1;
-
-    @screen lg {
-      @apply flex-none;
-    }
-
-    /* & tr {
-      @apply rounded-r;
-
-      @screen lg {
-        @apply rounded-none;
-      }
-    } */
+    @apply lg:flex-none;
   }
 
   &--compact {

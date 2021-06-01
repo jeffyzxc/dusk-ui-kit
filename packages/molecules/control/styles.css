@@ -34,10 +34,7 @@
   &--inline-fixed {
     & .duk-control__wrapper {
       @apply flex w-full justify-center items-center mb-3 text-right;
-
-      @screen md {
-        @apply justify-start;
-      }
+      @apply md:justify-start;
     }
 
     & .duk-control__label {
@@ -52,10 +49,7 @@
   &--inline-flex {
     & .duk-control__wrapper {
       @apply flex w-full justify-center items-center mb-3;
-
-      @screen md {
-        @apply justify-start;
-      }
+      @apply md:justify-start;
     }
 
     & .duk-control__input {
