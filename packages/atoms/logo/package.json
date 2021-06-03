@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/logo",
-  "version": "2.0.0-rc.12",
+  "version": "2.0.0-rc.13",
   "description": "Dusk UI Kit - Logo",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -15,8 +15,8 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/elements": "^2.0.0-rc.12",
-    "@dusk-network/helpers": "^2.0.0-rc.12"
+    "@dusk-network/elements": "^2.0.0-rc.13",
+    "@dusk-network/helpers": "^2.0.0-rc.13"
   },
   "peerDependencies": {
     "svelte": "3.38.2"
