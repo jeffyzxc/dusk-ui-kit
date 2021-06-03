@@ -1,3 +1,9 @@
+<style lang="postcss">
+  .icon-collection-grid {
+    @apply grid grid-cols-5 gap-5 w-full m-10;
+  }
+</style>
+
 <script>
   import Icon from "../Icon.svelte";
   export let variant;
@@ -5,17 +11,9 @@
   export let tooltip;
 </script>
 
-<div class="grid grid-cols-5 gap-4">
+<div class="icon-collection-grid">
+  <Icon name="wallet" title="wallet" variant="{variant}" tooltip="{tooltip}" size="{size}" />
   <Icon
-    class="h-32 w-32 flex flex-wrap content-center justify-center"
-    name="wallet"
-    title="wallet"
-    variant="{variant}"
-    tooltip="{tooltip}"
-    size="{size}"
-  />
-  <Icon
-    class="h-32 w-32 flex flex-wrap content-center justify-center"
     name="market-cap"
     title="market-cap"
     variant="{variant}"
@@ -23,7 +21,7 @@
     size="{size}"
   />
   <Icon
-    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    class=""
     name="average-transaction"
     title="average-transaction"
     variant="{variant}"
@@ -83,6 +81,7 @@
     name="folder-outline"
     title="folder-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -130,6 +129,7 @@
     name="email-send-outline"
     title="email-send-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -137,6 +137,7 @@
     name="key-outline"
     title="key-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -144,6 +145,7 @@
     name="cog-outline"
     title="cog-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -151,6 +153,7 @@
     name="share-variant"
     title="share-variant"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -158,6 +161,7 @@
     name="checkbox-blank-circle"
     title="checkbox-blank-circle"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -165,6 +169,7 @@
     name="check-circle-outline"
     title="check-circle-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -172,6 +177,7 @@
     name="close-circle-outline"
     title="close-circle-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -179,6 +185,7 @@
     name="eye-settings-outline"
     title="eye-settings-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -186,6 +193,7 @@
     name="file-export-outline"
     title="file-export-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -193,6 +201,7 @@
     name="trash-can-outline"
     title="trash-can-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -200,6 +209,7 @@
     name="folder-download-outline"
     title="folder-download-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -207,6 +217,7 @@
     name="folder-upload-outline"
     title="folder-upload-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -214,6 +225,7 @@
     name="dusk-ticker"
     title="dusk-ticker"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -221,6 +233,7 @@
     name="menu-burger"
     title="menu-burger"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -228,6 +241,7 @@
     name="alert-outline"
     title="alert-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -235,6 +249,7 @@
     name="eye-outline"
     title="eye-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -242,6 +257,7 @@
     name="help-circle-outline"
     title="help-circle-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -249,6 +265,7 @@
     name="chart-line-variant"
     title="chart-line-variant"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -256,6 +273,7 @@
     name="refresh"
     title="refresh"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -263,6 +281,7 @@
     name="menu-burger-close"
     title="menu-burger-close"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -270,6 +289,7 @@
     name="notification-outline"
     title="notification-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -277,6 +297,7 @@
     name="brightness-4"
     title="brightness-4"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -284,6 +305,7 @@
     name="decimal"
     title="decimal"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -291,6 +313,7 @@
     name="view-dashboard-outline"
     title="view-dashboard-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -298,6 +321,7 @@
     name="earth"
     title="earth"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -305,6 +329,7 @@
     name="magnify"
     title="magnify"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -312,6 +337,7 @@
     name="minus-circle-outline"
     title="minus-circle-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -319,6 +345,7 @@
     name="plus-circle-outline"
     title="plus-circle-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -326,6 +353,7 @@
     name="store-outline"
     title="store-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -333,6 +361,7 @@
     name="cube-outline"
     title="cube-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -340,6 +369,7 @@
     name="check-network-outline"
     title="check-network-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -347,6 +377,7 @@
     name="information-variant"
     title="information-variant"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -354,6 +385,7 @@
     name="github"
     title="github"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -361,6 +393,7 @@
     name="youtube"
     title="youtube"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -368,6 +401,7 @@
     name="contract"
     title="contract"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -375,6 +409,7 @@
     name="contacts"
     title="contacts"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -382,6 +417,7 @@
     name="notification"
     title="notification"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -389,6 +425,7 @@
     name="twitter"
     title="twitter"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -396,6 +433,7 @@
     name="linked-in"
     title="linked-in"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -403,6 +441,7 @@
     name="telegram"
     title="telegram"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -410,6 +449,7 @@
     name="coin-market-cap"
     title="coin-market-cap"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -417,6 +457,7 @@
     name="notebook-outline"
     title="notebook-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -424,6 +465,7 @@
     name="bank-transfer"
     title="bank-transfer"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -431,6 +473,7 @@
     name="credit-card"
     title="credit-card"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -438,6 +481,7 @@
     name="timer-sand"
     title="timer-sand"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -445,6 +489,7 @@
     name="pound-box-outline"
     title="pound-box-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -452,6 +497,7 @@
     name="gas-limit"
     title="gas-limit"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -459,6 +505,7 @@
     name="gas-station-outline"
     title="gas-station-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -466,6 +513,7 @@
     name="gas-average"
     title="gas-average"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -473,6 +521,7 @@
     name="crown-outline"
     title="crown-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
   <Icon
@@ -480,6 +529,7 @@
     name="eye-circle-outline"
     title="eye-circle-outline"
     variant="{variant}"
+    tooltip="{tooltip}"
     size="{size}"
   />
 </div>

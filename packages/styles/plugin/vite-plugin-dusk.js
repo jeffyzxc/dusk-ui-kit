@@ -19,7 +19,6 @@ export function VitePluginDusk(options = {}) {
     {
       name: "vite-plugin-dusk",
       config: (_, env) => {
-        // need this for jit plugin to enable watch mode
         process.env.NODE_ENV = env.mode;
         const plugins = postCssConfig.plugins;
         return {

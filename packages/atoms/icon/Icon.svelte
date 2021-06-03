@@ -378,8 +378,8 @@
   class="duk-icon {className}
   {disabled}
   {getClassNames(variant, size, context)}"
+  {...exclude($$props, ["use", "class", "variant", "name", "size", "tooltip"])}
   data-tooltip="{tooltip}"
-  {...exclude($$props, ["use", "class", "variant", "name", "size"])}
 >
   <svelte:component this="{getSelectedIcon(name)}" viewbox="{viewbox}" />
 </svelte:component>
