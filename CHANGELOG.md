@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.14](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.9...v2.0.0-rc.14) (2021-06-03)
+
+
+### Bug Fixes
+
+* **engines:** 🐛 removed npm and added hat to node ([5015021](https://github.com/dusk-network/dusk-ui-kit/commit/50150217e3b090706d35b54c3c159620621cc57f))
+* **storybook:** 🐛 compatability with storybook ([5ea17bd](https://github.com/dusk-network/dusk-ui-kit/commit/5ea17bd2a3ffe6790d73e94813dbc2d3c2974649))
+* **table:** 🐛 fixed some styles that were refactored incorectly ([315f87e](https://github.com/dusk-network/dusk-ui-kit/commit/315f87e22ceadd5e6e1557176b020689a09c261d))
+
+
+### Features
+
+* **global:** ✨ enabled es6 package importing and set everything to es6 modules ([3e4cf91](https://github.com/dusk-network/dusk-ui-kit/commit/3e4cf9184197ed2e791207f5cd4b9b03184da40c))
+* **icon:** ✨ added optional tooltip parameter ([b169719](https://github.com/dusk-network/dusk-ui-kit/commit/b1697193525f3e3c4fc6600c2ec1b687d89b528d))
+* **styles:** ✨ added JIT support for instant re-render updates ([f7453a0](https://github.com/dusk-network/dusk-ui-kit/commit/f7453a0e52bc129b917e74e6a5cdfd823d9a9993))
+
+
+
+
+
 # [2.0.0-rc.13](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.9...v2.0.0-rc.13) (2021-06-03)
 
 

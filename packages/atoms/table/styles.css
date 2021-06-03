@@ -1,5 +1,5 @@
 .duk-table {
-  @apply w-full flex flex-row rounded overflow-hidden shadow-marketing leading-7;
+  @apply w-full flex flex-row rounded shadow-marketing leading-7;
   @apply lg:table;
 
   & thead {
