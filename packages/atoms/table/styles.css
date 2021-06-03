@@ -2,17 +2,17 @@
   @apply w-full flex flex-row rounded overflow-hidden shadow-marketing leading-7;
   @apply lg:table;
 
-  @screen lg {
-    & thead {
+  & thead {
+    & tr {
       &:not(:first-child) {
-        @apply hidden;
+        @apply lg:hidden;
       }
     }
   }
 
   & tr {
     @apply flex flex-col mb-2;
-    @apply lg:table-row lg:mb-0;
+    @apply lg:table-row mb-0;
   }
 
   & tbody {
