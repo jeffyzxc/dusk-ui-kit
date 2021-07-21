@@ -4,6 +4,7 @@ export default {
       CARD: "button:action:card",
       DIALOG: "button:action:dialog",
     },
+    ACCORDION: "button:accordion",
   },
   CARD: {
     ALERT: "card:alert",
@@ -30,6 +31,7 @@ export default {
     BUTTON: "label:button",
   },
   LIST: {
+    ACCORDION: "list:accordion",
     MENU: "list:menu",
   },
   LOGO: {

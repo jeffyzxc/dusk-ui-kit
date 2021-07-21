@@ -334,8 +334,24 @@
   />
   <Icon
     class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="minus"
+    title="minus"
+    variant="{variant}"
+    tooltip="{tooltip}"
+    size="{size}"
+  />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
     name="minus-circle-outline"
     title="minus-circle-outline"
+    variant="{variant}"
+    tooltip="{tooltip}"
+    size="{size}"
+  />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="plus"
+    title="plus"
     variant="{variant}"
     tooltip="{tooltip}"
     size="{size}"

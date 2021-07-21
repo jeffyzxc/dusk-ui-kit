@@ -5,7 +5,6 @@
   import A from "@dusk-network/elements/A.svelte";
   import Button from "@dusk-network/elements/Button.svelte";
   import "./styles.css";
-  import createRipple from "@dusk-network/helpers/ripple.js";
 
   const forwardEvents = forwardEventsBuilder(current_component);
 
@@ -19,6 +18,7 @@
   export let size = sizes.ATOM.BUTTON.BASE;
   export let href = null;
   export let component = href == null ? Button : A;
+  export let circle = false;
 
   let context = getContext("DUK:button:context");
   let action;
@@ -36,9 +36,7 @@
   setContext("DUK:label:context", contexts.LABEL.BUTTON);
   setContext("DUK:icon:context", contexts.ICON.BUTTON);
 
-  const ripple = createRipple(variant);
-
-  function getClassNames(variant, size, context, outline) {
+  function getClassNames(variant, size, context, outline, circle) {
     let classNames = "";
     switch (variant) {
       case variants.ATOM.BUTTON.BRAND:
@@ -79,10 +77,14 @@
       case contexts.BUTTON.ACTION.DIALOG:
         classNames += " duk-dialog__action duk-dialog__action--button";
         break;
+      case contexts.BUTTON.ACCORDION:
+        classNames += " duk-accordion__action";
+        break;
       default:
         classNames += "";
     }
     if (outline) classNames += " duk-button--outline";
+    if (circle) classNames += " duk-button--circle";
 
     return classNames;
   }
@@ -90,12 +92,12 @@
 
 <svelte:component
   this="{component}"
-  use="{[forwardEvents, ripple, ...use]}"
+  use="{[forwardEvents, ...use]}"
   class="duk-button {className}
-  {getClassNames(variant, size, context, outline)}"
+  {getClassNames(variant, size, context, outline, circle)}"
   {...actionProp}
   {...defaultProp}
-  {...exclude($$props, ["use", "class", "variant", "size", "outline"])}
+  {...exclude($$props, ["use", "class", "variant", "size", "outline", "circle"])}
 >
   <slot />
 </svelte:component>

@@ -4,15 +4,7 @@
 
 .duk-button {
   transition: box-shadow 0.3s ease-in-out;
-  @apply inline-block border border-solid rounded text-sm leading-relaxed py-2 px-4 relative overflow-hidden shadow-marketing;
-
-  &__icon {
-    @apply inline-block align-middle pr-2;
-  }
-
-  &__label {
-    @apply inline-block align-middle;
-  }
+  @apply flex space-x-2 items-center border border-solid rounded text-sm leading-relaxed py-2 px-4 relative overflow-hidden shadow-marketing;
 
   &--brand {
     @apply bg-indigo-500 text-white border-none;
@@ -196,6 +188,10 @@
 
   &--small {
     @apply text-xs rounded-sm leading-tight;
+  }
+
+  &--circle {
+    @apply rounded-full p-3;
   }
 
   &:disabled {

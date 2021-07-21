@@ -1,0 +1,26 @@
+{
+  "name": "@dusk-network/accordion",
+  "version": "2.0.0-rc.14",
+  "description": "Dusk UI Kit - Accordion",
+  "bugs": {
+    "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dusk-network/dusk-ui-kit.git",
+    "directory": "packages/molecules/accordion"
+  },
+  "author": "Kieran Hall <kieran@dusk-network.network>",
+  "scripts": {
+    "test": "echo \"LOL\" && exit 1"
+  },
+  "dependencies": {
+    "@dusk-network/elements": "^2.0.0-rc.14",
+    "@dusk-network/helpers": "^2.0.0-rc.14",
+    "@dusk-network/icon": "^2.0.0-rc.14",
+    "@dusk-network/list": "^2.0.0-rc.14"
+  },
+  "peerDependencies": {
+    "svelte": "3.38.2"
+  }
+}

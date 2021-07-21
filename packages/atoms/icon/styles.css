@@ -1,9 +1,5 @@
 .duk-icon {
-  @apply fill-current inline-block;
-
-  & > svg {
-    @apply h-6 w-6 mx-auto my-auto;
-  }
+  @apply fill-current flex items-center justify-center;
 
   &.inline {
     & > svg {
