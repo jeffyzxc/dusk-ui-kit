@@ -1,4 +1,5 @@
 import Default from "./storybook-views/Default.svelte";
+import Html from "./storybook-views/Html.svelte";
 import RichText from "@dusk-network/rich-text";
 
 export default {
@@ -10,14 +11,26 @@ export default {
   argTypes: {},
 };
 
-const Template = (args) => ({
+const DefaultTemplate = (args) => ({
   Component: Default,
   props: {
     ...args,
   },
 });
 
-export const Basic = Template.bind({});
+const HtmlTemplate = (args) => ({
+  Component: Html,
+  props: {
+    ...args,
+  },
+});
+
+export const Basic = DefaultTemplate.bind({});
 Basic.args = {
-  content: "",
+  markdown: "",
+};
+
+export const HTML = HtmlTemplate.bind({});
+HTML.args = {
+  markdown: null,
 };
