@@ -53,6 +53,7 @@ export default {
   PLUS_CIRCLE_OUTLINE: "plus-circle-outline",
   POUND_BOX_OUTLINE: "pound-box-outline",
   PROVISIONER: "provisioner",
+  QRCODE: "qrcode",
   NOTIFICATION: "notification",
   NOTEBOOK_OUTLINE: "notebook-outline",
   REFRESH: "refresh",

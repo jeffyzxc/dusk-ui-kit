@@ -66,6 +66,7 @@
   import PoundBoxOutline from "./icons/PoundBoxOutline.svelte";
   import PlusCircleOutline from "./icons/PlusCircleOutline.svelte";
   import Plus from "./icons/Plus.svelte";
+  import Qrcode from "./icons/Qrcode.svelte";
   import Refresh from "./icons/Refresh.svelte";
   import ShareVariant from "./icons/ShareVariant.svelte";
   import StoreOutline from "./icons/StoreOutline.svelte";
@@ -334,6 +335,9 @@
         break;
       case icons.PROVISIONER:
         selectedIcon = Provisioner;
+        break;
+      case icons.QRCODE:
+        selectedIcon = Qrcode;
         break;
       case icons.NOTIFICATION:
         selectedIcon = Notification;

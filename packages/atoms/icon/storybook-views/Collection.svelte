@@ -286,14 +286,6 @@
   />
   <Icon
     class="h-32 w-32 flex flex-wrap content-center justify-center"
-    name="notification-outline"
-    title="notification-outline"
-    variant="{variant}"
-    tooltip="{tooltip}"
-    size="{size}"
-  />
-  <Icon
-    class="h-32 w-32 flex flex-wrap content-center justify-center"
     name="brightness-4"
     title="brightness-4"
     variant="{variant}"
@@ -544,6 +536,14 @@
     class="h-32 w-32 flex flex-wrap content-center justify-center"
     name="eye-circle-outline"
     title="eye-circle-outline"
+    variant="{variant}"
+    tooltip="{tooltip}"
+    size="{size}"
+  />
+  <Icon
+    class="h-32 w-32 flex flex-wrap content-center justify-center"
+    name="qrcode"
+    title="qrcode"
     variant="{variant}"
     tooltip="{tooltip}"
     size="{size}"
