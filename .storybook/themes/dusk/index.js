@@ -6,6 +6,8 @@ import logo from "./logo.svg";
 const config = resolveConfig(tailwindConfig);
 const colors = config.theme.colors;
 const fontFamily = config.theme.fontFamily;
+const fontSize = config.theme.fontSize;
+const fontWeight = config.theme.fontWeight;
 
 export default create({
   base: "light",
@@ -42,4 +44,4 @@ export default create({
   brandImage: logo,
 });
 
-export { colors };
+export { colors, fontFamily, fontSize, fontWeight };

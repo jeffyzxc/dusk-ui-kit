@@ -5,9 +5,10 @@ module.exports = {
   stories: [
     "../docs/**/*.stories.mdx",
     "../packages/**/*.stories.mdx",
-    "../packages/**/*.stories.@(js|jsx|ts|tsx|svelte)",
+    "../packages/**/*.stories.@(js|svelte)",
   ],
   addons: [
+    "storybook-dark-mode",
     "@storybook/addon-links",
     "@storybook/addon-a11y",
     "@storybook/addon-storyshots",
