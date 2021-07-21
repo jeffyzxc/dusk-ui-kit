@@ -61,9 +61,11 @@
   import MenuBurgerClose from "./icons/MenuBurgerClose.svelte";
   import Notification from "./icons/Notification.svelte";
   import NoteBookOutline from "./icons/NotebookOutline.svelte";
+  import Minus from "./icons/Minus.svelte";
   import MinusCircleOutline from "./icons/MinusCircleOutline.svelte";
   import PoundBoxOutline from "./icons/PoundBoxOutline.svelte";
   import PlusCircleOutline from "./icons/PlusCircleOutline.svelte";
+  import Plus from "./icons/Plus.svelte";
   import Refresh from "./icons/Refresh.svelte";
   import ShareVariant from "./icons/ShareVariant.svelte";
   import StoreOutline from "./icons/StoreOutline.svelte";
@@ -92,7 +94,6 @@
   export let viewbox = "0 0 24 24";
   export let wrapper = href == null ? Div : A;
   export let variant = null;
-  export let disabled = false;
   export let tooltip = false;
 
   let context = getContext("DUK:icon:context");
@@ -310,6 +311,9 @@
       case icons.MENU_BURGER_CLOSE:
         selectedIcon = MenuBurgerClose;
         break;
+      case icons.MINUS:
+        selectedIcon = Minus;
+        break;
       case icons.MINUS_CIRCLE_OUTLINE:
         selectedIcon = MinusCircleOutline;
         break;
@@ -321,6 +325,9 @@
         break;
       case icons.POUND_BOX_OUTLINE:
         selectedIcon = PoundBoxOutline;
+        break;
+      case icons.PLUS:
+        selectedIcon = Plus;
         break;
       case icons.PLUS_CIRCLE_OUTLINE:
         selectedIcon = PlusCircleOutline;
@@ -376,10 +383,9 @@
   this="{wrapper}"
   use="{[forwardEvents, ...use]}"
   class="duk-icon {className}
-  {disabled}
   {getClassNames(variant, size, context)}"
   {...exclude($$props, ["use", "class", "variant", "name", "size", "tooltip"])}
-  data-tooltip="{tooltip}"
+  data-tooltip="{tooltip || undefined}"
 >
   <svelte:component this="{getSelectedIcon(name)}" viewbox="{viewbox}" />
 </svelte:component>
