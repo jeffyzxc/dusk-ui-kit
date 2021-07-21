@@ -1,0 +1,232 @@
+import { Meta, ColorPalette, ColorItem, Typeset } from "@storybook/addon-docs/blocks";
+import { colors, fontFamily, fontSize, fontWeight } from "../.storybook/themes/dusk";
+
+<Meta title="Docs/Introduction" />
+
+# Dusk UI Kit
+
+## Typeography
+
+**Font**: Hind Siliguri
+**Weight**: hairline
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["hairline"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: thin
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["thin"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: light
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["light"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: normal
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["normal"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: medium
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["medium"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: semibold
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["semibold"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: bold
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["bold"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: extrabold
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["extrabold"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: black
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["black"]}
+/>
+
+## Color
+
+<ColorPalette>
+  {Object.entries(colors).map(([k, v]) => {
+    if (typeof v === "string" && (v.match(/^#/) || v.match(/^rgb/) || k.match(/color/i))) {
+      return <ColorItem key={k} title={k} colors={{ [k]: v }} />;
+    } else if (typeof v === "object") {
+      return (
+        <ColorItem
+          key={k}
+          title={k}
+          colors={Object.entries(v).reduce(
+            (acc, [key, value]) =>
+              typeof value === "string" &&
+              (value.match(/^#/) || value.match(/^rgb/) || key.match(/color/i))
+                ? { ...acc, [key]: value }
+                : acc,
+            {},
+          )}
+        />
+      );
+    }
+    return null;
+  })}
+</ColorPalette>
