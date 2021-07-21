@@ -11,14 +11,11 @@ export default {
     CARD: {
       BRAND: "brand",
       CTA: "cta",
+      DEFAULT: "default",
       INFO: "info",
       SUCCESS: "success",
       WARNING: "warning",
       DANGER: "danger",
-      LIGHT: "light",
-      DARK: "dark",
-      WHITE: "white",
-      BLACK: "black",
     },
     CHECKBOX: {
       SUCCESS: "success",

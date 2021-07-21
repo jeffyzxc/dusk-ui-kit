@@ -1,16 +1,27 @@
 .duk-card {
-  @apply rounded shadow-marketing;
+  @apply bg-white text-gray-900 rounded-3xl shadow-card;
+  @apply dark:bg-gray-700 dark:text-gray-100;
 
   &__actions {
-    @apply flex items-center py-4 px-6;
+    @apply flex items-center justify-end py-5 px-6;
   }
 
   &__title {
-    @apply flex items-center justify-between py-4 px-6 text-sm rounded-tl rounded-tr font-semibold;
+    @apply flex items-center justify-between pt-5 px-6;
+
+    & > h1,
+    & > h2,
+    & > h3,
+    & > h4,
+    & > h5,
+    & > h6 {
+      @apply text-xl text-indigo-500;
+      @apply dark:text-gray-100;
+    }
   }
 
   &__footer {
-    @apply flex items-center justify-between text-xs pt-2 px-6 pb-3 leading-tight font-light;
+    @apply flex items-center justify-between text-xs px-6 py-2 leading-tight font-light;
 
     & p {
       @apply mb-0;
@@ -18,90 +29,131 @@
   }
 
   &__content {
-    @apply font-light px-6 py-6;
-
-    & p:last-child {
-      @apply m-0;
-    }
+    @apply font-light py-5 px-6;
   }
 
   &--small {
-    @apply rounded-sm text-xs;
+    @apply text-sm;
 
     & > .duk-card__title {
-      @apply rounded-tr-sm rounded-tl-sm py-3 px-5 text-xs font-medium;
+      @apply text-base;
     }
 
     & > .duk-card__content {
-      @apply font-light px-5 py-3;
-    }
-
-    & > .duk-card__actions {
-      @apply flex items-center py-3 px-5;
+      @apply py-4;
     }
   }
 
   &--large {
-    @apply rounded-sm text-lg;
+    @apply text-lg;
 
     & > .duk-card__title {
-      @apply py-3 px-5 text-base font-semibold;
+      @apply text-2xl;
     }
 
     & > .duk-card__content {
-      @apply font-light px-5 py-3;
-    }
-
-    & > .duk-card__actions {
-      @apply flex items-center px-5 py-3;
+      @apply py-6;
     }
   }
 
   &--brand {
     @apply bg-indigo-500 text-white;
+    @apply dark:bg-indigo-500 dark:text-white;
+
+    & > .duk-card__title {
+      & > h1,
+      & > h2,
+      & > h3,
+      & > h4,
+      & > h5,
+      & > h6 {
+        @apply text-white;
+        @apply dark:text-white;
+      }
+    }
   }
 
   &--cta {
     @apply bg-gold-500 text-gray-900;
+    @apply dark:bg-gold-500 dark:text-gray-900;
+
+    & > .duk-card__title {
+      & > h1,
+      & > h2,
+      & > h3,
+      & > h4,
+      & > h5,
+      & > h6 {
+        @apply text-gray-900;
+        @apply dark:text-gray-900;
+      }
+    }
   }
 
   &--info {
     @apply bg-blue-500 text-gray-900;
+    @apply dark:bg-blue-500 dark:text-gray-900;
+
+    & > .duk-card__title {
+      & > h1,
+      & > h2,
+      & > h3,
+      & > h4,
+      & > h5,
+      & > h6 {
+        @apply text-gray-900;
+        @apply dark:text-gray-900;
+      }
+    }
   }
 
   &--success {
-    @apply bg-green-500 text-white;
+    @apply bg-green-500 text-gray-900;
+    @apply dark:bg-green-500 dark:text-gray-900;
+
+    & > .duk-card__title {
+      & > h1,
+      & > h2,
+      & > h3,
+      & > h4,
+      & > h5,
+      & > h6 {
+        @apply text-gray-900;
+        @apply dark:text-gray-900;
+      }
+    }
   }
 
   &--warning {
     @apply bg-yellow-500 text-gray-900;
+    @apply dark:bg-blue-500 dark:text-gray-900;
+
+    & > .duk-card__title {
+      & > h1,
+      & > h2,
+      & > h3,
+      & > h4,
+      & > h5,
+      & > h6 {
+        @apply text-gray-900;
+        @apply dark:text-gray-900;
+      }
+    }
   }
 
   &--danger {
     @apply bg-red-900 text-gray-100;
-  }
-
-  &--light {
-    @apply bg-gray-200 text-gray-800;
-  }
-
-  &--dark {
-    @apply bg-gray-800 text-gray-200;
-  }
-
-  &--black {
-    @apply bg-black text-white;
 
     & > .duk-card__title {
-      @apply bg-gray-800;
-    }
-  }
-
-  &--white {
-    @apply bg-white text-black;
-
-    & > .duk-card__title {
-      @apply bg-gray-200;
+      & > h1,
+      & > h2,
+      & > h3,
+      & > h4,
+      & > h5,
+      & > h6 {
+        @apply text-gray-100;
+        @apply dark:text-gray-100;
+      }
     }
   }
 }

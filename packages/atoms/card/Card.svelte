@@ -14,7 +14,7 @@
   export let use = [];
   let className = "";
   export { className as class };
-  export let variant = variants.ATOM.CARD.WHITE;
+  export let variant = null;
   export let size = sizes.ATOM.CARD.BASE;
 
   function getClassNames(variant, size) {
@@ -38,18 +38,6 @@
         break;
       case variants.ATOM.CARD.DANGER:
         classNames += " duk-card--danger";
-        break;
-      case variants.ATOM.CARD.LIGHT:
-        classNames += " duk-card--light";
-        break;
-      case variants.ATOM.CARD.DARK:
-        classNames += " duk-card--dark";
-        break;
-      case variants.ATOM.CARD.WHITE:
-        classNames += " duk-card--white";
-        break;
-      case variants.ATOM.CARD.BLACK:
-        classNames += " duk-card--black";
         break;
       default:
         classNames += "";
@@ -75,6 +63,7 @@
   use:forwardEvents
   class="duk-card {className}
   {getClassNames(variant, size)}"
-  {...exclude($$props, ['use', 'class', 'variant', 'size'])}>
+  {...exclude($$props, ["use", "class", "variant", "size"])}
+>
   <slot />
 </div>
