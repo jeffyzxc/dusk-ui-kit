@@ -1,3 +1,7 @@
 .duk-loading-indicator {
-  @apply inline-block fill-current;
+  @apply inline-block fill-current text-gray-600 w-20;
+  @apply dark:text-gray-300;
+  @apply sm:w-24;
+  @apply sm:w-32;
+  @apply lg:w-48;
 }
