@@ -1,24 +1,18 @@
 <script>
-  import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, exclude } from "@dusk-network/helpers";
+  import { variants } from "@dusk-network/helpers";
   import "./styles.css";
-  import Div from "@dusk-network/elements/Div.svelte";
 
-  const forwardEvents = forwardEventsBuilder(current_component);
-
-  export let use = [];
-
-  let className = "";
-  export { className as class };
-
-  export let wrapper = Div;
+  export let variant = variants.ATOM.LOADING_INDICATOR.DEFAULT;
 </script>
 
-<svelte:component
-  this="{wrapper}"
-  use="{[forwardEvents, ...use]}"
-  class="duk-loading-indicator {className}"
-  {...exclude($$props, ["use", "class"])}
+<div
+  class="{$$props.class || ''} duk-loading-indicator"
+  class:duk-loading-indicator--brand="{variant === variants.ATOM.LOADING_INDICATOR.BRAND}"
+  class:duk-loading-indicator--cta="{variant === variants.ATOM.LOADING_INDICATOR.CTA}"
+  class:duk-loading-indicator--info="{variant === variants.ATOM.LOADING_INDICATOR.INFO}"
+  class:duk-loading-indicator--success="{variant === variants.ATOM.LOADING_INDICATOR.SUCCESS}"
+  class:duk-loading-indicator--warning="{variant === variants.ATOM.LOADING_INDICATOR.WARNING}"
+  class:duk-loading-indicator--danger="{variant === variants.ATOM.LOADING_INDICATOR.DANGER}"
 >
   <svg
     version="1.1"
@@ -53,4 +47,4 @@
         begin="0s;strokeBox.end"></animate>
     </rect>
   </svg>
-</svelte:component>
+</div>

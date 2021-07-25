@@ -1,5 +1,5 @@
 <script>
-  import LoadingIndicator from "../LoadingIndicator";
+  import LoadingIndicator from "../index";
   export let variant;
 </script>
 
