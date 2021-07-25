@@ -42,9 +42,8 @@
   use="{[forwardEvents, ...use]}"
   class="duk-text-field {className}
   {getClassNames(state, context)}"
-  :class:
-  id="{id}"
-  placeholder="{placeholder}"
+  id="{id || undefined}"
+  placeholder="{placeholder || undefined}"
   type="{type}"
   name="{name}"
   {...exclude($$props, ["use", "class", "type", "state", "placeholder", "name"])}

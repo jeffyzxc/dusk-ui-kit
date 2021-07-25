@@ -18,8 +18,11 @@ export default {
       WARNING: "warning",
       DANGER: "danger",
     },
-    CHECKBOX: {
+    LOADING_INDICATOR: {
+      BRAND: "brand",
+      CTA: "cta",
       DEFAULT: "default",
+      INFO: "info",
       SUCCESS: "success",
       WARNING: "warning",
       DANGER: "danger",
@@ -28,6 +31,15 @@ export default {
       BRAND: "brand",
       CTA: "cta",
       DEFAULT: "default",
+      SUCCESS: "success",
+      WARNING: "warning",
+      DANGER: "danger",
+    },
+    PROGRESS_BAR: {
+      BRAND: "brand",
+      CTA: "cta",
+      DEFAULT: "default",
+      INFO: "info",
       SUCCESS: "success",
       WARNING: "warning",
       DANGER: "danger",

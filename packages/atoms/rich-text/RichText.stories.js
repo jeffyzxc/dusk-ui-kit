@@ -3,7 +3,7 @@ import Html from "./storybook-views/Html.svelte";
 import RichText from "@dusk-network/rich-text";
 
 export default {
-  title: `Components/Atoms/RichText`,
+  title: `Components/Atoms/Rich Text`,
   component: RichText,
   parameters: {
     layout: "centered",
