@@ -1,19 +1,65 @@
 .duk-alert {
-  &--empty-title {
-    & .duk-alert__title {
-      @apply justify-end;
-    }
+  @apply flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md;
+  @apply dark:bg-gray-800;
 
-    & .duk-alert__dismiss {
-      @apply pl-0;
+  &__icon {
+    @apply flex items-center py-4 justify-center w-20 bg-gray-500 text-white;
+    @apply dark:text-black;
+  }
+
+  &__body {
+    @apply w-full p-4 relative;
+
+    h4 {
+      @apply mb-3 text-lg text-gray-500;
     }
+  }
+
+  &__actions {
+    @apply w-full mt-4 flex items-center justify-start;
   }
 
   &__content {
-    @apply flex items-center;
+    @apply my-3;
   }
 
   &__dismiss {
-    @apply pl-4;
+    @apply absolute top-3 right-3 text-gray-500;
+  }
+
+  &--success {
+    & .duk-alert__icon {
+      @apply bg-green-500;
+    }
+
+    & .duk-alert__body {
+      & h4 {
+        @apply text-green-500;
+      }
+    }
+  }
+
+  &--warning {
+    & .duk-alert__icon {
+      @apply bg-yellow-500;
+    }
+
+    & .duk-alert__body {
+      & h4 {
+        @apply dark:text-yellow-500;
+      }
+    }
+  }
+
+  &--danger {
+    & .duk-alert__icon {
+      @apply bg-red-500;
+    }
+
+    & .duk-alert__body {
+      & h4 {
+        @apply dark:text-red-500;
+      }
+    }
   }
 }
