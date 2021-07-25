@@ -11,7 +11,6 @@ export default {
       LARGE: "lg",
     },
     ICON: {
-      SMALL: "sm",
       BASE: "base",
       LARGE: "lg",
       XL: "xl",
@@ -21,11 +20,6 @@ export default {
   },
   MOLECULE: {
     ACCORDION: {
-      SMALL: "sm",
-      BASE: "base",
-      LARGE: "lg",
-    },
-    ALERT: {
       SMALL: "sm",
       BASE: "base",
       LARGE: "lg",

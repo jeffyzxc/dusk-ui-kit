@@ -150,6 +150,9 @@ module.exports = {
           "2xl": "6rem",
         },
       },
+      cursor: {
+        "row-resize": "row-resize	",
+      },
       fontFamily: {
         sans: [
           "Hind Siliguri",
@@ -334,47 +337,9 @@ module.exports = {
         svg: {
           width: "100%",
           height: "auto",
-          fill: "currentColor",
           pointerEvents: "none",
         },
-        ".duk-scrim": {
-          backgroundColor: "black",
-          position: "fixed",
-          top: 0,
-          left: 0,
-          zIndex: 10,
-          width: "100%",
-          height: "100%",
-        },
       });
-    }),
-    plugin(function ({ addComponents, theme }) {
-      const ripple = {
-        ".ripple": {
-          borderRadius: "50%",
-          position: "absolute",
-          transform: "scale(0)",
-          animation: "rippleffect 0.6s",
-          "&--brand": { backgroundColor: theme("colors.indigo.300") },
-          "&--cta": { backgroundColor: theme("colors.gold.300") },
-          "&--info": { backgroundColor: theme("colors.blue.300") },
-          "&--success": { backgroundColor: theme("colors.green.300") },
-          "&--warning": { backgroundColor: theme("colors.yellow.300") },
-          "&--danger": { backgroundColor: theme("colors.red.300") },
-          "&--light": { backgroundColor: theme("colors.gray.300") },
-          "&--dark": { backgroundColor: theme("colors.gray.700") },
-          "&--black": { backgroundColor: theme("colors.gray.900") },
-          "&--white": { backgroundColor: theme("colors.gray.100") },
-        },
-        "@keyframes rippleffect": {
-          to: {
-            transform: "scale(2.5)",
-            opacity: "0",
-          },
-        },
-      };
-
-      addComponents([ripple]);
     }),
   ],
 };
