@@ -8,12 +8,10 @@
 
   const forwardEvents = forwardEventsBuilder(current_component);
 
-  export let use = [];
-
   let className = "";
   export { className as class };
-
-  export let href = null;
+  export let use = [];
+  export let href = undefined;
   export let wrapper = href == null ? Div : A;
 
   let context = getContext("DUK:logo:context");
@@ -40,7 +38,7 @@
   {getClassNames(context)}"
   {...exclude($$props, ["use", "class", "href"])}
 >
-  <svg id="__DUK_LOGO" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 291.36 63.27">
+  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 291.36 63.27">
     <path
       d="M.21.15A.24.24,0,0,0,0,.38.23.23,0,0,0,.21.61a31.21,31.21,0,0,1,19,9,31,31,0,0,1,9.13,22.05,31,31,0,0,1-9.13,22,31.21,31.21,0,0,1-19,9,.24.24,0,0,0-.21.23.23.23,0,0,0,.21.23A31.55,31.55,0,0,0,25.69,54a31.67,31.67,0,0,0,0-44.75A31.55,31.55,0,0,0,.21.15Z"
     ></path>

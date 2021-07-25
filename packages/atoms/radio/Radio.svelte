@@ -5,19 +5,15 @@
   import "./styles.css";
   import InputRadio from "@dusk-network/elements/InputRadio.svelte";
   import Label from "@dusk-network/elements/Label.svelte";
-  import createRipple from "@dusk-network/helpers/ripple.js";
 
   let className = "";
   export { className as class };
+  export const use = [];
   export let variant = variants.ATOM.RADIO.BRAND;
   export let name = "";
   export let id = "";
-  export const use = [];
 
   const forwardEvents = forwardEventsBuilder(current_component);
-  const ripple = createRipple(variant);
-
-  // let context = getContext("DUK:button:context");
 
   $: actionProp = {};
   $: defaultProp = {};
@@ -43,18 +39,6 @@
       case variants.ATOM.RADIO.DANGER:
         classNames += " duk-radio--danger";
         break;
-      case variants.ATOM.RADIO.LIGHT:
-        classNames += " duk-radio--light";
-        break;
-      case variants.ATOM.RADIO.DARK:
-        classNames += " duk-radio--dark";
-        break;
-      case variants.ATOM.RADIO.WHITE:
-        classNames += " duk-radio--white";
-        break;
-      case variants.ATOM.RADIO.BLACK:
-        classNames += " duk-radio--black";
-        break;
       default:
         classNames += "";
     }
@@ -69,7 +53,7 @@
   {...exclude($$props, ["use", "class", "variant", "id", "name", "type"])}
 >
   <InputRadio
-    use="{[forwardEvents, ripple, ...use]}"
+    use="{[forwardEvents, ...use]}"
     class="duk-radio__button"
     type="{types.ATOM.RADIO}"
     name="{name}"

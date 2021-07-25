@@ -41,18 +41,6 @@
       case variants.ATOM.SWITCH.DANGER:
         classNames += " duk-switch--danger";
         break;
-      case variants.ATOM.SWITCH.LIGHT:
-        classNames += " duk-switch--light";
-        break;
-      case variants.ATOM.SWITCH.DARK:
-        classNames += " duk-switch--dark";
-        break;
-      case variants.ATOM.SWITCH.WHITE:
-        classNames += " duk-switch--white";
-        break;
-      case variants.ATOM.SWITCH.BLACK:
-        classNames += " duk-switch--black";
-        break;
       default:
         classNames += "";
     }

@@ -45,9 +45,8 @@ const Template = (args) => ({
 
 export const Basic = Template.bind({});
 Basic.args = {
-  variant: variants.ATOM.CARD.BRAND,
-  size: sizes.ATOM.CARD.LARGE,
-  elevation: elevations.ATOM.CARD.LARGE,
+  variant: variants.ATOM.CARD.DEFAULT,
+  size: sizes.ATOM.CARD.BASE,
   cardText:
     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam minus quod neque eligendi eaque aliquam fugit nemo cupiditate odio sapiente?",
 };

@@ -1,69 +1,28 @@
 <script>
   import { current_component } from "svelte/internal";
-  import {
-    forwardEventsBuilder,
-    exclude,
-    useActions,
-    variants,
-    sizes,
-  } from "@dusk-network/helpers";
+  import { forwardEventsBuilder, useActions, variants, sizes } from "@dusk-network/helpers";
   import "./styles.css";
 
   const forwardEvents = forwardEventsBuilder(current_component);
 
   export let use = [];
-  let className = "";
-  export { className as class };
-  export let variant = null;
+  export let variant = undefined;
   export let size = sizes.ATOM.CARD.BASE;
-
-  function getClassNames(variant, size) {
-    let classNames = "";
-
-    switch (variant) {
-      case variants.ATOM.CARD.BRAND:
-        classNames += " duk-card--brand";
-        break;
-      case variants.ATOM.CARD.CTA:
-        classNames += " duk-card--cta";
-        break;
-      case variants.ATOM.CARD.INFO:
-        classNames += " duk-card--info";
-        break;
-      case variants.ATOM.CARD.SUCCESS:
-        classNames += " duk-card--success";
-        break;
-      case variants.ATOM.CARD.WARNING:
-        classNames += " duk-card--warning";
-        break;
-      case variants.ATOM.CARD.DANGER:
-        classNames += " duk-card--danger";
-        break;
-      default:
-        classNames += "";
-    }
-
-    switch (size) {
-      case sizes.ATOM.CARD.SMALL:
-        classNames += " duk-card--small";
-        break;
-      case sizes.ATOM.CARD.LARGE:
-        classNames += " duk-card--large";
-        break;
-      default:
-        classNames += "";
-    }
-
-    return classNames;
-  }
 </script>
 
 <div
   use:useActions="{use}"
   use:forwardEvents
-  class="duk-card {className}
-  {getClassNames(variant, size)}"
-  {...exclude($$props, ["use", "class", "variant", "size"])}
+  class="{$$props.class || ''} duk-card"
+  class:duk-card--brand="{variant === variants.ATOM.CARD.BRAND}"
+  class:duk-card--cta="{variant === variants.ATOM.CARD.CTA}"
+  class:duk-card--info="{variant === variants.ATOM.CARD.INFO}"
+  class:duk-card--success="{variant === variants.ATOM.CARD.SUCCESS}"
+  class:duk-card--warning="{variant === variants.ATOM.CARD.WARNING}"
+  class:duk-card--danger="{variant === variants.ATOM.CARD.DANGER}"
+  class:duk-card--small="{size === sizes.ATOM.CARD.SMALL}"
+  class:duk-card--large="{size === sizes.ATOM.CARD.LARGE}"
+  {...$$restProps}
 >
   <slot />
 </div>

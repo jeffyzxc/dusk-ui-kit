@@ -1,14 +1,7 @@
 <script>
   import { getContext } from "svelte";
   import { current_component } from "svelte/internal";
-  import {
-    exclude,
-    forwardEventsBuilder,
-    variants,
-    types,
-    states,
-    contexts,
-  } from "@dusk-network/helpers";
+  import { exclude, forwardEventsBuilder, types, states, contexts } from "@dusk-network/helpers";
   import Input from "@dusk-network/elements/Input.svelte";
   import Textarea from "@dusk-network/elements/Textarea.svelte";
   import "./styles.css";
@@ -20,7 +13,6 @@
   let className = "";
   export { className as class };
 
-  export let variant = variants.ATOM.TEXT_FIELD.LIGHT;
   export let type = types.ATOM.TEXT_FIELD.TEXT;
   export let placeholder = "";
   export let state = states.ATOM.TEXT_FIELD.BASE;
@@ -30,8 +22,8 @@
 
   let context = getContext("DUK:text-field:context") || "";
 
-  function getClassNames(variant, state, context) {
-    let classNames = `duk-text-field--${variant} duk-text-field--${state}`;
+  function getClassNames(state, context) {
+    let classNames = `duk-text-field--${state}`;
 
     switch (context) {
       case contexts.TEXT_FIELD.CONTROL:
@@ -49,12 +41,13 @@
   this="{component}"
   use="{[forwardEvents, ...use]}"
   class="duk-text-field {className}
-  {getClassNames(variant, state, context)}"
+  {getClassNames(state, context)}"
+  :class:
   id="{id}"
   placeholder="{placeholder}"
   type="{type}"
   name="{name}"
-  {...exclude($$props, ["use", "class", "variant", "type", "state", "placeholder", "name"])}
+  {...exclude($$props, ["use", "class", "type", "state", "placeholder", "name"])}
 >
   <slot />
 </svelte:component>

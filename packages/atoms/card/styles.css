@@ -9,12 +9,10 @@
   &__title {
     @apply flex items-center justify-between pt-5 px-6;
 
-    & > h1,
-    & > h2,
-    & > h3,
-    & > h4,
-    & > h5,
-    & > h6 {
+    & h1,
+    & h2,
+    & h3,
+    & h4 {
       @apply text-xl text-indigo-500;
       @apply dark:text-gray-100;
     }
@@ -61,12 +59,10 @@
     @apply dark:bg-indigo-500 dark:text-white;
 
     & > .duk-card__title {
-      & > h1,
-      & > h2,
-      & > h3,
-      & > h4,
-      & > h5,
-      & > h6 {
+      & h1,
+      & h2,
+      & h3,
+      & h4 {
         @apply text-white;
         @apply dark:text-white;
       }
@@ -78,12 +74,10 @@
     @apply dark:bg-gold-500 dark:text-gray-900;
 
     & > .duk-card__title {
-      & > h1,
-      & > h2,
-      & > h3,
-      & > h4,
-      & > h5,
-      & > h6 {
+      & h1,
+      & h2,
+      & h3,
+      & h4 {
         @apply text-gray-900;
         @apply dark:text-gray-900;
       }
@@ -95,12 +89,10 @@
     @apply dark:bg-blue-500 dark:text-gray-900;
 
     & > .duk-card__title {
-      & > h1,
-      & > h2,
-      & > h3,
-      & > h4,
-      & > h5,
-      & > h6 {
+      & h1,
+      & h2,
+      & h3,
+      & h4 {
         @apply text-gray-900;
         @apply dark:text-gray-900;
       }
@@ -112,12 +104,10 @@
     @apply dark:bg-green-500 dark:text-gray-900;
 
     & > .duk-card__title {
-      & > h1,
-      & > h2,
-      & > h3,
-      & > h4,
-      & > h5,
-      & > h6 {
+      & h1,
+      & h2,
+      & h3,
+      & h4 {
         @apply text-gray-900;
         @apply dark:text-gray-900;
       }
@@ -129,12 +119,10 @@
     @apply dark:bg-blue-500 dark:text-gray-900;
 
     & > .duk-card__title {
-      & > h1,
-      & > h2,
-      & > h3,
-      & > h4,
-      & > h5,
-      & > h6 {
+      & h1,
+      & h2,
+      & h3,
+      & h4 {
         @apply text-gray-900;
         @apply dark:text-gray-900;
       }
@@ -145,12 +133,10 @@
     @apply bg-red-900 text-gray-100;
 
     & > .duk-card__title {
-      & > h1,
-      & > h2,
-      & > h3,
-      & > h4,
-      & > h5,
-      & > h6 {
+      & h1,
+      & h2,
+      & h3,
+      & h4 {
         @apply text-gray-100;
         @apply dark:text-gray-100;
       }

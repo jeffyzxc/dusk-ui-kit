@@ -1,5 +1,5 @@
-.duk-button__group {
-  @apply text-center;
+.duk-button-group {
+  @apply flex items-center justify-between gap-4;
 }
 
 .duk-button {
@@ -20,6 +20,7 @@
 
     &.duk-button--outline {
       @apply bg-transparent text-gray-900 border border-solid border-white;
+      @apply dark:text-gray-100;
 
       &:hover,
       &.active {
@@ -42,6 +43,7 @@
 
     &.duk-button--outline {
       @apply bg-transparent text-gray-900 border border-solid border-white;
+      @apply dark:text-gray-100;
 
       &:hover,
       &.active {
@@ -64,6 +66,7 @@
 
     &.duk-button--outline {
       @apply bg-transparent text-gray-900 border border-solid border-white;
+      @apply dark:text-gray-100;
 
       &:hover,
       &.active {
@@ -86,6 +89,7 @@
 
     &.duk-button--outline {
       @apply bg-transparent text-gray-900 border border-solid border-white;
+      @apply dark:text-gray-100;
 
       &:hover,
       &.active {
@@ -100,6 +104,7 @@
     &:hover,
     &.active {
       @apply bg-yellow-500 text-gray-900;
+      @apply dark:text-gray-100;
     }
 
     &:hover {
@@ -108,6 +113,7 @@
 
     &.duk-button--outline {
       @apply bg-transparent text-gray-900 border border-solid border-white;
+      @apply dark:text-gray-100;
 
       &:hover,
       &.active {
@@ -130,54 +136,11 @@
 
     &.duk-button--outline {
       @apply bg-transparent text-gray-900 border border-solid border-white;
+      @apply dark:text-gray-100;
 
       &:hover,
       &.active {
         @apply bg-red-400 text-black border-red-400 shadow-marketing-hover;
-      }
-    }
-  }
-
-  &--light {
-    @apply bg-gray-200 text-gray-900 border-none;
-
-    &:hover,
-    &.active {
-      @apply bg-gray-500 text-black;
-    }
-
-    &:hover {
-      @apply shadow-marketing-hover;
-    }
-
-    &.duk-button--outline {
-      @apply bg-transparent text-gray-900 border border-solid border-white;
-
-      &:hover,
-      &.active {
-        @apply bg-gray-400 text-black border-gray-400 shadow-marketing-hover;
-      }
-    }
-  }
-
-  &--dark {
-    @apply bg-gray-900 text-gray-200 border-none;
-
-    &:hover,
-    &.active {
-      @apply bg-gray-600 text-white;
-    }
-
-    &:hover {
-      @apply shadow-marketing-hover;
-    }
-
-    &.duk-button--outline {
-      @apply bg-transparent text-gray-800 border border-solid border-white;
-
-      &:hover,
-      &.active {
-        @apply bg-gray-800 text-white border-gray-800 shadow-marketing-hover;
       }
     }
   }

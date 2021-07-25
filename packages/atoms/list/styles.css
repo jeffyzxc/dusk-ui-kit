@@ -1,12 +1,8 @@
 .duk-list {
   @apply list-none;
 
-  &__item__wrapper {
+  &__item-wrapper {
     @apply align-middle relative overflow-hidden;
-
-    &__wrapper {
-      @apply block;
-    }
   }
 
   &__icon {
@@ -16,7 +12,7 @@
   &--numbered {
     @apply list-decimal;
 
-    & > .duk-list__item__wrapper {
+    & > .duk-list__item-wrapper {
       @apply overflow-visible;
     }
   }
@@ -24,7 +20,7 @@
   &--bulleted {
     @apply list-disc;
 
-    & > .duk-list__item__wrapper {
+    & > .duk-list__item-wrapper {
       @apply overflow-visible;
     }
   }
