@@ -1,5 +1,5 @@
 .duk-icon {
-  @apply fill-current flex items-center justify-center;
+  @apply fill-current flex items-center justify-center h-6 w-6;
 
   &.inline {
     & > svg {
@@ -95,49 +95,19 @@
     @apply text-red-500 fill-current;
   }
 
-  &--dark {
-    @apply text-gray-800 fill-current;
-  }
-
-  &--light {
-    @apply text-gray-200 fill-current;
-  }
-
-  &--black {
-    @apply text-black fill-current;
-  }
-
-  &--white {
-    @apply text-white fill-current;
-  }
-
   &--large {
-    > svg {
-      @apply h-8 w-8;
-    }
+    @apply h-8 w-8;
   }
 
   &--xl {
-    > svg {
-      @apply h-10 w-10;
-    }
+    @apply h-10 w-10;
   }
 
   &--xxl {
-    > svg {
-      @apply h-12 w-12;
-    }
+    @apply h-12 w-12;
   }
 
   &--xxxl {
-    > svg {
-      @apply h-16 w-16;
-    }
-  }
-
-  &--small {
-    > svg {
-      @apply h-5 w-5;
-    }
+    @apply h-16 w-16;
   }
 }
