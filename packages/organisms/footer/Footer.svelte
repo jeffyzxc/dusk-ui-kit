@@ -1,12 +1,6 @@
 <script>
   import { current_component } from "svelte/internal";
-  import {
-    forwardEventsBuilder,
-    exclude,
-    useActions,
-    variants,
-    types,
-  } from "@dusk-network/helpers";
+  import { forwardEventsBuilder, useActions, variants, types } from "@dusk-network/helpers";
   import Minimal from "./Minimal.svelte";
   import Maximal from "./Maximal.svelte";
   import "./styles.css";
@@ -43,7 +37,7 @@
   use:useActions="{use}"
   use:forwardEvents
   class="duk-footer {className} {getClassNames(variant)}"
-  {...exclude($$props, ["use", "class", "type", "variant", "social", "categories"])}
+  {...$$restProps}
 >
   {#if type === types.ORGANISM.FOOTER.MAXIMAL}
     <Maximal categories="{categories}" />

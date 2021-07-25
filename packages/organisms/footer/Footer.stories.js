@@ -120,7 +120,7 @@ export default {
   title: `Components/Organisms/Footer`,
   component: Footer,
   parameters: {
-    layout: "centered",
+    layout: "fullscreen",
     design: {
       type: "figma",
       url:

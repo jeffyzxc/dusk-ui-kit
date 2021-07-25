@@ -1,16 +1,13 @@
 .duk-footer {
-  @apply w-screen mt-5 py-20;
+  @apply w-screen mt-5 py-20 text-white bg-indigo-600;
+  @apply dark:bg-black;
   @apply sm:mt-12;
   @apply lg:mt-32;
   @apply xl:mt-40;
   @apply 2xl:mt-48;
 
-  &--brand {
-    @apply text-white bg-indigo-600;
-
-    & a {
-      @apply text-white;
-    }
+  & a {
+    @apply text-white;
   }
 
   &__logo {
@@ -74,7 +71,7 @@
   }
 
   &__minimal {
-    @apply px-5 py-8 mx-auto flex items-center flex-col; 
+    @apply px-5 py-8 mx-auto flex items-center flex-col;
     @apply sm:flex-row;
   }
 }
