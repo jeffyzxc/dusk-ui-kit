@@ -1,0 +1,64 @@
+.duk-progress-bar {
+  &__progress-step {
+    @apply absolute rounded bg-gray-300 bottom-px left-0;
+    @apply dark:bg-white;
+    height: 2px;
+    max-height: 2px;
+    transition: width 0.5s;
+  }
+
+  &__progress-bar {
+    @apply bg-gray-900 rounded w-full;
+    @apply dark:bg-gray-600;
+    height: 4px;
+    max-height: 4px;
+  }
+
+  &__progress-container {
+    @apply relative rounded w-full;
+    height: 4px;
+    max-height: 4px;
+  }
+
+  &--brand {
+    & .duk-progress-bar__progress-step {
+      @apply bg-indigo-500;
+      @apply dark:bg-indigo-600;
+    }
+  }
+
+  &--cta {
+    & .duk-progress-bar__progress-step {
+      @apply bg-orange-900;
+      @apply dark:bg-orange-600;
+    }
+  }
+
+  &--info {
+    & .duk-progress-bar__progress-step {
+      @apply bg-blue-900;
+      @apply dark:bg-blue-600;
+    }
+  }
+
+  &--success {
+    & .duk-progress-bar__progress-step {
+      @apply bg-green-900;
+      @apply dark:bg-green-600;
+    }
+  }
+
+  &--warning {
+    & .duk-progress-bar__progress-step {
+      @apply bg-yellow-900;
+      @apply dark:bg-yellow-600;
+    }
+  }
+
+  &--danger {
+    & .duk-progress-bar__progress-step {
+      @apply bg-red-900;
+      @apply dark:bg-red-600;
+    }
+  }
+}
