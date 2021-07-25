@@ -22,7 +22,7 @@
     "sb:build": "build-storybook",
     "stage": "lint-staged",
     "storybook": "start-storybook -p 6006",
-    "test": "echo \"Work in progress...\" && exit 1",
+    "test": "echo \"Work in progress...\" && exit",
     "test:watch": "jest --watchAll",
     "version:ci": "lerna version --yes --conventional-commits --create-release github --message 'chore(release): publish'"
   },
