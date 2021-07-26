@@ -9,6 +9,7 @@
   export let outline = null;
   export let icon = null;
   export let circle = null;
+  export let href = null;
 
   let count = 0;
 
@@ -24,6 +25,7 @@
   disabled="{disabled}"
   outline="{outline}"
   circle="{circle}"
+  href="{href}"
 >
   {#if icon}
     <Icon name="{icon}" size="{size}" />

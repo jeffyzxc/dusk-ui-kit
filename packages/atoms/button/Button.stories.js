@@ -1,4 +1,4 @@
-import { variants, sizes, contexts, icons } from "@dusk-network/helpers";
+import { variants, sizes, icons } from "@dusk-network/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import Button from "@dusk-network/button";
 
@@ -32,10 +32,9 @@ export default {
         options: [true, false],
       },
     },
-    context: {
+    href: {
       control: {
-        type: "radio",
-        options: Object.values(contexts.BUTTON.ACTION),
+        type: "text",
       },
     },
     icon: {
