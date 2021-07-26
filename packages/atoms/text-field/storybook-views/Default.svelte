@@ -7,6 +7,8 @@
   export let placeholder;
   export let disabled;
   export let multiline;
+
+  let name = "world";
 </script>
 
 <TextField
@@ -15,4 +17,7 @@
   placeholder="{placeholder}"
   disabled="{disabled}"
   multiline="{multiline}"
+  bind:value="{name}"
 />
+
+<p>Bound value is: {name}</p>

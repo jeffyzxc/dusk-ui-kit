@@ -9,14 +9,14 @@
   export { className as class };
   export let type = types.MOLECULE.CONTROL.STACKED;
   export let state = states.MOLECULE.CONTROL.BASE;
-  export let id;
-  export let label;
+  export let id = "";
+  export let label = "";
   export let message = "";
 
   setContext("DUK:text-field:context", contexts.TEXT_FIELD.CONTROL);
   setContext("DUK:date-picker:context", contexts.DATE_PICKER.CONTROL);
 
-  function getClassNames(type, variant, state) {
+  function getClassNames(type, state) {
     return ` duk-control--${type} duk-control--${state}`;
   }
 </script>
@@ -34,11 +34,12 @@
     <slot />
   </div>
   <div class="duk-control__message">
-    {#if (state === states.MOLECULE.CONTROL.WARNING || state === states.MOLECULE.CONTROL.DANGER) && message !== ""}
+    {#if state === states.MOLECULE.CONTROL.WARNING || state === states.MOLECULE.CONTROL.DANGER}
       <Icon name="alert-outline" class="duk-control__message__icon" />
     {/if}
-    <p>
-      {#if state !== states.MOLECULE.CONTROL.SUCCESS && message !== ""}{message}{/if}
-    </p>
+    {#if state === states.MOLECULE.CONTROL.SUCCESS}
+      <Icon name="check-decagram-outline" class="duk-control__message__icon" />
+    {/if}
+    {#if state !== states.MOLECULE.CONTROL.SUCCESS && message !== ""}<p>{message}</p>{/if}
   </div>
 </div>

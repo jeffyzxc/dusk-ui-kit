@@ -10,14 +10,10 @@
   }
 
   &__message {
-    @apply flex items-center justify-end text-sm pr-1;
+    @apply flex items-center justify-end text-sm space-x-2 mt-2;
 
     & > p:empty::before {
       content: "\00a0";
-    }
-
-    &__icon {
-      @apply mr-2;
     }
   }
 
@@ -57,69 +53,27 @@
     }
   }
 
-  &--dark {
-    @apply text-gray-100;
-
-    & .duk-control__label {
-      @apply text-gray-300;
-    }
-
-    & .duk-control__message {
-      @apply text-gray-400 italic;
-    }
-  }
-
-  &--light {
-    @apply text-gray-900;
-
-    & .duk-control__label {
-      @apply text-gray-600;
-    }
-
-    & .duk-control__message {
-      @apply text-gray-600 italic;
-    }
-  }
-
-  &--light&--success {
+  &--success {
     & .duk-control__label,
     & .duk-control__message {
       @apply text-green-900 not-italic;
+      @apply dark:text-green-600;
     }
   }
 
-  &--light&--warning {
+  &--warning {
     & .duk-control__label,
     & .duk-control__message {
       @apply text-yellow-900 not-italic;
+      @apply dark:text-yellow-600;
     }
   }
 
-  &--light&--danger {
+  &--danger {
     & .duk-control__label,
     & .duk-control__message {
       @apply text-red-900 not-italic;
-    }
-  }
-
-  &--dark&--success {
-    & .duk-control__label,
-    & .duk-control__message {
-      @apply text-green-900 not-italic;
-    }
-  }
-
-  &--dark&--warning {
-    & .duk-control__label,
-    & .duk-control__message {
-      @apply text-yellow-900 not-italic;
-    }
-  }
-
-  &--dark&--danger {
-    & .duk-control__label,
-    & .duk-control__message {
-      @apply text-red-900 not-italic;
+      @apply dark:text-red-600;
     }
   }
 }

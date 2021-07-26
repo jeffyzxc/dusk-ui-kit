@@ -1,4 +1,4 @@
-import { variants, states, types } from "@dusk-network/helpers";
+import { states, types } from "@dusk-network/helpers";
 import Default from "./storybook-views/Default.svelte";
 import Control from "@dusk-network/control";
 
@@ -10,12 +10,6 @@ export default {
     backgrounds: { default: "dark" },
   },
   argTypes: {
-    variant: {
-      control: {
-        type: "select",
-        options: Object.values(variants.MOLECULE.CONTROL),
-      },
-    },
     state: {
       control: {
         type: "select",
@@ -40,7 +34,6 @@ const Template = (args) => ({
 
 export const Basic = Template.bind({});
 Basic.args = {
-  variant: variants.MOLECULE.CONTROL.LIGHT,
   state: states.MOLECULE.CONTROL.SUCCESS,
   type: types.MOLECULE.CONTROL.STACKED,
   placeholder: "I'm Control",
