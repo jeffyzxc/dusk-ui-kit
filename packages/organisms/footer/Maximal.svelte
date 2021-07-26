@@ -5,7 +5,7 @@
   export let categories;
 </script>
 
-<div class="duk-footer__maximal container" {...$$restProps}>
+<div class="duk-footer__maximal" {...$$restProps}>
   {#each categories as category}
     <CategoryMenu category="{category}" />
   {/each}
