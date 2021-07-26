@@ -8,9 +8,16 @@
   export let title;
 
   let url = "https://github.com/dusk-network";
+  let appName = "Explorer";
 </script>
 
-<Navbar variant="{variant}" title="{title}" class="absolute top-0 left-0" id="sb-example-nav">
+<Navbar
+  appName="{appName}"
+  variant="{variant}"
+  title="{title}"
+  class="absolute top-0 left-0"
+  id="sb-example-nav"
+>
   <div slot="logo">
     <Logo />
   </div>
@@ -24,7 +31,7 @@
   <div slot="apps">
     <Menu orientation="horizontal" name="Portal Navigation">
       <List>
-        <Item href="javascript:;" active>Explorer</Item>
+        <Item href="javascript:;" active="{true}">Explorer</Item>
         <Item href="javascript:;">Wallet</Item>
         <Item href="javascript:;">Staking</Item>
       </List>
