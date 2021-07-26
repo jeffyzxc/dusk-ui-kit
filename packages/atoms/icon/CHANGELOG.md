@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.15](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.9...v2.0.0-rc.15) (2021-07-26)
+
+
+### Bug Fixes
+
+* **icon:** 🐛 added missing icon component changes ([f9ef529](https://github.com/dusk-network/dusk-ui-kit/commit/f9ef52916df04080ece324e24cfa48bcc14ba530))
+* **logo:** 🐛 fixing issues with logo component ([e796ee0](https://github.com/dusk-network/dusk-ui-kit/commit/e796ee060126543aa35c8fb4bd121a143e5b6315))
+
+
+### Features
+
+* **accordion:** ✨ added the first version of the Accordion component ([cdf1de0](https://github.com/dusk-network/dusk-ui-kit/commit/cdf1de000735b77d8194b6254e6ba102125aec90))
+* **global:** ✨ enabled es6 package importing and set everything to es6 modules ([3e4cf91](https://github.com/dusk-network/dusk-ui-kit/commit/3e4cf9184197ed2e791207f5cd4b9b03184da40c))
+* **icon:** ✨ added optional tooltip parameter ([b169719](https://github.com/dusk-network/dusk-ui-kit/commit/b1697193525f3e3c4fc6600c2ec1b687d89b528d))
+* **icon:** ✨ added qr-code icon ([bbeed97](https://github.com/dusk-network/dusk-ui-kit/commit/bbeed97af7dfbd0996bf6742e0721e602c4f1805))
+* **icon:** ✨ reworked icons to be much less verbose ([cd203d9](https://github.com/dusk-network/dusk-ui-kit/commit/cd203d9871dc99bfb5ab31c8e3891a96344c6b20))
+
+
+
+
+
 # [2.0.0-rc.14](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.9...v2.0.0-rc.14) (2021-06-03)
 
 

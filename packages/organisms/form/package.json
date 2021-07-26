@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/form",
-  "version": "2.0.0-rc.14",
+  "version": "2.0.0-rc.15",
   "description": "Dusk UI Kit - Form",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -15,8 +15,8 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/helpers": "^2.0.0-rc.14",
-    "@dusk-network/icon": "^2.0.0-rc.14"
+    "@dusk-network/helpers": "^2.0.0-rc.15",
+    "@dusk-network/icon": "^2.0.0-rc.15"
   },
   "peerDependencies": {
     "svelte": "3.38.2"

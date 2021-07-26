@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.15](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.9...v2.0.0-rc.15) (2021-07-26)
+
+
+### Bug Fixes
+
+* **loading-indicator:** 🐛 fixed up docs and added missing variants ([a0bd29d](https://github.com/dusk-network/dusk-ui-kit/commit/a0bd29d7faab9bf4caf5b8fbab7b4b736e1b35be))
+
+
+### Features
+
+* **global:** ✨ enabled es6 package importing and set everything to es6 modules ([3e4cf91](https://github.com/dusk-network/dusk-ui-kit/commit/3e4cf9184197ed2e791207f5cd4b9b03184da40c))
+* **icon:** ✨ added optional tooltip parameter ([b169719](https://github.com/dusk-network/dusk-ui-kit/commit/b1697193525f3e3c4fc6600c2ec1b687d89b528d))
+* **loading-indicator:** ✨ replaced loading indicator svg ([5edb77b](https://github.com/dusk-network/dusk-ui-kit/commit/5edb77b5f09062501d4f87adf54103c51a3d6b66))
+
+
+
+
+
 # [2.0.0-rc.14](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.9...v2.0.0-rc.14) (2021-06-03)
 
 
