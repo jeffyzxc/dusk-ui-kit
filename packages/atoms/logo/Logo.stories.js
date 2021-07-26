@@ -7,7 +7,13 @@ export default {
   parameters: {
     layout: "centered",
   },
-  argTypes: {},
+  argTypes: {
+    href: {
+      control: {
+        type: "text",
+      },
+    },
+  },
 };
 
 const Template = (args) => ({

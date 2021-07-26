@@ -15,7 +15,7 @@
 
   onMount(async () => {
     if (href) {
-      await import("../../helpers/dom-utils").then((domUtils) => {
+      await import("@dusk-network/helpers/dom-utils").then((domUtils) => {
         const wrapper = document.createElement("a");
         wrapper.setAttribute("href", href);
         domUtils.wrap(wrapper, element.firstElementChild);

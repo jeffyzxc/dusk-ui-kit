@@ -1,42 +1,28 @@
 <script>
-  import { getContext } from "svelte";
-  import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, exclude, contexts } from "@dusk-network/helpers";
+  import { getContext, onMount } from "svelte";
+  import { contexts } from "@dusk-network/helpers";
   import "./styles.css";
-  import A from "@dusk-network/elements/A.svelte";
-  import Div from "@dusk-network/elements/Div.svelte";
 
-  const forwardEvents = forwardEventsBuilder(current_component);
+  export let href = null;
 
-  let className = "";
-  export { className as class };
-  export let use = [];
-  export let href = undefined;
-  export let wrapper = href == null ? Div : A;
-
+  let element;
   let context = getContext("DUK:logo:context");
 
-  function getClassNames(context) {
-    let classNames = "";
-    switch (context) {
-      case contexts.LOGO.NAVBAR:
-        classNames += " duk-navbar__logo";
-        break;
-      default:
-        classNames += "";
+  onMount(async () => {
+    if (href) {
+      await import("@dusk-network/helpers/dom-utils").then((domUtils) => {
+        const wrapper = document.createElement("a");
+        wrapper.setAttribute("href", href);
+        domUtils.wrap(wrapper, element.firstElementChild);
+      });
     }
-
-    return classNames;
-  }
+  });
 </script>
 
-<svelte:component
-  this="{wrapper}"
-  href="{href}"
-  use="{[forwardEvents, ...use]}"
-  class="duk-logo {className}
-  {getClassNames(context)}"
-  {...exclude($$props, ["use", "class", "href"])}
+<div
+  bind:this="{element}"
+  class="{$$props.class || ''} duk-logo"
+  class:duk-navbar__logo="{context === contexts.LOGO.NAVBAR}"
 >
   <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 291.36 63.27">
     <path
@@ -53,4 +39,4 @@
       251.52 58.1 256.9 58.1 256.9 29.91 256.97 29.91 283.44 58.1 291.36 58.1 263.18 29.17"
     ></polygon>
   </svg>
-</svelte:component>
+</div>
