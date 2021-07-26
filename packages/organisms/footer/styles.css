@@ -1,16 +1,13 @@
 .duk-footer {
-  @apply w-screen mt-5 py-20;
+  @apply w-screen mt-5 py-20 text-white bg-indigo-600;
+  @apply dark:bg-black;
   @apply sm:mt-12;
   @apply lg:mt-32;
   @apply xl:mt-40;
   @apply 2xl:mt-48;
 
-  &--brand {
-    @apply text-white bg-indigo-600;
-
-    & a {
-      @apply text-white;
-    }
+  & a {
+    @apply text-white;
   }
 
   &__logo {
@@ -21,8 +18,8 @@
       @apply scale-105;
     }
 
-    & > svg {
-      @apply w-40;
+    & svg {
+      @apply h-6 w-auto;
     }
   }
 
@@ -31,8 +28,8 @@
   }
 
   &__copyright {
-    @apply block text-sm text-center mt-4;
-    @apply sm:inline-block sm:text-left sm:mt-0 sm:mx-4 sm:py-2 sm:pl-4;
+    @apply text-sm text-center;
+    @apply sm:text-left;
   }
 
   &__legal-menu {
@@ -40,8 +37,12 @@
   }
 
   &__social-media-menu {
-    @apply inline-flex mt-4 justify-center;
-    @apply sm:ml-auto sm:mt-0 sm:justify-start;
+    @apply inline-flex justify-center;
+    @apply sm:justify-start;
+
+    @screen sm {
+      margin-left: auto !important;
+    }
 
     &__item {
       &:not(:last-child) {
@@ -74,7 +75,9 @@
   }
 
   &__minimal {
-    @apply px-5 py-8 mx-auto flex items-center flex-col; 
-    @apply sm:flex-row;
+    @apply px-5 py-8 mx-auto flex items-center flex-col space-y-5;
+    @apply sm:flex-row sm:space-y-0 sm:space-x-4;
+    @apply md:space-x-5;
+    @apply lg:space-x-6;
   }
 }

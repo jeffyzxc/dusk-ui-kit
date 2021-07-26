@@ -5,6 +5,7 @@ export default {
       NONE: "none",
       NUMBERED: "numbered",
       BULLETED: "bulleted",
+      DEFINITION: "definition",
     },
     TABLE: {
       BASE: "base",

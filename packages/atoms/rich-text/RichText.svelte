@@ -1,9 +1,13 @@
 <script>
   import * as marked from "marked";
   import "./styles.css";
-  export let content;
+  export let markdown;
 </script>
 
-<span class="rich-text">
-  {@html marked(content)}
-</span>
+<div class="rich-text">
+  {#if markdown}
+    {@html marked(markdown)}
+  {:else}
+    <slot />
+  {/if}
+</div>

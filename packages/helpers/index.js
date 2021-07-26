@@ -1,29 +1,29 @@
-import { exclude } from "./exclude.js";
-import { forwardEventsBuilder } from "./forwardEvents.js";
-import { useActions } from "./useActions.js";
-import variants from "./variants.js";
-import sizes from "./sizes.js";
 import contexts from "./contexts.js";
-import orientations from "./orientations.js";
-import types from "./types.js";
-import states from "./states.js";
+import domUtils from "./dom-utils.js";
 import elevations from "./elevations.js";
 import icons from "./icons.js";
-import ripple from "./ripple.js";
-import Scrim from "./views/Scrim.svelte";
+import orientations from "./orientations.js";
+import prefixFilter from "./prefix-filter.js";
+import sizes from "./sizes.js";
+import states from "./states.js";
+import types from "./types.js";
+import variants from "./variants.js";
+import { exclude } from "./exclude.js";
+import { forwardEventsBuilder } from "./forward-events.js";
+import { useActions } from "./use-actions.js";
 
 export {
+  contexts,
+  domUtils,
+  elevations,
   exclude,
   forwardEventsBuilder,
+  icons,
+  orientations,
+  prefixFilter,
+  sizes,
+  states,
+  types,
   useActions,
   variants,
-  sizes,
-  contexts,
-  orientations,
-  types,
-  states,
-  elevations,
-  icons,
-  ripple,
-  Scrim,
 };

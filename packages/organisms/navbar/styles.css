@@ -5,31 +5,26 @@
   @apply 2xl:mb-40;
 
   &__wrapper {
-    @apply flex-none flex w-full justify-between items-start;
-    @apply lg:items-center;
+    @apply lg:flex-none lg:flex lg:w-full lg:justify-between lg:items-center;
 
     &--primary {
-      @apply fill-current;
-      @apply lg:pt-2;
+      @apply fill-current text-indigo-500;
+      @apply dark:text-white;
+      @apply lg:h-24 lg:px-6;
     }
 
     &--secondary {
-      @apply px-6 pb-3 pt-4;
+      @apply px-6 pb-3 pt-4 bg-indigo-500 text-white;
+      @apply dark:bg-gray-800;
     }
   }
 
   &__brand {
-    @apply flex flex-col items-start flex-grow;
-    @apply lg:flex-row lg:items-center lg:px-6;
-
-    & [slot="logo"],
-    .duk-navbar__logo {
-      @apply inline-flex ml-4 my-5;
-      @apply lg:mr-6 lg:mb-2 lg:ml-0 lg:mt-0;
-    }
+    @apply flex flex-col items-start pl-5 pt-5;
+    @apply lg:flex-grow lg:flex-row lg:items-center lg:space-x-6 lg:pl-0;
 
     & svg {
-      @apply block fill-current h-6;
+      @apply block fill-current h-6 w-auto;
     }
 
     &__heading {
@@ -51,8 +46,11 @@
   }
 
   &__logo {
-    @apply inline-block;
+    @apply block h-full;
     @apply lg:self-center;
+
+    left: 1rem;
+    top: 1rem;
   }
 
   &__links-menu {
@@ -68,6 +66,9 @@
     @apply lg:flex lg:flex-shrink lg:flex-grow-0 lg:w-auto lg:h-auto;
 
     &--primary {
+      @apply mt-4;
+      @apply lg:space-x-5 lg:mt-0;
+
       & .duk-list__item__wrapper {
         @apply px-3 pt-4 pb-4;
         @apply lg:pt-2;
@@ -85,8 +86,9 @@
         @apply lg:mb-0;
 
         &--active {
-          @apply font-semibold;
-          @apply lg:border-t-2;
+          @apply font-semibold bg-indigo-500 text-white;
+          @apply dark:bg-gray-800;
+          @apply lg:border-t-2 lg:border-white;
         }
       }
     }
@@ -99,15 +101,20 @@
 
     & .duk-list {
       @apply flex flex-col;
-      @apply lg:flex-row lg:flex-1 lg:justify-end lg:mb-0;
+      @apply lg:flex-row lg:flex-1 lg:justify-end lg:mb-0 lg:space-x-5;
 
       &__item {
         @apply py-0 pl-0 leading-relaxed font-light w-full;
-        @apply lg:mb-0 lg:pr-0 lg:mr-5 lg:w-auto;
+        @apply lg:mb-0 lg:pr-0 lg:w-auto;
 
         &__wrapper {
           @apply w-full text-left;
           @apply lg:text-left;
+
+          &--active {
+            @apply bg-indigo-500 text-white;
+            @apply dark:bg-gray-900;
+          }
 
           &:is(a):not(.duk-list__item__wrapper--active) {
             @apply opacity-80 transition-all duration-700;
@@ -142,29 +149,6 @@
     & .duk-navbar__wrapper--secondary {
       @apply hidden;
       @apply lg:flex;
-    }
-  }
-
-  &--brand {
-    & .duk-navbar__wrapper--primary {
-      @apply text-indigo-500;
-
-      & .duk-list__item__wrapper {
-        &--active {
-          @apply bg-indigo-500 text-white;
-        }
-      }
-    }
-
-    & .duk-navbar__wrapper--secondary {
-      @apply bg-indigo-500 text-white;
-
-      & .duk-list__item__wrapper {
-        &--active {
-          @apply bg-indigo-500 text-white;
-          @apply lg:border-white;
-        }
-      }
     }
   }
 }

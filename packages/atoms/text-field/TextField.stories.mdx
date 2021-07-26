@@ -1,18 +1,11 @@
 import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
 import TextField from "./storybook-views/Default.svelte";
 
-<Meta title="Docs/Components/Atoms/TextField" />
+<Meta title="Docs/Components/Atoms/Text Field" />
 
 # ⚛️ Text Field
 
 A text box, text field or text entry box is a control element of a graphical user interface, that should enable the user to input text information to be used by a program.
-
-## Variants
-
-| Variant | Usage                                      |
-| ------- | ------------------------------------------ |
-| LIGHT   | Applies a light styling on the text-field. |
-| DARK    | Applies a dark styling on the text-field.  |
 
 ## Types
 
@@ -47,7 +40,6 @@ Text-fields allow users to type in them based on the types above.
   const placeholder="type here";
   const disabled=false;
 </script>
-<div class="p-10 w-6/12 mx-auto">
-  <TextField variant="{variants.ATOM.TEXT_FIELD.DARK}" state="{states.ATOM.TEXT_FIELD.SUCCESS}" type="{types.ATOM.TEXT_FIELD.TEXT}" {placeholder} {disabled} />
-</div>
+
+<TextField variant="{variants.ATOM.TEXT_FIELD.DARK}" state="{states.ATOM.TEXT_FIELD.SUCCESS}" type="{types.ATOM.TEXT_FIELD.TEXT}" {placeholder} {disabled} />
 ```

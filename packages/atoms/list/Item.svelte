@@ -4,17 +4,16 @@
   import A from "@dusk-network/elements/A.svelte";
   import Span from "@dusk-network/elements/Span.svelte";
   import Li from "@dusk-network/elements/Li.svelte";
-  import createRipple from "@dusk-network/helpers/ripple.js";
+
   const forwardEvents = forwardEventsBuilder(current_component);
-  export let use = [];
+
   let className = "";
   export { className as class };
+  export let use = [];
   export let href = null;
   export let target = "_self";
   export let active = null;
   export let wrapper = href == null ? Span : A;
-  const ripple = createRipple();
-  if (href) use.push(ripple);
 </script>
 
 <svelte:component
@@ -28,7 +27,7 @@
       use="{[forwardEvents, ...use]}"
       href="{href}"
       target="{target}"
-      class="duk-list__item__wrapper {active ? 'duk-list__item__wrapper--active' : ''}"
+      class="duk-list__item-wrapper {active ? 'duk-list__item-wrapper--active' : ''}"
     >
       <slot />
     </svelte:component>

@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.15](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.9...v2.0.0-rc.15) (2021-07-26)
+
+
+### Bug Fixes
+
+* **tailwing:** 🐛 adding missing configuration ([0679034](https://github.com/dusk-network/dusk-ui-kit/commit/0679034a66a2c49a8c4416971579efb0690b8aa8))
+
+
+### Features
+
+* **card:** ✨ updated card styles and darkmode settings ([dbf8a55](https://github.com/dusk-network/dusk-ui-kit/commit/dbf8a55066ab1557381aacf699ff58e508138bd4))
+* **darkmode:** ✨ upgrading storybook and enabling darkmode features ([5288d2c](https://github.com/dusk-network/dusk-ui-kit/commit/5288d2c464ad1d8788655ae690cf0d2ab42377cf))
+* **global:** ✨ enabled es6 package importing and set everything to es6 modules ([3e4cf91](https://github.com/dusk-network/dusk-ui-kit/commit/3e4cf9184197ed2e791207f5cd4b9b03184da40c))
+* **icon:** ✨ added optional tooltip parameter ([b169719](https://github.com/dusk-network/dusk-ui-kit/commit/b1697193525f3e3c4fc6600c2ec1b687d89b528d))
+* **styles:** ✨ added JIT support for instant re-render updates ([f7453a0](https://github.com/dusk-network/dusk-ui-kit/commit/f7453a0e52bc129b917e74e6a5cdfd823d9a9993))
+
+
+
+
+
 # [2.0.0-rc.14](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.9...v2.0.0-rc.14) (2021-06-03)
 
 

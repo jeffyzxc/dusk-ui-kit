@@ -1,6 +1,6 @@
 <script>
   import { createEventDispatcher, getContext } from "svelte";
-  import { exclude, variants, contexts } from "@dusk-network/helpers";
+  import { exclude, contexts } from "@dusk-network/helpers";
   import FlatPickr from "svelte-flatpickr";
   // import { Label } from "@dusk-network/elements";
 
@@ -13,8 +13,7 @@
 
   export let value;
   export let options;
-  // export let handler;
-  export let variant = variants.ATOM.DATE_PICKER.LIGHT;
+  export let variant = undefined;
   export let placeholder = "";
   export const use = [];
 
@@ -42,6 +41,7 @@
 <div
   class="duk-date-picker {className}
   {getClassNames(variant, context)}"
-  {...exclude($$props, ['use', 'class', 'variant', 'name', 'options', 'handler', 'placeholder'])}>
+  {...exclude($$props, ["use", "class", "variant", "name", "options", "handler", "placeholder"])}
+>
   <FlatPickr options="{options}" bind:value placeholder="{placeholder}" on:change="{change}" />
 </div>

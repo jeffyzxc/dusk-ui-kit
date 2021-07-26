@@ -4,7 +4,6 @@
   import "./styles.css";
   import InputCheckbox from "@dusk-network/elements/InputCheckbox.svelte";
   import Label from "@dusk-network/elements/Label.svelte";
-  import createRipple from "@dusk-network/helpers/ripple.js";
 
   let className = "";
   export { className as class };
@@ -16,7 +15,6 @@
   export const use = [];
 
   const forwardEvents = forwardEventsBuilder(current_component);
-  const ripple = createRipple(variant);
 
   $: actionProp = {};
   $: defaultProp = {};
@@ -42,18 +40,6 @@
       case variants.ATOM.CHECKBOX.DANGER:
         classNames += " duk-checkbox--danger";
         break;
-      case variants.ATOM.CHECKBOX.LIGHT:
-        classNames += " duk-checkbox--light";
-        break;
-      case variants.ATOM.CHECKBOX.DARK:
-        classNames += " duk-checkbox--dark";
-        break;
-      case variants.ATOM.CHECKBOX.WHITE:
-        classNames += " duk-checkbox--white";
-        break;
-      case variants.ATOM.CHECKBOX.BLACK:
-        classNames += " duk-checkbox--black";
-        break;
       default:
         classNames += "";
     }
@@ -68,7 +54,7 @@
   {...exclude($$props, ["use", "class", "variant", "id", "name", "type"])}
 >
   <InputCheckbox
-    use="{[forwardEvents, ripple, ...use]}"
+    use="{[forwardEvents, ...use]}"
     class="duk-checkbox__button"
     type="{types.ATOM.CHECKBOX}"
     name="{name}"

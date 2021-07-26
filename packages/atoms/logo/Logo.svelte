@@ -1,46 +1,30 @@
 <script>
-  import { getContext } from "svelte";
-  import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, exclude, contexts } from "@dusk-network/helpers";
+  import { getContext, onMount } from "svelte";
+  import { contexts } from "@dusk-network/helpers";
   import "./styles.css";
-  import A from "@dusk-network/elements/A.svelte";
-  import Div from "@dusk-network/elements/Div.svelte";
-
-  const forwardEvents = forwardEventsBuilder(current_component);
-
-  export let use = [];
-
-  let className = "";
-  export { className as class };
 
   export let href = null;
-  export let wrapper = href == null ? Div : A;
 
+  let element;
   let context = getContext("DUK:logo:context");
 
-  function getClassNames(context) {
-    let classNames = "";
-    switch (context) {
-      case contexts.LOGO.NAVBAR:
-        classNames += " duk-navbar__logo";
-        break;
-      default:
-        classNames += "";
+  onMount(async () => {
+    if (href) {
+      await import("@dusk-network/helpers/dom-utils").then((domUtils) => {
+        const wrapper = document.createElement("a");
+        wrapper.setAttribute("href", href);
+        domUtils.wrap(wrapper, element.firstElementChild);
+      });
     }
-
-    return classNames;
-  }
+  });
 </script>
 
-<svelte:component
-  this="{wrapper}"
-  href="{href}"
-  use="{[forwardEvents, ...use]}"
-  class="duk-logo {className}
-  {getClassNames(context)}"
-  {...exclude($$props, ["use", "class", "href"])}
+<div
+  bind:this="{element}"
+  class="{$$props.class || ''} duk-logo"
+  class:duk-navbar__logo="{context === contexts.LOGO.NAVBAR}"
 >
-  <svg id="__DUK_LOGO" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 291.36 63.27">
+  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 291.36 63.27">
     <path
       d="M.21.15A.24.24,0,0,0,0,.38.23.23,0,0,0,.21.61a31.21,31.21,0,0,1,19,9,31,31,0,0,1,9.13,22.05,31,31,0,0,1-9.13,22,31.21,31.21,0,0,1-19,9,.24.24,0,0,0-.21.23.23.23,0,0,0,.21.23A31.55,31.55,0,0,0,25.69,54a31.67,31.67,0,0,0,0-44.75A31.55,31.55,0,0,0,.21.15Z"
     ></path>
@@ -55,4 +39,4 @@
       251.52 58.1 256.9 58.1 256.9 29.91 256.97 29.91 283.44 58.1 291.36 58.1 263.18 29.17"
     ></polygon>
   </svg>
-</svelte:component>
+</div>

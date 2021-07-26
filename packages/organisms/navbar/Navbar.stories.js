@@ -5,6 +5,9 @@ import Navbar from "@dusk-network/navbar";
 export default {
   title: `Components/Organisms/Navbar`,
   component: Navbar,
+  parameters: {
+    layout: "fullscreen",
+  },
   argTypes: {
     variant: {
       control: {

@@ -1,3 +1,9 @@
+/**
+ * Taken directly from https://github.com/hperrin/svelte-material-ui/blob/3096ffc184f9a77926e60abe47f53129c1b2c41a/packages/common/forwardEventsBuilder.js
+ * 🙏
+ * @author Hunter Perrin
+ */
+
 export function exclude(obj, keys) {
   let names = Object.getOwnPropertyNames(obj);
   const newObj = {};

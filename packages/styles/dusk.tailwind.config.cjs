@@ -8,7 +8,7 @@ module.exports = {
       safelist: ["body", "main", "#dusk"],
     },
   },
-  darkMode: false,
+  darkMode: "class",
   theme: {
     extend: {
       boxShadow: {
@@ -26,12 +26,14 @@ module.exports = {
         marketing: "1px 1px 0px #D82E60;",
         "marketing-hover": "8px 8px 0px #D82E60;",
         none: "none",
+        card: "0px 3px 6px rgba(0, 0, 0, .161)",
       },
       borderRadius: {
         none: "0",
         sm: ".1875rem",
         DEFAULT: ".375rem",
         lg: ".5625rem",
+        "3xl": "1.375rem",
         full: "9999px",
       },
       colors: {
@@ -148,6 +150,9 @@ module.exports = {
           "2xl": "6rem",
         },
       },
+      cursor: {
+        "row-resize": "row-resize	",
+      },
       fontFamily: {
         sans: [
           "Hind Siliguri",
@@ -168,8 +173,8 @@ module.exports = {
         mono: ["Menlo", "Monaco", "Consolas", "'Liberation Mono'", "'Courier New'", "monospace"],
       },
       fontSize: {
-        xs: "0.75rem",
-        sm: "0.875rem",
+        xs: ".75rem",
+        sm: ".875rem",
         base: "1rem",
         lg: "1.125rem",
         xl: "1.25rem",
@@ -210,33 +215,98 @@ module.exports = {
       },
       spacing: {
         0: "0",
-        1: "4px",
-        2: "6px",
-        3: "10px",
-        4: "12px",
-        5: "16px",
-        6: "22px",
-        8: "24px",
-        10: "28px",
-        12: "32px",
-        16: "40px",
-        20: "48px",
-        24: "56px",
-        32: "64px",
-        40: "80px",
-        48: "96px",
-        56: "128px",
-        64: "160px",
-        72: "192px",
-        96: "224px",
-        128: "256px",
-        225: "420px",
-        256: "512px",
+        1: ".25rem", // 4px
+        2: ".375rem", // 6px
+        3: ".5rem", // 8px
+        4: ".625rem", // 12px
+        5: "1rem", // 16px (base)
+        6: "1.375rem", // 22px
+        8: "1.5rem", // 24px
+        10: "1.75rem", // 28px
+        12: "2rem", // 32px
+        16: "2.5rem", // 40px
+        20: "3rem", // 48px
+        24: "3.5rem", // 56px
+        32: "4rem", // 64px
+        40: "5rem", // 80px
+        48: "6rem", // 96px
+        56: "8rem", // 128px
+        64: "10rem", // 160px
+        72: "12rem", // 192px
+        96: "14rem", // 224px
+        128: "16rem", // 256px
+        225: "26.25rem", // 420px
+        256: "32rem", // 512px
       },
+      typography: (theme) => ({
+        light: {
+          css: [
+            {
+              color: theme("colors.gray.400"),
+              '[class~="lead"]': {
+                color: theme("colors.gray.300"),
+              },
+              a: {
+                color: theme("colors.white"),
+              },
+              strong: {
+                color: theme("colors.white"),
+              },
+              "ol > li::before": {
+                color: theme("colors.gray.400"),
+              },
+              "ul > li::before": {
+                backgroundColor: theme("colors.gray.600"),
+              },
+              hr: {
+                borderColor: theme("colors.gray.200"),
+              },
+              blockquote: {
+                color: theme("colors.gray.200"),
+                borderLeftColor: theme("colors.gray.600"),
+              },
+              h1: {
+                color: theme("colors.white"),
+              },
+              h2: {
+                color: theme("colors.white"),
+              },
+              h3: {
+                color: theme("colors.white"),
+              },
+              h4: {
+                color: theme("colors.white"),
+              },
+              "figure figcaption": {
+                color: theme("colors.gray.400"),
+              },
+              code: {
+                color: theme("colors.white"),
+              },
+              "a code": {
+                color: theme("colors.white"),
+              },
+              pre: {
+                color: theme("colors.gray.200"),
+                backgroundColor: theme("colors.gray.800"),
+              },
+              thead: {
+                color: theme("colors.white"),
+                borderBottomColor: theme("colors.gray.400"),
+              },
+              "tbody tr": {
+                borderBottomColor: theme("colors.gray.600"),
+              },
+            },
+          ],
+        },
+      }),
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      typography: ["dark"],
+    },
   },
   plugins: [
     require("@tailwindcss/typography"),
@@ -264,56 +334,12 @@ module.exports = {
         },
         "button:focus": { outline: "none" },
         html: { height: "100%" },
-        code: {
-          color: theme("colors.gray.700"),
-          fontFamily: theme("fontFamily.mono"),
-        },
-        ".duk-scrim": {
-          backgroundColor: "black",
-          position: "fixed",
-          top: 0,
-          left: 0,
-          zIndex: 10,
+        svg: {
           width: "100%",
-          height: "100%",
+          height: "auto",
+          pointerEvents: "none",
         },
-        // a: {
-        //   color: theme("colors.indigo.800"),
-        //   "&:hover": {
-        //     color: theme("colors.indigo.500"),
-        //     textDecoration: "underline",
-        //     transition: "all 0.3s ease-in-out",
-        //   },
-        // },
       });
-    }),
-    plugin(function ({ addComponents, theme }) {
-      const ripple = {
-        ".ripple": {
-          borderRadius: "50%",
-          position: "absolute",
-          transform: "scale(0)",
-          animation: "rippleffect 0.6s",
-          "&--brand": { backgroundColor: theme("colors.indigo.300") },
-          "&--cta": { backgroundColor: theme("colors.gold.300") },
-          "&--info": { backgroundColor: theme("colors.blue.300") },
-          "&--success": { backgroundColor: theme("colors.green.300") },
-          "&--warning": { backgroundColor: theme("colors.yellow.300") },
-          "&--danger": { backgroundColor: theme("colors.red.300") },
-          "&--light": { backgroundColor: theme("colors.gray.300") },
-          "&--dark": { backgroundColor: theme("colors.gray.700") },
-          "&--black": { backgroundColor: theme("colors.gray.900") },
-          "&--white": { backgroundColor: theme("colors.gray.100") },
-        },
-        "@keyframes rippleffect": {
-          to: {
-            transform: "scale(2.5)",
-            opacity: "0",
-          },
-        },
-      };
-
-      addComponents([ripple]);
     }),
   ],
 };

@@ -21,6 +21,11 @@ export default {
         options: Object.values(sizes.ATOM.ICON),
       },
     },
+    href: {
+      control: {
+        type: "text",
+      },
+    },
   },
 };
 

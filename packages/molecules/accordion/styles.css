@@ -1,0 +1,13 @@
+.duk-accordion {
+  &__action {
+    @apply mr-5 cursor-row-resize;
+  }
+
+  &__term {
+    @apply text-2xl font-semibold flex items-center leading-loose mb-32 cursor-row-resize;
+  }
+
+  &__datum {
+    @apply text-xl leading-relaxed ml-5 mb-32;
+  }
+}

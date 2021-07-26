@@ -1,60 +1,71 @@
 <script>
   import { getContext } from "svelte";
-  import { current_component } from "svelte/internal";
-  import {
-    exclude,
-    forwardEventsBuilder,
-    variants,
-    types,
-    states,
-    contexts,
-  } from "@dusk-network/helpers";
-  import Input from "@dusk-network/elements/Input.svelte";
-  import Textarea from "@dusk-network/elements/Textarea.svelte";
+  import { types, states, contexts } from "@dusk-network/helpers";
   import "./styles.css";
 
-  const forwardEvents = forwardEventsBuilder(current_component);
-
-  export const use = [];
-
-  let className = "";
-  export { className as class };
-
-  export let variant = variants.ATOM.TEXT_FIELD.LIGHT;
+  export let value = null;
+  export let disabled = false;
   export let type = types.ATOM.TEXT_FIELD.TEXT;
   export let placeholder = "";
   export let state = states.ATOM.TEXT_FIELD.BASE;
-  export let component = type === types.ATOM.TEXT_FIELD.MULTI_LINE ? Textarea : Input;
   export let id;
   export let name;
+  export let focused = false;
 
   let context = getContext("DUK:text-field:context") || "";
 
-  function getClassNames(variant, state, context) {
-    let classNames = `duk-text-field--${variant} duk-text-field--${state}`;
+  $: isTextArea = type === types.ATOM.TEXT_FIELD.MULTI_LINE;
 
-    switch (context) {
-      case contexts.TEXT_FIELD.CONTROL:
-        classNames += " duk-control__input duk-control__input--text-field";
-        break;
-      default:
-        classNames += "";
-    }
-
-    return classNames;
+  function toggleFocused() {
+    focused = !focused;
   }
 </script>
 
-<svelte:component
-  this="{component}"
-  use="{[forwardEvents, ...use]}"
-  class="duk-text-field {className}
-  {getClassNames(variant, state, context)}"
-  id="{id}"
-  placeholder="{placeholder}"
-  type="{type}"
-  name="{name}"
-  {...exclude($$props, ["use", "class", "variant", "type", "state", "placeholder", "name"])}
->
-  <slot />
-</svelte:component>
+{#if isTextArea}
+  <textarea
+    bind:value
+    class="{$$props.class || ''} duk-text-field"
+    class:duk-text-field--danger="{state === states.ATOM.TEXT_FIELD.DANGER}"
+    class:duk-text-field--success="{state === states.ATOM.TEXT_FIELD.SUCCESS}"
+    class:duk-text-field--warning="{state === states.ATOM.TEXT_FIELD.WARNING}"
+    class:duk-control__input--text-field="{context === contexts.TEXT_FIELD.CONTROL}"
+    class:duk-control__input="{context === contexts.TEXT_FIELD.CONTROL}"
+    disabled="{disabled}"
+    id="{id || undefined}"
+    name="{name}"
+    on:blur
+    on:blur="{toggleFocused}"
+    on:change
+    on:click
+    on:focus
+    on:focus="{toggleFocused}"
+    on:input
+    on:keydown
+    on:keypress
+    on:keyup
+    placeholder="{placeholder || undefined}"></textarea>
+{:else}
+  <input
+    bind:value
+    class="{$$props.class || ''} duk-text-field"
+    class:duk-text-field--danger="{state === states.ATOM.TEXT_FIELD.DANGER}"
+    class:duk-text-field--success="{state === states.ATOM.TEXT_FIELD.SUCCESS}"
+    class:duk-text-field--warning="{state === states.ATOM.TEXT_FIELD.WARNING}"
+    class:duk-control__input--text-field="{context === contexts.TEXT_FIELD.CONTROL}"
+    class:duk-control__input="{context === contexts.TEXT_FIELD.CONTROL}"
+    disabled="{disabled}"
+    id="{id || undefined}"
+    name="{name}"
+    on:blur
+    on:blur="{toggleFocused}"
+    on:change
+    on:click
+    on:focus
+    on:focus="{toggleFocused}"
+    on:input
+    on:keydown
+    on:keypress
+    on:keyup
+    placeholder="{placeholder || undefined}"
+  />
+{/if}

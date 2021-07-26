@@ -1,6 +1,9 @@
 import A from "./A.svelte";
 import Button from "./Button.svelte";
+import Dd from "./Dd.svelte";
 import Div from "./Div.svelte";
+import Dl from "./Dl.svelte";
+import Dt from "./Dt.svelte";
 import Group from "./Group.svelte";
 import Input from "./Input.svelte";
 import Label from "./Label.svelte";
@@ -19,7 +22,10 @@ import Ul from "./Ul.svelte";
 export {
   A,
   Button,
+  Dd,
   Div,
+  Dl,
+  Dt,
   Group,
   Input,
   Label,

@@ -1,6 +1,6 @@
 <script>
   import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, exclude, variants, types } from "@dusk-network/helpers";
+  import { forwardEventsBuilder, exclude, types } from "@dusk-network/helpers";
   import "./styles.css";
   import Table from "@dusk-network/elements/Table.svelte";
   const forwardEvents = forwardEventsBuilder(current_component);
@@ -9,26 +9,9 @@
   export { className as class };
   export let type = types.ATOM.TABLE.BASE;
   export let striped = true;
-  export let variant = variants.ATOM.TABLE.LIGHT;
 
-  function getClassNames(variant, type, striped) {
+  function getClassNames(type, striped) {
     let classNames = "";
-    switch (variant) {
-      case variants.ATOM.TABLE.LIGHT:
-        classNames += " duk-table--light";
-        break;
-      case variants.ATOM.TABLE.DARK:
-        classNames += " duk-table--dark";
-        break;
-      case variants.ATOM.TABLE.LIGHT_HIGHLIGHT:
-        classNames += " duk-table--light duk-table--light-highlight";
-        break;
-      case variants.ATOM.TABLE.DARK_HIGHLIGHT:
-        classNames += " duk-table--dark duk-table--dark-highlight";
-        break;
-      default:
-        classNames += "";
-    }
     switch (type) {
       case types.ATOM.TABLE.BASE:
         classNames += "";
@@ -51,8 +34,8 @@
 <Table
   use="{[forwardEvents, ...use]}"
   class="duk-table {className}
-  {getClassNames(variant, type, striped)}"
-  {...exclude($$props, ["use", "class", "type", "variant", "striped"])}
+  {getClassNames(type, striped)}"
+  {...exclude($$props, ["use", "class", "type", "striped"])}
 >
   <slot name="head" />
   <slot />

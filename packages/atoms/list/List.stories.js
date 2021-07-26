@@ -1,5 +1,6 @@
 import { types } from "@dusk-network/helpers";
-import Default from "./storybook-views/Default.svelte";
+import DefaultView from "./storybook-views/Default.svelte";
+import DefinitionView from "./storybook-views/Definition.svelte";
 import List from "@dusk-network/list";
 
 export default {
@@ -18,14 +19,26 @@ export default {
   },
 };
 
-const Template = (args) => ({
-  Component: Default,
+const DefaultTemplate = (args) => ({
+  Component: DefaultView,
   props: {
     ...args,
   },
 });
 
-export const Basic = Template.bind({});
+const DefinitionTemplate = (args) => ({
+  Component: DefinitionView,
+  props: {
+    ...args,
+  },
+});
+
+export const Basic = DefaultTemplate.bind({});
 Basic.args = {
   type: types.ATOM.LIST.BULLETED,
+};
+
+export const Definition = DefinitionTemplate.bind({});
+Definition.args = {
+  type: types.ATOM.LIST.DEFINITION,
 };

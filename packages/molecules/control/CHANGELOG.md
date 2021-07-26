@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.15](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.9...v2.0.0-rc.15) (2021-07-26)
+
+
+### Bug Fixes
+
+* **ripples:** 🐛 fixes for removing ripple effect from ui kit ([15e926b](https://github.com/dusk-network/dusk-ui-kit/commit/15e926b822139f84bcf01686847c510fab583ad4))
+* **storybook:** 🐛 compatability with storybook ([5ea17bd](https://github.com/dusk-network/dusk-ui-kit/commit/5ea17bd2a3ffe6790d73e94813dbc2d3c2974649))
+* **text-field:** 🐛 fixing text field for binding and additional events etc ([3640a14](https://github.com/dusk-network/dusk-ui-kit/commit/3640a14654b81277d78ca07c1e1c70b47d226719))
+
+
+### Features
+
+* **global:** ✨ enabled es6 package importing and set everything to es6 modules ([3e4cf91](https://github.com/dusk-network/dusk-ui-kit/commit/3e4cf9184197ed2e791207f5cd4b9b03184da40c))
+* **icon:** ✨ added optional tooltip parameter ([b169719](https://github.com/dusk-network/dusk-ui-kit/commit/b1697193525f3e3c4fc6600c2ec1b687d89b528d))
+
+
+
+
+
 # [2.0.0-rc.14](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.9...v2.0.0-rc.14) (2021-06-03)
 
 

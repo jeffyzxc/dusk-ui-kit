@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.15](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.9...v2.0.0-rc.15) (2021-07-26)
+
+
+### Bug Fixes
+
+* **footer:** 🐛 fixing impact of other component updates on footer ([95b6b61](https://github.com/dusk-network/dusk-ui-kit/commit/95b6b61f384fceb3c730a2fae1846d25fdfd7679))
+
+
+### Features
+
+* **footer:** ✨ adding darkmode support ([a9c367d](https://github.com/dusk-network/dusk-ui-kit/commit/a9c367d7cb4184ace5732a8f070cfdd3189d6b88))
+* **global:** ✨ enabled es6 package importing and set everything to es6 modules ([3e4cf91](https://github.com/dusk-network/dusk-ui-kit/commit/3e4cf9184197ed2e791207f5cd4b9b03184da40c))
+* **icon:** ✨ added optional tooltip parameter ([b169719](https://github.com/dusk-network/dusk-ui-kit/commit/b1697193525f3e3c4fc6600c2ec1b687d89b528d))
+
+
+
+
+
 # [2.0.0-rc.14](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.9...v2.0.0-rc.14) (2021-06-03)
 
 
