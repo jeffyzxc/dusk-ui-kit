@@ -37,10 +37,14 @@ export default {
         type: "text",
       },
     },
+    buttonText: {
+      table: {
+        disable: true,
+      },
+    },
     icon: {
-      control: {
-        type: "select",
-        options: Object.values(icons),
+      table: {
+        disable: true,
       },
     },
   },

@@ -38,6 +38,7 @@
   class:duk-button--warning="{variant === variants.ATOM.BUTTON.WARNING}"
   class:duk-button--danger="{variant === variants.ATOM.BUTTON.DANGER}"
   class:duk-button--small="{size === sizes.ATOM.BUTTON.SMALL}"
+  class:duk-button--large="{size === sizes.ATOM.BUTTON.LARGE}"
   class:duk-button--outline="{outline}"
   class:duk-button--circle="{circle}"
   class:duk-card-action-button="{context === contexts.BUTTON.ACTION.CARD}"
