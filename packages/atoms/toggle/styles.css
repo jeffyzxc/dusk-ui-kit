@@ -1,0 +1,95 @@
+.duk-toggle {
+  @apply inline-block text-xs;
+
+  &__button,
+  &__switch {
+    @apply hidden;
+  }
+
+  & input:checked ~ &__switch-track {
+    @apply transform transition-colors;
+  }
+
+  & input:disabled ~ &__switch-thumb {
+    @apply bg-gray-100 border-gray-500;
+  }
+
+  & input:disabled ~ &__switch-track {
+    @apply bg-gray-500;
+  }
+
+  & input:checked ~ &__switch-thumb {
+    @apply transform translate-x-full;
+  }
+
+  &__switch-wrapper {
+    @apply relative inline-block align-middle cursor-pointer select-none bg-transparent;
+  }
+
+  &__switch-track {
+    @apply block w-20 h-8 bg-white rounded-full shadow-switch;
+  }
+
+  &__switch-thumb {
+    @apply block transition-all duration-300 ease-in-out absolute top-0 left-0 w-8 h-8 bg-gray-800 border-2 border-white rounded-full;
+  }
+
+  &__label {
+    &--button {
+      @apply leading-tight z-50 px-4 py-1 inline-block bg-transparent border border-gray-900 rounded;
+      @apply dark:text-white dark:border-white;
+    }
+    &--switch {
+      @apply hidden;
+    }
+  }
+
+  &--brand {
+    & input:checked {
+      & ~ .duk-toggle__switch-thumb,
+      & ~ .duk-toggle__label--button {
+        @apply bg-indigo-500 text-white;
+      }
+    }
+  }
+  &--cta {
+    & input:checked {
+      & ~ .duk-toggle__switch-thumb,
+      & ~ .duk-toggle__switch-thumb {
+        @apply bg-orange-500;
+      }
+    }
+  }
+  &--info {
+    & input:checked {
+      & ~ .duk-toggle__switch-thumb,
+      & ~ .duk-toggle__switch-thumb {
+        @apply bg-blue-500;
+      }
+    }
+  }
+  &--success {
+    & input:checked {
+      & ~ .duk-toggle__switch-thumb,
+      & ~ .duk-toggle__switch-thumb {
+        @apply bg-green-500;
+      }
+    }
+  }
+  &--warning {
+    & input:checked {
+      & ~ .duk-toggle__switch-thumb,
+      & ~ .duk-toggle__switch-thumb {
+        @apply bg-yellow-500;
+      }
+    }
+  }
+  &--danger {
+    & input:checked {
+      & ~ .duk-toggle__switch-thumb,
+      & ~ .duk-toggle__switch-thumb {
+        @apply bg-red-500;
+      }
+    }
+  }
+}

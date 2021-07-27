@@ -1,22 +1,10 @@
 <script>
-  import { getContext, onMount } from "svelte";
+  import { getContext } from "svelte";
   import { contexts } from "@dusk-network/helpers";
   import "./styles.css";
 
-  export let href = null;
-
   let element;
   let context = getContext("DUK:logo:context");
-
-  onMount(async () => {
-    if (href) {
-      await import("@dusk-network/helpers/dom-utils").then((domUtils) => {
-        const wrapper = document.createElement("a");
-        wrapper.setAttribute("href", href);
-        domUtils.wrap(wrapper, element.firstElementChild);
-      });
-    }
-  });
 </script>
 
 <div

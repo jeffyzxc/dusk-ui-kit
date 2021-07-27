@@ -5,7 +5,7 @@ export default {
   title: `Components/Molecules/Carousel`,
   component: Carousel,
   parameters: {
-    backgrounds: { default: "dark" },
+    layout: "centered",
   },
   argTypes: {},
 };

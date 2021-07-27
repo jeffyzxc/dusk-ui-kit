@@ -1,52 +1,24 @@
 <script>
   import { setContext } from "svelte";
-  import { current_component } from "svelte/internal";
-  import {
-    forwardEventsBuilder,
-    exclude,
-    useActions,
-    contexts,
-    variants,
-  } from "@dusk-network/helpers";
+  import { contexts } from "@dusk-network/helpers";
   import Icon from "@dusk-network/icon/Icon.svelte";
   import Logo from "@dusk-network/logo/Logo.svelte";
   import AppsMenu from "./menu/AppsMenu.svelte";
   import LinksMenu from "./menu/LinksMenu.svelte";
   import "./styles.css";
-  const forwardEvents = forwardEventsBuilder(current_component);
 
-  export let use = [];
   export let title;
   export let apps;
   export let links;
   export let appName;
-
-  let className = "";
-  export { className as class };
+  export let id;
 
   let expanded = false;
 
-  export let id;
-  export let variant = variants.ORGANISM.NAVBAR.BRAND;
   setContext("DUK:menu:context", contexts.MENU.NAVBAR);
   setContext("DUK:logo:context", contexts.LOGO.NAVBAR);
 
-  function getClassNames(variant) {
-    let classNames = "";
-    switch (variant) {
-      case variants.ORGANISM.NAVBAR.BRAND:
-        classNames += " duk-navbar--brand";
-        break;
-      default:
-        classNames += "";
-    }
-
-    return classNames;
-  }
-
   const toggleNavbar = () => {
-    // console.log(id);
-    // console.log(document.getElementById(`#${id}`));
     const navbarElement = document.querySelector(`#${id}`);
     navbarElement.classList.toggle("duk-navbar--hidden");
 
@@ -54,13 +26,7 @@
   };
 </script>
 
-<nav
-  use:useActions="{use}"
-  use:forwardEvents
-  class="duk-navbar {className} duk-navbar--hidden
-  {getClassNames(variant)}"
-  {...exclude($$props, ["use", "class", "variant", "title", "apps", "links", "appName"])}
->
+<nav class="{$$props.class || ''} duk-navbar duk-navbar--hidden" id="{id}">
   <div class="duk-navbar__wrapper duk-navbar__wrapper--primary">
     <div class="duk-navbar__brand">
       {#if $$slots.logo}
@@ -69,7 +35,7 @@
         <Logo class="duk-navbar__logo" href="https://dusk.network" />
       {/if}
       {#if title}
-        <h1 class="duk-navbar__brand__heading">{title}</h1>
+        <h1 class="duk-navbar__heading">{title}</h1>
       {/if}
       <div class="duk-navbar__navigation duk-navbar__navigation--primary">
         {#if $$slots.networks}
@@ -96,7 +62,6 @@
         aria-expanded="{expanded}"
         aria-label="Toggle navigation"
         on:click="{toggleNavbar}"
-        class="duk-navbar__collapse__button"
       >
         {#if !expanded}
           <Icon name="menu-burger" />

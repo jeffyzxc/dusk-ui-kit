@@ -27,6 +27,7 @@ module.exports = {
         "marketing-hover": "8px 8px 0px #D82E60;",
         none: "none",
         card: "0px 3px 6px rgba(0, 0, 0, .161)",
+        switch: "0px 3px 6px rgba(0, 0, 0, .161)",
       },
       borderRadius: {
         none: "0",

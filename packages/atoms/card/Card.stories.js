@@ -1,4 +1,4 @@
-import { variants, sizes, elevations } from "@dusk-network/helpers";
+import { variants, sizes } from "@dusk-network/helpers";
 import Default from "./storybook-views/Default.svelte";
 import Card from "@dusk-network/card";
 
@@ -19,18 +19,6 @@ export default {
       control: {
         type: "radio",
         options: Object.values(sizes.ATOM.CARD),
-      },
-    },
-    elevation: {
-      control: {
-        type: "select",
-        options: Object.values(elevations.ATOM.CARD),
-      },
-    },
-    buttonVariant: {
-      control: {
-        type: "select",
-        options: Object.values(variants.ATOM.BUTTON),
       },
     },
   },

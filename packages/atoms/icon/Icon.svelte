@@ -1,10 +1,9 @@
 <script>
-  import { getContext, onMount } from "svelte";
+  import { getContext } from "svelte";
   import { contexts, variants, sizes } from "@dusk-network/helpers";
   import "./styles.css";
 
   export let name = null;
-  export let href = null;
   export let size = sizes.ATOM.ICON.BASE;
   export let viewbox = "0 0 24 24";
   export let variant = null;
@@ -12,16 +11,6 @@
 
   let element;
   let context = getContext("DUK:icon:context");
-
-  onMount(async () => {
-    if (href) {
-      await import("@dusk-network/helpers/dom-utils").then((domUtils) => {
-        const wrapper = document.createElement("a");
-        wrapper.setAttribute("href", href);
-        domUtils.wrap(wrapper, element.firstElementChild);
-      });
-    }
-  });
 
   function getIconComponentName(constant) {
     let componentName = constant.replace(/-([a-z,0-9])/g, function (g) {
@@ -48,6 +37,7 @@
     class:duk-icon--xxxl="{size === sizes.ATOM.ICON.XXXL}"
     class:duk-button__icon="{context === contexts.ICON.BUTTON}"
     class:duk-list__icon="{context === contexts.ICON.LIST}"
+    class:duk-alert__icon="{context === contexts.ICON.ALERT}"
     data-tooltip="{tooltip || undefined}"
     title="{$$props.title || undefined}"
   >

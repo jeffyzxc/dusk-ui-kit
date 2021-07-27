@@ -21,6 +21,7 @@ export default {
     },
   },
   ICON: {
+    ALERT: "icon:alert",
     BUTTON: "icon:button",
     LIST: "icon:list",
   },

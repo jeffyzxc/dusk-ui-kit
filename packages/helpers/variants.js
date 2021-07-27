@@ -44,13 +44,7 @@ export default {
       WARNING: "warning",
       DANGER: "danger",
     },
-    RADIO: {
-      DEFAULT: "default",
-      SUCCESS: "success",
-      WARNING: "warning",
-      DANGER: "danger",
-    },
-    SWITCH: {
+    TOGGLE: {
       BRAND: "brand",
       CTA: "cta",
       DEFAULT: "default",
