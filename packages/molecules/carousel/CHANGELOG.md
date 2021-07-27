@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.16](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.15...v2.0.0-rc.16) (2021-07-27)
+
+
+### Bug Fixes
+
+* **button:** 🐛 fixes for button and some other issues with rc-15 ([0446484](https://github.com/dusk-network/dusk-ui-kit/commit/0446484202d639111d0f1f3fc00342022bbb0162))
+
+
+
+
+
 # [2.0.0-rc.15](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.9...v2.0.0-rc.15) (2021-07-26)
 
 
