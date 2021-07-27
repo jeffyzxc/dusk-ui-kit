@@ -5,8 +5,8 @@
   import CardFooter from "../Footer.svelte";
   import Button from "@dusk-network/button";
   import CardActions from "../Actions.svelte";
+
   export let variant;
-  export let elevation;
   export let cardText;
   export let size;
   export let title;
@@ -17,7 +17,7 @@
   export let buttonVariant;
 </script>
 
-<Card variant="{variant}" elevation="{elevation}" size="{size}">
+<Card variant="{variant}" size="{size}">
   {#if title}
     <CardTitle>
       <h3>{title}</h3>

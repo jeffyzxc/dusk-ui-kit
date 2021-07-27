@@ -5,7 +5,7 @@
   @apply 2xl:mb-40;
 
   &__wrapper {
-    @apply lg:flex-none lg:flex lg:w-full lg:justify-between lg:items-center;
+    @apply lg:flex-none lg:flex lg:w-full lg:justify-between lg:items-end;
 
     &--primary {
       @apply fill-current text-indigo-500;
@@ -15,22 +15,22 @@
 
     &--secondary {
       @apply px-6 pb-3 pt-4 bg-indigo-500 text-white;
-      @apply dark:bg-gray-800;
+      @apply dark:bg-indigo-200 dark:text-gray-900;
     }
   }
 
   &__brand {
-    @apply flex flex-col items-start pl-5 pt-5;
-    @apply lg:flex-grow lg:flex-row lg:items-center lg:space-x-6 lg:pl-0;
+    @apply flex flex-col items-start pt-5;
+    @apply lg:flex-grow lg:flex-row lg:items-center lg:space-x-6 lg:pl-0 lg:pt-0 lg:pl-5;
 
     & svg {
       @apply block fill-current h-6 w-auto;
     }
+  }
 
-    &__heading {
-      @apply font-medium leading-relaxed text-base ml-3 w-full block text-center;
-      @apply lg:ml-0 lg:mr-5 lg:pb-2 lg:w-auto lg:inline;
-    }
+  &__heading {
+    @apply font-medium leading-relaxed text-base ml-3 w-full block text-center;
+    @apply lg:ml-0 lg:mr-5 lg:pb-2 lg:w-auto lg:inline;
   }
 
   &__collapse {
@@ -40,25 +40,14 @@
     right: 1rem;
     top: 1rem;
 
-    &__button {
+    & button {
       @apply flex items-center;
     }
   }
 
   &__logo {
-    @apply block h-full;
-    @apply lg:self-center;
-
-    left: 1rem;
-    top: 1rem;
-  }
-
-  &__links-menu {
-    &__item {
-      & > .duk-list__item__wrapper {
-        @apply flex items-center;
-      }
-    }
+    @apply block h-full ml-5;
+    @apply lg:mb-3 lg:ml-0;
   }
 
   &__navigation {
@@ -69,7 +58,7 @@
       @apply mt-4;
       @apply lg:space-x-5 lg:mt-0;
 
-      & .duk-list__item__wrapper {
+      & .duk-list__item-wrapper {
         @apply px-3 pt-4 pb-4;
         @apply lg:pt-2;
 
@@ -87,8 +76,8 @@
 
         &--active {
           @apply font-semibold bg-indigo-500 text-white;
-          @apply dark:bg-gray-800;
           @apply lg:border-t-2 lg:border-white;
+          @apply dark:bg-indigo-200 dark:border-indigo-200 dark:text-gray-900;
         }
       }
     }
@@ -96,36 +85,28 @@
     /* FIXME Temp solution, we need to always show this. */
     &--tertiary {
       @apply hidden;
-      @apply lg:block;
+      @apply lg:block lg:mb-3;
     }
 
     & .duk-list {
-      @apply flex flex-col;
-      @apply lg:flex-row lg:flex-1 lg:justify-end lg:mb-0 lg:space-x-5;
+      @apply flex flex-col space-y-5;
+      @apply lg:flex-row lg:flex-1 lg:justify-end lg:mb-0 lg:space-y-0 lg:space-x-5;
 
       &__item {
         @apply py-0 pl-0 leading-relaxed font-light w-full;
         @apply lg:mb-0 lg:pr-0 lg:w-auto;
 
-        &__wrapper {
-          @apply w-full text-left;
+        & .duk-list__item-wrapper {
+          @apply block w-full text-left transition-all duration-700;
           @apply lg:text-left;
 
           &--active {
             @apply bg-indigo-500 text-white;
-            @apply dark:bg-gray-900;
+            @apply dark:bg-indigo-200 dark:border-indigo-200 dark:text-gray-900;
           }
 
-          &:is(a):not(.duk-list__item__wrapper--active) {
-            @apply opacity-80 transition-all duration-700;
-          }
-        }
-
-        &:last-child {
-          @apply mb-0;
-
-          & .duk-list__item__wrapper {
-            @apply mb-0;
+          &:is(a):not(.duk-list__item-wrapper--active) {
+            @apply opacity-80;
           }
         }
       }

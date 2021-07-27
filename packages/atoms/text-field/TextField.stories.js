@@ -5,9 +5,6 @@ import TextField from "@dusk-network/text-field";
 export default {
   title: `Components/Atoms/Text Field`,
   component: TextField,
-  parameters: {
-    layout: "centered",
-  },
   argTypes: {
     state: {
       control: {

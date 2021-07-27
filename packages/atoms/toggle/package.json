@@ -1,16 +1,17 @@
 {
-  "name": "@dusk-network/radio",
+  "name": "@dusk-network/toggle",
   "version": "2.0.0-rc.15",
-  "description": "Dusk UI Kit - Radio",
+  "description": "Dusk UI Kit - Toggle",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
-    "directory": "packages/atoms/radio"
+    "directory": "packages/atoms/toggle"
   },
   "author": "Kieran Hall <kieran@dusk-network.network>",
+  "type": "module",
   "scripts": {
     "test": "echo \"LOL\" && exit 1"
   },

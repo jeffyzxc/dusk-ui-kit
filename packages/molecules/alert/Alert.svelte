@@ -1,5 +1,6 @@
 <script>
-  import { variants, sizes } from "@dusk-network/helpers";
+  import { setContext } from "svelte";
+  import { variants, sizes, contexts } from "@dusk-network/helpers";
   import Icon from "@dusk-network/icon/Icon.svelte";
   import "./styles.css";
 
@@ -7,6 +8,8 @@
   export let id = "__DUK-alert-" + Math.random().toString(36);
   export let dismissable = false;
   export let variant = variants.MOLECULE.ALERT.INFO;
+
+  setContext("DUK:icon:context", contexts.ICON.ALERT);
 </script>
 
 {#if value}
@@ -20,7 +23,7 @@
     aria-labelledby="{id}-title"
     aria-describedby="{id}-content"
   >
-    <div class="duk-alert__icon">
+    <div class="duk-alert__indicator">
       <slot name="icon" />
     </div>
     <div class="duk-alert__body">

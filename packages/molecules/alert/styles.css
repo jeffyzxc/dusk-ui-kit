@@ -2,9 +2,13 @@
   @apply flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md;
   @apply dark:bg-gray-800;
 
-  &__icon {
+  &__indicator {
     @apply flex items-center py-4 justify-center w-20 bg-gray-500 text-white;
     @apply dark:text-black;
+  }
+
+  &__icon {
+    @apply w-12;
   }
 
   &__body {
@@ -28,7 +32,7 @@
   }
 
   &--success {
-    & .duk-alert__icon {
+    & .duk-alert__indicator {
       @apply bg-green-500;
     }
 
@@ -40,8 +44,8 @@
   }
 
   &--warning {
-    & .duk-alert__icon {
-      @apply bg-yellow-500;
+    & .duk-alert__indicator {
+      @apply bg-yellow-500 text-black;
     }
 
     & .duk-alert__body {
@@ -52,7 +56,7 @@
   }
 
   &--danger {
-    & .duk-alert__icon {
+    & .duk-alert__indicator {
       @apply bg-red-500;
     }
 

@@ -1,6 +1,5 @@
 export default {
   ATOM: {
-    CHECKBOX: "checkbox",
     LIST: {
       NONE: "none",
       NUMBERED: "numbered",
@@ -20,7 +19,12 @@ export default {
       NUMBER: "number",
       TELEPHONE: "tel",
     },
-    RADIO: "radio",
+    TOGGLE: {
+      BUTTON: "button",
+      CHECKBOX: "checkbox",
+      RADIO: "radio",
+      SWITCH: "switch",
+    },
   },
   MOLECULE: {
     CONTROL: {
