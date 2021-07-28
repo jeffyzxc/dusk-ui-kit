@@ -16,7 +16,7 @@
   class:duk-card--danger="{variant === variants.ATOM.CARD.DANGER}"
   class:duk-card--small="{size === sizes.ATOM.CARD.SMALL}"
   class:duk-card--large="{size === sizes.ATOM.CARD.LARGE}"
-  {...$$restProps}
+  on:*
 >
   <slot />
 </div>
