@@ -1,5 +1,5 @@
 import contexts from "./contexts.js";
-import domUtils from "./dom-utils.js";
+// import domUtils from "./dom-utils.js";
 import icons from "./icons.js";
 import orientations from "./orientations.js";
 import prefixFilter from "./prefix-filter.js";
@@ -13,7 +13,7 @@ import { useActions } from "./use-actions.js";
 
 export {
   contexts,
-  domUtils,
+  // domUtils,
   exclude,
   forwardEventsBuilder,
   icons,
