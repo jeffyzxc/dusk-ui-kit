@@ -2,7 +2,7 @@ import contexts from "./contexts.js";
 // import domUtils from "./dom-utils.js";
 import icons from "./icons.js";
 import orientations from "./orientations.js";
-import prefixFilter from "./prefix-filter.js";
+// import prefixFilter from "./prefix-filter.js";
 import sizes from "./sizes.js";
 import states from "./states.js";
 import types from "./types.js";
@@ -18,7 +18,7 @@ export {
   forwardEventsBuilder,
   icons,
   orientations,
-  prefixFilter,
+  // prefixFilter,
   sizes,
   states,
   types,
