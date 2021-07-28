@@ -1,18 +1,12 @@
 <script>
-  import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, useActions, variants, sizes } from "@dusk-network/helpers";
+  import { variants, sizes } from "@dusk-network/helpers";
   import "./styles.css";
 
-  const forwardEvents = forwardEventsBuilder(current_component);
-
-  export let use = [];
   export let variant = undefined;
   export let size = sizes.ATOM.CARD.BASE;
 </script>
 
 <div
-  use:useActions="{use}"
-  use:forwardEvents
   class="{$$props.class || ''} duk-card"
   class:duk-card--brand="{variant === variants.ATOM.CARD.BRAND}"
   class:duk-card--cta="{variant === variants.ATOM.CARD.CTA}"
