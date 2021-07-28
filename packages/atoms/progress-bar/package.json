@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/progress-bar",
-  "version": "2.0.0-rc.17",
+  "version": "2.0.0-rc.18",
   "description": "Dusk UI Kit - Progress Bar",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -16,7 +16,7 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/helpers": "^2.0.0-rc.17"
+    "@dusk-network/helpers": "^2.0.0-rc.18"
   },
   "peerDependencies": {
     "svelte": "3.38.2"

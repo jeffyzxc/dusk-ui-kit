@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.18](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.16...v2.0.0-rc.18) (2021-07-28)
+
+
+### Bug Fixes
+
+* **helpers:** 🐛 removed prefix filter from helpers ([65a2cd3](https://github.com/dusk-network/dusk-ui-kit/commit/65a2cd30867cea64ae9eb5e1d846d4cc834e3033))
+* **helpers:** 🐛 removing import of dom-utils from helpers ([9114dfe](https://github.com/dusk-network/dusk-ui-kit/commit/9114dfe7b0126fdac8d31d3c282d8b5edf554390))
+
+
+
+
+
 # [2.0.0-rc.17](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.16...v2.0.0-rc.17) (2021-07-28)
 
 
