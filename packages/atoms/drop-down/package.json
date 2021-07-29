@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/drop-down",
-  "version": "2.0.0-rc.21",
+  "version": "2.0.0-rc.22",
   "description": "Dusk UI Kit - Drop Down",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -16,7 +16,7 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/helpers": "^2.0.0-rc.21"
+    "@dusk-network/helpers": "^2.0.0-rc.22"
   },
   "peerDependencies": {
     "svelte": "3.38.2"

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.22](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.21...v2.0.0-rc.22) (2021-07-29)
+
+
+### Features
+
+* **drop-down:** ✨ added selected index property ([c8a7939](https://github.com/dusk-network/dusk-ui-kit/commit/c8a79393a7f25c542f841ee86221eb083e23958a))
+
+
+
+
+
 # [2.0.0-rc.21](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.20...v2.0.0-rc.21) (2021-07-29)
 
 
