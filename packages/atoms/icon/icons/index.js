@@ -45,6 +45,7 @@ import Github from "./Github.svelte";
 import HelpCircleOutline from "./HelpCircleOutline.svelte";
 import InformationVariant from "./InformationVariant.svelte";
 import KeyOutline from "./KeyOutline.svelte";
+import Lifebuoy from "./Lifebuoy.svelte";
 import LinkedIn from "./LinkedIn.svelte";
 import Magnify from "./Magnify.svelte";
 import MarketCap from "./MarketCap.svelte";
@@ -54,7 +55,7 @@ import MenuDownOutline from "./MenuDownOutline.svelte";
 import Minus from "./Minus.svelte";
 import MinusCircleOutline from "./MinusCircleOutline.svelte";
 import Nodes from "./Nodes.svelte";
-import NoteBookOutline from "./NotebookOutline.svelte";
+import NotebookOutline from "./NotebookOutline.svelte";
 import Notification from "./Notification.svelte";
 import Plus from "./Plus.svelte";
 import PlusCircleOutline from "./PlusCircleOutline.svelte";
@@ -72,8 +73,9 @@ import TrashCanOutline from "./TrashCanOutline.svelte";
 import Twitter from "./Twitter.svelte";
 import ViewDashboardOutline from "./ViewDashboardOutline.svelte";
 import Wallet from "./Wallet.svelte";
+import WalletArrow from "./WalletArrow.svelte";
 import WalletPlus from "./WalletPlus.svelte";
-import YouTube from "./Youtube.svelte";
+import Youtube from "./Youtube.svelte";
 
 export default {
   AlertOutline,
@@ -123,6 +125,7 @@ export default {
   HelpCircleOutline,
   InformationVariant,
   KeyOutline,
+  Lifebuoy,
   LinkedIn,
   Magnify,
   MarketCap,
@@ -132,7 +135,7 @@ export default {
   Minus,
   MinusCircleOutline,
   Nodes,
-  NoteBookOutline,
+  NotebookOutline,
   Notification,
   Plus,
   PlusCircleOutline,
@@ -150,6 +153,7 @@ export default {
   Twitter,
   ViewDashboardOutline,
   Wallet,
+  WalletArrow,
   WalletPlus,
-  YouTube,
+  Youtube,
 };

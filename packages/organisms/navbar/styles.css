@@ -21,7 +21,7 @@
 
   &__brand {
     @apply flex flex-col items-start pt-5;
-    @apply lg:flex-grow lg:flex-row lg:items-center lg:space-x-6 lg:pl-0 lg:pt-0 lg:pl-5;
+    @apply lg:flex-grow lg:flex-row lg:items-center lg:space-x-6 lg:pl-0 lg:pt-0;
 
     & svg {
       @apply block fill-current h-6 w-auto;

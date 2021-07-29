@@ -1,10 +1,8 @@
 .duk-footer {
-  @apply w-screen mt-5 py-20 text-white bg-indigo-600;
-  @apply dark:bg-black;
-  @apply sm:mt-12;
-  @apply lg:mt-32;
-  @apply xl:mt-40;
+  @apply w-screen px-20 mt-32 py-20 text-white bg-indigo-600;
+  @apply sm:px-32 sm:mt-40;
   @apply 2xl:mt-48;
+  @apply dark:bg-black;
 
   & a {
     @apply text-white;
@@ -37,7 +35,7 @@
   }
 
   &__social-media-menu {
-    @apply inline-flex justify-center;
+    @apply inline-flex justify-center items-center;
     @apply sm:justify-start;
 
     @screen sm {
@@ -45,9 +43,10 @@
     }
 
     &__item {
-      &:not(:last-child) {
+      @apply space-x-3;
+      /* &:not(:last-child) {
         @apply pr-3;
-      }
+      } */
 
       & .duk-icon {
         @apply p-0 transform duration-200 ease-in-out transition-all;
@@ -69,14 +68,18 @@
     }
   }
 
-  &__maximal {
-    @apply px-5 py-8 mx-auto flex items-start justify-between flex-col;
+  & > * {
+    @apply mx-auto flex flex-col;
     @apply sm:flex-row;
   }
 
+  &__maximal {
+    @apply items-start justify-between;
+  }
+
   &__minimal {
-    @apply px-5 py-8 mx-auto flex items-center flex-col space-y-5;
-    @apply sm:flex-row sm:space-y-0 sm:space-x-4;
+    @apply items-center space-y-5;
+    @apply sm:space-y-0 sm:space-x-4;
     @apply md:space-x-5;
     @apply lg:space-x-6;
   }

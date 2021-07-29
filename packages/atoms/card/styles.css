@@ -142,4 +142,12 @@
       }
     }
   }
+
+  &--disabled {
+    & .duk-card__title,
+    & .duk-card__content,
+    & .duk-card__actions {
+      @apply opacity-50;
+    }
+  }
 }

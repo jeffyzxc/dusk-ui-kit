@@ -4,6 +4,8 @@
   import List from "@dusk-network/list/List.svelte";
   import Item from "@dusk-network/list/Item.svelte";
   import Logo from "@dusk-network/logo/Logo.svelte";
+  import Icon from "@dusk-network/icon/Icon.svelte";
+
   export let variant;
   export let title;
 
@@ -41,9 +43,10 @@
     <Menu orientation="horizontal" name="Developer Links">
       <List>
         <Item href="{url}" target="{url.lastIndexOf('dusk.network') === -1 && '_blank'}">
+          <Icon name="github" />
           Github
         </Item>
-        <Item href="https://docs.dusk.network">Docs</Item>
+        <Item href="https://docs.dusk.network"><Icon name="notebook-outline" /> Docs</Item>
       </List>
     </Menu>
   </div>

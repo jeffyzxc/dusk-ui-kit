@@ -4,7 +4,7 @@
   import Button from "../../atoms/button/Button.svelte";
   import Icon from "../../atoms/icon/Icon.svelte";
 
-  export let id = "item" + Math.random().toString(36);
+  export let id = "__DUK-accordion-item" + Math.random().toString(36);
   export let title = "Title";
   export let expanded = false;
   export let disabled = false;

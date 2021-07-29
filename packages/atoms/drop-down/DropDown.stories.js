@@ -6,7 +6,7 @@ export default {
   title: `Components/Atoms/Drop Down`,
   component: DropDown,
   parameters: {
-    layout: "padded",
+    layout: "centered",
   },
   argTypes: {
     variant: {
@@ -37,7 +37,5 @@ const Template = (args) => ({
 
 export const Basic = Template.bind({});
 Basic.args = {
-  variant: variants.ATOM.BUTTON.BRAND,
-  step: 2,
-  steps: 5,
+  options: ["option 1", "option 2", "option 3", "etc..."],
 };

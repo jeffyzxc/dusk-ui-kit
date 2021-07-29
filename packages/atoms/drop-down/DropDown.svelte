@@ -1,8 +1,9 @@
 <script>
   import { createEventDispatcher } from "svelte";
+  import Icon from "@dusk-network/icon";
+  import "./styles.css";
 
   export let options;
-  export let width;
 
   const dispatch = createEventDispatcher();
 
@@ -16,40 +17,42 @@
   }
 </script>
 
-<!-- <div
-  class="{$$props.class || ''} duk-progress-bar"
-  class:duk-progress-bar--brand="{variant === variants.ATOM.PROGRESS_BAR.BRAND}"
-  class:duk-progress-bar--cta="{variant === variants.ATOM.PROGRESS_BAR.CTA}"
-  class:duk-progress-bar--info="{variant === variants.ATOM.PROGRESS_BAR.INFO}"
-  class:duk-progress-bar--success="{variant === variants.ATOM.PROGRESS_BAR.SUCCESS}"
-  class:duk-progress-bar--warning="{variant === variants.ATOM.PROGRESS_BAR.WARNING}"
-  class:duk-progress-bar--danger="{variant === variants.ATOM.PROGRESS_BAR.DANGER}"
->
-  <div class="duk-progress-bar__progress-container">
-    <div style="width:{styles}%" class="duk-progress-bar__progress-step"></div>
-    <div class="duk-progress-bar__progress-bar"></div>
-  </div>
-</div> -->
-
-<div class="{$$props.class || ''} duk-dropdown" style="width:{width}px">
-  <div class="duk-drop-down__selected" style="width:calc({width}px - 40px)">
-    <p>{selectedOption}</p>
-  </div>
-  <div class="duk-drop-down__arrow" on:click="{() => (isOpen = !isOpen)}">
-    <img src="/images/switcher.png" alt="toggle select" />
-  </div>
-  <div class="duk-drop-down__list" class:dropdown-open="{isOpen === true}">
-    <div class="drop-down__selected" style="width:calc({width}px - 40px)">
-      <ul>
-        {#each options as option}
-          <li on:click="{selectOption(option)}">{option}</li>
-        {/each}
-      </ul>
-    </div>
-    <div class="duk-drop-down__arrow--reverse">
-      <div on:click="{() => (isOpen = !isOpen)}">
-        <img src="/images/switcher.png" alt="toggle select" />
+<div class="{$$props.class || ''} duk-drop-down">
+  <div class="duk-drop-down__layout">
+    <button type="button" class="duk-drop-down__button" on:click="{() => (isOpen = !isOpen)}">
+      <span class="duk-drop-down__selected">
+        <span class="duk-drop-down__selected-label">{selectedOption}</span>
+      </span>
+      <span class="duk-drop-down__button-icon" class:duk-drop-down__button-icon--open="{isOpen}">
+        <Icon name="menu-down-outline" />
+      </span>
+    </button>
+    {#if isOpen}
+      <div class="duk-drop-down__options">
+        <ul
+          tabindex="-1"
+          role="listbox"
+          aria-activedescendant="__DUK-drop-down-item-{options.indexOf(selectedOption + 1)}"
+          class="duk-drop-down__list"
+        >
+          {#each options as option, i}
+            <li
+              id="__DUK-drop-down-item-{i + 1}"
+              role="option"
+              class="duk-drop-down__item"
+              on:click="{() => selectOption(option)}"
+            >
+              <div class="duk-drop-down__item-layout">
+                <span
+                  class="duk-drop-down__item-label"
+                  class:duk-drop-down__item-label--selected="{option === selectedOption}"
+                  >{option}</span
+                >
+              </div>
+            </li>
+          {/each}
+        </ul>
       </div>
-    </div>
+    {/if}
   </div>
 </div>

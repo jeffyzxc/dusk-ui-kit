@@ -1,6 +1,7 @@
 <script>
   import { getContext } from "svelte";
   import { contexts, variants, sizes } from "@dusk-network/helpers";
+  import * as Icons from "./icons/index";
   import "./styles.css";
 
   export let name = null;
@@ -9,20 +10,21 @@
   export let variant = null;
   export let tooltip = false;
 
-  let element;
   let context = getContext("DUK:icon:context");
 
-  function getIconComponentName(constant) {
-    let componentName = constant.replace(/-([a-z,0-9])/g, function (g) {
+  function getIconComponent(name) {
+    let componentName = name.replace(/-([a-z,0-9])/g, function (g) {
       return g[1].toUpperCase();
     });
-    return componentName.charAt(0).toUpperCase() + componentName.slice(1);
+    componentName = componentName.charAt(0).toUpperCase() + componentName.slice(1);
+    return Icons.default[componentName];
   }
+
+  $: icon = getIconComponent(name) || null;
 </script>
 
 {#if name}
   <div
-    bind:this="{element}"
     class="{$$props.class || ''} duk-icon"
     class:duk-icon--brand="{variant === variants.ATOM.ICON.BRAND}"
     class:duk-icon--cta="{variant === variants.ATOM.ICON.CTA}"
@@ -41,8 +43,6 @@
     data-tooltip="{tooltip || undefined}"
     title="{$$props.title || undefined}"
   >
-    {#await import(`./icons/${getIconComponentName(name)}.svelte`) then icon}
-      <svelte:component this="{icon.default}" viewbox="{viewbox}" />
-    {/await}
+    <svelte:component this="{icon}" viewbox="{viewbox}" />
   </div>
 {/if}

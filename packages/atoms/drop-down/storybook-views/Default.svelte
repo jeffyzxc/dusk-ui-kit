@@ -1,8 +1,7 @@
 <script>
   import DropDown from "@dusk-network/drop-down";
 
-  // export let step;
-  // export let steps;
+  export let options;
 </script>
 
-<DropDown />
+<DropDown options="{options}" />

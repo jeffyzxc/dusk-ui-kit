@@ -74,6 +74,7 @@ export default {
   TWITTER: "twitter",
   VIEW_DASHBOARD_OUTLINE: "view-dashboard-outline",
   WALLET: "wallet",
+  WALLET_ARROW: "wallet-arrow",
   WALLET_PLUS: "wallet-plus",
   YOUTUBE: "youtube",
 };
