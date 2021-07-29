@@ -1,4 +1,3 @@
-import { variants } from "@dusk-network/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import DropDown from "@dusk-network/drop-down";
 
@@ -8,24 +7,7 @@ export default {
   parameters: {
     layout: "centered",
   },
-  argTypes: {
-    variant: {
-      control: {
-        type: "select",
-        options: Object.values(variants.ATOM.PROGRESS_BAR),
-      },
-    },
-    step: {
-      control: {
-        type: "number",
-      },
-    },
-    steps: {
-      control: {
-        type: "number",
-      },
-    },
-  },
+  argTypes: {},
 };
 
 const Template = (args) => ({

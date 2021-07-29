@@ -4,4 +4,22 @@ import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
 
 # ⚛️ Drop Down
 
-Provide a typical dropdown menu
+Provide a typical dropdown menu of options
+
+## Usage
+
+```js
+<script>
+  import DropDown from "@dusk-network/drop-down";
+
+  export let options;
+  let selectedOption;
+
+  function handleSelection(event) {
+    selectedOption = event.detail;
+  }
+</script>
+
+<DropDown options="{options}" selectedIndex="{1}" on:selectedOption="{handleSelection}" />
+<p>Selected option: {selectedOption}</p>
+```

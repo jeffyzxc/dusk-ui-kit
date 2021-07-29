@@ -21,10 +21,6 @@
   &__button-icon {
     @apply transform duration-200 ease-in-out transition-all rotate-0 ml-3 absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none;
 
-    & > svg {
-      @apply h-5 w-5 text-gray-400;
-    }
-
     &--open {
       @apply rotate-180;
     }

@@ -1,20 +1,25 @@
 <script>
-  import { createEventDispatcher } from "svelte";
+  import { createEventDispatcher, onMount } from "svelte";
   import Icon from "@dusk-network/icon";
   import "./styles.css";
 
   export let options;
+  export let selectedIndex = 0;
 
   const dispatch = createEventDispatcher();
 
-  let selectedOption = options[0];
+  let selectedOption = options[selectedIndex];
   let isOpen = false;
 
   function selectOption(value) {
     selectedOption = value;
     isOpen = false;
-    dispatch("selectedOption", value);
+    dispatch("select", value);
   }
+
+  onMount(() => {
+    selectOption(selectedOption);
+  });
 </script>
 
 <div class="{$$props.class || ''} duk-drop-down">
@@ -32,12 +37,12 @@
         <ul
           tabindex="-1"
           role="listbox"
-          aria-activedescendant="__DUK-drop-down-item-{options.indexOf(selectedOption + 1)}"
+          aria-activedescendant="__DUK-drop-down-item-{options.indexOf(selectedOption)}"
           class="duk-drop-down__list"
         >
           {#each options as option, i}
             <li
-              id="__DUK-drop-down-item-{i + 1}"
+              id="__DUK-drop-down-item-{i}"
               role="option"
               class="duk-drop-down__item"
               on:click="{() => selectOption(option)}"
