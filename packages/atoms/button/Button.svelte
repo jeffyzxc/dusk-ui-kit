@@ -9,6 +9,7 @@
   export let size = sizes.ATOM.BUTTON.BASE;
   export let href = null;
   export let circle = false;
+  export let disabled = false;
 
   let element;
   let context = getContext("DUK:button:context");
@@ -17,7 +18,7 @@
   setContext("DUK:icon:context", contexts.ICON.BUTTON);
 </script>
 
-{#if href}
+{#if href && !disabled}
   <a href="{href}">
     <button
       bind:this="{element}"
@@ -35,6 +36,7 @@
       class:duk-card-action-button="{context === contexts.BUTTON.ACTION.CARD}"
       class:duk-dialog-action-button="{context === contexts.BUTTON.ACTION.DIALOG}"
       class:duk-accordion__action="{context === contexts.BUTTON.ACCORDION}"
+      disabled="{disabled || undefined}"
       on:click="{() => (value = !value)}"
       on:click
       on:mouseover
@@ -60,6 +62,7 @@
     class:duk-card-action-button="{context === contexts.BUTTON.ACTION.CARD}"
     class:duk-dialog-action-button="{context === contexts.BUTTON.ACTION.DIALOG}"
     class:duk-accordion__action="{context === contexts.BUTTON.ACCORDION}"
+    disabled="{disabled || undefined}"
     on:click="{() => (value = !value)}"
     on:click
     on:mouseover
