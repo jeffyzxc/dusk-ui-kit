@@ -5,16 +5,19 @@ import TextField from "@dusk-network/text-field";
 export default {
   title: `Components/Atoms/Text Field`,
   component: TextField,
+  parameters: {
+    layout: "centered",
+  },
   argTypes: {
     state: {
       control: {
-        type: "radio",
+        type: "select",
         options: Object.values(states.ATOM.TEXT_FIELD),
       },
     },
     type: {
       control: {
-        type: "radio",
+        type: "select",
         options: Object.values(types.ATOM.TEXT_FIELD),
       },
     },
