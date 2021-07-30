@@ -97,8 +97,8 @@
         @apply lg:mb-0 lg:pr-0 lg:w-auto;
 
         & .duk-list__item-wrapper {
-          @apply block w-full text-left transition-all duration-700;
-          @apply lg:text-left;
+          /* @apply block w-full text-left transition-all duration-700;
+          @apply lg:text-left; */
 
           &--active {
             @apply bg-indigo-500 text-white;

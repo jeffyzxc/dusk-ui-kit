@@ -44,9 +44,11 @@
       <List>
         <Item href="{url}" target="{url.lastIndexOf('dusk.network') === -1 && '_blank'}">
           <Icon name="github" />
-          Github
+          <span>Github</span>
         </Item>
-        <Item href="https://docs.dusk.network"><Icon name="notebook-outline" /> Docs</Item>
+        <Item href="https://docs.dusk.network"
+          ><Icon name="notebook-outline" /><span>Docs</span></Item
+        >
       </List>
     </Menu>
   </div>
