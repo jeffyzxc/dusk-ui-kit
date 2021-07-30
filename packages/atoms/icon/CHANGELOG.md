@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.23](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.22...v2.0.0-rc.23) (2021-07-30)
+
+
+### Bug Fixes
+
+* **icon:** 🐛 renamed youtube icon component ([b2d6dc0](https://github.com/dusk-network/dusk-ui-kit/commit/b2d6dc0df686408acfb0db66fa907969f72e2385))
+
+
+
+
+
 # [2.0.0-rc.22](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.21...v2.0.0-rc.22) (2021-07-29)
 
 **Note:** Version bump only for package @dusk-network/icon

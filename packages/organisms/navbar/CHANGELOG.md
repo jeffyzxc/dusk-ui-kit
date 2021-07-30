@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.23](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.22...v2.0.0-rc.23) (2021-07-30)
+
+
+### Performance Improvements
+
+* **navbar:** ⚡️ improving navbar integration with menu items with less custom styles needed ([3c70e99](https://github.com/dusk-network/dusk-ui-kit/commit/3c70e99b540b94d295ac86cb46e3b37e5afd6e5d))
+
+
+
+
+
 # [2.0.0-rc.22](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.21...v2.0.0-rc.22) (2021-07-29)
 
 **Note:** Version bump only for package @dusk-network/navbar

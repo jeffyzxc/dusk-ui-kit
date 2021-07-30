@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.23](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.22...v2.0.0-rc.23) (2021-07-30)
+
+
+### Bug Fixes
+
+* **icon:** 🐛 renamed youtube icon component ([b2d6dc0](https://github.com/dusk-network/dusk-ui-kit/commit/b2d6dc0df686408acfb0db66fa907969f72e2385))
+
+
+### Features
+
+* **menu:** ✨ improved layouts using flexbox ([ccc0a56](https://github.com/dusk-network/dusk-ui-kit/commit/ccc0a56d64670f6bb2150aa5a462bfd202109d6c))
+
+
+### Performance Improvements
+
+* **button:** ⚡️ removed extra component binding ([bf09676](https://github.com/dusk-network/dusk-ui-kit/commit/bf09676ce96039b3cf993388dd8e3b8eeb966e62))
+* **footer:** ⚡️ cleaning up the footer component footprint ([524894e](https://github.com/dusk-network/dusk-ui-kit/commit/524894e6de10d8c05f2fb857adaa7cf039674b9f))
+* **navbar:** ⚡️ improving navbar integration with menu items with less custom styles needed ([3c70e99](https://github.com/dusk-network/dusk-ui-kit/commit/3c70e99b540b94d295ac86cb46e3b37e5afd6e5d))
+
+
+
+
+
 # [2.0.0-rc.22](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.21...v2.0.0-rc.22) (2021-07-29)
 
 
