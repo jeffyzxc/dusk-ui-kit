@@ -9,7 +9,7 @@
     @apply overflow-y-hidden;
 
     & .duk-list {
-      @apply flex flex-col;
+      @apply flex flex-col items-start space-y-3;
 
       &__item {
         &__wrapper {
@@ -23,11 +23,9 @@
     @apply overflow-hidden;
 
     & .duk-list {
-      @apply relative;
+      @apply flex flex-row items-center justify-center space-x-8;
 
       &__item {
-        @apply inline-block;
-
         &__wrapper {
           @apply inline-block text-center;
         }
@@ -38,10 +36,14 @@
 
 .duk-menu.duk-menu--horizontal.duk-menu--separator-dot {
   & .duk-list {
+    @apply space-x-0;
+    &__item-wrapper {
+      @apply inline-block;
+    }
     &__item:not(:last-child) {
       &::after {
         content: "•";
-        @apply mx-2;
+        @apply mx-3 align-middle;
       }
     }
   }
@@ -49,10 +51,14 @@
 
 .duk-menu.duk-menu--horizontal.duk-menu--separator-dash {
   & .duk-list {
+    @apply space-x-0;
+    &__item-wrapper {
+      @apply inline-block;
+    }
     &__item:not(:last-child) {
       &::after {
         content: "-";
-        @apply mx-2;
+        @apply mx-3 align-top;
       }
     }
   }
@@ -60,10 +66,14 @@
 
 .duk-menu.duk-menu--horizontal.duk-menu--separator-bar {
   & .duk-list {
+    @apply space-x-0;
+    &__item-wrapper {
+      @apply inline-block;
+    }
     &__item:not(:last-child) {
       &::after {
         content: "|";
-        @apply mx-2;
+        @apply mx-3 align-top;
       }
     }
   }

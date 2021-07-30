@@ -1,3 +1,4 @@
+import { orientations } from "@dusk-network/helpers";
 import Default from "./storybook-views/Default.svelte";
 import Menu from "@dusk-network/menu";
 
@@ -7,7 +8,20 @@ export default {
   parameters: {
     layout: "centered",
   },
-  argTypes: {},
+  argTypes: {
+    orientation: {
+      control: {
+        type: "select",
+        options: Object.values(orientations.MENU),
+      },
+    },
+    separator: {
+      control: {
+        type: "radio",
+        options: [null, "dot", "dash", "bar"],
+      },
+    },
+  },
 };
 
 const Template = (args) => ({

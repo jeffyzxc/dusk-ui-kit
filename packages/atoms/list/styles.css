@@ -2,11 +2,7 @@
   @apply list-none;
 
   &__item-wrapper {
-    @apply align-middle relative overflow-hidden;
-  }
-
-  &__icon {
-    @apply inline-block align-middle pr-1;
+    @apply flex items-center space-x-2;
   }
 
   &--numbered {
