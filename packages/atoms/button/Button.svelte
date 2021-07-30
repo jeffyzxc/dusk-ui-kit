@@ -11,7 +11,6 @@
   export let circle = false;
   export let disabled = false;
 
-  let element;
   let context = getContext("DUK:button:context");
 
   setContext("DUK:label:context", contexts.LABEL.BUTTON);
@@ -21,7 +20,6 @@
 {#if href && !disabled}
   <a href="{href}">
     <button
-      bind:this="{element}"
       class="{$$props.class || ''} duk-button"
       class:duk-button--brand="{variant === variants.ATOM.BUTTON.BRAND}"
       class:duk-button--cta="{variant === variants.ATOM.BUTTON.CTA}"
@@ -47,7 +45,6 @@
   </a>
 {:else}
   <button
-    bind:this="{element}"
     class="{$$props.class || ''} duk-button"
     class:duk-button--brand="{variant === variants.ATOM.BUTTON.BRAND}"
     class:duk-button--cta="{variant === variants.ATOM.BUTTON.CTA}"
