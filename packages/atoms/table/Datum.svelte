@@ -1,31 +1,43 @@
 <script>
-  import { current_component } from "svelte/internal";
   import { getContext } from "svelte";
-  import { forwardEventsBuilder, exclude, contexts } from "@dusk-network/helpers";
-  import Td from "@dusk-network/elements/Td.svelte";
-  import Th from "@dusk-network/elements/Th.svelte";
-  const forwardEvents = forwardEventsBuilder(current_component);
-  export let use = [];
-  export let prominent = false;
-  let className = "";
-  export { className as class };
-  let context = getContext("DUK:table:row:datum:context");
-  export let component = context == contexts.DATUM.ROW.HEAD ? Th : Td;
+  import { contexts, variants } from "@dusk-network/helpers";
 
-  function getClassNames(prominent, context) {
-    let classNames = "";
-    if (prominent && context === contexts.DATUM.ROW.HEAD)
-      classNames += " duk-table__row__datum--prominent";
-    return classNames;
-  }
+  export let variant = variants.ATOM.TABLE.DEFAULT;
+  export let cols = "1";
+
+  let context = getContext("DUK:table:row:datum:context");
 </script>
 
-<svelte:component
-  this="{component}"
-  use="{[forwardEvents, ...use]}"
-  class="duk-table__row__datum {className}
-  {getClassNames(prominent, context)}"
-  {...exclude($$props, ["use", "class", "prominent"])}
->
-  <slot />
-</svelte:component>
+{#if context === contexts.DATUM.ROW.HEAD}
+  <th
+    class="{$$props.class ||
+      ''} duk-table__datum duk-table__datum--head duk-table__datum--cols-{cols}"
+    class:duk-table__datum--cta="{variant === variants.ATOM.TABLE.CTA}"
+    class:duk-table__datum--success="{variant === variants.ATOM.TABLE.SUCCESS}"
+    class:duk-table__datum--warning="{variant === variants.ATOM.TABLE.WARNING}"
+    class:duk-table__datum--danger="{variant === variants.ATOM.TABLE.DANGER}"
+  >
+    <slot />
+  </th>
+{:else if context === contexts.DATUM.ROW.FOOT}
+  <td
+    class="{$$props.class ||
+      ''} duk-table__datum duk-table__datum--foot duk-table__datum--cols-{cols}"
+    class:duk-table__datum--cta="{variant === variants.ATOM.TABLE.CTA}"
+    class:duk-table__datum--success="{variant === variants.ATOM.TABLE.SUCCESS}"
+    class:duk-table__datum--warning="{variant === variants.ATOM.TABLE.WARNING}"
+    class:duk-table__datum--danger="{variant === variants.ATOM.TABLE.DANGER}"
+  >
+    <slot />
+  </td>
+{:else}
+  <td
+    class="{$$props.class || ''} duk-table__datum duk-table__datum--cols-{cols}"
+    class:duk-table__datum--cta="{variant === variants.ATOM.TABLE.CTA}"
+    class:duk-table__datum--success="{variant === variants.ATOM.TABLE.SUCCESS}"
+    class:duk-table__datum--warning="{variant === variants.ATOM.TABLE.WARNING}"
+    class:duk-table__datum--danger="{variant === variants.ATOM.TABLE.DANGER}"
+  >
+    <slot />
+  </td>
+{/if}
