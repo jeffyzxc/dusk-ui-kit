@@ -1,5 +1,5 @@
 .duk-alert {
-  @apply flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md;
+  @apply flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-md shadow-alert;
   @apply dark:bg-gray-800;
 
   &__indicator {

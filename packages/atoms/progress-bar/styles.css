@@ -1,6 +1,6 @@
 .duk-progress-bar {
   &__progress-step {
-    @apply absolute rounded bg-gray-300 bottom-px left-0;
+    @apply absolute rounded-md bg-gray-300 bottom-px left-0;
     @apply dark:bg-white;
     height: 2px;
     max-height: 2px;
@@ -8,14 +8,14 @@
   }
 
   &__progress-bar {
-    @apply bg-gray-900 rounded w-full;
+    @apply bg-gray-900 rounded-md w-full;
     @apply dark:bg-gray-600;
     height: 4px;
     max-height: 4px;
   }
 
   &__progress-container {
-    @apply relative rounded w-full;
+    @apply relative rounded-md w-full;
     height: 4px;
     max-height: 4px;
   }

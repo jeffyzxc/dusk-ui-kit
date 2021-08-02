@@ -6,7 +6,7 @@
   }
 
   &__button {
-    @apply relative w-full bg-indigo-600 text-white rounded shadow-marketing pl-5 pr-10 py-0.5 text-left cursor-pointer;
+    @apply relative w-full bg-indigo-600 text-white rounded-md shadow-marketing pl-5 pr-10 py-0.5 text-left cursor-pointer;
     @apply sm:text-sm dark:bg-white dark:border border-gray-500 dark:text-gray-900;
   }
 

@@ -4,7 +4,7 @@
 
 .duk-button {
   transition: box-shadow 0.3s ease-in-out;
-  @apply flex space-x-2 items-center border border-solid rounded text-sm leading-relaxed py-2 px-4 relative overflow-hidden shadow-marketing;
+  @apply flex space-x-2 items-center border border-solid rounded-md text-sm leading-relaxed py-2 px-4 relative overflow-hidden shadow-marketing;
 
   &--brand {
     @apply bg-indigo-500 text-white border-none;
