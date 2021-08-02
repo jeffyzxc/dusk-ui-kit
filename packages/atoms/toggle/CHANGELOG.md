@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.25](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.24...v2.0.0-rc.25) (2021-08-02)
+
+
+### Features
+
+* **toggle:** ✨ implemented radio and checkboxes ([bb21a74](https://github.com/dusk-network/dusk-ui-kit/commit/bb21a74a54733ec4956d8ace5fbc1b2b01e97b0d))
+
+
+
+
+
 # [2.0.0-rc.24](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.23...v2.0.0-rc.24) (2021-08-02)
 
 
