@@ -19,6 +19,8 @@
     "@tailwindcss/typography": "^0.4.0",
     "autoprefixer": "^10.2.5",
     "cssnano": "^5.0.2",
+    "postcss-each": "^1.1.0",
+    "postcss-for": "^2.1.1",
     "postcss-import": "^14.0.1",
     "postcss-input-range": "^4.0.0",
     "postcss-nested-ancestors": "^2.0.0",

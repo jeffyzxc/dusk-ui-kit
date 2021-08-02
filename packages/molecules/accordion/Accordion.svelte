@@ -5,13 +5,12 @@
   import "./styles.css";
 
   export let multiselect = false;
-  let className = "";
-  export { className as class };
 
   const items = writable({});
+
   // let context = getContext("DUK:accordion:context");
   setContext("DUK:list:context", contexts.LIST.ACCORDION);
-  setContext("DUK:accordion:context", {
+  setContext("DUK:accordion:methods", {
     items,
     add: (item) => {
       items.update((_) => ({ ..._, [item.id]: item.expanded }));
@@ -34,6 +33,6 @@
   });
 </script>
 
-<dl class="duk-accordion {className}">
+<dl class="{$$props.class || ''} duk-accordion">
   <slot />
 </dl>

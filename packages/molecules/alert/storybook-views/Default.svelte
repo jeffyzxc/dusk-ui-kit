@@ -15,8 +15,6 @@
     icon = variant === "warning" && "alert-outline";
     icon = variant === "danger" && "close-circle-outline";
   }
-
-  console.log(icon);
 </script>
 
 <Alert variant="{variant}" bind:value="{showAlert}" dismissable="{dismissable}">

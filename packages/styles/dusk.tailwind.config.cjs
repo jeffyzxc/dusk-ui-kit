@@ -28,6 +28,7 @@ module.exports = {
         none: "none",
         card: "0px 3px 6px rgba(0, 0, 0, .161)",
         switch: "0px 3px 6px rgba(0, 0, 0, .161)",
+        table: "0px 3px 6px rgba(0, 0, 0, .161)",
       },
       borderRadius: {
         none: "0",

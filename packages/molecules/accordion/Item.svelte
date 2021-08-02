@@ -13,7 +13,7 @@
 
   setContext("DUK:button:context", contexts.BUTTON.ACCORDION);
 
-  const ctx = getContext("DUK:accordion:context");
+  const ctx = getContext("DUK:accordion:methods");
   let unsubscribe = undefined;
 
   onMount(() => {
