@@ -22,18 +22,20 @@
   class:duk-toggle--danger="{variant === variants.ATOM.TOGGLE.DANGER}"
 >
   {#if type === types.ATOM.TOGGLE.CHECKBOX}
-    <input
-      class="duk-toggle__checkbox"
-      type="checkbox"
-      role="checkbox"
-      name="{name}"
-      checked="{checked}"
-      value="{value}"
-      id="{id}"
-      disabled="{disabled}"
-    />
     <label class="duk-toggle__label duk-toggle__label--checkbox" for="{id}">
-      <slot />
+      <input
+        class="duk-toggle__checkbox"
+        type="checkbox"
+        role="checkbox"
+        name="{name}"
+        checked="{checked}"
+        value="{value}"
+        id="{id}"
+        disabled="{disabled}"
+      />
+      <span class="duk-toggle__checkbox-label-wrapper">
+        <slot />
+      </span>
     </label>
   {:else if type === types.ATOM.TOGGLE.BUTTON}
     <input

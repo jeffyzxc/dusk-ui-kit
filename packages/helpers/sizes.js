@@ -5,11 +5,6 @@ export default {
       BASE: "base",
       LARGE: "lg",
     },
-    CARD: {
-      SMALL: "sm",
-      BASE: "base",
-      LARGE: "lg",
-    },
     ICON: {
       BASE: "base",
       LARGE: "lg",

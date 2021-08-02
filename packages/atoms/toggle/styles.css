@@ -1,5 +1,9 @@
+.duk-toggle-group {
+  @apply flex items-center justify-between gap-4;
+}
+
 .duk-toggle {
-  @apply inline-block text-xs;
+  @apply inline-block;
 
   &__button,
   &__switch {
@@ -19,7 +23,11 @@
   }
 
   & input:checked ~ &__switch-thumb {
-    @apply transform translate-x-full;
+    @apply transform translate-x-full bg-gray-500;
+  }
+
+  & input:checked ~ &__label--button {
+    @apply bg-gray-500;
   }
 
   &__switch-wrapper {
@@ -42,6 +50,14 @@
     &--switch {
       @apply hidden;
     }
+    &--checkbox,
+    &--radio {
+      @apply flex items-center space-x-3 mb-3;
+    }
+  }
+
+  &__checkbox {
+    @apply appearance-none bg-white h-6 w-6 border border-gray-300 rounded-md checked:border-transparent focus:outline-none;
   }
 
   &--brand {
@@ -55,7 +71,7 @@
   &--cta {
     & input:checked {
       & ~ .duk-toggle__switch-thumb,
-      & ~ .duk-toggle__switch-thumb {
+      & ~ .duk-toggle__label--button {
         @apply bg-orange-500;
       }
     }
@@ -63,7 +79,7 @@
   &--info {
     & input:checked {
       & ~ .duk-toggle__switch-thumb,
-      & ~ .duk-toggle__switch-thumb {
+      & ~ .duk-toggle__label--button {
         @apply bg-blue-500;
       }
     }
@@ -71,7 +87,7 @@
   &--success {
     & input:checked {
       & ~ .duk-toggle__switch-thumb,
-      & ~ .duk-toggle__switch-thumb {
+      & ~ .duk-toggle__label--button {
         @apply bg-green-500;
       }
     }
@@ -79,7 +95,7 @@
   &--warning {
     & input:checked {
       & ~ .duk-toggle__switch-thumb,
-      & ~ .duk-toggle__switch-thumb {
+      & ~ .duk-toggle__label--button {
         @apply bg-yellow-500;
       }
     }
@@ -87,7 +103,7 @@
   &--danger {
     & input:checked {
       & ~ .duk-toggle__switch-thumb,
-      & ~ .duk-toggle__switch-thumb {
+      & ~ .duk-toggle__label--button {
         @apply bg-red-500;
       }
     }

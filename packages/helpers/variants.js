@@ -53,6 +53,13 @@ export default {
       WARNING: "warning",
       DANGER: "danger",
     },
+    TABLE: {
+      CTA: "cta",
+      SUCCESS: "success",
+      WARNING: "warning",
+      DANGER: "danger",
+      DEFAULT: "default",
+    },
   },
   MOLECULE: {
     ALERT: {
