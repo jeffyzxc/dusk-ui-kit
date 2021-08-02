@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/table",
-  "version": "2.0.0-rc.23",
+  "version": "2.0.0-rc.24",
   "description": "Dusk UI Kit - Table",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -15,8 +15,8 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/elements": "^2.0.0-rc.23",
-    "@dusk-network/helpers": "^2.0.0-rc.23",
+    "@dusk-network/elements": "^2.0.0-rc.24",
+    "@dusk-network/helpers": "^2.0.0-rc.24",
     "svelte-simple-datatables": "0.1.25"
   },
   "peerDependencies": {

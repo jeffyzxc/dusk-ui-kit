@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.24](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.23...v2.0.0-rc.24) (2021-08-02)
+
+
+### Features
+
+* **tabl:** ✨ adding datatable code ([a2052d7](https://github.com/dusk-network/dusk-ui-kit/commit/a2052d7d0a711cd0d14b6d6bdc8ebe29ed08f4eb))
+* **table:** ✨ refactored table styles ([84e7a45](https://github.com/dusk-network/dusk-ui-kit/commit/84e7a45506c74f0358b00dc51d36901503e29fc7))
+
+
+
+
+
 # [2.0.0-rc.23](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.22...v2.0.0-rc.23) (2021-07-30)
 
 **Note:** Version bump only for package @dusk-network/table
