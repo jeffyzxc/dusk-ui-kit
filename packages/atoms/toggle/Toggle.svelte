@@ -31,7 +31,7 @@
         checked="{checked}"
         value="{value}"
         id="{id}"
-        disabled="{disabled}"
+        disabled="{disabled || undefined}"
       />
       <span class="duk-toggle__checkbox-label-wrapper">
         <slot />
@@ -52,18 +52,18 @@
       <slot />
     </label>
   {:else if type === types.ATOM.TOGGLE.RADIO}
-    <input
-      class="duk-toggle__radio"
-      type="radio"
-      role="radio"
-      name="{name}"
-      value="{value}"
-      id="{id}"
-      disabled="{disabled || undefined}"
-      selected="{selected || undefined}"
-    />
     <label class="duk-toggle__label duk-toggle__label--radio" for="{id}">
-      <slot />
+      <input
+        class="duk-toggle__radio"
+        type="radio"
+        role="radio"
+        name="{name}"
+        value="{value}"
+        id="{id}"
+        disabled="{disabled || undefined}"
+        selected="{selected || undefined}"
+      />
+      <span class="duk-toggle__radio-label-wrapper"> <slot /></span>
     </label>
   {:else}
     <div class="duk-toggle__switch-wrapper">
@@ -75,7 +75,7 @@
         checked="{checked}"
         value="{value}"
         id="{id}"
-        disabled="{disabled}"
+        disabled="{disabled || undefined}"
       />
       <label for="{id}" class="duk-toggle__switch-track"></label>
       <label for="{id}" class="duk-toggle__switch-thumb"></label>

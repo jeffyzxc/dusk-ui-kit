@@ -17,7 +17,7 @@ export default {
     },
     type: {
       control: {
-        type: "select",
+        type: "radio",
         options: Object.values(types.ATOM.TOGGLE),
       },
     },
