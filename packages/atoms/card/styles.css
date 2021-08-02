@@ -7,13 +7,13 @@
   }
 
   &__title {
-    @apply flex items-center justify-between pt-5 px-6;
+    @apply flex items-start justify-between pt-5 px-6;
 
     & h1,
     & h2,
     & h3,
     & h4 {
-      @apply text-xl text-indigo-500;
+      @apply text-xl text-indigo-500 flex items-center space-x-4 mb-5;
       @apply dark:text-gray-100;
     }
   }
@@ -28,30 +28,6 @@
 
   &__content {
     @apply font-light py-5 px-6;
-  }
-
-  &--small {
-    @apply text-sm;
-
-    & > .duk-card__title {
-      @apply text-base;
-    }
-
-    & > .duk-card__content {
-      @apply py-4;
-    }
-  }
-
-  &--large {
-    @apply text-lg;
-
-    & > .duk-card__title {
-      @apply text-2xl;
-    }
-
-    & > .duk-card__content {
-      @apply py-6;
-    }
   }
 
   &--brand {

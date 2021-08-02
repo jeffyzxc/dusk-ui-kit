@@ -6,19 +6,13 @@ export default {
   title: `Components/Atoms/Card`,
   component: Card,
   parameters: {
-    layout: "centered",
+    layout: "padded",
   },
   argTypes: {
     variant: {
       control: {
         type: "select",
         options: Object.values(variants.ATOM.CARD),
-      },
-    },
-    size: {
-      control: {
-        type: "radio",
-        options: Object.values(sizes.ATOM.CARD),
       },
     },
   },
@@ -34,7 +28,6 @@ const Template = (args) => ({
 export const Basic = Template.bind({});
 Basic.args = {
   variant: variants.ATOM.CARD.DEFAULT,
-  size: sizes.ATOM.CARD.BASE,
   cardText:
     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam minus quod neque eligendi eaque aliquam fugit nemo cupiditate odio sapiente?",
 };

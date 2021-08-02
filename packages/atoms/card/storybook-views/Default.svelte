@@ -8,7 +8,6 @@
 
   export let variant;
   export let cardText;
-  export let size;
   export let title;
   export let footer;
   export let action;
@@ -17,7 +16,7 @@
   export let buttonVariant;
 </script>
 
-<Card variant="{variant}" size="{size}">
+<Card variant="{variant}">
   {#if title}
     <CardTitle>
       <h3>{title}</h3>

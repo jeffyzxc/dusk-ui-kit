@@ -1,9 +1,8 @@
 <script>
-  import { variants, sizes } from "@dusk-network/helpers";
+  import { variants } from "@dusk-network/helpers";
   import "./styles.css";
 
   export let variant = variants.ATOM.CARD.DEFAULT;
-  export let size = sizes.ATOM.CARD.BASE;
   export let href = null;
   export let disabled = false;
 </script>
@@ -18,8 +17,6 @@
       class:duk-card--success="{variant === variants.ATOM.CARD.SUCCESS}"
       class:duk-card--warning="{variant === variants.ATOM.CARD.WARNING}"
       class:duk-card--danger="{variant === variants.ATOM.CARD.DANGER}"
-      class:duk-card--small="{size === sizes.ATOM.CARD.SMALL}"
-      class:duk-card--large="{size === sizes.ATOM.CARD.LARGE}"
       class:duk-card--disabled="{disabled}"
       on:*
     >
@@ -35,8 +32,6 @@
     class:duk-card--success="{variant === variants.ATOM.CARD.SUCCESS}"
     class:duk-card--warning="{variant === variants.ATOM.CARD.WARNING}"
     class:duk-card--danger="{variant === variants.ATOM.CARD.DANGER}"
-    class:duk-card--small="{size === sizes.ATOM.CARD.SMALL}"
-    class:duk-card--large="{size === sizes.ATOM.CARD.LARGE}"
     class:duk-card--disabled="{disabled}"
     on:*
   >
