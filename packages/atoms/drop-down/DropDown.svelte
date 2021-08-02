@@ -1,6 +1,6 @@
 <script>
   import { createEventDispatcher, onMount } from "svelte";
-  import Icon from "@dusk-network/icon";
+  import Icon from "@dusk-network/icon/Icon.svelte";
   import "./styles.css";
 
   export let options;
