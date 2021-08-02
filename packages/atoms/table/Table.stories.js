@@ -1,4 +1,4 @@
-import { variants, types } from "@dusk-network/helpers";
+// import { variants, types } from "@dusk-network/helpers";
 import Default from "./storybook-views/Default.svelte";
 
 import Table from "@dusk-network/table";
@@ -7,22 +7,9 @@ export default {
   title: `Components/Atoms/Table`,
   component: Table,
   parameters: {
-    layout: "centered",
+    layout: "padded",
   },
-  argTypes: {
-    variant: {
-      control: {
-        type: "select",
-        options: Object.values(variants.ATOM.TABLE),
-      },
-    },
-    size: {
-      type: {
-        type: "select",
-        options: Object.values(types.ATOM.TABLE),
-      },
-    },
-  },
+  argTypes: {},
 };
 
 const Template = (args) => ({
@@ -33,7 +20,4 @@ const Template = (args) => ({
 });
 
 export const Basic = Template.bind({});
-Basic.args = {
-  variant: variants.ATOM.TABLE.LIGHT,
-  type: types.ATOM.TABLE.BASE,
-};
+Basic.args = {};

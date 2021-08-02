@@ -1,14 +1,11 @@
 <script>
   import { setContext } from "svelte";
-  import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, exclude, contexts } from "@dusk-network/helpers";
-  import Tr from "@dusk-network/elements/Tr.svelte";
-  const forwardEvents = forwardEventsBuilder(current_component);
-  export let use = [];
-  let className = "";
-  export { className as class };
+  import { contexts, variants } from "@dusk-network/helpers";
+
+  // export let id = "__DUK-table-row" + Math.random().toString(36);
+  // export let expanded = false;
   export let type = null;
-  export let highlight = false;
+  export let variant = variants.ATOM.TABLE.DEFAULT;
 
   function getDatumContext(type) {
     let context = contexts.DATUM.ROW.BODY;
@@ -16,23 +13,15 @@
     if (type === "foot") context = contexts.DATUM.ROW.FOOT;
     return context;
   }
-
-  const context = getDatumContext(type);
-  setContext("DUK:table:row:datum:context", context);
-
-  function getClassNames(highlight, context) {
-    let classNames = "";
-    if (highlight && context === contexts.DATUM.ROW.BODY)
-      classNames += " duk-table__row--highlight";
-    return classNames;
-  }
+  setContext("DUK:table:row:datum:context", getDatumContext(type));
 </script>
 
-<Tr
-  class="duk-table__row {className}
-  {getClassNames(highlight, context)}"
-  use="{[forwardEvents, ...use]}"
-  {...exclude($$props, ["use", "class", "highlight"])}
+<tr
+  class="{$$props.class || ''} duk-table__row"
+  class:duk-table__row--cta="{variant === variants.ATOM.TABLE.CTA}"
+  class:duk-table__row--success="{variant === variants.ATOM.TABLE.SUCCESS}"
+  class:duk-table__row--warning="{variant === variants.ATOM.TABLE.WARNING}"
+  class:duk-table__row--danger="{variant === variants.ATOM.TABLE.DANGER}"
 >
   <slot />
-</Tr>
+</tr>
