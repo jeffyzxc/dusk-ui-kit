@@ -1,5 +1,5 @@
 import { variants, sizes } from "@dusk-network/helpers";
-import Collection from "./storybook-views/Collection.svelte";
+import CollectionTemplate from "./storybook-views/Collection.svelte";
 import Icon from "@dusk-network/icon";
 
 export default {
@@ -30,14 +30,14 @@ export default {
 };
 
 const Template = (args) => ({
-  Component: Collection,
+  Component: CollectionTemplate,
   props: {
     ...args,
   },
 });
 
-export const Basic = Template.bind({});
-Basic.args = {
+export const Collection = Template.bind({});
+Collection.args = {
   variant: variants.ATOM.ICON.BRAND,
   size: sizes.ATOM.ICON.XXXL,
 };
