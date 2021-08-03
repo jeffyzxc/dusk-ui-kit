@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.26](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.25...v2.0.0-rc.26) (2021-08-03)
+
+
+### Features
+
+* **button:** ✨ adding active state prop ([363d685](https://github.com/dusk-network/dusk-ui-kit/commit/363d685dcfdb1e4ace57aecf3657cacae2bacfa7))
+* **icon:** ✨ added backspace icons ([d45e4a3](https://github.com/dusk-network/dusk-ui-kit/commit/d45e4a322146ff9227d9929ca92e9bc5e57d2602))
+* **pagination:** ✨ added pagination and integrated with table ([930214d](https://github.com/dusk-network/dusk-ui-kit/commit/930214d2573dc89d0f8671db790ae979236f6e67))
+
+
+
+
+
 # [2.0.0-rc.25](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.24...v2.0.0-rc.25) (2021-08-02)
 
 

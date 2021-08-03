@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.26](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.25...v2.0.0-rc.26) (2021-08-03)
+
+
+### Features
+
+* **icon:** ✨ added backspace icons ([d45e4a3](https://github.com/dusk-network/dusk-ui-kit/commit/d45e4a322146ff9227d9929ca92e9bc5e57d2602))
+
+
+
+
+
 # [2.0.0-rc.25](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.24...v2.0.0-rc.25) (2021-08-02)
 
 **Note:** Version bump only for package @dusk-network/icon
