@@ -1,11 +1,23 @@
 .duk-pagination {
-  @apply bg-transparent flex flex-row items-center justify-between space-x-8;
+  @apply bg-transparent flex flex-row items-center justify-around;
+  @apply sm:justify-between sm:space-x-8;
 
   &__menu {
-    @apply overflow-visible;
+    @apply hidden;
+    @apply sm:flex sm:overflow-visible;
+  }
+
+  &__ellipsis {
+    @apply hidden;
+    @apply sm:block sm:font-bold;
   }
 
   &__button {
     @apply text-base p-4 bg-transparent text-indigo-500 shadow-none;
+    @apply dark:text-gray-100;
+
+    &.duk-button--active {
+      @apply dark:bg-indigo-900;
+    }
   }
 }

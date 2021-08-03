@@ -1,23 +1,41 @@
+<style lang="postcss">
+  :global .sb-table-row-limit {
+    @apply w-40;
+  }
+</style>
+
 <script>
-  import Button from "@dusk-network/button/Button.svelte";
+  import DropDown from "@dusk-network/drop-down/DropDown.svelte";
   import Table from "@dusk-network/table/Table.svelte";
   import TableRow from "@dusk-network/table/Row.svelte";
   import TableDatum from "@dusk-network/table/Datum.svelte";
   import { rows } from "@dusk-network/table/stores/data.js";
   import { data } from "./data.js";
 
-  const settings = {
+  let rowPerPage = 10;
+
+  $: settings = {
     sortable: true,
-    rowPerPage: 10,
+    rowPerPage: rowPerPage,
   };
+
+  function handleSelection(event) {
+    rowPerPage = event.detail;
+  }
 </script>
 
 <section style="height:450px">
   <Table data="{data}" settings="{settings}">
     <h3 slot="title">Table title</h3>
     <div slot="actions">
-      <Button variant="cta" outline="{true}">Action</Button>
-      <Button variant="danger" outline="{true}">Cancel</Button>
+      <span>Showing</span>
+      <DropDown
+        class="sb-table-row-limit"
+        dropUp="{true}"
+        options="{[10, 20, 30, 40, 50]}"
+        on:select="{handleSelection}"
+      />
+      <span>rows</span>
     </div>
     <thead slot="head">
       <TableRow type="head">

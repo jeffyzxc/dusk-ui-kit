@@ -52,8 +52,8 @@
         >
       </Item>
       {#if pageCount.length > 6 && $pageNumber >= 5}
-        <Item>
-          <span>...</span>
+        <Item class="duk-pagination__ellipsis">
+          <span>…</span>
         </Item>
       {/if}
       {#each buttons as buttonNumber}
@@ -68,18 +68,20 @@
         {/if}
       {/each}
       {#if pageCount.length > 6 && $pageNumber <= pageCount.length - 3}
-        <Item>
-          <span>...</span>
+        <Item class="duk-pagination__ellipsis">
+          <span>…</span>
         </Item>
       {/if}
       {#if pageCount.length > 1}
-        <Button
-          class="duk-pagination__button"
-          active="{$pageNumber === pageCount.length}"
-          on:click="{() => setPage(pageCount.length)}"
-        >
-          {pageCount.length}
-        </Button>
+        <Item>
+          <Button
+            class="duk-pagination__button"
+            active="{$pageNumber === pageCount.length}"
+            on:click="{() => setPage(pageCount.length)}"
+          >
+            {pageCount.length}
+          </Button>
+        </Item>
       {/if}
     </List>
   </Menu>

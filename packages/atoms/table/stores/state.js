@@ -3,7 +3,7 @@ import { options } from "./options.js";
 
 export const rowCount = writable(0);
 
-const TABLE_SELECTOR = ".duk-table__table";
+// const TABLE_SELECTOR = ".duk-table__table";
 
 const createPageNumber = () => {
   const { subscribe, update } = writable(1);
@@ -18,7 +18,7 @@ const createPageNumber = () => {
         if (number >= 1 && number <= Math.ceil($rowCount / $rowPerPage)) {
           store = parseInt(number);
         }
-        document.querySelector(TABLE_SELECTOR).scrollTop = 0;
+        // document.querySelector(TABLE_SELECTOR).scrollTop = 0;
         return store;
       }),
   };
