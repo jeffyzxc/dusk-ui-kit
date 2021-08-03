@@ -12,7 +12,7 @@ export default {
     variant: {
       control: {
         type: "select",
-        options: Object.values(variants.ATOM.TOGGLE),
+        options: Object.values(variants.TOGGLE),
       },
     },
     type: {
@@ -33,6 +33,6 @@ const Template = (args) => ({
 
 export const Basic = Template.bind({});
 Basic.args = {
-  variant: variants.ATOM.TOGGLE.DEFAULT,
+  variant: variants.TOGGLE.DEFAULT,
   type: types.ATOM.TOGGLE.SWITCH,
 };

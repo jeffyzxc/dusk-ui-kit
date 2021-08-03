@@ -1,23 +1,19 @@
 export default {
-  ATOM: {
-    BUTTON: {
-      SMALL: "sm",
-      BASE: "base",
-      LARGE: "lg",
-    },
-    ICON: {
-      BASE: "base",
-      LARGE: "lg",
-      XL: "xl",
-      XXL: "xxl",
-      XXXL: "xxxl",
-    },
+  BUTTON: {
+    SMALL: "sm",
+    BASE: "base",
+    LARGE: "lg",
   },
-  MOLECULE: {
-    ACCORDION: {
-      SMALL: "sm",
-      BASE: "base",
-      LARGE: "lg",
-    },
+  ICON: {
+    BASE: "base",
+    LARGE: "lg",
+    XL: "xl",
+    XXL: "xxl",
+    XXXL: "xxxl",
+  },
+  ACCORDION: {
+    SMALL: "sm",
+    BASE: "base",
+    LARGE: "lg",
   },
 };

@@ -12,7 +12,7 @@ export default {
     state: {
       control: {
         type: "select",
-        options: Object.values(states.ATOM.TEXT_FIELD),
+        options: Object.values(states.TEXT_FIELD),
       },
     },
     type: {
@@ -33,7 +33,7 @@ const Template = (args) => ({
 
 export const Basic = Template.bind({});
 Basic.args = {
-  state: states.ATOM.TEXT_FIELD.BASE,
+  state: states.TEXT_FIELD.BASE,
   type: types.ATOM.TEXT_FIELD.TEXT,
   placeholder: "This is text field",
 };

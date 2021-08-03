@@ -12,13 +12,13 @@ export default {
     variant: {
       control: {
         type: "select",
-        options: Object.values(variants.ATOM.ICON),
+        options: Object.values(variants.ICON),
       },
     },
     size: {
       control: {
         type: "radio",
-        options: Object.values(sizes.ATOM.ICON),
+        options: Object.values(sizes.ICON),
       },
     },
     href: {
@@ -38,6 +38,6 @@ const Template = (args) => ({
 
 export const Collection = Template.bind({});
 Collection.args = {
-  variant: variants.ATOM.ICON.BRAND,
-  size: sizes.ATOM.ICON.XXXL,
+  variant: variants.ICON.BRAND,
+  size: sizes.ICON.XXXL,
 };

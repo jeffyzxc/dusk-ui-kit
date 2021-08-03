@@ -12,7 +12,7 @@ export default {
     variant: {
       control: {
         type: "select",
-        options: Object.values(variants.ATOM.CARD),
+        options: Object.values(variants.CARD),
       },
     },
   },
@@ -27,7 +27,7 @@ const Template = (args) => ({
 
 export const Basic = Template.bind({});
 Basic.args = {
-  variant: variants.ATOM.CARD.DEFAULT,
+  variant: variants.CARD.DEFAULT,
   cardText:
     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam minus quod neque eligendi eaque aliquam fugit nemo cupiditate odio sapiente?",
 };
@@ -50,6 +50,6 @@ Action.args = {
   title: "This is a title!",
   action: "ACTION",
   buttonText: "Card Button!",
-  buttonSize: sizes.ATOM.BUTTON.LARGE,
-  buttonVariant: variants.ATOM.BUTTON.SUCCESS,
+  buttonSize: sizes.BUTTON.LARGE,
+  buttonVariant: variants.BUTTON.SUCCESS,
 };

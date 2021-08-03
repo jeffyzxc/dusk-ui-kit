@@ -5,7 +5,7 @@
   // export let id = "__DUK-table-row" + Math.random().toString(36);
   // export let expanded = false;
   export let type = null;
-  export let variant = variants.ATOM.TABLE.DEFAULT;
+  export let variant = variants.TABLE.DEFAULT;
 
   function getDatumContext(type) {
     let context = contexts.DATUM.ROW.BODY;
@@ -18,10 +18,10 @@
 
 <tr
   class="{$$props.class || ''} duk-table__row"
-  class:duk-table__row--cta="{variant === variants.ATOM.TABLE.CTA}"
-  class:duk-table__row--success="{variant === variants.ATOM.TABLE.SUCCESS}"
-  class:duk-table__row--warning="{variant === variants.ATOM.TABLE.WARNING}"
-  class:duk-table__row--danger="{variant === variants.ATOM.TABLE.DANGER}"
+  class:duk-table__row--cta="{variant === variants.TABLE.CTA}"
+  class:duk-table__row--success="{variant === variants.TABLE.SUCCESS}"
+  class:duk-table__row--warning="{variant === variants.TABLE.WARNING}"
+  class:duk-table__row--danger="{variant === variants.TABLE.DANGER}"
 >
   <slot />
 </tr>

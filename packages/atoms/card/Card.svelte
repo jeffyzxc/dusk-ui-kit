@@ -2,7 +2,7 @@
   import { variants } from "@dusk-network/helpers";
   import "./styles.css";
 
-  export let variant = variants.ATOM.CARD.DEFAULT;
+  export let variant = variants.CARD.DEFAULT;
   export let href = null;
   export let disabled = false;
 </script>
@@ -11,12 +11,12 @@
   <a href="{href}">
     <div
       class="{$$props.class || ''} duk-card"
-      class:duk-card--brand="{variant === variants.ATOM.CARD.BRAND}"
-      class:duk-card--cta="{variant === variants.ATOM.CARD.CTA}"
-      class:duk-card--info="{variant === variants.ATOM.CARD.INFO}"
-      class:duk-card--success="{variant === variants.ATOM.CARD.SUCCESS}"
-      class:duk-card--warning="{variant === variants.ATOM.CARD.WARNING}"
-      class:duk-card--danger="{variant === variants.ATOM.CARD.DANGER}"
+      class:duk-card--brand="{variant === variants.CARD.BRAND}"
+      class:duk-card--cta="{variant === variants.CARD.CTA}"
+      class:duk-card--info="{variant === variants.CARD.INFO}"
+      class:duk-card--success="{variant === variants.CARD.SUCCESS}"
+      class:duk-card--warning="{variant === variants.CARD.WARNING}"
+      class:duk-card--danger="{variant === variants.CARD.DANGER}"
       class:duk-card--disabled="{disabled}"
       on:*
     >
@@ -26,12 +26,12 @@
 {:else}
   <div
     class="{$$props.class || ''} duk-card"
-    class:duk-card--brand="{variant === variants.ATOM.CARD.BRAND}"
-    class:duk-card--cta="{variant === variants.ATOM.CARD.CTA}"
-    class:duk-card--info="{variant === variants.ATOM.CARD.INFO}"
-    class:duk-card--success="{variant === variants.ATOM.CARD.SUCCESS}"
-    class:duk-card--warning="{variant === variants.ATOM.CARD.WARNING}"
-    class:duk-card--danger="{variant === variants.ATOM.CARD.DANGER}"
+    class:duk-card--brand="{variant === variants.CARD.BRAND}"
+    class:duk-card--cta="{variant === variants.CARD.CTA}"
+    class:duk-card--info="{variant === variants.CARD.INFO}"
+    class:duk-card--success="{variant === variants.CARD.SUCCESS}"
+    class:duk-card--warning="{variant === variants.CARD.WARNING}"
+    class:duk-card--danger="{variant === variants.CARD.DANGER}"
     class:duk-card--disabled="{disabled}"
     on:*
   >

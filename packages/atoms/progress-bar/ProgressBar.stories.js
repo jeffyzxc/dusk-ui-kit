@@ -12,7 +12,7 @@ export default {
     variant: {
       control: {
         type: "select",
-        options: Object.values(variants.ATOM.PROGRESS_BAR),
+        options: Object.values(variants.PROGRESS_BAR),
       },
     },
     step: {
@@ -37,7 +37,7 @@ const Template = (args) => ({
 
 export const Basic = Template.bind({});
 Basic.args = {
-  variant: variants.ATOM.BUTTON.BRAND,
+  variant: variants.BUTTON.BRAND,
   step: 2,
   steps: 5,
 };

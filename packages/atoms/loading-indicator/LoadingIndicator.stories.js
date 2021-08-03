@@ -12,7 +12,7 @@ export default {
     variant: {
       control: {
         type: "select",
-        options: Object.values(variants.ATOM.LOADING_INDICATOR),
+        options: Object.values(variants.LOADING_INDICATOR),
       },
     },
   },

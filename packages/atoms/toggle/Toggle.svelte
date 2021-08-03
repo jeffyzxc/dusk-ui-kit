@@ -2,7 +2,7 @@
   import { variants, types } from "@dusk-network/helpers";
   import "./styles.css";
 
-  export let variant = variants.ATOM.TOGGLE.BRAND;
+  export let variant = variants.TOGGLE.BRAND;
   export let type = types.ATOM.TOGGLE.SWITCH;
   export let name = "";
   export let checked = false;
@@ -14,12 +14,12 @@
 
 <div
   class="{$$props.class || ''} duk-toggle"
-  class:duk-toggle--brand="{variant === variants.ATOM.TOGGLE.BRAND}"
-  class:duk-toggle--cta="{variant === variants.ATOM.TOGGLE.CTA}"
-  class:duk-toggle--info="{variant === variants.ATOM.TOGGLE.INFO}"
-  class:duk-toggle--success="{variant === variants.ATOM.TOGGLE.SUCCESS}"
-  class:duk-toggle--warning="{variant === variants.ATOM.TOGGLE.WARNING}"
-  class:duk-toggle--danger="{variant === variants.ATOM.TOGGLE.DANGER}"
+  class:duk-toggle--brand="{variant === variants.TOGGLE.BRAND}"
+  class:duk-toggle--cta="{variant === variants.TOGGLE.CTA}"
+  class:duk-toggle--info="{variant === variants.TOGGLE.INFO}"
+  class:duk-toggle--success="{variant === variants.TOGGLE.SUCCESS}"
+  class:duk-toggle--warning="{variant === variants.TOGGLE.WARNING}"
+  class:duk-toggle--danger="{variant === variants.TOGGLE.DANGER}"
 >
   {#if type === types.ATOM.TOGGLE.CHECKBOX}
     <label class="duk-toggle__label duk-toggle__label--checkbox" for="{id}">

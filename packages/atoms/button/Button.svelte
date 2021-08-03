@@ -4,9 +4,9 @@
   import "./styles.css";
 
   export let value = false;
-  export let variant = variants.ATOM.BUTTON.BRAND;
+  export let variant = variants.BUTTON.BRAND;
   export let outline = false;
-  export let size = sizes.ATOM.BUTTON.BASE;
+  export let size = sizes.BUTTON.BASE;
   export let href = null;
   export let circle = false;
   export let disabled = false;
@@ -22,14 +22,14 @@
   <a href="{href}">
     <button
       class="{$$props.class || ''} duk-button"
-      class:duk-button--brand="{variant === variants.ATOM.BUTTON.BRAND}"
-      class:duk-button--cta="{variant === variants.ATOM.BUTTON.CTA}"
-      class:duk-button--info="{variant === variants.ATOM.BUTTON.INFO}"
-      class:duk-button--success="{variant === variants.ATOM.BUTTON.SUCCESS}"
-      class:duk-button--warning="{variant === variants.ATOM.BUTTON.WARNING}"
-      class:duk-button--danger="{variant === variants.ATOM.BUTTON.DANGER}"
-      class:duk-button--small="{size === sizes.ATOM.BUTTON.SMALL}"
-      class:duk-button--large="{size === sizes.ATOM.BUTTON.LARGE}"
+      class:duk-button--brand="{variant === variants.BUTTON.BRAND}"
+      class:duk-button--cta="{variant === variants.BUTTON.CTA}"
+      class:duk-button--info="{variant === variants.BUTTON.INFO}"
+      class:duk-button--success="{variant === variants.BUTTON.SUCCESS}"
+      class:duk-button--warning="{variant === variants.BUTTON.WARNING}"
+      class:duk-button--danger="{variant === variants.BUTTON.DANGER}"
+      class:duk-button--small="{size === sizes.BUTTON.SMALL}"
+      class:duk-button--large="{size === sizes.BUTTON.LARGE}"
       class:duk-button--outline="{outline}"
       class:duk-button--circle="{circle}"
       class:duk-button--active="{active}"
@@ -48,14 +48,14 @@
 {:else}
   <button
     class="{$$props.class || ''} duk-button"
-    class:duk-button--brand="{variant === variants.ATOM.BUTTON.BRAND}"
-    class:duk-button--cta="{variant === variants.ATOM.BUTTON.CTA}"
-    class:duk-button--info="{variant === variants.ATOM.BUTTON.INFO}"
-    class:duk-button--success="{variant === variants.ATOM.BUTTON.SUCCESS}"
-    class:duk-button--warning="{variant === variants.ATOM.BUTTON.WARNING}"
-    class:duk-button--danger="{variant === variants.ATOM.BUTTON.DANGER}"
-    class:duk-button--small="{size === sizes.ATOM.BUTTON.SMALL}"
-    class:duk-button--large="{size === sizes.ATOM.BUTTON.LARGE}"
+    class:duk-button--brand="{variant === variants.BUTTON.BRAND}"
+    class:duk-button--cta="{variant === variants.BUTTON.CTA}"
+    class:duk-button--info="{variant === variants.BUTTON.INFO}"
+    class:duk-button--success="{variant === variants.BUTTON.SUCCESS}"
+    class:duk-button--warning="{variant === variants.BUTTON.WARNING}"
+    class:duk-button--danger="{variant === variants.BUTTON.DANGER}"
+    class:duk-button--small="{size === sizes.BUTTON.SMALL}"
+    class:duk-button--large="{size === sizes.BUTTON.LARGE}"
     class:duk-button--outline="{outline}"
     class:duk-button--circle="{circle}"
     class:duk-button--active="{active}"

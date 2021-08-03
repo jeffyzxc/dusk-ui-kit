@@ -18,7 +18,7 @@ export default {
     variant: {
       control: {
         type: "select",
-        options: Object.values(variants.ATOM.DATE_PICKER),
+        options: Object.values(variants.DATE_PICKER),
       },
     },
   },
@@ -33,6 +33,6 @@ const Template = (args) => ({
 
 export const Basic = Template.bind({});
 Basic.args = {
-  variant: variants.ATOM.DATE_PICKER.LIGHT,
+  variant: variants.DATE_PICKER.LIGHT,
   placeholder: "Choose a date:",
 };

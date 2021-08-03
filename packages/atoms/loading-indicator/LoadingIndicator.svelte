@@ -2,18 +2,18 @@
   import { variants } from "@dusk-network/helpers";
   import "./styles.css";
 
-  export let variant = variants.ATOM.LOADING_INDICATOR.DEFAULT;
+  export let variant = variants.LOADING_INDICATOR.DEFAULT;
   export let duration = "1.3s";
 </script>
 
 <div
   class="{$$props.class || ''} duk-loading-indicator"
-  class:duk-loading-indicator--brand="{variant === variants.ATOM.LOADING_INDICATOR.BRAND}"
-  class:duk-loading-indicator--cta="{variant === variants.ATOM.LOADING_INDICATOR.CTA}"
-  class:duk-loading-indicator--info="{variant === variants.ATOM.LOADING_INDICATOR.INFO}"
-  class:duk-loading-indicator--success="{variant === variants.ATOM.LOADING_INDICATOR.SUCCESS}"
-  class:duk-loading-indicator--warning="{variant === variants.ATOM.LOADING_INDICATOR.WARNING}"
-  class:duk-loading-indicator--danger="{variant === variants.ATOM.LOADING_INDICATOR.DANGER}"
+  class:duk-loading-indicator--brand="{variant === variants.LOADING_INDICATOR.BRAND}"
+  class:duk-loading-indicator--cta="{variant === variants.LOADING_INDICATOR.CTA}"
+  class:duk-loading-indicator--info="{variant === variants.LOADING_INDICATOR.INFO}"
+  class:duk-loading-indicator--success="{variant === variants.LOADING_INDICATOR.SUCCESS}"
+  class:duk-loading-indicator--warning="{variant === variants.LOADING_INDICATOR.WARNING}"
+  class:duk-loading-indicator--danger="{variant === variants.LOADING_INDICATOR.DANGER}"
 >
   <svg
     version="1.1"

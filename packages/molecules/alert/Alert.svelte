@@ -44,7 +44,7 @@
             on:click="{() => (value = false)}"
             class="duk-alert__dismiss"
           >
-            <Icon size="{sizes.ATOM.ICON.BASE}" name="menu-burger-close" />
+            <Icon size="{sizes.ICON.BASE}" name="menu-burger-close" />
           </button>
         {/if}
         <slot name="actions" />

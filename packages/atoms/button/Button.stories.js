@@ -12,13 +12,13 @@ export default {
     variant: {
       control: {
         type: "select",
-        options: Object.values(variants.ATOM.BUTTON),
+        options: Object.values(variants.BUTTON),
       },
     },
     size: {
       control: {
         type: "radio",
-        options: Object.values(sizes.ATOM.BUTTON),
+        options: Object.values(sizes.BUTTON),
       },
     },
     circle: {
@@ -54,8 +54,8 @@ const Template = (args) => ({
 
 export const Basic = Template.bind({});
 Basic.args = {
-  variant: variants.ATOM.BUTTON.BRAND,
-  size: sizes.ATOM.BUTTON.LARGE,
+  variant: variants.BUTTON.BRAND,
+  size: sizes.BUTTON.LARGE,
   buttonText: "Hi I'm a Button",
   outline: false,
   context: null,
@@ -63,8 +63,8 @@ Basic.args = {
 
 export const WithIcon = Template.bind({});
 WithIcon.args = {
-  variant: variants.ATOM.BUTTON.BRAND,
-  size: sizes.ATOM.BUTTON.LARGE,
+  variant: variants.BUTTON.BRAND,
+  size: sizes.BUTTON.LARGE,
   buttonText: null,
   outline: false,
   context: null,
@@ -73,8 +73,8 @@ WithIcon.args = {
 
 export const WithIconAndText = Template.bind({});
 WithIconAndText.args = {
-  variant: variants.ATOM.BUTTON.BRAND,
-  size: sizes.ATOM.BUTTON.LARGE,
+  variant: variants.BUTTON.BRAND,
+  size: sizes.BUTTON.LARGE,
   buttonText: "Hi I'm a Button with an icon",
   outline: false,
   context: null,

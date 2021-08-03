@@ -7,7 +7,7 @@
   export let disabled = false;
   export let type = types.ATOM.TEXT_FIELD.TEXT;
   export let placeholder = "";
-  export let state = states.ATOM.TEXT_FIELD.BASE;
+  export let state = states.TEXT_FIELD.BASE;
   export let id;
   export let name;
   export let focused = false;
@@ -25,9 +25,9 @@
   <textarea
     bind:value
     class="{$$props.class || ''} duk-text-field"
-    class:duk-text-field--danger="{state === states.ATOM.TEXT_FIELD.DANGER}"
-    class:duk-text-field--success="{state === states.ATOM.TEXT_FIELD.SUCCESS}"
-    class:duk-text-field--warning="{state === states.ATOM.TEXT_FIELD.WARNING}"
+    class:duk-text-field--danger="{state === states.TEXT_FIELD.DANGER}"
+    class:duk-text-field--success="{state === states.TEXT_FIELD.SUCCESS}"
+    class:duk-text-field--warning="{state === states.TEXT_FIELD.WARNING}"
     class:duk-control__input--text-field="{context === contexts.TEXT_FIELD.CONTROL}"
     class:duk-control__input="{context === contexts.TEXT_FIELD.CONTROL}"
     disabled="{disabled}"
@@ -48,9 +48,9 @@
   <input
     bind:value
     class="{$$props.class || ''} duk-text-field"
-    class:duk-text-field--danger="{state === states.ATOM.TEXT_FIELD.DANGER}"
-    class:duk-text-field--success="{state === states.ATOM.TEXT_FIELD.SUCCESS}"
-    class:duk-text-field--warning="{state === states.ATOM.TEXT_FIELD.WARNING}"
+    class:duk-text-field--danger="{state === states.TEXT_FIELD.DANGER}"
+    class:duk-text-field--success="{state === states.TEXT_FIELD.SUCCESS}"
+    class:duk-text-field--warning="{state === states.TEXT_FIELD.WARNING}"
     class:duk-control__input--text-field="{context === contexts.TEXT_FIELD.CONTROL}"
     class:duk-control__input="{context === contexts.TEXT_FIELD.CONTROL}"
     disabled="{disabled}"
