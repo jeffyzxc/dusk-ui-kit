@@ -10,6 +10,7 @@
   export let href = null;
   export let circle = false;
   export let disabled = false;
+  export let active = false;
 
   let context = getContext("DUK:button:context");
 
@@ -31,6 +32,7 @@
       class:duk-button--large="{size === sizes.ATOM.BUTTON.LARGE}"
       class:duk-button--outline="{outline}"
       class:duk-button--circle="{circle}"
+      class:duk-button--active="{active}"
       class:duk-card-action-button="{context === contexts.BUTTON.ACTION.CARD}"
       class:duk-dialog-action-button="{context === contexts.BUTTON.ACTION.DIALOG}"
       class:duk-accordion__action="{context === contexts.BUTTON.ACCORDION}"
@@ -56,6 +58,7 @@
     class:duk-button--large="{size === sizes.ATOM.BUTTON.LARGE}"
     class:duk-button--outline="{outline}"
     class:duk-button--circle="{circle}"
+    class:duk-button--active="{active}"
     class:duk-card-action-button="{context === contexts.BUTTON.ACTION.CARD}"
     class:duk-dialog-action-button="{context === contexts.BUTTON.ACTION.DIALOG}"
     class:duk-accordion__action="{context === contexts.BUTTON.ACCORDION}"
