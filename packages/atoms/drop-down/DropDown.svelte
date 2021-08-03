@@ -5,6 +5,7 @@
 
   export let options;
   export let selectedIndex = 0;
+  export let dropUp = false;
 
   const dispatch = createEventDispatcher();
 
@@ -22,7 +23,7 @@
   });
 </script>
 
-<div class="{$$props.class || ''} duk-drop-down">
+<div class="{$$props.class || ''} duk-drop-down" class:duk-drop-down--drop-up="{dropUp}">
   <div class="duk-drop-down__layout">
     <button type="button" class="duk-drop-down__button" on:click="{() => (isOpen = !isOpen)}">
       <span class="duk-drop-down__selected">

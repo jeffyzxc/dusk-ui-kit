@@ -2,7 +2,7 @@
   @apply w-64;
 
   &__layout {
-    @apply mt-1 relative;
+    @apply relative;
   }
 
   &__button {
@@ -49,6 +49,12 @@
 
     &--selected {
       @apply font-bold;
+    }
+  }
+
+  &--drop-up {
+    & .duk-drop-down__options {
+      @apply -top-3 transform -translate-y-full;
     }
   }
 }
