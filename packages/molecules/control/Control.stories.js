@@ -13,13 +13,13 @@ export default {
     state: {
       control: {
         type: "select",
-        options: Object.values(states.MOLECULE.CONTROL),
+        options: Object.values(states.CONTROL),
       },
     },
     type: {
       control: {
         type: "select",
-        options: Object.values(types.MOLECULE.CONTROL),
+        options: Object.values(types.CONTROL),
       },
     },
   },
@@ -34,7 +34,7 @@ const Template = (args) => ({
 
 export const Basic = Template.bind({});
 Basic.args = {
-  state: states.MOLECULE.CONTROL.SUCCESS,
-  type: types.MOLECULE.CONTROL.STACKED,
+  state: states.CONTROL.SUCCESS,
+  type: types.CONTROL.STACKED,
   placeholder: "I'm Control",
 };

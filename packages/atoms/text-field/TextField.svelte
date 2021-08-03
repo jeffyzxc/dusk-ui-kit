@@ -5,7 +5,7 @@
 
   export let value = null;
   export let disabled = false;
-  export let type = types.ATOM.TEXT_FIELD.TEXT;
+  export let type = types.TEXT_FIELD.TEXT;
   export let placeholder = "";
   export let state = states.TEXT_FIELD.BASE;
   export let id;
@@ -14,7 +14,7 @@
 
   let context = getContext("DUK:text-field:context") || "";
 
-  $: isTextArea = type === types.ATOM.TEXT_FIELD.MULTI_LINE;
+  $: isTextArea = type === types.TEXT_FIELD.MULTI_LINE;
 
   function toggleFocused() {
     focused = !focused;

@@ -18,7 +18,7 @@ export default {
     type: {
       control: {
         type: "radio",
-        options: Object.values(types.ATOM.TOGGLE),
+        options: Object.values(types.TOGGLE),
       },
     },
   },
@@ -34,5 +34,5 @@ const Template = (args) => ({
 export const Basic = Template.bind({});
 Basic.args = {
   variant: variants.TOGGLE.DEFAULT,
-  type: types.ATOM.TOGGLE.SWITCH,
+  type: types.TOGGLE.SWITCH,
 };

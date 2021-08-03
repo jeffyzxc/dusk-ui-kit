@@ -13,7 +13,7 @@ export default {
     type: {
       control: {
         type: "select",
-        options: Object.values(types.ATOM.LIST),
+        options: Object.values(types.LIST),
       },
     },
   },
@@ -35,10 +35,10 @@ const DefinitionTemplate = (args) => ({
 
 export const Basic = DefaultTemplate.bind({});
 Basic.args = {
-  type: types.ATOM.LIST.BULLETED,
+  type: types.LIST.BULLETED,
 };
 
 export const Definition = DefinitionTemplate.bind({});
 Definition.args = {
-  type: types.ATOM.LIST.DEFINITION,
+  type: types.LIST.DEFINITION,
 };

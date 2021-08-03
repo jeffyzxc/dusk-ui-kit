@@ -1,8 +1,8 @@
 <script>
-  import Alert from "../Alert.svelte";
-  import Icon from "../../../atoms/icon/Icon.svelte";
-  import Button from "../../../atoms/button/Button.svelte";
-  import Group from "../../../atoms/button/Group.svelte";
+  import Alert from "@dusk-network/alert/Alert.svelte";
+  import Icon from "@dusk-network/icon/Icon.svelte";
+  import Button from "@dusk-network/button/Button.svelte";
+  import Group from "@dusk-network/button/Group.svelte";
 
   export let variant;
   export let dismissable;

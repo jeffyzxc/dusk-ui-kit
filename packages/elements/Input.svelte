@@ -14,16 +14,16 @@
     let classNames = "";
 
     switch (type) {
-      case types.ATOM.TEXT_FIELD.MULTI_LINE:
+      case types.TEXT_FIELD.MULTI_LINE:
         classNames += " duk-text-field--textarea";
         break;
-      case types.ATOM.TEXT_FIELD.TEXT:
+      case types.TEXT_FIELD.TEXT:
         classNames += " duk-text-field--text";
         break;
-      case types.ATOM.TEXT_FIELD.PASSWORD:
+      case types.TEXT_FIELD.PASSWORD:
         classNames += " duk-text-field--text--password";
         break;
-      case types.ATOM.RADIO:
+      case types.RADIO:
         classNames += " duk-radio";
         break;
       default:

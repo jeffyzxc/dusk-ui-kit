@@ -9,7 +9,7 @@ export default {
     variant: {
       control: {
         type: "select",
-        options: Object.values(variants.MOLECULE.ALERT),
+        options: Object.values(variants.ALERT),
       },
     },
     dismissable: {

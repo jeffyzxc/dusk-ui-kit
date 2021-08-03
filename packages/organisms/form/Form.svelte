@@ -12,9 +12,9 @@
 
   let className = "";
   export { className as class };
-  export let variant = variants.ORGANISM.FOOTER.BRAND;
-  export let type = types.ORGANISM.FORM.STACKED;
-  export let state = states.ORGANISM.FORM.BASE;
+  export let variant = variants.FOOTER.BRAND;
+  export let type = types.FORM.STACKED;
+  export let state = states.FORM.BASE;
   export let use = [];
 
   const forwardEvents = forwardEventsBuilder(current_component);
@@ -29,6 +29,7 @@
   use:forwardEvents
   class="duk-form {className}
   {getClassNames(type, variant, state)}"
-  {...exclude($$props, ['use', 'class', 'type', 'variant', 'state'])}>
+  {...exclude($$props, ["use", "class", "type", "variant", "state"])}
+>
   <slot />
 </form>

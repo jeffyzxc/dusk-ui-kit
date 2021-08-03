@@ -7,7 +7,7 @@
   export let value;
   export let id = "__DUK-alert-" + Math.random().toString(36);
   export let dismissable = false;
-  export let variant = variants.MOLECULE.ALERT.INFO;
+  export let variant = variants.ALERT.INFO;
   export let modal = false;
 
   setContext("DUK:icon:context", contexts.ICON.ALERT);
@@ -17,9 +17,9 @@
   <div
     id="{id}"
     class="{$$props.class || ''} duk-alert"
-    class:duk-alert--success="{variant === variants.MOLECULE.ALERT.SUCCESS}"
-    class:duk-alert--warning="{variant === variants.MOLECULE.ALERT.WARNING}"
-    class:duk-alert--danger="{variant === variants.MOLECULE.ALERT.DANGER}"
+    class:duk-alert--success="{variant === variants.ALERT.SUCCESS}"
+    class:duk-alert--warning="{variant === variants.ALERT.WARNING}"
+    class:duk-alert--danger="{variant === variants.ALERT.DANGER}"
     class:duk-alert--modal="{modal}"
     role="alertdialog"
     aria-labelledby="{id}-title"

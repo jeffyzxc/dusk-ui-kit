@@ -12,7 +12,7 @@ export default {
     variant: {
       control: {
         type: "select",
-        options: Object.values(variants.ORGANISM.NAVBAR),
+        options: Object.values(variants.NAVBAR),
       },
     },
   },
@@ -27,5 +27,5 @@ const Template = (args) => ({
 
 export const Basic = Template.bind({});
 Basic.args = {
-  variant: variants.ORGANISM.NAVBAR.BRAND,
+  variant: variants.NAVBAR.BRAND,
 };

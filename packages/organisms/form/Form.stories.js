@@ -12,19 +12,19 @@ export default {
     variant: {
       control: {
         type: "select",
-        options: Object.values(variants.ORGANISM.FORM),
+        options: Object.values(variants.FORM),
       },
     },
     state: {
       control: {
         type: "select",
-        options: Object.values(states.ORGANISM.FORM),
+        options: Object.values(states.FORM),
       },
     },
     type: {
       control: {
         type: "select",
-        options: Object.values(types.ORGANISM.FORM),
+        options: Object.values(types.FORM),
       },
     },
   },
@@ -39,7 +39,7 @@ const Template = (args) => ({
 
 export const Basic = Template.bind({});
 Basic.args = {
-  variant: variants.ORGANISM.FORM.DARK,
-  state: states.ORGANISM.FORM.DANGER,
-  type: types.ORGANISM.FORM.STACKED,
+  variant: variants.FORM.DARK,
+  state: states.FORM.DANGER,
+  type: types.FORM.STACKED,
 };

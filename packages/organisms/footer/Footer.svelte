@@ -4,7 +4,7 @@
   import Maximal from "./Maximal.svelte";
   import "./styles.css";
 
-  export let type = types.ORGANISM.FOOTER.MINIMAL;
+  export let type = types.FOOTER.MINIMAL;
   export let social;
   export let categories;
 
@@ -14,7 +14,7 @@
 </script>
 
 <footer class="{$$props.class || ''} duk-footer">
-  {#if type === types.ORGANISM.FOOTER.MAXIMAL}
+  {#if type === types.FOOTER.MAXIMAL}
     <Maximal categories="{categories}" />
   {/if}
   <Minimal copyright="{copyright}" social="{social}" />

@@ -1,15 +1,15 @@
 <script>
   import { getContext, setContext, onMount } from "svelte";
   import { sizes, contexts } from "@dusk-network/helpers";
-  import Button from "../../atoms/button/Button.svelte";
-  import Icon from "../../atoms/icon/Icon.svelte";
+  import Button from "@dusk-network/button/Button.svelte";
+  import Icon from "@dusk-network/icon/Icon.svelte";
 
   export let id = "__DUK-accordion-item" + Math.random().toString(36);
   export let title = "Title";
   export let expanded = false;
   export let disabled = false;
   export let ref = null;
-  const size = sizes.MOLECULE.ACCORDION.LARGE;
+  const size = sizes.ACCORDION.LARGE;
 
   setContext("DUK:button:context", contexts.BUTTON.ACCORDION);
 

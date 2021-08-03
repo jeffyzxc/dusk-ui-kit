@@ -4,7 +4,7 @@ import Default from "./storybook-views/Default.svelte";
 import Table from "@dusk-network/table";
 
 export default {
-  title: `Components/Atoms/Table`,
+  title: `Components/Organisms/Table`,
   component: Table,
   parameters: {
     layout: "padded",

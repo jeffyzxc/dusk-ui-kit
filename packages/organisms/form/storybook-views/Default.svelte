@@ -1,7 +1,7 @@
 <script>
-  import Form from "../Form.svelte";
-  import Control from "../../../molecules/control/Control.svelte";
-  import TextField from "../../../atoms/text-field/TextField.svelte";
+  import Form from "@dusk-network/form/Form.svelte";
+  import Control from "@dusk-network/control/Control.svelte";
+  import TextField from "@dusk-network/text-field/TextField.svelte";
   export let type;
   export let variant;
   export let state;

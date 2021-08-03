@@ -57,20 +57,20 @@ Navbar is an Organism made of the Molecule (Control) and the Atom (TextField) an
   import {variants, types, states } from "@dusk-network/helpers";
 </script>
 <div class="p-10 w-6/12 mx-auto">
-  <Form type="{types.ORGANISM.FORM.STACKED}" variant="{variants.ORGANISM.FORM.BRAND}" state="{states.ORGANISM.FORM.BASE}">
+  <Form type="{types.FORM.STACKED}" variant="{variants.FORM.BRAND}" state="{states.FORM.BASE}">
     <Control
-      type="{types.MOLECULE.CONTROL.STACKED}"
-      variant="{variants.MOLECULE.CONTROL.DARK}"
+      type="{types.CONTROL.STACKED}"
+      variant="{variants.CONTROL.DARK}"
       label="Standard Text"
-      state="{states.MOLECULE.CONTROL.BASE}"
+      state="{states.CONTROL.BASE}"
       id="__control-test-text__">
       <TextField variant="{variants.TEXT_FIELD.LIGHT}" state="{states.TEXT_FIELD.SUCCESS}" name="control_test" id="__control-test-text__" />
     </Control>
     <Control
-      type="{types.MOLECULE.CONTROL.STACKED}"
-      variant="{variants.MOLECULE.CONTROL.LIGHT}"
+      type="{types.CONTROL.STACKED}"
+      variant="{variants.CONTROL.LIGHT}"
       label="Password"
-      state="{states.MOLECULE.CONTROL.BASE}"
+      state="{states.CONTROL.BASE}"
       id="__control-test-password__">
       <TextField
         variant="{variants.TEXT_FIELD.DARK}"
@@ -80,10 +80,10 @@ Navbar is an Organism made of the Molecule (Control) and the Atom (TextField) an
         id="__control-test-password__" />
     </Control>
     <Control
-      type="{types.MOLECULE.CONTROL.STACKED}"
-      variant="{variants.MOLECULE.CONTROL.DARK}"
+      type="{types.CONTROL.STACKED}"
+      variant="{variants.CONTROL.DARK}"
       label="Longer Text..."
-      state="{states.MOLECULE.CONTROL.BASE}"
+      state="{states.CONTROL.BASE}"
       id="__control-test-long__">
       <TextField
         variant="{variants.TEXT_FIELD.LIGHT}"

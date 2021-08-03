@@ -7,8 +7,8 @@
 
   let className = "";
   export { className as class };
-  export let type = types.MOLECULE.CONTROL.STACKED;
-  export let state = states.MOLECULE.CONTROL.BASE;
+  export let type = types.CONTROL.STACKED;
+  export let state = states.CONTROL.BASE;
   export let id = "";
   export let label = "";
   export let message = "";
@@ -34,12 +34,12 @@
     <slot />
   </div>
   <div class="duk-control__message">
-    {#if state === states.MOLECULE.CONTROL.WARNING || state === states.MOLECULE.CONTROL.DANGER}
+    {#if state === states.CONTROL.WARNING || state === states.CONTROL.DANGER}
       <Icon name="alert-outline" class="duk-control__message__icon" />
     {/if}
-    {#if state === states.MOLECULE.CONTROL.SUCCESS}
+    {#if state === states.CONTROL.SUCCESS}
       <Icon name="check-decagram-outline" class="duk-control__message__icon" />
     {/if}
-    {#if state !== states.MOLECULE.CONTROL.SUCCESS && message !== ""}<p>{message}</p>{/if}
+    {#if state !== states.CONTROL.SUCCESS && message !== ""}<p>{message}</p>{/if}
   </div>
 </div>

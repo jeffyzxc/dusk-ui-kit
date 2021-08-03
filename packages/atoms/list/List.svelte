@@ -11,16 +11,16 @@
   let className = "";
   let component;
   export { className as class };
-  export let type = types.ATOM.LIST.NONE;
+  export let type = types.LIST.NONE;
 
   switch (type) {
-    case types.ATOM.LIST.NONE:
+    case types.LIST.NONE:
       component = Ul;
       break;
-    case types.ATOM.LIST.NUMBERED:
+    case types.LIST.NUMBERED:
       component = Ol;
       break;
-    case types.ATOM.LIST.DEFINITION:
+    case types.LIST.DEFINITION:
       component = Dl;
       break;
     default:
@@ -33,16 +33,16 @@
   function getClassNames(type, context) {
     let classNames = "";
     switch (type) {
-      case types.ATOM.LIST.NONE:
+      case types.LIST.NONE:
         classNames += "";
         break;
-      case types.ATOM.LIST.NUMBERED:
+      case types.LIST.NUMBERED:
         classNames += " duk-list--numbered";
         break;
-      case types.ATOM.LIST.BULLETED:
+      case types.LIST.BULLETED:
         classNames += " duk-list--bulleted";
         break;
-      case types.ATOM.LIST.DEFINITION:
+      case types.LIST.DEFINITION:
         classNames += " duk-list--definition";
         break;
       default:

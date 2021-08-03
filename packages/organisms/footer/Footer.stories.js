@@ -126,13 +126,13 @@ export default {
     variant: {
       control: {
         type: "select",
-        options: Object.values(variants.ORGANISM.FOOTER),
+        options: Object.values(variants.FOOTER),
       },
     },
     type: {
       control: {
         type: "radio",
-        options: Object.values(types.ORGANISM.FOOTER),
+        options: Object.values(types.FOOTER),
       },
     },
   },
@@ -147,8 +147,8 @@ const Template = (args) => ({
 
 export const Basic = Template.bind({});
 Basic.args = {
-  variant: variants.ORGANISM.FOOTER.BRAND,
-  type: types.ORGANISM.FOOTER.MINIMAL,
+  variant: variants.FOOTER.BRAND,
+  type: types.FOOTER.MINIMAL,
   social: socialMediaConfig,
   categories: categoryConfig,
 };

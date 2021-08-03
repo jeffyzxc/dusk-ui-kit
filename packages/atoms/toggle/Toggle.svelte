@@ -3,7 +3,7 @@
   import "./styles.css";
 
   export let variant = variants.TOGGLE.BRAND;
-  export let type = types.ATOM.TOGGLE.SWITCH;
+  export let type = types.TOGGLE.SWITCH;
   export let name = "";
   export let checked = false;
   export let id = "";
@@ -21,7 +21,7 @@
   class:duk-toggle--warning="{variant === variants.TOGGLE.WARNING}"
   class:duk-toggle--danger="{variant === variants.TOGGLE.DANGER}"
 >
-  {#if type === types.ATOM.TOGGLE.CHECKBOX}
+  {#if type === types.TOGGLE.CHECKBOX}
     <label class="duk-toggle__label duk-toggle__label--checkbox" for="{id}">
       <input
         class="duk-toggle__checkbox"
@@ -37,7 +37,7 @@
         <slot />
       </span>
     </label>
-  {:else if type === types.ATOM.TOGGLE.BUTTON}
+  {:else if type === types.TOGGLE.BUTTON}
     <input
       class="duk-toggle__button"
       type="radio"
@@ -51,7 +51,7 @@
     <label class="duk-toggle__label duk-toggle__label--button" for="{id}">
       <slot />
     </label>
-  {:else if type === types.ATOM.TOGGLE.RADIO}
+  {:else if type === types.TOGGLE.RADIO}
     <label class="duk-toggle__label duk-toggle__label--radio" for="{id}">
       <input
         class="duk-toggle__radio"

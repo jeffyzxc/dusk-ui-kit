@@ -7,7 +7,7 @@
   let numberToShow = 1;
   let value = false;
 
-  $: numberToShow = type === types.ATOM.TOGGLE.BUTTON || type === types.ATOM.TOGGLE.RADIO ? 5 : 1;
+  $: numberToShow = type === types.TOGGLE.BUTTON || type === types.TOGGLE.RADIO ? 5 : 1;
 </script>
 
 <Group>
@@ -16,9 +16,7 @@
       variant="{variant}"
       type="{type}"
       value="value-{i}"
-      name="{type === types.ATOM.TOGGLE.BUTTON || type === types.ATOM.TOGGLE.RADIO
-        ? `tog`
-        : `tog_${i}`}"
+      name="{type === types.TOGGLE.BUTTON || type === types.TOGGLE.RADIO ? `tog` : `tog_${i}`}"
       id="tog_{i}"
       bind:checked="{value}"
     >

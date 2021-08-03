@@ -1,6 +1,6 @@
 <script>
   import Control from "../Control.svelte";
-  import TextField from "../../../atoms/text-field/TextField.svelte";
+  import TextField from "@dusk-network/text-field/TextField.svelte";
 
   export let type;
   export let state;
