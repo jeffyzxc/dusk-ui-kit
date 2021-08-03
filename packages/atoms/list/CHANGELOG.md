@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.27](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.26...v2.0.0-rc.27) (2021-08-03)
+
+
+### Bug Fixes
+
+* **list:** 🐛 refactored list class output order ([4fae063](https://github.com/dusk-network/dusk-ui-kit/commit/4fae0639d427d8fb9c8b1d980e738ec9a16a7190))
+
+
+### Features
+
+* **navbar:** ✨ added dark mode switch ([91c72ec](https://github.com/dusk-network/dusk-ui-kit/commit/91c72ec63e6be254397ff7031f94ab55c3a6d3f2))
+
+
+
+
+
 # [2.0.0-rc.26](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.25...v2.0.0-rc.26) (2021-08-03)
 
 **Note:** Version bump only for package @dusk-network/list

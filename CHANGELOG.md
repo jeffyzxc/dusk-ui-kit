@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.27](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.26...v2.0.0-rc.27) (2021-08-03)
+
+
+### Bug Fixes
+
+* **drop-down:** 🐛 improved drop-up styling ([d947b20](https://github.com/dusk-network/dusk-ui-kit/commit/d947b20ecc8b39abbba41b74618c86234d9b81eb))
+* **list:** 🐛 refactored list class output order ([4fae063](https://github.com/dusk-network/dusk-ui-kit/commit/4fae0639d427d8fb9c8b1d980e738ec9a16a7190))
+
+
+### Features
+
+* **icon:** ✨ added icons for dark mode ([3fba45a](https://github.com/dusk-network/dusk-ui-kit/commit/3fba45a8e5ec23cfc2c42eced6281641f1ac8923))
+* **loading-indicator:** ✨ added duration prop for timeout notifications etc ([0a52180](https://github.com/dusk-network/dusk-ui-kit/commit/0a52180a03552f824423793c0f1cd3bcccd44857))
+* **navbar:** ✨ added dark mode switch ([91c72ec](https://github.com/dusk-network/dusk-ui-kit/commit/91c72ec63e6be254397ff7031f94ab55c3a6d3f2))
+* **table:** ✨ added data limiting example ([91b296a](https://github.com/dusk-network/dusk-ui-kit/commit/91b296ac662ccdf5175f9f2d97c5dc2e64e31906))
+
+
+
+
+
 # [2.0.0-rc.26](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.25...v2.0.0-rc.26) (2021-08-03)
 
 

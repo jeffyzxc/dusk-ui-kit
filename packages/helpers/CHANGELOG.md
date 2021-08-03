@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.27](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.26...v2.0.0-rc.27) (2021-08-03)
+
+
+### Features
+
+* **icon:** ✨ added icons for dark mode ([3fba45a](https://github.com/dusk-network/dusk-ui-kit/commit/3fba45a8e5ec23cfc2c42eced6281641f1ac8923))
+
+
+
+
+
 # [2.0.0-rc.26](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.25...v2.0.0-rc.26) (2021-08-03)
 
 **Note:** Version bump only for package @dusk-network/helpers

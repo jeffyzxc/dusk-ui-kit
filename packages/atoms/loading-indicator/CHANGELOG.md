@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.27](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.26...v2.0.0-rc.27) (2021-08-03)
+
+
+### Features
+
+* **loading-indicator:** ✨ added duration prop for timeout notifications etc ([0a52180](https://github.com/dusk-network/dusk-ui-kit/commit/0a52180a03552f824423793c0f1cd3bcccd44857))
+
+
+
+
+
 # [2.0.0-rc.26](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.25...v2.0.0-rc.26) (2021-08-03)
 
 **Note:** Version bump only for package @dusk-network/loading-indicator
