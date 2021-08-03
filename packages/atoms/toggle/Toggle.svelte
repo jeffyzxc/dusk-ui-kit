@@ -28,10 +28,10 @@
         type="checkbox"
         role="checkbox"
         name="{name}"
-        checked="{checked}"
         value="{value}"
         id="{id}"
         disabled="{disabled || undefined}"
+        bind:checked
       />
       <span class="duk-toggle__checkbox-label-wrapper">
         <slot />
@@ -72,10 +72,11 @@
         type="checkbox"
         role="checkbox"
         name="{name}"
-        checked="{checked}"
         value="{value}"
         id="{id}"
         disabled="{disabled || undefined}"
+        bind:checked
+        on:click
       />
       <label for="{id}" class="duk-toggle__switch-track"></label>
       <label for="{id}" class="duk-toggle__switch-thumb"></label>

@@ -5,6 +5,7 @@
   import Logo from "@dusk-network/logo/Logo.svelte";
   import AppsMenu from "./menu/AppsMenu.svelte";
   import LinksMenu from "./menu/LinksMenu.svelte";
+  import A11yMenu from "./menu/A11yMenu.svelte";
   import "./styles.css";
 
   export let title;
@@ -12,6 +13,9 @@
   export let links;
   export let appName;
   export let id;
+  export let darkMode = false;
+
+  darkMode = !darkMode;
 
   let expanded = false;
 
@@ -54,6 +58,7 @@
       {:else}
         <LinksMenu links="{links}" />
       {/if}
+      <A11yMenu darkMode="{darkMode}" />
     </div>
     <div id="{id}-content" class="duk-navbar__collapse">
       <button

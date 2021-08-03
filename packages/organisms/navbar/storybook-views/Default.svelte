@@ -9,7 +9,6 @@
   export let variant;
   export let title;
 
-  let url = "https://github.com/dusk-network";
   let appName = "Explorer";
 </script>
 
@@ -19,6 +18,7 @@
   title="{title}"
   class="absolute top-0 left-0"
   id="sb-example-nav"
+  darkMode="{window.document.body.classList.contains('dark')}"
 >
   <div slot="logo">
     <Logo />
@@ -42,12 +42,8 @@
   <div slot="links">
     <Menu orientation="horizontal" name="Developer Links">
       <List>
-        <Item href="{url}" target="{url.lastIndexOf('dusk.network') === -1 && '_blank'}">
-          <Icon name="github" />
-          <span>Github</span>
-        </Item>
-        <Item href="https://docs.dusk.network"
-          ><Icon name="notebook-outline" /><span>Docs</span></Item
+        <Item href="https://shop.dusk.network"
+          ><Icon name="tshirt-crew-outline" /><span>Shop</span></Item
         >
       </List>
     </Menu>
