@@ -3,6 +3,7 @@
   import "./styles.css";
 
   export let variant = variants.ATOM.LOADING_INDICATOR.DEFAULT;
+  export let duration = "1.3s";
 </script>
 
 <div
@@ -38,7 +39,7 @@
     <rect x="27" y="27" fill="currentColor" width="46" height="50">
       <animate
         attributeName="height"
-        dur="1.3s"
+        dur="{duration}"
         attributeType="XML"
         from="50"
         to="0"
