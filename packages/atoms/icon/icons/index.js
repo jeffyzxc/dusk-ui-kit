@@ -3,6 +3,8 @@ import ArchiveArrowDownOutline from "./ArchiveArrowDownOutline.svelte";
 import ArrowLeftCircle from "./ArrowLeftCircle.svelte";
 import ArrowRightCircle from "./ArrowRightCircle.svelte";
 import AverageTransaction from "./AverageTransaction.svelte";
+import BackspaceOutline from "./BackspaceOutline.svelte";
+import BackspaceReverseOutline from "./BackspaceReverseOutline.svelte";
 import BankTransfer from "./BankTransfer.svelte";
 import BlockGenerator from "./BlockGenerator.svelte";
 import Brightness4 from "./Brightness4.svelte";
@@ -83,6 +85,8 @@ export default {
   ArrowLeftCircle,
   ArrowRightCircle,
   AverageTransaction,
+  BackspaceOutline,
+  BackspaceReverseOutline,
   BankTransfer,
   BlockGenerator,
   Brightness4,
