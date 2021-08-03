@@ -1,7 +1,7 @@
 import { writable, derived } from "svelte/store";
-import { options } from "svelte-simple-datatables/src/stores/options.js";
-import { pageNumber, rowCount } from "svelte-simple-datatables/src/stores/state.js";
-import { globalFilters, localFilters } from "svelte-simple-datatables/src/stores/filters.js";
+import { options } from "./options.js";
+import { pageNumber, rowCount } from "./state.js";
+import { globalFilter, localFilter } from "./filters.js";
 
 const createData = () => {
   const { subscribe, set, update } = writable([]);
@@ -31,20 +31,19 @@ const createData = () => {
 export const data = createData();
 
 export const filtered = derived(
-  [data, globalFilters, localFilters],
-  ([$data, $globalFilters, $localFilters]) => {
-    if ($globalFilters) {
+  [data, globalFilter, localFilter],
+  ([$data, $globalFilter, $localFilter]) => {
+    if ($globalFilter) {
       $data = $data.filter((item) => {
         return Object.keys(item).some((k) => {
           return (
-            item[k].toString().toLowerCase().indexOf($globalFilters.toString().toLowerCase()) > -1
+            item[k].toString().toLowerCase().indexOf($globalFilter.toString().toLowerCase()) > -1
           );
         });
       });
     }
-    console.log($localFilters);
-    if ($localFilters.length > 0) {
-      $localFilters.forEach((filter) => {
+    if ($localFilter.length > 0) {
+      $localFilter.forEach((filter) => {
         return ($data = $data.filter(
           (item) =>
             filter

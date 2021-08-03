@@ -11,9 +11,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      backgroundImage: (theme) => ({
-        check: "url(./icons/checkbox.svg)",
-      }),
+      // backgroundImage: (theme) => ({
+      //   check: "url(./icons/checkbox.svg)",
+      // }),
       boxShadow: {
         marketing: "1px 1px 0px #D82E60;",
         "marketing-hover": "8px 8px 0px #D82E60;",
@@ -230,6 +230,9 @@ module.exports = {
         225: "26.25rem", // 420px
         256: "32rem", // 512px
       },
+      // transitionProperty: {
+      //   shadow: "boxShadow",
+      // },
       typography: (theme) => ({
         light: {
           css: [

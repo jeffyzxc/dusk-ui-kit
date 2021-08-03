@@ -146,7 +146,7 @@
     }
   }
   &__table {
-    @apply block shadow-table bg-white rounded-md overflow-hidden;
+    @apply block shadow-table bg-white rounded-md overflow-y-scroll overflow-x-hidden;
     @apply dark:bg-gray-700;
     & thead,
     & tbody,
@@ -192,10 +192,10 @@
     }
   }
   &__actions {
-    @apply py-2 px-5 mt-3 bg-white shadow-table rounded-bl-xl rounded-br-xl;
+    @apply flex items-center justify-between py-2 px-5 mt-3 bg-white shadow-table rounded-bl-xl rounded-br-xl;
     @apply dark:bg-gray-700 dark:text-gray-100;
 
-    & *:first-child {
+    & :not(.duk-pagination) {
       @apply flex items-center justify-center space-x-4;
     }
   }
@@ -204,6 +204,10 @@
     & .duk-loading-indicator,
     & .duk-icon {
       @apply w-6;
+    }
+
+    &--sortable {
+      @apply cursor-pointer;
     }
 
     &--cta {

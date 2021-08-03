@@ -1,0 +1,11 @@
+.duk-pagination {
+  @apply bg-transparent flex flex-row items-center justify-between space-x-8;
+
+  &__menu {
+    @apply overflow-visible;
+  }
+
+  &__button {
+    @apply text-base p-4 bg-transparent text-indigo-500 shadow-none;
+  }
+}

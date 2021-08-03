@@ -4,6 +4,7 @@
 
   export let variant = variants.ATOM.TABLE.DEFAULT;
   export let cols = "1";
+  export let key;
 
   let context = getContext("DUK:table:row:datum:context");
 </script>
@@ -16,6 +17,8 @@
     class:duk-table__datum--success="{variant === variants.ATOM.TABLE.SUCCESS}"
     class:duk-table__datum--warning="{variant === variants.ATOM.TABLE.WARNING}"
     class:duk-table__datum--danger="{variant === variants.ATOM.TABLE.DANGER}"
+    class:duk-table__datum--sortable="{key}"
+    data-key="{key}"
   >
     <slot />
   </th>

@@ -44,7 +44,7 @@
 
   &__label {
     &--button {
-      @apply shadow-marketing cursor-pointer leading-tight z-50 px-4 py-1 inline-block bg-transparent border border-gray-900 rounded-md;
+      @apply transition transition-shadow duration-300 ease-in-out shadow-marketing hover:shadow-marketing-hover cursor-pointer leading-tight z-50 px-4 py-1 inline-block bg-transparent border border-gray-900 rounded-md;
       @apply dark:text-white dark:border-white;
     }
     &--switch {

@@ -1,0 +1,25 @@
+{
+  "name": "@dusk-network/pagination",
+  "version": "2.0.0-rc.25",
+  "description": "Dusk UI Kit - Pagination",
+  "bugs": {
+    "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dusk-network/dusk-ui-kit.git",
+    "directory": "packages/molecules/pagination"
+  },
+  "author": "Kieran Hall <kieran@dusk-network.network>",
+  "scripts": {
+    "test": "echo \"LOL\" && exit 1"
+  },
+  "dependencies": {
+    "@dusk-network/helpers": "^2.0.0-rc.25",
+    "@dusk-network/icon": "^2.0.0-rc.25",
+    "@dusk-network/list": "^2.0.0-rc.25"
+  },
+  "peerDependencies": {
+    "svelte": "3.38.2"
+  }
+}
