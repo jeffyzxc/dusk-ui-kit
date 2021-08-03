@@ -8,6 +8,7 @@ import BackspaceReverseOutline from "./BackspaceReverseOutline.svelte";
 import BankTransfer from "./BankTransfer.svelte";
 import BlockGenerator from "./BlockGenerator.svelte";
 import Brightness4 from "./Brightness4.svelte";
+import Brightness5 from "./Brightness5.svelte";
 import CardSearchOutline from "./CardSearchOutline.svelte";
 import ChartLineVariant from "./ChartLineVariant.svelte";
 import CheckCircleOutline from "./CheckCircleOutline.svelte";
@@ -72,6 +73,7 @@ import Telegram from "./Telegram.svelte";
 import TimelineClockOutline from "./TimelineClockOutline.svelte";
 import TimerSand from "./TimerSand.svelte";
 import TrashCanOutline from "./TrashCanOutline.svelte";
+import TshirtCrewOutline from "./TshirtCrewOutline.svelte";
 import Twitter from "./Twitter.svelte";
 import ViewDashboardOutline from "./ViewDashboardOutline.svelte";
 import Wallet from "./Wallet.svelte";
@@ -90,6 +92,7 @@ export default {
   BankTransfer,
   BlockGenerator,
   Brightness4,
+  Brightness5,
   CardSearchOutline,
   ChartLineVariant,
   CheckCircleOutline,
@@ -154,6 +157,7 @@ export default {
   TimelineClockOutline,
   TimerSand,
   TrashCanOutline,
+  TshirtCrewOutline,
   Twitter,
   ViewDashboardOutline,
   Wallet,
