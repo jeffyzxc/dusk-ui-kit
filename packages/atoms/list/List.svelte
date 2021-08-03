@@ -66,7 +66,7 @@
 <svelte:component
   this="{component}"
   use="{[forwardEvents, ...use]}"
-  class="duk-list {className}
+  class="{className} duk-list
   {getClassNames(type, context)}"
   {...exclude($$props, ["use", "class", "type"])}
 >

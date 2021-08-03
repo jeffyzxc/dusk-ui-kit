@@ -18,7 +18,7 @@
 
 <svelte:component
   this="{Li}"
-  class="duk-list__item {className}"
+  class="{className} duk-list__item"
   {...exclude($$props, ["use", "class", "href", "active", "target"])}
 >
   <slot name="wrapper">
