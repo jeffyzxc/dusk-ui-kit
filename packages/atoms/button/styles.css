@@ -149,11 +149,15 @@
   }
 
   &--small {
-    @apply text-xs rounded-sm leading-tight;
+    @apply text-xs rounded-md leading-tight;
   }
 
   &--circle {
     @apply rounded-full p-3;
+
+    & > .duk-button__label {
+      @apply px-4;
+    }
   }
 
   &:disabled {

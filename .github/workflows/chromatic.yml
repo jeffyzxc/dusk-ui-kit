@@ -1,10 +1,6 @@
 # Workflow name
 name: Chromatic
-on:
-  push:
-    branches:
-      - main
-      - next
+on: push
 jobs:
   chromatic-deployment:
     runs-on: ubuntu-latest

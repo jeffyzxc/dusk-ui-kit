@@ -16,7 +16,7 @@ module.exports = {
       // }),
       boxShadow: {
         marketing: "1px 1px 0px #D82E60;",
-        "marketing-hover": "8px 8px 0px #D82E60;",
+        "marketing-hover": "4px 4px 0px #D82E60;",
         none: "none",
         card: "0px 3px 6px rgba(0, 0, 0, .161)",
         switch: "0px 3px 6px rgba(0, 0, 0, .161)",
