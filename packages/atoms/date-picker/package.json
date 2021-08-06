@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/date-picker",
-  "version": "2.0.0-rc.28",
+  "version": "2.0.0-rc.29",
   "description": "Dusk UI Kit - Date Picker",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -15,9 +15,9 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/elements": "^2.0.0-rc.28",
-    "@dusk-network/helpers": "^2.0.0-rc.28",
-    "@dusk-network/icon": "^2.0.0-rc.28",
+    "@dusk-network/elements": "^2.0.0-rc.29",
+    "@dusk-network/helpers": "^2.0.0-rc.29",
+    "@dusk-network/icon": "^2.0.0-rc.29",
     "svelte-flatpickr": "3.1.0"
   },
   "peerDependencies": {
