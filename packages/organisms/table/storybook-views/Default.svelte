@@ -9,6 +9,9 @@
   import Table from "@dusk-network/table/Table.svelte";
   import TableRow from "@dusk-network/table/Row.svelte";
   import TableDatum from "@dusk-network/table/Datum.svelte";
+  import List from "@dusk-network/list/List.svelte";
+  import Key from "@dusk-network/list/Key.svelte";
+  import Value from "@dusk-network/list/Value.svelte";
   import { rows } from "@dusk-network/table/stores/data.js";
   import { data } from "./data.js";
 
@@ -52,6 +55,12 @@
           <TableDatum cols="3"><span>{row.first_name}</span></TableDatum>
           <TableDatum cols="3"><span>{row.last_name}</span></TableDatum>
           <TableDatum cols="4"><span>{row.email}</span></TableDatum>
+          <TableDatum hidden="{true}">
+            <List type="definition">
+              <Key>Some detail:</Key>
+              <Value>Interesting value</Value>
+            </List>
+          </TableDatum>
         </TableRow>
       {/each}
     </tbody>

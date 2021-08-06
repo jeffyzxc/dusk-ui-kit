@@ -1,18 +1,18 @@
 export default {
   TEXT_FIELD: {
-    BASE: "base",
+    DEFAULT: "default",
     SUCCESS: "success",
     WARNING: "warning",
     DANGER: "danger",
   },
   CONTROL: {
-    BASE: "base",
+    DEFAULT: "default",
     SUCCESS: "success",
     WARNING: "warning",
     DANGER: "danger",
   },
   FORM: {
-    BASE: "base",
+    DEFAULT: "default",
     SUCCESS: "success",
     WARNING: "warning",
     DANGER: "danger",

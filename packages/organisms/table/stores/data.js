@@ -3,6 +3,8 @@ import { options } from "./options.js";
 import { pageNumber, rowCount } from "./state.js";
 import { globalFilter, localFilter } from "./filters.js";
 
+// const sortStore
+
 const createData = () => {
   const { subscribe, set, update } = writable([]);
   return {
@@ -28,6 +30,7 @@ const createData = () => {
       }),
   };
 };
+
 export const data = createData();
 
 export const filtered = derived(

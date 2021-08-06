@@ -17,6 +17,7 @@ const createLocal = () => {
     remove: () => set([]),
   };
 };
+
 export const localFilter = createLocal();
 
 const createGlobal = () => {
@@ -31,4 +32,5 @@ const createGlobal = () => {
     remove: () => set(null),
   };
 };
+
 export const globalFilter = createGlobal();

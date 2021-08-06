@@ -1,7 +1,7 @@
 import { writable } from "svelte/store";
 import { options } from "./options.js";
 import { data } from "./data.js";
-import { pageNumber } from "./state.js";
+import { pageNumber, activeRow } from "./state.js";
 import { localFilter } from "./filters.js";
 
 const SORTABLE_CLASS = "duk-table__datum--sortable";
@@ -44,6 +44,7 @@ const createColumns = () => {
     },
     filter: (key, value) => {
       pageNumber.set(1);
+      activeRow.set(null);
       localFilter.add(key, value);
     },
   };

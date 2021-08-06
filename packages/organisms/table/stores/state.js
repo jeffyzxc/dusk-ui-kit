@@ -24,5 +24,6 @@ const createPageNumber = () => {
   };
 };
 
+export const activeRow = writable(null);
 export const pageNumber = createPageNumber();
 export const tableWidth = writable(null);

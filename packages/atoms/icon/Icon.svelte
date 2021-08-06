@@ -5,7 +5,7 @@
   import "./styles.css";
 
   export let name = null;
-  export let size = sizes.ICON.BASE;
+  export let size = sizes.ICON.DEFAULT;
   export let viewbox = "0 0 24 24";
   export let variant = null;
   export let tooltip = false;

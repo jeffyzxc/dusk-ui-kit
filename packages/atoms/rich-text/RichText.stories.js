@@ -1,6 +1,7 @@
 import Default from "./storybook-views/Default.svelte";
 import Html from "./storybook-views/Html.svelte";
 import RichText from "@dusk-network/rich-text";
+import { sizes } from "@dusk-network/helpers";
 
 export default {
   title: `Components/Atoms/Rich Text`,
@@ -8,7 +9,14 @@ export default {
   parameters: {
     layout: "centered",
   },
-  argTypes: {},
+  argTypes: {
+    size: {
+      control: {
+        type: "radio",
+        options: Object.values(sizes.RICH_TEXT),
+      },
+    },
+  },
 };
 
 const DefaultTemplate = (args) => ({

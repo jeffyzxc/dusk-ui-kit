@@ -6,7 +6,7 @@
   export let value = false;
   export let variant = variants.BUTTON.BRAND;
   export let outline = false;
-  export let size = sizes.BUTTON.BASE;
+  export let size = sizes.BUTTON.DEFAULT;
   export let href = null;
   export let circle = false;
   export let disabled = false;

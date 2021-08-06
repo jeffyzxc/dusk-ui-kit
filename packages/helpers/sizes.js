@@ -1,11 +1,11 @@
 export default {
   BUTTON: {
     SMALL: "sm",
-    BASE: "base",
+    DEFAULT: "default",
     LARGE: "lg",
   },
   ICON: {
-    BASE: "base",
+    DEFAULT: "default",
     LARGE: "lg",
     XL: "xl",
     XXL: "xxl",
@@ -13,7 +13,13 @@ export default {
   },
   ACCORDION: {
     SMALL: "sm",
-    BASE: "base",
+    DEFAULT: "default",
     LARGE: "lg",
+  },
+  RICH_TEXT: {
+    DEFAULT: "default",
+    LARGE: "lg",
+    XL: "xl",
+    XXL: "xxl",
   },
 };

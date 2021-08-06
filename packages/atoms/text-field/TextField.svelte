@@ -7,7 +7,7 @@
   export let disabled = false;
   export let type = types.TEXT_FIELD.TEXT;
   export let placeholder = "";
-  export let state = states.TEXT_FIELD.BASE;
+  export let state = states.TEXT_FIELD.DEFAULT;
   export let id;
   export let name;
   export let focused = false;

@@ -1,5 +1,21 @@
-.rich-text {
+.duk-rich-text {
   @apply prose;
   @apply dark:prose-light;
   @apply lg:prose-xl;
+
+  &--small {
+    @apply prose-sm;
+  }
+
+  &--large {
+    @apply prose-lg;
+  }
+
+  &--xl {
+    @apply prose-xl;
+  }
+
+  &--xxl {
+    @apply prose-2xl;
+  }
 }

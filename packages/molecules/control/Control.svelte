@@ -8,7 +8,7 @@
   let className = "";
   export { className as class };
   export let type = types.CONTROL.STACKED;
-  export let state = states.CONTROL.BASE;
+  export let state = states.CONTROL.DEFAULT;
   export let id = "";
   export let label = "";
   export let message = "";

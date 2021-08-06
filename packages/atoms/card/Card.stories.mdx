@@ -27,7 +27,7 @@ Cards assume no specific width to start, so they’ll be 100% wide unless otherw
 | Size  | Usage   |
 | ----- | ------- |
 | SMALL | Small.  |
-| BASE  | Medium. |
+| DEFAULT  | Medium. |
 | LARGE | Large.  |
 
 ## Actions
@@ -46,7 +46,7 @@ Negative action buttons will be on the left. Positive action buttons should be o
   export let content;
 </script>
 
-<Card variant="{variants.CARD.BRAND}" size="{sizes.CARD.BASE}">
+<Card variant="{variants.CARD.BRAND}" size="{sizes.CARD.DEFAULT}">
   <Content><p>{content}</p></Content>
 </Card>
 ```

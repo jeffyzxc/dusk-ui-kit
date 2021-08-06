@@ -25,7 +25,7 @@ Alert is a type of "pop-up" message to users of a script. An alert could be anyt
 | Size  | Usage             |
 | ----- | ----------------- |
 | SMALL | Applies a Small.  |
-| BASE  | Applies a Medium. |
+| DEFAULT  | Applies a Medium. |
 | LARGE | Applies a Large.  |
 
 ## Action
@@ -44,7 +44,7 @@ After poping up, a user can close the Alert.
 </script>
 
 <div class="p-10 w-6/12 mx-auto">
-  <Alert variant="{variants.ALERT.BRAND}" {title} {value} {dismissable} size="{sizes.ALERT.BASE}">
+  <Alert variant="{variants.ALERT.BRAND}" {title} {value} {dismissable} size="{sizes.ALERT.DEFAULT}">
     <p>This is an alert!</p>
   </Alert>
 </div>

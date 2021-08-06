@@ -6,7 +6,7 @@ export default {
     DEFINITION: "definition",
   },
   TABLE: {
-    BASE: "base",
+    DEFAULT: "base",
     COMPACT: "compact",
     SPACIOUS: "spacious",
   },

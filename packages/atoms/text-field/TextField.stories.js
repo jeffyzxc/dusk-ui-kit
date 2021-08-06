@@ -33,7 +33,7 @@ const Template = (args) => ({
 
 export const Basic = Template.bind({});
 Basic.args = {
-  state: states.TEXT_FIELD.BASE,
+  state: states.TEXT_FIELD.DEFAULT,
   type: types.TEXT_FIELD.TEXT,
   placeholder: "This is text field",
 };

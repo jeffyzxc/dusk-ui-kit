@@ -42,9 +42,12 @@
   <div slot="links">
     <Menu orientation="horizontal" name="Developer Links">
       <List>
-        <Item href="https://shop.dusk.network"
-          ><Icon name="tshirt-crew-outline" /><span>Shop</span></Item
-        >
+        <Item href="https://shop.dusk.network">
+          <Icon name="tshirt-crew-outline" /><span>Shop</span>
+        </Item>
+        <Item href="https://shop.dusk.network">
+          <Icon name="store-outline" /><span>Buy Dusk</span>
+        </Item>
       </List>
     </Menu>
   </div>

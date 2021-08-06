@@ -8,7 +8,6 @@
   export let darkMode = false;
 
   const toggleDarkMode = () => {
-    console.log("called");
     if (darkMode) {
       document.documentElement.classList.add("dark");
     } else {

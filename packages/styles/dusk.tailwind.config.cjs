@@ -141,6 +141,7 @@ module.exports = {
       },
       cursor: {
         "row-resize": "row-resize	",
+        copy: "copy",
       },
       fontFamily: {
         sans: [

@@ -1,4 +1,5 @@
 <script>
+  import { createEventDispatcher } from "svelte";
   import Button from "@dusk-network/button/Button.svelte";
   import Icon from "@dusk-network/icon/Icon.svelte";
   import List from "@dusk-network/list/List.svelte";
@@ -11,6 +12,8 @@
   export let itemsPerPage;
   export let pageNumber;
 
+  const dispatch = createEventDispatcher();
+
   const slice = (arr, page) => {
     if (page < 5) {
       return arr.slice(0, 5);
@@ -22,7 +25,7 @@
 
   const setPage = (number) => {
     pageNumber.set(number);
-    // TODO fire event to allow container to do something like repaint the dom.
+    dispatch("pagination");
   };
 
   $: pageCount = Array.from(Array(Math.ceil(items.length / itemsPerPage)).keys());
