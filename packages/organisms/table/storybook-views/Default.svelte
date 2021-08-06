@@ -1,9 +1,3 @@
-<style lang="postcss">
-  :global .sb-table-row-limit {
-    @apply w-40;
-  }
-</style>
-
 <script>
   import Table from "@dusk-network/table/Table.svelte";
   import TableRow from "@dusk-network/table/Row.svelte";

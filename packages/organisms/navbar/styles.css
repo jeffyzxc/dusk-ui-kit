@@ -1,5 +1,5 @@
 .duk-navbar {
-  @apply font-light flex flex-col w-full mb-5;
+  @apply flex flex-col w-full mb-5;
   @apply sm:mb-12;
   @apply lg:mb-32;
   @apply 2xl:mb-40;
@@ -14,8 +14,8 @@
     }
 
     &--secondary {
-      @apply pl-16 pr-0 pb-3 pt-4 bg-indigo-500 text-white;
-      @apply lg:px-6;
+      @apply pl-0 pr-0 pb-3 pt-4 bg-indigo-400 text-white;
+      @apply lg:px-6 lg:bg-indigo-500;
       @apply dark:bg-indigo-200 dark:text-gray-900;
     }
   }
@@ -63,10 +63,21 @@
         @apply flex flex-col space-y-0 space-x-0;
         @apply lg:flex-row lg:flex-1 lg:justify-end lg:mb-0 lg:space-y-0 lg:space-x-5;
 
-        &__item--active {
-          @apply order-last;
-          @apply lg:order-none;
+        &__item {
+          @apply py-0 pl-0 leading-relaxed w-full;
+          @apply lg:mb-0 lg:pr-0 lg:w-auto;
+
+          & .duk-list__item-wrapper {
+            &:is(a):not(.duk-list__item-wrapper--active) {
+              @apply opacity-80;
+            }
+          }
+          &--active {
+            @apply order-last font-semibold;
+            @apply lg:order-none;
+          }
         }
+
         &__item-wrapper {
           @apply px-6 pt-4 pb-4;
           @apply lg:px-4 lg:pt-2;
@@ -74,6 +85,9 @@
           &--active {
             @apply px-6;
             @apply lg:px-5 lg:rounded-t;
+
+            @apply bg-indigo-500 text-white;
+            @apply dark:bg-indigo-200 dark:border-indigo-200 dark:text-gray-900;
           }
         }
       }
@@ -84,15 +98,18 @@
         @apply flex flex-col space-y-5 space-x-0;
         @apply lg:flex-row lg:flex-1 lg:justify-end lg:mb-0 lg:space-y-0 lg:space-x-5;
 
-        &__item__wrapper {
-          @apply mb-5;
-          @apply lg:mb-0;
+        &__item {
+          @apply py-0 pl-0 leading-relaxed w-full;
+          @apply lg:mb-0 lg:pr-0 lg:w-auto;
 
           &--active {
-            @apply font-semibold bg-indigo-500 text-white pl-16;
-            @apply lg:border-t-2 lg:border-white lg:pl-0;
-            @apply dark:bg-indigo-200 dark:border-indigo-200 dark:text-gray-900;
+            @apply font-semibold;
           }
+        }
+
+        &__item-wrapper {
+          @apply px-6 pt-4 pb-4;
+          @apply lg:px-4 lg:pt-2;
         }
       }
     }
@@ -100,24 +117,19 @@
     /* FIXME Temp solution, we need to always show this. */
     &--tertiary {
       @apply hidden;
-      @apply lg:mb-3 lg:items-center lg:space-x-5;
+      @apply lg:mb-3 lg:items-center lg:space-x-5 lg:flex;
     }
 
     & .duk-list {
       &__item {
-        @apply py-0 pl-0 leading-relaxed font-light w-full;
-        @apply lg:mb-0 lg:pr-0 lg:w-auto;
+        /* @apply py-0 pl-0 leading-relaxed w-full;
+        @apply lg:mb-0 lg:pr-0 lg:w-auto; */
 
-        & .duk-list__item-wrapper {
-          &--active {
-            @apply bg-indigo-500 text-white;
-            @apply dark:bg-indigo-200 dark:border-indigo-200 dark:text-gray-900;
-          }
-
+        /* & .duk-list__item-wrapper {
           &:is(a):not(.duk-list__item-wrapper--active) {
             @apply opacity-80;
           }
-        }
+        } */
       }
     }
 

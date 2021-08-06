@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.30](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.29...v2.0.0-rc.30) (2021-08-06)
+
+
+### Features
+
+* **limiter:** ✨ added limiter component and integrated with table ([15674eb](https://github.com/dusk-network/dusk-ui-kit/commit/15674eb524d82ee7bf2babe55357ca63eaa0221d))
+
+
+
+
+
 # [2.0.0-rc.29](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.28...v2.0.0-rc.29) (2021-08-06)
 
 
