@@ -12,7 +12,7 @@
   let ref;
 
   onMount(() => {
-    if (context === contexts.DATUM.ROW.BODY) {
+    if (ref && hidden && context === contexts.DATUM.ROW.BODY) {
       ref.parentNode.classList.add("duk-table__row--has-extra-information");
     }
   });
@@ -27,6 +27,7 @@
     class:duk-table__datum--warning="{variant === variants.TABLE.WARNING}"
     class:duk-table__datum--danger="{variant === variants.TABLE.DANGER}"
     class:duk-table__datum--sortable="{key}"
+    class:duk-table__datum--hidden="{hidden}"
     data-key="{key}"
   >
     <slot />

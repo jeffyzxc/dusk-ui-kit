@@ -4,6 +4,7 @@
   import { table as dataTable } from "./table.js";
   // import Search from './components/Search.svelte'
   import Pagination from "@dusk-network/pagination/Pagination.svelte";
+  import Limiter from "@dusk-network/limiter/Limiter.svelte";
   import { onMount, onDestroy } from "svelte";
   import "./styles.css";
 
@@ -23,8 +24,14 @@
   const handlePagination = () => {
     activeRow.set(null);
   };
+
+  const handleLimit = (event) => {
+    activeRow.set(null);
+    settings = { ...settings, rowPerPage: event.detail };
+  };
 </script>
 
+active row: {$activeRow}
 <div class="{$$props.class || ''} duk-table">
   <div class="duk-table__title">
     <slot name="title" />
@@ -44,5 +51,8 @@
       />
     {/if}
     <slot name="actions" />
+    {#if $options.limiter === true}
+      <Limiter items="{data}" options="{[10, 20, 30, 40, 50]}" on:limit="{handleLimit}" />
+    {/if}
   </div>
 </div>

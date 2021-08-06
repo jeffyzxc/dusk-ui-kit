@@ -1,26 +1,24 @@
 {
-  "name": "@dusk-network/table",
+  "name": "@dusk-network/limiter",
   "version": "2.0.0-rc.29",
-  "description": "Dusk UI Kit - Table",
+  "description": "Dusk UI Kit - Limiter",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
-    "directory": "packages/organisms/table"
+    "directory": "packages/molecules/limiter"
   },
   "author": "Kieran Hall <kieran@dusk-network.network>",
   "scripts": {
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/helpers": "^2.0.0-rc.29",
-    "@dusk-network/limiter": "^2.0.0-rc.29",
-    "@dusk-network/pagination": "^2.0.0-rc.29"
+    "@dusk-network/drop-down": "^2.0.0-rc.29",
+    "@dusk-network/styles": "^2.0.0-rc.29"
   },
   "peerDependencies": {
     "svelte": "3.38.2"
-  },
-  "gitHead": "51be63d76ad5783e86fb1dc710d20e8c08ec1ab4"
+  }
 }

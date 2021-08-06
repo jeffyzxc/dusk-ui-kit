@@ -3,8 +3,6 @@ import { options } from "./options.js";
 
 export const rowCount = writable(0);
 
-// const TABLE_SELECTOR = ".duk-table__table";
-
 const createPageNumber = () => {
   const { subscribe, update } = writable(1);
   return {

@@ -1,6 +1,5 @@
 import { data } from "./stores/data.js";
 import { columns } from "./stores/columns.js";
-import { rows } from "./stores/rows.js";
 import { tableWidth, pageNumber, activeRow } from "./stores/state.js";
 import { globalFilter, localFilter } from "./stores/filters.js";
 
@@ -8,7 +7,6 @@ export const table = {
   init: () => {
     table.resize();
     table.getColumns();
-    table.getRows();
     new ResizeObserver(() => {
       table.resize();
     }).observe(document.querySelector(".duk-table").parentElement);
@@ -19,7 +17,6 @@ export const table = {
     globalFilter.remove();
     localFilter.remove();
     columns.set([]);
-    rows.set([]);
   },
   setRows: (arr) => {
     arr.forEach((item) => {
@@ -86,6 +83,7 @@ export const table = {
       th.addEventListener(
         "click",
         (e) => {
+          activeRow.set(null);
           columns.sort(e.currentTarget, table.getKey(th.dataset.key));
         },
         true,
@@ -93,30 +91,6 @@ export const table = {
       i++;
     });
     columns.set(columnList);
-  },
-  getRows: () => {
-    const rowList = [];
-    let i = 0;
-    document.querySelectorAll(".duk-table__table tbody tr").forEach((tr) => {
-      rowList.push({
-        index: i,
-        classList: tr.classList,
-      });
-      tr.addEventListener(
-        "click",
-        (e) => {
-          const row = e.currentTarget;
-          if (row.classList.contains("duk-table__row--active")) {
-            activeRow.set(null);
-          } else {
-            activeRow.set(row.id);
-          }
-        },
-        true,
-      );
-      i++;
-    });
-    rows.set(rowList);
   },
   getKey: (key) => {
     if (!key) return;

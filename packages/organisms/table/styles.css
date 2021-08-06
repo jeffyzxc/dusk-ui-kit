@@ -177,6 +177,10 @@
       }
       & th {
         @apply flex items-center space-x-3 font-light;
+
+        &.duk-table__datum--hidden {
+          @apply hidden;
+        }
       }
     }
 
