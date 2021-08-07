@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.31](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.30...v2.0.0-rc.31) (2021-08-07)
+
+
+### Features
+
+* **navbar:** ✨ added drop down context to menu and into navbar ([b76caa2](https://github.com/dusk-network/dusk-ui-kit/commit/b76caa24449b303ddb2386ed55a9ce9a59b967b4))
+
+
+
+
+
 # [2.0.0-rc.30](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.29...v2.0.0-rc.30) (2021-08-06)
 
 
