@@ -6,8 +6,6 @@
   }
 
   &--vertical {
-    @apply overflow-y-hidden;
-
     & .duk-list {
       @apply flex flex-col items-start space-y-3;
 
@@ -20,8 +18,6 @@
   }
 
   &--horizontal {
-    @apply overflow-hidden;
-
     & .duk-list {
       @apply flex flex-row items-center justify-center space-x-8;
 

@@ -1,5 +1,6 @@
 <script>
   import { setContext } from "svelte";
+  import { slide } from "svelte/transition";
   import { contexts, variants } from "@dusk-network/helpers";
   import { activeRow } from "./stores/state.js";
 
@@ -13,6 +14,7 @@
     if (type === "foot") context = contexts.DATUM.ROW.FOOT;
     return context;
   }
+
   setContext("DUK:table:row:datum:context", getDatumContext(type));
 
   const handleClick = () => {
@@ -31,6 +33,7 @@
   class:duk-table__row--active="{$activeRow === id}"
   id="{id}"
   on:click="{handleClick}"
+  transition:slide
 >
   <slot />
 </tr>

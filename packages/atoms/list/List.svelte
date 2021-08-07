@@ -55,6 +55,9 @@
       case contexts.LIST.ACCORDION:
         classNames += " duk-list--accordion";
         break;
+      case contexts.LIST.DATUM:
+        classNames += " duk-list--datum";
+        break;
       default:
         classNames += "";
     }

@@ -9,6 +9,7 @@
   export let separator = null;
 
   setContext("DUK:list:context", contexts.LIST.MENU);
+  setContext("DUK:drop-down:context", contexts.DROP_DOWN.MENU);
 </script>
 
 <nav

@@ -2,7 +2,7 @@ import Default from "./storybook-views/Default.svelte";
 import Limiter from "@dusk-network/limiter";
 
 export default {
-  title: `Components/Molecules/Pagination`,
+  title: `Components/Molecules/Limiter`,
   component: Limiter,
   parameters: {
     layout: "centered",

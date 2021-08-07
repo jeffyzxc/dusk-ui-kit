@@ -1,5 +1,6 @@
 <script>
-  import { createEventDispatcher, onMount } from "svelte";
+  import { createEventDispatcher, onMount, getContext } from "svelte";
+  import { contexts } from "@dusk-network/helpers";
   import Icon from "@dusk-network/icon/Icon.svelte";
   import "./styles.css";
 
@@ -8,6 +9,7 @@
   export let dropUp = false;
 
   const dispatch = createEventDispatcher();
+  const context = getContext("DUK:drop-down:context");
 
   let selectedOption = options[selectedIndex];
   let isOpen = false;
@@ -23,7 +25,11 @@
   });
 </script>
 
-<div class="{$$props.class || ''} duk-drop-down" class:duk-drop-down--drop-up="{dropUp}">
+<div
+  class="{$$props.class || ''} duk-drop-down"
+  class:duk-drop-down--drop-up="{dropUp}"
+  class:duk-drop-down--menu="{context === contexts.DROP_DOWN.MENU}"
+>
   <div class="duk-drop-down__layout">
     <button type="button" class="duk-drop-down__button" on:click="{() => (isOpen = !isOpen)}">
       <span class="duk-drop-down__selected">

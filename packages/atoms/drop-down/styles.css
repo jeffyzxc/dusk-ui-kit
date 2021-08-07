@@ -1,5 +1,5 @@
 .duk-drop-down {
-  @apply w-64;
+  @apply w-64 z-50;
 
   &__layout {
     @apply relative;

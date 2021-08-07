@@ -20,6 +20,9 @@ export default {
       FOOT: "datum:row:foot",
     },
   },
+  DROP_DOWN: {
+    MENU: "drop-down:menu",
+  },
   ICON: {
     ALERT: "icon:alert",
     BUTTON: "icon:button",
@@ -34,6 +37,7 @@ export default {
   LIST: {
     ACCORDION: "list:accordion",
     MENU: "list:menu",
+    DATUM: "list:datum",
   },
   LOGO: {
     NAVBAR: "logo:navbar",

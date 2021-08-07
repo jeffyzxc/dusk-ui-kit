@@ -12,7 +12,7 @@
   export let disabled = false;
   export let active = false;
 
-  let context = getContext("DUK:button:context");
+  const context = getContext("DUK:button:context");
 
   setContext("DUK:label:context", contexts.LABEL.BUTTON);
   setContext("DUK:icon:context", contexts.ICON.BUTTON);

@@ -33,4 +33,10 @@
       @apply lg:w-2/3 lg:text-left;
     }
   }
+
+  &--datum {
+    &.duk-list--definition {
+      @apply flex flex-wrap text-justify;
+    }
+  }
 }

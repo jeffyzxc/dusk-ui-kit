@@ -19,7 +19,7 @@
 <Menu orientation="vertical">
   <List>
     <ListItem>
-      <Icon name="brightness-4" />
+      <Icon class="duk-navbar__dark-mode-icon" name="brightness-4" />
       <Toggle
         type="switch"
         variant="brand"
@@ -29,7 +29,7 @@
         bind:checked="{darkMode}"
         on:click="{toggleDarkMode}"
       />
-      <Icon name="brightness-5" />
+      <Icon class="duk-navbar__light-mode-icon" name="brightness-5" />
     </ListItem>
   </List>
 </Menu>

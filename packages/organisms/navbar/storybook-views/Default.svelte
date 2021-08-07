@@ -1,6 +1,7 @@
 <script>
   import Navbar from "../Navbar.svelte";
   import Menu from "@dusk-network/menu/Menu.svelte";
+  import DropDown from "@dusk-network/drop-down/DropDown.svelte";
   import List from "@dusk-network/list/List.svelte";
   import Item from "@dusk-network/list/Item.svelte";
   import Logo from "@dusk-network/logo/Logo.svelte";
@@ -26,7 +27,9 @@
   <div slot="networks">
     <Menu orientation="horizontal" name="Network Navigation">
       <List>
-        <Item href="javascript:;">Testnet</Item>
+        <Item>
+          <DropDown options="{['Testnet', 'Mainnet']}" />
+        </Item>
       </List>
     </Menu>
   </div>
