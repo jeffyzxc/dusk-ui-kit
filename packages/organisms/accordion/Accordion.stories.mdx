@@ -1,0 +1,25 @@
+import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
+import Accordion from "./storybook-views/Default.svelte";
+
+<Meta title="Docs/Components/Organisms/Accordion" />
+
+# ⚛️ Accordion
+
+An Accordion is a space-saving and attention-focusing component for coupling content with a heading.
+Each item in the Accordion is collapsed by default. When one Accordion item is opened, any other open
+items are closed. This is what creates the 'accordion' effect.
+
+## Usage
+
+```js
+<script>
+  import Accordion, { Item } from "@dusk-network/accordion";
+</script>
+
+
+  <Accordion>
+    <Item title="Item 1">this is item 1!</Item>
+    <Item title="Item 2">this is item 2!</Item>
+    <Item title="Item 3">this is item 3!</Item>
+  </Accordion>
+```

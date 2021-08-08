@@ -8,7 +8,7 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
-    "directory": "packages/molecules/accordion"
+    "directory": "packages/organisms/accordion"
   },
   "author": "Kieran Hall <kieran@dusk-network.network>",
   "scripts": {

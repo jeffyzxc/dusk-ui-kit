@@ -2,7 +2,7 @@ import Default from "./storybook-views/Default.svelte";
 import Accordion from "@dusk-network/accordion";
 
 export default {
-  title: `Components/Molecules/Accordion`,
+  title: `Components/Organisms/Accordion`,
   component: Accordion,
   argTypes: {},
 };
