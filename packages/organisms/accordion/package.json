@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/accordion",
-  "version": "2.0.0-rc.31",
+  "version": "2.0.0-rc.32",
   "description": "Dusk UI Kit - Accordion",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -15,10 +15,10 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/elements": "^2.0.0-rc.31",
-    "@dusk-network/helpers": "^2.0.0-rc.31",
-    "@dusk-network/icon": "^2.0.0-rc.31",
-    "@dusk-network/list": "^2.0.0-rc.31"
+    "@dusk-network/elements": "^2.0.0-rc.32",
+    "@dusk-network/helpers": "^2.0.0-rc.32",
+    "@dusk-network/icon": "^2.0.0-rc.32",
+    "@dusk-network/list": "^2.0.0-rc.32"
   },
   "peerDependencies": {
     "svelte": "3.38.2"
