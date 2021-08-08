@@ -3,7 +3,7 @@ import DefaultView from "./storybook-views/Default.svelte";
 import Button from "@dusk-network/button";
 
 export default {
-  title: `Components/Atoms/Button`,
+  title: `Components/Molecules/Button`,
   component: Button,
   parameters: {
     layout: "centered",
