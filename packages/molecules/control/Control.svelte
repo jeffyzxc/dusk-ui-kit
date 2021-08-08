@@ -1,4 +1,5 @@
 <script>
+  //TODO Refactor this into a Form Item component since this is only used in Forms and can then import DropDowns if needed.
   import { setContext } from "svelte";
   import { exclude, states, contexts, types } from "@dusk-network/helpers";
   import Icon from "@dusk-network/icon/Icon.svelte";

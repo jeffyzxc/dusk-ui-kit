@@ -1,4 +1,7 @@
 <script>
+  // TODO Remove this component and replace with Menu (needs to move from Molecules to Atoms) and KeyValue (needs to be created) components
+  // Will lead to refactoring needed in Organisms that use Menus and Lists
+
   import { getContext, setContext } from "svelte";
   import { current_component } from "svelte/internal";
   import { forwardEventsBuilder, exclude, types, contexts } from "@dusk-network/helpers";

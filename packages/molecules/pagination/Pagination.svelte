@@ -1,6 +1,6 @@
 <script>
   import { createEventDispatcher } from "svelte";
-  import Button from "@dusk-network/button/Button.svelte";
+  import Button from "@dusk-network/button/Button.svelte"; // TODO remove dependency and roll custom buttons in scope here
   import Icon from "@dusk-network/icon/Icon.svelte";
   import List from "@dusk-network/list/List.svelte";
   import Item from "@dusk-network/list/Item.svelte";

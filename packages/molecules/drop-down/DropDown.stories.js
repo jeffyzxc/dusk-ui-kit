@@ -2,7 +2,7 @@ import DefaultView from "./storybook-views/Default.svelte";
 import DropDown from "@dusk-network/drop-down";
 
 export default {
-  title: `Components/Atoms/Drop Down`,
+  title: `Components/Molecules/Drop Down`,
   component: DropDown,
   parameters: {
     layout: "centered",
