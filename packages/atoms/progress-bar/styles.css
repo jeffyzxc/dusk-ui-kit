@@ -1,5 +1,11 @@
 .duk-progress-bar {
-  &__progress-step {
+  &__wrapper {
+    @apply relative rounded-md w-full;
+    height: 4px;
+    max-height: 4px;
+  }
+
+  &__step {
     @apply absolute rounded-md bg-gray-300 bottom-px left-0;
     @apply dark:bg-white;
     height: 2px;
@@ -7,56 +13,54 @@
     transition: width 0.5s;
   }
 
-  &__progress-bar {
+  &__bar {
     @apply bg-gray-900 rounded-md w-full;
     @apply dark:bg-gray-600;
     height: 4px;
     max-height: 4px;
   }
 
-  &__progress-container {
-    @apply relative rounded-md w-full;
-    height: 4px;
-    max-height: 4px;
+  &--wizard {
+    @apply mb-6 px-5;
   }
 
   &--brand {
-    & .duk-progress-bar__progress-step {
+    & .duk-progress-bar__step {
       @apply bg-indigo-500;
       @apply dark:bg-indigo-600;
     }
   }
 
   &--cta {
-    & .duk-progress-bar__progress-step {
+    & .duk-progress-bar__step {
       @apply bg-orange-900;
       @apply dark:bg-orange-600;
     }
   }
 
   &--info {
-    & .duk-progress-bar__progress-step {
+    & .duk-progress-bar__step {
       @apply bg-blue-900;
       @apply dark:bg-blue-600;
     }
   }
 
   &--success {
-    & .duk-progress-bar__progress-step {
+    & .duk-progress-bar__step {
       @apply bg-green-900;
       @apply dark:bg-green-600;
     }
   }
 
   &--warning {
-    & .duk-progress-bar__progress-step {
+    & .duk-progress-bar__step {
       @apply bg-yellow-900;
       @apply dark:bg-yellow-600;
     }
   }
 
   &--danger {
-    & .duk-progress-bar__progress-step {
+    & .duk-progress-bar__step {
       @apply bg-red-900;
       @apply dark:bg-red-600;
     }

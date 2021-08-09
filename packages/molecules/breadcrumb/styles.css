@@ -8,4 +8,8 @@
       @apply block;
     }
   }
+
+  &--wizard {
+    @apply mb-3;
+  }
 }

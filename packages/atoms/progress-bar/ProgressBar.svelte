@@ -1,6 +1,6 @@
 <script>
-  // import { getContext } from "svelte";
-  import { variants } from "@dusk-network/helpers";
+  import { getContext } from "svelte";
+  import { variants, contexts } from "@dusk-network/helpers";
   import "./styles.css";
 
   export const use = [];
@@ -10,7 +10,7 @@
   export let step;
   $: styles = (step * 100) / steps;
 
-  // let context = getContext("DUK:progress-bar:context");
+  const context = getContext("DUK:progress-bar:context");
 </script>
 
 <div
@@ -21,9 +21,10 @@
   class:duk-progress-bar--success="{variant === variants.PROGRESS_BAR.SUCCESS}"
   class:duk-progress-bar--warning="{variant === variants.PROGRESS_BAR.WARNING}"
   class:duk-progress-bar--danger="{variant === variants.PROGRESS_BAR.DANGER}"
+  class:duk-progress-bar--wizard="{context === contexts.PROGRESS_BAR.WIZARD}"
 >
-  <div class="duk-progress-bar__progress-container">
-    <div style="width:{styles}%" class="duk-progress-bar__progress-step"></div>
-    <div class="duk-progress-bar__progress-bar"></div>
+  <div class="duk-progress-bar__wrapper">
+    <div style="width:{styles}%" class="duk-progress-bar__step"></div>
+    <div class="duk-progress-bar__bar"></div>
   </div>
 </div>
