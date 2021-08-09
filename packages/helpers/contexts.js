@@ -49,4 +49,13 @@ export default {
   TEXT_FIELD: {
     CONTROL: "text-field:control",
   },
+  FORM: {
+    WIZARD: "form:wizard",
+  },
+  PROGRESS_BAR: {
+    WIZARD: "progress-bar:wizard",
+  },
+  BREADCRUMB: {
+    WIZARD: "breadcrumb:wizard",
+  },
 };

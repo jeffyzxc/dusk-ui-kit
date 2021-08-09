@@ -1,0 +1,5 @@
+.duk-wizard {
+  &__step {
+    @apply px-5 pb-5;
+  }
+}
