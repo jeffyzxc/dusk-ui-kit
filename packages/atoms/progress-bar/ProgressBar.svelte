@@ -3,8 +3,6 @@
   import { variants, contexts } from "@dusk-network/helpers";
   import "./styles.css";
 
-  export const use = [];
-
   export let variant = variants.PROGRESS_BAR.SUCCESS;
   export let steps;
   export let step;

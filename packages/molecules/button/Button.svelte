@@ -11,6 +11,7 @@
   export let circle = false;
   export let disabled = false;
   export let active = false;
+  export let block = false;
 
   const context = getContext("DUK:button:context");
 
@@ -33,6 +34,7 @@
       class:duk-button--outline="{outline}"
       class:duk-button--circle="{circle}"
       class:duk-button--active="{active}"
+      class:duk-button--block="{block}"
       class:duk-card-action-button="{context === contexts.BUTTON.ACTION.CARD}"
       class:duk-dialog-action-button="{context === contexts.BUTTON.ACTION.DIALOG}"
       class:duk-accordion__action="{context === contexts.BUTTON.ACCORDION}"
@@ -59,6 +61,7 @@
     class:duk-button--outline="{outline}"
     class:duk-button--circle="{circle}"
     class:duk-button--active="{active}"
+    class:duk-button--block="{block}"
     class:duk-card-action-button="{context === contexts.BUTTON.ACTION.CARD}"
     class:duk-dialog-action-button="{context === contexts.BUTTON.ACTION.DIALOG}"
     class:duk-accordion__action="{context === contexts.BUTTON.ACCORDION}"

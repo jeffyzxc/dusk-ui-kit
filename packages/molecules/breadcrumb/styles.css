@@ -1,6 +1,7 @@
 .duk-breadcrumb {
   @apply flex flex-row justify-items-start items-center text-xl space-x-3;
 
+  &__item,
   &__item a {
     @apply flex items-center justify-items-start space-x-3;
 

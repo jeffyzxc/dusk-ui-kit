@@ -1,6 +1,11 @@
+import { action } from "@storybook/addon-actions";
 import { variants, sizes, icons } from "@dusk-network/helpers";
 import DefaultView from "./storybook-views/Default.svelte";
 import Button from "@dusk-network/button";
+
+export const actionsData = {
+  onClick: action("onClick fired"),
+};
 
 export default {
   title: `Components/Molecules/Button`,
@@ -9,6 +14,7 @@ export default {
     layout: "centered",
   },
   argTypes: {
+    onClick: { action: "onClick" },
     variant: {
       control: {
         type: "select",
@@ -22,6 +28,12 @@ export default {
       },
     },
     circle: {
+      control: {
+        type: "boolean",
+        options: [true, false],
+      },
+    },
+    block: {
       control: {
         type: "boolean",
         options: [true, false],
@@ -50,6 +62,9 @@ const Template = (args) => ({
   props: {
     ...args,
   },
+  on: {
+    ...actionsData,
+  },
 });
 
 export const Basic = Template.bind({});
@@ -58,6 +73,7 @@ Basic.args = {
   size: sizes.BUTTON.LARGE,
   buttonText: "Hi I'm a Button",
   outline: false,
+  block: false,
   context: null,
 };
 

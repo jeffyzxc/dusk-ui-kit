@@ -1,11 +1,11 @@
 <script>
   import { getContext } from "svelte";
-  import { types, states, contexts } from "@dusk-network/helpers";
+  import { states, contexts } from "@dusk-network/helpers";
   import "./styles.css";
 
   export let value = null;
   export let disabled = false;
-  export let type = types.TEXT_FIELD.TEXT;
+  export let multiline = false;
   export let placeholder = "";
   export let state = states.TEXT_FIELD.DEFAULT;
   export let id;
@@ -14,14 +14,12 @@
 
   let context = getContext("DUK:text-field:context") || "";
 
-  $: isTextArea = type === types.TEXT_FIELD.MULTI_LINE;
-
   function toggleFocused() {
     focused = !focused;
   }
 </script>
 
-{#if isTextArea}
+{#if multiline}
   <textarea
     bind:value
     class="{$$props.class || ''} duk-text-field"
@@ -67,5 +65,6 @@
     on:keypress
     on:keyup
     placeholder="{placeholder || undefined}"
+    {...$$restProps}
   />
 {/if}

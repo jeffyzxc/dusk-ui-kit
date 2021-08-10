@@ -1,10 +1,10 @@
 <script>
-  import Button, { Label } from "@dusk-network/button";
+  import Search, { Label } from "@dusk-network/search";
   import Icon from "@dusk-network/icon";
 
   export let variant = null;
   export let size = null;
-  export let buttonText;
+  export let searchText;
   export let disabled = null;
   export let outline = null;
   export let icon = null;
@@ -19,7 +19,7 @@
   }
 </script>
 
-<Button
+<Search
   on:click="{handleClick}"
   variant="{variant}"
   size="{size}"
@@ -32,9 +32,9 @@
   {#if icon}
     <Icon name="{icon}" size="{size}" />
   {/if}
-  {#if buttonText}
-    <Label>{buttonText}</Label>
+  {#if searchText}
+    <Label>{searchText}</Label>
   {/if}
-</Button>
+</Search>
 
 <p>Clicked: {count}</p>

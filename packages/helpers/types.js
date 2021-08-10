@@ -11,7 +11,6 @@ export default {
     SPACIOUS: "spacious",
   },
   TEXT_FIELD: {
-    MULTI_LINE: "multi",
     TEXT: "text",
     PASSWORD: "password",
     EMAIL: "email",

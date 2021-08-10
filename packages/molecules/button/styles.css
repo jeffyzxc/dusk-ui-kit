@@ -5,6 +5,10 @@
 .duk-button {
   @apply transition transition-shadow duration-300 ease-in-out flex space-x-2 items-center border border-solid rounded-md text-sm leading-relaxed py-2 px-4 relative overflow-hidden shadow-marketing;
 
+  &--block {
+    @apply w-full;
+  }
+
   &--brand {
     @apply bg-indigo-500 text-white border-none;
 

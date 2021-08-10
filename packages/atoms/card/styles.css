@@ -19,7 +19,8 @@
   }
 
   &__footer {
-    @apply flex items-center justify-between text-xs px-6 py-2 leading-tight font-light;
+    @apply flex flex-col text-xs px-6 py-2 leading-tight font-light;
+    @apply sm:flex-row sm:items-center sm:justify-between;
 
     & p {
       @apply mb-0;
@@ -92,7 +93,7 @@
 
   &--warning {
     @apply bg-yellow-500 text-gray-900;
-    @apply dark:bg-blue-500 dark:text-gray-900;
+    @apply dark:bg-yellow-500 dark:text-gray-900;
 
     & > .duk-card__title {
       & h1,
@@ -106,7 +107,8 @@
   }
 
   &--danger {
-    @apply bg-red-900 text-gray-100;
+    @apply bg-red-500 text-gray-100;
+    @apply dark:bg-red-900 dark:text-gray-900;
 
     & > .duk-card__title {
       & h1,
