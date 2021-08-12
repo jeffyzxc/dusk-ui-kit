@@ -1,13 +1,8 @@
-<style lang="postcss">
-  .icon-collection-grid {
-    @apply grid grid-cols-4 gap-5 w-full;
-  }
-</style>
-
 <script>
   import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
   import { variants, icons, sizes } from "@dusk-network/helpers";
   import Icon from "@dusk-network/icon";
+  import "./storybook/styles.css";
 </script>
 
 <Meta
@@ -16,21 +11,21 @@
   parameters="{{ layout: 'centered' }}"
   argTypes="{{
     name: {
+      options: Object.values(icons),
       control: {
         type: 'select',
-        options: Object.values(icons),
       },
     },
     variant: {
+      options: Object.values(variants.ICON),
       control: {
         type: 'select',
-        options: Object.values(variants.ICON),
       },
     },
     size: {
+      options: Object.values(sizes.ICON),
       control: {
         type: 'radio',
-        options: Object.values(sizes.ICON),
       },
     },
     tooltip: {
@@ -53,7 +48,7 @@
 
 <Template let:args>
   {#if args.collection}
-    <div class="icon-collection-grid">
+    <div class="sb-icon-collection-grid">
       {#each Object.values(icons) as icon}
         <Icon name="{icon}" title="{icon}" variant="{args.variant}" size="{args.size}" />
       {/each}

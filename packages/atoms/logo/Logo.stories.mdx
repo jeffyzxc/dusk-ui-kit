@@ -1,5 +1,4 @@
-import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
-import Logo from "./storybook-views/Default.svelte";
+import { Meta } from "@storybook/addon-docs";
 
 <Meta title="Docs/Components/Atoms/Logo" />
 
@@ -15,8 +14,6 @@ Dusk Network's logo
   import { variants } from "@dusk-network/helpers";
   export let href;
 </script>
-//variants can be changed by changing 'DARK' to any of the variants options above.
-<div class="p-10 w-6/12 mx-auto">
-  <Logo variant="{variants.LOGO.DARK}" {href} style="width: 305px" />
-</div>
+
+<Logo />
 ```

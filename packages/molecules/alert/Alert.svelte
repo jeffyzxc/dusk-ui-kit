@@ -24,6 +24,8 @@
     role="alertdialog"
     aria-labelledby="{id}-title"
     aria-describedby="{id}-content"
+    on:click
+    on:mouseover
   >
     <div class="duk-alert__indicator">
       <slot name="icon" />

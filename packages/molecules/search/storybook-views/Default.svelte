@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
   import Search, { Label } from "@dusk-network/search";
   import Icon from "@dusk-network/icon";
 
@@ -37,4 +37,4 @@
   {/if}
 </Search>
 
-<p>Clicked: {count}</p>
+<p>Clicked: {count}</p> -->

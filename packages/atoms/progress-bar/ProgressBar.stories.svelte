@@ -10,9 +10,9 @@
   parameters="{{ layout: 'padded' }}"
   argTypes="{{
     variant: {
+      options: Object.values(variants.PROGRESS_BAR),
       control: {
         type: 'select',
-        options: Object.values(variants.PROGRESS_BAR),
       },
     },
     step: {

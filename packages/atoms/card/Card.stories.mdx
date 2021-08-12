@@ -1,52 +1,32 @@
-import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
-import CardView from "./storybook-views/Default.svelte";
+import { Meta } from "@storybook/addon-docs";
 
 <Meta title="Docs/Components/Atoms/Card" />
 
 # ⚛️ Card
 
-Cards are multi-purpose components, used to contain isolated content. It includes options for title, footer or title and action.
+Cards contain content and actions about a single subject.
 
 ## Variants
 
-Cards come in a variety of flavours that should be utilised according to the following instructions.
-
-| Variant   | Usage           |
-| --------- | --------------- |
-| Primary   | Primary cards.  |
-| Secondary | Secondary cards |
-| Info      | Info cards.     |
-| Success   | Success cards.  |
-| Warning   | Warning cards.  |
-| Danger    | Danger cards.   |
-
-## Size
-
-Cards assume no specific width to start, so they’ll be 100% wide unless otherwise stated.
-
-| Size  | Usage   |
-| ----- | ------- |
-| SMALL | Small.  |
-| DEFAULT  | Medium. |
-| LARGE | Large.  |
-
-## Actions
-
-Only in the case of using title and action which will add buttons within the card build.
-When the action required by a user has more than one option, always use one primary variant button for the most agreeable option, with secondary and info variants being available options.
-
-Negative action buttons will be on the left. Positive action buttons should be on the right.
+| Variant | Usage          |
+| ------- | -------------- |
+| Brand   | Brand cards.   |
+| CTA     | CTA cards      |
+| Info    | Info cards.    |
+| Success | Success cards. |
+| Warning | Warning cards. |
+| Danger  | Danger cards.  |
 
 ## Usage
 
 ```js
 <script>
   import Card, { Content } from "@dusk-network/card";
-  import { variants, sizes } from "@dusk-network/helpers";
+  import { variants } from "@dusk-network/helpers";
   export let content;
 </script>
 
-<Card variant="{variants.CARD.BRAND}" size="{sizes.CARD.DEFAULT}">
+<Card variant="{variants.CARD.BRAND}">
   <Content><p>{content}</p></Content>
 </Card>
 ```

@@ -9,7 +9,7 @@
 
   const dispatch = createEventDispatcher();
 
-  const setLimit = (event) => {
+  const handleSelect = (event) => {
     dispatch("limit", event.detail);
   };
 </script>
@@ -20,7 +20,7 @@
   aria-label="Data Limiting Navigation"
   ref="{ref}"
 >
-  <span>Showing</span>
-  <DropDown dropUp="{dropUp}" options="{options}" on:select="{setLimit}" />
-  <span>rows</span>
+  <slot name="labelLeft" />
+  <DropDown dropUp="{dropUp}" options="{options}" on:select="{handleSelect}" />
+  <slot name="labelRight" />
 </nav>

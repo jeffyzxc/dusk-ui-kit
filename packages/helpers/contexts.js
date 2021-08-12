@@ -21,11 +21,13 @@ export default {
     },
   },
   DROP_DOWN: {
+    CONTROL: "drop-down:control",
     MENU: "drop-down:menu",
   },
   ICON: {
     ALERT: "icon:alert",
     BUTTON: "icon:button",
+    CONTROL: "icon:control",
     LIST: "icon:list",
   },
   INPUT: {
@@ -41,10 +43,12 @@ export default {
   },
   LOGO: {
     NAVBAR: "logo:navbar",
+    FOOTER: "logo:footer",
   },
   MENU: {
-    DRAWER: "menu:drawer",
+    FOOTER: "menu:footer",
     NAVBAR: "menu:navbar",
+    PAGINATION: "menu:pagination",
   },
   TEXT_FIELD: {
     CONTROL: "text-field:control",
@@ -57,5 +61,14 @@ export default {
   },
   BREADCRUMB: {
     WIZARD: "breadcrumb:wizard",
+  },
+  TOGGLE: {
+    CONTROL: "toggle:control",
+  },
+  LIMITER: {
+    TABLE: "limiter:table",
+  },
+  PAGINATION: {
+    TABLE: "pagination:table",
   },
 };

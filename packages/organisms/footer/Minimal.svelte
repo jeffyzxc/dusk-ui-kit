@@ -1,21 +1,21 @@
 <script>
+  import { setContext } from "svelte";
+  import { contexts } from "@dusk-network/helpers";
   import Logo from "@dusk-network/logo/Logo.svelte";
   import LegalMenu from "./menu/LegalMenu.svelte";
   import SocialMediaMenu from "./menu/SocialMediaMenu.svelte";
 
   export let copyright;
   export let social;
+
+  setContext("DUK:logo:context", contexts.LOGO.FOOTER);
 </script>
 
 <div class="duk-footer__minimal" {...$$restProps}>
-  <Logo class="duk-footer__logo" href="https://dusk.network" />
+  <Logo href="https://dusk.network" />
   <p class="duk-footer__copyright">{copyright}</p>
-  <LegalMenu orientation="horizontal" separator="dot" class="duk-footer__legal-menu" />
+  <LegalMenu orientation="horizontal" />
   {#if social}
-    <SocialMediaMenu
-      orientation="horizontal"
-      class="duk-footer__social-media-menu"
-      social="{social}"
-    />
+    <SocialMediaMenu orientation="horizontal" social="{social}" />
   {/if}
 </div>

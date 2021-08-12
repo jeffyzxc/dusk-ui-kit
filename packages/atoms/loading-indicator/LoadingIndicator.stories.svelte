@@ -10,9 +10,9 @@
   parameters="{{ layout: 'centered' }}"
   argTypes="{{
     variant: {
+      options: Object.values(variants.LOADING_INDICATOR),
       control: {
         type: 'select',
-        options: Object.values(variants.LOADING_INDICATOR),
       },
     },
     duration: {
@@ -28,3 +28,4 @@
 </Template>
 
 <Story name="Single indicator at default duration" args="{{}}" />
+<Story name="Single indicator with 8 second duration" args="{{ duration: '8s' }}" />

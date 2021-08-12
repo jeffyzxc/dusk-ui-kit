@@ -1,18 +1,19 @@
 <script>
+  import { setContext } from "svelte";
   import Menu from "@dusk-network/menu/Menu.svelte";
-  import List from "@dusk-network/list/List.svelte";
-  import ListItem from "@dusk-network/list/Item.svelte";
+  import Item from "@dusk-network/menu/Item.svelte";
+  import { contexts } from "@dusk-network/helpers";
 
   export let apps;
   export let appName;
+
+  setContext("DUK:menu:context", contexts.MENU.NAVBAR);
 </script>
 
 <Menu orientation="vertical">
-  <List>
-    {#each apps as { title, url }}
-      <ListItem href="{url}" active="{appName === title}">
-        {title}
-      </ListItem>
-    {/each}
-  </List>
+  {#each apps as { title, url }}
+    <Item href="{url}" active="{appName === title}">
+      {title}
+    </Item>
+  {/each}
 </Menu>

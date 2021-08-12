@@ -2,8 +2,7 @@
   import Navbar from "../Navbar.svelte";
   import Menu from "@dusk-network/menu/Menu.svelte";
   import DropDown from "@dusk-network/drop-down/DropDown.svelte";
-  import List from "@dusk-network/list/List.svelte";
-  import Item from "@dusk-network/list/Item.svelte";
+  import Item from "@dusk-network/menu/Item.svelte";
   import Logo from "@dusk-network/logo/Logo.svelte";
   import Icon from "@dusk-network/icon/Icon.svelte";
 
@@ -17,50 +16,41 @@
   appName="{appName}"
   variant="{variant}"
   title="{title}"
-  class="absolute top-0 left-0"
   id="sb-example-nav"
   darkMode="{window.document.body.classList.contains('dark')}"
 >
-  <div slot="logo">
+  <svelte:fragment slot="logo">
     <Logo />
-  </div>
-  <div slot="networks">
+  </svelte:fragment>
+  <svelte:fragment slot="networks">
     <Menu orientation="horizontal" name="Network Navigation">
-      <List>
-        <Item>
-          <DropDown options="{['Testnet', 'Mainnet']}" />
-        </Item>
-      </List>
+      <Item>
+        <DropDown options="{['Testnet', 'Mainnet']}" />
+      </Item>
     </Menu>
-  </div>
-  <div slot="apps">
+  </svelte:fragment>
+  <svelte:fragment slot="apps">
     <Menu orientation="horizontal" name="Portal Navigation">
-      <List>
-        <Item href="javascript:;" active="{true}">Explorer</Item>
-        <Item href="javascript:;">Wallet</Item>
-        <Item href="javascript:;">Staking</Item>
-      </List>
+      <Item href="javascript:;" active="{true}">Explorer</Item>
+      <Item href="javascript:;">Wallet</Item>
+      <Item href="javascript:;">Staking</Item>
     </Menu>
-  </div>
-  <div slot="links">
+  </svelte:fragment>
+  <svelte:fragment slot="links">
     <Menu orientation="horizontal" name="Developer Links">
-      <List>
-        <Item href="https://shop.dusk.network">
-          <Icon name="tshirt-crew-outline" /><span>Shop</span>
-        </Item>
-        <Item href="https://shop.dusk.network">
+      <Item href="https://shop.dusk.network">
+        <Icon name="tshirt-crew-outline" /><span>Shop</span>
+      </Item>
+      <!-- <Item href="https://shop.dusk.network">
           <Icon name="store-outline" /><span>Buy Dusk</span>
-        </Item>
-      </List>
+        </Item> -->
     </Menu>
-  </div>
-  <div slot="navigation">
+  </svelte:fragment>
+  <svelte:fragment slot="navigation">
     <Menu orientation="horizontal" name="App Navigation">
-      <List>
-        <Item href="javascript:;">Chain Info</Item>
-        <Item href="javascript:;" active>Blocks</Item>
-        <Item href="javascript:;">Transactions</Item>
-      </List>
+      <Item href="javascript:;">Chain Info</Item>
+      <Item href="javascript:;" active>Blocks</Item>
+      <Item href="javascript:;">Transactions</Item>
     </Menu>
-  </div>
+  </svelte:fragment>
 </Navbar>

@@ -1,0 +1,4 @@
+.sb-icon-collection-grid {
+  @apply grid grid-cols-4 gap-5 w-full;
+  @apply sm:grid-cols-10 gap-10;
+}

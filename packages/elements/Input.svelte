@@ -4,7 +4,7 @@
   const forwardEvents = forwardEventsBuilder(current_component);
   export let use = [];
   export let type = "text";
-  export let id = "";
+  export let id = "__DUK-input" + Math.random().toString(36);
   export let placeholder = "";
   let className = "";
   export let checked = false;

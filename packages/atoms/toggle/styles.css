@@ -31,7 +31,7 @@
   }
 
   &__switch-wrapper {
-    @apply relative inline-block align-middle cursor-pointer select-none bg-transparent;
+    @apply relative inline-block align-middle rounded-full cursor-pointer select-none bg-transparent;
   }
 
   &__switch-track {

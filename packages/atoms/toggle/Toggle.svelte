@@ -6,7 +6,7 @@
   export let type = types.TOGGLE.SWITCH;
   export let name = "";
   export let checked = false;
-  export let id = "";
+  export let id = "__DUK-toggle" + Math.random().toString(36);
   export let value = false;
   export let disabled = false;
   export let selected = false;
@@ -32,6 +32,8 @@
         id="{id}"
         disabled="{disabled || undefined}"
         bind:checked
+        on:click
+        on:change
       />
       <span class="duk-toggle__checkbox-label-wrapper">
         <slot />
@@ -47,6 +49,8 @@
       id="{id}"
       disabled="{disabled || undefined}"
       selected="{selected || undefined}"
+      on:click
+      on:change
     />
     <label class="duk-toggle__label duk-toggle__label--button" for="{id}">
       <slot />
@@ -62,6 +66,8 @@
         id="{id}"
         disabled="{disabled || undefined}"
         selected="{selected || undefined}"
+        on:click
+        on:change
       />
       <span class="duk-toggle__radio-label-wrapper"> <slot /></span>
     </label>
@@ -77,6 +83,7 @@
         disabled="{disabled || undefined}"
         bind:checked
         on:click
+        on:change
       />
       <label for="{id}" class="duk-toggle__switch-track"></label>
       <label for="{id}" class="duk-toggle__switch-thumb"></label>

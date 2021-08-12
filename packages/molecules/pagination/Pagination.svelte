@@ -1,10 +1,12 @@
 <script>
-  import { createEventDispatcher } from "svelte";
-  import Button from "@dusk-network/button/Button.svelte"; // TODO remove dependency and roll custom buttons in scope here
+  // FIXME remove Button (molecule) dependency and add context for menu
+  // FIXME This uses a Menu (molecule) while also being used by Table (organism)
+  import { createEventDispatcher, setContext, getContext } from "svelte";
+  import Button from "@dusk-network/button/Button.svelte";
   import Icon from "@dusk-network/icon/Icon.svelte";
-  import List from "@dusk-network/list/List.svelte";
-  import Item from "@dusk-network/list/Item.svelte";
   import Menu from "@dusk-network/menu/Menu.svelte";
+  import Item from "@dusk-network/menu/Item.svelte";
+  import { contexts } from "@dusk-network/helpers";
   import "./styles.css";
 
   export let ref = "";
@@ -13,6 +15,7 @@
   export let pageNumber;
 
   const dispatch = createEventDispatcher();
+  const context = getContext("DUK:pagination:context");
 
   const slice = (arr, page) => {
     if (page < 5) {
@@ -30,10 +33,13 @@
 
   $: pageCount = Array.from(Array(Math.ceil(items.length / itemsPerPage)).keys());
   $: buttons = slice(pageCount, $pageNumber);
+
+  setContext("DUK:menu:context", contexts.MENU.PAGINATION);
 </script>
 
 <nav
   class="{$$props.class || ''} duk-pagination"
+  class:duk-pagination--table="{context === contexts.PAGINATION.TABLE}"
   role="navigation"
   aria-label="Pagination Navigation"
   ref="{ref}"
@@ -46,47 +52,45 @@
     <Icon name="backspace-outline" />
   </Button>
   <Menu class="duk-pagination__menu" orientation="horizontal">
-    <List>
-      <Item>
-        <Button
-          class="duk-pagination__button"
-          active="{$pageNumber === 1 || undefined}"
-          on:click="{() => setPage(1)}">1</Button
-        >
+    <Item>
+      <Button
+        class="duk-pagination__button"
+        active="{$pageNumber === 1 || undefined}"
+        on:click="{() => setPage(1)}">1</Button
+      >
+    </Item>
+    {#if pageCount.length > 6 && $pageNumber >= 5}
+      <Item class="duk-pagination__ellipsis">
+        <span>…</span>
       </Item>
-      {#if pageCount.length > 6 && $pageNumber >= 5}
-        <Item class="duk-pagination__ellipsis">
-          <span>…</span>
-        </Item>
-      {/if}
-      {#each buttons as buttonNumber}
-        {#if buttonNumber > 0 && buttonNumber < pageCount.length - 1}
-          <Item>
-            <Button
-              class="duk-pagination__button"
-              active="{$pageNumber === buttonNumber + 1}"
-              on:click="{() => setPage(buttonNumber + 1)}">{buttonNumber + 1}</Button
-            >
-          </Item>
-        {/if}
-      {/each}
-      {#if pageCount.length > 6 && $pageNumber <= pageCount.length - 3}
-        <Item class="duk-pagination__ellipsis">
-          <span>…</span>
-        </Item>
-      {/if}
-      {#if pageCount.length > 1}
+    {/if}
+    {#each buttons as buttonNumber}
+      {#if buttonNumber > 0 && buttonNumber < pageCount.length - 1}
         <Item>
           <Button
             class="duk-pagination__button"
-            active="{$pageNumber === pageCount.length}"
-            on:click="{() => setPage(pageCount.length)}"
+            active="{$pageNumber === buttonNumber + 1}"
+            on:click="{() => setPage(buttonNumber + 1)}">{buttonNumber + 1}</Button
           >
-            {pageCount.length}
-          </Button>
         </Item>
       {/if}
-    </List>
+    {/each}
+    {#if pageCount.length > 6 && $pageNumber <= pageCount.length - 3}
+      <Item class="duk-pagination__ellipsis">
+        <span>…</span>
+      </Item>
+    {/if}
+    {#if pageCount.length > 1}
+      <Item>
+        <Button
+          class="duk-pagination__button"
+          active="{$pageNumber === pageCount.length}"
+          on:click="{() => setPage(pageCount.length)}"
+        >
+          {pageCount.length}
+        </Button>
+      </Item>
+    {/if}
   </Menu>
   <Button
     class="duk-pagination__button duk-pagination__button--next"

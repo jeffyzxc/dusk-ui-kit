@@ -1,5 +1,4 @@
-import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
-import TextField from "./storybook-views/Default.svelte";
+import { Meta } from "@storybook/addon-docs";
 
 <Meta title="Docs/Components/Atoms/Text Field" />
 
@@ -9,27 +8,22 @@ A text box, text field or text entry box is a control element of a graphical use
 
 ## Types
 
-| Type       | Usage                                                       |
-| ---------- | ----------------------------------------------------------- |
-| MULTI_LINE | Allows to create a multi lines text.                        |
-| TEXT       | Allows to entre a large number of characters.               |
-| PASSWORD   | restricts the text field to a certain validations formulas. |
-| EMAIL      | restricts the text field to a certain validations formulas. |
-| NUMBER     | restricts the text field to digits only.                    |
-| TELEPHONE  | restricts the text field to a certain digits formula.       |
+| Type      | Usage                                                       |
+| --------- | ----------------------------------------------------------- |
+| TEXT      | Allows to entre a large number of characters.               |
+| PASSWORD  | restricts the text field to a certain validations formulas. |
+| EMAIL     | restricts the text field to a certain validations formulas. |
+| NUMBER    | restricts the text field to digits only.                    |
+| TELEPHONE | restricts the text field to a certain digits formula.       |
 
 ## States
 
 | Stats   | Usage                                    |
 | ------- | ---------------------------------------- |
-| DEFAULT    | Applies a standard styling on the label. |
+| DEFAULT | Applies a standard styling on the label. |
 | SUCCESS | Applies a success styling on the label.  |
 | WARNING | Applies a warining styling on the label. |
 | DANGER  | Applies a danger styling on the label.   |
-
-## Action
-
-Text-fields allow users to type in them based on the types above.
 
 ## Usage
 
@@ -41,5 +35,5 @@ Text-fields allow users to type in them based on the types above.
   const disabled=false;
 </script>
 
-<TextField variant="{variants.TEXT_FIELD.DARK}" state="{states.TEXT_FIELD.SUCCESS}" type="{types.TEXT_FIELD.TEXT}" {placeholder} {disabled} />
+<TextField state="{states.TEXT_FIELD.SUCCESS}" type="{types.TEXT_FIELD.TEXT}" {placeholder} {disabled} />
 ```

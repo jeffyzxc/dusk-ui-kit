@@ -1,3 +1,25 @@
 .duk-logo {
   @apply inline-block fill-current transition-all duration-700;
+
+  &--footer {
+    @apply p-0 transform duration-200 ease-in-out transition-all flex items-center justify-center;
+    @apply lg:justify-start;
+
+    &:hover {
+      @apply scale-105;
+    }
+
+    & svg {
+      @apply h-6 w-auto;
+    }
+  }
+
+  &--navbar {
+    @apply block h-full ml-5;
+    @apply lg:mb-3 lg:ml-0;
+
+    & > svg {
+      @apply block fill-current h-6 w-auto;
+    }
+  }
 }

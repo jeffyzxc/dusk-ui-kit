@@ -12,7 +12,7 @@
   export let apps;
   export let links;
   export let appName;
-  export let id;
+  export let id = "__DUK-navbar" + Math.random().toString(36);
   export let darkMode = false;
 
   darkMode = !darkMode;
@@ -36,7 +36,7 @@
       {#if $$slots.logo}
         <slot name="logo" />
       {:else}
-        <Logo class="duk-navbar__logo" href="https://dusk.network" />
+        <Logo href="https://dusk.network/" />
       {/if}
       {#if title}
         <h1 class="duk-navbar__heading">{title}</h1>
@@ -58,11 +58,15 @@
       {:else}
         <LinksMenu links="{links}" />
       {/if}
-      <A11yMenu darkMode="{darkMode}" />
+      {#if $$slots.a11y}
+        <slot name="a11y" />
+      {:else}
+        <A11yMenu darkMode="{darkMode}" />
+      {/if}
     </div>
     <div id="{id}-content" class="duk-navbar__collapse">
       <button
-        id="__DUK-navbar-toggle"
+        id="{id}-navbar-toggle"
         aria-controls="{id}-content"
         aria-expanded="{expanded}"
         aria-label="Toggle navigation"

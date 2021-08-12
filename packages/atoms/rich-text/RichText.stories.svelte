@@ -12,9 +12,9 @@
   parameters="{{ layout: 'padded' }}"
   argTypes="{{
     size: {
+      options: Object.values(sizes.RICH_TEXT),
       control: {
         type: 'radio',
-        options: Object.values(sizes.RICH_TEXT),
       },
     },
     markdown: {

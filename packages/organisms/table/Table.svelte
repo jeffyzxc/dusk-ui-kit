@@ -1,11 +1,12 @@
 <script>
-  import { options } from "./stores/options.js";
-  import { pageNumber, activeRow } from "./stores/state.js";
-  import { table as dataTable } from "./table.js";
+  import { onMount, onDestroy, setContext } from "svelte";
   // import Search from './components/Search.svelte'
   import Pagination from "@dusk-network/pagination/Pagination.svelte";
   import Limiter from "@dusk-network/limiter/Limiter.svelte";
-  import { onMount, onDestroy } from "svelte";
+  import { contexts } from "@dusk-network/helpers";
+  import { options } from "./stores/options.js";
+  import { pageNumber, activeRow } from "./stores/state.js";
+  import { table as dataTable } from "./table.js";
   import "./styles.css";
 
   export let data = [];
@@ -29,9 +30,11 @@
     activeRow.set(null);
     settings = { ...settings, rowPerPage: event.detail };
   };
+
+  setContext("DUK:limiter:context", contexts.LIMITER.TABLE);
+  setContext("DUK:pagination:context", contexts.PAGINATION.TABLE);
 </script>
 
-active row: {$activeRow}
 <div class="{$$props.class || ''} duk-table">
   <div class="duk-table__title">
     <slot name="title" />

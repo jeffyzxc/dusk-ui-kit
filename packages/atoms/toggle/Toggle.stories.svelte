@@ -1,41 +1,3 @@
-<!-- import { variants, types } from "@dusk-network/helpers";
-import Default from "./storybook-views/Default.svelte";
-import Toggle from "@dusk-network/toggle";
-
-export default {
-  title: `Components/Atoms/Toggle`,
-  component: Toggle,
-  parameters: {
-    layout: "centered",
-  },
-  argTypes: {
-    variant: {
-      control: {
-        type: "select",
-        options: Object.values(variants.TOGGLE),
-      },
-    },
-    type: {
-      control: {
-        type: "radio",
-        options: Object.values(types.TOGGLE),
-      },
-    },
-  },
-};
-
-const Template = (args) => ({
-  Component: Default,
-  props: {
-    ...args,
-  },
-});
-
-export const Basic = Template.bind({});
-Basic.args = {
-  variant: variants.TOGGLE.DEFAULT,
-  type: types.TOGGLE.SWITCH,
-}; -->
 <script>
   import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
   import { types, variants } from "@dusk-network/helpers";
@@ -47,10 +9,22 @@ Basic.args = {
   component="{Toggle}"
   parameters="{{ layout: 'centered' }}"
   argTypes="{{
+    onChange: {
+      action: 'onChange',
+      table: {
+        disable: true,
+      },
+    },
+    onClick: {
+      action: 'onClick',
+      table: {
+        disable: true,
+      },
+    },
     variant: {
+      options: Object.values(variants.TOGGLE),
       control: {
         type: 'select',
-        options: Object.values(variants.TOGGLE),
       },
     },
     name: {
@@ -94,8 +68,12 @@ Basic.args = {
         name="{args.type === types.TOGGLE.BUTTON || args.type === types.TOGGLE.RADIO
           ? `tog`
           : `tog_${i}`}"
-        id="tog_{i}">Example {args.type}</Toggle
+        id="tog_{i}"
+        on:change="{args.onChange}"
+        on:click="{args.onClick}"
       >
+        Example {args.type}
+      </Toggle>
     {/each}
   </Group>
 </Template>

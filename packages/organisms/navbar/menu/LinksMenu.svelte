@@ -1,21 +1,22 @@
 <script>
+  import { setContext } from "svelte";
   import Icon from "@dusk-network/icon/Icon.svelte";
   import Menu from "@dusk-network/menu/Menu.svelte";
-  import List from "@dusk-network/list/List.svelte";
-  import ListItem from "@dusk-network/list/Item.svelte";
+  import Item from "@dusk-network/menu/Item.svelte";
+  import { contexts } from "@dusk-network/helpers";
 
   export let links;
+
+  setContext("DUK:menu:context", contexts.MENU.NAVBAR);
 </script>
 
 <Menu orientation="vertical">
-  <List>
-    {#each links as { title, url, icon }}
-      <ListItem href="{url}" target="{url.lastIndexOf('dusk.network') === -1 && '_blank'}">
-        {#if icon}
-          <Icon name="{icon}" />
-        {/if}
-        <span>{title}</span>
-      </ListItem>
-    {/each}
-  </List>
+  {#each links as { title, url, icon }}
+    <Item href="{url}" target="{url.lastIndexOf('dusk.network') === -1 && '_blank'}">
+      {#if icon}
+        <Icon name="{icon}" />
+      {/if}
+      <span>{title}</span>
+    </Item>
+  {/each}
 </Menu>

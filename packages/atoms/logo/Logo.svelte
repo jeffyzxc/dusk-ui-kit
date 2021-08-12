@@ -10,7 +10,8 @@
 <div
   bind:this="{element}"
   class="{$$props.class || ''} duk-logo"
-  class:duk-navbar__logo="{context === contexts.LOGO.NAVBAR}"
+  class:duk-logo--navbar="{context === contexts.LOGO.NAVBAR}"
+  class:duk-logo--footer="{context === contexts.LOGO.FOOTER}"
 >
   <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 291.36 63.27">
     <path

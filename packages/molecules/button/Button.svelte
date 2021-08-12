@@ -5,13 +5,12 @@
 
   export let value = false;
   export let variant = variants.BUTTON.BRAND;
-  export let outline = false;
   export let size = sizes.BUTTON.DEFAULT;
-  export let href = null;
+  export let outline = false;
   export let circle = false;
-  export let disabled = false;
-  export let active = false;
   export let block = false;
+  export let href = null;
+  export let disabled = false;
 
   const context = getContext("DUK:button:context");
 
@@ -33,7 +32,6 @@
       class:duk-button--large="{size === sizes.BUTTON.LARGE}"
       class:duk-button--outline="{outline}"
       class:duk-button--circle="{circle}"
-      class:duk-button--active="{active}"
       class:duk-button--block="{block}"
       class:duk-card-action-button="{context === contexts.BUTTON.ACTION.CARD}"
       class:duk-dialog-action-button="{context === contexts.BUTTON.ACTION.DIALOG}"
@@ -42,7 +40,6 @@
       on:click="{() => (value = !value)}"
       on:click
       on:mouseover
-      on:*
     >
       <slot />
     </button>
@@ -60,7 +57,6 @@
     class:duk-button--large="{size === sizes.BUTTON.LARGE}"
     class:duk-button--outline="{outline}"
     class:duk-button--circle="{circle}"
-    class:duk-button--active="{active}"
     class:duk-button--block="{block}"
     class:duk-card-action-button="{context === contexts.BUTTON.ACTION.CARD}"
     class:duk-dialog-action-button="{context === contexts.BUTTON.ACTION.DIALOG}"
@@ -69,7 +65,6 @@
     on:click="{() => (value = !value)}"
     on:click
     on:mouseover
-    on:*
   >
     <slot />
   </button>

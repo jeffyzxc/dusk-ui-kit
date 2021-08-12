@@ -19,20 +19,7 @@
   }
 
   & a {
-    @apply text-white;
-  }
-
-  &__logo {
-    @apply p-0 transform duration-200 ease-in-out transition-all flex items-center justify-center;
-    @apply lg:justify-start;
-
-    &:hover {
-      @apply scale-105;
-    }
-
-    & svg {
-      @apply h-6 w-auto;
-    }
+    @apply text-white underline;
   }
 
   &__title {
@@ -55,17 +42,15 @@
       margin-left: auto !important;
     }
 
-    & > .duk-list {
+    & > .duk-menu__list {
       @apply lg:space-x-3;
     }
 
-    &__item {
-      & .duk-icon {
-        @apply p-0 transform duration-200 ease-in-out transition-all;
+    & .duk-icon {
+      @apply p-0 transform duration-200 ease-in-out transition-all;
 
-        &:hover {
-          @apply rotate-360;
-        }
+      &:hover {
+        @apply rotate-360;
       }
     }
   }
@@ -75,8 +60,12 @@
       @apply pr-5;
     }
 
-    &__item > .duk-list__item__wrapper {
+    &__item > .duk-menu__item-wrapper {
       @apply p-0 mb-4;
     }
+  }
+
+  &__newsletter {
+    @apply block;
   }
 }

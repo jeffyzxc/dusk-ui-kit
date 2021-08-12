@@ -24,10 +24,6 @@
   &__brand {
     @apply flex flex-col items-start pt-5;
     @apply lg:flex-grow lg:flex-row lg:items-center lg:space-x-6 lg:pl-0 lg:pt-0;
-
-    & svg {
-      @apply block fill-current h-6 w-auto;
-    }
   }
 
   &__heading {
@@ -36,20 +32,12 @@
   }
 
   &__collapse {
-    @apply absolute;
+    @apply absolute top-5 right-5;
     @apply lg:hidden;
-
-    right: 1rem;
-    top: 1rem;
 
     & button {
       @apply flex items-center;
     }
-  }
-
-  &__logo {
-    @apply block h-full ml-5;
-    @apply lg:mb-3 lg:ml-0;
   }
 
   &__navigation {
@@ -60,26 +48,27 @@
       @apply mt-4;
       @apply lg:space-x-5 lg:mt-0 lg:items-end;
 
-      & .duk-list {
+      & .duk-menu__list {
         @apply flex flex-col space-y-0 space-x-0;
         @apply lg:flex-row lg:flex-1 lg:justify-end lg:mb-0 lg:space-y-0 lg:space-x-5;
 
-        &__item {
+        & .duk-menu__item {
           @apply py-0 pl-0 leading-relaxed w-full;
           @apply lg:mb-0 lg:pr-0 lg:w-auto;
 
-          & .duk-list__item-wrapper {
-            &:is(a):not(.duk-list__item-wrapper--active) {
+          & .duk-menu__item-wrapper {
+            &:is(a):not(.duk-menu__item-wrapper--active) {
               @apply opacity-80;
             }
           }
+
           &--active {
             @apply order-last font-semibold;
             @apply lg:order-none;
           }
         }
 
-        &__item-wrapper {
+        & .duk-menu__item-wrapper {
           @apply px-6 py-4;
           @apply lg:px-5 lg:pt-2 lg:rounded-t lg:border-l lg:border-t lg:border-r lg:border-transparent;
 
@@ -96,11 +85,11 @@
           @apply lg:opacity-80 lg:ease-in-out lg:transition lg:transition-all lg:duration-1000;
         }
 
-        & a.duk-list__item-wrapper--active:hover {
+        & a.duk-menu__item-wrapper--active:hover {
           @apply opacity-100 ease-in-out transition transition-all duration-1000;
         }
 
-        & a:not(.duk-list__item-wrapper--active) {
+        & a:not(.duk-menu__item-wrapper--active) {
           &:hover {
             @apply opacity-100 transition transition-all ease-in-out duration-1000 border-indigo-300 border-dashed;
           }
@@ -109,9 +98,11 @@
     }
 
     &--secondary {
-      & .duk-list {
-        @apply flex flex-col space-y-5 space-x-0;
-        @apply lg:flex-row lg:flex-1 lg:justify-end lg:mb-0 lg:space-y-0 lg:space-x-5;
+      & .duk-menu {
+        &__list {
+          @apply flex flex-col space-y-5 space-x-0;
+          @apply lg:flex-row lg:flex-1 lg:justify-end lg:mb-0 lg:space-y-0 lg:space-x-5;
+        }
 
         &__item {
           @apply py-0 pl-0 leading-relaxed w-full;

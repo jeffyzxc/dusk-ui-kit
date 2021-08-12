@@ -13,9 +13,9 @@
   parameters="{{ layout: 'padded' }}"
   argTypes="{{
     variant: {
+      options: Object.values(variants.CARD),
       control: {
         type: 'select',
-        options: Object.values(variants.CARD),
       },
     },
   }}"
