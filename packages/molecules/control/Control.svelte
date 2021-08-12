@@ -3,7 +3,6 @@
   import { setContext } from "svelte";
   import { states, contexts, types, icons } from "@dusk-network/helpers";
   import Icon from "@dusk-network/icon/Icon.svelte";
-  import Label from "@dusk-network/elements/Label.svelte";
   import "./styles.css";
 
   export let type = types.CONTROL.STACKED;
@@ -30,7 +29,7 @@
 >
   <div class="duk-control__wrapper">
     {#if label}
-      <Label control="{id}" class="duk-control__label">{label}</Label>
+      <label for="{id}" class="duk-control__label">{label}</label>
     {/if}
     <slot />
   </div>
