@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/alert",
-  "version": "2.0.0-rc.34",
+  "version": "2.0.0-rc.35",
   "description": "Dusk UI Kit - Alert",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -15,10 +15,10 @@
     "test": "echo \"LOL\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/card": "^2.0.0-rc.34",
-    "@dusk-network/elements": "^2.0.0-rc.34",
-    "@dusk-network/helpers": "^2.0.0-rc.34",
-    "@dusk-network/icon": "^2.0.0-rc.34"
+    "@dusk-network/card": "^2.0.0-rc.35",
+    "@dusk-network/elements": "^2.0.0-rc.35",
+    "@dusk-network/helpers": "^2.0.0-rc.35",
+    "@dusk-network/icon": "^2.0.0-rc.35"
   },
   "peerDependencies": {
     "svelte": "3.38.2"
