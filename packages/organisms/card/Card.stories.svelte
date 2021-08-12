@@ -8,7 +8,7 @@
 </script>
 
 <Meta
-  title="Components/Atoms/Card"
+  title="Components/Organisms/Card"
   component="{Card}"
   parameters="{{ layout: 'padded' }}"
   argTypes="{{
