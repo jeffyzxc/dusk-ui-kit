@@ -26,6 +26,7 @@
     aria-describedby="{id}-content"
     on:click
     on:mouseover
+    on:focus
   >
     <div class="duk-alert__indicator">
       <slot name="icon" />

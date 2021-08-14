@@ -40,6 +40,7 @@
       on:click="{() => (value = !value)}"
       on:click
       on:mouseover
+      on:focus
     >
       <slot />
     </button>
@@ -65,6 +66,7 @@
     on:click="{() => (value = !value)}"
     on:click
     on:mouseover
+    on:focus
   >
     <slot />
   </button>
