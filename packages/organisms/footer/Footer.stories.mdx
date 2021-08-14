@@ -1,30 +1,10 @@
 import { Story, Preview, Meta } from "@storybook/addon-docs";
-import Footer from "./storybook-views/Default.svelte";
 
 <Meta title="Docs/Components/Organisms/Footer" />
 
 # ⚛️ Footer
 
 Provides a standard website or app footer.
-
-## Tones
-
-| Value     | Description                              |
-| --------- | ---------------------------------------- |
-| app       | Applies styling for an app context.      |
-| marketing | Applies styling for a marketing context. |
-
-## Variants
-
-| Variant | Usage                             |
-| ------- | --------------------------------- |
-| BRAND   | Applies a brand styling.          |
-| CTA     | Applies a call to action styling. |
-| Success | Applies a success styling.        |
-| Warning | Applies a warning styling.        |
-| Danger  | Applies a danger styling.         |
-| LIGHT   | Applies a light styling.          |
-| DARK    | Applies a dark styling.           |
 
 ## Types
 
@@ -38,7 +18,7 @@ Provides a standard website or app footer.
 ```js
 <script>
   import Footer from "@dusk-network/footer";
-  import { variants, types } from "@dusk-network/helpers";
+  import { types } from "@dusk-network/helpers";
   const social = [
   {
     title: "CoinMarketCap",

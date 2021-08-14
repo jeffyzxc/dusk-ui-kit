@@ -1,4 +1,5 @@
 <script>
+  //TODO Refactor this into a simple helper component.
   import { current_component } from "svelte/internal";
   import { forwardEventsBuilder, exclude, useActions, types, states } from "@dusk-network/helpers";
   import "./styles.css";

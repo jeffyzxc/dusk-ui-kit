@@ -24,6 +24,8 @@ locis telae canities pro Trachasque fragilesque concubitus orbe, pondus procul.
 Ad queritur fecit blandarum [terribilem venisset versabat](http://nec.net/)
 vulnere exibat.
 
+![alt text](https://picsum.photos/500/300/?blur "Placeholder image")
+
 - Sine magnoque flores miracula ignorans dextra obstas
 - Patulas quodque excidit at ferox ubi Venilia
 - Duplicataque heros placuisse materno telo tum
