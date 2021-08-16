@@ -1,6 +1,8 @@
 .env
 .DS_Store
-.yarn/
+.yarn/*
+!/.yarn/plugins
+!/.yarn/releases
 .yarnrc
 .vscode/
 node_modules/
