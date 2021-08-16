@@ -19,7 +19,6 @@ The components within the UI Kit are organised according to the principles of [A
 ```bash
 $ npm i -D @dusk-network/styles
 $ npm i -D @dusk-network/button
-$ npm i -D @dusk-network/list
 $ npm i -D @dusk-network/navbar
 ...
 ```

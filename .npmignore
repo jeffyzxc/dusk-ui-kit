@@ -1,4 +1,6 @@
 **/*.stories.js
 **/*.md
+**/*.mdx
 **/*.test.js
-**/storybook-views/
+**/*.mock.js
+**/storybook/

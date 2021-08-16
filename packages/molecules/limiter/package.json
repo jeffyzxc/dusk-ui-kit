@@ -12,13 +12,13 @@
   },
   "author": "Kieran Hall <kieran@dusk-network.network>",
   "scripts": {
-    "test": "echo \"LOL\" && exit 1"
+    "test": "echo \"Work in progress...\" && exit 1"
   },
   "dependencies": {
     "@dusk-network/drop-down": "^2.0.0-rc.35",
     "@dusk-network/styles": "^2.0.0-rc.35"
   },
   "peerDependencies": {
-    "svelte": "3.38.2"
+    "svelte": "3.42.1"
   }
 }

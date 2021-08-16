@@ -12,6 +12,11 @@
   title="Components/Molecules/Control"
   parameters="{{ layout: 'centered' }}"
   component="{Control}"
+  args="{{
+    type: 'default',
+    message: 'This is a simple Alert message.',
+    label: 'Control label',
+  }}"
   argTypes="{{
     onClick: {
       action: 'onClick',
@@ -32,7 +37,6 @@
       },
     },
     type: {
-      defaultValue: 'default',
       control: {
         type: 'radio',
         options: Object.values(types.CONTROL),
@@ -44,13 +48,11 @@
       },
     },
     message: {
-      defaultValue: 'This is a default message',
       control: {
         type: 'text',
       },
     },
     label: {
-      defaultValue: 'Control label',
       control: {
         type: 'text',
       },

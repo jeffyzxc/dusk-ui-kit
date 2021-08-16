@@ -21,7 +21,6 @@
     },
     selectedIndex: {
       name: 'selected index',
-      defaultValue: 0,
       control: {
         type: 'number',
       },

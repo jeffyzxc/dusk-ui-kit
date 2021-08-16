@@ -8,6 +8,10 @@
   title="Components/Molecules/Limiter"
   component="{Limiter}"
   parameters="{{ layout: 'centered' }}"
+  args="{{
+    dropUp: true,
+    items: data,
+  }}"
   argTypes="{{
     onLimit: {
       action: 'onLimit',
@@ -16,7 +20,6 @@
       },
     },
     items: {
-      defaultValue: data,
       control: {
         type: 'object',
       },
@@ -32,7 +35,6 @@
       },
     },
     dropUp: {
-      defaultValue: true,
       control: {
         type: 'boolean',
       },

@@ -9,6 +9,12 @@
   title="Components/Molecules/Button"
   parameters="{{ layout: 'centered' }}"
   component="{Button}"
+  args="{{
+    circle: false,
+    disabled: false,
+    outline: false,
+    size: 'default',
+  }}"
   argTypes="{{
     onClick: {
       action: 'onClick',
@@ -29,26 +35,22 @@
       },
     },
     size: {
-      defaultValue: 'default',
       control: {
         type: 'radio',
         options: Object.values(sizes.BUTTON),
       },
     },
     circle: {
-      defaultValue: false,
       control: {
         type: 'boolean',
       },
     },
     outline: {
-      defaultValue: false,
       control: {
         type: 'boolean',
       },
     },
     disabled: {
-      defaultValue: false,
       control: {
         type: 'boolean',
       },

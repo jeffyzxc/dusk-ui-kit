@@ -11,6 +11,9 @@
   title="Components/Molecules/Alert"
   component="{Alert}"
   parameters="{{ layout: 'centered' }}"
+  args="{{
+    value: true,
+  }}"
   argTypes="{{
     onClick: {
       action: 'onClick',
@@ -28,13 +31,6 @@
       control: {
         type: 'select',
         options: Object.values(variants.ALERT),
-      },
-    },
-    value: {
-      name: 'show alert',
-      defaultValue: true,
-      control: {
-        type: 'boolean',
       },
     },
     dismissable: {
