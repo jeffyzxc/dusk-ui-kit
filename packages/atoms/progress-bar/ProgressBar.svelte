@@ -1,6 +1,6 @@
 <script>
   import { getContext } from "svelte";
-  import { variants, contexts } from "@dusk-network/helpers";
+  import { variants, contexts } from "@dusk-network/helpers/index.js";
   import "./styles.css";
 
   export let variant = variants.PROGRESS_BAR.SUCCESS;

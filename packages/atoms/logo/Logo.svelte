@@ -1,6 +1,6 @@
 <script>
   import { getContext } from "svelte";
-  import { contexts } from "@dusk-network/helpers";
+  import { contexts } from "@dusk-network/helpers/index.js";
   import "./styles.css";
 
   let element;

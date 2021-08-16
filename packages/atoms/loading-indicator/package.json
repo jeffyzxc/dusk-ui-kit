@@ -10,7 +10,8 @@
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
     "directory": "packages/atoms/loading-indicator"
   },
-  "author": "Kieran Hall <kieran@dusk-network.network>",
+  "type": "module",
+  "module": "index.js",
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
   },

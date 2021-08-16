@@ -1,6 +1,6 @@
 <script>
   import { setContext } from "svelte";
-  import { contexts } from "@dusk-network/helpers";
+  import { contexts } from "@dusk-network/helpers/index.js";
   import Logo from "@dusk-network/logo/Logo.svelte";
   import LegalMenu from "./menu/LegalMenu.svelte";
   import SocialMediaMenu from "./menu/SocialMediaMenu.svelte";

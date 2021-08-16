@@ -3,7 +3,7 @@
   // import Search from './components/Search.svelte'
   import Pagination from "@dusk-network/pagination/Pagination.svelte";
   import Limiter from "@dusk-network/limiter/Limiter.svelte";
-  import { contexts } from "@dusk-network/helpers";
+  import { contexts } from "@dusk-network/helpers/index.js";
   import { options } from "./stores/options.js";
   import { pageNumber, activeRow } from "./stores/state.js";
   import { table as dataTable } from "./table.js";

@@ -1,7 +1,7 @@
 <script>
   import { current_component } from "svelte/internal";
   import GdprBanner from "@beyonk/gdpr-cookie-consent-banner";
-  import { forwardEventsBuilder, exclude, useActions } from "@dusk-network/helpers";
+  import { forwardEventsBuilder, exclude, useActions } from "@dusk-network/helpers/index.js";
   import "./styles.css";
 
   let className = "";
@@ -20,10 +20,12 @@
   use:forwardEvents
   id="{id}"
   class="duk-cookie-banner {className}"
-  {...exclude($$props, ['use', 'class', 'config', 'description', 'cookie'])}>
+  {...exclude($$props, ["use", "class", "config", "description", "cookie"])}
+>
   <GdprBanner
     cookieName="{cookie}"
     cookieConfig="{config.cookieConfig}"
     choices="{config.choices}"
-    description="{description}" />
+    description="{description}"
+  />
 </aside>

@@ -1,6 +1,6 @@
 <script>
   import { getContext, setContext, onMount } from "svelte";
-  import { contexts, variants } from "@dusk-network/helpers";
+  import { contexts, variants } from "@dusk-network/helpers/index.js";
 
   export let variant = variants.TABLE.DEFAULT;
   export let cols = "1";

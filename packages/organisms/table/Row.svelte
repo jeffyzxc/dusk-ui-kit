@@ -1,7 +1,7 @@
 <script>
   import { setContext } from "svelte";
   import { slide } from "svelte/transition";
-  import { contexts, variants } from "@dusk-network/helpers";
+  import { contexts, variants } from "@dusk-network/helpers/index.js";
   import { activeRow } from "./stores/state.js";
 
   export let type = null;

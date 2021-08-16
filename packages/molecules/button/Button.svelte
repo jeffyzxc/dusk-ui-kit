@@ -1,6 +1,6 @@
 <script>
   import { setContext, getContext } from "svelte";
-  import { variants, sizes, contexts } from "@dusk-network/helpers";
+  import { variants, sizes, contexts } from "@dusk-network/helpers/index.js";
   import "./styles.css";
 
   export let value = false;

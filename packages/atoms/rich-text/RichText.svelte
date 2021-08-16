@@ -1,5 +1,5 @@
 <script>
-  import { sizes } from "@dusk-network/helpers";
+  import { sizes } from "@dusk-network/helpers/index.js";
   import * as marked from "marked";
   import "./styles.css";
 

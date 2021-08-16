@@ -10,11 +10,13 @@
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
     "directory": "packages/organisms/accordion"
   },
-  "author": "Kieran Hall <kieran@dusk-network.network>",
+  "type": "module",
+  "module": "index.js",
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
   },
   "dependencies": {
+    "@dusk-network/button": "^2.0.0-rc.36",
     "@dusk-network/helpers": "^2.0.0-rc.36",
     "@dusk-network/icon": "^2.0.0-rc.36",
     "@dusk-network/menu": "^2.0.0-rc.36"

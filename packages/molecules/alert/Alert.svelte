@@ -1,6 +1,6 @@
 <script>
   import { setContext } from "svelte";
-  import { variants, sizes, contexts } from "@dusk-network/helpers";
+  import { variants, sizes, contexts } from "@dusk-network/helpers/index.js";
   import Icon from "@dusk-network/icon/Icon.svelte";
   import "./styles.css";
 
