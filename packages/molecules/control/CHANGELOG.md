@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.36](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.35...v2.0.0-rc.36) (2021-08-16)
+
+
+### Performance Improvements
+
+* **elements:** ⚡️ removed base elements as no longer needed ([6e27f47](https://github.com/dusk-network/dusk-ui-kit/commit/6e27f47e984b416dd788ae0ff37dd46557810bb5))
+
+
+
+
+
 # [2.0.0-rc.35](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.34...v2.0.0-rc.35) (2021-08-12)
 
 **Note:** Version bump only for package @dusk-network/control
