@@ -15,7 +15,6 @@
     "packages/**"
   ],
   "scripts": {
-    "bootstrap": "lerna bootstrap",
     "format": "eslint . --ignore-pattern 'node_modules/' --ignore-pattern 'storybook-static/' --fix && prettier . --write --plugin-search-dir=. \"{,!(node_modules,storybook-static)/**/**/}*.{json,js,svelte}\"",
     "prepare": "is-ci || husky install",
     "publish": "lerna publish from-package --yes",
