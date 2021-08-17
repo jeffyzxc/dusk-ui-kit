@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.39](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.38...v2.0.0-rc.39) (2021-08-17)
+
+
+### Bug Fixes
+
+* **navbar:** 🐛 fixing orientation prop for Navbar links ([c727565](https://github.com/dusk-network/dusk-ui-kit/commit/c7275657da173894f6fb7791f8ec7ff64ca6749a))
+
+
+
+
+
 # [2.0.0-rc.38](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.37...v2.0.0-rc.38) (2021-08-17)
 
 
