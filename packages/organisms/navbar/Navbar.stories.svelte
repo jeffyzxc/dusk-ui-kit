@@ -116,4 +116,4 @@ Basic.args = {
   </Navbar>
 </Template>
 
-<Story name="Standard cookie banner" args="{{}}" />
+<Story name="Standard navbar" args="{{}}" />

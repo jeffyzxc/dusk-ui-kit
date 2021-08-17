@@ -32,11 +32,11 @@
   }
 
   &--success {
-    & .duk-alert__indicator {
+    ^&__indicator {
       @apply bg-green-500;
     }
 
-    & .duk-alert__body {
+    ^&__body {
       & h4 {
         @apply text-green-500;
       }
@@ -44,11 +44,11 @@
   }
 
   &--warning {
-    & .duk-alert__indicator {
+    ^&__indicator {
       @apply bg-yellow-500 text-black;
     }
 
-    & .duk-alert__body {
+    ^&__body {
       & h4 {
         @apply dark:text-yellow-500;
       }
@@ -56,11 +56,11 @@
   }
 
   &--danger {
-    & .duk-alert__indicator {
+    ^&__indicator {
       @apply bg-red-500;
     }
 
-    & .duk-alert__body {
+    ^&__body {
       & h4 {
         @apply dark:text-red-500;
       }

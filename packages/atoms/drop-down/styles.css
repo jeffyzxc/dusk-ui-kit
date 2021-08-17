@@ -53,8 +53,10 @@
   }
 
   &--drop-up {
-    & .duk-drop-down__options {
-      @apply -top-3 transform -translate-y-full;
+    ^&__options {
+      @apply -top-3;
+      /* TODO investigate why ths won't work with transform -translate-y-full utils */
+      transform: translateY(-100%);
     }
   }
 }

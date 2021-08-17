@@ -16,7 +16,7 @@
     @apply text-base p-4 bg-transparent text-indigo-500 shadow-none;
     @apply dark:text-gray-100;
 
-    &.duk-button--active {
+    &^&--active {
       @apply dark:bg-indigo-900;
     }
   }

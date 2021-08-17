@@ -140,8 +140,8 @@
     @apply h-auto bg-transparent;
     @apply dark:bg-transparent;
 
-    & .duk-navbar__navigation,
-    & .duk-navbar__wrapper--secondary {
+    & ^&__navigation,
+    & ^&__wrapper--secondary {
       @apply hidden;
       @apply lg:flex;
     }

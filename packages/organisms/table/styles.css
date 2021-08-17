@@ -224,6 +224,7 @@
   }
 
   &__datum {
+    /* FIXME These styles should be covered under LoadingIndicator and Icon with context styles! */
     & .duk-loading-indicator,
     & .duk-icon {
       @apply w-6;

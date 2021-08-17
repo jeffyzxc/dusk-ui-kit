@@ -18,60 +18,60 @@
   }
 
   &--stacked {
-    & .duk-control__label {
+    ^&__label {
       @apply mb-1;
     }
 
-    & .duk-control__input {
+    ^&__input {
       flex: 2;
     }
   }
 
   &--inline-fixed {
-    & .duk-control__wrapper {
+    ^&__wrapper {
       @apply flex w-full justify-center items-center mb-3 text-right;
       @apply md:justify-start;
     }
 
-    & .duk-control__label {
+    ^&__label {
       flex: 1;
     }
 
-    & .duk-control__input {
+    ^&__input {
       flex: 2;
     }
   }
 
   &--inline-flex {
-    & .duk-control__wrapper {
+    ^&__wrapper {
       @apply flex w-full justify-center items-center mb-3;
       @apply md:justify-start;
     }
 
-    & .duk-control__input {
+    ^&__input {
       flex: 1;
     }
   }
 
   &--success {
-    & .duk-control__label,
-    & .duk-control__message {
+    ^&__label,
+    ^&__message {
       @apply text-green-900 not-italic;
       @apply dark:text-green-600;
     }
   }
 
   &--warning {
-    & .duk-control__label,
-    & .duk-control__message {
+    ^&__label,
+    ^&__message {
       @apply text-yellow-900 not-italic;
       @apply dark:text-yellow-600;
     }
   }
 
   &--danger {
-    & .duk-control__label,
-    & .duk-control__message {
+    ^&__label,
+    ^&__message {
       @apply text-red-900 not-italic;
       @apply dark:text-red-600;
     }

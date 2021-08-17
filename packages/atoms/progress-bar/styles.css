@@ -25,42 +25,42 @@
   }
 
   &--brand {
-    & .duk-progress-bar__step {
+    ^&__step {
       @apply bg-indigo-500;
       @apply dark:bg-indigo-600;
     }
   }
 
   &--cta {
-    & .duk-progress-bar__step {
+    ^&__step {
       @apply bg-orange-900;
       @apply dark:bg-orange-600;
     }
   }
 
   &--info {
-    & .duk-progress-bar__step {
+    ^&__step {
       @apply bg-blue-900;
       @apply dark:bg-blue-600;
     }
   }
 
   &--success {
-    & .duk-progress-bar__step {
+    ^&__step {
       @apply bg-green-900;
       @apply dark:bg-green-600;
     }
   }
 
   &--warning {
-    & .duk-progress-bar__step {
+    ^&__step {
       @apply bg-yellow-900;
       @apply dark:bg-yellow-600;
     }
   }
 
   &--danger {
-    & .duk-progress-bar__step {
+    ^&__step {
       @apply bg-red-900;
       @apply dark:bg-red-600;
     }

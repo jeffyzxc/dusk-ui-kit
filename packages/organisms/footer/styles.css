@@ -42,10 +42,12 @@
       margin-left: auto !important;
     }
 
+    /* FIXME These styles should be covered under Menu with context styles! */
     & > .duk-menu__list {
       @apply lg:space-x-3;
     }
 
+    /* FIXME These styles should be covered under Icon with context styles! */
     & .duk-icon {
       @apply p-0 transform duration-200 ease-in-out transition-all;
 
@@ -60,6 +62,7 @@
       @apply pr-5;
     }
 
+    /* FIXME These styles should be covered under Menu and Icon with context styles! */
     &__item > .duk-menu__item-wrapper {
       @apply p-0 mb-4;
     }
