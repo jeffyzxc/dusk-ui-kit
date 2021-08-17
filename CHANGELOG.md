@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.38](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.37...v2.0.0-rc.38) (2021-08-17)
+
+
+### Bug Fixes
+
+* **navbar:** 🐛 added missing Menu dependency ([15777f3](https://github.com/dusk-network/dusk-ui-kit/commit/15777f38c2ba9452bbc0ac667da61901738c8461))
+* **navbar:** 🐛 added missing Toggle dependency ([66776e5](https://github.com/dusk-network/dusk-ui-kit/commit/66776e56c795ced92545e5cec7c60adec017273b))
+
+
+
+
+
 # [2.0.0-rc.37](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.36...v2.0.0-rc.37) (2021-08-17)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/limiter",
-  "version": "2.0.0-rc.37",
+  "version": "2.0.0-rc.38",
   "description": "Dusk UI Kit - Limiter",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -16,8 +16,8 @@
     "test": "echo \"Work in progress...\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/drop-down": "^2.0.0-rc.37",
-    "@dusk-network/styles": "^2.0.0-rc.37"
+    "@dusk-network/drop-down": "^2.0.0-rc.38",
+    "@dusk-network/styles": "^2.0.0-rc.38"
   },
   "peerDependencies": {
     "svelte": "3.42.1"
