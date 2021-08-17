@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.37](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.36...v2.0.0-rc.37) (2021-08-17)
+
+
+### Bug Fixes
+
+* **ci:** 🐛 👷 config change 3 ([684014c](https://github.com/dusk-network/dusk-ui-kit/commit/684014c12be4ae1f7c872769397a665390b3ceb3))
+* **ci:** 🐛 👷 config change 4 ([4407dc3](https://github.com/dusk-network/dusk-ui-kit/commit/4407dc3ce49f06dbcbcfb0961e1f5f106cd62b77))
+
+
+### Performance Improvements
+
+* **packages:** ⚡️ updated all package dependencies adding and removing where needed ([481064a](https://github.com/dusk-network/dusk-ui-kit/commit/481064ad6672e547aa0ab0fcadc69c7e37a91170))
+
+
+
+
+
 # [2.0.0-rc.36](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.35...v2.0.0-rc.36) (2021-08-16)
 
 

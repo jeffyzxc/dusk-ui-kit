@@ -1,16 +1,13 @@
 {
-  "version": "2.0.0-rc.36",
+  "version": "2.0.0-rc.37",
   "npmClient": "yarn",
   "useWorkspaces": true,
   "includeMergedTags": true,
   "packages": [
     "packages/helpers/**",
-    "packages/elements/**",
     "packages/atoms/*/**",
     "packages/molecules/*/**",
-    "packages/organisms/*/**",
-    "packages/templates/*/**",
-    "packages/pages/*"
+    "packages/organisms/*/**"
   ],
   "command": {
     "publish": {
@@ -19,11 +16,8 @@
     },
     "version": {
       "allowBranch": ["main", "next"],
-      "ignoreChanges": ["/storybook-views/*", "*.stories.*", "*.md"],
+      "ignoreChanges": ["/storybook/*", "*.stories.*", "*.md"],
       "conventionalCommits": true
-    },
-    "bootstrap": {
-      "npmClientArgs": ["--pure-lockfile"]
     }
   }
 }
