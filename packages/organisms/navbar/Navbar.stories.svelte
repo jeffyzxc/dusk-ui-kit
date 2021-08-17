@@ -104,9 +104,6 @@ Basic.args = {
         <Item href="https://shop.dusk.network">
           <Icon name="tshirt-crew-outline" /><span>Shop</span>
         </Item>
-        <!-- <Item href="https://shop.dusk.network">
-          <Icon name="store-outline" /><span>Buy Dusk</span>
-        </Item> -->
       </Menu>
     </svelte:fragment>
     <svelte:fragment slot="navigation">

@@ -10,7 +10,7 @@
   setContext("DUK:menu:context", contexts.MENU.NAVBAR);
 </script>
 
-<Menu orientation="vertical">
+<Menu orientation="horizontal">
   {#each links as { title, url, icon }}
     <Item href="{url}" target="{url.lastIndexOf('dusk.network') === -1 && '_blank'}">
       {#if icon}

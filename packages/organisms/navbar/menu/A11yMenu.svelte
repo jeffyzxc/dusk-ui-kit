@@ -19,7 +19,7 @@
   setContext("DUK:menu:context", contexts.MENU.NAVBAR);
 </script>
 
-<Menu orientation="vertical">
+<Menu orientation="horizontal">
   <Item>
     <Icon class="duk-navbar__dark-mode-icon" name="brightness-4" />
     <Toggle
