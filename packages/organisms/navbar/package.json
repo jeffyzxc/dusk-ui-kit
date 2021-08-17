@@ -17,7 +17,8 @@
   },
   "dependencies": {
     "@dusk-network/helpers": "^2.0.0-rc.37",
-    "@dusk-network/icon": "^2.0.0-rc.37"
+    "@dusk-network/icon": "^2.0.0-rc.37",
+    "@dusk-network/toggle": "^2.0.0-rc.37"
   },
   "peerDependencies": {
     "svelte": "3.42.1"
