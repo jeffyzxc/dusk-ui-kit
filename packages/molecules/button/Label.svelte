@@ -1,18 +1,3 @@
-<script>
-  import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, exclude, useActions } from "@dusk-network/helpers";
-  const forwardEvents = forwardEventsBuilder(current_component);
-  export let use = [];
-  let className = "";
-  export { className as class };
-</script>
-
-<div
-  use:useActions="{use}"
-  use:forwardEvents
-  class="duk-button__label {className}
-  "
-  {...exclude($$props, ["use", "class"])}
->
+<div class="{$$props.class || ''} duk-button__label">
   <slot />
 </div>

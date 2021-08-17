@@ -1,28 +1,19 @@
 <script>
-  //TODO Refactor this into a simple helper component.
-  import { current_component } from "svelte/internal";
-  import { forwardEventsBuilder, exclude, useActions, types, states } from "@dusk-network/helpers";
+  import { types, states } from "@dusk-network/helpers";
   import "./styles.css";
 
-  let className = "";
-  export { className as class };
   export let type = types.FORM.STACKED;
   export let state = states.FORM.BASE;
-  export let use = [];
-
-  const forwardEvents = forwardEventsBuilder(current_component);
-
-  function getClassNames(type, state) {
-    return ` duk-form--${type} duk-form--${state}`;
-  }
 </script>
 
 <form
-  use:useActions="{use}"
-  use:forwardEvents
-  class="duk-form {className}
-  {getClassNames(type, state)}"
-  {...exclude($$props, ["use", "class", "type", "variant", "state"])}
+  class="{$$props.class || ''} duk-form"
+  class:duk-form--stacked="{type === types.FORM.STACKED}"
+  class:duk-form--inline-fixed="{type === types.FORM.INLINE_FIXED}"
+  class:duk-form--inline-flex="{type === types.FORM.INLINE_FLEX}"
+  class:duk-form--success="{state === states.FORM.SUCCESS}"
+  class:duk-form--warning="{state === states.FORM.WARNING}"
+  class:duk-form--danger="{state === states.FORM.DANGER}"
 >
   <slot />
 </form>

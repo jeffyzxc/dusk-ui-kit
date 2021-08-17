@@ -1,4 +1,3 @@
-/** Faster rounding function to avoid heavy use of Math.round  */
 export function round(n) {
   return (n + 0.5) << 0;
 }
