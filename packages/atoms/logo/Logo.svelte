@@ -3,12 +3,10 @@
   import { contexts } from "@dusk-network/helpers/index.js";
   import "./styles.css";
 
-  let element;
-  let context = getContext("DUK:logo:context");
+  const context = getContext("DUK:logo:context");
 </script>
 
 <div
-  bind:this="{element}"
   class="{$$props.class || ''} duk-logo"
   class:duk-logo--navbar="{context === contexts.LOGO.NAVBAR}"
   class:duk-logo--footer="{context === contexts.LOGO.FOOTER}"

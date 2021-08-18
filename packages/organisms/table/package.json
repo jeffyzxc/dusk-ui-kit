@@ -17,7 +17,6 @@
   },
   "dependencies": {
     "@dusk-network/helpers": "^2.0.0-rc.40",
-    "@dusk-network/limiter": "^2.0.0-rc.40",
     "@dusk-network/pagination": "^2.0.0-rc.40"
   },
   "peerDependencies": {

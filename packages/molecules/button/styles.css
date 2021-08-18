@@ -2,6 +2,17 @@
   @apply flex items-center justify-between gap-4;
 }
 
+.duk-button-wrapper {
+  @apply flex items-center gap-4;
+  @apply sm:gap-6;
+}
+
+.duk-button-label {
+  @apply text-xl text-indigo-500 font-semibold hover:cursor-pointer;
+  @apply sm:text-2xl;
+  @apply dark:text-indigo-100;
+}
+
 .duk-button {
   @apply transition transition-all duration-300 ease-in-out flex space-x-2 items-center border border-solid rounded-md text-sm leading-relaxed py-2 px-4 relative overflow-hidden shadow-marketing;
 
@@ -32,6 +43,7 @@
     }
   }
 
+  &--hero,
   &--cta {
     @apply bg-gold-500 text-gray-900 border-none;
 
@@ -148,6 +160,7 @@
     }
   }
 
+  &--hero,
   &--large {
     @apply text-xl py-3 px-5 leading-loose;
   }
@@ -162,6 +175,10 @@
     ^&__label {
       @apply px-4;
     }
+  }
+
+  &--hero {
+    @apply my-6;
   }
 
   &:disabled {

@@ -2,7 +2,7 @@
   import { onMount, onDestroy, setContext } from "svelte";
   // import Search from './components/Search.svelte'
   import Pagination from "@dusk-network/pagination/Pagination.svelte";
-  import Limiter from "@dusk-network/limiter/Limiter.svelte";
+  import DropDown from "@dusk-network/drop-down/DropDown.svelte";
   import { contexts } from "@dusk-network/helpers/index.js";
   import { options } from "./stores/options.js";
   import { pageNumber, activeRow } from "./stores/state.js";
@@ -31,7 +31,7 @@
     settings = { ...settings, rowPerPage: event.detail };
   };
 
-  setContext("DUK:limiter:context", contexts.LIMITER.TABLE);
+  setContext("DUK:drop-down:context", contexts.DROP_DOWN.TABLE);
   setContext("DUK:pagination:context", contexts.PAGINATION.TABLE);
 </script>
 
@@ -55,7 +55,12 @@
     {/if}
     <slot name="actions" />
     {#if $options.limiter === true}
-      <Limiter items="{data}" options="{[10, 20, 30, 40, 50]}" on:limit="{handleLimit}" />
+      <DropDown
+        dropUp="{true}"
+        items="{data}"
+        options="{[10, 20, 30, 40, 50]}"
+        on:select="{handleLimit}"
+      />
     {/if}
   </div>
 </div>

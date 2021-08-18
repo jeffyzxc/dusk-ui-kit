@@ -17,7 +17,7 @@
 />
 
 <Template let:args>
-  <Accordion password="{args.password}">
+  <Accordion>
     <Item title="First Item">First item content...</Item>
     <Item title="Second Item">Second item content...</Item>
     <Item title="Third Item">Third item content...</Item>

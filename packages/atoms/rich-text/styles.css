@@ -11,6 +11,7 @@
     @apply prose-lg;
   }
 
+  &--hero,
   &--xl {
     @apply prose-xl;
   }

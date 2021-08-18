@@ -1,10 +1,13 @@
 <script>
-  import { sizes } from "@dusk-network/helpers/index.js";
+  import { getContext } from "svelte";
   import * as marked from "marked";
+  import { sizes, contexts } from "@dusk-network/helpers/index.js";
   import "./styles.css";
 
   export let markdown;
   export let size = sizes.RICH_TEXT.DEFAULT;
+
+  const context = getContext("DUK:rich-text:context");
 </script>
 
 <div
@@ -13,6 +16,7 @@
   class:duk-rich-text--large="{size === sizes.RICH_TEXT.LARGE}"
   class:duk-rich-text--xl="{size === sizes.RICH_TEXT.XL}"
   class:duk-rich-text--xxl="{size === sizes.RICH_TEXT.XXL}"
+  class:duk-rich-text--hero="{context === contexts.RICH_TEXT.HERO}"
 >
   {#if markdown}
     {@html marked(markdown)}

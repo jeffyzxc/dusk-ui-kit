@@ -5,6 +5,7 @@ export default {
       DIALOG: "button:action:dialog",
     },
     ACCORDION: "button:accordion",
+    HERO: "button:hero",
   },
   CARD: {
     ALERT: "card:alert",
@@ -23,6 +24,7 @@ export default {
   DROP_DOWN: {
     CONTROL: "drop-down:control",
     MENU: "drop-down:menu",
+    TABLE: "drop-down:table",
   },
   ICON: {
     ALERT: "icon:alert",
@@ -65,10 +67,10 @@ export default {
   TOGGLE: {
     CONTROL: "toggle:control",
   },
-  LIMITER: {
-    TABLE: "limiter:table",
-  },
   PAGINATION: {
     TABLE: "pagination:table",
+  },
+  RICH_TEXT: {
+    HERO: "rich-text:hero",
   },
 };

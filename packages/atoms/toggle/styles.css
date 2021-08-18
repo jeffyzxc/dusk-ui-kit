@@ -91,8 +91,8 @@
   }
   &--cta {
     & input:checked {
-      ~ .duk-toggle__switch-thumb,
-      ~ .duk-toggle__label--button {
+      ~ ^^&__switch-thumb,
+      ~ ^^&__label--button {
         @apply bg-orange-500;
       }
     }
@@ -105,8 +105,8 @@
   }
   &--info {
     & input:checked {
-      ~ .duk-toggle__switch-thumb,
-      ~ .duk-toggle__label--button {
+      ~ ^^&__switch-thumb,
+      ~ ^^&__label--button {
         @apply bg-blue-500;
       }
       &^^&__checkbox {
@@ -119,8 +119,8 @@
   }
   &--success {
     & input:checked {
-      ~ .duk-toggle__switch-thumb,
-      ~ .duk-toggle__label--button {
+      ~ ^^&__switch-thumb,
+      ~ ^^&__label--button {
         @apply bg-green-500;
       }
       &^^&__checkbox {
@@ -133,8 +133,8 @@
   }
   &--warning {
     & input:checked {
-      ~ .duk-toggle__switch-thumb,
-      ~ .duk-toggle__label--button {
+      ~ ^^&__switch-thumb,
+      ~ ^^&__label--button {
         @apply bg-yellow-500;
       }
       &^^&__checkbox {
@@ -147,8 +147,8 @@
   }
   &--danger {
     & input:checked {
-      ~ .duk-toggle__switch-thumb,
-      ~ .duk-toggle__label--button {
+      ~ ^^&__switch-thumb,
+      ~ ^^&__label--button {
         @apply bg-red-500;
       }
       &^^&__checkbox {

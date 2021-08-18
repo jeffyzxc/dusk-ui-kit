@@ -1,14 +1,14 @@
 {
-  "name": "@dusk-network/limiter",
+  "name": "@dusk-network/hero",
   "version": "2.0.0-rc.40",
-  "description": "Dusk UI Kit - Limiter",
+  "description": "Dusk UI Kit - Hero",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
-    "directory": "packages/molecules/limiter"
+    "directory": "packages/atoms/hero"
   },
   "type": "module",
   "module": "index.js",
@@ -16,10 +16,11 @@
     "test": "echo \"Work in progress...\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/drop-down": "^2.0.0-rc.40",
-    "@dusk-network/styles": "^2.0.0-rc.40"
+    "@dusk-network/helpers": "^2.0.0-rc.40",
+    "@dusk-network/icon": "^2.0.0-rc.40"
   },
   "peerDependencies": {
     "svelte": "3.42.1"
-  }
+  },
+  "gitHead": "51be63d76ad5783e86fb1dc710d20e8c08ec1ab4"
 }
