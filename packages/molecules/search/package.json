@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/search",
-  "version": "2.0.0-rc.40",
+  "version": "2.0.0-rc.41",
   "description": "Dusk UI Kit - Search",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -16,8 +16,8 @@
     "test": "echo \"Work in progress...\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/helpers": "^2.0.0-rc.40",
-    "@dusk-network/icon": "^2.0.0-rc.40"
+    "@dusk-network/helpers": "^2.0.0-rc.41",
+    "@dusk-network/icon": "^2.0.0-rc.41"
   },
   "peerDependencies": {
     "svelte": "3.42.1"
