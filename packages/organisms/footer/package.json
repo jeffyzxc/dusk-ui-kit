@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/footer",
-  "version": "2.0.0-rc.43",
+  "version": "2.0.0-rc.44",
   "description": "Dusk UI Kit - Footer",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -16,12 +16,12 @@
     "test": "echo \"Work in progress...\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/button": "^2.0.0-rc.43",
-    "@dusk-network/helpers": "^2.0.0-rc.43",
-    "@dusk-network/icon": "^2.0.0-rc.43",
-    "@dusk-network/logo": "^2.0.0-rc.43",
-    "@dusk-network/menu": "^2.0.0-rc.43",
-    "@dusk-network/text-field": "^2.0.0-rc.43"
+    "@dusk-network/button": "^2.0.0-rc.44",
+    "@dusk-network/helpers": "^2.0.0-rc.44",
+    "@dusk-network/icon": "^2.0.0-rc.44",
+    "@dusk-network/logo": "^2.0.0-rc.44",
+    "@dusk-network/menu": "^2.0.0-rc.44",
+    "@dusk-network/text-field": "^2.0.0-rc.44"
   },
   "peerDependencies": {
     "svelte": "3.42.1"

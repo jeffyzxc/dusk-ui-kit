@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.44](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.43...v2.0.0-rc.44) (2021-08-19)
+
+
+### Bug Fixes
+
+* **navbar:** 🐛 removed ssr breaking class update ([454b1b8](https://github.com/dusk-network/dusk-ui-kit/commit/454b1b8648e76414639cd110c161173e1b128902))
+
+
+
+
+
 # [2.0.0-rc.43](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.42...v2.0.0-rc.43) (2021-08-19)
 
 
