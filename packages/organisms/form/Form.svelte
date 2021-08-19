@@ -1,5 +1,6 @@
 <script>
-  import { types, states } from "@dusk-network/helpers";
+  import states from "@dusk-network/helpers/states.js";
+  import types from "@dusk-network/helpers/types.js";
   import "./styles.css";
 
   export let type = types.FORM.STACKED;

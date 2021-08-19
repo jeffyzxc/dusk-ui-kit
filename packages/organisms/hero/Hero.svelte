@@ -1,6 +1,6 @@
 <script>
   import { setContext } from "svelte";
-  import { contexts } from "@dusk-network/helpers";
+  import contexts from "@dusk-network/helpers/contexts.js";
   import "./styles.css";
 
   setContext("DUK:button:context", contexts.BUTTON.HERO);

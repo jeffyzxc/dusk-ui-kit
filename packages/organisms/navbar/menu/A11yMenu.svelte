@@ -4,7 +4,7 @@
   import Menu from "@dusk-network/menu/Menu.svelte";
   import Item from "@dusk-network/menu/Item.svelte";
   import Toggle from "@dusk-network/toggle/Toggle.svelte";
-  import { contexts } from "@dusk-network/helpers/index.js";
+  import contexts from "@dusk-network/helpers/contexts.js";
 
   export let darkMode = false;
 

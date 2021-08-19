@@ -1,6 +1,8 @@
 <script>
   import { setContext, getContext } from "svelte";
-  import { variants, sizes, contexts } from "@dusk-network/helpers/index.js";
+  import variants from "@dusk-network/helpers/variants.js";
+  import sizes from "@dusk-network/helpers/sizes.js";
+  import contexts from "@dusk-network/helpers/contexts.js";
   import "./styles.css";
 
   export let id = "__DUK-button" + Math.random().toString(36);
@@ -20,7 +22,13 @@
 
 <div class="duk-button-wrapper">
   {#if $$slots.labelLeft}
-    <label class="duk-button-label" for="{id}">
+    <label
+      class="duk-button-label"
+      class:duk-button-label--small="{size === sizes.BUTTON.SMALL}"
+      class:duk-button-label--large="{size === sizes.BUTTON.LARGE}"
+      class:duk-button-label--hero="{context === contexts.BUTTON.HERO}"
+      for="{id}"
+    >
       <slot name="labelLeft" />
     </label>
   {/if}
@@ -82,7 +90,13 @@
     </button>
   {/if}
   {#if $$slots.labelRight}
-    <label class="duk-button-label" for="{id}">
+    <label
+      class="duk-button-label"
+      class:duk-button-label--small="{size === sizes.BUTTON.SMALL}"
+      class:duk-button-label--large="{size === sizes.BUTTON.LARGE}"
+      class:duk-button-label--hero="{context === contexts.BUTTON.HERO}"
+      for="{id}"
+    >
       <slot name="labelRight" />
     </label>
   {/if}

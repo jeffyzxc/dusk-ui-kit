@@ -1,6 +1,7 @@
 <script>
   import { setContext, getContext } from "svelte";
-  import { contexts, orientations } from "@dusk-network/helpers/index.js";
+  import orientations from "@dusk-network/helpers/orientations.js";
+  import contexts from "@dusk-network/helpers/contexts.js";
   import "./styles.css";
 
   export let orientation = orientations.MENU.VERTICAL;

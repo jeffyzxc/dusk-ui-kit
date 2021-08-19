@@ -1,5 +1,5 @@
 <script>
-  import { variants } from "@dusk-network/helpers";
+  import variants from "@dusk-network/helpers/variants.js";
   import "./styles.css";
 
   export let variant = variants.LOADING_INDICATOR.DEFAULT;

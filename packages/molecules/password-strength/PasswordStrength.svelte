@@ -2,7 +2,7 @@
   // import { getContext } from "svelte";
   import { passwordStrength } from "check-password-strength";
   import ProgressBar from "@dusk-network/progress-bar/ProgressBar.svelte";
-  import { variants } from "@dusk-network/helpers/index.js";
+  import variants from "@dusk-network/helpers/variants.js";
   import "./styles.css";
 
   export let password;

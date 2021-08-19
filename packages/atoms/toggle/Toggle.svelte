@@ -1,5 +1,6 @@
 <script>
-  import { variants, types } from "@dusk-network/helpers/index.js";
+  import types from "@dusk-network/helpers/types.js";
+  import variants from "@dusk-network/helpers/variants.js";
   import "./styles.css";
 
   export let variant = variants.TOGGLE.BRAND;

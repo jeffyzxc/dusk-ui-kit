@@ -88,26 +88,36 @@
     {#if args.iconLeft}
       <Icon name="{args.iconLeft}" size="{args.size}" />
     {/if}
-    <Label>{args.label}</Label>
+    <Label>{args.value}</Label>
     {#if args.iconRight}
       <Icon name="{args.iconRight}" size="{args.size}" />
     {/if}
+    <svelte:fragment slot="labelRight">
+      {#if args.labelRight}
+        {args.labelRight}
+      {/if}
+    </svelte:fragment>
+    <svelte:fragment slot="labelLeft">
+      {#if args.labelLeft}
+        {args.labelLeft}
+      {/if}
+    </svelte:fragment>
   </Button>
 </Template>
 
-<Story name="Default button" args="{{ label: 'I am a Button' }}" />
+<Story name="Default button" args="{{ value: 'I am a Button' }}" />
 <Story
   name="With a left aligned icon"
-  args="{{ label: 'I am a Button', iconLeft: icons.CHECK_DECAGRAM_OUTLINE }}"
+  args="{{ value: 'I am a Button', iconLeft: icons.CHECK_DECAGRAM_OUTLINE }}"
 />
 <Story
   name="With a right aligned icon"
-  args="{{ label: 'I am a Button', iconRight: icons.CHECK_DECAGRAM_OUTLINE }}"
+  args="{{ value: 'I am a Button', iconRight: icons.CHECK_DECAGRAM_OUTLINE }}"
 />
 <Story
   name="With two icons"
   args="{{
-    label: 'I am a Button',
+    value: 'I am a Button',
     iconLeft: icons.CHECK_DECAGRAM_OUTLINE,
     iconRight: icons.CHECK_DECAGRAM_OUTLINE,
   }}"
@@ -118,5 +128,21 @@
     layout: 'padded',
   }}"
   name="Block button"
-  args="{{ label: 'I am a Button', block: true }}"
+  args="{{ value: 'I am a Button', block: true }}"
+/>
+
+<Story
+  parameters="{{
+    layout: 'centered',
+  }}"
+  name="With right aligned label"
+  args="{{ value: 'I am a Button', labelRight: 'I am a label' }}"
+/>
+
+<Story
+  parameters="{{
+    layout: 'centered',
+  }}"
+  name="With left aligned label"
+  args="{{ value: 'I am a Button', labelLeft: 'I am a label' }}"
 />

@@ -6,7 +6,7 @@
   import Icon from "@dusk-network/icon/Icon.svelte";
   import Menu from "@dusk-network/menu/Menu.svelte";
   import Item from "@dusk-network/menu/Item.svelte";
-  import { contexts } from "@dusk-network/helpers/index.js";
+  import contexts from "@dusk-network/helpers/contexts.js";
   import "./styles.css";
 
   export let ref = "";

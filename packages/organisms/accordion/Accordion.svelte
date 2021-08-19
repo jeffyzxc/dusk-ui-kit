@@ -1,7 +1,7 @@
 <script>
   import { setContext } from "svelte";
   import { writable } from "svelte/store";
-  import { contexts } from "@dusk-network/helpers/index.js";
+  import contexts from "@dusk-network/helpers/contexts.js";
   import "./styles.css";
 
   export let multiselect = false;

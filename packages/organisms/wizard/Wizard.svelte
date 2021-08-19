@@ -1,6 +1,6 @@
 <script>
   import { createEventDispatcher, setContext } from "svelte";
-  import { contexts } from "@dusk-network/helpers/index.js";
+  import contexts from "@dusk-network/helpers/contexts.js";
   import ProgressBar from "@dusk-network/progress-bar/ProgressBar.svelte";
   import Breadcrumb from "@dusk-network/breadcrumb/Breadcrumb.svelte";
   import Item from "@dusk-network/breadcrumb/Item.svelte";

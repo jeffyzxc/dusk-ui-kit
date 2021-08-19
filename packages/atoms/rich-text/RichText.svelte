@@ -1,7 +1,8 @@
 <script>
   import { getContext } from "svelte";
   import * as marked from "marked";
-  import { sizes, contexts } from "@dusk-network/helpers/index.js";
+  import contexts from "@dusk-network/helpers/contexts.js";
+  import sizes from "@dusk-network/helpers/sizes.js";
   import "./styles.css";
 
   export let markdown;

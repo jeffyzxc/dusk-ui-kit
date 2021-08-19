@@ -1,5 +1,5 @@
 <script>
-  import { types } from "@dusk-network/helpers/index.js";
+  import types from "@dusk-network/helpers/types.js";
   import Minimal from "./Minimal.svelte";
   import Maximal from "./Maximal.svelte";
   import "./styles.css";

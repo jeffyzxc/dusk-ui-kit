@@ -8,9 +8,20 @@
 }
 
 .duk-button-label {
-  @apply text-xl text-indigo-500 font-semibold hover:cursor-pointer;
-  @apply sm:text-2xl;
+  @apply text-indigo-500 font-semibold hover:cursor-pointer;
+  @apply sm:text-lg;
   @apply dark:text-indigo-100;
+
+  &--small {
+    @apply text-sm;
+    @apply sm:text-base;
+  }
+
+  &--hero,
+  &--large {
+    @apply text-xl;
+    @apply sm:text-2xl;
+  }
 }
 
 .duk-button {
@@ -183,5 +194,9 @@
 
   &:disabled {
     @apply opacity-75 cursor-not-allowed;
+
+    ~ label {
+      @apply line-through opacity-75 cursor-not-allowed;
+    }
   }
 }

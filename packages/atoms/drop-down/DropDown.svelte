@@ -1,7 +1,7 @@
 <script>
   // FIXME Remove dependency on Icon (and remove from icon library too).
   import { createEventDispatcher, onMount, getContext } from "svelte";
-  import { contexts } from "@dusk-network/helpers/index.js";
+  import contexts from "@dusk-network/helpers/contexts.js";
   import Icon from "@dusk-network/icon/Icon.svelte";
   import "./styles.css";
 

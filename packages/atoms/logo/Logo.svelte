@@ -1,6 +1,6 @@
 <script>
   import { getContext } from "svelte";
-  import { contexts } from "@dusk-network/helpers/index.js";
+  import contexts from "@dusk-network/helpers/contexts.js";
   import "./styles.css";
 
   const context = getContext("DUK:logo:context");
