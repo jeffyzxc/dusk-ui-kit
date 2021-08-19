@@ -10,7 +10,7 @@
   setContext("DUK:menu:context", contexts.MENU.NAVBAR);
 </script>
 
-<Menu orientation="horizontal">
+<Menu orientation="horizontal" class="duk-navbar__apps-menu">
   {#each apps as { title, url }}
     <Item href="{url}" active="{appName === title}">
       {title}

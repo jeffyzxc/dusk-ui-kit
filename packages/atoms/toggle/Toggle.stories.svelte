@@ -32,11 +32,11 @@
         disable: true,
       },
     },
-    checked: {
-      table: {
-        disable: true,
-      },
-    },
+    // checked: {
+    //   table: {
+    //     disable: true,
+    //   },
+    // },
     selected: {
       table: {
         disable: true,

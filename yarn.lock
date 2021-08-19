@@ -3083,6 +3083,7 @@ __metadata:
     "@dusk-network/icon": ^2.0.0-rc.42
     "@dusk-network/menu": ^2.0.0-rc.42
     "@dusk-network/toggle": ^2.0.0-rc.42
+    svelte-dark-mode: ^1.0.0
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
@@ -24797,6 +24798,13 @@ fsevents@^1.2.7:
     has-flag: ^4.0.0
     supports-color: ^7.0.0
   checksum: aef04fb41f4a67f1bc128f7c3e88a81b6cf2794c800fccf137006efe5bafde281da3e42e72bf9206c2fcf42e6438f37e3a820a389214d0a88613ca1f2d36076a
+  languageName: node
+  linkType: hard
+
+"svelte-dark-mode@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "svelte-dark-mode@npm:1.0.0"
+  checksum: 3fbacf89fa96177dfa986e3105a31e58083c6b7e9cded598d3789146be3079014098a788718bea5165e3f0bae4091470f87afcba20e3493608f5620523f552bc
   languageName: node
   linkType: hard
 

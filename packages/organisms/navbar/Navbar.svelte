@@ -61,7 +61,7 @@
       {#if $$slots.a11y}
         <slot name="a11y" />
       {:else}
-        <A11yMenu darkMode="{darkMode}" />
+        <A11yMenu />
       {/if}
     </div>
     <div id="{id}-content" class="duk-navbar__collapse">

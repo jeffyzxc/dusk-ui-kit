@@ -8,7 +8,7 @@
   export let name = "";
   export let checked = false;
   export let id = "__DUK-toggle" + Math.random().toString(36);
-  export let value = false;
+  export let value;
   export let disabled = false;
   export let selected = false;
 </script>

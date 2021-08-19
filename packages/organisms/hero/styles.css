@@ -1,25 +1,22 @@
 .duk-hero {
   @apply grid overflow-hidden gap-4;
-  @apply md:grid-cols-1 md:grid-rows-2 md:gap-6;
+  @apply md:grid-cols-2 md:grid-rows-2 md:gap-6;
 
   > [slot]:empty {
     @apply hidden;
   }
 
-  > [slot="introduction"] {
-    @apply md:col-start-1;
-  }
-
+  > [slot="introduction"],
   > [slot="cta"] {
-    @apply md:col-start-1 md:col-span-2;
+    @apply md:col-start-1 md:col-end-3;
   }
 
   > [slot="image"] {
     @apply row-start-2;
-    @apply md:row-start-1 md:row-end-2 md:col-start-2 md:col-span-2;
+    @apply md:row-start-1 md:row-end-3 md:col-start-3;
   }
 
   &--with-image {
-    @apply md:grid-cols-2;
+    @apply md:grid-cols-3;
   }
 }

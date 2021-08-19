@@ -111,3 +111,16 @@
     image: '<img src="https://content.dusk.network/uploads/Group_10_1_b752fec2fa.svg" />',
   }}"
 />
+
+<Story
+  name="Grants homepage"
+  args="{{
+    layout: 3,
+    introduction: '<h1>Kickstart your project on Dusk Network</h1>',
+    cta: {
+      description:
+        '<p>Enable any size enterprise to collaborate at scale, meet the highest level of compliance requirements, and ensure that personal and transaction data remains confidential.</p>',
+    },
+    image: '<img src="https://content.dusk.network/uploads/Group_10_1_b752fec2fa.svg" />',
+  }}"
+/>
