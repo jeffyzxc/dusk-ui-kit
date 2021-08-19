@@ -10,7 +10,7 @@
   let theme;
 
   $: switchTheme = theme === "dark" ? "light" : "dark";
-  $: document.documentElement.className = theme;
+  // $: document.documentElement.className = theme;
   $: isDarkMode = theme === "dark";
 
   afterUpdate(() => {
