@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/accordion",
-  "version": "2.0.0-rc.41",
+  "version": "2.0.0-rc.42",
   "description": "Dusk UI Kit - Accordion",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -16,10 +16,10 @@
     "test": "echo \"Work in progress...\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/button": "^2.0.0-rc.41",
-    "@dusk-network/helpers": "^2.0.0-rc.41",
-    "@dusk-network/icon": "^2.0.0-rc.41",
-    "@dusk-network/menu": "^2.0.0-rc.41"
+    "@dusk-network/button": "^2.0.0-rc.42",
+    "@dusk-network/helpers": "^2.0.0-rc.42",
+    "@dusk-network/icon": "^2.0.0-rc.42",
+    "@dusk-network/menu": "^2.0.0-rc.42"
   },
   "peerDependencies": {
     "svelte": "3.42.1"
