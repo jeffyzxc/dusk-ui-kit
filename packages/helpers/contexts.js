@@ -1,4 +1,7 @@
 export default {
+  ACCORDION:{
+    CARD:"accordion:card"
+  },
   BUTTON: {
     ACTION: {
       CARD: "button:action:card",
@@ -35,11 +38,6 @@ export default {
   },
   LABEL: {
     BUTTON: "label:button",
-  },
-  LIST: {
-    ACCORDION: "list:accordion",
-    MENU: "list:menu",
-    DATUM: "list:datum",
   },
   LOGO: {
     NAVBAR: "logo:navbar",

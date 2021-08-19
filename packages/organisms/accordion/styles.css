@@ -10,4 +10,22 @@
   &__datum {
     @apply text-xl leading-relaxed ml-5 mb-32;
   }
+
+  &--card>&__term {
+    @apply text-base justify-between flex-row-reverse mb-3.5;
+  }
+
+  &--card &__action {
+    @apply bg-transparent shadow-none mr-0 text-black;
+  }
+
+  &--card &__action:hover {
+    @apply bg-transparent shadow-none text-black !important;
+  }
+
+  &--card &__datum {
+    @apply text-base font-normal ml-0 mb-5;
+  }
+
+
 }

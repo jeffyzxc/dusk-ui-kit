@@ -1,5 +1,5 @@
 <script>
-  import { setContext } from "svelte";
+  import { setContext,getContext } from "svelte";
   import { writable } from "svelte/store";
   import { contexts } from "@dusk-network/helpers/index.js";
   import "./styles.css";
@@ -8,8 +8,7 @@
 
   const items = writable({});
 
-  // let context = getContext("DUK:accordion:context");
-  setContext("DUK:list:context", contexts.LIST.ACCORDION);
+  const context = getContext("DUK:accordion:context");
   setContext("DUK:accordion:methods", {
     items,
     add: (item) => {
@@ -33,6 +32,9 @@
   });
 </script>
 
-<dl class="{$$props.class || ''} duk-accordion">
+<dl 
+class="{$$props.class || ''} duk-accordion"
+class:duk-accordion--card="{context === contexts.CARD.ACCORDION}"
+>
   <slot />
 </dl>
