@@ -13,9 +13,6 @@
   export let links;
   export let appName;
   export let id = "__DUK-navbar" + Math.random().toString(36);
-  export let darkMode = false;
-
-  darkMode = !darkMode;
 
   let expanded = false;
 
@@ -25,8 +22,7 @@
   const toggleNavbar = () => {
     const navbarElement = document.querySelector(`#${id}`);
     navbarElement.classList.toggle("duk-navbar--hidden");
-
-    expanded = !navbarElement.classList.contains("duk-navbar--hidden");
+    expanded = !expanded;
   };
 </script>
 
