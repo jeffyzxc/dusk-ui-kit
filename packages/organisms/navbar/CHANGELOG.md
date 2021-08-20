@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.45](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.44...v2.0.0-rc.45) (2021-08-20)
+
+
+### Performance Improvements
+
+* **navbar:** ⚡️ replaced css selector with volatite logic ([8ef7e42](https://github.com/dusk-network/dusk-ui-kit/commit/8ef7e4240ac2a7a9b7dd79629024c0e158828702))
+
+
+
+
+
 # [2.0.0-rc.44](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.43...v2.0.0-rc.44) (2021-08-19)
 
 

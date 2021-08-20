@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.45](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.44...v2.0.0-rc.45) (2021-08-20)
+
+
+### Features
+
+* **card:** ✨ added states to cards for link cards ([210de56](https://github.com/dusk-network/dusk-ui-kit/commit/210de56bfb5cb3221b62b99b14d8ca50f2dd4113))
+
+
+
+
+
 # [2.0.0-rc.44](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.43...v2.0.0-rc.44) (2021-08-19)
 
 **Note:** Version bump only for package @dusk-network/helpers
