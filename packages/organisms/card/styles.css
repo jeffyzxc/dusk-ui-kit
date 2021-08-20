@@ -129,3 +129,27 @@
     }
   }
 }
+
+a > .duk-card {
+  @apply transition transition-all duration-300 ease-in-out;
+
+  &:hover {
+    @apply sm:shadow-marketing-hover bg-indigo-100;
+  }
+
+  &--passed {
+    &:hover {
+      @apply bg-green-100;
+    }
+  }
+  &--error {
+    &:hover {
+      @apply bg-yellow-100;
+    }
+  }
+  &--failed {
+    &:hover {
+      @apply bg-red-100;
+    }
+  }
+}

@@ -5,6 +5,12 @@ export default {
     WARNING: "warning",
     DANGER: "danger",
   },
+  CARD: {
+    DEFAULT: "default",
+    PASSED: "passed",
+    ERROR: "error",
+    FAILED: "failed",
+  },
   CONTROL: {
     DEFAULT: "default",
     SUCCESS: "success",

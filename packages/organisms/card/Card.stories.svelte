@@ -1,6 +1,6 @@
 <script>
   import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
-  import { variants } from "@dusk-network/helpers";
+  import { variants, states } from "@dusk-network/helpers";
   import Card, { Content, Title, Footer, Actions } from "@dusk-network/card";
   import RichText from "@dusk-network/rich-text";
   import Button, { Group } from "@dusk-network/button";
@@ -16,6 +16,17 @@
       options: Object.values(variants.CARD),
       control: {
         type: 'select',
+      },
+    },
+    state: {
+      options: Object.values(states.CARD),
+      control: {
+        type: 'select',
+      },
+    },
+    href: {
+      control: {
+        type: 'text',
       },
     },
   }}"
