@@ -1,6 +1,6 @@
 .duk-hero {
   @apply grid overflow-hidden gap-4;
-  @apply md:grid-cols-2 md:grid-rows-2 md:gap-6;
+  @apply md:grid-cols-2 md:grid-rows-1 md:gap-6;
 
   > [slot]:empty {
     @apply hidden;
@@ -18,5 +18,9 @@
 
   &--with-image {
     @apply md:grid-cols-3;
+  }
+
+  &--with-cta {
+    @apply md:grid-rows-2;
   }
 }

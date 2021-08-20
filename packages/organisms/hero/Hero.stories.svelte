@@ -66,6 +66,17 @@
         <RichText>{@html args.image}</RichText>
       </div>
     </Hero>
+  {:else if args.layout === 4}
+    <Hero {...args}>
+      <div slot="introduction">
+        <RichText>
+          {@html args.introduction}
+        </RichText>
+      </div>
+      <div slot="image">
+        <RichText>{@html args.image}</RichText>
+      </div>
+    </Hero>
   {/if}
 </Template>
 
@@ -121,6 +132,16 @@
       description:
         '<p>Enable any size enterprise to collaborate at scale, meet the highest level of compliance requirements, and ensure that personal and transaction data remains confidential.</p>',
     },
+    image: '<img src="https://content.dusk.network/uploads/Group_10_1_b752fec2fa.svg" />',
+  }}"
+/>
+
+<Story
+  name="With Introduction & image"
+  args="{{
+    layout: 4,
+    introduction:
+      '<h1>Heros are very reusable!</h1> <p>The Dusk Grants Program helps projects and developers launch to drive mainstream adoption of blockchain and build the future of finance. Opportunities on Dusk Network are endless.</p>',
     image: '<img src="https://content.dusk.network/uploads/Group_10_1_b752fec2fa.svg" />',
   }}"
 />

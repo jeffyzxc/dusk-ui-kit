@@ -7,7 +7,11 @@
   setContext("DUK:rich-text:context", contexts.RICH_TEXT.HERO);
 </script>
 
-<div class="{$$props.class || ''} duk-hero" class:duk-hero--with-image="{$$slots.image}">
+<div
+  class="{$$props.class || ''} duk-hero"
+  class:duk-hero--with-image="{$$slots.image}"
+  class:duk-hero--with-cta="{$$slots.cta}"
+>
   <slot name="introduction" />
   <slot name="cta" />
   <slot name="image" />
