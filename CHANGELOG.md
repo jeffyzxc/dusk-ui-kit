@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.50](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.49...v2.0.0-rc.50) (2021-08-23)
+
+
+### Bug Fixes
+
+* **accordion:** 🐛 corrected selector ([2dd10fc](https://github.com/dusk-network/dusk-ui-kit/commit/2dd10fc4ca965b685aba1fb0df3f05f009871531))
+* **accordion:** fixed Accordion context when in Card component ([7630e10](https://github.com/dusk-network/dusk-ui-kit/commit/7630e109cdfca11096a466850d6f4f1c9cdf7bfa))
+
+
+### Features
+
+* **accordion:** update Accordion to include Card context and alternative style ([ced90df](https://github.com/dusk-network/dusk-ui-kit/commit/ced90dfb6f4db0c9e35c5dcc43283e0dd9cf6740))
+
+
+
+
+
 # [2.0.0-rc.49](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.48...v2.0.0-rc.49) (2021-08-23)
 
 
