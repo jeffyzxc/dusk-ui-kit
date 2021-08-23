@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.49](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.48...v2.0.0-rc.49) (2021-08-23)
+
+
+### Bug Fixes
+
+* **card:** 🐛 addressing a11y issues with card variants and rich text ([ae26606](https://github.com/dusk-network/dusk-ui-kit/commit/ae26606ca9ca9a4570e9e8ed2b53f03b106399fb))
+
+
+
+
+
 # [2.0.0-rc.48](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.47...v2.0.0-rc.48) (2021-08-23)
 
 **Note:** Version bump only for package @dusk-network/footer
