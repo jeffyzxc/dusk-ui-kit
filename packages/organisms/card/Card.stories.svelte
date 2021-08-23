@@ -3,6 +3,7 @@
   import { variants, states } from "@dusk-network/helpers";
   import Card, { Content, Title, Footer, Actions } from "@dusk-network/card";
   import RichText from "@dusk-network/rich-text";
+  import Icon from "@dusk-network/icon";
   import Heading from "@dusk-network/heading";
   import Button, { Group } from "@dusk-network/button";
   import { content, title, footer } from "./content.mock.js";
@@ -42,8 +43,10 @@
     {/if}
     <Content>
       <RichText markdown="{args.content}" />
-      <Heading><h2>Additonal Heading!</h2></Heading>
-      <p>why not?</p>
+      <Heading
+        ><svelte:fragment slot="icon"><Icon name="wallet-plus" /></svelte:fragment>
+        <h2>Additonal Heading!</h2></Heading
+      >
     </Content>
     {#if args.footer}
       <Footer>

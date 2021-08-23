@@ -135,6 +135,13 @@ a > .duk-card {
 
   &:hover {
     @apply sm:shadow-marketing-hover bg-indigo-100;
+
+    & .duk-rich-text *:not(code),
+    & .duk-heading *,
+    & .duk-card__footer p,
+    & .duk-card__title * {
+      @apply dark:!text-gray-900;
+    }
   }
 
   &--passed {
