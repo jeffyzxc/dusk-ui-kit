@@ -1,5 +1,5 @@
 <script>
-  import { getContext, setContext, onMount } from "svelte";
+  import { getContext, onMount } from "svelte";
   import contexts from "@dusk-network/helpers/contexts.js";
   import variants from "@dusk-network/helpers/variants.js";
 
@@ -17,8 +17,6 @@
       ref.parentNode.classList.add("duk-table__row--has-extra-information");
     }
   });
-
-  setContext("DUK:list:context", contexts.LIST.DATUM);
 </script>
 
 {#if context === contexts.DATUM.ROW.HEAD}

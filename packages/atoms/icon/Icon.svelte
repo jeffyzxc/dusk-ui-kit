@@ -40,7 +40,6 @@
     class:duk-icon--xxl="{size === sizes.ICON.XXL}"
     class:duk-icon--xxxl="{size === sizes.ICON.XXXL}"
     class:duk-button__icon="{context === contexts.ICON.BUTTON}"
-    class:duk-list__icon="{context === contexts.ICON.LIST}"
     class:duk-alert__icon="{context === contexts.ICON.ALERT}"
     class:duk-icon--heading="{context === contexts.ICON.HEADING}"
     data-tooltip="{tooltip || undefined}"

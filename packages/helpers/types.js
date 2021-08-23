@@ -1,10 +1,4 @@
 export default {
-  LIST: {
-    NONE: "none",
-    NUMBERED: "numbered",
-    BULLETED: "bulleted",
-    DEFINITION: "definition",
-  },
   TABLE: {
     DEFAULT: "base",
     COMPACT: "compact",

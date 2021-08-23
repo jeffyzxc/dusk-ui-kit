@@ -34,7 +34,6 @@ export default {
     ALERT: "icon:alert",
     BUTTON: "icon:button",
     CONTROL: "icon:control",
-    LIST: "icon:list",
     HEADING: "icon:heading",
   },
   INPUT: {
