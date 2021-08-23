@@ -12,6 +12,7 @@ export default {
   CARD: {
     ALERT: "card:alert",
     DIALOG: "card:dialog",
+    ACCORDION: "card:accordion"
   },
   DATE_PICKER: {
     CONTROL: "date-picker:control",

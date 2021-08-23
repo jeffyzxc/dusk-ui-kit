@@ -1,13 +1,14 @@
 <script>
   import { setContext } from "svelte";
-  import { variants } from "@dusk-network/helpers/index.js";
+  import { contexts, variants } from "@dusk-network/helpers/index.js";
   import "./styles.css";
 
   export let variant = variants.CARD.DEFAULT;
   export let href = null;
   export let disabled = false;
 
-  setContext("DUK:card:accordion");
+  // setContext("DUK:card:accordion");
+  setContext("DUK:accordion:context", contexts.CARD.ACCORDION);
 </script>
 
 {#if href}

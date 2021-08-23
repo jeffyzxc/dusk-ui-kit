@@ -1,5 +1,5 @@
 <script>
-  import { setContext,getContext } from "svelte";
+  import { setContext, getContext } from "svelte";
   import { writable } from "svelte/store";
   import { contexts } from "@dusk-network/helpers/index.js";
   import "./styles.css";
@@ -9,6 +9,7 @@
   const items = writable({});
 
   const context = getContext("DUK:accordion:context");
+  
   setContext("DUK:accordion:methods", {
     items,
     add: (item) => {
