@@ -14,7 +14,7 @@
   &--card {
     @apply border-t border-b border-gray-200 divide-y divide-gray-200;
 
-    > ^&__term {
+    ^&__term {
       @apply mb-0 py-4 text-base justify-between flex-row-reverse;
     }
 
