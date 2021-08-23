@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/card",
-  "version": "2.0.0-rc.50",
+  "version": "2.0.0-rc.51",
   "description": "Dusk UI Kit - Card",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -16,7 +16,7 @@
     "test": "echo \"Work in progress...\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/helpers": "^2.0.0-rc.50"
+    "@dusk-network/helpers": "^2.0.0-rc.51"
   },
   "peerDependencies": {
     "svelte": "3.42.1"

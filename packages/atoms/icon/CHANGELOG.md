@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.51](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.50...v2.0.0-rc.51) (2021-08-23)
+
+
+### Bug Fixes
+
+* **helpers:** 🐛 cleaned up regression with list leftover references ([f26d888](https://github.com/dusk-network/dusk-ui-kit/commit/f26d88834d68194eaef5695c79cb8a56ecec59dd))
+
+
+
+
+
 # [2.0.0-rc.50](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.49...v2.0.0-rc.50) (2021-08-23)
 
 **Note:** Version bump only for package @dusk-network/icon

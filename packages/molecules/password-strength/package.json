@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/password-strength",
-  "version": "2.0.0-rc.50",
+  "version": "2.0.0-rc.51",
   "description": "Dusk UI Kit - Password Strength",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -16,8 +16,8 @@
     "test": "echo \"Work in progress...\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/helpers": "^2.0.0-rc.50",
-    "@dusk-network/progress-bar": "^2.0.0-rc.50",
+    "@dusk-network/helpers": "^2.0.0-rc.51",
+    "@dusk-network/progress-bar": "^2.0.0-rc.51",
     "check-password-strength": "^2.0.3"
   },
   "peerDependencies": {
