@@ -10,6 +10,7 @@
   export let href = null;
   export let disabled = false;
 
+  setContext("DUK:accordion:context", contexts.CARD.ACCORDION);
   setContext("DUK:rich-text:context", contexts.RICH_TEXT.CARD);
   setContext("DUK:heading:context", contexts.HEADING.CARD);
 </script>

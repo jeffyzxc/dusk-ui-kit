@@ -10,4 +10,28 @@
   &__datum {
     @apply text-xl leading-relaxed ml-5 mb-32;
   }
+
+  &--card {
+    @apply border-t border-b border-gray-200 divide-y divide-gray-200;
+
+    > ^&__term {
+      @apply mb-0 py-4 text-base justify-between flex-row-reverse;
+    }
+
+    ^&__action {
+      @apply bg-transparent shadow-none mr-0 text-black;
+
+      &:hover {
+        @apply !bg-transparent !shadow-none !text-black;
+      }
+    }
+
+    ^&__icon {
+      @apply dark:text-indigo-200;
+    }
+
+    ^&__datum {
+      @apply text-base font-normal ml-0 mb-0 pb-4 !border-t-0;
+    }
+  }
 }

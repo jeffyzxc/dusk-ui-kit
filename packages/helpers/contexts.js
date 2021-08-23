@@ -1,4 +1,7 @@
 export default {
+  ACCORDION: {
+    CARD: "accordion:card",
+  },
   BUTTON: {
     ACTION: {
       CARD: "button:action:card",
@@ -10,6 +13,7 @@ export default {
   CARD: {
     ALERT: "card:alert",
     DIALOG: "card:dialog",
+    ACCORDION: "card:accordion",
   },
   DATE_PICKER: {
     CONTROL: "date-picker:control",
@@ -42,11 +46,6 @@ export default {
   },
   LABEL: {
     BUTTON: "label:button",
-  },
-  LIST: {
-    ACCORDION: "list:accordion",
-    MENU: "list:menu",
-    DATUM: "list:datum",
   },
   LOGO: {
     NAVBAR: "logo:navbar",

@@ -52,7 +52,7 @@
     circle="{true}"
     size="{size}"
   >
-    <Icon name="{expanded ? 'minus' : 'plus'}" size="{size}" />
+    <Icon class="duk-accordion__icon" name="{expanded ? 'minus' : 'plus'}" size="{size}" />
   </Button>
   <slot name="title">{title}</slot>
 </dt>
