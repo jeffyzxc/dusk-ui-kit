@@ -11,6 +11,7 @@
   export let disabled = false;
 
   setContext("DUK:rich-text:context", contexts.RICH_TEXT.CARD);
+  setContext("DUK:heading:context", contexts.HEADING.CARD);
 </script>
 
 {#if href}

@@ -38,6 +38,7 @@ export default {
   },
   HEADING: {
     CARD: "heading:card",
+    HERO: "heading:hero",
   },
   LABEL: {
     BUTTON: "label:button",

@@ -3,6 +3,7 @@
   import { variants, states } from "@dusk-network/helpers";
   import Card, { Content, Title, Footer, Actions } from "@dusk-network/card";
   import RichText from "@dusk-network/rich-text";
+  import Heading from "@dusk-network/heading";
   import Button, { Group } from "@dusk-network/button";
   import { content, title, footer } from "./content.mock.js";
 </script>
@@ -41,6 +42,8 @@
     {/if}
     <Content>
       <RichText markdown="{args.content}" />
+      <Heading><h2>Additonal Heading!</h2></Heading>
+      <p>why not?</p>
     </Content>
     {#if args.footer}
       <Footer>

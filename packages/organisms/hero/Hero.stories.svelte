@@ -2,6 +2,7 @@
   // TODO Clean up content in template etc.
   import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
   import Hero from "@dusk-network/hero";
+  import Heading from "@dusk-network/heading";
   import Button from "@dusk-network/button";
   import RichText from "@dusk-network/rich-text";
   import { variants } from "@dusk-network/helpers";
@@ -77,6 +78,18 @@
         <RichText>{@html args.image}</RichText>
       </div>
     </Hero>
+  {:else if args.layout === 5}
+    <Hero {...args}>
+      <div slot="introduction">
+        <RichText>
+          {@html args.introduction}
+        </RichText>
+        <Heading>{@html args.heading}</Heading>
+      </div>
+      <div slot="image">
+        <RichText>{@html args.image}</RichText>
+      </div>
+    </Hero>
   {/if}
 </Template>
 
@@ -143,5 +156,16 @@
     introduction:
       '<h1>Heros are very reusable!</h1> <p>The Dusk Grants Program helps projects and developers launch to drive mainstream adoption of blockchain and build the future of finance. Opportunities on Dusk Network are endless.</p>',
     image: '<img src="https://content.dusk.network/uploads/Group_10_1_b752fec2fa.svg" />',
+  }}"
+/>
+
+<Story
+  name="Wallet homepage"
+  args="{{
+    layout: 5,
+    introduction:
+      '<h2>Dusk Network’s Official Web Wallet</h2> <p>Quickly access your wallet, view your balance, send and receive DUSK, and other tokens.</p>',
+    image: '<img src="https://content.dusk.network/uploads/Group_10_1_b752fec2fa.svg" />',
+    heading: '<h3>Discover Dusk Network: the privacy blockchain for financial applications.</h3>',
   }}"
 />

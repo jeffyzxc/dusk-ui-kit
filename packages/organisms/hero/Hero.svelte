@@ -5,6 +5,7 @@
 
   setContext("DUK:button:context", contexts.BUTTON.HERO);
   setContext("DUK:rich-text:context", contexts.RICH_TEXT.HERO);
+  setContext("DUK:heading:context", contexts.HEADING.HERO);
 </script>
 
 <div
