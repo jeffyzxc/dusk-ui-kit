@@ -19,4 +19,9 @@
   &--xxl {
     @apply prose-2xl;
   }
+
+  &--card {
+    @apply max-w-full;
+    @apply lg:prose lg:max-w-full;
+  }
 }

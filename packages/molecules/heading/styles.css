@@ -1,0 +1,22 @@
+.duk-heading {
+  @apply flex items-center space-x-4;
+
+  & > * {
+    @apply block text-2xl text-indigo-500 leading-6;
+    @apply dark:text-indigo-100;
+  }
+
+  &--large {
+    @apply space-x-6;
+    > * {
+      @apply text-3xl leading-8;
+    }
+  }
+
+  &--small {
+    @apply space-x-3;
+    > * {
+      @apply text-lg leading-5;
+    }
+  }
+}

@@ -18,6 +18,7 @@
   class:duk-rich-text--xl="{size === sizes.RICH_TEXT.XL}"
   class:duk-rich-text--xxl="{size === sizes.RICH_TEXT.XXL}"
   class:duk-rich-text--hero="{context === contexts.RICH_TEXT.HERO}"
+  class:duk-rich-text--card="{context === contexts.RICH_TEXT.CARD}"
 >
   {#if markdown}
     {@html marked(markdown)}

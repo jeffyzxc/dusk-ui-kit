@@ -1,4 +1,6 @@
 <script>
+  import { setContext } from "svelte";
+  import contexts from "@dusk-network/helpers/contexts.js";
   import variants from "@dusk-network/helpers/variants.js";
   import states from "@dusk-network/helpers/states.js";
   import "./styles.css";
@@ -7,6 +9,8 @@
   export let state = states.CARD.DEFAULT;
   export let href = null;
   export let disabled = false;
+
+  setContext("DUK:rich-text:context", contexts.RICH_TEXT.CARD);
 </script>
 
 {#if href}

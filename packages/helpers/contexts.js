@@ -31,9 +31,13 @@ export default {
     BUTTON: "icon:button",
     CONTROL: "icon:control",
     LIST: "icon:list",
+    HEADING: "icon:heading",
   },
   INPUT: {
     TEXT: "input:text",
+  },
+  HEADING: {
+    CARD: "heading:card",
   },
   LABEL: {
     BUTTON: "label:button",
@@ -71,6 +75,7 @@ export default {
     TABLE: "pagination:table",
   },
   RICH_TEXT: {
+    CARD: "rich-text:card",
     HERO: "rich-text:hero",
   },
 };

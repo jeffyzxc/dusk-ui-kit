@@ -110,4 +110,12 @@
   &--xxxl {
     @apply h-16 w-16;
   }
+
+  &--heading {
+    @apply h-auto w-auto;
+    & > svg {
+      @apply w-auto;
+      height: 1.7em; /* Allows icon to scale with heading font size */
+    }
+  }
 }
