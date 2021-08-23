@@ -14,6 +14,11 @@
   > [slot="image"] {
     @apply row-start-2;
     @apply md:row-start-1 md:row-end-3 md:col-start-8 md:col-span-5;
+
+    & img {
+      @apply mx-auto;
+      @apply sm:mx-0;
+    }
   }
 
   &--with-image {
