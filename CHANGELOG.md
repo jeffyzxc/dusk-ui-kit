@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.48](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.47...v2.0.0-rc.48) (2021-08-23)
+
+
+### Bug Fixes
+
+* **card:** 🐛 added a11y fixes for hover state cards ([7ba0ea8](https://github.com/dusk-network/dusk-ui-kit/commit/7ba0ea8d5752b963a2018175d88faa759b392cd1))
+
+
+
+
+
 # [2.0.0-rc.47](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.46...v2.0.0-rc.47) (2021-08-23)
 
 
