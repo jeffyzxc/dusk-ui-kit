@@ -2,7 +2,7 @@
   @apply w-screen px-10 mt-32 py-20 text-white bg-indigo-600;
   @apply lg:px-20 lg:mt-40;
   @apply 2xl:mt-48;
-  @apply dark:bg-black;
+  @apply dark:bg-gray-900;
 
   & > * {
     @apply mx-auto flex flex-col;
