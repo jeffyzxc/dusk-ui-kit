@@ -16,9 +16,9 @@
     "test": "echo \"Work in progress...\" && exit 1"
   },
   "dependencies": {
+    "@dusk-network/breadcrumb": "^2.0.0-rc.51",
     "@dusk-network/helpers": "^2.0.0-rc.51",
-    "@dusk-network/icon": "^2.0.0-rc.51",
-    "@dusk-network/menu": "^2.0.0-rc.51"
+    "@dusk-network/progress-bar": "^2.0.0-rc.51"
   },
   "peerDependencies": {
     "svelte": "3.42.1"
