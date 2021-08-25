@@ -9,6 +9,7 @@ export default {
     },
     ACCORDION: "button:accordion",
     HERO: "button:hero",
+    HEADING: "button:heading",
   },
   CARD: {
     ALERT: "card:alert",

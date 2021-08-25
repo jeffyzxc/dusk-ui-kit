@@ -1,22 +1,48 @@
 .duk-heading {
   @apply flex items-center space-x-4;
 
-  & > * {
+  /* FIXME should really live with the Button styles */
+  > .duk-button-wrapper {
+    @apply flex flex-grow justify-end;
+  }
+
+  & > *:not(button) {
     @apply block text-2xl text-indigo-500 leading-7;
     @apply dark:text-indigo-100;
   }
 
   &--large {
     @apply space-x-6;
-    > * {
+    > *:not(button) {
       @apply text-3xl leading-8;
     }
   }
 
   &--small {
     @apply space-x-3;
-    > * {
+    > *:not(button) {
       @apply text-lg leading-6;
+    }
+  }
+
+  &--success {
+    & > *:not(button) {
+      @apply text-green-900;
+      @apply dark:text-green-200;
+    }
+  }
+
+  &--warning {
+    & > *:not(button) {
+      @apply text-yellow-900;
+      @apply dark:text-yellow-200;
+    }
+  }
+
+  &--danger {
+    & > *:not(button) {
+      @apply text-red-900;
+      @apply dark:text-red-200;
     }
   }
 
@@ -31,7 +57,7 @@
   }
 
   &--card {
-    > * {
+    > *:not(button) {
       @apply text-black;
       @apply dark:text-indigo-200;
     }

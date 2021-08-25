@@ -1,8 +1,8 @@
 <script>
   import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
-  import { sizes } from "@dusk-network/helpers";
+  import { sizes, variants } from "@dusk-network/helpers";
   import Heading from "@dusk-network/heading";
-  // import Card, { Content } from "@dusk-network/card";
+  import Button from "@dusk-network/button";
   import Icon from "@dusk-network/icon";
 </script>
 
@@ -17,6 +17,12 @@
         options: Object.values(sizes.HEADING),
       },
     },
+    variant: {
+      control: {
+        type: 'select',
+        options: Object.values(variants.HEADING),
+      },
+    },
   }}"
 />
 
@@ -28,6 +34,11 @@
       {/if}
     </svelte:fragment>
     {@html args.heading}
+    <svelte:fragment slot="button">
+      {#if args.button}
+        <Button>{args.button}</Button>
+      {/if}
+    </svelte:fragment>
   </Heading>
 </Template>
 
@@ -35,4 +46,12 @@
 <Story
   name="With icon"
   args="{{ heading: '<h1>I am a heading with an icon<h1>', icon: 'wallet-plus' }}"
+/>
+<Story
+  name="With icon and button"
+  args="{{
+    heading: '<h1>I am a heading with an icon<h1>',
+    icon: 'wallet-plus',
+    button: 'Confirm',
+  }}"
 />

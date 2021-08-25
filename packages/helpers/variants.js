@@ -80,4 +80,10 @@ export default {
   NAVBAR: {
     BRAND: "brand",
   },
+  HEADING: {
+    SUCCESS: "success",
+    WARNING: "warning",
+    DANGER: "danger",
+    DEFAULT: "default",
+  },
 };
