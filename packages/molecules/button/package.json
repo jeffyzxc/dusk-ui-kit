@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/button",
-  "version": "2.0.0-rc.51",
+  "version": "2.0.0-rc.52",
   "description": "Dusk UI Kit - Button",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -16,7 +16,7 @@
     "test": "echo \"Work in progress...\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/helpers": "^2.0.0-rc.51"
+    "@dusk-network/helpers": "^2.0.0-rc.52"
   },
   "peerDependencies": {
     "svelte": "3.42.1"
