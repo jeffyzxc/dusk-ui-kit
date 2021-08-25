@@ -8,7 +8,7 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
-    "directory": "packages/organisms/cta-list"
+    "directory": "packages/molecules/cta-list"
   },
   "type": "module",
   "module": "index.js",

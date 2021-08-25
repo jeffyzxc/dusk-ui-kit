@@ -2980,6 +2980,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@dusk-network/cta-list@workspace:packages/molecules/cta-list":
+  version: 0.0.0-use.local
+  resolution: "@dusk-network/cta-list@workspace:packages/molecules/cta-list"
+  dependencies:
+    "@dusk-network/button": ^2.0.0-rc.51
+    "@dusk-network/helpers": ^2.0.0-rc.51
+    "@dusk-network/icon": ^2.0.0-rc.51
+    "@dusk-network/menu": ^2.0.0-rc.51
+  peerDependencies:
+    svelte: 3.42.1
+  languageName: unknown
+  linkType: soft
+
 "@dusk-network/drop-down@workspace:packages/atoms/drop-down":
   version: 0.0.0-use.local
   resolution: "@dusk-network/drop-down@workspace:packages/atoms/drop-down"

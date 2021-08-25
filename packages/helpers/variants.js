@@ -17,6 +17,15 @@ export default {
     WARNING: "warning",
     DANGER: "danger",
   },
+  CTALIST: {
+    BRAND: "brand",
+    CTA: "cta",
+    DEFAULT: "default",
+    INFO: "info",
+    SUCCESS: "success",
+    WARNING: "warning",
+    DANGER: "danger",
+  },
   LOADING_INDICATOR: {
     BRAND: "brand",
     CTA: "cta",
