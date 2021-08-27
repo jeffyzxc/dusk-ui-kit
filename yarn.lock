@@ -2906,10 +2906,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dusk-network/accordion@workspace:packages/organisms/accordion"
   dependencies:
-    "@dusk-network/button": ^2.0.0-rc.53
-    "@dusk-network/helpers": ^2.0.0-rc.53
-    "@dusk-network/icon": ^2.0.0-rc.53
-    "@dusk-network/menu": ^2.0.0-rc.53
+    "@dusk-network/button": ^2.0.0-rc.54
+    "@dusk-network/helpers": ^2.0.0-rc.54
+    "@dusk-network/icon": ^2.0.0-rc.54
+    "@dusk-network/menu": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
@@ -2919,29 +2919,29 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dusk-network/alert@workspace:packages/molecules/alert"
   dependencies:
-    "@dusk-network/helpers": ^2.0.0-rc.53
-    "@dusk-network/icon": ^2.0.0-rc.53
+    "@dusk-network/helpers": ^2.0.0-rc.54
+    "@dusk-network/icon": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
   linkType: soft
 
-"@dusk-network/breadcrumb@^2.0.0-rc.53, @dusk-network/breadcrumb@workspace:packages/molecules/breadcrumb":
+"@dusk-network/breadcrumb@^2.0.0-rc.54, @dusk-network/breadcrumb@workspace:packages/molecules/breadcrumb":
   version: 0.0.0-use.local
   resolution: "@dusk-network/breadcrumb@workspace:packages/molecules/breadcrumb"
   dependencies:
-    "@dusk-network/helpers": ^2.0.0-rc.53
-    "@dusk-network/icon": ^2.0.0-rc.53
+    "@dusk-network/helpers": ^2.0.0-rc.54
+    "@dusk-network/icon": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
   linkType: soft
 
-"@dusk-network/button@^2.0.0-rc.53, @dusk-network/button@workspace:packages/molecules/button":
+"@dusk-network/button@^2.0.0-rc.54, @dusk-network/button@workspace:packages/molecules/button":
   version: 0.0.0-use.local
   resolution: "@dusk-network/button@workspace:packages/molecules/button"
   dependencies:
-    "@dusk-network/helpers": ^2.0.0-rc.53
+    "@dusk-network/helpers": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
@@ -2951,7 +2951,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dusk-network/card@workspace:packages/organisms/card"
   dependencies:
-    "@dusk-network/helpers": ^2.0.0-rc.53
+    "@dusk-network/helpers": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
@@ -2961,8 +2961,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dusk-network/control@workspace:packages/molecules/control"
   dependencies:
-    "@dusk-network/helpers": ^2.0.0-rc.53
-    "@dusk-network/icon": ^2.0.0-rc.53
+    "@dusk-network/helpers": ^2.0.0-rc.54
+    "@dusk-network/icon": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
@@ -2973,8 +2973,8 @@ __metadata:
   resolution: "@dusk-network/cookie-banner@workspace:packages/organisms/cookie-banner"
   dependencies:
     "@beyonk/gdpr-cookie-consent-banner": 7.1.1
-    "@dusk-network/helpers": ^2.0.0-rc.53
-    "@dusk-network/icon": ^2.0.0-rc.53
+    "@dusk-network/helpers": ^2.0.0-rc.54
+    "@dusk-network/icon": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
@@ -2984,8 +2984,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dusk-network/drop-down@workspace:packages/atoms/drop-down"
   dependencies:
-    "@dusk-network/helpers": ^2.0.0-rc.53
-    "@dusk-network/icon": ^2.0.0-rc.53
+    "@dusk-network/helpers": ^2.0.0-rc.54
+    "@dusk-network/icon": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
@@ -2995,12 +2995,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dusk-network/footer@workspace:packages/organisms/footer"
   dependencies:
-    "@dusk-network/button": ^2.0.0-rc.53
-    "@dusk-network/helpers": ^2.0.0-rc.53
-    "@dusk-network/icon": ^2.0.0-rc.53
-    "@dusk-network/logo": ^2.0.0-rc.53
-    "@dusk-network/menu": ^2.0.0-rc.53
-    "@dusk-network/text-field": ^2.0.0-rc.53
+    "@dusk-network/button": ^2.0.0-rc.54
+    "@dusk-network/helpers": ^2.0.0-rc.54
+    "@dusk-network/icon": ^2.0.0-rc.54
+    "@dusk-network/logo": ^2.0.0-rc.54
+    "@dusk-network/menu": ^2.0.0-rc.54
+    "@dusk-network/text-field": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
@@ -3010,7 +3010,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dusk-network/form@workspace:packages/organisms/form"
   dependencies:
-    "@dusk-network/helpers": ^2.0.0-rc.53
+    "@dusk-network/helpers": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
@@ -3020,14 +3020,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dusk-network/heading@workspace:packages/molecules/heading"
   dependencies:
-    "@dusk-network/helpers": ^2.0.0-rc.53
-    "@dusk-network/icon": ^2.0.0-rc.53
+    "@dusk-network/helpers": ^2.0.0-rc.54
+    "@dusk-network/icon": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
   linkType: soft
 
-"@dusk-network/helpers@^2.0.0-rc.53, @dusk-network/helpers@workspace:packages/helpers":
+"@dusk-network/helpers@^2.0.0-rc.54, @dusk-network/helpers@workspace:packages/helpers":
   version: 0.0.0-use.local
   resolution: "@dusk-network/helpers@workspace:packages/helpers"
   peerDependencies:
@@ -3039,18 +3039,18 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dusk-network/hero@workspace:packages/organisms/hero"
   dependencies:
-    "@dusk-network/helpers": ^2.0.0-rc.53
-    "@dusk-network/icon": ^2.0.0-rc.53
+    "@dusk-network/helpers": ^2.0.0-rc.54
+    "@dusk-network/icon": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
   linkType: soft
 
-"@dusk-network/icon@^2.0.0-rc.53, @dusk-network/icon@workspace:packages/atoms/icon":
+"@dusk-network/icon@^2.0.0-rc.54, @dusk-network/icon@workspace:packages/atoms/icon":
   version: 0.0.0-use.local
   resolution: "@dusk-network/icon@workspace:packages/atoms/icon"
   dependencies:
-    "@dusk-network/helpers": ^2.0.0-rc.53
+    "@dusk-network/helpers": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
@@ -3060,27 +3060,27 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dusk-network/loading-indicator@workspace:packages/atoms/loading-indicator"
   dependencies:
-    "@dusk-network/helpers": ^2.0.0-rc.53
+    "@dusk-network/helpers": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
   linkType: soft
 
-"@dusk-network/logo@^2.0.0-rc.53, @dusk-network/logo@workspace:packages/atoms/logo":
+"@dusk-network/logo@^2.0.0-rc.54, @dusk-network/logo@workspace:packages/atoms/logo":
   version: 0.0.0-use.local
   resolution: "@dusk-network/logo@workspace:packages/atoms/logo"
   dependencies:
-    "@dusk-network/helpers": ^2.0.0-rc.53
+    "@dusk-network/helpers": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
   linkType: soft
 
-"@dusk-network/menu@^2.0.0-rc.53, @dusk-network/menu@workspace:packages/molecules/menu":
+"@dusk-network/menu@^2.0.0-rc.54, @dusk-network/menu@workspace:packages/molecules/menu":
   version: 0.0.0-use.local
   resolution: "@dusk-network/menu@workspace:packages/molecules/menu"
   dependencies:
-    "@dusk-network/helpers": ^2.0.0-rc.53
+    "@dusk-network/helpers": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
@@ -3090,9 +3090,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dusk-network/mnemonic@workspace:packages/molecules/mnemonic"
   dependencies:
-    "@dusk-network/button": ^2.0.0-rc.53
-    "@dusk-network/helpers": ^2.0.0-rc.53
-    "@dusk-network/text-field": ^2.0.0-rc.53
+    "@dusk-network/button": ^2.0.0-rc.54
+    "@dusk-network/helpers": ^2.0.0-rc.54
+    "@dusk-network/text-field": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
@@ -3102,24 +3102,24 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dusk-network/navbar@workspace:packages/organisms/navbar"
   dependencies:
-    "@dusk-network/helpers": ^2.0.0-rc.53
-    "@dusk-network/icon": ^2.0.0-rc.53
-    "@dusk-network/menu": ^2.0.0-rc.53
-    "@dusk-network/toggle": ^2.0.0-rc.53
+    "@dusk-network/helpers": ^2.0.0-rc.54
+    "@dusk-network/icon": ^2.0.0-rc.54
+    "@dusk-network/menu": ^2.0.0-rc.54
+    "@dusk-network/toggle": ^2.0.0-rc.54
     svelte-dark-mode: ^1.0.0
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
   linkType: soft
 
-"@dusk-network/pagination@^2.0.0-rc.53, @dusk-network/pagination@workspace:packages/molecules/pagination":
+"@dusk-network/pagination@^2.0.0-rc.54, @dusk-network/pagination@workspace:packages/molecules/pagination":
   version: 0.0.0-use.local
   resolution: "@dusk-network/pagination@workspace:packages/molecules/pagination"
   dependencies:
-    "@dusk-network/button": ^2.0.0-rc.53
-    "@dusk-network/helpers": ^2.0.0-rc.53
-    "@dusk-network/icon": ^2.0.0-rc.53
-    "@dusk-network/menu": ^2.0.0-rc.53
+    "@dusk-network/button": ^2.0.0-rc.54
+    "@dusk-network/helpers": ^2.0.0-rc.54
+    "@dusk-network/icon": ^2.0.0-rc.54
+    "@dusk-network/menu": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
@@ -3129,19 +3129,19 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dusk-network/password-strength@workspace:packages/molecules/password-strength"
   dependencies:
-    "@dusk-network/helpers": ^2.0.0-rc.53
-    "@dusk-network/progress-bar": ^2.0.0-rc.53
+    "@dusk-network/helpers": ^2.0.0-rc.54
+    "@dusk-network/progress-bar": ^2.0.0-rc.54
     check-password-strength: ^2.0.3
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
   linkType: soft
 
-"@dusk-network/progress-bar@^2.0.0-rc.53, @dusk-network/progress-bar@workspace:packages/atoms/progress-bar":
+"@dusk-network/progress-bar@^2.0.0-rc.54, @dusk-network/progress-bar@workspace:packages/atoms/progress-bar":
   version: 0.0.0-use.local
   resolution: "@dusk-network/progress-bar@workspace:packages/atoms/progress-bar"
   dependencies:
-    "@dusk-network/helpers": ^2.0.0-rc.53
+    "@dusk-network/helpers": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
@@ -3151,7 +3151,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dusk-network/rich-text@workspace:packages/atoms/rich-text"
   dependencies:
-    "@dusk-network/helpers": ^2.0.0-rc.53
+    "@dusk-network/helpers": ^2.0.0-rc.54
     marked: ^2.1.3
   peerDependencies:
     svelte: 3.42.1
@@ -3162,8 +3162,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dusk-network/search@workspace:packages/molecules/search"
   dependencies:
-    "@dusk-network/helpers": ^2.0.0-rc.53
-    "@dusk-network/icon": ^2.0.0-rc.53
+    "@dusk-network/helpers": ^2.0.0-rc.54
+    "@dusk-network/icon": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
@@ -3193,28 +3193,28 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dusk-network/table@workspace:packages/organisms/table"
   dependencies:
-    "@dusk-network/helpers": ^2.0.0-rc.53
-    "@dusk-network/pagination": ^2.0.0-rc.53
+    "@dusk-network/helpers": ^2.0.0-rc.54
+    "@dusk-network/pagination": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
   linkType: soft
 
-"@dusk-network/text-field@^2.0.0-rc.53, @dusk-network/text-field@workspace:packages/atoms/text-field":
+"@dusk-network/text-field@^2.0.0-rc.54, @dusk-network/text-field@workspace:packages/atoms/text-field":
   version: 0.0.0-use.local
   resolution: "@dusk-network/text-field@workspace:packages/atoms/text-field"
   dependencies:
-    "@dusk-network/helpers": ^2.0.0-rc.53
+    "@dusk-network/helpers": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
   linkType: soft
 
-"@dusk-network/toggle@^2.0.0-rc.53, @dusk-network/toggle@workspace:packages/atoms/toggle":
+"@dusk-network/toggle@^2.0.0-rc.54, @dusk-network/toggle@workspace:packages/atoms/toggle":
   version: 0.0.0-use.local
   resolution: "@dusk-network/toggle@workspace:packages/atoms/toggle"
   dependencies:
-    "@dusk-network/helpers": ^2.0.0-rc.53
+    "@dusk-network/helpers": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
@@ -3224,9 +3224,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dusk-network/wizard@workspace:packages/organisms/wizard"
   dependencies:
-    "@dusk-network/breadcrumb": ^2.0.0-rc.53
-    "@dusk-network/helpers": ^2.0.0-rc.53
-    "@dusk-network/progress-bar": ^2.0.0-rc.53
+    "@dusk-network/breadcrumb": ^2.0.0-rc.54
+    "@dusk-network/helpers": ^2.0.0-rc.54
+    "@dusk-network/progress-bar": ^2.0.0-rc.54
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown
