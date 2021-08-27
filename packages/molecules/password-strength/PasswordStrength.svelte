@@ -17,9 +17,7 @@
   };
 
   const getVariant = (strength) => {
-    // console.log(strength === 2);
     let variant;
-    // if (strength === 2) variant = "variants.PROGRESS_BAR.WARNING";
     switch (strength) {
       case 1:
         variant = variants.PROGRESS_BAR.DANGER;
@@ -37,8 +35,6 @@
         variant = variants.PROGRESS_BAR.DANGER;
         break;
     }
-
-    console.log(variant);
 
     return variant;
   };

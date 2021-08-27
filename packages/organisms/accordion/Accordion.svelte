@@ -1,12 +1,10 @@
 <script>
   import { setContext, getContext } from "svelte";
-  import { writable } from "svelte/store";
   import contexts from "@dusk-network/helpers/contexts.js";
+  import { items } from "./stores/items.js";
   import "./styles.css";
 
   export let multiselect = false;
-
-  const items = writable({});
 
   const context = getContext("DUK:accordion:context");
 
@@ -35,7 +33,7 @@
 
 <dl
   class="{$$props.class || ''} duk-accordion"
-  class:duk-accordion--card="{context === contexts.CARD.ACCORDION}"
+  class:duk-accordion--card="{context === contexts.ACCORDION.CARD}"
 >
   <slot />
 </dl>

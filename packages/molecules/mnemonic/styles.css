@@ -1,0 +1,25 @@
+.duk-mnemonic {
+  @apply max-w-2xl;
+
+  &__buttons {
+    @apply flex-wrap justify-center gap-6 mb-6 mx-0 px-5;
+  }
+
+  &__list {
+    @apply bg-gray-200 rounded-xl border border-black list-none flex flex-wrap p-6 mx-auto mb-6 mt-0 items-center max-w-xl;
+    @apply dark:bg-gray-800 dark:border-white;
+    counter-reset: duk-counter;
+  }
+
+  &__word {
+    @apply flex items-center my-3;
+    @apply w-1/2;
+    @apply md:w-1/3;
+    counter-increment: duk-counter;
+
+    &::before {
+      @apply flex flex-shrink-0 border border-gray-900 rounded h-10 w-10 items-center justify-center mr-3;
+      content: counter(duk-counter);
+    }
+  }
+}

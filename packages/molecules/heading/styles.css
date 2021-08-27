@@ -25,6 +25,23 @@
     }
   }
 
+  &--hero,
+  &--card {
+    &:not(:first-child) {
+      @apply mt-12;
+    }
+    &:not(:last-child) {
+      @apply mb-5;
+    }
+  }
+
+  &--card {
+    > *:not(button) {
+      @apply text-black;
+      @apply dark:text-indigo-200;
+    }
+  }
+
   &--success {
     & > *:not(button) {
       @apply text-green-900;
@@ -43,23 +60,6 @@
     & > *:not(button) {
       @apply text-red-900;
       @apply dark:text-red-200;
-    }
-  }
-
-  &--hero,
-  &--card {
-    &:not(:first-child) {
-      @apply mt-12;
-    }
-    &:not(:last-child) {
-      @apply mb-5;
-    }
-  }
-
-  &--card {
-    > *:not(button) {
-      @apply text-black;
-      @apply dark:text-indigo-200;
     }
   }
 }

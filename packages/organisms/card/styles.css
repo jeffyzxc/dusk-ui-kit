@@ -4,13 +4,13 @@
 
   & .duk-rich-text *:not(code),
   & .duk-card__footer p {
-    @apply dark:!text-gray-100;
+    @apply dark:text-gray-100;
   }
 
-  & .duk-card__title *,
+  /* & .duk-card__title *,
   & .duk-heading * {
-    @apply dark:!text-indigo-200;
-  }
+    @apply dark:text-indigo-200;
+  } */
 
   &__actions {
     @apply flex items-center justify-end py-5 px-6;
@@ -24,7 +24,7 @@
     & h3,
     & h4 {
       @apply text-xl text-indigo-500 flex items-center space-x-4 mb-5;
-      @apply dark:text-gray-100;
+      @apply dark:text-indigo-200;
     }
   }
 

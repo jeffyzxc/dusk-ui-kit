@@ -1,4 +1,5 @@
 <script>
+  // FIXME This needs DRYing.
   import { setContext, getContext } from "svelte";
   import variants from "@dusk-network/helpers/variants.js";
   import sizes from "@dusk-network/helpers/sizes.js";
@@ -47,10 +48,9 @@
         class:duk-button--outline="{outline}"
         class:duk-button--circle="{circle}"
         class:duk-button--block="{block}"
-        class:duk-card-action-button="{context === contexts.BUTTON.ACTION.CARD}"
-        class:duk-dialog-action-button="{context === contexts.BUTTON.ACTION.DIALOG}"
         class:duk-accordion__action="{context === contexts.BUTTON.ACCORDION}"
         class:duk-button--hero="{context === contexts.BUTTON.HERO}"
+        class:duk-button--mnemonic="{context === contexts.BUTTON.MNEMONIC}"
         disabled="{disabled || undefined}"
         id="{id}"
         on:click="{() => (value = !value)}"
@@ -75,10 +75,9 @@
       class:duk-button--outline="{outline}"
       class:duk-button--circle="{circle}"
       class:duk-button--block="{block}"
-      class:duk-card-action-button="{context === contexts.BUTTON.ACTION.CARD}"
-      class:duk-dialog-action-button="{context === contexts.BUTTON.ACTION.DIALOG}"
       class:duk-accordion__action="{context === contexts.BUTTON.ACCORDION}"
       class:duk-button--hero="{context === contexts.BUTTON.HERO}"
+      class:duk-button--mnemonic="{context === contexts.BUTTON.MNEMONIC}"
       disabled="{disabled || undefined}"
       id="{id}"
       on:click="{() => (value = !value)}"

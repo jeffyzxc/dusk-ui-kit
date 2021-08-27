@@ -19,7 +19,7 @@
   class:duk-breadcrumb--wizard="{context === contexts.BREADCRUMB.WIZARD}"
 >
   <Item href="{href}" on:click="{handleClick}">
-    <Icon name="backspace-outline" />
+    <Icon class="duk-breadcrumb__back-link" name="backspace-outline" />
   </Item>
   <slot />
 </ul>

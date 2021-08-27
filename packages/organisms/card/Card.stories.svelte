@@ -43,10 +43,30 @@
     {/if}
     <Content>
       <RichText markdown="{args.content}" />
-      <Heading
-        ><svelte:fragment slot="icon"><Icon name="wallet-plus" /></svelte:fragment>
-        <h2>Additonal Heading!</h2></Heading
-      >
+      <Heading>
+        <svelte:fragment slot="icon">
+          <Icon name="wallet-plus" />
+        </svelte:fragment>
+        <h2>Additional Heading!</h2>
+      </Heading>
+      <Heading variant="danger">
+        <svelte:fragment slot="icon">
+          <Icon name="alert-outline" />
+        </svelte:fragment>
+        <h2>Error heading!</h2>
+      </Heading>
+      <Heading variant="warning">
+        <svelte:fragment slot="icon">
+          <Icon name="alert-outline" />
+        </svelte:fragment>
+        <h2>Warning heading!</h2>
+      </Heading>
+      <Heading variant="success">
+        <svelte:fragment slot="icon">
+          <Icon name="alert-outline" />
+        </svelte:fragment>
+        <h2>Success heading!</h2>
+      </Heading>
     </Content>
     {#if args.footer}
       <Footer>

@@ -10,9 +10,10 @@
   export let href = null;
   export let disabled = false;
 
-  setContext("DUK:accordion:context", contexts.CARD.ACCORDION);
+  setContext("DUK:accordion:context", contexts.ACCORDION.CARD);
   setContext("DUK:rich-text:context", contexts.RICH_TEXT.CARD);
   setContext("DUK:heading:context", contexts.HEADING.CARD);
+  setContext("DUK:mnemonic:context", contexts.MNEMONIC.CARD);
 </script>
 
 {#if href}

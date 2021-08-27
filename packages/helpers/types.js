@@ -31,4 +31,9 @@ export default {
     INLINE_FIXED: "inline-fixed",
     INLINE_FLEX: "inline-flex",
   },
+  MNEMONIC: {
+    AUTHENTICATE: "authenticate",
+    PREVIEW: "preview",
+    CONFIRM: "confirm",
+  },
 };

@@ -2,19 +2,14 @@ export default {
   ACCORDION: {
     CARD: "accordion:card",
   },
+  BREADCRUMB: {
+    WIZARD: "breadcrumb:wizard",
+  },
   BUTTON: {
-    ACTION: {
-      CARD: "button:action:card",
-      DIALOG: "button:action:dialog",
-    },
     ACCORDION: "button:accordion",
     HERO: "button:hero",
     HEADING: "button:heading",
-  },
-  CARD: {
-    ALERT: "card:alert",
-    DIALOG: "card:dialog",
-    ACCORDION: "card:accordion",
+    MNEMONIC: "button:mnemonic",
   },
   DATE_PICKER: {
     CONTROL: "date-picker:control",
@@ -30,6 +25,9 @@ export default {
     CONTROL: "drop-down:control",
     MENU: "drop-down:menu",
     TABLE: "drop-down:table",
+  },
+  FORM: {
+    WIZARD: "form:wizard",
   },
   ICON: {
     ALERT: "icon:alert",
@@ -56,26 +54,24 @@ export default {
     NAVBAR: "menu:navbar",
     PAGINATION: "menu:pagination",
   },
-  TEXT_FIELD: {
-    CONTROL: "text-field:control",
-  },
-  FORM: {
-    WIZARD: "form:wizard",
-  },
-  PROGRESS_BAR: {
-    WIZARD: "progress-bar:wizard",
-  },
-  BREADCRUMB: {
-    WIZARD: "breadcrumb:wizard",
-  },
-  TOGGLE: {
-    CONTROL: "toggle:control",
+  MNEMONIC: {
+    CARD: "mnemonic:card",
   },
   PAGINATION: {
     TABLE: "pagination:table",
   },
+  PROGRESS_BAR: {
+    WIZARD: "progress-bar:wizard",
+  },
   RICH_TEXT: {
     CARD: "rich-text:card",
     HERO: "rich-text:hero",
+  },
+  TEXT_FIELD: {
+    CONTROL: "text-field:control",
+    MNEMONIC: "text-field:mnemonic",
+  },
+  TOGGLE: {
+    CONTROL: "toggle:control",
   },
 };
