@@ -23,9 +23,8 @@
       },
     },
     type: {
-      control: {
-        type: 'radio',
-        options: Object.values(types.MNEMONIC),
+      table: {
+        disable: true,
       },
     },
   }}"
@@ -42,4 +41,4 @@
 
 <Story name="Preview words" args="{{ seed: seedPhrase, type: types.MNEMONIC.PREVIEW }}" />
 <Story name="Confirm words" args="{{ seed: seedPhrase, type: types.MNEMONIC.CONFIRM }}" />
-<Story name="Authentication" args="{{ seed: seedPhrase, type: types.MNEMONIC.AUTHENTICATE }}" />
+<Story name="Authentication" args="{{ type: types.MNEMONIC.AUTHENTICATE }}" />

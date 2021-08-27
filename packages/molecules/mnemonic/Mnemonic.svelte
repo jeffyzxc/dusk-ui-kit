@@ -31,7 +31,11 @@
   });
 
   const isFilled = (filledWords) => {
-    filledWords.length === length && dispatch("complete", filledWords);
+    const isIncomplete = filledWords.some(function (word) {
+      return word === null;
+    });
+
+    filledWords.length === length && !isIncomplete && dispatch("complete", filledWords);
     JSON.stringify(filledWords) === JSON.stringify(seed) && dispatch("passed");
   };
 
@@ -63,8 +67,8 @@
   {/if}
   <ol class="duk-mnemonic__list">
     {#if $options.type === types.MNEMONIC.AUTHENTICATE}
-      {#each Array(length) as _}
-        <Word />
+      {#each Array(length) as _, i}
+        <Word index="{i}" />
       {/each}
     {:else if $options.type === types.MNEMONIC.CONFIRM}
       {#each $shuffled as _, i}

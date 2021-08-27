@@ -15,7 +15,12 @@
 
 <li class="duk-mnemonic__word" id="{id}">
   {#if $options.type === types.MNEMONIC.AUTHENTICATE}
-    <TextField type="{types.TEXT_FIELD.TEXT}" placeholder="_____" maxlength="8" />
+    <TextField
+      type="{types.TEXT_FIELD.TEXT}"
+      placeholder="_____"
+      maxlength="8"
+      bind:value="{$compared[index]}"
+    />
   {:else}
     {value || $compared[index] || ""}
   {/if}
