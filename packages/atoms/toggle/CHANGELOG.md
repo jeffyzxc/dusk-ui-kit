@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.55](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.54...v2.0.0-rc.55) (2021-08-29)
+
+
+### Features
+
+* **form:** ✨ added form (again) - this time with validation ([d2417bb](https://github.com/dusk-network/dusk-ui-kit/commit/d2417bb94871d6d52a7cb3f3c4c48ecaa4ae6fb5))
+
+
+
+
+
 # [2.0.0-rc.54](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.53...v2.0.0-rc.54) (2021-08-27)
 
 **Note:** Version bump only for package @dusk-network/toggle
