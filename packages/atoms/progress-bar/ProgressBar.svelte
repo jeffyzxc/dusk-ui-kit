@@ -22,6 +22,7 @@
   class:duk-progress-bar--warning="{variant === variants.PROGRESS_BAR.WARNING}"
   class:duk-progress-bar--danger="{variant === variants.PROGRESS_BAR.DANGER}"
   class:duk-progress-bar--wizard="{context === contexts.PROGRESS_BAR.WIZARD}"
+  class:duk-progress-bar--password-strength="{context === contexts.PROGRESS_BAR.PASSWORD_STRENGTH}"
 >
   <div class="duk-progress-bar__wrapper">
     <div style="width:{styles}%" class="duk-progress-bar__step"></div>

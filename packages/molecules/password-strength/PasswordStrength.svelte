@@ -1,18 +1,28 @@
 <script>
-  // import { getContext } from "svelte";
+  import { getContext, setContext, createEventDispatcher } from "svelte";
   import { passwordStrength } from "check-password-strength";
   import ProgressBar from "@dusk-network/progress-bar/ProgressBar.svelte";
+  import contexts from "@dusk-network/helpers/contexts.js";
   import variants from "@dusk-network/helpers/variants.js";
   import "./styles.css";
 
   export let password;
 
   let strength = 0;
-  let maxStrength = 4;
   let variant = variants.PROGRESS_BAR.DANGER;
+
+  $: passwordLevel = checkPassword(password);
+  $: variant = getVariant(strength);
+
+  setContext("DUK:progress-bar:context", contexts.PROGRESS_BAR.PASSWORD_STRENGTH);
+
+  const MAX_STRENGTH = 4;
+  const context = getContext("DUK:password-strength:context");
+  const dispatch = createEventDispatcher();
 
   const checkPassword = (password) => {
     strength = passwordStrength(password).id + 1;
+    dispatch("strength", strength);
     return passwordStrength(password).value;
   };
 
@@ -38,17 +48,15 @@
 
     return variant;
   };
-
-  $: passwordLevel = checkPassword(password);
-  $: variant = getVariant(strength);
-
-  // const context = getContext("DUK:password-strength:context");
 </script>
 
-<div class="{$$props.class || ''} duk-password-strength">
+<div
+  class="{$$props.class || ''} duk-password-strength"
+  class:duk-password-strength--control="{context === contexts.PASSWORD_STRENGTH.CONTROL}"
+>
   <div class="duk-password-strength__label">
-    <slot />
+    <slot strength="{strength}" />
     <span>{passwordLevel}</span>
   </div>
-  <ProgressBar variant="{variant}" steps="{maxStrength}" step="{strength}" />
+  <ProgressBar variant="{variant}" steps="{MAX_STRENGTH}" step="{strength}" />
 </div>

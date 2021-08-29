@@ -14,7 +14,7 @@
   component="{Control}"
   args="{{
     type: 'default',
-    message: 'This is a simple Alert message.',
+    message: 'This is a message.',
     label: 'Control label',
   }}"
   argTypes="{{

@@ -8,9 +8,9 @@
   export let id = "__DUK-menu" + Math.random().toString(36);
   export let name;
 
-  const context = getContext("DUK:menu:context");
-
   setContext("DUK:drop-down:context", contexts.DROP_DOWN.MENU);
+
+  const context = getContext("DUK:menu:context");
 </script>
 
 <nav

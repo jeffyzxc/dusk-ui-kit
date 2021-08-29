@@ -60,7 +60,11 @@ export default {
   PAGINATION: {
     TABLE: "pagination:table",
   },
+  PASSWORD_STRENGTH: {
+    CONTROL: "password-strength:control",
+  },
   PROGRESS_BAR: {
+    PASSWORD_STRENGTH: "progress-bar:password-strength",
     WIZARD: "progress-bar:wizard",
   },
   RICH_TEXT: {

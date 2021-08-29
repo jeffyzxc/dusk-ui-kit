@@ -1,3 +1,3 @@
-<div class="{$$props.class || ''} duk-toggle-group">
+<fieldset class="{$$props.class || ''} duk-toggle-group">
   <slot />
-</div>
+</fieldset>

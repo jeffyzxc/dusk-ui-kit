@@ -1,4 +1,5 @@
 <script>
+  // FIXME Needs DRYing up
   import { getContext } from "svelte";
   import states from "@dusk-network/helpers/states.js";
   import contexts from "@dusk-network/helpers/contexts.js";
@@ -9,7 +10,7 @@
   export let multiline = false;
   export let placeholder = "";
   export let state = states.TEXT_FIELD.DEFAULT;
-  export let id;
+  export let id = "__DUK-text-field" + Math.random().toString(36);
   export let name;
   export let focused = false;
 
@@ -31,7 +32,9 @@
     class:duk-control__input="{context === contexts.TEXT_FIELD.CONTROL}"
     class:duk-text-field--mnemonic="{context === contexts.TEXT_FIELD.MNEMONIC}"
     disabled="{disabled}"
-    id="{id || undefined}"
+    aria-describedby="{id}-label"
+    aria-invalid="{state === states.TEXT_FIELD.DANGER ? 'true' : 'false'}"
+    id="{id}"
     name="{name}"
     on:blur
     on:blur="{toggleFocused}"
@@ -55,7 +58,9 @@
     class:duk-control__input="{context === contexts.TEXT_FIELD.CONTROL}"
     class:duk-text-field--mnemonic="{context === contexts.TEXT_FIELD.MNEMONIC}"
     disabled="{disabled}"
-    id="{id || undefined}"
+    aria-describedby="{id}-message"
+    aria-invalid="{state === states.TEXT_FIELD.DANGER ? 'true' : 'false'}"
+    id="{id}"
     name="{name}"
     on:blur
     on:blur="{toggleFocused}"

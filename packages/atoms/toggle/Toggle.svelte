@@ -9,6 +9,7 @@
   export let checked = false;
   export let id = "__DUK-toggle" + Math.random().toString(36);
   export let value;
+  export let group;
   export let disabled = false;
   export let selected = false;
 </script>
@@ -33,6 +34,7 @@
         id="{id}"
         disabled="{disabled || undefined}"
         bind:checked
+        on:click="{() => (value = !value)}"
         on:click
         on:change
       />
@@ -50,6 +52,7 @@
       id="{id}"
       disabled="{disabled || undefined}"
       selected="{selected || undefined}"
+      bind:group
       on:click
       on:change
     />
@@ -67,6 +70,7 @@
         id="{id}"
         disabled="{disabled || undefined}"
         selected="{selected || undefined}"
+        bind:group
         on:click
         on:change
       />
@@ -77,12 +81,16 @@
       <input
         class="duk-toggle__switch"
         type="checkbox"
-        role="checkbox"
+        role="switch"
         name="{name}"
         value="{value}"
         id="{id}"
         disabled="{disabled || undefined}"
+        data-action="aria-switch"
+        aria-labelledby="{id}-label"
+        aria-checked="{checked ? 'true' : 'false'}"
         bind:checked
+        on:click="{() => (value = !value)}"
         on:click
         on:change
       />

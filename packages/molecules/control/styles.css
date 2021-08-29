@@ -1,5 +1,9 @@
 .duk-control {
-  @apply p-5;
+  @apply p-5 w-full;
+
+  .duk-button-wrapper {
+    @apply justify-center;
+  }
 
   &__label {
     @apply pr-3;
@@ -11,6 +15,8 @@
 
   &__message {
     @apply flex items-center justify-end text-sm space-x-2 mt-2;
+
+    min-height: 1.5rem;
 
     & > p:empty::before {
       content: "\00a0";
@@ -74,6 +80,25 @@
     ^&__message {
       @apply text-red-900 not-italic;
       @apply dark:text-red-600;
+    }
+  }
+
+  &--full {
+    @apply w-full;
+  }
+  &--half {
+    @apply sm:w-1/2;
+  }
+  &--quarter {
+    @apply sm:w-1/4;
+  }
+
+  &--group {
+    ^&__label {
+      @apply font-bold;
+    }
+    & .duk-toggle-group {
+      @apply my-5;
     }
   }
 }
