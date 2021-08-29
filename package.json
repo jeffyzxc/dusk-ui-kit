@@ -144,7 +144,8 @@
     "svelte-loader": "^3.1.2",
     "svelte-preprocess": "^4.7.4",
     "tailwindcss": "^2.2.7",
-    "ts-jest": "^27.0.4"
+    "ts-jest": "^27.0.4",
+    "yup": "^0.32.9"
   },
   "engines": {
     "node": "^14.16.0"
