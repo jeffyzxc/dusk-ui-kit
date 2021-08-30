@@ -1,0 +1,27 @@
+{
+  "name": "@dusk-network/cta-list",
+  "version": "2.0.0-rc.51",
+  "description": "Dusk UI Kit - CtaList",
+  "bugs": {
+    "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dusk-network/dusk-ui-kit.git",
+    "directory": "packages/molecules/cta-list"
+  },
+  "type": "module",
+  "module": "index.js",
+  "scripts": {
+    "test": "echo \"Work in progress...\" && exit 1"
+  },
+  "dependencies": {
+    "@dusk-network/button": "^2.0.0-rc.51",
+    "@dusk-network/helpers": "^2.0.0-rc.51",
+    "@dusk-network/icon": "^2.0.0-rc.51",
+    "@dusk-network/menu": "^2.0.0-rc.51"
+  },
+  "peerDependencies": {
+    "svelte": "3.42.1"
+  }
+}
