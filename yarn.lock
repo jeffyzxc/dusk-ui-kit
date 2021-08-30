@@ -2937,7 +2937,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dusk-network/button@^2.0.0-rc.55, @dusk-network/button@workspace:packages/molecules/button":
+"@dusk-network/button@^2.0.0-rc.51, @dusk-network/button@^2.0.0-rc.55, @dusk-network/button@workspace:packages/molecules/button":
   version: 0.0.0-use.local
   resolution: "@dusk-network/button@workspace:packages/molecules/button"
   dependencies:
@@ -3004,6 +3004,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@dusk-network/file-upload@workspace:packages/molecules/file-upload":
+  version: 0.0.0-use.local
+  resolution: "@dusk-network/file-upload@workspace:packages/molecules/file-upload"
+  dependencies:
+    "@dusk-network/helpers": ^2.0.0-rc.51
+  peerDependencies:
+    svelte: 3.42.1
+  languageName: unknown
+  linkType: soft
+
 "@dusk-network/footer@workspace:packages/organisms/footer":
   version: 0.0.0-use.local
   resolution: "@dusk-network/footer@workspace:packages/organisms/footer"
@@ -3042,7 +3052,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dusk-network/helpers@^2.0.0-rc.55, @dusk-network/helpers@workspace:packages/helpers":
+"@dusk-network/helpers@^2.0.0-rc.51, @dusk-network/helpers@^2.0.0-rc.55, @dusk-network/helpers@workspace:packages/helpers":
   version: 0.0.0-use.local
   resolution: "@dusk-network/helpers@workspace:packages/helpers"
   peerDependencies:
@@ -3061,7 +3071,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dusk-network/icon@^2.0.0-rc.55, @dusk-network/icon@workspace:packages/atoms/icon":
+"@dusk-network/icon@^2.0.0-rc.51, @dusk-network/icon@^2.0.0-rc.55, @dusk-network/icon@workspace:packages/atoms/icon":
   version: 0.0.0-use.local
   resolution: "@dusk-network/icon@workspace:packages/atoms/icon"
   dependencies:
@@ -3091,7 +3101,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dusk-network/menu@^2.0.0-rc.55, @dusk-network/menu@workspace:packages/molecules/menu":
+"@dusk-network/menu@^2.0.0-rc.51, @dusk-network/menu@^2.0.0-rc.55, @dusk-network/menu@workspace:packages/molecules/menu":
   version: 0.0.0-use.local
   resolution: "@dusk-network/menu@workspace:packages/molecules/menu"
   dependencies:

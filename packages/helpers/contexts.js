@@ -11,6 +11,9 @@ export default {
     HEADING: "button:heading",
     MNEMONIC: "button:mnemonic",
   },
+  CONTROL: {
+    FILE_UPLOAD: "control:file-upload"
+  },
   DATE_PICKER: {
     CONTROL: "date-picker:control",
   },
@@ -28,6 +31,7 @@ export default {
   },
   FORM: {
     WIZARD: "form:wizard",
+    FILE_UPLOAD: "form:file-upload"
   },
   ICON: {
     ALERT: "icon:alert",

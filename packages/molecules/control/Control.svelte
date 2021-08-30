@@ -23,6 +23,7 @@
   setContext("DUK:date-picker:context", contexts.DATE_PICKER.CONTROL);
   setContext("DUK:password-strength:context", contexts.PASSWORD_STRENGTH.CONTROL);
   setContext("DUK:button:context", contexts.BUTTON.CONTROL);
+  
 
   const schema = getContext("DUK:form:schema");
   const fields = getContext("DUK:form:fields");
