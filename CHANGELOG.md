@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.56](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.55...v2.0.0-rc.56) (2021-08-31)
+
+
+### Bug Fixes
+
+* **build:** 🐛 📦️ fixing build config ([7131176](https://github.com/dusk-network/dusk-ui-kit/commit/713117684c7bf4249b3d4ca160ef2be2a1b29bb0))
+* **deps:** 🐛 addming missing dep ([18be8d6](https://github.com/dusk-network/dusk-ui-kit/commit/18be8d627fa1a5ae14875c4f509d82a0dc1801ba))
+
+
+### Features
+
+* **ctalist:** add new ordered list component ([f5abd0b](https://github.com/dusk-network/dusk-ui-kit/commit/f5abd0b8b5f0c7459bf88974b29f846084e2133d))
+* **ctalist:** added ordered list component ([8217b67](https://github.com/dusk-network/dusk-ui-kit/commit/8217b67984d2c03ab5cccefb1c356362d99e6dbd))
+
+
+
+
+
 # [2.0.0-rc.55](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.54...v2.0.0-rc.55) (2021-08-29)
 
 
