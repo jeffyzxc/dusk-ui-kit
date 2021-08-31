@@ -7,6 +7,7 @@
   import { options } from "./stores/options.js";
   import { pageNumber, activeRow } from "./stores/state.js";
   import { table as dataTable } from "./table.js";
+  import { rows } from "./stores/data.js";
   import "./styles.css";
 
   export let data = [];
@@ -20,7 +21,9 @@
   onMount(() => {
     dataTable.init();
   });
-  onDestroy(() => dataTable.reset());
+  onDestroy(() => {
+    dataTable.reset();
+  });
 
   const handlePagination = () => {
     activeRow.set(null);
@@ -41,7 +44,7 @@
   </div>
   <table class="duk-table__table">
     <slot name="head" />
-    <slot />
+    <slot rows="{$rows}" />
     <slot name="foot" />
   </table>
   <div class="duk-table__actions">
