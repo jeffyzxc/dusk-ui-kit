@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.58](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.57...v2.0.0-rc.58) (2021-09-06)
+
+**Note:** Version bump only for package @dusk-network/search
+
+
+
+
+
 # [2.0.0-rc.57](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.56...v2.0.0-rc.57) (2021-09-06)
 
 **Note:** Version bump only for package @dusk-network/search
