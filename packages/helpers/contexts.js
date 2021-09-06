@@ -45,6 +45,9 @@ export default {
   LABEL: {
     BUTTON: "label:button",
   },
+  LOADING_INDICATOR: {
+    HEADING: "loading-indicator:heading",
+  },
   LOGO: {
     NAVBAR: "logo:navbar",
     FOOTER: "logo:footer",

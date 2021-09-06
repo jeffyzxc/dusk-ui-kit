@@ -11,6 +11,7 @@
   const context = getContext("DUK:heading:context");
 
   setContext("DUK:icon:context", contexts.ICON.HEADING);
+  setContext("DUK:loading-indicator:context", contexts.LOADING_INDICATOR.HEADING);
   setContext("DUK:button:context", contexts.BUTTON.HEADING);
 </script>
 
