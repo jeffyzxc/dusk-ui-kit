@@ -1,3 +1,9 @@
+<style>
+  :global(.custom-field) {
+    @apply border-dashed;
+  }
+</style>
+
 <script>
   import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
   import { types, states } from "@dusk-network/helpers";
@@ -115,6 +121,7 @@
     type: { table: { disable: true } },
   }}"
 />
+<Story name="With custom class" args="{{ type: types.TEXT_FIELD.TEXT, class: 'custom-field' }}" />
 <!-- <Story
   name="Single icon with tooltip"
   args="{{

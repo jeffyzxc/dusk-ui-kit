@@ -73,6 +73,5 @@
     on:keypress
     on:keyup
     placeholder="{placeholder || undefined}"
-    {...$$restProps}
   />
 {/if}
