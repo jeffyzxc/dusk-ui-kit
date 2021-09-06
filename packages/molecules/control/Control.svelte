@@ -53,6 +53,8 @@
   class:duk-control--half="{width === widths.CONTROL.HALF}"
   class:duk-control--quarter="{width === widths.CONTROL.QUARTER}"
   class:duk-control--group="{group}"
+  class:duk-control--with-prefix="{$$slots.buttonPrefix}"
+  class:duk-control--with-postfix="{$$slots.buttonPostfix}"
 >
   <div class="duk-control__wrapper">
     {#if group && label}
@@ -64,14 +66,30 @@
         {label}
       </label>
     {/if}
-    <slot id="{id}" state="{state}" />
+    <div class="duk-control__input-wrapper">
+      {#if $$slots.buttonPrefix}
+        <div class="duk-control__button---prefix">
+          <slot name="buttonPrefix" />
+        </div>
+      {/if}
+      <slot id="{id}" state="{state}" />
+      {#if $$slots.buttonPostfix}
+        <div class="duk-control__button---postfix">
+          <slot name="buttonPostfix" />
+        </div>
+      {/if}
+    </div>
   </div>
-  <Message
-    id="{id}"
-    message="{message}"
-    schema="{schema}"
-    fields="{fields}"
-    submitted="{submitted}"
-    name="{name}"
-  />
+  {#if !$$slots.message || state === states.CONTROL.DANGER}
+    <Message
+      id="{id}"
+      message="{message}"
+      schema="{schema}"
+      fields="{fields}"
+      submitted="{submitted}"
+      name="{name}"
+    />
+  {:else}
+    <slot name="message" />
+  {/if}
 </div>
