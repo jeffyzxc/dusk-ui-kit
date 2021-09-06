@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-rc.59](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.58...v2.0.0-rc.59) (2021-09-06)
+
+
+### Features
+
+* **heading:** ✨ added support for loading-indicator in headings ([fb78654](https://github.com/dusk-network/dusk-ui-kit/commit/fb7865487631da1ca6e4084d9fcb88c2c40c6ae3))
+
+
+
+
+
 # [2.0.0-rc.58](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.57...v2.0.0-rc.58) (2021-09-06)
 
 
