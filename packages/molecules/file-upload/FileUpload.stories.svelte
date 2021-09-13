@@ -4,45 +4,31 @@
   import Form from "@dusk-network/form";
   import Control from "@dusk-network/control";
   import Button from "@dusk-network/button";
-  import RichText from '@dusk-network/rich-text';
-  import Icon from '@dusk-network/icon';
+  
   import * as yup from "yup";
-
-  let file_size = 1000000;
-  let supported_types = ['image/png','image/jpeg']
 
   let schema = yup.object().shape({
     file: yup
     .mixed()
+    .label('Upload file')
     .required('A file is required')
-    .test('fileSize' , 'File too large' , (value) => value === null || (value && value.size <= file_size))
-    .test('fileFormat', 'Unsupported file format', (value)=> value === null || (value && supported_types.includes(value.type))
-    )
+    .test('fileSize' , 'File too large' , (value) => value && value[0].size <= 1000000)
+    .test('fileFormat', 'Unsupported file format', (value) => value && ['image/png','image/jpeg'].includes(value[0].type))
   });
+
   let fields = {
     file: null,
   };
+  let uploaded = false;
   let submitted = false;
-  let isFileLoaded = false;
-
-  function dropFile(e) {
-      fields.file = e.dataTransfer.files;
-      isFileLoaded = true;
-      console.log(fields)
-  }
-  function inputFile(e) {
-      fields.file = e.target.files;
-      isFileLoaded = true;
-      console.log(fields)
-  }
-
   function formSubmit() {
-    console.log(fields);
-    if (schema.isValidSync(fields)) {
-      submitted = true;
+    submitted = true;
+    if (schema.isValidSync({file:fields.file})) {
+      uploaded = true;
+      submitted = false;
       alert("submit form");
     } else {
-      submitted = false;
+      uploaded = false;
     }
   }
 </script>
@@ -62,34 +48,14 @@
     fields="{fields}"
     submitHandler="{formSubmit}"
   >
-    <Control  {...args} name="file" let:state>
-      <div
-        class="duk-file-upload--dropzone"
-        on:dragover|preventDefault
-        on:dragenter|preventDefault
-        on:drop|preventDefault="{dropFile}"
-      >
-        <div class="duk-file-upload__layout">
-          {#if !isFileLoaded && !submitted}
-            <RichText>
-                <p class="duk-file-upload__text">
-                    Drag your file here 
-                    <br/>or<br/>
-                    <span>Upload File</span>
-                </p>
-            </RichText>
-          {/if}
-          {#if isFileLoaded && !submitted}
-            <RichText>
-                <p class="duk-file-upload__text">{fields.file[0].name}</p>
-            </RichText>
-          {/if}
-          {#if isFileLoaded && submitted}
-            <Icon name='check-decagram-outline' size='xxxl'/>
-          {/if}
-        </div>
-        <input class="duk-file-upload--input" type="file" disabled={submitted} on:change="{inputFile}" />
-      </div>
+    <Control {...args} name="file" let:id let:state>
+      <FileUpload 
+        id="{id}" 
+        state="{state}" 
+        uploaded="{uploaded}"
+        {...args}
+        on:inputFile={(event) => fields.file = event.detail.file} 
+      />
     </Control>
     <Control>
       <Button type='submit'size='lg' variant='cta'>Upload</Button>
@@ -98,4 +64,5 @@
 
 </Template>
 
-<Story name="Default" args="{{}}" />
+<Story name="Default" args="{{type:1}}" />
+<Story name="Styled File Upload" args="{{ type:2}}"/>
