@@ -84,6 +84,13 @@
         @apply border-l-0 rounded-tl-none rounded-bl-none;
       }
     }
+
+    .duk-button--control {
+      @apply border border-solid border-gray-900 border-r-0 rounded-tr-none rounded-br-none px-5;
+      @apply dark:border-gray-100;
+
+      line-height: inherit;
+    }
   }
 
   &--success {

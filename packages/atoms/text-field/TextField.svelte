@@ -19,6 +19,7 @@
   function toggleFocused() {
     focused = !focused;
   }
+  delete $$restProps.class;
 </script>
 
 {#if multiline}
@@ -73,5 +74,6 @@
     on:keypress
     on:keyup
     placeholder="{placeholder || undefined}"
+    {...$$restProps}
   />
 {/if}

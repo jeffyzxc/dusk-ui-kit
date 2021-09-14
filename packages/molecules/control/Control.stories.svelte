@@ -5,6 +5,7 @@
   import Control from "@dusk-network/control";
   import TextField from "@dusk-network/text-field";
   import Toggle from "@dusk-network/toggle";
+  import Button from "@dusk-network/button";
   import DropDown from "@dusk-network/drop-down";
 </script>
 
@@ -76,30 +77,48 @@
 />
 
 <Template let:args>
-  <Control {...args} on:click="{args.onClick}" on:mouseover="{args.onMouseover}">
-    {#if args.checkbox}
-      <Toggle type="{types.TOGGLE.CHECKBOX}" state="{args.state}">Checkbox example</Toggle>
-    {:else if args.radio}
-      <Toggle type="{types.TOGGLE.RADIO}" state="{args.state}" options="{[1, 2, 3, 4]}">
-        Radio example
-      </Toggle>
-    {:else if args.dropDown}
-      <DropDown options="{[1, 2, 3, 4]}" />
-    {:else}
+  {#if !args.buttonPrefix && !args.buttonPostfix}
+    <Control width="full" {...args} on:click="{args.onClick}" on:mouseover="{args.onMouseover}">
+      {#if args.checkbox}
+        <Toggle type="{types.TOGGLE.CHECKBOX}" state="{args.state}">Checkbox example</Toggle>
+      {:else if args.radio}
+        <Toggle type="{types.TOGGLE.RADIO}" state="{args.state}" options="{[1, 2, 3, 4]}">
+          Radio example
+        </Toggle>
+      {:else if args.dropDown}
+        <DropDown options="{[1, 2, 3, 4]}" />
+      {:else}
+        <TextField state="{args.state}" />
+      {/if}
+    </Control>
+  {/if}
+
+  {#if args.buttonPrefix}
+    <Control width="full" {...args} on:click="{args.onClick}" on:mouseover="{args.onMouseover}">
+      <Button slot="buttonPrefix">Prefixed</Button>
       <TextField state="{args.state}" />
-    {/if}
-  </Control>
+    </Control>
+  {/if}
+
+  {#if args.buttonPostfix}
+    <Control width="full" {...args} on:click="{args.onClick}" on:mouseover="{args.onMouseover}">
+      <Button slot="buttonPostfix">Postfixed</Button>
+      <TextField state="{args.state}" />
+    </Control>
+  {/if}
 </Template>
 
-<Story name="With text field" args="{{}}" />
+<Story name="Control Text field" args="{{}}" />
+<Story name="Control Text field with postfixed Button" args="{{ buttonPostfix: true }}" />
+<Story name="Control Text field with prefixed Button" args="{{ buttonPrefix: true }}" />
 <Story
-  name="With a checkbox"
+  name="Control Checkbox"
   args="{{ checkbox: true, label: '' }}"
   argTypes="{{ label: { table: { disable: true } } }}"
 />
 <Story
-  name="With a radio"
+  name="Control Radio"
   args="{{ radio: true, label: '' }}"
   argTypes="{{ label: { table: { disable: true } } }}"
 />
-<Story name="With a drop down" args="{{ dropDown: true }}" />
+<Story name="Control Drop down" args="{{ dropDown: true }}" />
