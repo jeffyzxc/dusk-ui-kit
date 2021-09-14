@@ -1,0 +1,24 @@
+{
+  "name": "@dusk-network/disclaimer-list",
+  "version": "2.0.0-rc.55",
+  "description": "Dusk UI Kit - DisclaimerList",
+  "bugs": {
+    "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dusk-network/dusk-ui-kit.git",
+    "directory": "packages/molecules/disclaimer-list"
+  },
+  "type": "module",
+  "module": "index.js",
+  "scripts": {
+    "test": "echo \"Work in progress...\" && exit 1"
+  },
+  "dependencies": {
+    "@dusk-network/helpers": "^2.0.0-rc.51"
+  },
+  "peerDependencies": {
+    "svelte": "3.42.1"
+  }
+}

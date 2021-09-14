@@ -2993,6 +2993,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@dusk-network/disclaimer-list@workspace:packages/molecules/disclaimer-list":
+  version: 0.0.0-use.local
+  resolution: "@dusk-network/disclaimer-list@workspace:packages/molecules/disclaimer-list"
+  dependencies:
+    "@dusk-network/helpers": ^2.0.0-rc.51
+  peerDependencies:
+    svelte: 3.42.1
+  languageName: unknown
+  linkType: soft
+
 "@dusk-network/drop-down@workspace:packages/atoms/drop-down":
   version: 0.0.0-use.local
   resolution: "@dusk-network/drop-down@workspace:packages/atoms/drop-down"
