@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/mnemonic",
-  "version": "2.0.0-rc.59",
+  "version": "2.0.0-rc.60",
   "description": "Dusk UI Kit - Mnemonic",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -16,9 +16,9 @@
     "test": "echo \"Work in progress...\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/button": "^2.0.0-rc.59",
-    "@dusk-network/helpers": "^2.0.0-rc.59",
-    "@dusk-network/text-field": "^2.0.0-rc.59"
+    "@dusk-network/button": "^2.0.0-rc.60",
+    "@dusk-network/helpers": "^2.0.0-rc.60",
+    "@dusk-network/text-field": "^2.0.0-rc.60"
   },
   "peerDependencies": {
     "svelte": "3.42.1"
