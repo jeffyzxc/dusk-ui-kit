@@ -3,6 +3,7 @@
   import DisclaimerList, { Item } from "@dusk-network/disclaimer-list";
   import Icon from "@dusk-network/icon";
   import RichText from "@dusk-network/rich-text";
+  import Heading from "@dusk-network/heading";
 </script>
 
 <Meta
@@ -11,19 +12,17 @@
   parameters="{{ layout: 'padded' }}"
   argTypes="{{}}"
 />
-
 <Template let:args>  
   <DisclaimerList>
+    <svelte:fragment slot="header">
+      <Heading variant="danger">
+        <svelte:fragment slot="icon">
+          <Icon name="alert-outline"/>
+        </svelte:fragment>
+        <h1>Warning</h1>
+      </Heading>
+    </svelte:fragment>
     <Item>
-      <svelte:fragment slot="icon">
-        <Icon name="alert-outline" size="xl" variant="danger"/>
-      </svelte:fragment>
-      <RichText>
-        <p>Warning</p>
-      </RichText>
-    </Item>
-
-    <Item type='{2}'>
       <svelte:fragment slot="icon">
         <Icon name="safe" size="xxxl" variant="danger"/>
       </svelte:fragment>
@@ -32,7 +31,7 @@
         <p>If you lose your keystore file, your wallet will be lost.</p>
       </RichText>
     </Item>
-    <Item type='{2}'>
+    <Item>
       <svelte:fragment slot="icon">
         <Icon name="eye-outline" size="xxxl" variant="danger"/>
       </svelte:fragment>
@@ -41,7 +40,7 @@
         <p>Anyone with your keystore file can access your funds.<br> Beware of malicious phishing sites.</p>
       </RichText>
     </Item>
-    <Item type='{2}'>
+    <Item>
       <svelte:fragment slot="icon">
         <Icon name="content-save-alert-outline" size="xxxl" variant="danger"/>
       </svelte:fragment>

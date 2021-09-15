@@ -19,6 +19,7 @@
   let fields = {
     file: null,
   };
+  
   let uploaded = false;
   let submitted = false;
   function formSubmit() {
@@ -64,5 +65,5 @@
 
 </Template>
 
-<Story name="Default" args="{{type:1}}" />
-<Story name="Styled File Upload" args="{{ type:2}}"/>
+<Story name="Default" args="{{}}" />
+

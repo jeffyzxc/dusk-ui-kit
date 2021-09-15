@@ -9,7 +9,6 @@
   export let id;
   export let name;
   export let uploaded;
-  export let type = 1;
 
   const dispatch = createEventDispatcher();
   const context = getContext("DUK:file-upload:context")
@@ -33,8 +32,7 @@
 
 
 <div
-  class="{$$props.class || ''} duk-file-upload"
-  class:duk-file-upload__dropzone="{type === 2}"
+  class="{$$props.class || ''} duk-file-upload duk-file-upload__dropzone"
   class:duk-file-upload--control = "{context === contexts.FILE_UPLOAD.CONTROL}"
   class:duk-file-upload--form = "{context === contexts.FILE_UPLOAD.FORM}"
   on:dragover|preventDefault
