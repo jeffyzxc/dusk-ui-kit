@@ -23,7 +23,9 @@
   setContext("DUK:date-picker:context", contexts.DATE_PICKER.CONTROL);
   setContext("DUK:password-strength:context", contexts.PASSWORD_STRENGTH.CONTROL);
   setContext("DUK:button:context", contexts.BUTTON.CONTROL);
+  setContext("DUK:file-upload:context", contexts.FILE_UPLOAD.CONTROL);
 
+  // const context = getContext("DUK:control:context");
   const schema = getContext("DUK:form:schema");
   const fields = getContext("DUK:form:fields");
   const submitted = getContext("DUK:form:submitted");
@@ -53,8 +55,6 @@
   class:duk-control--half="{width === widths.CONTROL.HALF}"
   class:duk-control--quarter="{width === widths.CONTROL.QUARTER}"
   class:duk-control--group="{group}"
-  class:duk-control--with-prefix="{$$slots.buttonPrefix}"
-  class:duk-control--with-postfix="{$$slots.buttonPostfix}"
 >
   <div class="duk-control__wrapper">
     {#if group && label}
@@ -66,30 +66,14 @@
         {label}
       </label>
     {/if}
-    <div class="duk-control__input-wrapper">
-      {#if $$slots.buttonPrefix}
-        <div class="duk-control__button---prefix">
-          <slot name="buttonPrefix" />
-        </div>
-      {/if}
-      <slot id="{id}" state="{state}" />
-      {#if $$slots.buttonPostfix}
-        <div class="duk-control__button---postfix">
-          <slot name="buttonPostfix" />
-        </div>
-      {/if}
-    </div>
+    <slot id="{id}" state="{state}" />
   </div>
-  {#if !$$slots.message || state === states.CONTROL.DANGER}
-    <Message
-      id="{id}"
-      message="{message}"
-      schema="{schema}"
-      fields="{fields}"
-      submitted="{submitted}"
-      name="{name}"
-    />
-  {:else}
-    <slot name="message" />
-  {/if}
+  <Message
+    id="{id}"
+    message="{message}"
+    schema="{schema}"
+    fields="{fields}"
+    submitted="{submitted}"
+    name="{name}"
+  />
 </div>

@@ -329,6 +329,11 @@ module.exports = {
           height: "auto",
           pointerEvents: "none",
         },
+        form: {
+          display: "flex",
+          flexWrap: "wrap",
+          alignItems: "flex-start",
+        },
       });
     }),
   ],

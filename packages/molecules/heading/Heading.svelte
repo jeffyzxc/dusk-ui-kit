@@ -19,6 +19,7 @@
   class="{$$props.class || ''} duk-heading"
   class:duk-heading--card="{context === contexts.HEADING.CARD}"
   class:duk-heading--hero="{context === contexts.HEADING.HERO}"
+  class:duk-heading--disclaimer-list="{context === contexts.HEADING.DISCLAIMER_LIST}"
   class:duk-heading--small="{size === sizes.HEADING.SMALL}"
   class:duk-heading--large="{size === sizes.HEADING.LARGE}"
   class:duk-heading--success="{variant === variants.HEADING.SUCCESS}"

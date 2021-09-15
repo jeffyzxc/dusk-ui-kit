@@ -3,65 +3,6 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [2.0.0-rc.60](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.59...v2.0.0-rc.60) (2021-09-14)
-
-**Note:** Version bump only for package dusk-ui-kit
-
-
-
-
-
-# [2.0.0-rc.59](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.58...v2.0.0-rc.59) (2021-09-06)
-
-
-### Features
-
-* **heading:** ✨ added support for loading-indicator in headings ([fb78654](https://github.com/dusk-network/dusk-ui-kit/commit/fb7865487631da1ca6e4084d9fcb88c2c40c6ae3))
-
-
-
-
-
-# [2.0.0-rc.58](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.57...v2.0.0-rc.58) (2021-09-06)
-
-
-### Bug Fixes
-
-* **text-field:** 🐛 removed rest props as was overriding class ([12e0a02](https://github.com/dusk-network/dusk-ui-kit/commit/12e0a02feb83b2d01e15cec167e923439fb3f1a8))
-
-
-
-
-
-# [2.0.0-rc.57](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.56...v2.0.0-rc.57) (2021-09-06)
-
-
-### Features
-
-* **control:** ✨ exporting message component for more composition control ([14d41ca](https://github.com/dusk-network/dusk-ui-kit/commit/14d41ca575745cd947fc817796dc4a0a64e51bdf))
-
-
-
-
-
-# [2.0.0-rc.56](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.55...v2.0.0-rc.56) (2021-08-31)
-
-
-### Bug Fixes
-
-* **build:** 🐛 📦️ fixing build config ([7131176](https://github.com/dusk-network/dusk-ui-kit/commit/713117684c7bf4249b3d4ca160ef2be2a1b29bb0))
-* **deps:** 🐛 addming missing dep ([18be8d6](https://github.com/dusk-network/dusk-ui-kit/commit/18be8d627fa1a5ae14875c4f509d82a0dc1801ba))
-
-
-### Features
-
-* **ctalist:** add new ordered list component ([f5abd0b](https://github.com/dusk-network/dusk-ui-kit/commit/f5abd0b8b5f0c7459bf88974b29f846084e2133d))
-* **ctalist:** added ordered list component ([8217b67](https://github.com/dusk-network/dusk-ui-kit/commit/8217b67984d2c03ab5cccefb1c356362d99e6dbd))
-
-
-
-
-
 # [2.0.0-rc.55](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.54...v2.0.0-rc.55) (2021-08-29)
 
 

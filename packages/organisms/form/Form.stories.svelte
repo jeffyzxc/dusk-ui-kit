@@ -13,6 +13,7 @@
   import Control from "@dusk-network/control";
   import TextField from "@dusk-network/text-field";
   import Toggle, { Group } from "@dusk-network/toggle";
+  import FileUpload from "@dusk-network/file-upload";
   import Form from "@dusk-network/form";
   import * as yup from "yup";
 
@@ -40,6 +41,16 @@
       .boolean()
       .required()
       .oneOf([true], "You must agree to the terms and conditions agreement"),
+    file: yup
+      .mixed()
+      .label("Upload file")
+      .required("A file is required")
+      .test("fileSize", "File too large", (value) => value && value[0].size <= 1000000)
+      .test(
+        "fileFormat",
+        "Unsupported file format",
+        (value) => value && ["image/png", "image/jpeg"].includes(value[0].type),
+      ),
   });
   let fields = {
     first_name: "",
@@ -50,16 +61,22 @@
     services_option: "",
     marketing_email: false,
     terms: false,
+    file: null,
   };
 
   let passwordStrength;
   let submitted = false;
+  let uploaded = false;
 
   function formSubmit() {
     submitted = true;
     console.log(fields);
     if (schema.isValidSync(fields)) {
+      uploaded = true;
+      submitted = false;
       alert("submit form");
+    } else {
+      uploaded = false;
     }
   }
 </script>
@@ -175,6 +192,15 @@
           bind:group="{fields.services_option}">Other</Toggle
         >
       </Group>
+    </Control>
+    <Control {...args} width="full" name="file" let:id let:state>
+      <FileUpload
+        id="{id}"
+        state="{state}"
+        uploaded="{uploaded}"
+        {...args}
+        on:inputFile="{(event) => (fields.file = event.detail.file)}"
+      />
     </Control>
     <Control {...args} width="full" let:id let:state name="marketing_email">
       <Toggle

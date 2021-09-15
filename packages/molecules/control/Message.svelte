@@ -11,18 +11,14 @@
 </script>
 
 <div class="duk-control__message" id="{id}-message">
-  {#if !$$slots.default}
-    {#if $submitted && name}
-      {#await $schema.validateAt(name, $fields) then result}
-        <p></p>
-      {:catch error}
-        <Icon name="{icons.ALERT_OUTLINE}" />
-        <p>{error.errors[0]}</p>
-      {/await}
-    {:else if message}
-      <p>{message}</p>
-    {/if}
-  {:else}
-    <slot />
+  {#if $submitted && name}
+    {#await $schema.validateAt(name, $fields) then result}
+      <p></p>
+    {:catch error}
+      <Icon name="{icons.ALERT_OUTLINE}" />
+      <p>{error.errors[0]}</p>
+    {/await}
+  {:else if message}
+    <p>{message}</p>
   {/if}
 </div>
