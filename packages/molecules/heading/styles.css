@@ -25,6 +25,10 @@
     }
   }
 
+  &--disclaimer-list {
+    @apply mb-5;
+  }
+
   &--hero,
   &--card {
     &:not(:first-child) {
