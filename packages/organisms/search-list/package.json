@@ -1,0 +1,25 @@
+{
+  "name": "@dusk-network/search-list",
+  "version": "2.0.0-rc.59",
+  "description": "Dusk UI Kit - SearchList",
+  "bugs": {
+    "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dusk-network/dusk-ui-kit.git",
+    "directory": "packages/organisms/search-list"
+  },
+  "type": "module",
+  "module": "index.js",
+  "scripts": {
+    "test": "echo \"Work in progress...\" && exit 1"
+  },
+  "dependencies": {
+    "@dusk-network/button": "^2.0.0-rc.59",
+    "@dusk-network/helpers": "^2.0.0-rc.59"
+  },
+  "peerDependencies": {
+    "svelte": "3.42.1"
+  }
+}
