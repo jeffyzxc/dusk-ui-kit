@@ -15,8 +15,11 @@
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
   },
+  "devDependencies": {
+    "merge-anything": "^4.0.1"
+  },
   "peerDependencies": {
-    "svelte": "3.42.1"
+    "svelte": "3.42.6"
   },
   "gitHead": "51be63d76ad5783e86fb1dc710d20e8c08ec1ab4"
 }

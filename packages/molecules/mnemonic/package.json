@@ -21,7 +21,7 @@
     "@dusk-network/text-field": "^2.0.0-rc.61"
   },
   "peerDependencies": {
-    "svelte": "3.42.1"
+    "svelte": "3.42.6"
   },
   "gitHead": "51be63d76ad5783e86fb1dc710d20e8c08ec1ab4"
 }

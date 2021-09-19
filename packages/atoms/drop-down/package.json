@@ -20,6 +20,6 @@
     "@dusk-network/icon": "^2.0.0-rc.61"
   },
   "peerDependencies": {
-    "svelte": "3.42.1"
+    "svelte": "3.42.6"
   }
 }

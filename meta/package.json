@@ -1,0 +1,11 @@
+{
+  "name": "@dusk-network/meta",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Metadata for components",
+  "main": "index.js",
+  "devDependencies": {
+    "svelte-docster": "^2.0.1",
+    "tiny-glob": "^0.2.9"
+  }
+}

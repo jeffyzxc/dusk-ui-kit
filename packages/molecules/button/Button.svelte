@@ -1,19 +1,56 @@
 <script>
-  // FIXME This needs DRYing.
+  // FIXME This needs DRYing (with a ButtonSkeleton.svelte file).
   import { setContext, getContext } from "svelte";
   import variants from "@dusk-network/helpers/variants.js";
   import sizes from "@dusk-network/helpers/sizes.js";
   import contexts from "@dusk-network/helpers/contexts.js";
   import "./styles.css";
 
+  /**
+   * Sets the `id` of the Button if set, otherwise the ID is generated.
+   */
   export let id = "__DUK-button" + Math.random().toString(36);
+
+  /**
+   * Used as a switch when the button is clicked.
+   */
   export let value = false;
+
+  /**
+   * Sets the variant of the Button.
+   * @type {"brand" | "cta" | "info" | "success" | "warning" | "danger" }
+   */
   export let variant = variants.BUTTON.BRAND;
+
+  /**
+   * Sets the size of the Button.
+   * @type {"sm" | "lg" }
+   */
   export let size = sizes.BUTTON.DEFAULT;
+
+  /**
+   * Sets the Button to outlined when true.
+   */
   export let outline = false;
+
+  /**
+   * Sets the Button to have circular edges when true.
+   */
   export let circle = false;
+
+  /**
+   * Sets the Button to act as a block element when true.
+   */
   export let block = false;
-  export let href = null;
+
+  /**
+   * Renders the Button as an `a` tag when set.
+   */
+  export let href = "";
+
+  /**
+   * Sets the `disabled` attribute on the Button when true.
+   */
   export let disabled = false;
 
   const context = getContext("DUK:button:context");

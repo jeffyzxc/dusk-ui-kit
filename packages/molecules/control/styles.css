@@ -9,6 +9,10 @@
     @apply pr-3;
   }
 
+  &__input-wrapper {
+    @apply flex items-center;
+  }
+
   &__input {
     @apply w-full;
   }
@@ -56,6 +60,36 @@
 
     ^&__input {
       flex: 1;
+    }
+  }
+
+  &--with-postfix {
+    ^&__input {
+      &--text-field {
+        @apply border-r-0 rounded-tr-none rounded-br-none;
+      }
+    }
+
+    .duk-button--control {
+      @apply border border-solid border-gray-900 border-l-0 rounded-tl-none rounded-bl-none px-5;
+      @apply dark:border-gray-100;
+
+      line-height: inherit;
+    }
+  }
+
+  &--with-prefix {
+    ^&__input {
+      &--text-field {
+        @apply border-l-0 rounded-tl-none rounded-bl-none z-10;
+      }
+    }
+
+    .duk-button--control {
+      @apply border border-solid border-gray-900 border-r-0 rounded-tr-none rounded-br-none px-5;
+      @apply dark:border-gray-100;
+
+      line-height: inherit;
     }
   }
 
