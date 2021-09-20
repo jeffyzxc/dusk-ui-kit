@@ -2937,7 +2937,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dusk-network/button@^2.0.0-rc.60, @dusk-network/button@workspace:packages/molecules/button":
+"@dusk-network/button@^2.0.0-rc.59, @dusk-network/button@^2.0.0-rc.60, @dusk-network/button@workspace:packages/molecules/button":
   version: 0.0.0-use.local
   resolution: "@dusk-network/button@workspace:packages/molecules/button"
   dependencies:
@@ -3042,7 +3042,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dusk-network/helpers@^2.0.0-rc.60, @dusk-network/helpers@workspace:packages/helpers":
+"@dusk-network/helpers@^2.0.0-rc.59, @dusk-network/helpers@^2.0.0-rc.60, @dusk-network/helpers@workspace:packages/helpers":
   version: 0.0.0-use.local
   resolution: "@dusk-network/helpers@workspace:packages/helpers"
   peerDependencies:
@@ -3168,6 +3168,17 @@ __metadata:
   dependencies:
     "@dusk-network/helpers": ^2.0.0-rc.60
     marked: ^2.1.3
+  peerDependencies:
+    svelte: 3.42.1
+  languageName: unknown
+  linkType: soft
+
+"@dusk-network/search-list@workspace:packages/organisms/search-list":
+  version: 0.0.0-use.local
+  resolution: "@dusk-network/search-list@workspace:packages/organisms/search-list"
+  dependencies:
+    "@dusk-network/button": ^2.0.0-rc.59
+    "@dusk-network/helpers": ^2.0.0-rc.59
   peerDependencies:
     svelte: 3.42.1
   languageName: unknown

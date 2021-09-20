@@ -1,2 +1,15 @@
 .duk-search-list {
+  @apply container flex flex-col gap-y-2.5;
+  &__item {
+    @apply flex flex-row justify-between items-center px-6;
+
+    &--token {
+      @apply flex flex-row items-center gap-x-5;
+    }
+
+    &--border {
+      @apply flex border-2 border-gray-700 rounded-full w-12 h-12;
+      @apply dark:border-gray-400;
+    }
+  }
 }
