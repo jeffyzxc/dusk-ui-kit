@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/hero",
-  "version": "2.0.0-rc.61",
+  "version": "3.0.0",
   "description": "Dusk UI Kit - Hero",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -16,8 +16,8 @@
     "test": "echo \"Work in progress...\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/helpers": "^2.0.0-rc.61",
-    "@dusk-network/icon": "^2.0.0-rc.61"
+    "@dusk-network/helpers": "^3.0.0",
+    "@dusk-network/icon": "^3.0.0"
   },
   "peerDependencies": {
     "svelte": "3.42.6"
