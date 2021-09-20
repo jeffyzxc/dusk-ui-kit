@@ -1,4 +1,3 @@
-/* eslint-disable quotes */
 import metadata from "ui-kit-meta";
 import { merge } from "merge-anything";
 
