@@ -24,7 +24,7 @@
     "stage": "lint-staged",
     "test": "echo \"Work in progress...\" && exit",
     "test:watch": "jest --watchAll",
-    "version:packages": "changeset version"
+    "version": "yarn changeset version"
   },
   "config": {
     "commitizen": {

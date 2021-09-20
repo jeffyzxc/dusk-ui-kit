@@ -8,25 +8,42 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Repository
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+
+      - name: Setup Node
       - uses: actions/setup-node@v1
         with:
           node-version: "14.16.0"
           registry-url: "https://npm.pkg.github.com/"
           scope: "@dusk-network"
+
       - name: Configure Git Actor
         run: |
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+
       - name: Install Dependencies
         run: yarn install --immutable
+
+      - name: Create Release Pull Request or Publish to npm
+        id: changesets
+        uses: changesets/action@master
+        with:
+          # This expects you to have a script called release which does a build for your packages and calls changeset publish
+          publish: yarn release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Set Current Version
         shell: bash -ex {0}
         run: |
-          CURRENT_VERSION=$(node -p 'require("./lerna.json").version')
+          CURRENT_VERSION=$(node -p 'require("./package.json").version')
           echo "CURRENT_VERSION=${CURRENT_VERSION}" >> $GITHUB_ENV
+
       - name: Tag Check
         id: tag_check
         shell: bash -ex {0}
@@ -41,6 +58,7 @@ jobs:
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Create Git Tag
         if: steps.tag_check.outputs.exists_tag == 'false'
         uses: azu/action-package-version-to-git-tag@v1
@@ -50,6 +68,7 @@ jobs:
           github_repo: ${{ github.repository }}
           git_commit_sha: ${{ github.sha }}
           git_tag_prefix: "v"
+
       - name: Create Release
         id: create_release
         if: steps.tag_check.outputs.exists_tag == 'false'
@@ -64,16 +83,19 @@ jobs:
             Release of UI Kit v${{ env.CURRENT_VERSION }}
           draft: false
           prerelease: false
-      - name: Publish Packages
-        run: |
-          yarn publish
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # - name: Publish Packages
+      #   run: |
+      #     yarn publish
+      #   env:
+      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Build Storybook
         if: github.ref == 'refs/heads/main'
         working-directory: ./storybook
         run: yarn build
+
       - name: Publish Storybook to Github Pages
         if: github.ref == 'refs/heads/main'
         working-directory: ./storybook
