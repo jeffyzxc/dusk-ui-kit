@@ -23,5 +23,6 @@
   },
   "peerDependencies": {
     "svelte": "3.42.6"
-  }
+  },
+  "gitHead": "fa24ed65d0ad63f0c203cdf34a69e3a94284a994"
 }
