@@ -18,7 +18,6 @@
   "dependencies": {
     "@dusk-network/control": "^2.0.0-rc.59",
     "@dusk-network/text-field": "^2.0.0-rc.59",
-    "@dusk-network/rich-text": "^2.0.0-rc.59",
     "@dusk-network/button": "^2.0.0-rc.59",
     "@dusk-network/icon": "^2.0.0-rc.59"
   },

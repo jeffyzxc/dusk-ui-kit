@@ -33,6 +33,8 @@
     <TextField placeholder="Search" bind:value="{searchValue}"/>
   </Control>
   {#each $searchResults as token}
-    <Item token="{token}"/>
+    <Item token="{token}">
+      <slot name='results'/>
+    </Item>
   {/each}
 </div>
