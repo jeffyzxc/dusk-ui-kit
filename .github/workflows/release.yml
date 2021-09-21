@@ -11,7 +11,6 @@ on:
 
 env:
   CI: true
-  PNPM_CACHE_FOLDER: .pnpm-store
 
 jobs:
   release:
@@ -40,6 +39,8 @@ jobs:
 
       - name: Setup pnpm config
         run: pnpm config set store-dir $PNPM_CACHE_FOLDER
+        env:
+          PNPM_CACHE_FOLDER: .pnpm-store
 
       - name: Install Dependencies
         run: pnpm install
