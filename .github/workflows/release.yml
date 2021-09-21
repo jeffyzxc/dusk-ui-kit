@@ -9,8 +9,8 @@ on:
       - main
       - next
 
-env:
-  CI: true
+# env:
+#   CI: true
 
 jobs:
   release:
@@ -37,10 +37,10 @@ jobs:
       - name: Install pnpm
         run: npm i pnpm@latest -g
 
-      - name: Setup pnpm config
-        run: pnpm config set store-dir $PNPM_CACHE_FOLDER
-        env:
-          PNPM_CACHE_FOLDER: .pnpm-store
+      # - name: Setup pnpm config
+      #   run: pnpm config set store-dir $PNPM_CACHE_FOLDER
+      #   env:
+      #     PNPM_CACHE_FOLDER: .pnpm-store
 
       - name: Install Dependencies
         run: pnpm install
