@@ -1,13 +1,18 @@
 const glob = require("glob");
 const fs = require("fs");
 const path = require("path");
-const childProcess = require("child_process");
-const gitHead = childProcess.execSync("git rev-parse HEAD").toString().trim();
-
-console.log("updating heads to ", gitHead);
+const simpleGit = require("simple-git");
+// const debug = require("debug");
+// debug.enable("simple-git:*");
+const git = simpleGit({
+  config: ["core.hooksPath=/dev/null"], // Disables hooks entirely
+  baseDir: process.cwd(),
+});
+const gitHead = require("child_process").execSync("git rev-parse HEAD").toString().trim();
 
 glob("packages/**/package.json", (_, files) => {
   for (const filePath of files) {
+    console.log("editing", filePath);
     const newData = {
       gitHead,
     };
@@ -17,8 +22,7 @@ glob("packages/**/package.json", (_, files) => {
       newData,
     );
     fs.writeFileSync(path.resolve(filePath), JSON.stringify(data, true, 2));
-    childProcess.execSync(`git add ${filePath}`);
   }
 
-  childProcess.execSync(`git commit -m "🤖 updating all packages"`);
+  git.add(files).commit("🤖 (auto-commit) preparing packages for changeset");
 });
