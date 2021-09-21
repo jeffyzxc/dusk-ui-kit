@@ -44,7 +44,12 @@ jobs:
       - name: Install Dependencies
         run: pnpm install
 
-      - name: Create Release Pull Request or Publish to npm
+      - name: Setup npmrc
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=${secrets.GITHUB_TOKEN}
+          @dusk-network:registry=https://npm.pkg.github.com" > .npmrc
+
+      - name: Create Release Pull Request or Publish
         uses: changesets/action@master
         with:
           version: pnpm ci:version
