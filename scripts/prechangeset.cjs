@@ -1,4 +1,4 @@
-const glob = require("glob");
+const glob = require("tiny-glob/sync");
 const fs = require("fs");
 const path = require("path");
 const simpleGit = require("simple-git");
@@ -6,23 +6,19 @@ const simpleGit = require("simple-git");
 // debug.enable("simple-git:*");
 const git = simpleGit({
   config: ["core.hooksPath=/dev/null"], // 🔧 Disables hooks entirely
-  baseDir: process.cwd(),
+  baseDir: process.cwd(), // FIXME this should probably be set
 });
 const gitHead = require("child_process").execSync("git rev-parse HEAD").toString().trim();
-
-glob("packages/**/package.json", (_, files) => {
-  console.log("Updating packages...");
-  for (const filePath of files) {
-    const newData = {
-      gitHead,
-    };
-    const data = Object.assign(
-      {},
-      JSON.parse(fs.readFileSync(path.resolve(filePath), "utf-8")),
-      newData,
-    );
-    fs.writeFileSync(path.resolve(filePath), JSON.stringify(data, true, 2));
-  }
-  git.add(files).commit("🤖 (auto-commit) preparing packages for changeset");
-  console.log("Changes committed.");
+const fileSearch = glob("packages/**/package.json");
+fileSearch.forEach((file) => {
+  const newData = {
+    gitHead,
+  };
+  const data = Object.assign({}, JSON.parse(fs.readFileSync(path.resolve(file), "utf-8")), newData);
+  fs.writeFileSync(path.resolve(file), JSON.stringify(data, true, 2));
 });
+
+if (fileSearch) {
+  git.add(fileSearch).commit("🤖 (auto-commit) preparing packages for changeset");
+  console.log("Changes committed.");
+}
