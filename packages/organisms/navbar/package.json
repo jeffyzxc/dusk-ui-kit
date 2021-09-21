@@ -25,5 +25,5 @@
   "peerDependencies": {
     "svelte": "3.42.6"
   },
-  "gitHead": "testing"
+  "gitHead": {}
 }
