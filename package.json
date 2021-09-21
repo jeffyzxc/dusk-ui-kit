@@ -22,11 +22,11 @@
     "prepare": "is-ci || husky install",
     "release": "changeset publish",
     "prepare:changeset": "is-ci || node scripts/prechangeset.cjs",
-    "changeset": "yarn prepare:changeset && changeset",
+    "changeset": "pnpm prepare:changeset && changeset",
     "stage": "lint-staged",
     "test": "echo \"Work in progress...\" && exit",
     "test:watch": "jest --watchAll",
-    "version": "yarn changeset version"
+    "version": "changeset version"
   },
   "config": {
     "commitizen": {

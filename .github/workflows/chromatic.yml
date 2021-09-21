@@ -6,21 +6,18 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: packages
+        working-directory: storybook
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
       - name: Install dependencies
-        run: |
-          echo 'nodeLinker: "node-modules"' >> .yarnrc.yml
-          yarn rebuild
-          yarn build
+        run: pnpm i --frozen-lockfile
       - name: Publish to Chromatic
         uses: chromaui/action@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           buildScriptName: build
-          workingDir: packages
+          workingDir: storybook
           exitOnceUploaded: true
