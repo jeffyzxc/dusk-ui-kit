@@ -12,7 +12,6 @@ const gitHead = require("child_process").execSync("git rev-parse HEAD").toString
 
 glob("packages/**/package.json", (_, files) => {
   for (const filePath of files) {
-    console.log("editing", filePath);
     const newData = {
       gitHead,
     };
