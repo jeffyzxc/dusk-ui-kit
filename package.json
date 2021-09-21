@@ -20,7 +20,8 @@
     "format": "eslint . --ignore-pattern 'node_modules/' --ignore-pattern 'storybook-static/' --fix && prettier . --write --plugin-search-dir=. \"{,!(node_modules,storybook-static)/**/**/}*.{json,js,svelte}\"",
     "prepare": "is-ci || husky install",
     "release": "changeset publish",
-    "changeset": "node scripts/prechangeset.cjs && changeset",
+    "prechangeset": "node ./scripts/prechangeset.cjs",
+    "changeset": "changeset",
     "stage": "lint-staged",
     "test": "echo \"Work in progress...\" && exit",
     "test:watch": "jest --watchAll",
@@ -67,7 +68,8 @@
     }
   },
   "dependencies": {
-    "@changesets/cli": "^2.17.0"
+    "@changesets/cli": "^2.17.0",
+    "simple-git": "^2.45.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",

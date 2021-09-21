@@ -1,15 +1,25 @@
 const glob = require("glob");
 const fs = require("fs");
 const path = require("path");
-const childProcess = require("child_process");
-const gitHead = childProcess.execSync("git rev-parse HEAD").toString().trim();
+// const simpleGit = require("simple-git");
+// console.log(process.cwd());
+const debug = require("debug");
+debug.enable("simple-git:*");
+// const git = simpleGit({
+//   baseDir: process.cwd(),
+// });
+// const childProcess = require("child_process");
+// const gitHead = childProcess.execSync("git rev-parse HEAD").toString().trim();
 
-console.log("updating heads to ", gitHead);
+// const updateFiles = async () => {};
 
+// const run = async () => {
 glob("packages/**/package.json", (_, files) => {
+  // console.log("updating heads to ", gitHead);
   for (const filePath of files) {
+    console.log("editing", filePath);
     const newData = {
-      gitHead,
+      gitHead: "pwopwoe",
     };
     const data = Object.assign(
       {},
@@ -17,8 +27,21 @@ glob("packages/**/package.json", (_, files) => {
       newData,
     );
     fs.writeFileSync(path.resolve(filePath), JSON.stringify(data, true, 2));
-    childProcess.execSync(`git add ${filePath}`);
+    // childProcess.execSync(`git add ${filePath}`);
   }
-
-  childProcess.execSync(`git commit -m "🤖 updating all packages"`);
+  console.log("adding and committing files");
+  require("simple-git")().add("./packages/*").commit("first commit!", files, { '--allow-empty' });
+  // git.status();
+  // git.add("packages/*");
 });
+//   return;
+// };
+
+// run();
+
+// process.on("unhandledRejection", (err) => {
+//   console.log(err);
+//   process.exit(1);
+// });
+
+// git.add("packages/*");
