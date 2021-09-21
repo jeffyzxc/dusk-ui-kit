@@ -1,26 +1,34 @@
 # Workflow name
 name: Chromatic
 on: push
+env:
+  CI: true
+  PNPM_CACHE_FOLDER: .pnpm-store
 jobs:
   chromatic-deployment:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: packages
+        working-directory: storybook
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+
+      - name: Install pnpm
+        run: npm i pnpm@latest -g
+
+      - name: Setup pnpm config
+        run: pnpm config set store-dir $PNPM_CACHE_FOLDER
+
       - name: Install dependencies
-        run: |
-          echo 'nodeLinker: "node-modules"' >> .yarnrc.yml
-          yarn rebuild
-          yarn build
+        run: pnpm install
+
       - name: Publish to Chromatic
         uses: chromaui/action@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           buildScriptName: build
-          workingDir: packages
+          workingDir: storybook
           exitOnceUploaded: true

@@ -11,6 +11,7 @@ const git = simpleGit({
 const gitHead = require("child_process").execSync("git rev-parse HEAD").toString().trim();
 
 glob("packages/**/package.json", (_, files) => {
+  console.log("Updating packages...");
   for (const filePath of files) {
     const newData = {
       gitHead,
@@ -22,6 +23,6 @@ glob("packages/**/package.json", (_, files) => {
     );
     fs.writeFileSync(path.resolve(filePath), JSON.stringify(data, true, 2));
   }
-
   git.add(files).commit("🤖 (auto-commit) preparing packages for changeset");
+  console.log("Changes committed.");
 });

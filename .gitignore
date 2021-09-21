@@ -1,13 +1,8 @@
 .env
 .DS_Store
-.yarn/*
-!/.yarn/plugins
-!/.yarn/releases
-.yarnrc
 .vscode/
 node_modules/
 /src/node_modules/@sapper/
-yarn-error.log
 /cypress/screenshots/
 /__sapper__/
 /dev/
