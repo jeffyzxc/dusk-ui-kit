@@ -18,6 +18,7 @@
     "storybook"
   ],
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "format": "eslint . --ignore-pattern 'node_modules/' --ignore-pattern 'storybook-static/' --fix && prettier . --write --plugin-search-dir=. \"{,!(node_modules,storybook-static)/**/**/}*.{json,js,svelte}\"",
     "prepare": "is-ci || husky install",
     "ci:publish": "changeset publish",
