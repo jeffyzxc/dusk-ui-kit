@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/pagination",
-  "version": "3.0.0",
+  "version": "0.0.0",
   "description": "Dusk UI Kit - Pagination",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -16,10 +16,10 @@
     "test": "echo \"Work in progress...\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/button": "^3.0.0",
-    "@dusk-network/helpers": "^3.0.0",
-    "@dusk-network/icon": "^3.0.0",
-    "@dusk-network/menu": "^3.0.0"
+    "@dusk-network/button": "workspace:*",
+    "@dusk-network/helpers": "workspace:*",
+    "@dusk-network/icon": "workspace:*",
+    "@dusk-network/menu": "workspace:*"
   },
   "peerDependencies": {
     "svelte": "3.42.6"

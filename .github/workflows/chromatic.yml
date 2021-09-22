@@ -1,9 +1,7 @@
 # Workflow name
 name: Chromatic
 on: push
-env:
-  CI: true
-  PNPM_CACHE_FOLDER: .pnpm-store
+
 jobs:
   chromatic-deployment:
     runs-on: ubuntu-latest
@@ -19,7 +17,7 @@ jobs:
         run: npm i pnpm@latest -g
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Publish to Chromatic
         uses: chromaui/action@v1

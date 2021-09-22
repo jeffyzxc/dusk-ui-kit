@@ -10,24 +10,24 @@ specifiers:
   cz-emoji: ^1.3.1
   eslint: ^7.32.0
   eslint-config-prettier: ^8.3.0
-  eslint-plugin-jest: ^24.4.0
-  eslint-plugin-prettier: ^3.4.0
-  eslint-plugin-svelte3: ^3.2.0
+  eslint-plugin-jest: ^24.4.2
+  eslint-plugin-prettier: ^3.4.1
+  eslint-plugin-svelte3: ^3.2.1
   eslint-plugin-tailwind: ^0.2.1
-  husky: ^7.0.1
+  husky: ^7.0.2
   is-ci: ^3.0.0
-  jest: ^27.0.6
+  jest: ^27.2.1
   lint-staged: ^11.1.2
-  prettier: ^2.3.2
-  prettier-plugin-packagejson: ^2.2.11
-  prettier-plugin-svelte: ^2.3.1
+  prettier: ^2.4.1
+  prettier-plugin-packagejson: ^2.2.12
+  prettier-plugin-svelte: ^2.4.0
   simple-git: ^2.45.1
   stylelint: ^13.13.1
   stylelint-config-standard: ^22.0.0
   svelte: 3.42.6
-  svelte-jester: ^2.0.1
+  svelte-jester: ^2.1.5
   tiny-glob: ^0.2.9
-  ts-jest: ^27.0.4
+  ts-jest: ^27.0.5
 
 devDependencies:
   '@changesets/cli': 2.17.0
@@ -54,7 +54,7 @@ devDependencies:
   stylelint: 13.13.1
   stylelint-config-standard: 22.0.0_stylelint@13.13.1
   svelte: 3.42.6
-  svelte-jester: 2.1.4_jest@27.2.1+svelte@3.42.6
+  svelte-jester: 2.1.5_jest@27.2.1+svelte@3.42.6
   tiny-glob: 0.2.9
   ts-jest: 27.0.5_jest@27.2.1
 
@@ -119,7 +119,7 @@ packages:
       '@babel/compat-data': 7.15.0
       '@babel/core': 7.15.5
       '@babel/helper-validator-option': 7.14.5
-      browserslist: 4.17.0
+      browserslist: 4.17.1
       semver: 6.3.0
     dev: true
 
@@ -1532,7 +1532,7 @@ packages:
     resolution: {integrity: sha512-XrvP4VVHdRBCdX1S3WXVD8+RyG9qeb1D5Sn1DeLiG2xfSpzellk5k54xbUERJ3M5DggQxes39UGOTP8CFrEGbg==}
     hasBin: true
     dependencies:
-      browserslist: 4.17.0
+      browserslist: 4.17.1
       caniuse-lite: 1.0.30001259
       colorette: 1.4.0
       normalize-range: 0.1.2
@@ -1670,15 +1670,15 @@ packages:
     resolution: {integrity: sha512-9o5UecI3GhkpM6DrXr69PblIuWxPKk9Y0jHBRhdocZ2y7YECBFCsHm79Pr3OyR2AvjhDkabFJaDJMYRazHgsow==}
     dev: true
 
-  /browserslist/4.17.0:
-    resolution: {integrity: sha512-g2BJ2a0nEYvEFQC208q8mVAhfNwpZ5Mu8BwgtCdZKO3qx98HChmeg448fPdUzld8aFmfLgVh7yymqV+q1lJZ5g==}
+  /browserslist/4.17.1:
+    resolution: {integrity: sha512-aLD0ZMDSnF4lUt4ZDNgqi5BUn9BZ7YdQdI/cYlILrhdSSZJLU9aNZoD5/NBmM4SK34APB2e83MOsRt1EnkuyaQ==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001259
-      colorette: 1.4.0
-      electron-to-chromium: 1.3.845
+      electron-to-chromium: 1.3.846
       escalade: 3.1.1
+      nanocolors: 0.1.6
       node-releases: 1.1.76
     dev: true
 
@@ -2290,8 +2290,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /electron-to-chromium/1.3.845:
-    resolution: {integrity: sha512-y0RorqmExFDI4RjLEC6j365bIT5UAXf9WIRcknvSFHVhbC/dRnCgJnPA3DUUW6SCC85QGKEafgqcHJ6uPdEP1Q==}
+  /electron-to-chromium/1.3.846:
+    resolution: {integrity: sha512-2jtSwgyiRzybHRxrc2nKI+39wH3AwQgn+sogQ+q814gv8hIFwrcZbV07Ea9f8AmK0ufPVZUvvAG1uZJ+obV4Jw==}
     dev: true
 
   /emittery/0.8.1:
@@ -4557,6 +4557,11 @@ packages:
     resolution: {integrity: sha1-MHXOk7whuPq0PhvE2n6BFe0ee6s=}
     dev: true
 
+  /nanocolors/0.1.6:
+    resolution: {integrity: sha512-2pvTw6vYRaBLGir2xR7MxaJtyWkrn+C53EpW8yPotG+pdAwBvt0Xwk4VJ6VHLY0aLthVZPvDfm9TdZvrvAm5UQ==}
+    engines: {node: '>=8.0.0'}
+    dev: true
+
   /natural-compare/1.4.0:
     resolution: {integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=}
     dev: true
@@ -5742,9 +5747,9 @@ packages:
       supports-color: 7.2.0
     dev: true
 
-  /svelte-jester/2.1.4_jest@27.2.1+svelte@3.42.6:
-    resolution: {integrity: sha512-zSlB6siABdPcrzXZtlTT/9ekC28hntPdO7aPFCQjRwhPYjo3LfKIHRqs4e8jCUpYGB7L/gSOTmBBqTp9JZcZ7Q==}
-    engines: {node: '>= 14'}
+  /svelte-jester/2.1.5_jest@27.2.1+svelte@3.42.6:
+    resolution: {integrity: sha512-T3JoPsNYltlN2MiVFDxAMOulIO4fztFFI3DhOkzbs1yZQCUFp6sqS6aqusBsIEMVmXaEDW4HO/6bX+CuwuEUSw==}
+    engines: {node: '>= 12'}
     peerDependencies:
       jest: '>= 27'
       svelte: '>= 3'

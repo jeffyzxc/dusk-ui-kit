@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/disclaimer-list",
-  "version": "3.0.0",
+  "version": "0.0.0",
   "description": "Dusk UI Kit - DisclaimerList",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -16,7 +16,7 @@
     "test": "echo \"Work in progress...\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/helpers": "^3.0.0"
+    "@dusk-network/helpers": "workspace:*"
   },
   "peerDependencies": {
     "svelte": "3.42.6"
