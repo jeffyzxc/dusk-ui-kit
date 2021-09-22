@@ -2,11 +2,22 @@
   import { getContext } from "svelte";
   import variants from "@dusk-network/helpers/variants.js";
   import contexts from "@dusk-network/helpers/contexts.js";
-
   import "./styles.css";
 
+  /**
+   * Sets the variant of the Progress Bar.
+   * @type {"brand" | "cta" | "info" | "success" | "warning" | "danger" }
+   */
   export let variant = variants.PROGRESS_BAR.SUCCESS;
+
+  /**
+   * Sets the number of steps the progress bar will have.
+   */
   export let steps;
+
+  /**
+   * Sets the initial step for the progress bar when rendered.
+   */
   export let step;
   $: styles = (step * 100) / steps;
 

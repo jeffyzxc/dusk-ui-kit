@@ -5,9 +5,26 @@
   import states from "@dusk-network/helpers/states.js";
   import "./styles.css";
 
+  /**
+   * Sets the variant of the Button.
+   * @type {"brand" | "cta" | "info" | "success" | "warning" | "danger" }
+   */
   export let variant = variants.CARD.DEFAULT;
+
+  /**
+   * Sets the state of the Button.
+   * @type { "passed" | "error" | "danger" }
+   */
   export let state = states.CARD.DEFAULT;
+
+  /**
+   * Renders the Card as an `a` tag when set.
+   */
   export let href = null;
+
+  /**
+   * Sets the `disabled` attribute on the Card when true.
+   */
   export let disabled = false;
 
   setContext("DUK:accordion:context", contexts.ACCORDION.CARD);

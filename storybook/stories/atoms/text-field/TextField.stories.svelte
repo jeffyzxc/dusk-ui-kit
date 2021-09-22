@@ -2,13 +2,21 @@
   import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
   import { types, states } from "@dusk-network/helpers";
   import TextField from "@dusk-network/text-field";
+  import meta from "../../meta.js";
 </script>
 
 <Meta
   title="Components/Atoms/Text Field"
+  parameters="{{ 
+    layout: 'centered',
+    docs: {
+      source: {
+        type: 'code',
+      },
+    },
+  }}"
   component="{TextField}"
-  parameters="{{ layout: 'centered' }}"
-  argTypes="{{
+  argTypes="{meta('text-field/TextField',{
     onBlur: {
       action: 'onBlur',
       table: {
@@ -89,10 +97,10 @@
         disable: true,
       },
     },
-  }}"
+  })}"
 />
 
-<Template let:args>
+<Story name="Default text field" args="{{ type: types.TEXT_FIELD.TEXT }}" let:args>
   <TextField
     {...args}
     type="{args.type || undefined}"
@@ -105,16 +113,28 @@
     on:keyup="{args.onKeyup}"
     on:keypress="{args.onKeyPress}"
   />
-</Template>
-
-<Story name="Default text field" args="{{ type: types.TEXT_FIELD.TEXT }}" />
+</Story>
 <Story
   name="Multiline text field"
   args="{{ multiline: true }}"
   argTypes="{{
     type: { table: { disable: true } },
   }}"
-/>
+  let:args
+>
+  <TextField
+    {...args}
+    type="{args.type || undefined}"
+    on:blur="{args.onBlur}"
+    on:change="{args.onChange}"
+    on:click="{args.onClick}"
+    on:focus="{args.onFocus}"
+    on:input="{args.onInput}"
+    on:keydown="{args.onKeydown}"
+    on:keyup="{args.onKeyup}"
+    on:keypress="{args.onKeyPress}"
+  />
+</Story>
 <!-- <Story
   name="Single icon with tooltip"
   args="{{

@@ -5,8 +5,20 @@
   import Icon from "@dusk-network/icon/Icon.svelte";
   import "./styles.css";
 
+
+  /**
+   * Used as an array to hold the dropdown options
+   */
   export let options;
+
+  /**
+   * Used to indicate the selected option
+   */
   export let selectedIndex = 0;
+
+  /**
+   * Sets the opened direction of the dropdown to up when true
+   */
   export let dropUp = false;
 
   const dispatch = createEventDispatcher();

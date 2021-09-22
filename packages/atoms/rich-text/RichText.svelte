@@ -6,6 +6,11 @@
   import "./styles.css";
 
   export let markdown;
+
+   /**
+   * Sets the size of the Rich Text.
+   * @type {"sm" | "lg" | "xl" | "xxl"}
+   */
   export let size = sizes.RICH_TEXT.DEFAULT;
 
   const context = getContext("DUK:rich-text:context");

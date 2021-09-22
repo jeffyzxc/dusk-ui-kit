@@ -8,10 +8,29 @@
   import A11yMenu from "./menu/A11yMenu.svelte";
   import "./styles.css";
 
+  /**
+   * Sets the title of application.
+   */
   export let title;
+
+  /**
+   * Used to display an Apps menu when true.
+   */
   export let apps;
+
+  /**
+   * Used to display a menu with links when true.
+   */
   export let links;
+
+  /**
+   * Sets the application name.
+   */
   export let appName;
+
+  /**
+   * Sets the `id` of the Navbar if set, otherwise the ID is generated.
+   */
   export let id = "__DUK-navbar" + Math.random().toString(36);
 
   let expanded = false;

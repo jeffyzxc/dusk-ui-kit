@@ -9,9 +9,24 @@
   import contexts from "@dusk-network/helpers/contexts.js";
   import "./styles.css";
 
+  /**
+   * Sets the `ref` attribute on the Pagination
+   */
   export let ref = "";
+
+  /**
+   * Sets the data used by Pagination.
+   */
   export let items;
+
+  /**
+   * Sets the number of items per page.
+   */
   export let itemsPerPage;
+
+  /**
+   * Sets the page number og Pagination
+   */
   export let pageNumber;
 
   const dispatch = createEventDispatcher();

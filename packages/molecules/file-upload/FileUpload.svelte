@@ -5,9 +5,21 @@
   import Icon from "@dusk-network/icon";
   import "./styles.css";
 
-  export let id;
+  /**
+   * Sets the `id` of the FileUpload if set, otherwise the ID is generated.
+   */
+  export let id = "__DUK-file-upload" + Math.random().toString(36);
+
+  /**
+   * Sets the `name` attribute on the File Upload.
+   */
   export let name;
-  export let uploaded;
+
+  /**
+   * Sets the uploaded state of the File Upload, must be initialized as false.
+   * When true file input will be disabled.
+   */
+  export let uploaded = false;
 
   const dispatch = createEventDispatcher();
   const context = getContext("DUK:file-upload:context");

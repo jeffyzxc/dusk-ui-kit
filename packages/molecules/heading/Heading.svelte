@@ -5,7 +5,16 @@
   import sizes from "@dusk-network/helpers/sizes.js";
   import "./styles.css";
 
+  /**
+   * Sets the size of the Heading.
+   * @type {"sm" | "lg" }
+   */
   export let size = sizes.HEADING.DEFAULT;
+
+  /**
+   * Sets the variant of the Button.
+   * @type { "success" | "warning" | "danger" }
+   */
   export let variant = variants.HEADING.DEFAULT;
 
   const context = getContext("DUK:heading:context");

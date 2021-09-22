@@ -3,6 +3,7 @@
   import Table, { Row, Datum } from "@dusk-network/table";
   import { rows } from "@dusk-network/table/stores/data.js";
   import { data } from "./data.js";
+  import meta from "../../meta.js";
 
   $: settings = {
     sortable: true,
@@ -15,8 +16,15 @@
 <Meta
   title="Components/Organisms/Table"
   component="{Table}"
-  parameters="{{ layout: 'padded' }}"
-  argTypes="{{
+  parameters="{{ 
+    layout: 'padded',
+    docs: {
+      source: {
+        type: 'code',
+      },
+    },
+  }}"
+  argTypes="{meta('table/Table',{
     data: {
       table: {
         disable: true,
@@ -27,10 +35,10 @@
         disable: true,
       },
     },
-  }}"
+  })}"
 />
 
-<Template let:args>
+<Story name="Kitchen sink example" args="{{ data: data, settings: settings }}" let:args>
   <Table data="{args.data}" settings="{args.settings}">
     <h3 slot="title">Table title</h3>
     <thead slot="head">
@@ -56,6 +64,4 @@
       {/each}
     </tbody>
   </Table>
-</Template>
-
-<Story name="Kitchen sink example" args="{{ data: data, settings: settings }}" />
+</Story>

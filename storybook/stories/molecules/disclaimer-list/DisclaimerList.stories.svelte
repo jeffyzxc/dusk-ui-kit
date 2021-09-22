@@ -4,15 +4,24 @@
   import Icon from "@dusk-network/icon";
   import RichText from "@dusk-network/rich-text";
   import Heading from "@dusk-network/heading";
+  import meta from "../../meta.js";
 </script>
 
 <Meta
   title="Components/Molecules/Disclaimer List"
   component="{DisclaimerList}"
-  parameters="{{ layout: 'padded' }}"
-  argTypes="{{}}"
+  parameters="{{ 
+    layout: 'padded',
+    docs: {
+      source: {
+        type: 'code',
+      },
+    },
+  }}"
+  argTypes="{meta('disclaimer-list/DisclaimerList',{})}"
 />
-<Template let:args>
+
+<Story name="Default" args="{{}}" let:args>
   <DisclaimerList>
     <svelte:fragment slot="heading">
       <Heading variant="danger">
@@ -52,6 +61,4 @@
       </RichText>
     </Item>
   </DisclaimerList>
-</Template>
-
-<Story name="Default" args="{{}}" />
+</Story>

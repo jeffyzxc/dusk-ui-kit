@@ -4,13 +4,21 @@
   import Heading from "@dusk-network/heading";
   import Button from "@dusk-network/button";
   import Icon from "@dusk-network/icon";
+  import meta from "../../meta.js";
 </script>
 
 <Meta
   title="Components/Molecules/Heading"
   component="{Heading}"
-  parameters="{{ layout: 'padded' }}"
-  argTypes="{{
+  parameters="{{ 
+    layout: 'padded',
+    docs: {
+      source: {
+        type: 'code',
+      },
+    }
+  }}"
+  argTypes="{meta('heading/Heading',{
     size: {
       control: {
         type: 'radio',
@@ -23,10 +31,10 @@
         options: Object.values(variants.HEADING),
       },
     },
-  }}"
+  })}"
 />
 
-<Template let:args>
+<Story name="Simple heading" args="{{ heading: '<h1>I am a simple heading</h1>' }}" let:args>
   <Heading {...args}>
     <svelte:fragment slot="icon">
       {#if args.icon}
@@ -40,13 +48,28 @@
       {/if}
     </svelte:fragment>
   </Heading>
-</Template>
+</Story>
 
-<Story name="Simple heading" args="{{ heading: '<h1>I am a simple heading</h1>' }}" />
 <Story
   name="With icon"
   args="{{ heading: '<h1>I am a heading with an icon<h1>', icon: 'wallet-plus' }}"
-/>
+  let:args
+>
+  <Heading {...args}>
+    <svelte:fragment slot="icon">
+      {#if args.icon}
+        <Icon name="{args.icon}" />
+      {/if}
+    </svelte:fragment>
+    {@html args.heading}
+    <svelte:fragment slot="button">
+      {#if args.button}
+        <Button>{args.button}</Button>
+      {/if}
+    </svelte:fragment>
+  </Heading>
+</Story>
+
 <Story
   name="With icon and button"
   args="{{
@@ -54,4 +77,19 @@
     icon: 'wallet-plus',
     button: 'Confirm',
   }}"
-/>
+  let:args
+>
+  <Heading {...args}>
+    <svelte:fragment slot="icon">
+      {#if args.icon}
+        <Icon name="{args.icon}" />
+      {/if}
+    </svelte:fragment>
+    {@html args.heading}
+    <svelte:fragment slot="button">
+      {#if args.button}
+        <Button>{args.button}</Button>
+      {/if}
+    </svelte:fragment>
+  </Heading>
+</Story>

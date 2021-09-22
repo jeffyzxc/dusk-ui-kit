@@ -2,7 +2,15 @@
   import variants from "@dusk-network/helpers/variants.js";
   import "./styles.css";
 
+  /**
+   * Sets the variant of the CTA List.
+   * @type {"brand" | "cta" | "info" | "success" | "warning" | "danger" }
+   */
   export let variant = variants.CTALIST.BRAND;
+
+  /**
+   * Sets the type of the CTA List.
+   */
   export let type = 1;
 </script>
 

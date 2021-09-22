@@ -6,92 +6,28 @@
   import Button from "@dusk-network/button";
   import RichText from "@dusk-network/rich-text";
   import { variants } from "@dusk-network/helpers";
+  import meta from "../../meta.js";
 </script>
 
 <Meta
   title="Components/Organisms/Hero"
   component="{Hero}"
-  parameters="{{ layout: 'padded' }}"
-  argTypes="{{
+  parameters="{{ 
+    layout: 'padded',
+    docs: {
+      source: {
+        type: 'code',
+      },
+    },
+  }}"
+  argTypes="{meta('hero/Hero',{
     layout: {
       table: {
         disabled: true,
       },
     },
-  }}"
+  })}"
 />
-
-<Template let:args>
-  {#if args.layout === 1}
-    <Hero {...args}>
-      <div slot="introduction">
-        <RichText>
-          {@html args.introduction}
-        </RichText>
-      </div>
-    </Hero>
-  {:else if args.layout === 2}
-    <Hero {...args}>
-      <div slot="introduction">
-        <RichText>
-          {@html args.introduction}
-        </RichText>
-      </div>
-      <div slot="cta">
-        <Button variant="{variants.BUTTON.CTA}">
-          Apply
-          <svelte:fragment slot="labelRight">Join the Dusk Mission</svelte:fragment>
-        </Button>
-        <RichText>
-          {@html args.cta.description}
-        </RichText>
-      </div>
-    </Hero>
-  {:else if args.layout === 3}
-    <Hero {...args}>
-      <div slot="introduction">
-        <RichText>
-          {@html args.introduction}
-        </RichText>
-      </div>
-      <div slot="cta">
-        <Button href="https://google.com">
-          Apply
-          <svelte:fragment slot="labelRight">Join the Dusk Mission</svelte:fragment>
-        </Button>
-        <RichText>
-          {@html args.cta.description}
-        </RichText>
-      </div>
-      <div slot="image">
-        <RichText>{@html args.image}</RichText>
-      </div>
-    </Hero>
-  {:else if args.layout === 4}
-    <Hero {...args}>
-      <div slot="introduction">
-        <RichText>
-          {@html args.introduction}
-        </RichText>
-      </div>
-      <div slot="image">
-        <RichText>{@html args.image}</RichText>
-      </div>
-    </Hero>
-  {:else if args.layout === 5}
-    <Hero {...args}>
-      <div slot="introduction">
-        <RichText>
-          {@html args.introduction}
-        </RichText>
-        <Heading>{@html args.heading}</Heading>
-      </div>
-      <div slot="image">
-        <RichText>{@html args.image}</RichText>
-      </div>
-    </Hero>
-  {/if}
-</Template>
 
 <Story
   name="With Introduction"
@@ -107,7 +43,16 @@
       },
     },
   }}"
-/>
+  let:args
+>
+  <Hero {...args}>
+    <div slot="introduction">
+      <RichText>
+        {@html args.introduction}
+      </RichText>
+    </div>
+  </Hero>
+</Story>
 
 <Story
   name="With Introduction & CTA"
@@ -120,7 +65,25 @@
         '<p>Enable any size enterprise to collaborate at scale, meet the highest level of compliance requirements, and ensure that personal and transaction data remains confidential.</p>',
     },
   }}"
-/>
+  let:args
+>
+  <Hero {...args}>
+    <div slot="introduction">
+      <RichText>
+        {@html args.introduction}
+      </RichText>
+    </div>
+    <div slot="cta">
+      <Button variant="{variants.BUTTON.CTA}">
+        Apply
+        <svelte:fragment slot="labelRight">Join the Dusk Mission</svelte:fragment>
+      </Button>
+      <RichText>
+        {@html args.cta.description}
+      </RichText>
+    </div>
+  </Hero>
+</Story>
 
 <Story
   name="With Introduction, CTA & image"
@@ -134,20 +97,28 @@
     },
     image: '<img src="https://content.dusk.network/uploads/Group_10_1_b752fec2fa.svg" />',
   }}"
-/>
-
-<Story
-  name="Grants homepage"
-  args="{{
-    layout: 3,
-    introduction: '<h1>Kickstart your project on Dusk Network</h1>',
-    cta: {
-      description:
-        '<p>Enable any size enterprise to collaborate at scale, meet the highest level of compliance requirements, and ensure that personal and transaction data remains confidential.</p>',
-    },
-    image: '<img src="https://content.dusk.network/uploads/Group_10_1_b752fec2fa.svg" />',
-  }}"
-/>
+  let:args
+>
+  <Hero {...args}>
+    <div slot="introduction">
+      <RichText>
+        {@html args.introduction}
+      </RichText>
+    </div>
+    <div slot="cta">
+      <Button href="https://google.com">
+        Apply
+        <svelte:fragment slot="labelRight">Join the Dusk Mission</svelte:fragment>
+      </Button>
+      <RichText>
+        {@html args.cta.description}
+      </RichText>
+    </div>
+    <div slot="image">
+      <RichText>{@html args.image}</RichText>
+    </div>
+  </Hero>
+</Story>
 
 <Story
   name="With Introduction & image"
@@ -157,7 +128,19 @@
       '<h1>Heros are very reusable!</h1> <p>The Dusk Grants Program helps projects and developers launch to drive mainstream adoption of blockchain and build the future of finance. Opportunities on Dusk Network are endless.</p>',
     image: '<img src="https://content.dusk.network/uploads/Group_10_1_b752fec2fa.svg" />',
   }}"
-/>
+  let:args
+>
+  <Hero {...args}>
+    <div slot="introduction">
+      <RichText>
+        {@html args.introduction}
+      </RichText>
+    </div>
+    <div slot="image">
+      <RichText>{@html args.image}</RichText>
+    </div>
+  </Hero>
+</Story>
 
 <Story
   name="Wallet homepage"
@@ -168,4 +151,17 @@
     image: '<img src="https://content.dusk.network/uploads/Group_10_1_b752fec2fa.svg" />',
     heading: '<h3>Discover Dusk Network: the privacy blockchain for financial applications.</h3>',
   }}"
-/>
+  let:args
+>
+  <Hero {...args}>
+    <div slot="introduction">
+      <RichText>
+        {@html args.introduction}
+      </RichText>
+      <Heading>{@html args.heading}</Heading>
+    </div>
+    <div slot="image">
+      <RichText>{@html args.image}</RichText>
+    </div>
+  </Hero>
+</Story>

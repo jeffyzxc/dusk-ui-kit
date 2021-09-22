@@ -3,14 +3,51 @@
   import variants from "@dusk-network/helpers/variants.js";
   import "./styles.css";
 
+  /**
+   * Sets the variant of the Toggle.
+   * @type {"brand" | "cta" | "info" | "success" | "warning" | "danger" }
+   */
   export let variant = variants.TOGGLE.BRAND;
+
+  /**
+   * Sets the type of the Toggle.
+   * @type { "checkbox" | "radio" }
+   */
   export let type = types.TOGGLE.SWITCH;
+
+  /**
+   * Sets the `name` attribute on the Toggle.
+   */
   export let name = "";
+
+  /**
+   * Sets the `checked` attrtibute on the Toggle when true.
+   */
   export let checked = false;
+
+  /**
+   * Sets the `id` of the Toggle if set, otherwise the ID is generated.
+   */
   export let id = "__DUK-toggle" + Math.random().toString(36);
+
+  /**
+   * Used as a switch when the Toggle is clicked.
+   */
   export let value;
+
+  /**
+   * Used to bind the Toggle to a group.
+   */
   export let group;
+
+  /**
+   * Sets the `disabled` attribute on the Toggle when true.
+   */
   export let disabled = false;
+
+  /**
+   * Sets the selected state of the Toggle when true.
+   */
   export let selected = false;
 </script>
 

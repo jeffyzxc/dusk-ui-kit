@@ -7,6 +7,9 @@
   import { step } from "./stores/state.js";
   import "./styles.css";
 
+  /**
+   * Sets the maximum number of steps in the Wizard.
+   */
   export let stepCount = 2;
 
   const dispatch = createEventDispatcher();

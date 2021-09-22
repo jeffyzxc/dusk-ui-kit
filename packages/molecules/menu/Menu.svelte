@@ -4,8 +4,21 @@
   import contexts from "@dusk-network/helpers/contexts.js";
   import "./styles.css";
 
+
+  /**
+   * Sets the orientation of the Menu.
+   * @type { "horizontal" | "vertical" }
+   */
   export let orientation = orientations.MENU.VERTICAL;
+
+  /**
+   * Sets the `id` of the Menu if set, otherwise the ID is generated.
+   */
   export let id = "__DUK-menu" + Math.random().toString(36);
+
+  /**
+   * Sets the `name` attribute on the Menu.
+   */
   export let name;
 
   setContext("DUK:drop-down:context", contexts.DROP_DOWN.MENU);

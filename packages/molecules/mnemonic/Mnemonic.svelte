@@ -10,8 +10,20 @@
   import Group from "@dusk-network/button/Group.svelte";
   import "./styles.css";
 
+  /**
+   * Sets the array of objects that populate Mnemonic.
+   */
   export let seed = [];
+
+  /**
+   * Sets the type of Mnemonic.
+   * @type { "authenticate" | "preview" | "confirm"}
+   */
   export let type = types.MNEMONIC.PREVIEW;
+
+  /**
+   * Sets the total number of items that populate Mnemonic.
+   */
   export let length = 12;
 
   const dispatch = createEventDispatcher();

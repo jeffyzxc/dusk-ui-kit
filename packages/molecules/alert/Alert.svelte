@@ -6,10 +6,30 @@
   import Icon from "@dusk-network/icon/Icon.svelte";
   import "./styles.css";
 
+  /**
+   * Used to display the Alert when true.
+   */
   export let value;
+
+  /**
+   * Sets the `id` of the Alert if set, otherwise the ID is generated.
+   */
   export let id = "__DUK-alert-" + Math.random().toString(36);
+
+  /**
+   * Sets the Alert to be dismissable when true.
+   */
   export let dismissable = false;
+
+  /**
+   * Sets the variant of the Alert.
+   * @type { "success" | "warning" | "danger" }
+   */
   export let variant = variants.ALERT.INFO;
+
+  /**
+   * Sets the Alert as a modal.
+   */
   export let modal = false;
 
   setContext("DUK:icon:context", contexts.ICON.ALERT);

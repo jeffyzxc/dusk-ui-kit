@@ -9,7 +9,15 @@
   import { table as dataTable } from "./table.js";
   import "./styles.css";
 
+
+  /**
+   * Sets the data displayed in the Table.
+  */
   export let data = [];
+
+  /**
+   * Sets the settings available in the Table.
+   */
   export let settings = {};
 
   $: {
