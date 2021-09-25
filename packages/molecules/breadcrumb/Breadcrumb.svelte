@@ -2,7 +2,7 @@
   import { createEventDispatcher, getContext } from "svelte";
   import contexts from "@dusk-network/helpers/contexts.js";
   import Icon from "@dusk-network/icon/Icon.svelte";
-  import Item from "@dusk-network/breadcrumb/Item.svelte";
+  import Item from "./Item.svelte";
   import "./styles.css";
 
   export let href;

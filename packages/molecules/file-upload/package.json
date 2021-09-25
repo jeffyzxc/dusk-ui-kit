@@ -10,13 +10,14 @@
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
     "directory": "packages/molecules/file-upload"
   },
-  "type": "module",
   "module": "index.js",
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/helpers": "workspace:*"
+    "@dusk-network/helpers": "workspace:*",
+    "@dusk-network/icon": "workspace:*",
+    "@dusk-network/rich-text": "workspace:*"
   },
   "peerDependencies": {
     "svelte": "3.42.6"

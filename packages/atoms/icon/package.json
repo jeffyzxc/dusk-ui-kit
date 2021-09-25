@@ -10,12 +10,11 @@
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
     "directory": "packages/atoms/icon"
   },
-  "type": "module",
   "module": "index.js",
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
   },
-  "dependencies": {
+  "devDependencies": {
     "@dusk-network/helpers": "workspace:*"
   },
   "peerDependencies": {

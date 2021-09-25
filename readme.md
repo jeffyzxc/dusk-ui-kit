@@ -40,14 +40,14 @@ import Button, {Label} from "@dusk-network/button";
 ```bash
 git clone https://github.com/dusk-network/dusk-ui-kit
 cd dusk-ui-kit
-pnpm i
+pnpm i -r
 ```
 
 ### Start Storybook
 
 ```bash
 cd storybook
-pnpm run dev
+pnpm run storybook
 ```
 
 ## Latest Design

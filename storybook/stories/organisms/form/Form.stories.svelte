@@ -1,9 +1,3 @@
-<style>
-  :global(.sb-example) {
-    @apply max-w-2xl mx-auto;
-  }
-</style>
-
 <script>
   // TODO Investigate use of states on DropDown, and Toggle
   import { Meta, Template, Story } from "@storybook/addon-svelte-csf";

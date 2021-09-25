@@ -1,7 +1,7 @@
 const postcss = require("rollup-plugin-postcss");
 const path = require("path");
 const postcssProcessor = ({ postcss = [], purge = false }) => {
-  const tailwindConfig = require("../dusk.tailwind.config.cjs");
+  const tailwindConfig = require("../dusk.tailwind.config.js");
   return [
     require("postcss-import")(),
     require("postcss-url")(),

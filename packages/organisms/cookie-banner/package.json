@@ -10,18 +10,18 @@
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
     "directory": "packages/organisms/cookie-banner"
   },
-  "type": "module",
   "module": "index.js",
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
   },
-  "dependencies": {
+  "devDependencies": {
     "@beyonk/gdpr-cookie-consent-banner": "7.1.1",
     "@dusk-network/helpers": "workspace:*",
     "@dusk-network/icon": "workspace:*"
   },
   "peerDependencies": {
-    "svelte": "3.42.6"
+    "@dusk-network/helpers": "workspace:*",
+    "@dusk-network/icon": "workspace:*"
   },
   "gitHead": "d98533cb7cf910b8f4e5f2e10b4f3e80916d1e6f"
 }
