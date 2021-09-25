@@ -17,7 +17,8 @@
     "storybook"
   ],
   "scripts": {
-    "build:storybook": "cd storybook && pnpm build-storybook",
+    "build": "pnpm build:storybook",
+    "build:storybook": "cd storybook && pnpm build",
     "preinstall": "npx only-allow pnpm",
     "prepare": "is-ci || husky install",
     "publish:ci": "changeset publish",
