@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/heading",
-  "version": "3.0.0",
+  "version": "0.0.0",
   "description": "Dusk UI Kit - Heading",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -10,17 +10,16 @@
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
     "directory": "packages/atoms/heading"
   },
-  "type": "module",
   "module": "index.js",
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/helpers": "^3.0.0",
-    "@dusk-network/icon": "^3.0.0"
+    "@dusk-network/helpers": "workspace:*",
+    "@dusk-network/icon": "workspace:*"
   },
   "peerDependencies": {
     "svelte": "3.42.6"
   },
-  "gitHead": "bd808b1a3abc5ac8459c28344f3894081a698238"
+  "gitHead": "d98533cb7cf910b8f4e5f2e10b4f3e80916d1e6f"
 }

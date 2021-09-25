@@ -5,7 +5,7 @@
   import variants from "@dusk-network/helpers/variants.js";
   import { words, compared, shuffled } from "./stores/words.js";
   import { options } from "./stores/options.js";
-  import Word from "@dusk-network/mnemonic/Word.svelte";
+  import Word from "./Word.svelte";
   import Button from "@dusk-network/button/Button.svelte";
   import Group from "@dusk-network/button/Group.svelte";
   import "./styles.css";

@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/helpers",
-  "version": "3.0.0",
+  "version": "0.0.0",
   "description": "Dusk UI Kit - Helpers",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -10,16 +10,17 @@
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
     "directory": "packages/helpers"
   },
-  "type": "module",
   "module": "index.js",
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
   },
+  "dependencies": {},
   "devDependencies": {
+    "@dusk-network/styles": "workspace:*",
     "merge-anything": "^4.0.1"
   },
   "peerDependencies": {
-    "svelte": "3.42.6"
+    "@dusk-network/styles": "workspace:*"
   },
-  "gitHead": "bd808b1a3abc5ac8459c28344f3894081a698238"
+  "gitHead": "d98533cb7cf910b8f4e5f2e10b4f3e80916d1e6f"
 }

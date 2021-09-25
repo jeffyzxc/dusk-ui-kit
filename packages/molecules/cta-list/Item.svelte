@@ -1,7 +1,4 @@
-<script>  
-
+<script>
 </script>
 
-
-<li class='duk-cta-list__item'><slot/></li>
-
+<li class="duk-cta-list__item"><slot /></li>

@@ -1,5 +1,5 @@
 <script>
-  import CtaList, {Item} from "@dusk-network/cta-list";
+  import CtaList, { Item } from "@dusk-network/cta-list";
 </script>
 
 <CtaList>

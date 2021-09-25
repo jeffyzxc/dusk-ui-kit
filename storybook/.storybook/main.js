@@ -1,20 +1,42 @@
-const postcss = require("postcss");
 const sveltePreprocess = require("svelte-preprocess");
-const VirtualModulesPlugin = require("webpack-virtual-modules");
+const dusk = require("@dusk-network/styles/plugin/vite-plugin-dusk-storybook.js");
 const metadata = require("@dusk-network/meta");
 
+const virtualMetaPlugin = () => {
+  const virtualFileId = "@ui-kit-meta";
+  return {
+    name: "ui-kit-meta-plugin",
+    resolveId(id) {
+      if (id === virtualFileId) {
+        return virtualFileId;
+      }
+    },
+    async load(id) {
+      if (id === virtualFileId) {
+        return `export default JSON.parse(${JSON.stringify(JSON.stringify(metadata))})`;
+      }
+    },
+  };
+};
+
 module.exports = {
-  webpackFinal: async (config) => {
+  async viteFinal(config) {
     config.plugins.push(
-      new VirtualModulesPlugin({
-        "node_modules/ui-kit-meta.js": `export default JSON.parse(${JSON.stringify(
-          JSON.stringify(metadata),
-        )})`,
+      dusk({
+        cssPath: "./node_modules/@dusk-network/styles/tailwind.css",
       }),
     );
+
+    config.plugins.push(virtualMetaPlugin());
+
+    config.resolve.dedupe = ["@storybook/client-api"]; // 🔧 Fix for
+
     return config;
   },
-  stories: ["../stories/**/*.stories.svelte", "../stories/**/*.stories.mdx"],
+  core: {
+    builder: "storybook-builder-vite",
+  },
+  stories: ["../stories/**/*.stories.svelte"],
   addons: [
     "@storybook/addon-viewport",
     "@storybook/addon-controls",
@@ -28,22 +50,17 @@ module.exports = {
       },
     },
     "@storybook/addon-a11y",
-    {
-      name: "@storybook/addon-postcss",
-      options: {
-        postcssLoaderOptions: {
-          implementation: postcss,
-        },
-      },
-    },
     "@storybook/addon-svelte-csf",
     "storybook-dark-mode",
   ],
+  features: {
+    postcss: false,
+  },
   svelteOptions: {
     preprocess: [
       sveltePreprocess({
         postcss: {
-          configFilePath: "node_modules/@dusk-network/styles/postcss.config.cjs",
+          configFilePath: "./node_modules/@dusk-network/styles/postcss.config.js",
         },
       }),
     ],

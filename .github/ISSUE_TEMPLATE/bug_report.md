@@ -1,21 +1,20 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: ''
+title: ""
 labels: fix:bug, team:Boris
-assignees: ''
-
+assignees: ""
 ---
 
 **Describe the bug**
 A clear and concise description of what the bug is.
 
 **To Reproduce**
-if applicable add a *minimum reproducible example*
+if applicable add a _minimum reproducible example_
 
 ```
 // Be exhustive
-// 
+//
 ```
 
 **Expected behaviour**
@@ -26,9 +25,10 @@ If applicable, add damning logs
 
 **Platform**
 Fill as appropriate
- - Architecture: [ARM, 8086]
- - OS: [e.g. iOS, Linux]
- - Browser [e.g. chrome, safari]
+
+- Architecture: [ARM, 8086]
+- OS: [e.g. iOS, Linux]
+- Browser [e.g. chrome, safari]
 
 **Additional context**
 Add any other context about the problem here.

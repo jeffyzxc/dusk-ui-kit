@@ -1,13 +1,12 @@
 ---
 name: Feature request
 about: Describe missing stuff that needs to be implemented
-title: ''
+title: ""
 labels: team:Boris
-assignees: ''
-
+assignees: ""
 ---
 
-**Describe what you want implemented** 
+**Describe what you want implemented**
 A clear and concise description of what you want to happen. If a related RFC exists (possibly in the project's wiki), please link it here.
 
 **Describe "Why" this is needed**

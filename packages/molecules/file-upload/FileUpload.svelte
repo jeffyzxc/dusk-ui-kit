@@ -1,8 +1,8 @@
 <script>
   import { getContext, createEventDispatcher } from "svelte";
   import contexts from "@dusk-network/helpers/contexts.js";
-  import RichText from "@dusk-network/rich-text";
-  import Icon from "@dusk-network/icon";
+  import RichText from "@dusk-network/rich-text/RichText.svelte";
+  import Icon from "@dusk-network/icon/Icon.svelte";
   import "./styles.css";
 
   export let id;

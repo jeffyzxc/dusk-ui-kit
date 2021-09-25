@@ -1,6 +1,0 @@
-**/*.stories.js
-**/*.md
-**/*.mdx
-**/*.test.js
-**/*.mock.js
-**/storybook/
