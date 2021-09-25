@@ -20,7 +20,7 @@
     "@dusk-network/logo": "workspace:*",
     "@dusk-network/menu": "workspace:*",
     "@dusk-network/toggle": "workspace:*",
-    "svelte-dark-mode": "^1.0.0"
+    "svelte-dark-mode": "^2.0.0"
   },
   "peerDependencies": {
     "@dusk-network/helpers": "workspace:*",
