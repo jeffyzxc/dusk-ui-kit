@@ -53,8 +53,8 @@ jobs:
         uses: changesets/action@master
         with:
           version: pnpm version:ci
-          commit: "chore: update versions"
-          title: "chore: update versions"
+          commit: ":bookmark: update versions"
+          title: ":bookmark: update versions"
           publish: pnpm publish:ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
