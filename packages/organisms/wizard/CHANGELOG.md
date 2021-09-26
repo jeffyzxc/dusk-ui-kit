@@ -1,5 +1,19 @@
 # @dusk-network/wizard
 
+## 3.0.1
+
+### Patch Changes
+
+- ac84fdab: testing changesets
+- 33c8fedb: testing changesets
+- dd790adb: testing changesets
+- Updated dependencies [ac84fdab]
+- Updated dependencies [33c8fedb]
+- Updated dependencies [dd790adb]
+  - @dusk-network/progress-bar@3.0.1
+  - @dusk-network/helpers@3.0.1
+  - @dusk-network/breadcrumb@3.0.1
+
 ## 0.0.1
 
 ### Patch Changes

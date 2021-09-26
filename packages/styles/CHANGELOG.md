@@ -1,5 +1,13 @@
 # @dusk-network/styles
 
+## 3.0.1
+
+### Patch Changes
+
+- ac84fdab: testing changesets
+- 33c8fedb: testing changesets
+- dd790adb: testing changesets
+
 ## 0.0.1
 
 ### Patch Changes

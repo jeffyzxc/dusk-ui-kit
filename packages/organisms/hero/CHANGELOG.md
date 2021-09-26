@@ -1,5 +1,18 @@
 # @dusk-network/hero
 
+## 3.0.1
+
+### Patch Changes
+
+- ac84fdab: testing changesets
+- 33c8fedb: testing changesets
+- dd790adb: testing changesets
+- Updated dependencies [ac84fdab]
+- Updated dependencies [33c8fedb]
+- Updated dependencies [dd790adb]
+  - @dusk-network/icon@3.0.1
+  - @dusk-network/helpers@3.0.1
+
 ## 0.0.1
 
 ### Patch Changes
