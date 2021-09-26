@@ -1,5 +1,13 @@
 # @dusk-network/helpers
 
+## 3.0.3
+
+### Patch Changes
+
+- 365e4295: testing changesets
+- Updated dependencies [365e4295]
+  - @dusk-network/styles@3.0.3
+
 ## 3.0.2
 
 ### Patch Changes

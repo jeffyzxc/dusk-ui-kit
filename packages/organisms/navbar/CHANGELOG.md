@@ -1,5 +1,17 @@
 # @dusk-network/navbar
 
+## 3.0.3
+
+### Patch Changes
+
+- 365e4295: testing changesets
+- Updated dependencies [365e4295]
+  - @dusk-network/icon@3.0.3
+  - @dusk-network/logo@3.0.3
+  - @dusk-network/toggle@3.0.3
+  - @dusk-network/helpers@3.0.3
+  - @dusk-network/menu@3.0.3
+
 ## 3.0.2
 
 ### Patch Changes
