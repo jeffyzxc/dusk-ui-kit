@@ -1,5 +1,11 @@
 # @dusk-network/icon
 
+## 3.0.4
+
+### Patch Changes
+
+- 83b76ba8: testing changesets
+
 ## 3.0.3
 
 ### Patch Changes
