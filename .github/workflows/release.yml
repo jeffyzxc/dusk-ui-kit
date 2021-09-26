@@ -44,7 +44,7 @@ jobs:
       - name: Install Dependencies
         run: pnpm i --frozen-lockfile
         env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.GH_PACKAGES_TOKEN}}
 
       # - name: Setup npmrc
       #   run: echo "//npm.pkg.github.com/:_authToken=${secrets.GITHUB_TOKEN} @dusk-network:registry=https://npm.pkg.github.com" > .npmrc
@@ -57,7 +57,7 @@ jobs:
           title: ":bookmark: update versions"
           publish: pnpm publish:ci
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # - name: Set Current Version
