@@ -60,7 +60,7 @@ jobs:
           publish: pnpm publish:ci
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
 
       # - name: Set Current Version
       #   shell: bash -ex {0}
