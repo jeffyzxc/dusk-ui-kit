@@ -34,7 +34,7 @@
     "test": "echo \"Work in progress...\" && exit",
     "test:watch": "jest --watchAll",
     "version:changeset": "changeset version",
-    "version:ci": "run-s version:changeset version:repo",
+    "version:ci": "pnpm version:changeset",
     "version:lockfile": "pnpm install --frozen-lockfile=false --lockfile-only",
     "version:repo": "pnpm update:workspace",
     "update:deps": "pnpm up --latest --recursive --interactive",

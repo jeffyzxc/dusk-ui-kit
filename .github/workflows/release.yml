@@ -53,8 +53,8 @@ jobs:
         uses: changesets/action@master
         with:
           version: pnpm version:ci
-          commit: ":bookmark: update versions"
-          title: ":bookmark: update versions"
+          commit: ":bookmark: (auto-commit) update package versions"
+          title: "Version Packages"
           publish: pnpm publish:ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
