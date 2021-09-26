@@ -1,6 +1,7 @@
 # @dusk-network/styles
 
 ## 0.0.1
+
 ### Patch Changes
 
 - a10ea514: testing changesets
