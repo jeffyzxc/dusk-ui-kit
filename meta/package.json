@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/meta",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "description": "Metadata for components",
   "main": "index.js",
