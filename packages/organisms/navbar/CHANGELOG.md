@@ -1,5 +1,17 @@
 # @dusk-network/navbar
 
+## 3.0.6
+
+### Patch Changes
+
+- dc22a3aa: testing changesets
+- Updated dependencies [dc22a3aa]
+  - @dusk-network/icon@3.0.6
+  - @dusk-network/logo@3.0.6
+  - @dusk-network/toggle@3.0.6
+  - @dusk-network/helpers@3.0.6
+  - @dusk-network/menu@3.0.6
+
 ## 3.0.5
 
 ### Patch Changes

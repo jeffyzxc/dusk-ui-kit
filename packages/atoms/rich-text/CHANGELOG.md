@@ -1,5 +1,11 @@
 # @dusk-network/rich-text
 
+## 3.0.6
+
+### Patch Changes
+
+- dc22a3aa: testing changesets
+
 ## 3.0.5
 
 ### Patch Changes
