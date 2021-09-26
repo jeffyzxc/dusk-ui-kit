@@ -1,5 +1,15 @@
 # @dusk-network/file-upload
 
+## 3.0.5
+
+### Patch Changes
+
+- 006ffc63: testing changesets
+- Updated dependencies [006ffc63]
+  - @dusk-network/icon@3.0.5
+  - @dusk-network/rich-text@3.0.5
+  - @dusk-network/helpers@3.0.5
+
 ## 3.0.4
 
 ### Patch Changes
