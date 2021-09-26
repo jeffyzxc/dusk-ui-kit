@@ -1,5 +1,14 @@
 # @dusk-network/alert
 
+## 3.0.4
+
+### Patch Changes
+
+- 83b76ba8: testing changesets
+- Updated dependencies [83b76ba8]
+  - @dusk-network/icon@3.0.4
+  - @dusk-network/helpers@3.0.4
+
 ## 3.0.3
 
 ### Patch Changes
