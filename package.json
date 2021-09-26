@@ -47,7 +47,7 @@
   },
   "lint-staged": {
     "*.{js,ts,svelte}": "eslint --ext .svelte,.js --fix",
-    "*.{js,ts,svelte,scss,md,mdx,json}": "prettier -w --plugin-search-dir=."
+    "*.{js,ts,svelte,css,md,mdx,json}": "prettier -w --plugin-search-dir=."
   },
   "config": {
     "commitizen": {
