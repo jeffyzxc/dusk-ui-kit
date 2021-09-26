@@ -1,5 +1,16 @@
 # @dusk-network/accordion
 
+## 3.0.2
+
+### Patch Changes
+
+- d9360f5c: testing changesets
+- Updated dependencies [d9360f5c]
+  - @dusk-network/icon@3.0.2
+  - @dusk-network/helpers@3.0.2
+  - @dusk-network/button@3.0.2
+  - @dusk-network/menu@3.0.2
+
 ## 3.0.1
 
 ### Patch Changes

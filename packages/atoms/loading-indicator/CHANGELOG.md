@@ -1,5 +1,13 @@
 # @dusk-network/loading-indicator
 
+## 3.0.2
+
+### Patch Changes
+
+- d9360f5c: testing changesets
+- Updated dependencies [d9360f5c]
+  - @dusk-network/helpers@3.0.2
+
 ## 3.0.1
 
 ### Patch Changes
