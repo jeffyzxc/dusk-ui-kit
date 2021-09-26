@@ -22,6 +22,7 @@
     "preinstall": "npx only-allow pnpm",
     "prepare": "is-ci || husky install",
     "publish:ci": "changeset publish",
+    "prechangeset": "is-ci || node scripts/prechangeset.js",
     "changeset": "changeset",
     "format": "prettier . -w --plugin-search-dir=.",
     "stage": "lint-staged",
@@ -32,7 +33,6 @@
     "lint:js:fix": "pnpm lint:js -- --fix",
     "test": "echo \"Work in progress...\" && exit",
     "test:watch": "jest --watchAll",
-    "preversion:changeset": "is-ci || node scripts/preversion-changeset.js",
     "version:changeset": "changeset version",
     "version:ci": "run-s version:changeset version:repo",
     "version:lockfile": "pnpm install --frozen-lockfile=false --lockfile-only",
@@ -47,7 +47,7 @@
   },
   "lint-staged": {
     "*.{js,ts,svelte}": "eslint --ext .svelte,.js --fix",
-    "*.{js,ts,svelte,scss,md,mdx,json}": "prettier -w --plugin-search-dir=."
+    "*.{js,ts,svelte,css,md,mdx,json}": "prettier -w --plugin-search-dir=."
   },
   "config": {
     "commitizen": {
