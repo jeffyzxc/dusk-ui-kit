@@ -1,5 +1,17 @@
 # @dusk-network/navbar
 
+## 3.0.2
+
+### Patch Changes
+
+- ac180bb0: testing changesets
+- Updated dependencies [ac180bb0]
+  - @dusk-network/icon@3.0.2
+  - @dusk-network/logo@3.0.2
+  - @dusk-network/toggle@3.0.2
+  - @dusk-network/helpers@3.0.2
+  - @dusk-network/menu@3.0.2
+
 ## 3.0.1
 
 ### Patch Changes

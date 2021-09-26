@@ -1,5 +1,11 @@
 # @dusk-network/storybook
 
+## 3.0.2
+
+### Patch Changes
+
+- ac180bb0: testing changesets
+
 ## 3.0.1
 
 ### Patch Changes

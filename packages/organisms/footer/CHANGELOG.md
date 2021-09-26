@@ -1,5 +1,18 @@
 # @dusk-network/footer
 
+## 3.0.2
+
+### Patch Changes
+
+- ac180bb0: testing changesets
+- Updated dependencies [ac180bb0]
+  - @dusk-network/icon@3.0.2
+  - @dusk-network/logo@3.0.2
+  - @dusk-network/text-field@3.0.2
+  - @dusk-network/helpers@3.0.2
+  - @dusk-network/button@3.0.2
+  - @dusk-network/menu@3.0.2
+
 ## 3.0.1
 
 ### Patch Changes
