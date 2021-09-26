@@ -46,15 +46,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{secrets.GH_PACKAGES_TOKEN}}
 
-      # - name: Setup npmrc
-      #   run: echo "//npm.pkg.github.com/:_authToken=${secrets.GITHUB_TOKEN} @dusk-network:registry=https://npm.pkg.github.com" > .npmrc
+      - name: Recreate .npmrc file
+        run: echo "//npm.pkg.github.com/:_authToken=${secrets.GITHUB_TOKEN} @dusk-network:registry=https://npm.pkg.github.com" > .npmrc
 
       - name: Create Release Pull Request or Publish
         uses: changesets/action@master
         with:
           version: pnpm version:ci
-          commit: ":bookmark: (auto-commit) update package versions"
-          title: "Version Packages"
+          commit: ":robot: (auto-commit) update package versions"
+          title: ":bookmark: Version Packages"
           publish: pnpm publish:ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
