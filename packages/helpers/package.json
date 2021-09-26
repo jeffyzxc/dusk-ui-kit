@@ -22,5 +22,5 @@
   "peerDependencies": {
     "@dusk-network/styles": "workspace:*"
   },
-  "gitHead": "c54412eb472b6612be69b1f0ba255b07c89eac7c"
+  "gitHead": "4b53a5c047c07ea5938028fc0ecc857ef4068b3c"
 }
