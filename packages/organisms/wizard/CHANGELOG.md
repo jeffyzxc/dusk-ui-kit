@@ -1,5 +1,17 @@
 # @dusk-network/wizard
 
+## 3.0.8
+
+### Patch Changes
+
+- 59509914: testing changesets
+- 0258743d: testing changesets ci
+- Updated dependencies [59509914]
+- Updated dependencies [0258743d]
+  - @dusk-network/progress-bar@3.0.8
+  - @dusk-network/helpers@3.0.8
+  - @dusk-network/breadcrumb@3.0.8
+
 ## 3.0.7
 
 ### Patch Changes

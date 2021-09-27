@@ -1,5 +1,19 @@
 # @dusk-network/navbar
 
+## 3.0.8
+
+### Patch Changes
+
+- 59509914: testing changesets
+- 0258743d: testing changesets ci
+- Updated dependencies [59509914]
+- Updated dependencies [0258743d]
+  - @dusk-network/icon@3.0.8
+  - @dusk-network/logo@3.0.8
+  - @dusk-network/toggle@3.0.8
+  - @dusk-network/helpers@3.0.8
+  - @dusk-network/menu@3.0.8
+
 ## 3.0.7
 
 ### Patch Changes

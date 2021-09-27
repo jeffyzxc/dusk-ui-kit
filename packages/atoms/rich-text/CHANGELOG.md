@@ -1,5 +1,12 @@
 # @dusk-network/rich-text
 
+## 3.0.8
+
+### Patch Changes
+
+- 59509914: testing changesets
+- 0258743d: testing changesets ci
+
 ## 3.0.7
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @dusk-network/storybook
 
+## 3.0.8
+
+### Patch Changes
+
+- 0258743d: testing changesets ci
+
 ## 3.0.7
 
 ### Patch Changes
