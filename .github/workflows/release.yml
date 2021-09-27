@@ -47,7 +47,7 @@ jobs:
           version: pnpm version:ci
           commit: ":robot: (auto-commit) update package versions"
           title: ":bookmark: Version Packages"
-          publish: pnpm publish -r
+          publish: pnpm i -r && pnpm publish -r
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -56,7 +56,7 @@ jobs:
         if: steps.changesets.outputs.published == 'true'
         shell: bash -ex {0}
         run: |
-          CURRENT_VERSION=$(node -p 'require("./package.json").version')
+          CURRENT_VERSION=$(node -p 'require("./storybook/package.json").version')
           echo "CURRENT_VERSION=${CURRENT_VERSION}" >> $GITHUB_ENV
 
       - name: Tag Check
@@ -99,3 +99,14 @@ jobs:
             Release of UI Kit v${{ env.CURRENT_VERSION }}
           draft: false
           prerelease: false
+
+      - name: Rocket.Chat Notification
+        uses: RocketChat/Rocket.Chat.GitHub.Action.Notification@master
+        if: steps.changesets.outputs.published == 'true'
+        with:
+          type: ${{ job.status }}
+          job_name: UI Kit v${{ env.CURRENT_VERSION }} Released!
+          mention: 'here'
+          mention_if: 'success'
+          channel: '#releases'
+          url: ${{ secrets.ROCKETCHAT_WEBHOOK }}
