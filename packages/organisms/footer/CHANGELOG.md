@@ -1,5 +1,18 @@
 # @dusk-network/footer
 
+## 3.0.11
+
+### Patch Changes
+
+- e82126be: testing changesets
+- Updated dependencies [e82126be]
+  - @dusk-network/icon@3.0.11
+  - @dusk-network/logo@3.0.11
+  - @dusk-network/text-field@3.0.11
+  - @dusk-network/helpers@3.0.11
+  - @dusk-network/button@3.0.11
+  - @dusk-network/menu@3.0.11
+
 ## 3.0.10
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @dusk-network/logo
 
+## 3.0.11
+
+### Patch Changes
+
+- e82126be: testing changesets
+- Updated dependencies [e82126be]
+  - @dusk-network/helpers@3.0.11
+
 ## 3.0.10
 
 ### Patch Changes

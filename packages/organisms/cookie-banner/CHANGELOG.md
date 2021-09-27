@@ -1,5 +1,14 @@
 # @dusk-network/cookie-banner
 
+## 3.0.11
+
+### Patch Changes
+
+- e82126be: testing changesets
+- Updated dependencies [e82126be]
+  - @dusk-network/icon@3.0.11
+  - @dusk-network/helpers@3.0.11
+
 ## 3.0.10
 
 ### Patch Changes

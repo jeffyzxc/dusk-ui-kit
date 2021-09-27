@@ -1,5 +1,15 @@
 # @dusk-network/table
 
+## 3.0.11
+
+### Patch Changes
+
+- e82126be: testing changesets
+- Updated dependencies [e82126be]
+  - @dusk-network/drop-down@3.0.11
+  - @dusk-network/helpers@3.0.11
+  - @dusk-network/pagination@3.0.11
+
 ## 3.0.10
 
 ### Patch Changes
