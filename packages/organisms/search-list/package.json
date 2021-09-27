@@ -10,19 +10,21 @@
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
     "directory": "packages/organisms/search-list"
   },
-  "type": "module",
   "module": "index.js",
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
   },
-  "dependencies": {
-    "@dusk-network/control": "^2.0.0-rc.59",
-    "@dusk-network/text-field": "^2.0.0-rc.59",
-    "@dusk-network/button": "^2.0.0-rc.59",
-    "@dusk-network/icon": "^2.0.0-rc.59"
+  "devDependencies": {
+    "@dusk-network/button": "workspace:*",
+    "@dusk-network/control": "workspace:*",
+    "@dusk-network/icon": "workspace:*",
+    "@dusk-network/text-field": "workspace:*"
   },
   "peerDependencies": {
-    "svelte": "3.42.1"
+    "@dusk-network/button": "workspace:*",
+    "@dusk-network/control": "workspace:*",
+    "@dusk-network/icon": "workspace:*",
+    "@dusk-network/text-field": "workspace:*"
   },
   "gitHead": "ebc29c0cf9910ca27f10dd8bf16333dfcf2816dd"
 }
