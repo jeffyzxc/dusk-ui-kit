@@ -81,7 +81,7 @@
   &--with-prefix {
     ^&__input {
       &--text-field {
-        @apply border-l-0 rounded-tl-none rounded-bl-none;
+        @apply border-l-0 rounded-tl-none rounded-bl-none z-10;
       }
     }
 

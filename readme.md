@@ -40,13 +40,40 @@ import Button, {Label} from "@dusk-network/button";
 ```bash
 git clone https://github.com/dusk-network/dusk-ui-kit
 cd dusk-ui-kit
-yarn
+pnpm i
+```
+
+### Changeset Workflow
+
+#### Create a feature branch
+
+```bash
+git checkout -b <issue-id>
+```
+
+#### Commit (frequently) and push your changes to the branch
+
+```bash
+git commit
+git push
+```
+
+#### Add a changeset (if your changes should result in a new version)
+
+```bash
+pnpm changeset
+```
+
+#### Create a pull request
+
+```bash
+gh pr create
 ```
 
 ### Start Storybook
 
 ```bash
-yarn storybook
+pnpm run storybook
 ```
 
 ## Latest Design

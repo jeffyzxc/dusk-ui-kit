@@ -1,0 +1,24 @@
+import { Meta } from "@storybook/addon-docs";
+
+<Meta title="Docs/Components/Organisms/Wizard" />
+
+# ⚛️ Wizard
+
+An Wizard is a space-saving and attention-focusing component for coupling content with a heading.
+Each item in the Wizard is collapsed by default. When one Wizard item is opened, any other open
+items are closed. This is what creates the 'wizard' effect.
+
+## Usage
+
+```js
+<script>
+  import Wizard, { Item } from "@dusk-network/wizard";
+</script>
+
+
+  <Wizard>
+    <Item title="Item 1">this is item 1!</Item>
+    <Item title="Item 2">this is item 2!</Item>
+    <Item title="Item 3">this is item 3!</Item>
+  </Wizard>
+```

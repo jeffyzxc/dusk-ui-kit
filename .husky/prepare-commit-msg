@@ -1,1 +1,1 @@
-exec < /dev/tty && git cz --hook || true && npx --no-install devmoji -e --lint
+exec < /dev/tty && git cz --hook || true

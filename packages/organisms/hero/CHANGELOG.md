@@ -1,176 +1,119 @@
-# Change Log
+# @dusk-network/hero
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+## 3.0.11
 
-# [2.0.0-rc.60](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.59...v2.0.0-rc.60) (2021-09-14)
+### Patch Changes
 
-**Note:** Version bump only for package @dusk-network/hero
+- e82126be: testing changesets
+- Updated dependencies [e82126be]
+  - @dusk-network/icon@3.0.11
+  - @dusk-network/helpers@3.0.11
 
+## 3.0.10
 
+### Patch Changes
 
+- 3bdf6fcd: testing changesets
+- Updated dependencies [3bdf6fcd]
+  - @dusk-network/icon@3.0.10
+  - @dusk-network/helpers@3.0.10
 
+## 3.0.9
 
-# [2.0.0-rc.59](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.58...v2.0.0-rc.59) (2021-09-06)
+### Patch Changes
 
-**Note:** Version bump only for package @dusk-network/hero
+- ddcc6129: testing changesets
+- Updated dependencies [ddcc6129]
+  - @dusk-network/icon@3.0.9
+  - @dusk-network/helpers@3.0.9
 
+## 3.0.8
 
+### Patch Changes
 
+- 59509914: testing changesets
+- 0258743d: testing changesets ci
+- Updated dependencies [59509914]
+- Updated dependencies [0258743d]
+  - @dusk-network/icon@3.0.8
+  - @dusk-network/helpers@3.0.8
 
+## 3.0.7
 
-# [2.0.0-rc.58](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.57...v2.0.0-rc.58) (2021-09-06)
+### Patch Changes
 
-**Note:** Version bump only for package @dusk-network/hero
+- 9fa40eb7: testing changesets
+- Updated dependencies [9fa40eb7]
+  - @dusk-network/icon@3.0.7
+  - @dusk-network/helpers@3.0.7
 
+## 3.0.6
 
+### Patch Changes
 
+- dc22a3aa: testing changesets
+- Updated dependencies [dc22a3aa]
+  - @dusk-network/icon@3.0.6
+  - @dusk-network/helpers@3.0.6
 
+## 3.0.5
 
-# [2.0.0-rc.57](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.56...v2.0.0-rc.57) (2021-09-06)
+### Patch Changes
 
-**Note:** Version bump only for package @dusk-network/hero
+- 006ffc63: testing changesets
+- Updated dependencies [006ffc63]
+  - @dusk-network/icon@3.0.5
+  - @dusk-network/helpers@3.0.5
 
+## 3.0.4
 
+### Patch Changes
 
+- 83b76ba8: testing changesets
+- Updated dependencies [83b76ba8]
+  - @dusk-network/icon@3.0.4
+  - @dusk-network/helpers@3.0.4
 
+## 3.0.3
 
-# [2.0.0-rc.56](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.55...v2.0.0-rc.56) (2021-08-31)
+### Patch Changes
 
-**Note:** Version bump only for package @dusk-network/hero
+- 365e4295: testing changesets
+- Updated dependencies [365e4295]
+  - @dusk-network/icon@3.0.3
+  - @dusk-network/helpers@3.0.3
 
+## 3.0.2
 
+### Patch Changes
 
+- d9360f5c: testing changesets
+- Updated dependencies [d9360f5c]
+  - @dusk-network/icon@3.0.2
+  - @dusk-network/helpers@3.0.2
 
+## 3.0.1
 
-# [2.0.0-rc.55](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.54...v2.0.0-rc.55) (2021-08-29)
+### Patch Changes
 
-**Note:** Version bump only for package @dusk-network/hero
-
-
-
-
-
-# [2.0.0-rc.54](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.53...v2.0.0-rc.54) (2021-08-27)
-
-**Note:** Version bump only for package @dusk-network/hero
-
-
-
-
-
-# [2.0.0-rc.53](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.52...v2.0.0-rc.53) (2021-08-27)
-
-**Note:** Version bump only for package @dusk-network/hero
-
-
-
-
-
-# [2.0.0-rc.52](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.51...v2.0.0-rc.52) (2021-08-25)
-
-**Note:** Version bump only for package @dusk-network/hero
-
-
-
-
-
-# [2.0.0-rc.51](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.50...v2.0.0-rc.51) (2021-08-23)
-
-**Note:** Version bump only for package @dusk-network/hero
-
-
-
-
-
-# [2.0.0-rc.50](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.49...v2.0.0-rc.50) (2021-08-23)
-
-**Note:** Version bump only for package @dusk-network/hero
-
-
-
-
-
-# [2.0.0-rc.49](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.48...v2.0.0-rc.49) (2021-08-23)
-
-
-### Bug Fixes
-
-* **hero:** 🐛 adjusting image centering ([6b2400e](https://github.com/dusk-network/dusk-ui-kit/commit/6b2400e67ca6261bfc01f2054adda2792f9ddde8))
-* **hero:** 🐛 updated grid layout ([1c33797](https://github.com/dusk-network/dusk-ui-kit/commit/1c33797dd7a13ee6e4e379f0a2c34bb88ea56da9))
-
-
-
-
-
-# [2.0.0-rc.48](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.47...v2.0.0-rc.48) (2021-08-23)
-
-**Note:** Version bump only for package @dusk-network/hero
-
-
-
-
-
-# [2.0.0-rc.47](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.46...v2.0.0-rc.47) (2021-08-23)
-
-
-### Features
-
-* **contexts:** ✨ adding additonal contexts for headings ([0de6fe3](https://github.com/dusk-network/dusk-ui-kit/commit/0de6fe3e0570df8bfeb4d4bfaae661a01998abbb))
-
-
-
-
-
-# [2.0.0-rc.46](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.45...v2.0.0-rc.46) (2021-08-23)
-
-**Note:** Version bump only for package @dusk-network/hero
-
-
-
-
-
-# [2.0.0-rc.45](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.44...v2.0.0-rc.45) (2021-08-20)
-
-
-### Bug Fixes
-
-* **hero:** 🐛 corrected layout issue when cta is not present ([08639c8](https://github.com/dusk-network/dusk-ui-kit/commit/08639c8adda120636a6ce224c5d7de709f2f23c7))
-
-
-
-
-
-# [2.0.0-rc.44](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.43...v2.0.0-rc.44) (2021-08-19)
-
-**Note:** Version bump only for package @dusk-network/hero
-
-
-
-
-
-# [2.0.0-rc.43](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.42...v2.0.0-rc.43) (2021-08-19)
-
-
-### Bug Fixes
-
-* **navbar:** 🐛 added darkmode plugin to mange this ([0bd632d](https://github.com/dusk-network/dusk-ui-kit/commit/0bd632d9b0922e2c0dafd06604069772f3bb2863))
-
-
-
-
-
-# [2.0.0-rc.42](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.41...v2.0.0-rc.42) (2021-08-19)
-
-**Note:** Version bump only for package @dusk-network/hero
-
-
-
-
-
-# [2.0.0-rc.41](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.40...v2.0.0-rc.41) (2021-08-18)
-
-
-### Features
-
-* **hero:** ✨ added Hero component ([5e44173](https://github.com/dusk-network/dusk-ui-kit/commit/5e441732e2a9a73ff5e732f21c1ae4dc283d56a7))
+- ac84fdab: testing changesets
+- 33c8fedb: testing changesets
+- dd790adb: testing changesets
+- Updated dependencies [ac84fdab]
+- Updated dependencies [33c8fedb]
+- Updated dependencies [dd790adb]
+  - @dusk-network/icon@3.0.1
+  - @dusk-network/helpers@3.0.1
+
+## 0.0.1
+
+### Patch Changes
+
+- a10ea514: testing changesets
+- 2b3bda0b: testing changesets
+- 6d417df2: adding another changest
+- Updated dependencies [a10ea514]
+- Updated dependencies [2b3bda0b]
+- Updated dependencies [6d417df2]
+  - @dusk-network/icon@0.0.1
+  - @dusk-network/helpers@0.0.1

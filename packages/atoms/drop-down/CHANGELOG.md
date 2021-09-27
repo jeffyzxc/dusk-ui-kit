@@ -1,370 +1,119 @@
-# Change Log
+# @dusk-network/drop-down
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+## 3.0.11
 
-# [2.0.0-rc.60](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.59...v2.0.0-rc.60) (2021-09-14)
+### Patch Changes
 
-**Note:** Version bump only for package @dusk-network/drop-down
+- e82126be: testing changesets
+- Updated dependencies [e82126be]
+  - @dusk-network/icon@3.0.11
+  - @dusk-network/helpers@3.0.11
 
+## 3.0.10
 
+### Patch Changes
 
+- 3bdf6fcd: testing changesets
+- Updated dependencies [3bdf6fcd]
+  - @dusk-network/icon@3.0.10
+  - @dusk-network/helpers@3.0.10
 
+## 3.0.9
 
-# [2.0.0-rc.59](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.58...v2.0.0-rc.59) (2021-09-06)
+### Patch Changes
 
-**Note:** Version bump only for package @dusk-network/drop-down
+- ddcc6129: testing changesets
+- Updated dependencies [ddcc6129]
+  - @dusk-network/icon@3.0.9
+  - @dusk-network/helpers@3.0.9
 
+## 3.0.8
 
+### Patch Changes
 
+- 59509914: testing changesets
+- 0258743d: testing changesets ci
+- Updated dependencies [59509914]
+- Updated dependencies [0258743d]
+  - @dusk-network/icon@3.0.8
+  - @dusk-network/helpers@3.0.8
 
+## 3.0.7
 
-# [2.0.0-rc.58](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.57...v2.0.0-rc.58) (2021-09-06)
+### Patch Changes
 
-**Note:** Version bump only for package @dusk-network/drop-down
+- 9fa40eb7: testing changesets
+- Updated dependencies [9fa40eb7]
+  - @dusk-network/icon@3.0.7
+  - @dusk-network/helpers@3.0.7
 
+## 3.0.6
 
+### Patch Changes
 
+- dc22a3aa: testing changesets
+- Updated dependencies [dc22a3aa]
+  - @dusk-network/icon@3.0.6
+  - @dusk-network/helpers@3.0.6
 
+## 3.0.5
 
-# [2.0.0-rc.57](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.56...v2.0.0-rc.57) (2021-09-06)
+### Patch Changes
 
-**Note:** Version bump only for package @dusk-network/drop-down
+- 006ffc63: testing changesets
+- Updated dependencies [006ffc63]
+  - @dusk-network/icon@3.0.5
+  - @dusk-network/helpers@3.0.5
 
+## 3.0.4
 
+### Patch Changes
 
+- 83b76ba8: testing changesets
+- Updated dependencies [83b76ba8]
+  - @dusk-network/icon@3.0.4
+  - @dusk-network/helpers@3.0.4
 
+## 3.0.3
 
-# [2.0.0-rc.56](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.55...v2.0.0-rc.56) (2021-08-31)
+### Patch Changes
 
-**Note:** Version bump only for package @dusk-network/drop-down
+- 365e4295: testing changesets
+- Updated dependencies [365e4295]
+  - @dusk-network/icon@3.0.3
+  - @dusk-network/helpers@3.0.3
 
+## 3.0.2
 
+### Patch Changes
 
+- d9360f5c: testing changesets
+- Updated dependencies [d9360f5c]
+  - @dusk-network/icon@3.0.2
+  - @dusk-network/helpers@3.0.2
 
+## 3.0.1
 
-# [2.0.0-rc.55](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.54...v2.0.0-rc.55) (2021-08-29)
+### Patch Changes
 
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.54](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.53...v2.0.0-rc.54) (2021-08-27)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.53](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.52...v2.0.0-rc.53) (2021-08-27)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.52](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.51...v2.0.0-rc.52) (2021-08-25)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.51](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.50...v2.0.0-rc.51) (2021-08-23)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.50](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.49...v2.0.0-rc.50) (2021-08-23)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.49](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.48...v2.0.0-rc.49) (2021-08-23)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.48](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.47...v2.0.0-rc.48) (2021-08-23)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.47](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.46...v2.0.0-rc.47) (2021-08-23)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.46](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.45...v2.0.0-rc.46) (2021-08-23)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.45](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.44...v2.0.0-rc.45) (2021-08-20)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.44](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.43...v2.0.0-rc.44) (2021-08-19)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.43](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.42...v2.0.0-rc.43) (2021-08-19)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.42](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.41...v2.0.0-rc.42) (2021-08-19)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.41](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.40...v2.0.0-rc.41) (2021-08-18)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.40](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.39...v2.0.0-rc.40) (2021-08-17)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.39](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.38...v2.0.0-rc.39) (2021-08-17)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.38](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.37...v2.0.0-rc.38) (2021-08-17)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.37](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.36...v2.0.0-rc.37) (2021-08-17)
-
-
-### Performance Improvements
-
-* **packages:** ⚡️ updated all package dependencies adding and removing where needed ([481064a](https://github.com/dusk-network/dusk-ui-kit/commit/481064ad6672e547aa0ab0fcadc69c7e37a91170))
-
-
-
-
-
-# [2.0.0-rc.36](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.35...v2.0.0-rc.36) (2021-08-16)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.35](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.34...v2.0.0-rc.35) (2021-08-12)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.34](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.33...v2.0.0-rc.34) (2021-08-09)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.33](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.32...v2.0.0-rc.33) (2021-08-09)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.32](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.31...v2.0.0-rc.32) (2021-08-08)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.31](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.30...v2.0.0-rc.31) (2021-08-07)
-
-
-### Features
-
-* **navbar:** ✨ added drop down context to menu and into navbar ([b76caa2](https://github.com/dusk-network/dusk-ui-kit/commit/b76caa24449b303ddb2386ed55a9ce9a59b967b4))
-
-
-
-
-
-# [2.0.0-rc.30](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.29...v2.0.0-rc.30) (2021-08-06)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.29](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.28...v2.0.0-rc.29) (2021-08-06)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.28](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.27...v2.0.0-rc.28) (2021-08-04)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.27](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.26...v2.0.0-rc.27) (2021-08-03)
-
-
-### Bug Fixes
-
-* **drop-down:** 🐛 improved drop-up styling ([d947b20](https://github.com/dusk-network/dusk-ui-kit/commit/d947b20ecc8b39abbba41b74618c86234d9b81eb))
-
-
-
-
-
-# [2.0.0-rc.26](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.25...v2.0.0-rc.26) (2021-08-03)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.25](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.24...v2.0.0-rc.25) (2021-08-02)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.24](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.23...v2.0.0-rc.24) (2021-08-02)
-
-
-### Bug Fixes
-
-* **storybook:** 🐛 added fixes for storybook related issues ([655348f](https://github.com/dusk-network/dusk-ui-kit/commit/655348f6b4339848314fce4cefbb6323eef02a4a))
-
-
-
-
-
-# [2.0.0-rc.23](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.22...v2.0.0-rc.23) (2021-07-30)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.22](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.21...v2.0.0-rc.22) (2021-07-29)
-
-
-### Features
-
-* **drop-down:** ✨ added selected index property ([c8a7939](https://github.com/dusk-network/dusk-ui-kit/commit/c8a79393a7f25c542f841ee86221eb083e23958a))
-
-
-
-
-
-# [2.0.0-rc.21](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.20...v2.0.0-rc.21) (2021-07-29)
-
-
-### Features
-
-* **drop-down:** ✨ updating drop down style ([e7aa075](https://github.com/dusk-network/dusk-ui-kit/commit/e7aa0751e5ae6146cb3a4e95d1e6501b8dc32304))
-
-
-
-
-
-# [2.0.0-rc.20](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.19...v2.0.0-rc.20) (2021-07-28)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.19](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.18...v2.0.0-rc.19) (2021-07-28)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.18](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.16...v2.0.0-rc.18) (2021-07-28)
-
-**Note:** Version bump only for package @dusk-network/drop-down
-
-
-
-
-
-# [2.0.0-rc.17](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.16...v2.0.0-rc.17) (2021-07-28)
-
-**Note:** Version bump only for package @dusk-network/drop-down
+- ac84fdab: testing changesets
+- 33c8fedb: testing changesets
+- dd790adb: testing changesets
+- Updated dependencies [ac84fdab]
+- Updated dependencies [33c8fedb]
+- Updated dependencies [dd790adb]
+  - @dusk-network/icon@3.0.1
+  - @dusk-network/helpers@3.0.1
+
+## 0.0.1
+
+### Patch Changes
+
+- a10ea514: testing changesets
+- 2b3bda0b: testing changesets
+- 6d417df2: adding another changest
+- Updated dependencies [a10ea514]
+- Updated dependencies [2b3bda0b]
+- Updated dependencies [6d417df2]
+  - @dusk-network/icon@0.0.1
+  - @dusk-network/helpers@0.0.1

@@ -2,7 +2,7 @@
   export let viewbox;
 </script>
 
-<svg xmlns="http://www.w3.org/2000/svg" {viewbox}>
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="{viewbox}">
   <path
     fill="currentColor"
     d="M5.06 3C4.63 3 4.22 3.14 3.84 3.42S3.24 4.06 3.14 4.5L2.11 8.91C1.86 10 2.06 10.95 2.72

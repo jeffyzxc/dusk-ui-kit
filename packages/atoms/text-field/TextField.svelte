@@ -19,7 +19,6 @@
   function toggleFocused() {
     focused = !focused;
   }
-  delete $$restProps.class;
 </script>
 
 {#if multiline}

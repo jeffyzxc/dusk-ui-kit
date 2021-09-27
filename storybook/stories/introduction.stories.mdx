@@ -1,0 +1,290 @@
+import { Meta, ColorPalette, ColorItem, Typeset } from "@storybook/addon-docs";
+import resolveConfig from "tailwindcss/resolveConfig";
+import tailwindConfig from "@dusk-network/styles/dusk.tailwind.config.js";
+
+const config = resolveConfig(tailwindConfig);
+
+const colours = config.theme.colors;
+const fontSize = config.theme.fontSize;
+const fontFamily = config.theme.fontFamily;
+const fontWeight = config.theme.fontWeight;
+
+<Meta title="Docs/Introduction" />
+
+# Dusk UI Kit
+
+> The Dusk UI Kit is a component library for building Dusk Network apps according to Dusk Network's design system.
+
+This Storybook showcases many of the Dusk UI Kit patterns, available for creating Dusk Network apps. This library is strongly opinionated and built according to the Dusk design system, which itself is built using the Atomic Design methodology.
+
+## What is Atomic Design?
+
+There are five distinct levels in atomic design:
+
+- Atoms - _represent the most simple components that are used to build more complex components_
+- Molecules - _represent components that are made entirely of Atoms_
+- Organisms - _represent components that are made up of at least one Molecule_
+- Templates - _represent a composition of Organisms_
+- Pages - _represent implemented Templates with specific and concrete data_
+
+This Storybook does not showcase any patterns beyond Organism level, as these can be found in the application codebase.
+
+## Implementation Details
+
+This component library is implemented in Svelte and uses Tailwind for styling. The following space, fonts and colours are defined in `@dusk-network/styles` along with a lot more tokens not presently visualised.
+
+## Space
+
+The use of space is derived from a starting font-size of `16px`.
+
+| Token | rem value  | px value |
+| ----- | ---------- | -------- |
+| 0     | `0 `       | `0 `     |
+| 1     | `0.25rem ` | `4px `   |
+| 2     | `0.375rem` | `6px `   |
+| 3     | `0.5rem `  | `8px `   |
+| 4     | `0.625rem` | `12px `  |
+| 5     | `1rem `    | `16px `  |
+| 6     | `1.375rem` | `22px `  |
+| 8     | `1.5rem `  | `24px `  |
+| 10    | `1.75rem ` | `28px `  |
+| 12    | `2rem `    | `32px `  |
+| 16    | `2.25rem ` | `40px `  |
+| 20    | `3rem `    | `48px `  |
+| 24    | `3.5rem `  | `56px `  |
+| 32    | `4rem `    | `64px `  |
+| 40    | `5rem `    | `80px `  |
+| 48    | `6rem `    | `96px `  |
+| 56    | `8rem `    | `128px`  |
+| 64    | `10rem `   | `160px`  |
+| 72    | `12rem `   | `192px`  |
+| 96    | `14rem `   | `224px`  |
+| 128   | `16rem `   | `256px`  |
+| 225   | `26.25rem` | `420px`  |
+| 256   | `32rem `   | `512px`  |
+
+## Typeography
+
+**Font**: Hind Siliguri
+**Weight**: hairline
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["hairline"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: thin
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["thin"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: light
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["light"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: normal
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["normal"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: medium
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["medium"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: semibold
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["semibold"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: bold
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["bold"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: extrabold
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["extrabold"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: black
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["black"]}
+/>
+
+## Color
+
+<ColorPalette>
+  {Object.entries(colors).map(([k, v]) => {
+    if (typeof v === "string" && (v.match(/^#/) || v.match(/^rgb/) || k.match(/color/i))) {
+      return <ColorItem key={k} title={k} colors={{ [k]: v }} />;
+    } else if (typeof v === "object") {
+      return (
+        <ColorItem
+          key={k}
+          title={k}
+          colors={Object.entries(v).reduce(
+            (acc, [key, value]) =>
+              typeof value === "string" &&
+              (value.match(/^#/) || value.match(/^rgb/) || key.match(/color/i))
+                ? { ...acc, [key]: value }
+                : acc,
+            {},
+          )}
+        />
+      );
+    }
+    return null;
+  })}
+</ColorPalette>

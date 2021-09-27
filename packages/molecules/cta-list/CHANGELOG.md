@@ -1,43 +1,143 @@
-# Change Log
+# @dusk-network/cta-list
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+## 3.0.11
 
-# [2.0.0-rc.60](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.59...v2.0.0-rc.60) (2021-09-14)
+### Patch Changes
 
-**Note:** Version bump only for package @dusk-network/cta-list
+- e82126be: testing changesets
+- Updated dependencies [e82126be]
+  - @dusk-network/icon@3.0.11
+  - @dusk-network/helpers@3.0.11
+  - @dusk-network/button@3.0.11
+  - @dusk-network/menu@3.0.11
 
+## 3.0.10
 
+### Patch Changes
 
+- 3bdf6fcd: testing changesets
+- Updated dependencies [3bdf6fcd]
+  - @dusk-network/icon@3.0.10
+  - @dusk-network/helpers@3.0.10
+  - @dusk-network/button@3.0.10
+  - @dusk-network/menu@3.0.10
 
+## 3.0.9
 
-# [2.0.0-rc.59](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.58...v2.0.0-rc.59) (2021-09-06)
+### Patch Changes
 
-**Note:** Version bump only for package @dusk-network/cta-list
+- ddcc6129: testing changesets
+- Updated dependencies [ddcc6129]
+  - @dusk-network/icon@3.0.9
+  - @dusk-network/helpers@3.0.9
+  - @dusk-network/button@3.0.9
+  - @dusk-network/menu@3.0.9
 
+## 3.0.8
 
+### Patch Changes
 
+- 59509914: testing changesets
+- 0258743d: testing changesets ci
+- Updated dependencies [59509914]
+- Updated dependencies [0258743d]
+  - @dusk-network/icon@3.0.8
+  - @dusk-network/helpers@3.0.8
+  - @dusk-network/button@3.0.8
+  - @dusk-network/menu@3.0.8
 
+## 3.0.7
 
-# [2.0.0-rc.58](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.57...v2.0.0-rc.58) (2021-09-06)
+### Patch Changes
 
-**Note:** Version bump only for package @dusk-network/cta-list
+- 9fa40eb7: testing changesets
+- Updated dependencies [9fa40eb7]
+  - @dusk-network/icon@3.0.7
+  - @dusk-network/helpers@3.0.7
+  - @dusk-network/button@3.0.7
+  - @dusk-network/menu@3.0.7
 
+## 3.0.6
 
+### Patch Changes
 
+- dc22a3aa: testing changesets
+- Updated dependencies [dc22a3aa]
+  - @dusk-network/icon@3.0.6
+  - @dusk-network/helpers@3.0.6
+  - @dusk-network/button@3.0.6
+  - @dusk-network/menu@3.0.6
 
+## 3.0.5
 
-# [2.0.0-rc.57](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.56...v2.0.0-rc.57) (2021-09-06)
+### Patch Changes
 
-**Note:** Version bump only for package @dusk-network/cta-list
+- 006ffc63: testing changesets
+- Updated dependencies [006ffc63]
+  - @dusk-network/icon@3.0.5
+  - @dusk-network/helpers@3.0.5
+  - @dusk-network/button@3.0.5
+  - @dusk-network/menu@3.0.5
 
+## 3.0.4
 
+### Patch Changes
 
+- 83b76ba8: testing changesets
+- Updated dependencies [83b76ba8]
+  - @dusk-network/icon@3.0.4
+  - @dusk-network/helpers@3.0.4
+  - @dusk-network/button@3.0.4
+  - @dusk-network/menu@3.0.4
 
+## 3.0.3
 
-# [2.0.0-rc.56](https://github.com/dusk-network/dusk-ui-kit/compare/v2.0.0-rc.55...v2.0.0-rc.56) (2021-08-31)
+### Patch Changes
 
+- 365e4295: testing changesets
+- Updated dependencies [365e4295]
+  - @dusk-network/icon@3.0.3
+  - @dusk-network/helpers@3.0.3
+  - @dusk-network/button@3.0.3
+  - @dusk-network/menu@3.0.3
 
-### Features
+## 3.0.2
 
-* **ctalist:** added ordered list component ([8217b67](https://github.com/dusk-network/dusk-ui-kit/commit/8217b67984d2c03ab5cccefb1c356362d99e6dbd))
+### Patch Changes
+
+- d9360f5c: testing changesets
+- Updated dependencies [d9360f5c]
+  - @dusk-network/icon@3.0.2
+  - @dusk-network/helpers@3.0.2
+  - @dusk-network/button@3.0.2
+  - @dusk-network/menu@3.0.2
+
+## 3.0.1
+
+### Patch Changes
+
+- ac84fdab: testing changesets
+- 33c8fedb: testing changesets
+- dd790adb: testing changesets
+- Updated dependencies [ac84fdab]
+- Updated dependencies [33c8fedb]
+- Updated dependencies [dd790adb]
+  - @dusk-network/icon@3.0.1
+  - @dusk-network/helpers@3.0.1
+  - @dusk-network/button@3.0.1
+  - @dusk-network/menu@3.0.1
+
+## 0.0.1
+
+### Patch Changes
+
+- a10ea514: testing changesets
+- 2b3bda0b: testing changesets
+- 6d417df2: adding another changest
+- Updated dependencies [a10ea514]
+- Updated dependencies [2b3bda0b]
+- Updated dependencies [6d417df2]
+  - @dusk-network/icon@0.0.1
+  - @dusk-network/helpers@0.0.1
+  - @dusk-network/button@0.0.1
+  - @dusk-network/menu@0.0.1

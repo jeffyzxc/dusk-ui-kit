@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/pagination",
-  "version": "2.0.0-rc.60",
+  "version": "3.0.11",
   "description": "Dusk UI Kit - Pagination",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -10,18 +10,18 @@
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
     "directory": "packages/molecules/pagination"
   },
-  "type": "module",
   "module": "index.js",
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/button": "^2.0.0-rc.60",
-    "@dusk-network/helpers": "^2.0.0-rc.60",
-    "@dusk-network/icon": "^2.0.0-rc.60",
-    "@dusk-network/menu": "^2.0.0-rc.60"
+    "@dusk-network/button": "workspace:*",
+    "@dusk-network/helpers": "workspace:*",
+    "@dusk-network/icon": "workspace:*",
+    "@dusk-network/menu": "workspace:*"
   },
   "peerDependencies": {
-    "svelte": "3.42.1"
-  }
+    "svelte": "3.42.6"
+  },
+  "gitHead": "32de41fc568d6b39655a422d692cd1375579eb11"
 }

@@ -1,13 +1,9 @@
 <script>
-  import { getContext } from "svelte";
   import variants from "@dusk-network/helpers/variants.js";
-  import contexts from "@dusk-network/helpers/contexts.js";
   import "./styles.css";
 
   export let variant = variants.LOADING_INDICATOR.DEFAULT;
   export let duration = "1.3s";
-
-  let context = getContext("DUK:loading-indicator:context");
 </script>
 
 <div
@@ -18,7 +14,6 @@
   class:duk-loading-indicator--success="{variant === variants.LOADING_INDICATOR.SUCCESS}"
   class:duk-loading-indicator--warning="{variant === variants.LOADING_INDICATOR.WARNING}"
   class:duk-loading-indicator--danger="{variant === variants.LOADING_INDICATOR.DANGER}"
-  class:duk-loading-indicator--heading="{context === contexts.LOADING_INDICATOR.HEADING}"
 >
   <svg
     version="1.1"

@@ -2,7 +2,7 @@
   export let viewbox;
 </script>
 
-<svg xmlns="http://www.w3.org/2000/svg" {viewbox}>
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="{viewbox}">
   <path
     d="M12,5A3.5,3.5 0 0,0 8.5,8.5A3.5,3.5 0 0,0 12,12A3.5,3.5 0 0,0 15.5,8.5A3.5,3.5 0 0,0
     12,5M12,7A1.5,1.5 0 0,1 13.5,8.5A1.5,1.5 0 0,1 12,10A1.5,1.5 0 0,1 10.5,8.5A1.5,1.5 0 0,1

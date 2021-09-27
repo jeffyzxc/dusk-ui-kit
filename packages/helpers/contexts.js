@@ -26,6 +26,10 @@ export default {
     MENU: "drop-down:menu",
     TABLE: "drop-down:table",
   },
+  FILE_UPLOAD: {
+    CONTROL: "file-upload:control",
+    FORM: "file-upload:form",
+  },
   FORM: {
     WIZARD: "form:wizard",
   },
@@ -40,6 +44,7 @@ export default {
   },
   HEADING: {
     CARD: "heading:card",
+    DISCLAIMER_LIST: "heading:disclaimer-list",
     HERO: "heading:hero",
   },
   LABEL: {
