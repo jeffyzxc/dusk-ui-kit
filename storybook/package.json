@@ -59,7 +59,7 @@
     "chromatic": "5.10.1",
     "merge-anything": "^4.0.1",
     "storybook-addon-designs": "^6.1.0",
-    "storybook-builder-vite": "^0.0.12",
+    "storybook-builder-vite": "^0.1.0",
     "storybook-dark-mode": "^1.0.8",
     "svelte": "3.43.0",
     "svelte-jester": "^2.1.5",
