@@ -1,5 +1,15 @@
 # @dusk-network/mnemonic
 
+## 3.0.10
+
+### Patch Changes
+
+- 3bdf6fcd: testing changesets
+- Updated dependencies [3bdf6fcd]
+  - @dusk-network/text-field@3.0.10
+  - @dusk-network/helpers@3.0.10
+  - @dusk-network/button@3.0.10
+
 ## 3.0.9
 
 ### Patch Changes

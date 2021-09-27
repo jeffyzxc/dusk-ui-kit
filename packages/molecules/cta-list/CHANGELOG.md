@@ -1,5 +1,16 @@
 # @dusk-network/cta-list
 
+## 3.0.10
+
+### Patch Changes
+
+- 3bdf6fcd: testing changesets
+- Updated dependencies [3bdf6fcd]
+  - @dusk-network/icon@3.0.10
+  - @dusk-network/helpers@3.0.10
+  - @dusk-network/button@3.0.10
+  - @dusk-network/menu@3.0.10
+
 ## 3.0.9
 
 ### Patch Changes
