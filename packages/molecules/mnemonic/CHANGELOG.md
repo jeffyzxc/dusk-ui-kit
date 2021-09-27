@@ -1,5 +1,15 @@
 # @dusk-network/mnemonic
 
+## 3.0.9
+
+### Patch Changes
+
+- ddcc6129: testing changesets
+- Updated dependencies [ddcc6129]
+  - @dusk-network/text-field@3.0.9
+  - @dusk-network/helpers@3.0.9
+  - @dusk-network/button@3.0.9
+
 ## 3.0.8
 
 ### Patch Changes

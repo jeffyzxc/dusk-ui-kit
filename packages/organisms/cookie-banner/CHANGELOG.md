@@ -1,5 +1,14 @@
 # @dusk-network/cookie-banner
 
+## 3.0.9
+
+### Patch Changes
+
+- ddcc6129: testing changesets
+- Updated dependencies [ddcc6129]
+  - @dusk-network/icon@3.0.9
+  - @dusk-network/helpers@3.0.9
+
 ## 3.0.8
 
 ### Patch Changes
