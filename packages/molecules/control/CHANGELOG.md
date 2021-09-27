@@ -1,11 +1,56 @@
 # @dusk-network/control
 
+## 3.0.7
+
+### Patch Changes
+
+- 9fa40eb7: testing changesets
+- Updated dependencies [9fa40eb7]
+  - @dusk-network/icon@3.0.7
+  - @dusk-network/helpers@3.0.7
+
+## 3.0.6
+
+### Patch Changes
+
+- dc22a3aa: testing changesets
+- Updated dependencies [dc22a3aa]
+  - @dusk-network/icon@3.0.6
+  - @dusk-network/helpers@3.0.6
+
+## 3.0.5
+
+### Patch Changes
+
+- 006ffc63: testing changesets
+- Updated dependencies [006ffc63]
+  - @dusk-network/icon@3.0.5
+  - @dusk-network/helpers@3.0.5
+
+## 3.0.4
+
+### Patch Changes
+
+- 83b76ba8: testing changesets
+- Updated dependencies [83b76ba8]
+  - @dusk-network/icon@3.0.4
+  - @dusk-network/helpers@3.0.4
+
+## 3.0.3
+
+### Patch Changes
+
+- 365e4295: testing changesets
+- Updated dependencies [365e4295]
+  - @dusk-network/icon@3.0.3
+  - @dusk-network/helpers@3.0.3
+
 ## 3.0.2
 
 ### Patch Changes
 
-- ac180bb0: testing changesets
-- Updated dependencies [ac180bb0]
+- d9360f5c: testing changesets
+- Updated dependencies [d9360f5c]
   - @dusk-network/icon@3.0.2
   - @dusk-network/helpers@3.0.2
 
@@ -13,24 +58,12 @@
 
 ### Patch Changes
 
-- d9360f5c: testing changesets
 - ac84fdab: testing changesets
-- 365e4295: testing changesets
-- 83b76ba8: testing changesets
-- dc22a3aa: testing changesets
 - 33c8fedb: testing changesets
 - dd790adb: testing changesets
-- 006ffc63: testing changesets
-- 9fa40eb7: testing changesets
-- Updated dependencies [d9360f5c]
 - Updated dependencies [ac84fdab]
-- Updated dependencies [365e4295]
-- Updated dependencies [83b76ba8]
-- Updated dependencies [dc22a3aa]
 - Updated dependencies [33c8fedb]
 - Updated dependencies [dd790adb]
-- Updated dependencies [006ffc63]
-- Updated dependencies [9fa40eb7]
   - @dusk-network/icon@3.0.1
   - @dusk-network/helpers@3.0.1
 

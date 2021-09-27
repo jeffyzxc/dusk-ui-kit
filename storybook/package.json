@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/storybook",
-  "version": "3.0.2",
+  "version": "3.0.7",
   "private": true,
   "scripts": {
     "build": "build-storybook",

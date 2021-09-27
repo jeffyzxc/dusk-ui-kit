@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/styles",
-  "version": "3.0.2",
+  "version": "3.0.7",
   "description": "Dusk UI Kit - Styles",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -8,7 +8,7 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
-    "directory": "packages/styles"
+    "directory": "packages/organisms/styles"
   },
   "module": "index.js",
   "scripts": {
@@ -27,5 +27,5 @@
     "tailwind-config-viewer": "^1.6.2",
     "tailwindcss": "^2.2.15"
   },
-  "gitHead": "6c70593bcf9e8f0886956ca54ea8dfa085964c08"
+  "gitHead": "2003fb6b03f15a84146468f68345024d207c3729"
 }

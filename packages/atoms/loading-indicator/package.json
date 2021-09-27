@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/loading-indicator",
-  "version": "3.0.2",
+  "version": "3.0.7",
   "description": "Dusk UI Kit - Loading Indicator",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -20,5 +20,5 @@
   "peerDependencies": {
     "@dusk-network/helpers": "workspace:*"
   },
-  "gitHead": "6c70593bcf9e8f0886956ca54ea8dfa085964c08"
+  "gitHead": "2003fb6b03f15a84146468f68345024d207c3729"
 }
