@@ -1,5 +1,47 @@
 # @dusk-network/mnemonic
 
+## 3.0.11
+
+### Patch Changes
+
+- e82126be: testing changesets
+- Updated dependencies [e82126be]
+  - @dusk-network/text-field@3.0.11
+  - @dusk-network/helpers@3.0.11
+  - @dusk-network/button@3.0.11
+
+## 3.0.10
+
+### Patch Changes
+
+- 3bdf6fcd: testing changesets
+- Updated dependencies [3bdf6fcd]
+  - @dusk-network/text-field@3.0.10
+  - @dusk-network/helpers@3.0.10
+  - @dusk-network/button@3.0.10
+
+## 3.0.9
+
+### Patch Changes
+
+- ddcc6129: testing changesets
+- Updated dependencies [ddcc6129]
+  - @dusk-network/text-field@3.0.9
+  - @dusk-network/helpers@3.0.9
+  - @dusk-network/button@3.0.9
+
+## 3.0.8
+
+### Patch Changes
+
+- 59509914: testing changesets
+- 0258743d: testing changesets ci
+- Updated dependencies [59509914]
+- Updated dependencies [0258743d]
+  - @dusk-network/text-field@3.0.8
+  - @dusk-network/helpers@3.0.8
+  - @dusk-network/button@3.0.8
+
 ## 3.0.7
 
 ### Patch Changes
