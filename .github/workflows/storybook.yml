@@ -1,4 +1,5 @@
 name: Storybook
+
 on:
   push:
     branches:
@@ -24,8 +25,7 @@ jobs:
         run: npm i pnpm@latest -g
 
       - name: Install Dependencies
-        run: pnpm install
-        working-directory: storybook
+        run: pnpm i -r --frozen-lockfile
 
       - name: Build Storybook
         run: pnpm run build
