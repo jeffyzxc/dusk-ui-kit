@@ -37,7 +37,8 @@
     "version:ci": "pnpm version:changeset",
     "version:repo": "pnpm update:workspace",
     "update:deps": "pnpm up --latest --recursive --interactive",
-    "update:workspace": "pnpm up --recursive --workspace"
+    "update:workspace": "pnpm up --recursive --workspace",
+    "release:ci": "pnpm i -r && pnpm publish -r"
   },
   "commitlint": {
     "extends": [

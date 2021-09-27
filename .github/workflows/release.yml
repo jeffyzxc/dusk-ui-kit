@@ -47,7 +47,7 @@ jobs:
           version: pnpm version:ci
           commit: ":robot: (auto-commit) update package versions"
           title: ":bookmark: Version Packages"
-          publish: pnpm i -r && pnpm publish -r
+          publish: pnpm release:ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
