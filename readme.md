@@ -73,7 +73,6 @@ gh pr create
 ### Start Storybook
 
 ```bash
-cd storybook
 pnpm run storybook
 ```
 
