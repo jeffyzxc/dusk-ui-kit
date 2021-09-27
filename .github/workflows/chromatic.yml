@@ -6,7 +6,6 @@ jobs:
   chromatic-deployment:
     runs-on: ubuntu-latest
     steps:
-
       - name: Checkout Repository
       - uses: actions/checkout@v2
         with:
