@@ -1,5 +1,17 @@
 # @dusk-network/table
 
+## 3.0.8
+
+### Patch Changes
+
+- 59509914: testing changesets
+- 0258743d: testing changesets ci
+- Updated dependencies [59509914]
+- Updated dependencies [0258743d]
+  - @dusk-network/drop-down@3.0.8
+  - @dusk-network/helpers@3.0.8
+  - @dusk-network/pagination@3.0.8
+
 ## 3.0.7
 
 ### Patch Changes
