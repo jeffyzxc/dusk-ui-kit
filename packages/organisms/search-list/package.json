@@ -18,12 +18,14 @@
     "@dusk-network/button": "workspace:*",
     "@dusk-network/control": "workspace:*",
     "@dusk-network/icon": "workspace:*",
+    "@dusk-network/rich-text": "workspace:*",
     "@dusk-network/text-field": "workspace:*"
   },
   "peerDependencies": {
     "@dusk-network/button": "workspace:*",
     "@dusk-network/control": "workspace:*",
     "@dusk-network/icon": "workspace:*",
+    "@dusk-network/rich-text": "workspace:*",
     "@dusk-network/text-field": "workspace:*"
   },
   "gitHead": "4716f6bf5841d81706d224e9ace5447f8fcabb29"

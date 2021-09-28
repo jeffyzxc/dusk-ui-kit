@@ -35,6 +35,7 @@
     "@dusk-network/password-strength": "workspace:*",
     "@dusk-network/progress-bar": "workspace:*",
     "@dusk-network/rich-text": "workspace:*",
+    "@dusk-network/search-list": "workspace:*",
     "@dusk-network/styles": "workspace:*",
     "@dusk-network/table": "workspace:*",
     "@dusk-network/text-field": "workspace:*",
