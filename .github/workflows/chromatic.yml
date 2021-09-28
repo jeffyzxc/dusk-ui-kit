@@ -1,6 +1,10 @@
 # Workflow name
 name: Chromatic
-on: push
+
+on: 
+  push:
+    paths:
+      - ".changeset/**"
 
 jobs:
   chromatic-deployment:
@@ -8,7 +12,7 @@ jobs:
     steps:
 
       - name: Checkout Repository
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
         with:
           fetch-depth: 0
 
