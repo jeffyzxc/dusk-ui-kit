@@ -4,8 +4,20 @@
   import Maximal from "./Maximal.svelte";
   import "./styles.css";
 
+  /**
+   * Sets the variant of the Button.
+   * @type {"maximal" | "minimal" }
+   */
   export let type = types.FOOTER.MINIMAL;
+
+  /**
+   * Sets the object used to define the social icons and their links.
+   */
   export let social;
+
+  /**
+   * Sets the object used to define the sitemap and it's links.
+   */
   export let categories;
 
   let today = new Date();

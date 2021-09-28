@@ -4,6 +4,10 @@
   import { items } from "./stores/items.js";
   import "./styles.css";
 
+
+  /**
+   * Sets the Accordion so multiple items can be opened at the same time when true.
+   */
   export let multiselect = false;
 
   const context = getContext("DUK:accordion:context");

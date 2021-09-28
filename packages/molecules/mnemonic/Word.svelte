@@ -6,8 +6,19 @@
   import { compared } from "./stores/words.js";
   import { options } from "./stores/options.js";
 
+  /**
+   * Sets the value of Word.
+   */
   export let value;
+
+  /**
+   * Sets the index used to select the clicked word.
+   */
   export let index;
+
+  /**
+   * Sets the `id` of the Word if set, otherwise the ID is generated.
+   */
   export let id = "__DUK-mnemonic-word" + Math.random().toString(36);
 
   setContext("DUK:text-field:context", contexts.TEXT_FIELD.MNEMONIC);

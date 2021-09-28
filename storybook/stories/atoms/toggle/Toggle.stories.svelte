@@ -2,13 +2,21 @@
   import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
   import { types, variants } from "@dusk-network/helpers";
   import Toggle, { Group } from "@dusk-network/toggle";
+  import meta from "../../meta.js";
 </script>
 
 <Meta
   title="Components/Atoms/Toggle"
+  parameters="{{ 
+    layout: 'centered',
+    docs: {
+      source: {
+        type: 'code',
+      },
+    },
+  }}"
   component="{Toggle}"
-  parameters="{{ layout: 'centered' }}"
-  argTypes="{{
+  argTypes="{meta('toggle/Toggle',{
     onChange: {
       action: 'onChange',
       table: {
@@ -57,7 +65,7 @@
         disable: true,
       },
     },
-  }}"
+  })}"
 />
 
 <Template let:args>

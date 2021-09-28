@@ -36,13 +36,21 @@ Basic.args = {
   import Logo from "@dusk-network/logo";
   import Icon from "@dusk-network/icon";
   import Menu, { Item } from "@dusk-network/menu";
+  import meta from "../../meta.js";
 </script>
 
 <Meta
   title="Components/Organisms/Navbar"
   component="{Navbar}"
-  parameters="{{ layout: 'fullscreen' }}"
-  argTypes="{{
+  parameters="{{ 
+    layout: 'fullscreen',
+    docs: {
+      source: {
+        type: 'code',
+      },
+    },
+  }}"
+  argTypes="{meta('navbar/Navbar',{
     title: {
       table: {
         disable: true,
@@ -73,10 +81,10 @@ Basic.args = {
         disable: true,
       },
     },
-  }}"
+  })}"
 />
 
-<Template let:args>
+<Story name="Standard navbar" args="{{}}" let:args>
   <Navbar
     appName="sb-demo"
     id="sb-example-nav"
@@ -114,6 +122,4 @@ Basic.args = {
       </Menu>
     </svelte:fragment>
   </Navbar>
-</Template>
-
-<Story name="Standard navbar" args="{{}}" />
+</Story>

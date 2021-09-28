@@ -5,6 +5,9 @@
   import Item from "./Item.svelte";
   import "./styles.css";
 
+  /**
+   * Renders the Breadcrumb as an `a` tag when set.
+   */
   export let href;
 
   const context = getContext("DUK:breadcrumb:context");

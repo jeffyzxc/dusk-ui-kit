@@ -4,9 +4,24 @@
   import { writable } from "svelte/store";
   import contexts from "@dusk-network/helpers/contexts.js";
 
+  /**
+   * Sets the function used for handling the submit event
+   */
   export let submitHandler;
+
+  /**
+   * Sets the schema used for validating the Form fields.
+   */
   export let schema;
+
+  /**
+   * Sets the object that holds all the input data from the Form fields.
+   */
   export let fields;
+
+  /**
+   * Used to keep track of Form submission.
+   */
   export let submitted;
 
   let formSchema = writable(schema);

@@ -7,13 +7,47 @@
   import Message from "./Message.svelte";
   import "./styles.css";
 
+  /**
+   * Sets the type of the Control.
+   * @type { "stacked" | "inline-fixed" | "inline-flex" }
+   */
   export let type = types.CONTROL.STACKED;
+
+  /**
+   * Sets the state of the Control.
+   * @type { "success" | "warning" | "danger" }
+   */
   export let state = states.CONTROL.DEFAULT;
+
+  /**
+   * Sets the `id` of the Control if set, otherwise the ID is generated.
+   */
   export let id = "__DUK-control" + Math.random().toString(36);
+
+  /**
+   * Sets the label of the Control if set.
+   */
   export let label = "";
+
+  /**
+   * Sets the warning message of the Control if set.
+   */
   export let message = "";
+
+  /**
+   * Sets the width of the Control inside current container.
+   * @type { "full" | "half" | "quarter" }
+   */
   export let width = widths.CONTROL.HALF;
+
+  /**
+   * Set the `name` attribute on the Control when used.
+   */
   export let name;
+
+  /**
+   * Set the Control as part of a group when true.
+   */
   export let group = false;
 
   setContext("DUK:icon:context", contexts.ICON.CONTROL);

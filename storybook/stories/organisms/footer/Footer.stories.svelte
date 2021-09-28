@@ -156,6 +156,7 @@ Basic.args = {
   import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
   import Footer from "@dusk-network/footer";
   import { types } from "@dusk-network/helpers";
+  import meta from "../../meta.js";
 
   const social = [
     {
@@ -275,8 +276,15 @@ Basic.args = {
 <Meta
   title="Components/Organisms/Footer"
   component="{Footer}"
-  parameters="{{ layout: 'fullscreen' }}"
-  argTypes="{{
+  parameters="{{ 
+    layout: 'fullscreen',
+    docs: {
+      source: {
+        type: 'code',
+      },
+    },
+  }}"
+  argTypes="{meta('footer/Footer',{
     social: {
       table: {
         disable: true,
@@ -292,19 +300,19 @@ Basic.args = {
         disable: true,
       },
     },
-  }}"
+  })}"
 />
 
-<Template let:args>
-  <Footer type="{args.type}" social="{args.social}" categories="{args.categories}" />
-</Template>
 
 <Story
   name="Minimal footer"
   args="{{
     type: types.FOOTER.MINIMAL,
   }}"
-/>
+  let:args
+>
+  <Footer type="{args.type}" social="{args.social}" categories="{args.categories}" />
+</Story>
 
 <Story
   name="Maximal footer"
@@ -313,4 +321,7 @@ Basic.args = {
     categories: categories,
     social: social,
   }}"
-/>
+  let:args
+>
+  <Footer type="{args.type}" social="{args.social}" categories="{args.categories}" />
+</Story>

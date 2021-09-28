@@ -7,18 +7,26 @@
   import Toggle from "@dusk-network/toggle";
   import Button from "@dusk-network/button";
   import DropDown from "@dusk-network/drop-down";
+  import meta from "../../meta.js";
 </script>
 
 <Meta
   title="Components/Molecules/Control"
-  parameters="{{ layout: 'centered' }}"
+  parameters="{{ 
+    layout: 'centered',
+    docs: {
+      source: {
+        type: 'code',
+      },
+    },
+  }}"
   component="{Control}"
   args="{{
     type: 'default',
     message: 'This is a message.',
     label: 'Control label',
   }}"
-  argTypes="{{
+  argTypes="{meta('control/Control',{
     onClick: {
       action: 'onClick',
       table: {
@@ -73,72 +81,93 @@
         disable: true,
       },
     },
-  }}"
+  })}"
 />
 
-<Template let:args>
-  {#if !args.buttonPrefix && !args.buttonPostfix}
-    <Control
-      width="full"
-      {...args}
-      on:click="{args.onClick}"
-      on:mouseover="{args.onMouseover}"
-      let:id
-    >
-      {#if args.checkbox}
-        <Toggle id="{id}" type="{types.TOGGLE.CHECKBOX}" state="{args.state}"
-          >Checkbox example</Toggle
-        >
-      {:else if args.radio}
-        <Toggle id="{id}" type="{types.TOGGLE.RADIO}" state="{args.state}" options="{[1, 2, 3, 4]}">
-          Radio example
-        </Toggle>
-      {:else if args.dropDown}
-        <DropDown id="{id}" options="{[1, 2, 3, 4]}" />
-      {:else}
-        <TextField id="{id}" state="{args.state}" />
-      {/if}
-    </Control>
-  {/if}
+<Story name="Control Text field" args="{{}}" let:args>
+  <Control
+    width="full"
+    {...args}
+    on:click="{args.onClick}"
+    on:mouseover="{args.onMouseover}"
+    let:id
+  >
+    <TextField id="{id}" state="{args.state}" />
+  </Control>
+</Story>
 
-  {#if args.buttonPrefix}
-    <Control
-      width="full"
-      {...args}
-      on:click="{args.onClick}"
-      on:mouseover="{args.onMouseover}"
-      let:id
-    >
-      <Button slot="buttonPrefix">Prefixed</Button>
-      <TextField id="{id}" state="{args.state}" />
-    </Control>
-  {/if}
-
-  {#if args.buttonPostfix}
-    <Control
-      width="full"
-      {...args}
-      on:click="{args.onClick}"
-      on:mouseover="{args.onMouseover}"
-      let:id
-    >
-      <Button slot="buttonPostfix">Postfixed</Button>
-      <TextField id="{id}" state="{args.state}" />
-    </Control>
-  {/if}
-</Template>
-
-<Story name="Control Text field" args="{{}}" />
-<Story name="Control Text field with postfixed Button" args="{{ buttonPostfix: true }}" />
-<Story name="Control Text field with prefixed Button" args="{{ buttonPrefix: true }}" />
 <Story
   name="Control Checkbox"
   args="{{ checkbox: true, label: '' }}"
   argTypes="{{ label: { table: { disable: true } } }}"
-/>
+  let:args 
+>
+  <Control
+    width="full"
+    {...args}
+    on:click="{args.onClick}"
+    on:mouseover="{args.onMouseover}"
+    let:id
+  >
+      <Toggle id="{id}" type="{types.TOGGLE.CHECKBOX}" state="{args.state}"
+        >Checkbox example</Toggle
+      >
+  </Control>
+</Story>
+
 <Story
   name="Control Radio"
   args="{{ radio: true, label: '' }}"
   argTypes="{{ label: { table: { disable: true } } }}"
-/>
-<Story name="Control Drop down" args="{{ dropDown: true }}" />
+  let:args
+>
+  <Control
+  width="full"
+  {...args}
+  on:click="{args.onClick}"
+  on:mouseover="{args.onMouseover}"
+  let:id
+  >
+    <Toggle id="{id}" type="{types.TOGGLE.RADIO}" state="{args.state}" options="{[1, 2, 3, 4]}">
+      Radio example
+    </Toggle>
+  </Control>
+</Story>
+
+<Story name="Control Drop down" args="{{ dropDown: true }}" let:args>
+  <Control
+      width="full"
+      {...args}
+      on:click="{args.onClick}"
+      on:mouseover="{args.onMouseover}"
+      let:id
+    >
+        <DropDown id="{id}" options="{[1, 2, 3, 4]}" />
+    </Control>
+</Story>
+
+<Story name="Control Text field with postfixed Button" args="{{ buttonPostfix: true }}" let:args>
+  <Control
+    width="full"
+    {...args}
+    on:click="{args.onClick}"
+    on:mouseover="{args.onMouseover}"
+    let:id
+  >
+    <Button slot="buttonPrefix">Prefixed</Button>
+    <TextField id="{id}" state="{args.state}" />
+  </Control>
+</Story>
+
+<Story name="Control Text field with prefixed Button" args="{{ buttonPrefix: true }}" let:args>
+  <Control
+    width="full"
+    {...args}
+    on:click="{args.onClick}"
+    on:mouseover="{args.onMouseover}"
+    let:id
+  >
+    <Button slot="buttonPostfix">Postfixed</Button>
+    <TextField id="{id}" state="{args.state}" />
+  </Control>
+</Story>

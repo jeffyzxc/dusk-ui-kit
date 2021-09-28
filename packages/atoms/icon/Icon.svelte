@@ -6,11 +6,28 @@
   import * as Icons from "./icons/index.js";
   import "./styles.css";
 
+  /**
+   * Used to select the icon based on icon name.
+   */
   export let name = null;
+
+  /**
+   * Sets the size of the Icon.
+   * @type {"sm" | "lg" | "xl" | "xxl" | "xxxl" }
+   */
   export let size = sizes.ICON.DEFAULT;
-  export let viewbox = "0 0 24 24";
+
+  /**
+   * Sets the variant of the Icon.
+   * @type {"brand" | "cta" | "info" | "success" | "warning" | "danger" }
+   */
   export let variant = null;
+  
+  /**
+   * Sets the Icon to have a tooltip when passed a string
+   */
   export let tooltip = false;
+  export let viewbox = "0 0 24 24";
 
   let context = getContext("DUK:icon:context");
 
