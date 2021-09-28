@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - "packages/**"
+      - "storybook/**"
 
 jobs:
   chromatic-deployment:
