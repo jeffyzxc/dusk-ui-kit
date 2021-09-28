@@ -1,14 +1,14 @@
 {
-  "name": "@dusk-network/accordion",
-  "version": "3.0.11",
-  "description": "Dusk UI Kit - Accordion",
+  "name": "@dusk-network/search-list",
+  "version": "2.0.0-rc.59",
+  "description": "Dusk UI Kit - SearchList",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
-    "directory": "packages/organisms/accordion"
+    "directory": "packages/organisms/search-list"
   },
   "module": "index.js",
   "scripts": {
@@ -16,15 +16,17 @@
   },
   "devDependencies": {
     "@dusk-network/button": "workspace:*",
-    "@dusk-network/helpers": "workspace:*",
+    "@dusk-network/control": "workspace:*",
     "@dusk-network/icon": "workspace:*",
-    "@dusk-network/menu": "workspace:*"
+    "@dusk-network/rich-text": "workspace:*",
+    "@dusk-network/text-field": "workspace:*"
   },
   "peerDependencies": {
     "@dusk-network/button": "workspace:*",
-    "@dusk-network/helpers": "workspace:*",
+    "@dusk-network/control": "workspace:*",
     "@dusk-network/icon": "workspace:*",
-    "@dusk-network/menu": "workspace:*"
+    "@dusk-network/rich-text": "workspace:*",
+    "@dusk-network/text-field": "workspace:*"
   },
   "gitHead": "4716f6bf5841d81706d224e9ace5447f8fcabb29"
 }
