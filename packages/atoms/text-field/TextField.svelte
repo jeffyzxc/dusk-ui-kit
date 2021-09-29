@@ -5,13 +5,45 @@
   import contexts from "@dusk-network/helpers/contexts.js";
   import "./styles.css";
 
+  /**
+   * Sets value to prepopulate the Text Field.
+   */
   export let value = null;
+
+  /**
+   * Sets the Text Field to be disabled when true.
+   */
   export let disabled = false;
+
+  /**
+   * Sets the Text Field to be a textarea when true.
+   */
   export let multiline = false;
+
+  /**
+   * Sets the Text Field placeholder.
+   */
   export let placeholder = "";
+
+  /**
+   * Sets the state of the Text Field
+   * @type { "success" | "warning" | "danger" }
+   */
   export let state = states.TEXT_FIELD.DEFAULT;
+
+  /**
+   * Sets the `id` of the Text Field if set, otherwise the ID is generated.
+   */
   export let id = "__DUK-text-field" + Math.random().toString(36);
+
+  /**
+   * Sets the Text Field name.
+   */
   export let name;
+
+  /**
+   * Sets the Text Field as focused when true.
+   */
   export let focused = false;
 
   let context = getContext("DUK:text-field:context") || "";

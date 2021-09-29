@@ -1,6 +1,7 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import CookieBanner from "@dusk-network/cookie-banner";
+  import meta from "../../meta.js";
 
   const defaultConfig = {
     cookieConfig: {
@@ -50,8 +51,15 @@
 <Meta
   title="Components/Organisms/Cookie Banner"
   component="{CookieBanner}"
-  parameters="{{ layout: 'fullscreen' }}"
-  argTypes="{{
+  parameters="{{ 
+    layout: 'fullscreen',
+    docs: {
+      source: {
+        type: 'code',
+      },
+    },
+  }}"
+  argTypes="{meta('cookie-banner/CookieBanner'{
     deleteCookie: {
       table: {
         disable: true,
@@ -82,12 +90,8 @@
         disable: true,
       },
     },
-  }}"
+  })}"
 />
-
-<Template let:args>
-  <CookieBanner cookie="{args.cookie}" config="{args.config}" description="{args.description}" />
-</Template>
 
 <Story
   name="Standard cookie banner"
@@ -97,4 +101,7 @@
     config: defaultConfig,
     cookie: COOKIE_NAME,
   }}"
-/>
+  let:args
+>
+  <CookieBanner cookie="{args.cookie}" config="{args.config}" description="{args.description}" />
+</Story>

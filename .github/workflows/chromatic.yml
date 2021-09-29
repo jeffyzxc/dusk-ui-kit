@@ -1,11 +1,16 @@
 name: Chromatic
 
-on: push
+on: 
+  push:
+    paths:
+      - "packages/**"
+      - "storybook/**"
 
 jobs:
   chromatic-deployment:
     runs-on: ubuntu-latest
     steps:
+
       - name: Checkout Repository
         uses: actions/checkout@v2
         with:

@@ -1,20 +1,28 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { variants } from "@dusk-network/helpers";
   import Alert from "@dusk-network/alert";
   import Icon from "@dusk-network/icon/Icon.svelte";
   import Button from "@dusk-network/button/Button.svelte";
   import Group from "@dusk-network/button/Group.svelte";
+  import meta from "../../meta.js";
 </script>
 
 <Meta
   title="Components/Molecules/Alert"
   component="{Alert}"
-  parameters="{{ layout: 'centered' }}"
+  parameters="{{
+    layout: 'centered',
+    docs: {
+      source: {
+        type: 'code',
+      },
+    },
+  }}"
   args="{{
     value: true,
   }}"
-  argTypes="{{
+  argTypes="{meta('alert/Alert', {
     onClick: {
       action: 'onClick',
       table: {
@@ -48,10 +56,10 @@
         disable: true,
       },
     },
-  }}"
+  })}"
 />
 
-<Template let:args>
+<Story name="Default alert" args="{{}}" let:args>
   <Alert {...args} on:click="{args.onClick}" on:mouseover="{args.onMouseover}">
     <div slot="icon">
       <Icon
@@ -78,7 +86,33 @@
       </Group>
     </div>
   </Alert>
-</Template>
+</Story>
 
-<Story name="Default alert" args="{{}}" />
-<Story name="Dismissable alert" args="{{ dismissable: true }}" />
+<Story name="Dismissable alert" args="{{ dismissable: true }}" let:args>
+  <Alert {...args} on:click="{args.onClick}" on:mouseover="{args.onMouseover}">
+    <div slot="icon">
+      <Icon
+        name="{(args.variant === 'success' && 'check-decagram-outline') ||
+          (args.variant === 'warning' && 'alert-outline') ||
+          (args.variant === 'danger' && 'close-circle-outline') ||
+          'help-circle-outline'}"
+      />
+    </div>
+    <div slot="title">Alert Title!</div>
+    <p>This is an alert!</p>
+    <div slot="actions">
+      <Group>
+        <Button
+          variant="{args.variant || 'brand'}"
+          outline="{true}"
+          on:click="{() => (args['value'] = false)}"
+        >
+          Accept
+        </Button>
+        <Button variant="default" outline="{true}" on:click="{() => (args['value'] = false)}">
+          Reject
+        </Button>
+      </Group>
+    </div>
+  </Alert>
+</Story>

@@ -1,5 +1,5 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { variants, states } from "@dusk-network/helpers";
   import Card, { Content, Title, Footer, Actions } from "@dusk-network/card";
   import RichText from "@dusk-network/rich-text";
@@ -7,13 +7,21 @@
   import Heading from "@dusk-network/heading";
   import Button, { Group } from "@dusk-network/button";
   import { content, title, footer } from "./data.js";
+  import meta from "../../meta.js";
 </script>
 
 <Meta
   title="Components/Organisms/Card"
   component="{Card}"
-  parameters="{{ layout: 'padded' }}"
-  argTypes="{{
+  parameters="{{
+    layout: 'padded',
+    docs: {
+      source: {
+        type: 'code',
+      },
+    },
+  }}"
+  argTypes="{meta('card/Card', {
     variant: {
       options: Object.values(variants.CARD),
       control: {
@@ -31,16 +39,11 @@
         type: 'text',
       },
     },
-  }}"
+  })}"
 />
 
-<Template let:args>
+<Story name="With Rich Text" args="{{ content: `${content}` }}" let:args>
   <Card {...args}>
-    {#if args.title}
-      <Title>
-        <h3>{args.title}</h3>
-      </Title>
-    {/if}
     <Content>
       <RichText markdown="{args.content}" />
       <Heading>
@@ -68,27 +71,43 @@
         <h2>Success heading!</h2>
       </Heading>
     </Content>
-    {#if args.footer}
-      <Footer>
-        <p>{args.footer}</p>
-        {#if args.actions}
-          <Actions>
-            <Group>
-              <Button variant="{variants.BUTTON.BRAND}">I get it</Button>
-              <Button variant="{variants.BUTTON.WARNING}" outline="{true}">What is this?</Button>
-            </Group>
-          </Actions>
-        {/if}
-      </Footer>
-    {/if}
   </Card>
-</Template>
+</Story>
 
-<Story name="With Rich Text" args="{{ content: `${content}` }}" />
-
-<Story name="With Rich Text & Title" args="{{ content: `${content}`, title: `${title}` }}" />
-
-<Story name="With Rich Text & Title" args="{{ content: `${content}`, title: `${title}` }}" />
+<Story name="With Rich Text & Title" args="{{ content: `${content}`, title: `${title}` }}" let:args>
+  <Card {...args}>
+    <Title>
+      <h3>{args.title}</h3>
+    </Title>
+    <Content>
+      <RichText markdown="{args.content}" />
+      <Heading>
+        <svelte:fragment slot="icon">
+          <Icon name="wallet-plus" />
+        </svelte:fragment>
+        <h2>Additional Heading!</h2>
+      </Heading>
+      <Heading variant="danger">
+        <svelte:fragment slot="icon">
+          <Icon name="alert-outline" />
+        </svelte:fragment>
+        <h2>Error heading!</h2>
+      </Heading>
+      <Heading variant="warning">
+        <svelte:fragment slot="icon">
+          <Icon name="alert-outline" />
+        </svelte:fragment>
+        <h2>Warning heading!</h2>
+      </Heading>
+      <Heading variant="success">
+        <svelte:fragment slot="icon">
+          <Icon name="alert-outline" />
+        </svelte:fragment>
+        <h2>Success heading!</h2>
+      </Heading>
+    </Content>
+  </Card>
+</Story>
 
 <Story
   name="With Rich Text, Title, Footer"
@@ -97,7 +116,44 @@
     title: `${title}`,
     footer: `${footer}`,
   }}"
-/>
+  let:args
+>
+  <Card {...args}>
+    <Title>
+      <h3>{args.title}</h3>
+    </Title>
+    <Content>
+      <RichText markdown="{args.content}" />
+      <Heading>
+        <svelte:fragment slot="icon">
+          <Icon name="wallet-plus" />
+        </svelte:fragment>
+        <h2>Additional Heading!</h2>
+      </Heading>
+      <Heading variant="danger">
+        <svelte:fragment slot="icon">
+          <Icon name="alert-outline" />
+        </svelte:fragment>
+        <h2>Error heading!</h2>
+      </Heading>
+      <Heading variant="warning">
+        <svelte:fragment slot="icon">
+          <Icon name="alert-outline" />
+        </svelte:fragment>
+        <h2>Warning heading!</h2>
+      </Heading>
+      <Heading variant="success">
+        <svelte:fragment slot="icon">
+          <Icon name="alert-outline" />
+        </svelte:fragment>
+        <h2>Success heading!</h2>
+      </Heading>
+    </Content>
+    <Footer>
+      <p>{args.footer}</p>
+    </Footer>
+  </Card>
+</Story>
 
 <Story
   name="Kitchen Skin"
@@ -107,4 +163,47 @@
     footer: `${footer}`,
     actions: true,
   }}"
-/>
+  let:args
+>
+  <Card {...args}>
+    <Title>
+      <h3>{args.title}</h3>
+    </Title>
+    <Content>
+      <RichText markdown="{args.content}" />
+      <Heading>
+        <svelte:fragment slot="icon">
+          <Icon name="wallet-plus" />
+        </svelte:fragment>
+        <h2>Additional Heading!</h2>
+      </Heading>
+      <Heading variant="danger">
+        <svelte:fragment slot="icon">
+          <Icon name="alert-outline" />
+        </svelte:fragment>
+        <h2>Error heading!</h2>
+      </Heading>
+      <Heading variant="warning">
+        <svelte:fragment slot="icon">
+          <Icon name="alert-outline" />
+        </svelte:fragment>
+        <h2>Warning heading!</h2>
+      </Heading>
+      <Heading variant="success">
+        <svelte:fragment slot="icon">
+          <Icon name="alert-outline" />
+        </svelte:fragment>
+        <h2>Success heading!</h2>
+      </Heading>
+    </Content>
+    <Footer>
+      <p>{args.footer}</p>
+      <Actions>
+        <Group>
+          <Button variant="{variants.BUTTON.BRAND}">I get it</Button>
+          <Button variant="{variants.BUTTON.WARNING}" outline="{true}">What is this?</Button>
+        </Group>
+      </Actions>
+    </Footer>
+  </Card>
+</Story>

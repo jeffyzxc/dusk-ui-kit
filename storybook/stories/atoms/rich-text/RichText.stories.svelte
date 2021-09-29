@@ -1,16 +1,24 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { sizes } from "@dusk-network/helpers";
   import RichText from "@dusk-network/rich-text";
   import Html from "./Html.svelte";
   import Swatches from "./Swatches.svelte";
+  import meta from "../../meta.js";
 </script>
 
 <Meta
   title="Components/Atoms/Rich Text"
+  parameters="{{
+    layout: 'padded',
+    docs: {
+      source: {
+        type: 'code',
+      },
+    },
+  }}"
   component="{RichText}"
-  parameters="{{ layout: 'padded' }}"
-  argTypes="{{
+  argTypes="{meta('rich-text/RichText', {
     size: {
       options: Object.values(sizes.RICH_TEXT),
       control: {
@@ -27,16 +35,13 @@
         disable: true,
       },
     },
-  }}"
+  })}"
 />
 
-<Template let:args>
-  {#if args.swatches}
-    <Swatches {...args} />
-  {:else}
-    <Html {...args} />
-  {/if}
-</Template>
+<Story name="Headings & body style" args="{{ swatches: true }}" let:args>
+  <Swatches {...args} />
+</Story>
 
-<Story name="Headings & body style" args="{{ swatches: true }}" />
-<Story name="HTML content sample" args="{{}}" />
+<Story name="HTML content sample" args="{{}}" let:args>
+  <Html {...args} />
+</Story>

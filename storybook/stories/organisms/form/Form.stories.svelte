@@ -1,6 +1,6 @@
 <script>
   // TODO Investigate use of states on DropDown, and Toggle
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { types } from "@dusk-network/helpers";
   import Button from "@dusk-network/button";
   import PasswordStrength from "@dusk-network/password-strength";
@@ -10,6 +10,7 @@
   import FileUpload from "@dusk-network/file-upload";
   import Form from "@dusk-network/form";
   import * as yup from "yup";
+  import meta from "../../meta.js";
 
   let schema = yup.object().shape({
     first_name: yup.string().required().max(30).label("First name"),
@@ -76,19 +77,26 @@
 
 <Meta
   title="Components/Organisms/Form"
-  parameters="{{ layout: 'centered' }}"
+  parameters="{{
+    layout: 'centered',
+    docs: {
+      source: {
+        type: 'code',
+      },
+    },
+  }}"
   component="{Control}"
-  argTypes="{{
+  argTypes="{meta('form/Form', {
     type: {
       control: {
         type: 'radio',
         options: Object.values(types.CONTROL),
       },
     },
-  }}"
+  })}"
 />
 
-<Template let:args>
+<Story name="Standard form" args="{{}}" let:args>
   <Form
     class="sb-example"
     submitted="{submitted}"
@@ -215,6 +223,4 @@
       <Button type="submit" size="lg">Submit</Button>
     </Control>
   </Form>
-</Template>
-
-<Story name="Standard form" args="{{}}" />
+</Story>

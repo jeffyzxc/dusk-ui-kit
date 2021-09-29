@@ -1,11 +1,11 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import FileUpload from "@dusk-network/file-upload";
   import Form from "@dusk-network/form";
   import Control from "@dusk-network/control";
   import Button from "@dusk-network/button";
-
   import * as yup from "yup";
+  import meta from "../../meta.js";
 
   let schema = yup.object().shape({
     file: yup
@@ -41,11 +41,25 @@
 <Meta
   title="Components/Molecules/File Upload"
   component="{FileUpload}"
-  parameters="{{ layout: 'padded' }}"
-  argTypes="{{}}"
+  parameters="{{
+    layout: 'padded',
+    docs: {
+      source: {
+        type: 'code',
+      },
+    },
+  }}"
+  argTypes="{meta('file-upload/FileUpload', {
+    onInputFile: {
+      action: 'onInputFile',
+      table: {
+        disabled: true,
+      },
+    },
+  })}"
 />
 
-<Template let:args>
+<Story name="Default" args="{{}}" let:args>
   <Form submitted="{submitted}" schema="{schema}" fields="{fields}" submitHandler="{formSubmit}">
     <Control {...args} name="file" let:id let:state>
       <FileUpload
@@ -60,6 +74,4 @@
       <Button type="submit" size="lg" variant="cta">Upload</Button>
     </Control>
   </Form>
-</Template>
-
-<Story name="Default" args="{{}}" />
+</Story>

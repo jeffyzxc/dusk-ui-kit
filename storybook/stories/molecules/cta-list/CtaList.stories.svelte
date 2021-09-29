@@ -1,25 +1,33 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { variants } from "@dusk-network/helpers";
   import CtaList, { Item } from "@dusk-network/cta-list";
   import RichText from "@dusk-network/rich-text";
+  import meta from "../../meta.js";
 </script>
 
 <Meta
   title="Components/Molecules/Cta List"
   component="{CtaList}"
-  parameters="{{ layout: 'padded' }}"
-  argTypes="{{
+  parameters="{{
+    layout: 'padded',
+    docs: {
+      source: {
+        type: 'code',
+      },
+    },
+  }}"
+  argTypes="{meta('cta-list/CtaList', {
     variant: {
       control: {
         type: 'select',
         options: Object.values(variants.CTALIST),
       },
     },
-  }}"
+  })}"
 />
 
-<Template let:args>
+<Story name="Default" args="{{ type: 1 }}" let:args>
   <CtaList {...args}>
     <Item>
       <RichText>First</RichText>
@@ -28,7 +36,14 @@
       <RichText>Second</RichText>
     </Item>
   </CtaList>
-</Template>
-
-<Story name="Default" args="{{ type: 1 }}" />
-<Story name="Grants homepage example" args="{{ type: 2 }}" />
+</Story>
+<Story name="Grants homepage example" args="{{ type: 2 }}" let:args>
+  <CtaList {...args}>
+    <Item>
+      <RichText>First</RichText>
+    </Item>
+    <Item>
+      <RichText>Second</RichText>
+    </Item>
+  </CtaList>
+</Story>

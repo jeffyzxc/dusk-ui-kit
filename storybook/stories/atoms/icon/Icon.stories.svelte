@@ -1,15 +1,23 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { variants, icons, sizes } from "@dusk-network/helpers";
   import Icon from "@dusk-network/icon";
+  import meta from "../../meta.js";
   import "./styles.css";
 </script>
 
 <Meta
   title="Components/Atoms/Icon"
+  parameters="{{
+    layout: 'centered',
+    docs: {
+      source: {
+        type: 'code',
+      },
+    },
+  }}"
   component="{Icon}"
-  parameters="{{ layout: 'centered' }}"
-  argTypes="{{
+  argTypes="{meta('icon/Icon', {
     name: {
       options: Object.values(icons),
       control: {
@@ -43,20 +51,8 @@
         disable: true,
       },
     },
-  }}"
+  })}"
 />
-
-<Template let:args>
-  {#if args.collection}
-    <div class="sb-icon-collection-grid">
-      {#each Object.values(icons) as icon}
-        <Icon name="{icon}" title="{icon}" variant="{args.variant}" size="{args.size}" />
-      {/each}
-    </div>
-  {:else}
-    <Icon {...args} />
-  {/if}
-</Template>
 
 <Story
   name="Single icon"
@@ -65,7 +61,11 @@
     collection: { table: { disable: true } },
     tooltip: { table: { disable: true } },
   }}"
-/>
+  let:args
+>
+  <Icon {...args} />
+</Story>
+
 <Story
   name="Single icon with tooltip"
   args="{{
@@ -75,7 +75,11 @@
   argTypes="{{
     collection: { table: { disable: true } },
   }}"
-/>
+  let:args
+>
+  <Icon {...args} />
+</Story>
+
 <Story
   name="Collection"
   args="{{
@@ -85,4 +89,11 @@
     name: { table: { disable: true } },
     tooltip: { table: { disable: true } },
   }}"
-/>
+  let:args
+>
+  <div class="sb-icon-collection-grid">
+    {#each Object.values(icons) as icon}
+      <Icon name="{icon}" title="{icon}" variant="{args.variant}" size="{args.size}" />
+    {/each}
+  </div>
+</Story>

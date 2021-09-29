@@ -1,14 +1,22 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { variants } from "@dusk-network/helpers";
   import ProgressBar from "@dusk-network/progress-bar";
+  import meta from "../../meta.js";
 </script>
 
 <Meta
   title="Components/Atoms/Progress Bar"
+  parameters="{{
+    layout: 'padded',
+    docs: {
+      source: {
+        type: 'code',
+      },
+    },
+  }}"
   component="{ProgressBar}"
-  parameters="{{ layout: 'padded' }}"
-  argTypes="{{
+  argTypes="{meta('progress-bar/ProgressBar', {
     variant: {
       options: Object.values(variants.PROGRESS_BAR),
       control: {
@@ -25,12 +33,8 @@
         type: 'number',
       },
     },
-  }}"
+  })}"
 />
-
-<Template let:args>
-  <ProgressBar {...args} />
-</Template>
 
 <Story
   name="Basic progress bar with no context"
@@ -39,4 +43,7 @@
     step: 2,
     steps: 5,
   }}"
-/>
+  let:args
+>
+  <ProgressBar {...args} />
+</Story>

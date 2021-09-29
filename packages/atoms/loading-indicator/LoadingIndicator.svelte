@@ -2,7 +2,15 @@
   import variants from "@dusk-network/helpers/variants.js";
   import "./styles.css";
 
+  /**
+   * Sets the variant of the Loading Indicator.
+   * @type {"brand" | "cta" | "info" | "success" | "warning" | "danger" }
+   */
   export let variant = variants.LOADING_INDICATOR.DEFAULT;
+
+  /**
+   * Sets the duration of the Loading Indicator animation cycle.
+   */
   export let duration = "1.3s";
 </script>
 
