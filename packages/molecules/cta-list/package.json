@@ -14,14 +14,17 @@
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
   },
-  "dependencies": {
+  "devDependencies": {
     "@dusk-network/button": "workspace:*",
     "@dusk-network/helpers": "workspace:*",
     "@dusk-network/icon": "workspace:*",
     "@dusk-network/menu": "workspace:*"
   },
   "peerDependencies": {
-    "svelte": "3.42.6"
+    "@dusk-network/button": "workspace:*",
+    "@dusk-network/helpers": "workspace:*",
+    "@dusk-network/icon": "workspace:*",
+    "@dusk-network/menu": "workspace:*"
   },
   "gitHead": "4716f6bf5841d81706d224e9ace5447f8fcabb29"
 }
