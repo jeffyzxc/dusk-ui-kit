@@ -1,5 +1,5 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import Table, { Row, Datum } from "@dusk-network/table";
   import { rows } from "@dusk-network/table/stores/data.js";
   import { data } from "./data.js";
@@ -16,7 +16,7 @@
 <Meta
   title="Components/Organisms/Table"
   component="{Table}"
-  parameters="{{ 
+  parameters="{{
     layout: 'padded',
     docs: {
       source: {
@@ -24,7 +24,7 @@
       },
     },
   }}"
-  argTypes="{meta('table/Table',{
+  argTypes="{meta('table/Table', {
     data: {
       table: {
         disable: true,

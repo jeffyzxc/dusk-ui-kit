@@ -1,6 +1,6 @@
 <script>
   // TODO Investigate use of states on DropDown, and Toggle
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { types } from "@dusk-network/helpers";
   import Button from "@dusk-network/button";
   import PasswordStrength from "@dusk-network/password-strength";
@@ -77,7 +77,7 @@
 
 <Meta
   title="Components/Organisms/Form"
-  parameters="{{ 
+  parameters="{{
     layout: 'centered',
     docs: {
       source: {
@@ -86,7 +86,7 @@
     },
   }}"
   component="{Control}"
-  argTypes="{meta('form/Form',{
+  argTypes="{meta('form/Form', {
     type: {
       control: {
         type: 'radio',

@@ -22,7 +22,7 @@
    * @type {"brand" | "cta" | "info" | "success" | "warning" | "danger" }
    */
   export let variant = null;
-  
+
   /**
    * Sets the Icon to have a tooltip when passed a string
    */

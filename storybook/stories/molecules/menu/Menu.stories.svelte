@@ -1,5 +1,5 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { orientations } from "@dusk-network/helpers";
   import Menu, { Item } from "@dusk-network/menu";
   import meta from "../../meta.js";
@@ -8,7 +8,7 @@
 <Meta
   title="Components/Molecules/Menu"
   component="{Menu}"
-  parameters="{{ 
+  parameters="{{
     layout: 'padded',
     docs: {
       source: {
@@ -16,7 +16,7 @@
       },
     },
   }}"
-  argTypes="{meta('menu/Menu',{
+  argTypes="{meta('menu/Menu', {
     orientation: {
       table: {
         disable: true,
@@ -46,7 +46,6 @@
     <Item>No Link</Item>
   </Menu>
 </Story>
-
 
 <Story
   name="Vertically stacked menu with no context"

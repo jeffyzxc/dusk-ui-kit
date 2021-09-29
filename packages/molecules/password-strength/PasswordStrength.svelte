@@ -6,7 +6,6 @@
   import variants from "@dusk-network/helpers/variants.js";
   import "./styles.css";
 
-
   /**
    * Sets the password value used by PasswordStrengh.
    */

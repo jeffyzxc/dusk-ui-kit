@@ -1,5 +1,5 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { variants } from "@dusk-network/helpers";
   import LoadingIndicator from "@dusk-network/loading-indicator";
   import meta from "../../meta.js";
@@ -7,7 +7,7 @@
 
 <Meta
   title="Components/Atoms/Loading Indicator"
-  parameters="{{ 
+  parameters="{{
     layout: 'centered',
     docs: {
       source: {
@@ -16,7 +16,7 @@
     },
   }}"
   component="{LoadingIndicator}"
-  argTypes="{meta('loading-indicator/LoadingIndicator',{
+  argTypes="{meta('loading-indicator/LoadingIndicator', {
     variant: {
       options: Object.values(variants.LOADING_INDICATOR),
       control: {

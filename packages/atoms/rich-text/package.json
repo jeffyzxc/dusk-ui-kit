@@ -17,12 +17,14 @@
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
   },
-  "devDependencies": {
-    "@dusk-network/helpers": "workspace:*",
+  "dependencies": {
     "marked": "^3.0.4"
   },
-  "peerDependencies": {
-    "svelte": "3.42.6"
+  "devDependencies": {
+    "@dusk-network/helpers": "workspace:*"
   },
-  "gitHead": "4716f6bf5841d81706d224e9ace5447f8fcabb29"
+  "peerDependencies": {
+    "@dusk-network/helpers": "workspace:*"
+  },
+  "gitHead": "727edc8e743f2ce51b1830ac472c7668a52e70ca"
 }

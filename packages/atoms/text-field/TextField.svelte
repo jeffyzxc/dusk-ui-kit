@@ -24,7 +24,7 @@
    * Sets the Text Field placeholder.
    */
   export let placeholder = "";
-  
+
   /**
    * Sets the state of the Text Field
    * @type { "success" | "warning" | "danger" }

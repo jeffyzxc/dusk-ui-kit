@@ -13,7 +13,7 @@
   export let cookie;
 
   /**
-   * Sets the configuration object used by the Cookie Banner. 
+   * Sets the configuration object used by the Cookie Banner.
    * Which contains the cookie options and their description and the domain and path where the Cookie Banner resides.
    */
   export let config;

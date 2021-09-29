@@ -18,7 +18,7 @@
     "@dusk-network/helpers": "workspace:*"
   },
   "peerDependencies": {
-    "svelte": "3.42.6"
+    "@dusk-network/helpers": "workspace:*"
   },
-  "gitHead": "4716f6bf5841d81706d224e9ace5447f8fcabb29"
+  "gitHead": "727edc8e743f2ce51b1830ac472c7668a52e70ca"
 }

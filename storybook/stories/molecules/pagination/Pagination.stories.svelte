@@ -1,5 +1,5 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import Pagination from "@dusk-network/pagination";
   import { data } from "./data.js";
   import { writable } from "svelte/store";
@@ -11,7 +11,7 @@
 <Meta
   title="Components/Molecules/Pagination"
   component="{Pagination}"
-  parameters="{{ 
+  parameters="{{
     layout: 'centered',
     docs: {
       source: {
@@ -19,7 +19,7 @@
       },
     },
   }}"
-  argTypes="{meta('pagination/Pagination',{
+  argTypes="{meta('pagination/Pagination', {
     ref: {
       table: {
         disable: true,

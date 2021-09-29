@@ -7,7 +7,7 @@
 
   export let markdown;
 
-   /**
+  /**
    * Sets the size of the Rich Text.
    * @type {"sm" | "lg" | "xl" | "xxl"}
    */

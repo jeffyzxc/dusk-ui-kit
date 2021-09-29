@@ -1,6 +1,6 @@
 <script>
   // TODO Investigate use of states on DropDown, and Toggle
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { types, states } from "@dusk-network/helpers";
   import Control from "@dusk-network/control";
   import TextField from "@dusk-network/text-field";
@@ -12,7 +12,7 @@
 
 <Meta
   title="Components/Molecules/Control"
-  parameters="{{ 
+  parameters="{{
     layout: 'centered',
     docs: {
       source: {
@@ -26,7 +26,7 @@
     message: 'This is a message.',
     label: 'Control label',
   }}"
-  argTypes="{meta('control/Control',{
+  argTypes="{meta('control/Control', {
     onClick: {
       action: 'onClick',
       table: {
@@ -100,7 +100,7 @@
   name="Control Checkbox"
   args="{{ checkbox: true, label: '' }}"
   argTypes="{{ label: { table: { disable: true } } }}"
-  let:args 
+  let:args
 >
   <Control
     width="full"
@@ -109,9 +109,7 @@
     on:mouseover="{args.onMouseover}"
     let:id
   >
-      <Toggle id="{id}" type="{types.TOGGLE.CHECKBOX}" state="{args.state}"
-        >Checkbox example</Toggle
-      >
+    <Toggle id="{id}" type="{types.TOGGLE.CHECKBOX}" state="{args.state}">Checkbox example</Toggle>
   </Control>
 </Story>
 
@@ -122,11 +120,11 @@
   let:args
 >
   <Control
-  width="full"
-  {...args}
-  on:click="{args.onClick}"
-  on:mouseover="{args.onMouseover}"
-  let:id
+    width="full"
+    {...args}
+    on:click="{args.onClick}"
+    on:mouseover="{args.onMouseover}"
+    let:id
   >
     <Toggle id="{id}" type="{types.TOGGLE.RADIO}" state="{args.state}" options="{[1, 2, 3, 4]}">
       Radio example
@@ -136,14 +134,14 @@
 
 <Story name="Control Drop down" args="{{ dropDown: true }}" let:args>
   <Control
-      width="full"
-      {...args}
-      on:click="{args.onClick}"
-      on:mouseover="{args.onMouseover}"
-      let:id
-    >
-        <DropDown id="{id}" options="{[1, 2, 3, 4]}" />
-    </Control>
+    width="full"
+    {...args}
+    on:click="{args.onClick}"
+    on:mouseover="{args.onMouseover}"
+    let:id
+  >
+    <DropDown id="{id}" options="{[1, 2, 3, 4]}" />
+  </Control>
 </Story>
 
 <Story name="Control Text field with postfixed Button" args="{{ buttonPostfix: true }}" let:args>

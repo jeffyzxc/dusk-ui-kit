@@ -9,10 +9,9 @@
   import { table as dataTable } from "./table.js";
   import "./styles.css";
 
-
   /**
    * Sets the data displayed in the Table.
-  */
+   */
   export let data = [];
 
   /**

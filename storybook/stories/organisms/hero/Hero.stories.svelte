@@ -1,6 +1,6 @@
 <script>
   // TODO Clean up content in template etc.
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import Hero from "@dusk-network/hero";
   import Heading from "@dusk-network/heading";
   import Button from "@dusk-network/button";
@@ -12,7 +12,7 @@
 <Meta
   title="Components/Organisms/Hero"
   component="{Hero}"
-  parameters="{{ 
+  parameters="{{
     layout: 'padded',
     docs: {
       source: {
@@ -20,7 +20,7 @@
       },
     },
   }}"
-  argTypes="{meta('hero/Hero',{
+  argTypes="{meta('hero/Hero', {
     layout: {
       table: {
         disabled: true,

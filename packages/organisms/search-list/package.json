@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/search-list",
-  "version": "2.0.0-rc.59",
+  "version": "3.0.11",
   "description": "Dusk UI Kit - SearchList",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -25,8 +25,7 @@
     "@dusk-network/button": "workspace:*",
     "@dusk-network/control": "workspace:*",
     "@dusk-network/icon": "workspace:*",
-    "@dusk-network/rich-text": "workspace:*",
     "@dusk-network/text-field": "workspace:*"
   },
-  "gitHead": "4716f6bf5841d81706d224e9ace5447f8fcabb29"
+  "gitHead": "727edc8e743f2ce51b1830ac472c7668a52e70ca"
 }

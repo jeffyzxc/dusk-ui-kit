@@ -1,21 +1,20 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import DropDown from "@dusk-network/drop-down";
   import meta from "../../meta.js";
 </script>
 
 <Meta
   title="Components/Atoms/Drop Down"
-  parameters="{{ 
+  parameters="{{
     layout: 'centered',
     docs: {
       source: {
-        type: 'code'
-      }
-    }
+        type: 'code',
+      },
+    },
   }}"
   component="{DropDown}"
-  
   argTypes="{meta('drop-down/DropDown', {
     onSelect: {
       action: 'onSelect',

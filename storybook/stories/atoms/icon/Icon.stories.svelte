@@ -1,5 +1,5 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { variants, icons, sizes } from "@dusk-network/helpers";
   import Icon from "@dusk-network/icon";
   import meta from "../../meta.js";
@@ -8,7 +8,7 @@
 
 <Meta
   title="Components/Atoms/Icon"
-  parameters="{{ 
+  parameters="{{
     layout: 'centered',
     docs: {
       source: {
@@ -53,7 +53,6 @@
     },
   })}"
 />
-
 
 <Story
   name="Single icon"

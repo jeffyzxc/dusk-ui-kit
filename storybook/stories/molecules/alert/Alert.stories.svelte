@@ -1,5 +1,5 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { variants } from "@dusk-network/helpers";
   import Alert from "@dusk-network/alert";
   import Icon from "@dusk-network/icon/Icon.svelte";
@@ -11,7 +11,7 @@
 <Meta
   title="Components/Molecules/Alert"
   component="{Alert}"
-  parameters="{{ 
+  parameters="{{
     layout: 'centered',
     docs: {
       source: {
@@ -22,7 +22,7 @@
   args="{{
     value: true,
   }}"
-  argTypes="{meta('alert/Alert',{
+  argTypes="{meta('alert/Alert', {
     onClick: {
       action: 'onClick',
       table: {
@@ -58,35 +58,6 @@
     },
   })}"
 />
-
-<Template let:args>
-  <Alert {...args} on:click="{args.onClick}" on:mouseover="{args.onMouseover}">
-    <div slot="icon">
-      <Icon
-        name="{(args.variant === 'success' && 'check-decagram-outline') ||
-          (args.variant === 'warning' && 'alert-outline') ||
-          (args.variant === 'danger' && 'close-circle-outline') ||
-          'help-circle-outline'}"
-      />
-    </div>
-    <div slot="title">Alert Title!</div>
-    <p>This is an alert!</p>
-    <div slot="actions">
-      <Group>
-        <Button
-          variant="{args.variant || 'brand'}"
-          outline="{true}"
-          on:click="{() => (args['value'] = false)}"
-        >
-          Accept
-        </Button>
-        <Button variant="default" outline="{true}" on:click="{() => (args['value'] = false)}">
-          Reject
-        </Button>
-      </Group>
-    </div>
-  </Alert>
-</Template>
 
 <Story name="Default alert" args="{{}}" let:args>
   <Alert {...args} on:click="{args.onClick}" on:mouseover="{args.onMouseover}">

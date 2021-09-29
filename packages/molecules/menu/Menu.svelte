@@ -4,7 +4,6 @@
   import contexts from "@dusk-network/helpers/contexts.js";
   import "./styles.css";
 
-
   /**
    * Sets the orientation of the Menu.
    * @type { "horizontal" | "vertical" }
