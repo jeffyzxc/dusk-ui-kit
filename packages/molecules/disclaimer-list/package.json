@@ -14,11 +14,11 @@
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
   },
-  "dependencies": {
+  "devDependencies": {
     "@dusk-network/helpers": "workspace:*"
   },
   "peerDependencies": {
-    "svelte": "3.42.6"
+    "@dusk-network/helpers": "workspace:*"
   },
   "gitHead": "4716f6bf5841d81706d224e9ace5447f8fcabb29"
 }

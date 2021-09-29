@@ -15,12 +15,15 @@
     "test": "echo \"Work in progress...\" && exit 1"
   },
   "dependencies": {
-    "@dusk-network/helpers": "workspace:*",
-    "@dusk-network/progress-bar": "workspace:*",
     "check-password-strength": "^2.0.3"
   },
+  "devDependencies": {
+    "@dusk-network/helpers": "workspace:*",
+    "@dusk-network/progress-bar": "workspace:*"
+  },
   "peerDependencies": {
-    "svelte": "3.42.6"
+    "@dusk-network/helpers": "workspace:*",
+    "@dusk-network/progress-bar": "workspace:*"
   },
   "gitHead": "4716f6bf5841d81706d224e9ace5447f8fcabb29"
 }

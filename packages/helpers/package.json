@@ -14,10 +14,11 @@
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "@dusk-network/styles": "workspace:*",
+  "dependencies": {
     "merge-anything": "^4.0.1"
+  },
+  "devDependencies": {
+    "@dusk-network/styles": "workspace:*"
   },
   "peerDependencies": {
     "@dusk-network/styles": "workspace:*"
