@@ -83,10 +83,6 @@
   },
   "eslintIgnore": [
     "*.test.js",
-    "dist",
-    "build",
-    "types",
-    "functions",
     "storybook-static"
   ],
   "jest": {
