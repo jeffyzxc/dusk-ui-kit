@@ -1,11 +1,10 @@
 <script>
   import { onMount, onDestroy } from "svelte";
-  import { store, searchTerm, searchResults } from "./stores/store.js";
+  import { store, searchTerm } from "./stores/store.js";
   import Control from "@dusk-network/control";
   import TextField from "@dusk-network/text-field";
   import Button from "@dusk-network/button";
   import Icon from "@dusk-network/icon";
-  import Item from "./Item.svelte";
   import "./styles.css";
 
   export let data = [];
@@ -31,9 +30,5 @@
     </Button>
     <TextField placeholder="Search" bind:value="{searchValue}" />
   </Control>
-  {#each $searchResults as token}
-    <Item token="{token}">
-      <slot name="results" />
-    </Item>
-  {/each}
+  <slot />
 </div>

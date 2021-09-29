@@ -1,8 +1,9 @@
-<!-- <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+<script>
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import SearchList from "@dusk-network/search-list";
   import RichText from "@dusk-network/rich-text";
-  import { tokens }  from "./data";
+  import { tokens } from "./data.js";
+  import { searchResults } from "@dusk-network/search-list/stores/store.js";
 </script>
 
 <Meta
@@ -12,24 +13,24 @@
   argTypes="{{}}"
 />
 
-<Template let:args>
-  <SearchList data="{args.tokens}">
-    <svelte:fragment let:token slot="results">
-      <div class="duk-search-list__item--token" let:token slot="results">
-        <div class="duk-search-list__item--border">
+<Story name="Default" args="{{ data: tokens }}" let:args>
+  <SearchList data="{args.data}">
+    {#each $searchResults as token}
+      <div class="duk-search-list__item">
+        <div class="duk-search-list__item--token">
+          <div class="duk-search-list__item--border">
             {#if token.image}
-                <img src="{token.image}" alt="symbol"/>
+              <img src="{token.image}" alt="symbol" />
             {/if}
+          </div>
+          <RichText>
+            <p>{token.token}</p>
+          </RichText>
         </div>
         <RichText>
-            <p>{token.token}</p>
+          <p>{token.amount}</p>
         </RichText>
       </div>
-      <RichText>
-          <p>{token.amount}</p>
-      </RichText>
-    </svelte:fragment>
+    {/each}
   </SearchList>
-</Template>
-
-<Story name="Default" args="{{ data: tokens}}" /> -->
+</Story>
