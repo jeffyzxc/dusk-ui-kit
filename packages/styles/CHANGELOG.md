@@ -1,5 +1,11 @@
 # @dusk-network/styles
 
+## 3.0.12
+
+### Patch Changes
+
+- 66d1852b: Minor fixes for search-list component
+
 ## 3.0.11
 
 ### Patch Changes
