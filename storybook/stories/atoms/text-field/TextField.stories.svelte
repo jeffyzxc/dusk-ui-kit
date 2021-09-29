@@ -1,5 +1,5 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { types, states } from "@dusk-network/helpers";
   import TextField from "@dusk-network/text-field";
   import meta from "../../meta.js";
@@ -7,7 +7,7 @@
 
 <Meta
   title="Components/Atoms/Text Field"
-  parameters="{{ 
+  parameters="{{
     layout: 'centered',
     docs: {
       source: {
@@ -16,7 +16,7 @@
     },
   }}"
   component="{TextField}"
-  argTypes="{meta('text-field/TextField',{
+  argTypes="{meta('text-field/TextField', {
     onBlur: {
       action: 'onBlur',
       table: {

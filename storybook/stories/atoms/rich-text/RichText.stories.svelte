@@ -1,5 +1,5 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { sizes } from "@dusk-network/helpers";
   import RichText from "@dusk-network/rich-text";
   import Html from "./Html.svelte";
@@ -9,7 +9,7 @@
 
 <Meta
   title="Components/Atoms/Rich Text"
-  parameters="{{ 
+  parameters="{{
     layout: 'padded',
     docs: {
       source: {
@@ -18,7 +18,7 @@
     },
   }}"
   component="{RichText}"
-  argTypes="{meta('rich-text/RichText',{
+  argTypes="{meta('rich-text/RichText', {
     size: {
       options: Object.values(sizes.RICH_TEXT),
       control: {

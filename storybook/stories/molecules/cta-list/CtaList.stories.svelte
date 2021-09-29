@@ -1,5 +1,5 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { variants } from "@dusk-network/helpers";
   import CtaList, { Item } from "@dusk-network/cta-list";
   import RichText from "@dusk-network/rich-text";
@@ -9,7 +9,7 @@
 <Meta
   title="Components/Molecules/Cta List"
   component="{CtaList}"
-  parameters="{{ 
+  parameters="{{
     layout: 'padded',
     docs: {
       source: {
@@ -17,7 +17,7 @@
       },
     },
   }}"
-  argTypes="{meta('cta-list/CtaList',{
+  argTypes="{meta('cta-list/CtaList', {
     variant: {
       control: {
         type: 'select',

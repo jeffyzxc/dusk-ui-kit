@@ -1,5 +1,5 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import CookieBanner from "@dusk-network/cookie-banner";
   import meta from "../../meta.js";
 

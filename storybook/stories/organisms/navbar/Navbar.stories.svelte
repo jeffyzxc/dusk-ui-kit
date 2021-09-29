@@ -30,7 +30,7 @@ Basic.args = {
   variant: variants.NAVBAR.BRAND,
 }; -->
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import Navbar from "@dusk-network/navbar";
   import DropDown from "@dusk-network/drop-down";
   import Logo from "@dusk-network/logo";
@@ -42,7 +42,7 @@ Basic.args = {
 <Meta
   title="Components/Organisms/Navbar"
   component="{Navbar}"
-  parameters="{{ 
+  parameters="{{
     layout: 'fullscreen',
     docs: {
       source: {
@@ -50,7 +50,7 @@ Basic.args = {
       },
     },
   }}"
-  argTypes="{meta('navbar/Navbar',{
+  argTypes="{meta('navbar/Navbar', {
     title: {
       table: {
         disable: true,

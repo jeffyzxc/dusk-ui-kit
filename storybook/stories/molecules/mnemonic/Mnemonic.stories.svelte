@@ -1,5 +1,5 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import Mnemonic from "@dusk-network/mnemonic";
   import { types } from "@dusk-network/helpers";
   import { seedPhrase } from "./data.js";
@@ -9,7 +9,7 @@
 <Meta
   title="Components/Molecules/Mnemonic"
   component="{Mnemonic}"
-  parameters="{{ 
+  parameters="{{
     layout: 'padded',
     docs: {
       source: {
@@ -17,7 +17,7 @@
       },
     },
   }}"
-  argTypes="{meta('mnemonic/Mnemonic',{
+  argTypes="{meta('mnemonic/Mnemonic', {
     onComplete: {
       action: 'onComplete',
       table: {

@@ -1,5 +1,5 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { variants, states } from "@dusk-network/helpers";
   import Card, { Content, Title, Footer, Actions } from "@dusk-network/card";
   import RichText from "@dusk-network/rich-text";
@@ -13,7 +13,7 @@
 <Meta
   title="Components/Organisms/Card"
   component="{Card}"
-  parameters="{{ 
+  parameters="{{
     layout: 'padded',
     docs: {
       source: {
@@ -21,7 +21,7 @@
       },
     },
   }}"
-  argTypes="{meta('card/Card',{
+  argTypes="{meta('card/Card', {
     variant: {
       options: Object.values(variants.CARD),
       control: {
@@ -149,9 +149,9 @@
         <h2>Success heading!</h2>
       </Heading>
     </Content>
-      <Footer>
-        <p>{args.footer}</p>
-      </Footer>
+    <Footer>
+      <p>{args.footer}</p>
+    </Footer>
   </Card>
 </Story>
 

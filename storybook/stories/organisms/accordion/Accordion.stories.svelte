@@ -1,5 +1,5 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import Accordion, { Item } from "@dusk-network/accordion";
   import Card, { Content } from "@dusk-network/card";
   import meta from "../../meta.js";
@@ -8,7 +8,7 @@
 <Meta
   title="Components/Organisms/Accordion"
   component="{Accordion}"
-  parameters="{{ 
+  parameters="{{
     layout: 'padded',
     docs: {
       source: {
@@ -16,7 +16,7 @@
       },
     },
   }}"
-  argTypes="{meta('accordion/Accordion',{
+  argTypes="{meta('accordion/Accordion', {
     multiselect: {
       table: {
         disable: false,
@@ -34,7 +34,7 @@
   </Accordion>
 </Story>
 
-<Story name="Accordion inside Card" args="{{ }}" >
+<Story name="Accordion inside Card" args="{{}}">
   <Card>
     <Content>
       <Accordion>

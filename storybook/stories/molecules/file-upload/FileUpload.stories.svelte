@@ -1,5 +1,5 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import FileUpload from "@dusk-network/file-upload";
   import Form from "@dusk-network/form";
   import Control from "@dusk-network/control";
@@ -41,7 +41,7 @@
 <Meta
   title="Components/Molecules/File Upload"
   component="{FileUpload}"
-  parameters="{{ 
+  parameters="{{
     layout: 'padded',
     docs: {
       source: {
@@ -49,13 +49,13 @@
       },
     },
   }}"
-  argTypes="{meta('file-upload/FileUpload',{
-    onInputFile:{
-      action:'onInputFile',
+  argTypes="{meta('file-upload/FileUpload', {
+    onInputFile: {
+      action: 'onInputFile',
       table: {
         disabled: true,
-      }
-    }
+      },
+    },
   })}"
 />
 

@@ -1,5 +1,5 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { sizes, variants } from "@dusk-network/helpers";
   import Heading from "@dusk-network/heading";
   import Button from "@dusk-network/button";
@@ -10,15 +10,15 @@
 <Meta
   title="Components/Molecules/Heading"
   component="{Heading}"
-  parameters="{{ 
+  parameters="{{
     layout: 'padded',
     docs: {
       source: {
         type: 'code',
       },
-    }
+    },
   }}"
-  argTypes="{meta('heading/Heading',{
+  argTypes="{meta('heading/Heading', {
     size: {
       control: {
         type: 'radio',

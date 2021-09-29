@@ -1,18 +1,18 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   // import { variants, states } from "@dusk-network/helpers";
   import Wizard, { Step } from "@dusk-network/wizard";
   // import RichText from "@dusk-network/rich-text";
   // import Icon from "@dusk-network/icon";
   // import Heading from "@dusk-network/heading";
   // import Button, { Group } from "@dusk-network/button";
-  import meta from '../../meta';
+  import meta from "../../meta";
 </script>
 
 <Meta
   title="Components/Organisms/Wizard"
   component="{Wizard}"
-  parameters="{{ 
+  parameters="{{
     layout: 'padded',
     docs: {
       source: {
@@ -20,7 +20,7 @@
       },
     },
   }}"
-  argTypes="{meta('wizard/Wizard',{})}"
+  argTypes="{meta('wizard/Wizard', {})}"
 />
 
 <Story name="Kitchen Skin" args="{{}}" let:args>

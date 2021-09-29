@@ -1,5 +1,5 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import DisclaimerList, { Item } from "@dusk-network/disclaimer-list";
   import Icon from "@dusk-network/icon";
   import RichText from "@dusk-network/rich-text";
@@ -10,7 +10,7 @@
 <Meta
   title="Components/Molecules/Disclaimer List"
   component="{DisclaimerList}"
-  parameters="{{ 
+  parameters="{{
     layout: 'padded',
     docs: {
       source: {
@@ -18,7 +18,7 @@
       },
     },
   }}"
-  argTypes="{meta('disclaimer-list/DisclaimerList',{})}"
+  argTypes="{meta('disclaimer-list/DisclaimerList', {})}"
 />
 
 <Story name="Default" args="{{}}" let:args>

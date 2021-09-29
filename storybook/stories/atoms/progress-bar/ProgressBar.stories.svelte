@@ -1,5 +1,5 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { variants } from "@dusk-network/helpers";
   import ProgressBar from "@dusk-network/progress-bar";
   import meta from "../../meta.js";
@@ -7,7 +7,7 @@
 
 <Meta
   title="Components/Atoms/Progress Bar"
-  parameters="{{ 
+  parameters="{{
     layout: 'padded',
     docs: {
       source: {
@@ -16,7 +16,7 @@
     },
   }}"
   component="{ProgressBar}"
-  argTypes="{meta('progress-bar/ProgressBar',{
+  argTypes="{meta('progress-bar/ProgressBar', {
     variant: {
       options: Object.values(variants.PROGRESS_BAR),
       control: {
