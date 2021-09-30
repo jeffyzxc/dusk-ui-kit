@@ -2,3 +2,4 @@ packages:
   - "packages/**"
   - "meta"
   - "storybook"
+  - "docs"
