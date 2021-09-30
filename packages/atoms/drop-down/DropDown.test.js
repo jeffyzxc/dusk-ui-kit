@@ -1,9 +1,11 @@
-// import "@testing-library/jest-dom/extend-expect";
-// import { render } from "@testing-library/svelte";
-// import { Basic } from "./Button.stories";
-// import ProgressBar from "./storybook-views/Default.svelte";
+import "@testing-library/jest-dom/extend-expect";
+import { render } from "@testing-library/svelte";
+import { Basic } from "./DropDown.stories";
+import DropDown from "@dusk-network/drop-down";
 
-// test("shows proper label", () => {
-//   const results = render(ProgressBar, { props: Basic.args });
-//   // expect(() => results.getByText("Hi I'm a Button")).not.toThrow();
-// });
+test("it renders", () => {
+  const results = render(DropDown, {
+    props: Basic.args,
+  });
+  expect(() => results.getByRole(DropDown).toHaveClass);
+});

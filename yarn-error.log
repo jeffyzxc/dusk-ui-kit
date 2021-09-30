@@ -1,0 +1,191 @@
+Arguments: 
+  /home/deuch13/.nvm/versions/node/v16.3.0/bin/node /mnt/c/Program Files (x86)/Yarn/bin/yarn.js add --dev babel-jest
+
+PATH: 
+  /home/deuch13/.nvm/versions/node/v16.3.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/xampp/php:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files (x86)/Yarn/bin/:/mnt/c/Program Files/nodejs/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Users/Alex/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Alex/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/MongoDB/Server/4.0/bin:/mnt/c/Python27:/mnt/c/Python27/Scripts:/mnt/c/Users/Alex/AppData/Local/Yarn/bin:/mnt/c/BMC/Tools/jdk-11.0.1/bin:/mnt/c/BMC/Tools/apache-maven-3.2.1/bin:/mnt/c/Users/Alex/AppData/Roaming/npm:/mnt/c/Users/Alex/AppData/Roaming/Composer/vendor/bin:/snap/bin
+
+Yarn version: 
+  1.19.1
+
+Node version: 
+  16.3.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: Failed to replace env in config: ${GITHUB_TOKEN}
+      at /mnt/c/Program Files (x86)/Yarn/lib/cli.js:94644:13
+      at String.replace (<anonymous>)
+      at envReplace (/mnt/c/Program Files (x86)/Yarn/lib/cli.js:94639:16)
+      at Function.normalizeConfig (/mnt/c/Program Files (x86)/Yarn/lib/cli.js:31887:69)
+      at NpmRegistry.<anonymous> (/mnt/c/Program Files (x86)/Yarn/lib/cli.js:31917:34)
+      at Generator.next (<anonymous>)
+      at step (/mnt/c/Program Files (x86)/Yarn/lib/cli.js:304:30)
+      at /mnt/c/Program Files (x86)/Yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "dusk-ui-kit",
+    "version": "0.0.0",
+    "private": true,
+    "description": "Dusk UI Kit",
+    "homepage": "https://dusk-network.github.io/dusk-ui-kit/",
+    "bugs": {
+      "url": "https://github.com/dusk-network/issues"
+    },
+    "repository": "https://github.com/dusk-network/dusk-ui-kit",
+    "license": "MPL-2.0",
+    "author": "Kieran Hall <kieran@dusk.network>",
+    "files": [],
+    "workspaces": [
+      "packages/**",
+      "meta",
+      "storybook"
+    ],
+    "scripts": {
+      "build": "pnpm build:storybook",
+      "build:storybook": "cd storybook && pnpm build",
+      "preinstall": "npx only-allow pnpm",
+      "prepare": "is-ci || husky install",
+      "publish:ci": "changeset publish",
+      "prechangeset": "is-ci || node scripts/prechangeset.js",
+      "changeset": "changeset",
+      "format": "prettier . -w --plugin-search-dir=.",
+      "stage": "lint-staged",
+      "start": "pnpm start:storybook",
+      "start:storybook": "cd storybook && pnpm start",
+      "storybook": "pnpm start:storybook",
+      "lint:js": "eslint . --ext .svelte,.js",
+      "lint:js:fix": "pnpm lint:js -- --fix",
+      "test": "jest",
+      "test:watch": "jest --watchAll",
+      "version:changeset": "changeset version  && pnpm i --lockfile-only",
+      "version:ci": "pnpm version:changeset",
+      "version:repo": "pnpm update:workspace",
+      "update:deps": "pnpm up --latest --recursive --interactive",
+      "update:workspace": "pnpm up --recursive --workspace",
+      "release:ci": "pnpm i -r && pnpm publish -r"
+    },
+    "commitlint": {
+      "extends": [
+        "gitmoji"
+      ]
+    },
+    "lint-staged": {
+      "*.{js,ts,svelte}": "eslint --ext .svelte,.js --fix",
+      "*.{js,ts,svelte,css,md,mdx,json}": "prettier -w --plugin-search-dir=."
+    },
+    "config": {
+      "commitizen": {
+        "path": "./node_modules/cz-emoji"
+      },
+      "cz-emoji": {
+        "skipQuestions": [
+          "scope",
+          "breaking",
+          "issues"
+        ]
+      }
+    },
+    "prettier": {
+      "endOfLine": "lf",
+      "printWidth": 100,
+      "semi": true,
+      "singleQuote": false,
+      "svelteSortOrder": "options-styles-scripts-markup",
+      "svelteStrictMode": true,
+      "tabWidth": 2,
+      "trailingComma": "all",
+      "useTabs": false
+    },
+    "eslintConfig": {
+      "parserOptions": {
+        "ecmaVersion": 2021
+      },
+      "extends": [
+        "@dusk-network"
+      ],
+      "root": true
+    },
+    "eslintIgnore": [
+      "*.test.js",
+      "dist",
+      "build",
+      "types",
+      "functions",
+      "storybook-static"
+    ],
+    "jest": {
+      "moduleFileExtensions": [
+        "js",
+        "svelte",
+        "json"
+      ],
+      "moduleNameMapper": {
+        "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+        "\\.(css|postcss)$": "<rootDir>/__mocks__/styleMock.js"
+      },
+      "setupFilesAfterEnv": [
+        "@testing-library/jest-dom/extend-expect"
+      ],
+      "testPathIgnorePatterns": [
+        "/node_modules/",
+        "/build/",
+        "/storybook-static/"
+      ],
+      "transform": {
+        "^.+\\.js$": "babel-jest",
+        "^.+\\.svelte$": [
+          "svelte-jester",
+          {
+            "debug": false
+          }
+        ]
+      }
+    },
+    "devDependencies": {
+      "@changesets/cli": "^2.17.0",
+      "@commitlint/cli": "^13.1.0",
+      "@dusk-network/eslint-config": "0.0.1",
+      "@testing-library/jest-dom": "^5.14.1",
+      "@testing-library/svelte": "^3.0.3",
+      "commitizen": "^4.2.4",
+      "commitlint-config-gitmoji": "^2.2.5",
+      "cz-emoji": "^1.3.1",
+      "eslint": "^7.32.0",
+      "eslint-config-prettier": "^8.3.0",
+      "eslint-plugin-jest": "^24.4.2",
+      "eslint-plugin-prettier": "^4.0.0",
+      "eslint-plugin-svelte3": "^3.2.1",
+      "eslint-plugin-tailwind": "^0.2.1",
+      "husky": "^7.0.2",
+      "is-ci": "^3.0.0",
+      "jest": "^27.2.1",
+      "lint-staged": "^11.1.2",
+      "npm-run-all": "^4.1.5",
+      "prettier": "^2.4.1",
+      "prettier-plugin-packagejson": "^2.2.12",
+      "prettier-plugin-svelte": "^2.4.0",
+      "simple-git": "^2.45.1",
+      "stylelint": "^13.13.1",
+      "stylelint-config-standard": "^22.0.0",
+      "svelte": "3.43.0",
+      "svelte-jester": "^2.1.5",
+      "tiny-glob": "^0.2.9",
+      "ts-jest": "^27.0.5"
+    },
+    "engines": {
+      "node": "^14.16.0",
+      "pnpm": "^6.15.0"
+    },
+    "publishConfig": {
+      "registry": "https://npm.pkg.github.com"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
