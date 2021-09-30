@@ -10,6 +10,7 @@
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
     "directory": "packages/atoms/hero"
   },
+  "type": "module",
   "module": "index.js",
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"

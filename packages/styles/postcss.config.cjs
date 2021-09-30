@@ -1,4 +1,4 @@
-const tailwindConfig = require("./dusk.tailwind.config.js");
+const tailwindConfig = require("./dusk.tailwind.config.cjs");
 const postcssImport = require("postcss-import");
 const postcssUrl = require("postcss-url");
 const postcssInputRange = require("postcss-input-range");
