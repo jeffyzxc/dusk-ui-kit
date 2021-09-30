@@ -1,7 +1,7 @@
 import { VitePluginDuskViewer } from "./vite-plugin-dusk-viewer.js";
 
-import tailwindConfig from "../dusk.tailwind.config.js";
-import postCssConfig from "../postcss.config.js";
+import tailwindConfig from "../dusk.tailwind.config.cjs";
+import postCssConfig from "../postcss.config.cjs";
 
 export function VitePluginDusk(options = {}) {
   const config = Object.assign(

@@ -1,5 +1,5 @@
 const sveltePreprocess = require("svelte-preprocess");
-const dusk = require("@dusk-network/styles/plugin/vite-plugin-dusk-storybook.js");
+const dusk = require("@dusk-network/styles/plugin/vite-plugin-dusk-storybook.cjs");
 const metadata = require("@dusk-network/meta");
 
 const virtualMetaPlugin = () => {
@@ -60,7 +60,7 @@ module.exports = {
     preprocess: [
       sveltePreprocess({
         postcss: {
-          configFilePath: "./node_modules/@dusk-network/styles/postcss.config.js",
+          configFilePath: "./node_modules/@dusk-network/styles/postcss.config.cjs",
         },
       }),
     ],

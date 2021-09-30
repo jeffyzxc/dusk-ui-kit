@@ -10,6 +10,7 @@
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
     "directory": "packages/atoms/logo"
   },
+  "type": "module",
   "module": "index.js",
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
@@ -20,5 +21,5 @@
   "peerDependencies": {
     "@dusk-network/helpers": "workspace:*"
   },
-  "gitHead": "727edc8e743f2ce51b1830ac472c7668a52e70ca"
+  "gitHead": "7675c25e0aa8257464f38163fc37df3d4d7c3d43"
 }

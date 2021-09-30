@@ -1,4 +1,4 @@
-const postCssConfig = require("../postcss.config.js");
+const postCssConfig = require("../postcss.config.cjs");
 
 module.exports = function VitePluginDusk(options = {}) {
   const config = Object.assign(

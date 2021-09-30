@@ -14,11 +14,13 @@
   "workspaces": [
     "packages/**",
     "meta",
-    "storybook"
+    "storybook",
+    "docs"
   ],
   "scripts": {
     "build": "pnpm build:storybook",
     "build:storybook": "cd storybook && pnpm build",
+    "build:docs": "cd docs && pnpm build",
     "preinstall": "npx only-allow pnpm",
     "prepare": "is-ci || husky install",
     "publish:ci": "changeset publish",
@@ -27,6 +29,7 @@
     "format": "prettier . -w --plugin-search-dir=.",
     "stage": "lint-staged",
     "start": "pnpm start:storybook",
+    "start:docs": "cd docs && pnpm dev",
     "start:storybook": "cd storybook && pnpm start",
     "storybook": "pnpm start:storybook",
     "lint:js": "eslint . --ext .svelte,.js",
