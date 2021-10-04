@@ -3,7 +3,7 @@
   "version": "3.0.11",
   "private": true,
   "description": "Metadata for components",
-  "main": "index.js",
+  "main": "index.cjs",
   "devDependencies": {
     "svelte-docster": "^2.0.1",
     "tiny-glob": "^0.2.9"

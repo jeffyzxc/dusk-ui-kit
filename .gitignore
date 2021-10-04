@@ -1,14 +1,14 @@
 .env
 .DS_Store
+.pnpm-debug.log
 .vscode/
 .svelte/
 .svelte-kit/
 node_modules/
-/dev/
 build/
 storybook-static
 build-storybook.log
 /packages/**/pnpm-lock.yaml
 /meta/**/pnpm-lock.yaml
 /storybook/**/pnpm-lock.yaml
-.pnpm-debug.log
+
