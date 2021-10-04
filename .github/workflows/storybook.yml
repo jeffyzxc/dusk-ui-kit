@@ -2,14 +2,14 @@ name: Storybook
 
 on:
   push:
-    paths:
-      - ".changeset/**"
-      - "storybook/**"
+    # paths:
+    #   - ".changeset/**"
+    #   - "storybook/**"
     branches:
       - main
 
 jobs:
-  storybook-deployment:
+  storybook:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository

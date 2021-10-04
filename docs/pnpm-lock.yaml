@@ -4,7 +4,7 @@ specifiers:
   '@dusk-network/button': workspace:*
   '@dusk-network/helpers': workspace:*
   '@dusk-network/styles': workspace:*
-  '@sveltejs/kit': 1.0.0-next.177
+  '@sveltejs/kit': 1.0.0-next.178
   svelte: ^3.43.0
   svelte-preprocess: ^4.9.5
   vite: ^2.5.0
@@ -13,7 +13,7 @@ devDependencies:
   '@dusk-network/button': link:../packages/molecules/button
   '@dusk-network/helpers': link:../packages/helpers
   '@dusk-network/styles': link:../packages/styles
-  '@sveltejs/kit': 1.0.0-next.177_svelte@3.43.0
+  '@sveltejs/kit': 1.0.0-next.178_svelte@3.43.0
   svelte: 3.43.0
   svelte-preprocess: 4.9.5_svelte@3.43.0
   vite: 2.6.1
@@ -28,8 +28,8 @@ packages:
       picomatch: 2.3.0
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.177_svelte@3.43.0:
-    resolution: {integrity: sha512-VPDeXAqAhBhpKaBpnaCYDQKrPg/B84LViA62GWGRnq0HUJ0sCex9fyWsdJCNHUes/pDEV9q8T6LgGU14XJ6qyQ==}
+  /@sveltejs/kit/1.0.0-next.178_svelte@3.43.0:
+    resolution: {integrity: sha512-Hai7bqZkn4JQMQwh8gUMJEbyBeRPIx1oQUhGZjHlH4yIqVf2Oz9Nf4FkGcQAa5eGF907qRhE/gghPpsZk6KkeQ==}
     engines: {node: ^12.20 || >=14.13}
     hasBin: true
     peerDependencies:
