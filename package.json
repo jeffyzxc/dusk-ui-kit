@@ -10,6 +10,7 @@
   "repository": "https://github.com/dusk-network/dusk-ui-kit",
   "license": "MPL-2.0",
   "author": "Kieran Hall <kieran@dusk.network>",
+  "type": "module",
   "files": [],
   "workspaces": [
     "packages/**",
@@ -91,8 +92,7 @@
   ],
   "jest": {
     "moduleDirectories": [
-      "node_modules",
-      "packages"
+      "node_modules"
     ],
     "moduleFileExtensions": [
       "js",
@@ -122,6 +122,9 @@
     }
   },
   "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
     "@changesets/cli": "^2.17.0",
     "@commitlint/cli": "^13.1.0",
     "@dusk-network/eslint-config": "0.0.1",
