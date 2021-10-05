@@ -24,10 +24,8 @@
 </script>
 
 <div class="{$$props.class || ''} duk-search-list">
-  <Control width="full">
-    <Button slot="buttonPostfix" on:click="{onClick}">
-      <Icon name="magnify" size="sm" />
-    </Button>
+  <Control width="full"
+    ><Button slot="buttonPostfix" on:click="{onClick}"><Icon name="magnify" size="sm" /></Button>
     <TextField placeholder="Search" bind:value="{searchValue}" />
   </Control>
   <slot />

@@ -1,7 +1,10 @@
-// import "@testing-library/jest-dom/extend-expect";
-// import { render } from "@testing-library/svelte";
+/**
+ * @jest-environment jsdom
+ */
+import "@testing-library/jest-dom";
+import { render } from "@testing-library/svelte";
 // import { Basic } from "./Card.stories";
-// import Card from "./storybook-views/Default.svelte";
+import Card from "./Card.svelte";
 
 // test("shows proper label", () => {
 //   const results = render(Card, { props: Basic.args });
@@ -11,3 +14,8 @@
 //     ),
 //   ).not.toThrow();
 // });
+
+test("it renders", () => {
+  const results = render(Card);
+  expect(() => results.toHaveClass("duk-card"));
+});
