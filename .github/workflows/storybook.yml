@@ -50,4 +50,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./storybook/storybook-static
           force_orphan: true
-          keep_files: true
+          #keep_files: true
