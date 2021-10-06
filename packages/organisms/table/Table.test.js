@@ -6,6 +6,7 @@ import { render } from "@testing-library/svelte";
 // import { Basic } from "./Table.stories";
 import Table from "./Table.svelte";
 import { data } from "../../../storybook/stories/organisms/table/data";
+import ResizeObserver from "../../../__mocks__/ResizeObserver";
 
 // test("shows proper label", () => {
 //   const results = render(Table, { props: Basic.args });
