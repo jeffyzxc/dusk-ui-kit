@@ -50,38 +50,7 @@ Basic.args = {
       },
     },
   }}"
-  argTypes="{meta('navbar/Navbar', {
-    title: {
-      table: {
-        disable: true,
-      },
-    },
-    apps: {
-      table: {
-        disable: true,
-      },
-    },
-    links: {
-      table: {
-        disable: true,
-      },
-    },
-    appName: {
-      table: {
-        disable: true,
-      },
-    },
-    id: {
-      table: {
-        disable: true,
-      },
-    },
-    darkMode: {
-      table: {
-        disable: true,
-      },
-    },
-  })}"
+  argTypes="{meta('organisms/navbar/Navbar', {})}"
 />
 
 <Story name="Standard navbar" args="{{}}" let:args>

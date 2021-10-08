@@ -24,18 +24,7 @@
       },
     },
   }}"
-  argTypes="{meta('table/Table', {
-    data: {
-      table: {
-        disable: true,
-      },
-    },
-    settings: {
-      table: {
-        disable: true,
-      },
-    },
-  })}"
+  argTypes="{meta('organisms/table/Table', {})}"
 />
 
 <Story name="Kitchen sink example" args="{{ data: data, settings: settings }}" let:args>

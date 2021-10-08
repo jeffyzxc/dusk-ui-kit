@@ -17,22 +17,17 @@
       },
     },
   }}"
-  argTypes="{meta('mnemonic/Mnemonic', {
+  argTypes="{meta('molecules/mnemonic/Mnemonic', {
     onComplete: {
       action: 'onComplete',
-      table: {
-        disable: true,
-      },
     },
     onPassed: {
       action: 'onPassed',
-      table: {
-        disable: true,
-      },
     },
     type: {
-      table: {
-        disable: true,
+      control: {
+        type: 'radio',
+        options: Object.values(types.MNEMONIC),
       },
     },
   })}"

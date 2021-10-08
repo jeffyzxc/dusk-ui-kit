@@ -33,12 +33,12 @@
   /**
    * Used as a switch when the Toggle is clicked.
    */
-  export let value;
+  export let value = false;
 
   /**
    * Used to bind the Toggle to a group.
    */
-  export let group;
+  export let group = false;
 
   /**
    * Sets the `disabled` attribute on the Toggle when true.

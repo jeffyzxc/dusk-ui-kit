@@ -17,17 +17,17 @@
   /**
    * Sets the data used by Pagination.
    */
-  export let items;
+  export let items = [];
 
   /**
    * Sets the number of items per page.
    */
-  export let itemsPerPage;
+  export let itemsPerPage = 10;
 
   /**
    * Sets the page number og Pagination
    */
-  export let pageNumber;
+  export let pageNumber = 1;
 
   const dispatch = createEventDispatcher();
   const context = getContext("DUK:pagination:context");

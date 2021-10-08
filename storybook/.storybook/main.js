@@ -26,10 +26,8 @@ module.exports = {
         cssPath: "./node_modules/@dusk-network/styles/tailwind.css",
       }),
     );
-
     config.plugins.push(virtualMetaPlugin());
-
-    config.resolve.dedupe = ["@storybook/client-api"]; // 🔧 Fix for
+    config.resolve.dedupe = ["@storybook/client-api"]; // 🔧
 
     return config;
   },

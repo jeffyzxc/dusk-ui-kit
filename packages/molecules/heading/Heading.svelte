@@ -12,7 +12,7 @@
   export let size = sizes.HEADING.DEFAULT;
 
   /**
-   * Sets the variant of the Button.
+   * Sets the variant of the Heading.
    * @type { "success" | "warning" | "danger" }
    */
   export let variant = variants.HEADING.DEFAULT;

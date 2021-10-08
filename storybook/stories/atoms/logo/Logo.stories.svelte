@@ -16,7 +16,7 @@
       },
     },
   }}"
-  argTypes="{meta('logo/Logo', {})}"
+  argTypes="{meta('atoms/logo/Logo', {})}"
 />
 
 <Story name="Basic logo with no context" args="{{}}" let:args>

@@ -16,21 +16,11 @@
     },
   }}"
   component="{ProgressBar}"
-  argTypes="{meta('progress-bar/ProgressBar', {
+  argTypes="{meta('atoms/progress-bar/ProgressBar', {
     variant: {
       options: Object.values(variants.PROGRESS_BAR),
       control: {
         type: 'select',
-      },
-    },
-    step: {
-      control: {
-        type: 'number',
-      },
-    },
-    steps: {
-      control: {
-        type: 'number',
       },
     },
   })}"

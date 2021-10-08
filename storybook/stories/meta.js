@@ -13,9 +13,9 @@ function getControlType(type) {
   return controls[type] || "text";
 }
 
-export default (component, settings = {}) => {
-  const [category, filename] = component.split("/");
-  const doc = metadata[category][filename];
+export default (path, settings = {}) => {
+  const [group, component, filename] = path.split("/");
+  const doc = metadata[group][component][filename];
   const props = {};
   for (const [name, prop] of Object.entries(doc.props)) {
     let type;

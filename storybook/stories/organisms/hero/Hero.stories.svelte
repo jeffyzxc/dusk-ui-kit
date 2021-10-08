@@ -20,7 +20,7 @@
       },
     },
   }}"
-  argTypes="{meta('hero/Hero', {
+  argTypes="{meta('organisms/hero/Hero', {
     layout: {
       table: {
         disabled: true,

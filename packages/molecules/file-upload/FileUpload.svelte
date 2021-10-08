@@ -1,4 +1,5 @@
 <script>
+  //TODO Use ES6 syntax more effectively
   import { getContext, createEventDispatcher } from "svelte";
   import contexts from "@dusk-network/helpers/contexts.js";
   import RichText from "@dusk-network/rich-text/RichText.svelte";
@@ -7,13 +8,14 @@
 
   /**
    * Sets the `id` of the FileUpload if set, otherwise the ID is generated.
+   * @type {string}
    */
   export let id = "__DUK-file-upload" + Math.random().toString(36);
 
   /**
    * Sets the `name` attribute on the File Upload.
    */
-  export let name;
+  export let name = "";
 
   /**
    * Sets the uploaded state of the File Upload, must be initialized as false.
@@ -34,6 +36,7 @@
     isFileLoaded = true;
     dispatch("inputFile", fields);
   }
+
   function inputFile(e) {
     fields.file = e.target.files;
     isFileLoaded = true;

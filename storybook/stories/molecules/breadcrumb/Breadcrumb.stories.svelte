@@ -16,27 +16,9 @@
       },
     },
   }}"
-  argTypes="{meta('breadcrumb/Breadcrumb', {
+  argTypes="{meta('molecules/breadcrumb/Breadcrumb', {
     onExit: {
       action: 'onExit',
-      table: {
-        disable: true,
-      },
-    },
-    href: {
-      table: {
-        disable: true,
-      },
-    },
-    id: {
-      table: {
-        disable: true,
-      },
-    },
-    modal: {
-      table: {
-        disable: true,
-      },
     },
   })}"
 />

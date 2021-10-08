@@ -16,16 +16,11 @@
     },
   }}"
   component="{LoadingIndicator}"
-  argTypes="{meta('loading-indicator/LoadingIndicator', {
+  argTypes="{meta('atoms/loading-indicator/LoadingIndicator', {
     variant: {
       options: Object.values(variants.LOADING_INDICATOR),
       control: {
         type: 'select',
-      },
-    },
-    duration: {
-      control: {
-        type: 'text',
       },
     },
   })}"

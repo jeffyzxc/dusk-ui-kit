@@ -7,8 +7,9 @@
 
   /**
    * Sets value to prepopulate the Text Field.
+   * @type {string}
    */
-  export let value = null;
+  export let value = "";
 
   /**
    * Sets the Text Field to be disabled when true.
@@ -38,8 +39,9 @@
 
   /**
    * Sets the Text Field name.
+   * @type {string}
    */
-  export let name;
+  export let name = "";
 
   /**
    * Sets the Text Field as focused when true.

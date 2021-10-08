@@ -22,7 +22,7 @@
   args="{{
     value: true,
   }}"
-  argTypes="{meta('alert/Alert', {
+  argTypes="{meta('molecules/alert/Alert', {
     onClick: {
       action: 'onClick',
       table: {
@@ -31,29 +31,11 @@
     },
     onMouseover: {
       action: 'onMouseover',
-      table: {
-        disable: true,
-      },
     },
     variant: {
       control: {
         type: 'select',
         options: Object.values(variants.ALERT),
-      },
-    },
-    dismissable: {
-      table: {
-        disable: true,
-      },
-    },
-    id: {
-      table: {
-        disable: true,
-      },
-    },
-    modal: {
-      table: {
-        disable: true,
       },
     },
   })}"

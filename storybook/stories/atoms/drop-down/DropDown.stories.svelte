@@ -2,6 +2,8 @@
   import { Meta, Story } from "@storybook/addon-svelte-csf";
   import DropDown from "@dusk-network/drop-down";
   import meta from "../../meta.js";
+
+  // console.log(meta('atoms/drop-down/DropDown'));
 </script>
 
 <Meta
@@ -15,33 +17,9 @@
     },
   }}"
   component="{DropDown}"
-  argTypes="{meta('drop-down/DropDown', {
+  argTypes="{meta('atoms/drop-down/DropDown', {
     onSelect: {
       action: 'onSelect',
-      table: {
-        disable: true,
-      },
-    },
-    options: {
-      control: {
-        type: 'object',
-      },
-    },
-    selectedIndex: {
-      name: 'selected index',
-      control: {
-        type: 'number',
-      },
-    },
-    ref: {
-      table: {
-        disable: true,
-      },
-    },
-    dropUp: {
-      table: {
-        disable: true,
-      },
     },
   })}"
 />
@@ -59,5 +37,9 @@
   args="{{ dropUp: true, options: ['option 1', 'option 2', 'option 3', 'option 4', 'option 5'] }}"
   let:args
 >
+  <DropDown {...args} on:select="{args.onSelect}" />
+</Story>
+
+<Story name="No options" args="{{ options: [] }}" let:args>
   <DropDown {...args} on:select="{args.onSelect}" />
 </Story>

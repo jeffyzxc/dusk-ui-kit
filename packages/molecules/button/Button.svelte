@@ -8,6 +8,7 @@
 
   /**
    * Sets the `id` of the Button if set, otherwise the ID is generated.
+   * @type {string}
    */
   export let id = "__DUK-button" + Math.random().toString(36);
 

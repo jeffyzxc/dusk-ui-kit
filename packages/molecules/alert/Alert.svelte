@@ -9,10 +9,11 @@
   /**
    * Used to display the Alert when true.
    */
-  export let value;
+  export let value = false;
 
   /**
    * Sets the `id` of the Alert if set, otherwise the ID is generated.
+   * @type {string}
    */
   export let id = "__DUK-alert-" + Math.random().toString(36);
 

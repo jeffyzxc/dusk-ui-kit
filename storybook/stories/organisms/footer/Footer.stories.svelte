@@ -284,20 +284,11 @@ Basic.args = {
       },
     },
   }}"
-  argTypes="{meta('footer/Footer', {
-    social: {
-      table: {
-        disable: true,
-      },
-    },
-    categories: {
-      table: {
-        disable: true,
-      },
-    },
+  argTypes="{meta('organisms/footer/Footer', {
     type: {
-      table: {
-        disable: true,
+      control: {
+        type: 'radio',
+        options: Object.values(types.FOOTER),
       },
     },
   })}"
@@ -307,10 +298,11 @@ Basic.args = {
   name="Minimal footer"
   args="{{
     type: types.FOOTER.MINIMAL,
+    social: social,
   }}"
   let:args
 >
-  <Footer type="{args.type}" social="{args.social}" categories="{args.categories}" />
+  <Footer type="{args.type}" social="{args.social}" />
 </Story>
 
 <Story

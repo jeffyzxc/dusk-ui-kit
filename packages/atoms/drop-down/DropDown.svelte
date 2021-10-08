@@ -8,7 +8,7 @@
   /**
    * Used as an array to hold the dropdown options
    */
-  export let options;
+  export let options = [];
 
   /**
    * Used to indicate the selected option
@@ -51,7 +51,7 @@
         <Icon name="menu-down-outline" />
       </span>
     </button>
-    {#if isOpen}
+    {#if isOpen && options}
       <div class="duk-drop-down__options">
         <ul
           tabindex="-1"

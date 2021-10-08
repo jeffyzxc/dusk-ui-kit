@@ -18,7 +18,7 @@
       },
     },
   }}"
-  argTypes="{meta('disclaimer-list/DisclaimerList', {})}"
+  argTypes="{meta('molecules/disclaimer-list/DisclaimerList', {})}"
 />
 
 <Story name="Default" args="{{}}" let:args>

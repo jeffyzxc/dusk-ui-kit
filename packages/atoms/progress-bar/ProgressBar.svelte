@@ -12,13 +12,16 @@
 
   /**
    * Sets the number of steps the progress bar will have.
+   * @type {!number}
    */
-  export let steps;
+  export let steps = 2;
 
   /**
    * Sets the initial step for the progress bar when rendered.
+   * @type {!number}
    */
-  export let step;
+  export let step = 1;
+
   $: styles = (step * 100) / steps;
 
   const context = getContext("DUK:progress-bar:context");

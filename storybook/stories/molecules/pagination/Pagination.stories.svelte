@@ -19,43 +19,7 @@
       },
     },
   }}"
-  argTypes="{meta('pagination/Pagination', {
-    ref: {
-      table: {
-        disable: true,
-      },
-    },
-    orientation: {
-      table: {
-        disable: true,
-      },
-    },
-    id: {
-      table: {
-        disable: true,
-      },
-    },
-    name: {
-      table: {
-        disable: true,
-      },
-    },
-    items: {
-      table: {
-        disable: true,
-      },
-    },
-    itemsPerPage: {
-      table: {
-        disable: true,
-      },
-    },
-    pageNumber: {
-      table: {
-        disable: true,
-      },
-    },
-  })}"
+  argTypes="{meta('molecules/pagination/Pagination', {})}"
 />
 
 <Story

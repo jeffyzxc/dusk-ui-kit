@@ -3,11 +3,15 @@
   import Newsletter from "./menu/Newsletter.svelte";
 
   export let categories;
+
+  console.log(categories);
 </script>
 
 <div class="duk-footer__maximal" {...$$restProps}>
-  {#each categories as category}
-    <CategoryMenu category="{category}" />
-  {/each}
+  {#if categories}
+    {#each categories as category}
+      <CategoryMenu category="{category}" />
+    {/each}
+  {/if}
   <Newsletter />
 </div>

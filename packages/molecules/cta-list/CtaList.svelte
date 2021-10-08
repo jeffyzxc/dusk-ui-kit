@@ -1,4 +1,6 @@
 <script>
+  // FIXME numerical types are unclear.  Use helper for constants.
+  // TODO CTALIST needs to be renamed to CTA_LIST.
   import variants from "@dusk-network/helpers/variants.js";
   import "./styles.css";
 

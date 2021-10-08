@@ -16,23 +16,7 @@
       },
     },
   }}"
-  argTypes="{meta('menu/Menu', {
-    orientation: {
-      table: {
-        disable: true,
-      },
-    },
-    id: {
-      table: {
-        disable: true,
-      },
-    },
-    name: {
-      table: {
-        disable: true,
-      },
-    },
-  })}"
+  argTypes="{meta('molecules/menu/Menu', {})}"
 />
 
 <Story

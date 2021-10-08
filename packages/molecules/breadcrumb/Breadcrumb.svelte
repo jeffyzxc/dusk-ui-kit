@@ -8,7 +8,7 @@
   /**
    * Renders the Breadcrumb as an `a` tag when set.
    */
-  export let href;
+  export let href = "";
 
   const context = getContext("DUK:breadcrumb:context");
   const dispatch = createEventDispatcher();

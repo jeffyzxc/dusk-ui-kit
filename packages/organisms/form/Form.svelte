@@ -6,6 +6,7 @@
 
   /**
    * Sets the function used for handling the submit event
+   * @type {function}
    */
   export let submitHandler;
 

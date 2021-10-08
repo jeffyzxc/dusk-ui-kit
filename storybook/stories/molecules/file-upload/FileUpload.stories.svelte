@@ -49,12 +49,9 @@
       },
     },
   }}"
-  argTypes="{meta('file-upload/FileUpload', {
+  argTypes="{meta('molecules/file-upload/FileUpload', {
     onInputFile: {
       action: 'onInputFile',
-      table: {
-        disabled: true,
-      },
     },
   })}"
 />

@@ -16,54 +16,30 @@
     },
   }}"
   component="{TextField}"
-  argTypes="{meta('text-field/TextField', {
+  argTypes="{meta('atoms/text-field/TextField', {
     onBlur: {
       action: 'onBlur',
-      table: {
-        disable: true,
-      },
     },
     onChange: {
       action: 'onChange',
-      table: {
-        disable: true,
-      },
     },
     onClick: {
       action: 'onClick',
-      table: {
-        disable: true,
-      },
     },
     onFocus: {
       action: 'onFocus',
-      table: {
-        disable: true,
-      },
     },
     onInput: {
       action: 'onInput',
-      table: {
-        disable: true,
-      },
     },
     onKeydown: {
       action: 'onKeydown',
-      table: {
-        disable: true,
-      },
     },
     onKeyup: {
       action: 'onKeyup',
-      table: {
-        disable: true,
-      },
     },
     onKeypress: {
       action: 'onKeypress',
-      table: {
-        disable: true,
-      },
     },
     state: {
       options: Object.values(states.TEXT_FIELD),
@@ -75,26 +51,6 @@
       options: Object.values(types.TEXT_FIELD),
       control: {
         type: 'radio',
-      },
-    },
-    value: {
-      table: {
-        disable: true,
-      },
-    },
-    id: {
-      table: {
-        disable: true,
-      },
-    },
-    name: {
-      table: {
-        disable: true,
-      },
-    },
-    multiline: {
-      table: {
-        disable: true,
       },
     },
   })}"

@@ -6,13 +6,13 @@
   import "./styles.css";
 
   /**
-   * Sets the variant of the Button.
+   * Sets the variant of the Card.
    * @type {"brand" | "cta" | "info" | "success" | "warning" | "danger" }
    */
   export let variant = variants.CARD.DEFAULT;
 
   /**
-   * Sets the state of the Button.
+   * Sets the state of the Card. Only works with default variant.
    * @type { "passed" | "error" | "danger" }
    */
   export let state = states.CARD.DEFAULT;
@@ -20,7 +20,7 @@
   /**
    * Renders the Card as an `a` tag when set.
    */
-  export let href = null;
+  export let href = "";
 
   /**
    * Sets the `disabled` attribute on the Card when true.

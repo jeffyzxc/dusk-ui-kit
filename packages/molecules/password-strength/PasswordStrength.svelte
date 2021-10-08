@@ -9,7 +9,7 @@
   /**
    * Sets the password value used by PasswordStrengh.
    */
-  export let password;
+  export let password = "";
 
   let strength = 0;
   let variant = variants.PROGRESS_BAR.DANGER;

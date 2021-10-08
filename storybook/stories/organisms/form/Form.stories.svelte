@@ -86,7 +86,7 @@
     },
   }}"
   component="{Control}"
-  argTypes="{meta('form/Form', {
+  argTypes="{meta('organisms/form/Form', {
     type: {
       control: {
         type: 'radio',

@@ -16,13 +16,7 @@
       },
     },
   }}"
-  argTypes="{meta('accordion/Accordion', {
-    multiselect: {
-      table: {
-        disable: false,
-      },
-    },
-  })}"
+  argTypes="{meta('organisms/accordion/Accordion', {})}"
 />
 
 <Story name="Standard accordion" args="{{}}" let:args>

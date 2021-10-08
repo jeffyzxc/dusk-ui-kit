@@ -18,7 +18,7 @@
       },
     },
   }}"
-  argTypes="{meta('heading/Heading', {
+  argTypes="{meta('molecules/heading/Heading', {
     size: {
       control: {
         type: 'radio',

@@ -15,13 +15,7 @@
       },
     },
   }}"
-  argTypes="{meta('password-strength/PasswordStrength', {
-    password: {
-      control: {
-        type: 'text',
-      },
-    },
-  })}"
+  argTypes="{meta('molecules/password-strength/PasswordStrength', {})}"
 />
 
 <Story name="Standard password strength meter with no context" args="{{ password: '' }}" let:args>

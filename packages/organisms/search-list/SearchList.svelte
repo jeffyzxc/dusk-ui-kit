@@ -7,7 +7,11 @@
   import Icon from "@dusk-network/icon";
   import "./styles.css";
 
+  /**
+   * Provides the dataset to be searched over.
+   */
   export let data = [];
+
   let searchValue;
 
   onMount(() => {
@@ -18,9 +22,9 @@
     store.reset();
   });
 
-  function onClick() {
+  const onClick = () => {
     searchTerm.set(searchValue);
-  }
+  };
 </script>
 
 <div class="{$$props.class || ''} duk-search-list">

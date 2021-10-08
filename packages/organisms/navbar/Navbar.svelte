@@ -11,25 +11,26 @@
   /**
    * Sets the title of application.
    */
-  export let title;
+  export let title = "";
 
   /**
-   * Used to display an Apps menu when true.
+   * Used to display an app menu unless `$$slots.apps` is passed.
    */
-  export let apps;
+  export let apps = [];
 
   /**
-   * Used to display a menu with links when true.
+   * Used to display a menu with links unless `$$slots.links` is passed.
    */
-  export let links;
+  export let links = [];
 
   /**
    * Sets the application name.
    */
-  export let appName;
+  export let appName = "";
 
   /**
    * Sets the `id` of the Navbar if set, otherwise the ID is generated.
+   * @type {string}
    */
   export let id = "__DUK-navbar" + Math.random().toString(36);
 

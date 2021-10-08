@@ -17,7 +17,7 @@
     },
   }}"
   component="{Icon}"
-  argTypes="{meta('icon/Icon', {
+  argTypes="{meta('atoms/icon/Icon', {
     name: {
       options: Object.values(icons),
       control: {
@@ -34,21 +34,6 @@
       options: Object.values(sizes.ICON),
       control: {
         type: 'radio',
-      },
-    },
-    tooltip: {
-      control: {
-        type: 'text',
-      },
-    },
-    collection: {
-      table: {
-        disable: true,
-      },
-    },
-    viewbox: {
-      table: {
-        disable: true,
       },
     },
   })}"

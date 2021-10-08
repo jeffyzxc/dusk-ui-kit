@@ -12,13 +12,14 @@
 
   /**
    * Sets the `id` of the Menu if set, otherwise the ID is generated.
+   * @type {string}
    */
   export let id = "__DUK-menu" + Math.random().toString(36);
 
   /**
    * Sets the `name` attribute on the Menu.
    */
-  export let name;
+  export let name = "";
 
   setContext("DUK:drop-down:context", contexts.DROP_DOWN.MENU);
 

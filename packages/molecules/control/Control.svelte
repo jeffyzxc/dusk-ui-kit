@@ -21,6 +21,7 @@
 
   /**
    * Sets the `id` of the Control if set, otherwise the ID is generated.
+   * @type {string}
    */
   export let id = "__DUK-control" + Math.random().toString(36);
 
@@ -43,7 +44,7 @@
   /**
    * Set the `name` attribute on the Control when used.
    */
-  export let name;
+  export let name = "";
 
   /**
    * Set the Control as part of a group when true.

@@ -1,4 +1,5 @@
 <script>
+  //FIXME multiselect is not working
   import { setContext, getContext } from "svelte";
   import contexts from "@dusk-network/helpers/contexts.js";
   import { items } from "./stores/items.js";

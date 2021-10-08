@@ -17,7 +17,7 @@
       },
     },
   }}"
-  argTypes="{meta('cta-list/CtaList', {
+  argTypes="{meta('molecules/cta-list/CtaList', {
     variant: {
       control: {
         type: 'select',

@@ -4,19 +4,20 @@
 
   /**
    * Sets the `id` of the Cookie Banner if set, otherwise the ID is generated.
+   * @type {string}
    */
   export let id = "__DUK-cookie-banner" + Math.random().toString(36);
 
   /**
    * Sets the cookie name for the Cookie Banner.
    */
-  export let cookie;
+  export let cookie = "DUSK-GDPR";
 
   /**
    * Sets the configuration object used by the Cookie Banner.
    * Which contains the cookie options and their description and the domain and path where the Cookie Banner resides.
    */
-  export let config;
+  export let config = {};
 
   /**
    * Sets the desrciption text of the Cookie Banner.

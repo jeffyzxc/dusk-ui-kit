@@ -20,7 +20,7 @@
       },
     },
   }}"
-  argTypes="{meta('wizard/Wizard', {})}"
+  argTypes="{meta('organisms/wizard/Wizard', {})}"
 />
 
 <Story name="Kitchen Skin" args="{{}}" let:args>

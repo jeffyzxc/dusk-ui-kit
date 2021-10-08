@@ -16,53 +16,17 @@
     },
   }}"
   component="{Toggle}"
-  argTypes="{meta('toggle/Toggle', {
+  argTypes="{meta('atoms/toggle/Toggle', {
     onChange: {
       action: 'onChange',
-      table: {
-        disable: true,
-      },
     },
     onClick: {
       action: 'onClick',
-      table: {
-        disable: true,
-      },
     },
     variant: {
       options: Object.values(variants.TOGGLE),
       control: {
         type: 'select',
-      },
-    },
-    name: {
-      table: {
-        disable: true,
-      },
-    },
-    // checked: {
-    //   table: {
-    //     disable: true,
-    //   },
-    // },
-    selected: {
-      table: {
-        disable: true,
-      },
-    },
-    value: {
-      table: {
-        disable: true,
-      },
-    },
-    type: {
-      table: {
-        disable: true,
-      },
-    },
-    id: {
-      table: {
-        disable: true,
       },
     },
   })}"

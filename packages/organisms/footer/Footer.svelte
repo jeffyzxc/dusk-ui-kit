@@ -20,6 +20,8 @@
    */
   export let categories;
 
+  console.log(categories);
+
   let today = new Date();
   let year = today.getFullYear();
   const copyright = `© 2018 - ${year} Dusk Network B.V. All Rights Reserved.`;

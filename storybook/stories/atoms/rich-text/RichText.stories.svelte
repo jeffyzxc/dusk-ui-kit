@@ -18,21 +18,11 @@
     },
   }}"
   component="{RichText}"
-  argTypes="{meta('rich-text/RichText', {
+  argTypes="{meta('atoms/rich-text/RichText', {
     size: {
       options: Object.values(sizes.RICH_TEXT),
       control: {
         type: 'radio',
-      },
-    },
-    markdown: {
-      table: {
-        disable: true,
-      },
-    },
-    swatches: {
-      table: {
-        disable: true,
       },
     },
   })}"

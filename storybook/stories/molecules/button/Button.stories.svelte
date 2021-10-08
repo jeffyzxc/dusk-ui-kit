@@ -18,7 +18,7 @@
     },
   }}"
   component="{Button}"
-  argTypes="{meta('button/Button', {
+  argTypes="{meta('molecules/button/Button', {
     variant: {
       control: {
         type: 'select',

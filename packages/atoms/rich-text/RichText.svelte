@@ -5,6 +5,10 @@
   import sizes from "@dusk-network/helpers/sizes.js";
   import "./styles.css";
 
+  /**
+   * If set, this string will be parsed as Markdown and rendered as HTML.
+   * @type {?string}
+   */
   export let markdown;
 
   /**
@@ -26,7 +30,7 @@
   class:duk-rich-text--card="{context === contexts.RICH_TEXT.CARD}"
 >
   {#if markdown}
-    {@html marked(markdown)}
+    {@html marked.default(markdown)}
   {:else}
     <slot />
   {/if}

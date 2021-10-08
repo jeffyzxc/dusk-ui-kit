@@ -26,18 +26,12 @@
     message: 'This is a message.',
     label: 'Control label',
   }}"
-  argTypes="{meta('control/Control', {
+  argTypes="{meta('molecules/control/Control', {
     onClick: {
       action: 'onClick',
-      table: {
-        disable: true,
-      },
     },
     onMouseover: {
       action: 'onMouseover',
-      table: {
-        disable: true,
-      },
     },
     state: {
       control: {
@@ -49,36 +43,6 @@
       control: {
         type: 'radio',
         options: Object.values(types.CONTROL),
-      },
-    },
-    id: {
-      table: {
-        disable: true,
-      },
-    },
-    message: {
-      control: {
-        type: 'text',
-      },
-    },
-    label: {
-      control: {
-        type: 'text',
-      },
-    },
-    checkbox: {
-      table: {
-        disable: true,
-      },
-    },
-    radio: {
-      table: {
-        disable: true,
-      },
-    },
-    dropdown: {
-      table: {
-        disable: true,
       },
     },
   })}"

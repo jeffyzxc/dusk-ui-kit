@@ -21,7 +21,7 @@
       },
     },
   }}"
-  argTypes="{meta('card/Card', {
+  argTypes="{meta('organisms/card/Card', {
     variant: {
       options: Object.values(variants.CARD),
       control: {
@@ -32,11 +32,6 @@
       options: Object.values(states.CARD),
       control: {
         type: 'select',
-      },
-    },
-    href: {
-      control: {
-        type: 'text',
       },
     },
   })}"
