@@ -26,10 +26,17 @@ module.exports = {
         cssPath: "./node_modules/@dusk-network/styles/tailwind.css",
       }),
     );
-
     config.plugins.push(virtualMetaPlugin());
 
     config.resolve.dedupe = ["@storybook/client-api"]; // 🔧 Fix for
+
+    config.resolve = {
+      ...config.resolve,
+      alias: {
+        ...config.resolve.alias,
+        path: require.resolve("path-browserify"),
+      },
+    };
 
     return config;
   },
@@ -52,6 +59,7 @@ module.exports = {
     "@storybook/addon-a11y",
     "@storybook/addon-svelte-csf",
     "storybook-dark-mode",
+    "@storybook/addon-jest",
   ],
   features: {
     postcss: false,

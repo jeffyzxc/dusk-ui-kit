@@ -11,7 +11,7 @@ import Button from "./Button.svelte";
 //   expect(() => results.getByText("Hi I'm a Button")).not.toThrow();
 // });
 
-test("it renders", () => {
+test("Component renders", () => {
   const results = render(Button);
   expect(() => results.toHaveClass("duk-button"));
 });

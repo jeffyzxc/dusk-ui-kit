@@ -34,6 +34,7 @@
     "lint:js:fix": "pnpm lint:js -- --fix",
     "test": "echo \"Work in progress...\" && exit",
     "test:watch": "jest --watchAll",
+    "test:generate-output": "jest --json --outputFile=.jest-test-results.json || true",
     "version:changeset": "changeset version  && pnpm i --lockfile-only",
     "version:ci": "pnpm version:changeset",
     "version:repo": "pnpm update:workspace",

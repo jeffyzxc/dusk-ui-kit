@@ -2,6 +2,8 @@
   // TODO Investigate use of states on DropDown, and Toggle
   import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { types } from "@dusk-network/helpers";
+  import results from "../../../../.jest-test-results.json";
+  import { withTests } from "@storybook/addon-jest";
   import Button from "@dusk-network/button";
   import PasswordStrength from "@dusk-network/password-strength";
   import Control from "@dusk-network/control";
@@ -77,6 +79,7 @@
 
 <Meta
   title="Components/Organisms/Form"
+  decorators="{[withTests({ results })]}"
   parameters="{{
     layout: 'centered',
     docs: {
@@ -84,6 +87,7 @@
         type: 'code',
       },
     },
+    jest: ['packages/organisms/form/Form.test.js'],
   }}"
   component="{Control}"
   argTypes="{meta('form/Form', {

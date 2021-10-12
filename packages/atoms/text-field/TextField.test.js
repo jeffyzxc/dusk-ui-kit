@@ -11,7 +11,7 @@ import TextField from "./TextField.svelte";
 //   expect(() => results.getByPlaceholderText("This is text field")).not.toThrow();
 // });
 
-test("it renders", () => {
+test("Component renders", () => {
   const results = render(TextField);
   expect(() => results.toHaveClass("duk-text-field"));
 });

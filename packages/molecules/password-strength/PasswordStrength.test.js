@@ -11,7 +11,7 @@ import PasswordStrength from "./PasswordStrength.svelte";
 //   expect(() => results.getByText("Hi I'm a PasswordStrength")).not.toThrow();
 // });
 
-test("it renders", () => {
+test("Component renders", () => {
   const results = render(PasswordStrength);
   expect(() => results.toHaveClass("duk-password-strength"));
 });

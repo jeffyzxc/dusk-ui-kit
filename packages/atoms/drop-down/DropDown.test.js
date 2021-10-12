@@ -5,7 +5,7 @@ import "@testing-library/jest-dom";
 import { render } from "@testing-library/svelte";
 import DropDown from "./DropDown.svelte";
 
-test("it renders", () => {
+test("Component renders", () => {
   const results = render(DropDown, {
     props: { options: ["option 1", "option 2", "option 3", "option 4", "option 5"] },
   });

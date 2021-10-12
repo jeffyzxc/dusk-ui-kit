@@ -17,7 +17,7 @@ import Navbar from "./Navbar.svelte";
 //   () => results.getAllByRole(Navbar).toHaveClass;
 // });
 
-test("it renders", () => {
+test("Component renders", () => {
   const results = render(Navbar, {
     props: {
       apps: [],

@@ -10,7 +10,7 @@ import RichText from "./RichText.svelte";
 //   const results = render(RichText, { props: Basic.args });
 //   expect(() => results.getByText("This is an italic text")).not.toThrow();
 // });
-test("it renders", () => {
+test("Component renders", () => {
   const results = render(RichText);
   expect(() => results.toHaveClass("duk-rich-text"));
 });

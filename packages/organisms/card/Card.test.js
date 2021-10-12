@@ -15,7 +15,7 @@ import Card from "./Card.svelte";
 //   ).not.toThrow();
 // });
 
-test("it renders", () => {
+test("Component renders", () => {
   const results = render(Card);
   expect(() => results.toHaveClass("duk-card"));
 });

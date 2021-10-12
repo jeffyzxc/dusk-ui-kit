@@ -1,5 +1,7 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
+  import results from "../../../../.jest-test-results.json";
+  import { withTests } from "@storybook/addon-jest";
   import Pagination from "@dusk-network/pagination";
   import { data } from "./data.js";
   import { writable } from "svelte/store";
@@ -10,6 +12,7 @@
 
 <Meta
   title="Components/Molecules/Pagination"
+  decorators="{[withTests({ results })]}"
   component="{Pagination}"
   parameters="{{
     layout: 'centered',
@@ -18,6 +21,7 @@
         type: 'code',
       },
     },
+    jest: ['packages/molecules/pagination/Pagination.test.js'],
   }}"
   argTypes="{meta('pagination/Pagination', {
     ref: {

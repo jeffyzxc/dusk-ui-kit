@@ -12,7 +12,7 @@ import Menu from "./Menu.svelte";
 //   expect(() => results.getByText("Navigation item 1")).not.toThrow();
 // });
 
-test("it renders", () => {
+test("Component renders", () => {
   const results = render(Menu);
   expect(() => results.toHaveClass("duk-menu"));
 });

@@ -10,7 +10,7 @@ import ProgressBar from "./ProgressBar.svelte";
 //   const results = render(ProgressBar, { props: Basic.args });
 //   // expect(() => results.getByText("Hi I'm a Button")).not.toThrow();
 // });
-test("it renders", () => {
+test("Component renders", () => {
   const results = render(ProgressBar, {
     props: { steps: 3, step: 1 },
   });

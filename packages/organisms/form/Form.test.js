@@ -11,7 +11,7 @@ import Form from "./Form.svelte";
 //   const results = render(Form, { props: Basic.args });
 //   () => results.getAllByRole(Form).toHaveClass;
 // });
-test("it renders", () => {
+test("Component renders", () => {
   const results = render(Form);
   expect(() => results.toHaveClass("duk-form"));
 });

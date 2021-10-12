@@ -10,7 +10,7 @@ import Heading from "./Heading.svelte";
 //   const results = render(Heading, { props: Basic.args });
 //   expect(() => results.getByText("Hi I'm a Heading")).not.toThrow();
 // });
-test("it renders", () => {
+test("Component renders", () => {
   const results = render(Heading);
   expect(() => results.toHaveClass("duk-heading"));
 });

@@ -12,7 +12,7 @@ import ResizeObserver from "../../../__mocks__/ResizeObserver";
 //   const results = render(Table, { props: Basic.args });
 //   expect(() => results.getAllByText("Col 1 Head")).not.toThrow();
 // });
-test("it renders", () => {
+test("Component renders", () => {
   const results = render(Table, {
     props: {
       data: data,

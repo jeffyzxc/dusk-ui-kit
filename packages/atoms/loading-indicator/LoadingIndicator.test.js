@@ -11,7 +11,7 @@ import LoadingIndicator from "./LoadingIndicator.svelte";
 //   const results = render(LoadingIndicator, { props: Basic.args });
 //   () => results.getByRole(LoadingIndicator).toHaveClass;
 // });
-test("it renders", () => {
+test("Component renders", () => {
   const results = render(LoadingIndicator);
   expect(() => results.toHaveClass("duk-loading-indicator"));
 });

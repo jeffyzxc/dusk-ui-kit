@@ -31,7 +31,7 @@ import Toggle from "./Toggle.svelte";
 //   expect(secondBox).not.toBeChecked();
 // });
 
-test("it renders", () => {
+test("Component renders", () => {
   const results = render(Toggle);
   expect(() => results.toHaveClass("duk-toggle"));
 });

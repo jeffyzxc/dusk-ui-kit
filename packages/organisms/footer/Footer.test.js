@@ -11,7 +11,7 @@ import Footer from "./Footer.svelte";
 //   const results = render(Footer, { props: Basic.args });
 //   () => results.getAllByRole(Footer).toHaveClass();
 // });
-test("it renders", () => {
+test("Component renders", () => {
   const results = render(Footer);
   expect(() => results.toHaveClass("duk-footer"));
 });

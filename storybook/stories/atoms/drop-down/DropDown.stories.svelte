@@ -1,11 +1,14 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
+  import results from "../../../../.jest-test-results.json";
+  import { withTests } from "@storybook/addon-jest";
   import DropDown from "@dusk-network/drop-down";
   import meta from "../../meta.js";
 </script>
 
 <Meta
   title="Components/Atoms/Drop Down"
+  decorators="{[withTests({ results })]}"
   parameters="{{
     layout: 'centered',
     docs: {
@@ -13,6 +16,7 @@
         type: 'code',
       },
     },
+    jest: ['packages/atoms/drop-down/DropDown.test.js'],
   }}"
   component="{DropDown}"
   argTypes="{meta('drop-down/DropDown', {

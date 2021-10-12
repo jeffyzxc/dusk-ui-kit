@@ -11,7 +11,7 @@ import Alert from "./Alert.svelte";
 //   expect(() => results.getByText("This is an alert!")).not.toThrow();
 // });
 
-test("it renders", () => {
+test("Component renders", () => {
   const results = render(Alert, {
     prosp: { value: true },
   });

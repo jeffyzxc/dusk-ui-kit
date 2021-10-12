@@ -11,7 +11,7 @@ import Logo from "./Logo.svelte";
 //   const results = render(Logo, { props: Basic.args });
 //   () => results.getByRole(Logo).toHaveClass;
 // });
-test("it renders", () => {
+test("Component renders", () => {
   const results = render(Logo);
   expect(() => results.toHaveClass("duk-logo"));
 });

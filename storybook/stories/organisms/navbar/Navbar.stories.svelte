@@ -31,6 +31,8 @@ Basic.args = {
 }; -->
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
+  import results from "../../../../.jest-test-results.json";
+  import { withTests } from "@storybook/addon-jest";
   import Navbar from "@dusk-network/navbar";
   import DropDown from "@dusk-network/drop-down";
   import Logo from "@dusk-network/logo";
@@ -41,6 +43,7 @@ Basic.args = {
 
 <Meta
   title="Components/Organisms/Navbar"
+  decorators="{[withTests({ results })]}"
   component="{Navbar}"
   parameters="{{
     layout: 'fullscreen',
@@ -49,6 +52,7 @@ Basic.args = {
         type: 'code',
       },
     },
+    jest: ['packages/organisms/navbar/Navbar.test.js'],
   }}"
   argTypes="{meta('navbar/Navbar', {
     title: {

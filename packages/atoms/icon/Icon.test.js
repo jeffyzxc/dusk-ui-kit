@@ -11,7 +11,7 @@ import Icon from "./Icon.svelte";
 //   () => results.getByRole(Icon).toHaveClass;
 // });
 
-test("it renders", () => {
+test("Component renders", () => {
   const results = render(Icon, {
     props: { name: "dusk-ticker" },
   });

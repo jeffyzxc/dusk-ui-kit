@@ -12,7 +12,7 @@ import Control from "./Control.svelte";
 //   expect(() => results.getByPlaceholderText("I'm Control")).not.toThrow();
 // });
 
-test("it renders", () => {
+test("Component renders", () => {
   const results = render(Control);
   expect(() => results.toHaveClass("duk-control"));
 });

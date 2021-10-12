@@ -10,7 +10,7 @@ import Breadcrumb from "./Breadcrumb.svelte";
 //   const results = render(Breadcrumb, { props: Basic.args });
 //   expect(() => results.getByText("Hi I'm a Breadcrumb")).not.toThrow();
 // });
-test("it renders", () => {
+test("Component renders", () => {
   const results = render(Breadcrumb);
   expect(() => results.toHaveClass("duk-breadcrumb"));
 });

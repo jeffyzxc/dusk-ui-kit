@@ -10,7 +10,7 @@ import Hero from "./Hero.svelte";
 //   const results = render(Hero, { props: Basic.args });
 //   expect(() => results.getByText("Hi I'm a Hero")).not.toThrow();
 // });
-test("it renders", () => {
+test("Component renders", () => {
   const results = render(Hero);
   expect(() => results.toHaveClass("duk-hero"));
 });

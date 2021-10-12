@@ -11,7 +11,7 @@ import Mnemonic from "./Mnemonic.svelte";
 //   expect(() => results.getByText("Hi I'm a Mnemonic")).not.toThrow();
 // });
 
-test("it renders", () => {
+test("Component renders", () => {
   const results = render(Mnemonic);
   expect(() => results.toHaveClass("duk-mnemonic"));
 });
