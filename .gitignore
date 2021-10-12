@@ -12,3 +12,4 @@ node_modules/
 /meta/**/pnpm-lock.yaml
 /storybook/**/pnpm-lock.yaml
 .pnpm-debug.log
+.jest-test-results.json
