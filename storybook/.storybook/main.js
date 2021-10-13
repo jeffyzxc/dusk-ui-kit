@@ -28,6 +28,7 @@ module.exports = {
     );
     config.plugins.push(virtualMetaPlugin());
     config.resolve.dedupe = ["@storybook/client-api"]; // 🔧
+    config.publicDir = "assets";
 
     return config;
   },
