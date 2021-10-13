@@ -9,7 +9,7 @@
     @apply pr-3;
   }
 
-  &__input-wrapper {
+  &__controls-wrapper {
     @apply flex items-center;
   }
 

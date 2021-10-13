@@ -76,6 +76,7 @@
       });
     }
   };
+  console.log($$slots.buttonPrefix);
 </script>
 
 <div
@@ -90,6 +91,8 @@
   class:duk-control--half="{width === widths.CONTROL.HALF}"
   class:duk-control--quarter="{width === widths.CONTROL.QUARTER}"
   class:duk-control--group="{group}"
+  class:duk-control--with-prefix="{$$slots.buttonPrefix}"
+  class:duk-control--with-postfix="{$$slots.buttonPostfix}"
 >
   <div class="duk-control__wrapper">
     {#if group && label}
@@ -101,7 +104,11 @@
         {label}
       </label>
     {/if}
-    <slot id="{id}" state="{state}" />
+    <div class="duk-control__controls-wrapper">
+      <slot name="buttonPrefix" />
+      <slot id="{id}" state="{state}" />
+      <slot name="buttonPostfix" />
+    </div>
   </div>
   <Message
     id="{id}"
