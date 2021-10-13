@@ -1,12 +1,15 @@
 <script>
   // TODO Clean up content in template etc.
   import { Meta, Story } from "@storybook/addon-svelte-csf";
+  import results from "../../../../.jest-test-results.json";
+  import { withTests } from "@storybook/addon-jest";
   import Breadcrumb, { Item } from "@dusk-network/breadcrumb";
   import meta from "../../meta.js";
 </script>
 
 <Meta
   title="Components/Molecules/Breadcrumb"
+  decorators="{[withTests({ results })]}"
   component="{Breadcrumb}"
   parameters="{{
     layout: 'centered',
@@ -15,6 +18,7 @@
         type: 'code',
       },
     },
+    jest: ['packages/molecules/breadcrumb/Breadcrumb.test.js'],
   }}"
   argTypes="{meta('molecules/breadcrumb/Breadcrumb', {
     onExit: {

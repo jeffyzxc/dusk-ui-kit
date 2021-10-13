@@ -1,6 +1,8 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { sizes, variants } from "@dusk-network/helpers";
+  import results from "../../../../.jest-test-results.json";
+  import { withTests } from "@storybook/addon-jest";
   import Heading from "@dusk-network/heading";
   import Button from "@dusk-network/button";
   import Icon from "@dusk-network/icon";
@@ -9,6 +11,7 @@
 
 <Meta
   title="Components/Molecules/Heading"
+  decorators="{[withTests({ results })]}"
   component="{Heading}"
   parameters="{{
     layout: 'padded',
@@ -17,6 +20,7 @@
         type: 'code',
       },
     },
+    jest: ['packages/molecules/heading/Heading.test.js'],
   }}"
   argTypes="{meta('molecules/heading/Heading', {
     size: {

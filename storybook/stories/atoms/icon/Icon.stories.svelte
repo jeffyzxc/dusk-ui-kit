@@ -1,5 +1,7 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
+  import results from "../../../../.jest-test-results.json";
+  import { withTests } from "@storybook/addon-jest";
   import { variants, icons, sizes } from "@dusk-network/helpers";
   import Icon from "@dusk-network/icon";
   import meta from "../../meta.js";
@@ -8,6 +10,7 @@
 
 <Meta
   title="Components/Atoms/Icon"
+  decorators="{[withTests({ results })]}"
   parameters="{{
     layout: 'centered',
     docs: {
@@ -15,6 +18,7 @@
         type: 'code',
       },
     },
+    jest: ['packages/atoms/icon/Icon.test.js'],
   }}"
   component="{Icon}"
   argTypes="{meta('atoms/icon/Icon', {

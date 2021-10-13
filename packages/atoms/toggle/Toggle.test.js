@@ -1,7 +1,10 @@
-// import "@testing-library/jest-dom/extend-expect";
-// import { render, fireEvent } from "@testing-library/svelte";
+/**
+ * @jest-environment jsdom
+ */
+import "@testing-library/jest-dom";
+import { render, fireEvent } from "@testing-library/svelte";
 // import { Basic } from "./Toggle.stories";
-// import Checkbox from "./storybook-views/Default.svelte";
+import Toggle from "./Toggle.svelte";
 
 // test("shows proper placeholder", () => {
 //   const results = render(Checkbox, { props: Basic.args });
@@ -27,3 +30,8 @@
 //   expect(firstBox[0]).toBeChecked();
 //   expect(secondBox).not.toBeChecked();
 // });
+
+test("Component renders", () => {
+  const results = render(Toggle);
+  expect(() => results.toHaveClass("duk-toggle"));
+});

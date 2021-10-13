@@ -2,6 +2,8 @@
   // TODO Investigate use of states on DropDown, and Toggle
   import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { types, states } from "@dusk-network/helpers";
+  import results from "../../../../.jest-test-results.json";
+  import { withTests } from "@storybook/addon-jest";
   import Control from "@dusk-network/control";
   import TextField from "@dusk-network/text-field";
   import Toggle from "@dusk-network/toggle";
@@ -12,6 +14,7 @@
 
 <Meta
   title="Components/Molecules/Control"
+  decorators="{[withTests({ results })]}"
   parameters="{{
     layout: 'centered',
     docs: {
@@ -19,6 +22,7 @@
         type: 'code',
       },
     },
+    jest: ['packages/molecules/control/Control.test.js'],
   }}"
   component="{Control}"
   args="{{

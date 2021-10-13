@@ -1,12 +1,15 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
-  import { types, variants, icons } from "@dusk-network/helpers";
+  import { types, variants } from "@dusk-network/helpers";
+  import results from "../../../../.jest-test-results.json";
+  import { withTests } from "@storybook/addon-jest";
   import Toggle, { Group } from "@dusk-network/toggle";
   import meta from "../../meta.js";
 </script>
 
 <Meta
   title="Components/Atoms/Toggle"
+  decorators="{[withTests({ results })]}"
   parameters="{{
     layout: 'centered',
     docs: {
@@ -14,14 +17,21 @@
         type: 'code',
       },
     },
+    jest: ['packages/atoms/toggle/Toggle.test.js'],
   }}"
   component="{Toggle}"
-  argTypes="{meta('atoms/toggle/Toggle', {
+  argTypes="{meta('toggle/Toggle', {
     onChange: {
       action: 'onChange',
+      table: {
+        disable: true,
+      },
     },
     onClick: {
       action: 'onClick',
+      table: {
+        disable: true,
+      },
     },
     variant: {
       options: Object.values(variants.TOGGLE),
@@ -29,26 +39,40 @@
         type: 'select',
       },
     },
-    onIcon: {
-      options: Object.values(icons),
-      control: {
-        type: 'select',
+    name: {
+      table: {
+        disable: true,
       },
     },
-    offIcon: {
-      options: Object.values(icons),
-      control: {
-        type: 'select',
+    // checked: {
+    //   table: {
+    //     disable: true,
+    //   },
+    // },
+    selected: {
+      table: {
+        disable: true,
+      },
+    },
+    value: {
+      table: {
+        disable: true,
+      },
+    },
+    type: {
+      table: {
+        disable: true,
+      },
+    },
+    id: {
+      table: {
+        disable: true,
       },
     },
   })}"
 />
 
-<Story
-  name="Switch toggle"
-  args="{{ type: types.TOGGLE.SWITCH, onIcon: 'brightness-4', offIcon: 'brightness-5' }}"
-  let:args
->
+<Story name="Switch toggle" args="{{ type: types.TOGGLE.SWITCH }}" let:args>
   <Group>
     {#each Array(args.type === types.TOGGLE.BUTTON || args.type === types.TOGGLE.RADIO ? 5 : 1) as _, i}
       <Toggle
@@ -59,8 +83,6 @@
         id="tog_{i}"
         on:change="{args.onChange}"
         on:click="{args.onClick}"
-        onIcon="{args.onIcon}"
-        offIcon="{args.offIcon}"
       >
         Example {args.type}
       </Toggle>

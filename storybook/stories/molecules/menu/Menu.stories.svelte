@@ -1,12 +1,15 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { orientations } from "@dusk-network/helpers";
+  import results from "../../../../.jest-test-results.json";
+  import { withTests } from "@storybook/addon-jest";
   import Menu, { Item } from "@dusk-network/menu";
   import meta from "../../meta.js";
 </script>
 
 <Meta
   title="Components/Molecules/Menu"
+  decorators="{[withTests({ results })]}"
   component="{Menu}"
   parameters="{{
     layout: 'padded',
@@ -15,6 +18,7 @@
         type: 'code',
       },
     },
+    jest: ['packages/molecules/menu/Menu.test.js'],
   }}"
   argTypes="{meta('molecules/menu/Menu', {})}"
 />

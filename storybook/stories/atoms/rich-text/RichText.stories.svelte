@@ -1,6 +1,8 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { sizes } from "@dusk-network/helpers";
+  import results from "../../../../.jest-test-results.json";
+  import { withTests } from "@storybook/addon-jest";
   import RichText from "@dusk-network/rich-text";
   import Html from "./Html.svelte";
   import Swatches from "./Swatches.svelte";
@@ -9,6 +11,7 @@
 
 <Meta
   title="Components/Atoms/Rich Text"
+  decorators="{[withTests({ results })]}"
   parameters="{{
     layout: 'padded',
     docs: {
@@ -16,6 +19,7 @@
         type: 'code',
       },
     },
+    jest: ['packages/atoms/rich-text/RichText.test.js'],
   }}"
   component="{RichText}"
   argTypes="{meta('atoms/rich-text/RichText', {

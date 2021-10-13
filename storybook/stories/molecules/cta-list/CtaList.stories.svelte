@@ -1,6 +1,8 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { variants } from "@dusk-network/helpers";
+  import results from "../../../../.jest-test-results.json";
+  import { withTests } from "@storybook/addon-jest";
   import CtaList, { Item } from "@dusk-network/cta-list";
   import RichText from "@dusk-network/rich-text";
   import meta from "../../meta.js";
@@ -8,6 +10,7 @@
 
 <Meta
   title="Components/Molecules/Cta List"
+  decorators="{[withTests({ results })]}"
   component="{CtaList}"
   parameters="{{
     layout: 'padded',
@@ -16,6 +19,7 @@
         type: 'code',
       },
     },
+    jest: ['packages/molecules/cta-list/CtaList.test.js'],
   }}"
   argTypes="{meta('molecules/cta-list/CtaList', {
     variant: {

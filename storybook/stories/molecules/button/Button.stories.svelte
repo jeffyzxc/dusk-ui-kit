@@ -2,6 +2,8 @@
   // import DocsPage from "./Button.stories.mdx";
   import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { variants, sizes, icons } from "@dusk-network/helpers";
+  import results from "../../../../.jest-test-results.json";
+  import { withTests } from "@storybook/addon-jest";
   import Button, { Label, Group } from "@dusk-network/button";
   import Icon from "@dusk-network/icon";
   import meta from "../../meta.js";
@@ -9,6 +11,7 @@
 
 <Meta
   title="Components/Molecules/Button"
+  decorators="{[withTests({ results })]}"
   parameters="{{
     layout: 'centered',
     docs: {
@@ -16,6 +19,7 @@
         type: 'code',
       },
     },
+    jest: ['packages/molecules/button/Button.test.js'],
   }}"
   component="{Button}"
   argTypes="{meta('molecules/button/Button', {

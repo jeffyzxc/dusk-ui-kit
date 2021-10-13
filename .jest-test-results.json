@@ -1,0 +1,558 @@
+{
+  "numFailedTestSuites": 1,
+  "numFailedTests": 1,
+  "numPassedTestSuites": 28,
+  "numPassedTests": 28,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 29,
+  "numTotalTests": 29,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1633992997253,
+  "success": false,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [
+            "TypeError: DarkMode is not a constructor\n    at create_fragment (/mnt/c/Dusk/dusk-ui-kit/packages/organisms/navbar/menu/A11yMenu.svelte:191:13)\n    at init (/mnt/c/Dusk/dusk-ui-kit/node_modules/.pnpm/svelte@3.43.0/node_modules/svelte/internal/index.js:1809:37)\n    at new A11yMenu (/mnt/c/Dusk/dusk-ui-kit/packages/organisms/navbar/menu/A11yMenu.svelte:352:3)\n    at Array.create_else_block_1 (/mnt/c/Dusk/dusk-ui-kit/packages/organisms/navbar/Navbar.svelte:442:13)\n    at create_fragment (/mnt/c/Dusk/dusk-ui-kit/packages/organisms/navbar/Navbar.svelte:697:103)\n    at init (/mnt/c/Dusk/dusk-ui-kit/node_modules/.pnpm/svelte@3.43.0/node_modules/svelte/internal/index.js:1809:37)\n    at new Navbar (/mnt/c/Dusk/dusk-ui-kit/packages/organisms/navbar/Navbar.svelte:1132:3)\n    at render (/mnt/c/Dusk/dusk-ui-kit/node_modules/.pnpm/@testing-library+svelte@3.0.3_svelte@3.43.0/node_modules/@testing-library/svelte/dist/pure.js:81:21)\n    at Object.<anonymous> (/mnt/c/Dusk/dusk-ui-kit/packages/organisms/navbar/Navbar.test.js:21:19)\n    at Promise.then.completed (/mnt/c/Dusk/dusk-ui-kit/node_modules/.pnpm/jest-circus@27.2.2/node_modules/jest-circus/build/utils.js:390:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/mnt/c/Dusk/dusk-ui-kit/node_modules/.pnpm/jest-circus@27.2.2/node_modules/jest-circus/build/utils.js:315:10)\n    at _callCircusTest (/mnt/c/Dusk/dusk-ui-kit/node_modules/.pnpm/jest-circus@27.2.2/node_modules/jest-circus/build/run.js:218:40)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at _runTest (/mnt/c/Dusk/dusk-ui-kit/node_modules/.pnpm/jest-circus@27.2.2/node_modules/jest-circus/build/run.js:155:3)\n    at _runTestsForDescribeBlock (/mnt/c/Dusk/dusk-ui-kit/node_modules/.pnpm/jest-circus@27.2.2/node_modules/jest-circus/build/run.js:66:9)\n    at run (/mnt/c/Dusk/dusk-ui-kit/node_modules/.pnpm/jest-circus@27.2.2/node_modules/jest-circus/build/run.js:25:3)\n    at runAndTransformResultsToJestFormat (/mnt/c/Dusk/dusk-ui-kit/node_modules/.pnpm/jest-circus@27.2.2/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:167:21)\n    at jestAdapter (/mnt/c/Dusk/dusk-ui-kit/node_modules/.pnpm/jest-circus@27.2.2/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)\n    at runTestInternal (/mnt/c/Dusk/dusk-ui-kit/node_modules/.pnpm/jest-runner@27.2.2/node_modules/jest-runner/build/runTest.js:389:16)\n    at runTest (/mnt/c/Dusk/dusk-ui-kit/node_modules/.pnpm/jest-runner@27.2.2/node_modules/jest-runner/build/runTest.js:475:34)\n    at Object.worker (/mnt/c/Dusk/dusk-ui-kit/node_modules/.pnpm/jest-runner@27.2.2/node_modules/jest-runner/build/testWorker.js:133:12)"
+          ],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "failed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993054891,
+      "message": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mComponent renders\u001b[39m\u001b[22m\n\n    TypeError: DarkMode is not a constructor\n\u001b[2m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat create_fragment (\u001b[22m\u001b[2mpackages/organisms/navbar/menu/A11yMenu.svelte\u001b[2m:191:13)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat init (\u001b[22m\u001b[2mnode_modules/.pnpm/svelte@3.43.0/node_modules/svelte/internal/index.js\u001b[2m:1809:37)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat new A11yMenu (\u001b[22m\u001b[2mpackages/organisms/navbar/menu/A11yMenu.svelte\u001b[2m:352:3)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Array.create_else_block_1 (\u001b[22m\u001b[2mpackages/organisms/navbar/Navbar.svelte\u001b[2m:442:13)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat create_fragment (\u001b[22m\u001b[2mpackages/organisms/navbar/Navbar.svelte\u001b[2m:697:103)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat init (\u001b[22m\u001b[2mnode_modules/.pnpm/svelte@3.43.0/node_modules/svelte/internal/index.js\u001b[2m:1809:37)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat new Navbar (\u001b[22m\u001b[2mpackages/organisms/navbar/Navbar.svelte\u001b[2m:1132:3)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat render (\u001b[22m\u001b[2mnode_modules/.pnpm/@testing-library+svelte@3.0.3_svelte@3.43.0/node_modules/@testing-library/svelte/dist/pure.js\u001b[2m:81:21)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36mpackages/organisms/navbar/Navbar.test.js\u001b[39m\u001b[0m\u001b[2m:21:19)\u001b[22m\u001b[2m\u001b[22m\n",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/organisms/navbar/Navbar.test.js",
+      "startTime": 1633993016105,
+      "status": "failed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993055565,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/organisms/table/Table.test.js",
+      "startTime": 1633993016105,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993061960,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/organisms/footer/Footer.test.js",
+      "startTime": 1633993055783,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993062241,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/molecules/file-upload/FileUpload.test.js",
+      "startTime": 1633993055447,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993067318,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/organisms/form/Form.test.js",
+      "startTime": 1633993062313,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993068078,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/molecules/control/Control.test.js",
+      "startTime": 1633993062091,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993073783,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/atoms/loading-indicator/LoadingIndicator.test.js",
+      "startTime": 1633993068121,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993075295,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/organisms/search-list/SearchList.test.js",
+      "startTime": 1633993067387,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993081444,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/molecules/pagination/Pagination.test.js",
+      "startTime": 1633993073835,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993083078,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/atoms/drop-down/DropDown.test.js",
+      "startTime": 1633993075384,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993088897,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/molecules/breadcrumb/Breadcrumb.test.js",
+      "startTime": 1633993081587,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993089000,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/organisms/wizard/Wizard.test.js",
+      "startTime": 1633993016106,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993089705,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/atoms/logo/Logo.test.js",
+      "startTime": 1633993083112,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993093779,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/organisms/accordion/Accordion.test.js",
+      "startTime": 1633993089098,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993094244,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/atoms/icon/Icon.test.js",
+      "startTime": 1633993088944,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993096228,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/molecules/disclaimer-list/DisclaimerList.test.js",
+      "startTime": 1633993089801,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993099267,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/molecules/button/Button.test.js",
+      "startTime": 1633993093811,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993100371,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/molecules/alert/Alert.test.js",
+      "startTime": 1633993094272,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993103312,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/atoms/progress-bar/ProgressBar.test.js",
+      "startTime": 1633993096256,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993106626,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/molecules/cta-list/CtaList.test.js",
+      "startTime": 1633993099316,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993108743,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/organisms/card/Card.test.js",
+      "startTime": 1633993100408,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993112455,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/molecules/menu/Menu.test.js",
+      "startTime": 1633993103345,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993115651,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/atoms/toggle/Toggle.test.js",
+      "startTime": 1633993106661,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993118197,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/atoms/rich-text/RichText.test.js",
+      "startTime": 1633993108774,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993121387,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/organisms/hero/Hero.test.js",
+      "startTime": 1633993112493,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993124311,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/molecules/password-strength/PasswordStrength.test.js",
+      "startTime": 1633993115851,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993126415,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/molecules/mnemonic/Mnemonic.test.js",
+      "startTime": 1633993118244,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993127965,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/atoms/text-field/TextField.test.js",
+      "startTime": 1633993121493,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "failureMessages": [],
+          "fullName": "Component renders",
+          "location": null,
+          "status": "passed",
+          "title": "Component renders"
+        }
+      ],
+      "endTime": 1633993130839,
+      "message": "",
+      "name": "/mnt/c/Dusk/dusk-ui-kit/packages/molecules/heading/Heading.test.js",
+      "startTime": 1633993124366,
+      "status": "passed",
+      "summary": ""
+    }
+  ],
+  "wasInterrupted": false
+}

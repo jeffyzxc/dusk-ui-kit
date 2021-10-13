@@ -1,9 +1,13 @@
-// import "@testing-library/jest-dom/extend-expect";
-// import { render } from "@testing-library/svelte";
-// import { Basic } from "./Button.stories";
-// import ProgressBar from "./storybook-views/Default.svelte";
+/**
+ * @jest-environment jsdom
+ */
+import "@testing-library/jest-dom";
+import { render } from "@testing-library/svelte";
+import DropDown from "./DropDown.svelte";
 
-// test("shows proper label", () => {
-//   const results = render(ProgressBar, { props: Basic.args });
-//   // expect(() => results.getByText("Hi I'm a Button")).not.toThrow();
-// });
+test("Component renders", () => {
+  const results = render(DropDown, {
+    props: { options: ["option 1", "option 2", "option 3", "option 4", "option 5"] },
+  });
+  expect(() => results.toHaveClass("duk-drop-down"));
+});

@@ -1,5 +1,7 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
+  import results from "../../../../.jest-test-results.json";
+  import { withTests } from "@storybook/addon-jest";
   import Accordion, { Item } from "@dusk-network/accordion";
   import Card, { Content } from "@dusk-network/card";
   import meta from "../../meta.js";
@@ -7,6 +9,7 @@
 
 <Meta
   title="Components/Organisms/Accordion"
+  decorators="{[withTests({ results })]}"
   component="{Accordion}"
   parameters="{{
     layout: 'padded',
@@ -15,6 +18,7 @@
         type: 'code',
       },
     },
+    jest: ['packages/organisms/accordion/Accordion.test.js'],
   }}"
   argTypes="{meta('organisms/accordion/Accordion', {})}"
 />

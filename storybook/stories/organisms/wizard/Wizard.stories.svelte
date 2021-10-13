@@ -2,6 +2,8 @@
   import { Meta, Story } from "@storybook/addon-svelte-csf";
   // import { variants, states } from "@dusk-network/helpers";
   import Wizard, { Step } from "@dusk-network/wizard";
+  import results from "../../../../.jest-test-results.json";
+  import { withTests } from "@storybook/addon-jest";
   // import RichText from "@dusk-network/rich-text";
   // import Icon from "@dusk-network/icon";
   // import Heading from "@dusk-network/heading";
@@ -11,6 +13,7 @@
 
 <Meta
   title="Components/Organisms/Wizard"
+  decorators="{[withTests({ results })]}"
   component="{Wizard}"
   parameters="{{
     layout: 'padded',
@@ -19,6 +22,7 @@
         type: 'code',
       },
     },
+    jest: ['packages/organisms/wizard/Wizard.test.js'],
   }}"
   argTypes="{meta('organisms/wizard/Wizard', {})}"
 />

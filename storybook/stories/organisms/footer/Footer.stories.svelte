@@ -154,6 +154,8 @@ Basic.args = {
 }; -->
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
+  import results from "../../../../.jest-test-results.json";
+  import { withTests } from "@storybook/addon-jest";
   import Footer from "@dusk-network/footer";
   import { types } from "@dusk-network/helpers";
   import meta from "../../meta.js";
@@ -275,6 +277,7 @@ Basic.args = {
 
 <Meta
   title="Components/Organisms/Footer"
+  decorators="{[withTests({ results })]}"
   component="{Footer}"
   parameters="{{
     layout: 'fullscreen',
@@ -283,6 +286,7 @@ Basic.args = {
         type: 'code',
       },
     },
+    jest: ['packages/organisms/footer/Footer.test.js'],
   }}"
   argTypes="{meta('organisms/footer/Footer', {
     type: {

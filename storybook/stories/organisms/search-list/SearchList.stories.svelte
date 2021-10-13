@@ -1,5 +1,7 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
+  import results from "../../../../.jest-test-results.json";
+  import { withTests } from "@storybook/addon-jest";
   import SearchList from "@dusk-network/search-list";
   import RichText from "@dusk-network/rich-text";
   import { tokens } from "./data.js";
@@ -9,8 +11,12 @@
 
 <Meta
   title="Components/Organisms/Search List"
+  decorators="{[withTests({ results })]}"
   component="{SearchList}"
-  parameters="{{ layout: 'padded' }}"
+  parameters="{{
+    layout: 'padded',
+    jest: ['packages/organisms/search-list/SearchList.test.js'],
+  }}"
   argTypes="{meta('organisms/search-list/SearchList', {})}"
 />
 

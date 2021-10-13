@@ -33,6 +33,14 @@ module.exports = {
 
     if (process.env.NODE_ENV === "production") config.base = ""; // 🔧 for embedding storybook on GH Pages
 
+    config.resolve = {
+      ...config.resolve,
+      alias: {
+        ...config.resolve.alias,
+        path: require.resolve("path-browserify"),
+      },
+    };
+
     return config;
   },
   core: {
@@ -54,6 +62,7 @@ module.exports = {
     "@storybook/addon-a11y",
     "@storybook/addon-svelte-csf",
     "storybook-dark-mode",
+    "@storybook/addon-jest",
   ],
   features: {
     postcss: false,

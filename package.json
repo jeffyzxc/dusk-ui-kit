@@ -10,6 +10,7 @@
   "repository": "https://github.com/dusk-network/dusk-ui-kit",
   "license": "MPL-2.0",
   "author": "Kieran Hall <kieran@dusk.network>",
+  "type": "module",
   "files": [],
   "workspaces": [
     "packages/**",
@@ -36,6 +37,7 @@
     "lint:js:fix": "pnpm lint:js -- --fix",
     "test": "echo \"Work in progress...\" && exit",
     "test:watch": "jest --watchAll",
+    "test:generate-output": "jest --json --outputFile=.jest-test-results.json || true",
     "version:changeset": "changeset version  && pnpm i --lockfile-only",
     "version:ci": "pnpm version:changeset",
     "version:repo": "pnpm update:workspace",
@@ -89,6 +91,9 @@
     "storybook-static"
   ],
   "jest": {
+    "moduleDirectories": [
+      "node_modules"
+    ],
     "moduleFileExtensions": [
       "js",
       "svelte",
@@ -117,11 +122,14 @@
     }
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.15.6",
     "@changesets/cli": "^2.17.0",
     "@commitlint/cli": "^13.1.0",
     "@dusk-network/eslint-config": "0.0.1",
+    "@storybook/addon-jest": "^6.3.10",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/svelte": "^3.0.3",
+    "babel-jest": "^27.2.4",
     "commitizen": "^4.2.4",
     "commitlint-config-gitmoji": "^2.2.5",
     "cz-emoji": "^1.3.1",
