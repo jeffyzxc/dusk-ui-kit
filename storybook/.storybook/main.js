@@ -27,7 +27,8 @@ module.exports = {
       }),
     );
     config.plugins.push(virtualMetaPlugin());
-    config.resolve.dedupe = ["@storybook/client-api"]; // 🔧
+    config.resolve.dedupe = ["@storybook/client-api"]; // 🔧 for hoisted packages
+    config.base = ""; // 🔧 for embedding storybook on GH Pages
 
     return config;
   },
