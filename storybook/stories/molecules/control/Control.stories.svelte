@@ -108,7 +108,7 @@
   </Control>
 </Story>
 
-<Story name="Control Text field with postfixed Button" args="{{ buttonPostfix: true }}" let:args>
+<Story name="Control Text field with prefixed Button" args="{{ buttonPostfix: true }}" let:args>
   <Control
     width="full"
     {...args}
@@ -121,7 +121,7 @@
   </Control>
 </Story>
 
-<Story name="Control Text field with prefixed Button" args="{{ buttonPrefix: true }}" let:args>
+<Story name="Control Text field with postfixed Button" args="{{ buttonPrefix: true }}" let:args>
   <Control
     width="full"
     {...args}

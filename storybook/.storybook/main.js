@@ -2,6 +2,8 @@ const sveltePreprocess = require("svelte-preprocess");
 const dusk = require("@dusk-network/styles/plugin/vite-plugin-dusk-storybook.cjs");
 const metadata = require("@dusk-network/meta");
 
+console.log("mode", process.env.NODE_ENV);
+
 const virtualMetaPlugin = () => {
   const virtualFileId = "@ui-kit-meta";
   return {
@@ -28,7 +30,8 @@ module.exports = {
     );
     config.plugins.push(virtualMetaPlugin());
     config.resolve.dedupe = ["@storybook/client-api"]; // 🔧 for hoisted packages
-    config.base = ""; // 🔧 for embedding storybook on GH Pages
+
+    if (process.env.NODE_ENV === "production") config.base = ""; // 🔧 for embedding storybook on GH Pages
 
     return config;
   },
