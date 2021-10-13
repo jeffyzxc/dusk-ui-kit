@@ -2,9 +2,9 @@ name: Storybook
 
 on:
   push:
-    # paths:
-    #   - ".changeset/**"
-    #   - "storybook/**"
+    paths:
+      - ".changeset/**"
+      - "storybook/**"
     branches:
       - main
 
