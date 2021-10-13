@@ -1,6 +1,6 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
-  import { types, variants } from "@dusk-network/helpers";
+  import { types, variants, icons } from "@dusk-network/helpers";
   import Toggle, { Group } from "@dusk-network/toggle";
   import meta from "../../meta.js";
 </script>
@@ -29,10 +29,26 @@
         type: 'select',
       },
     },
+    onIcon: {
+      options: Object.values(icons),
+      control: {
+        type: 'select',
+      },
+    },
+    offIcon: {
+      options: Object.values(icons),
+      control: {
+        type: 'select',
+      },
+    },
   })}"
 />
 
-<Story name="Switch toggle" args="{{ type: types.TOGGLE.SWITCH }}" let:args>
+<Story
+  name="Switch toggle"
+  args="{{ type: types.TOGGLE.SWITCH, onIcon: 'brightness-4', offIcon: 'brightness-5' }}"
+  let:args
+>
   <Group>
     {#each Array(args.type === types.TOGGLE.BUTTON || args.type === types.TOGGLE.RADIO ? 5 : 1) as _, i}
       <Toggle
@@ -43,6 +59,8 @@
         id="tog_{i}"
         on:change="{args.onChange}"
         on:click="{args.onClick}"
+        onIcon="{args.onIcon}"
+        offIcon="{args.offIcon}"
       >
         Example {args.type}
       </Toggle>

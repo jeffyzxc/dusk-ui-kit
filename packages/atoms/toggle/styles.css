@@ -44,7 +44,11 @@
   }
 
   &__switch-thumb {
-    @apply block transition-all duration-300 ease-in-out absolute top-0 left-0 w-8 h-8 bg-gray-800 border-2 border-white rounded-full;
+    @apply flex items-center justify-center transition-all duration-300 ease-in-out absolute top-0 left-0 w-8 h-8 bg-gray-800 border-2 border-white rounded-full;
+
+    .duk-icon {
+      @apply h-5 w-5 text-white;
+    }
   }
 
   &__label {
