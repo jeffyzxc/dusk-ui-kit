@@ -12,6 +12,11 @@
    */
   export let data = [];
 
+  /**
+   * Used to add a search button to the input field when true
+   */
+  export let fieldButton = false;
+
   let searchValue;
 
   onMount(() => {
@@ -28,11 +33,17 @@
 </script>
 
 <div class="{$$props.class || ''} duk-search-list">
-  <Control width="full">
-    <Button slot="buttonPostfix" on:click="{onClick}">
-      <Icon name="magnify" size="sm" />
-    </Button>
-    <TextField placeholder="Search" bind:value="{searchValue}" />
-  </Control>
+  {#if fieldButton}
+    <Control width="full">
+      <Button slot="buttonPostfix" on:click="{onClick}">
+        <Icon name="magnify" size="sm" />
+      </Button>
+      <TextField placeholder="Search" bind:value="{searchValue}" />
+    </Control>
+  {:else}
+    <Control width="full">
+      <TextField placeholder="Search" bind:value="{$searchTerm}" />
+    </Control>
+  {/if}
   <slot />
 </div>
