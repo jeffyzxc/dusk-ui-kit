@@ -28,7 +28,6 @@ module.exports = {
     );
     config.plugins.push(virtualMetaPlugin());
     config.resolve.dedupe = ["@storybook/client-api"]; // 🔧
-    config.publicDir = "dusk-ui-kit";
 
     return config;
   },

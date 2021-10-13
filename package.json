@@ -20,6 +20,7 @@
   "scripts": {
     "build": "pnpm build:storybook",
     "build:storybook": "cd storybook && pnpm build",
+    "build:storybook:ci": "cd storybook && pnpm build",
     "build:docs": "cd docs && pnpm build",
     "preinstall": "npx only-allow pnpm",
     "prepare": "is-ci || husky install",
