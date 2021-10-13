@@ -1,6 +1,7 @@
 <script>
   import types from "@dusk-network/helpers/types.js";
   import variants from "@dusk-network/helpers/variants.js";
+  import Icon from "@dusk-network/icon/Icon.svelte";
   import "./styles.css";
 
   /**
@@ -49,6 +50,16 @@
    * Sets the selected state of the Toggle when true.
    */
   export let selected = false;
+
+  /**
+   * Used to set the On icon of the Toggle switch thumb.
+   */
+  export let onIcon = "";
+
+  /**
+   * Used to set the Off icon of the Toggle switch thumb.
+   */
+  export let offIcon = "";
 </script>
 
 <div
@@ -132,7 +143,13 @@
         on:change
       />
       <label for="{id}" class="duk-toggle__switch-track"></label>
-      <label for="{id}" class="duk-toggle__switch-thumb"></label>
+      <label for="{id}" class="duk-toggle__switch-thumb">
+        {#if value && onIcon}
+          <Icon name="{onIcon}" />
+        {:else if offIcon}
+          <Icon name="{offIcon}" />
+        {/if}
+      </label>
       <label class="duk-toggle__label duk-toggle__label--switch" for="{id}">
         <slot />
       </label>
