@@ -35,3 +35,25 @@
     {/each}
   </SearchList>
 </Story>
+
+<Story name="Search List with button" args="{{ data: tokens, fieldButton: true }}" let:args>
+  <SearchList data="{args.data}" fieldButton="{args.fieldButton}">
+    {#each $searchResults as token}
+      <div class="duk-search-list__item">
+        <div class="duk-search-list__item--token">
+          <div class="duk-search-list__item--border">
+            {#if token.image}
+              <img src="{token.image}" alt="symbol" />
+            {/if}
+          </div>
+          <RichText>
+            <p>{token.token}</p>
+          </RichText>
+        </div>
+        <RichText>
+          <p>{token.amount}</p>
+        </RichText>
+      </div>
+    {/each}
+  </SearchList>
+</Story>
