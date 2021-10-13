@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "build": "build-storybook",
-    "build:ci": "build-storybook -o /dusk-ui-kit",
     "start": "start-storybook -p 6006 --modern"
   },
   "devDependencies": {
