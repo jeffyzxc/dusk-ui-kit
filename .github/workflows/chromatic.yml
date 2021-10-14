@@ -5,6 +5,8 @@ on:
     paths:
       - "packages/**"
       - "storybook/**"
+    branches:
+      - main
 
 jobs:
   chromatic:
