@@ -1,0 +1,36 @@
+name: CI
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14.16.0"
+          registry-url: "https://npm.pkg.github.com/"
+          scope: "@dusk-network"
+
+      - name: Install pnpm
+        run: npm i pnpm@latest -g
+
+      - name: Recreate .npmrc
+        run: |
+          cat << EOF > "$HOME/.npmrc"
+            //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN} @dusk-network:registry=https://npm.pkg.github.com
+          EOF
+        env:
+          GITHUB_TOKEN: ${{secrets.GH_PACKAGES_TOKEN}}
+
+      - name: Install Dependencies
+        run: pnpm i -r
+        env:
+          GITHUB_TOKEN: ${{secrets.GH_PACKAGES_TOKEN}}
+
+      - name: Run tests
+        run: pnpm test
