@@ -60,7 +60,7 @@
   setContext("DUK:button:context", contexts.BUTTON.CONTROL);
   setContext("DUK:file-upload:context", contexts.FILE_UPLOAD.CONTROL);
 
-  // const context = getContext("DUK:control:context");
+  const context = getContext("DUK:control:context");
   const schema = getContext("DUK:form:schema");
   const fields = getContext("DUK:form:fields");
   const submitted = getContext("DUK:form:submitted");
@@ -81,6 +81,7 @@
 
 <div
   class="{$$props.class || ''} duk-control"
+  class:duk-control--search-list="{context === contexts.CONTROL.SEARCH_LIST}"
   class:duk-control--stacked="{type === types.CONTROL.STACKED}"
   class:duk-control--inline-fixed="{type === types.CONTROL.INLINE_FIXED}"
   class:duk-control--inline-flex="{type === types.CONTROL.INLINE_FLEX}"

@@ -192,10 +192,6 @@
     @apply my-6;
   }
 
-  &__icon {
-    height: calc(1.375rem - 1px);
-  }
-
   &:disabled {
     @apply opacity-75 cursor-not-allowed;
 
