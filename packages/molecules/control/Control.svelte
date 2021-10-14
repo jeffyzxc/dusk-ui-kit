@@ -76,7 +76,6 @@
       });
     }
   };
-  console.log($$slots.buttonPrefix);
 </script>
 
 <div
