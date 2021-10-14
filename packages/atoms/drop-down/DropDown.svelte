@@ -25,6 +25,7 @@
 
   let selectedOption = options[selectedIndex];
   let isOpen = false;
+  let disabled = false;
 
   function selectOption(value) {
     selectedOption = value;
@@ -33,6 +34,12 @@
   }
 
   onMount(() => {
+    if (options.length === 0) {
+      disabled = true;
+      selectedOption = "No options";
+    } else {
+      disabled = false;
+    }
     selectOption(selectedOption);
   });
 </script>
@@ -40,6 +47,7 @@
 <div
   class="{$$props.class || ''} duk-drop-down"
   class:duk-drop-down--drop-up="{dropUp}"
+  class:duk-drop-down--disabled="{disabled}"
   class:duk-drop-down--menu="{context === contexts.DROP_DOWN.MENU}"
 >
   <div class="duk-drop-down__layout">
