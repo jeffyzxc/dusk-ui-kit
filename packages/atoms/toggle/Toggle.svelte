@@ -65,6 +65,7 @@
 <div
   class="{$$props.class || ''} duk-toggle"
   class:duk-toggle--brand="{variant === variants.TOGGLE.BRAND}"
+  class:duk-toggle--brand-invert="{variant === variants.TOGGLE.BRAND_INVERT}"
   class:duk-toggle--cta="{variant === variants.TOGGLE.CTA}"
   class:duk-toggle--info="{variant === variants.TOGGLE.INFO}"
   class:duk-toggle--success="{variant === variants.TOGGLE.SUCCESS}"

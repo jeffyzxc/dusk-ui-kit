@@ -54,6 +54,7 @@ export default {
   },
   TOGGLE: {
     BRAND: "brand",
+    BRAND_INVERT: "brand-invert",
     CTA: "cta",
     DEFAULT: "default",
     INFO: "info",

@@ -8,6 +8,9 @@
   &__button,
   &__switch {
     @apply hidden;
+
+    &--inverted {
+    }
   }
 
   & input:checked {
@@ -90,6 +93,18 @@
       }
       &^^&__radio {
         background-image: url("./icons/radio-brand.svg");
+      }
+    }
+  }
+  &--brand-invert {
+    ^&__switch-thumb {
+      @apply bg-indigo-500 text-white;
+    }
+
+    & input:checked {
+      ~ ^^&__switch-thumb,
+      ~ ^^&__label--button {
+        @apply bg-gray-900;
       }
     }
   }

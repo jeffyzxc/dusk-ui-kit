@@ -1,7 +1,6 @@
 <script>
   import { setContext, afterUpdate } from "svelte";
   import DarkMode from "svelte-dark-mode";
-  import Icon from "@dusk-network/icon/Icon.svelte";
   import Menu from "@dusk-network/menu/Menu.svelte";
   import Item from "@dusk-network/menu/Item.svelte";
   import Toggle from "@dusk-network/toggle/Toggle.svelte";
@@ -32,15 +31,15 @@
 
 <Menu orientation="horizontal" class="duk-navbar__a11y-menu">
   <Item>
-    <Icon class="duk-navbar__light-mode-icon" name="brightness-5" />
     <Toggle
       type="switch"
-      variant="brand"
+      variant="brand-invert"
       name="dark_mode"
       id="__DUK-dark-mode"
+      onIcon="brightness-4"
+      offIcon="brightness-5"
       bind:checked="{isDarkMode}"
       on:click="{() => (theme = switchTheme)}"
     />
-    <Icon class="duk-navbar__dark-mode-icon" name="brightness-4" />
   </Item>
 </Menu>
