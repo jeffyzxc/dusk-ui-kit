@@ -1,5 +1,15 @@
 # @dusk-network/styles
 
+## 4.0.0
+
+### Major Changes
+
+- 11a1f850: Release V4
+
+### Minor Changes
+
+- a86c725b: Updating all packages to node modules format
+
 ## 3.0.12
 
 ### Patch Changes
