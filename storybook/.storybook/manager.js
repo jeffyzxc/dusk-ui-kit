@@ -1,7 +1,7 @@
 // import { addons } from "@storybook/addons";
 // import { create } from "@storybook/theming";
 // import resolveConfig from "tailwindcss/resolveConfig";
-// import tailwindConfig from "@dusk-network/styles/dusk.tailwind.config.js";
+// import tailwindConfig from "@dusk-network/styles/dusk.tailwind.config.cjs";
 
 // const config = resolveConfig(tailwindConfig);
 // const colours = config.theme.colors;

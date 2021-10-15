@@ -1,0 +1,36 @@
+import { Meta, ColorPalette, ColorItem, Typeset } from "@storybook/addon-docs";
+import resolveConfig from "tailwindcss/resolveConfig";
+import tailwindConfig from "@dusk-network/styles/tailwindConfig.cjs";
+
+const config = resolveConfig(tailwindConfig);
+const colours = config.theme.colors;
+
+<Meta title="Docs/Colour" />
+
+# Colour
+
+> This is the colour palette available within the Dusk Design System.
+
+<ColorPalette>
+  {Object.entries(colors).map(([k, v]) => {
+    if (typeof v === "string" && (v.match(/^#/) || v.match(/^rgb/) || k.match(/color/i))) {
+      return <ColorItem key={k} title={k} colors={{ [k]: v }} />;
+    } else if (typeof v === "object") {
+      return (
+        <ColorItem
+          key={k}
+          title={k}
+          colors={Object.entries(v).reduce(
+            (acc, [key, value]) =>
+              typeof value === "string" &&
+              (value.match(/^#/) || value.match(/^rgb/) || key.match(/color/i))
+                ? { ...acc, [key]: value }
+                : acc,
+            {},
+          )}
+        />
+      );
+    }
+    return null;
+  })}
+</ColorPalette>

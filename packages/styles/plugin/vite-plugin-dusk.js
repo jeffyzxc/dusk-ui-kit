@@ -1,5 +1,4 @@
 import { VitePluginDuskViewer } from "./vite-plugin-dusk-viewer.js";
-
 import tailwindConfig from "../dusk.tailwind.config.cjs";
 import postCssConfig from "../postcss.config.cjs";
 

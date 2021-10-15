@@ -1,0 +1,211 @@
+import { Meta, ColorPalette, ColorItem, Typeset } from "@storybook/addon-docs";
+import resolveConfig from "tailwindcss/resolveConfig";
+import tailwindConfig from "@dusk-network/styles";
+
+const config = resolveConfig(tailwindConfig);
+const fontSize = config.theme.fontSize;
+const fontFamily = config.theme.fontFamily;
+const fontWeight = config.theme.fontWeight;
+
+<Meta title="Docs/Type" />
+
+# Type
+> These are the available fonts, font weights and font sizes available within the Dusk Design System.
+
+**Font**: Hind Siliguri
+**Weight**: hairline
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["hairline"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: thin
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["thin"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: light
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["light"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: normal
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["normal"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: medium
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["medium"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: semibold
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["semibold"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: bold
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["bold"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: extrabold
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["extrabold"]}
+/>
+
+**Font**: Hind Siliguri
+**Weight**: black
+
+<Typeset
+  fontFamily={fontFamily["sans"]}
+  fontSizes={[
+    fontSize["xs"],
+    fontSize["sm"],
+    fontSize["base"],
+    fontSize["lg"],
+    fontSize["xl"],
+    fontSize["2xl"],
+    fontSize["3xl"],
+    fontSize["4xl"],
+    fontSize["5xl"],
+    fontSize["6xl"],
+    fontSize["7xl"],
+    fontSize["8xl"],
+  ]}
+  fontWeight={fontWeight["black"]}
+/>

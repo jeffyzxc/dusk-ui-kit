@@ -2,8 +2,6 @@ const sveltePreprocess = require("svelte-preprocess");
 const dusk = require("@dusk-network/styles/plugin/vite-plugin-dusk-storybook.cjs");
 const metadata = require("@dusk-network/meta");
 
-console.log("mode", process.env.NODE_ENV);
-
 const virtualMetaPlugin = () => {
   const virtualFileId = "@ui-kit-meta";
   return {
@@ -41,13 +39,18 @@ module.exports = {
       },
     };
 
+    // config.optimizeDeps = {
+    //   include: ["@dusk-network/styles"],
+    // };
+
     return config;
   },
   core: {
     builder: "storybook-builder-vite",
   },
-  stories: ["../stories/**/*.stories.svelte"],
+  stories: ["../stories/**/*.stories.svelte", "../stories/*.stories.mdx"],
   addons: [
+    "@storybook/addon-docs",
     "@storybook/addon-viewport",
     "@storybook/addon-controls",
     {
