@@ -22,7 +22,9 @@
     @apply transform duration-200 ease-in-out transition-all rotate-0 ml-3 absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none;
 
     &--open {
-      @apply rotate-180;
+      /* transform rotate-180 utils do not work*/
+      /* @apply transform rotate-180; */
+      transform: rotate(180deg);
     }
   }
 
@@ -58,5 +60,18 @@
       /* TODO investigate why ths won't work with transform -translate-y-full utils */
       transform: translateY(-100%);
     }
+
+    ^&__button-icon {
+      transform: rotate(180deg);
+
+      &--open {
+        /* transform rotate-0 utils do not work*/
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  &--disabled {
+    @apply pointer-events-none opacity-60;
   }
 }

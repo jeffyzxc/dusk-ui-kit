@@ -5,6 +5,12 @@
     @apply justify-center;
   }
 
+  &--search-list {
+    .duk-icon {
+      height: calc(1.375rem - 1px);
+    }
+  }
+
   &__label {
     @apply pr-3;
   }
