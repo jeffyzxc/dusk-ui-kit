@@ -1,5 +1,23 @@
 # @dusk-network/table
 
+## 4.0.0
+
+### Major Changes
+
+- 11a1f850: Release V4
+
+### Minor Changes
+
+- a86c725b: Updating all packages to node modules format
+
+### Patch Changes
+
+- Updated dependencies [11a1f850]
+- Updated dependencies [a86c725b]
+  - @dusk-network/drop-down@4.0.0
+  - @dusk-network/helpers@4.0.0
+  - @dusk-network/pagination@4.0.0
+
 ## 3.0.12
 
 ### Patch Changes

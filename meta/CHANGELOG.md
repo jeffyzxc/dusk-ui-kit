@@ -1,5 +1,11 @@
 # @dusk-network/meta
 
+## 4.0.0
+
+### Minor Changes
+
+- a86c725b: Updating all packages to node modules format
+
 ## 3.0.12
 
 ### Patch Changes
