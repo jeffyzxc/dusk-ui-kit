@@ -28,6 +28,7 @@
     "@dusk-network/control": "workspace:*",
     "@dusk-network/helpers": "workspace:*",
     "@dusk-network/icon": "workspace:*",
+    "@dusk-network/rich-text": "workspace:*",
     "@dusk-network/text-field": "workspace:*"
   },
   "gitHead": "7675c25e0aa8257464f38163fc37df3d4d7c3d43"
