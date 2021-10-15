@@ -1,6 +1,6 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
-  import { types, variants } from "@dusk-network/helpers";
+  import { types, variants, icons } from "@dusk-network/helpers";
   import results from "../../../../.jest-test-results.json";
   import { withTests } from "@storybook/addon-jest";
   import Toggle, { Group } from "@dusk-network/toggle";
@@ -29,6 +29,18 @@
     },
     variant: {
       options: Object.values(variants.TOGGLE),
+      control: {
+        type: 'select',
+      },
+    },
+    onIcon: {
+      options: Object.values(icons),
+      control: {
+        type: 'select',
+      },
+    },
+    offIcon: {
+      options: Object.values(icons),
       control: {
         type: 'select',
       },
