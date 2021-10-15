@@ -25,5 +25,5 @@
     "@dusk-network/helpers": "workspace:*",
     "@dusk-network/pagination": "workspace:*"
   },
-  "gitHead": "7e23cc4a067cbbb3aeee8a5f3b07b5c59eee22df"
+  "gitHead": "d25a2e7c931f9d12455d8bf1895a013046cb3db6"
 }
