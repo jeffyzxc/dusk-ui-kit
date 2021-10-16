@@ -35,9 +35,9 @@
                 {#if $page.params.package && $page.params.package == groupe[0]}
                   <Menu>
                     {#each Object.entries(group[groupe[0]]) as component}
-                      <Item href="/components/{$page.params.group}/{groupe[0]}/{component[0]}"
-                        >+ {component[0]}</Item
-                      >
+                      <Item href="/components/{$page.params.group}/{groupe[0]}/{component[0]}">
+                        {component[0]}
+                      </Item>
                     {/each}
                   </Menu>
                 {/if}

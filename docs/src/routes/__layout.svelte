@@ -43,6 +43,7 @@
           >{group.toUpperCase()}</Item
         >
       {/each}
+      <Item href="/helpers">HELPERS</Item>
     </Menu>
   </svelte:fragment>
   <svelte:fragment slot="links">
