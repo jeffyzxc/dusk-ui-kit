@@ -3,3 +3,4 @@ packages:
   - "meta"
   - "storybook"
   - "docs"
+  - "examples"

@@ -16,7 +16,8 @@
     "packages/**",
     "meta",
     "storybook",
-    "docs"
+    "docs",
+    "examples"
   ],
   "scripts": {
     "build": "pnpm build:storybook",
