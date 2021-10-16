@@ -69,6 +69,7 @@ import Refresh from "./Refresh.svelte";
 import Safe from "./Safe.svelte";
 import ShareVariant from "./ShareVariant.svelte";
 import StoreOutline from "./StoreOutline.svelte";
+import Storybook from "./Storybook.svelte";
 import Telegram from "./Telegram.svelte";
 import TimelineClockOutline from "./TimelineClockOutline.svelte";
 import TimerSand from "./TimerSand.svelte";
@@ -153,6 +154,7 @@ export default {
   Safe,
   ShareVariant,
   StoreOutline,
+  Storybook,
   Telegram,
   TimelineClockOutline,
   TimerSand,
