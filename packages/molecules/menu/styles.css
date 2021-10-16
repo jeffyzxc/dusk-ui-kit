@@ -2,6 +2,11 @@
   &__list {
     @apply list-none;
   }
+  &__item {
+    > ^& {
+      @apply pl-5 mt-3;
+    }
+  }
   &__item-wrapper {
     @apply flex items-center space-x-2;
   }
