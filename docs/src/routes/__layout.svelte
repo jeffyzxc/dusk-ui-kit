@@ -3,12 +3,19 @@
    * @type {import('@sveltejs/kit').Load}
    */
   export async function load({ fetch }) {
-    // const { slug } = page.params;
-    const [components] = await Promise.all([fetch(`/components.json`).then((r) => r.json())]);
+    const res = await fetch("/components.json");
 
-    return {
-      props: { components },
-    };
+    if (res.ok) {
+      const components = await res.json();
+      return {
+        stuff: {
+          components,
+        },
+        props: {
+          components,
+        },
+      };
+    }
   }
 </script>
 
@@ -21,15 +28,6 @@
   // import Footer from "@dusk-network/footer";
 
   export let components;
-
-  // console.log(components)
-  console.log("page path is", $page.path);
-
-  // $: currentGroup = $page.path.
-
-  // const getComponentsByGroup = () => {
-
-  // };
 </script>
 
 <Navbar variant="brand" id="__app-top-nav" appName="Dusk UI Kit">
@@ -52,13 +50,13 @@
       <Item href="https://github.com/dusk-network/dusk-ui-kit">
         <Icon name="github" />
       </Item>
-      <!-- <Item href="https://dusk-network.github.io/dusk-ui-kit/">
+      <Item href="https://dusk-network.github.io/dusk-ui-kit/storybook">
         <Icon name="storybook" />
-      </Item> -->
+      </Item>
     </Menu>
   </svelte:fragment>
 </Navbar>
 <main class="container">
-  <slot components="{components}" />
+  <slot />
 </main>
 <!-- <Footer type="minimal" variant="brand" social="{content.footer.social_links}" /> -->

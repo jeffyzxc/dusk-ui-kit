@@ -2,34 +2,16 @@
   /**
    * @type {import('@sveltejs/kit').Load}
    */
-  export async function load({ page, fetch }) {
-    let [packages] = await Promise.all([fetch(`../../components.json`).then((r) => r.json())]);
-    console.log("package content", packages[page.params.group][page.params.package]);
-    const pack = packages[page.params.group][page.params.package];
+  export async function load({ page, stuff }) {
+    const pack = stuff.components[page.params.group][page.params.package];
+
+    let redirect = `/components/${page.params.group}/${
+      Object.entries(stuff.components[page.params.group])[0][0]
+    }/${Object.entries(pack)[0][0]}`;
 
     return {
-      props: { pack },
+      status: 301,
+      redirect: redirect,
     };
   }
 </script>
-
-<script>
-  import { page } from "$app/stores";
-  export let pack;
-
-  // const packages = [...group];
-
-  console.log("package is", pack);
-
-  // packages.forEach(element => {
-  //   console.log("package item", item);
-  // });
-
-  // console.log($page.params)
-</script>
-
-<ul>
-  {#each Object.entries(pack) as item}
-    <li><a href="{$page.params.package}/{item[0]}">{item[0]}</a></li>
-  {/each}
-</ul>
