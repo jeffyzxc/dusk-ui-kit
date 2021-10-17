@@ -30,7 +30,7 @@ import {variants} from "@dusk-network/helpers"; import Button, {Label} from "@du
 </Button>
 ```
 
-## Run tests
+## Tests
 
 ```sh
 pnpm test
@@ -38,7 +38,7 @@ pnpm test
 
 ## Environments
 
-[![Storybook](https://img.shields.io/badge/Storybook-Component_Playground-%23FF4785?style=flat&logo=storybook)](https://dusk-network.github.io/dusk-ui-kit/)
+[![Storybook](https://img.shields.io/badge/Storybook-Component_Playground-%23FF4785?style=flat&logo=storybook)](https://dusk-network.github.io/dusk-ui-kit/storybook)[![Docs](https://img.shields.io/badge/Documentation-%235E35CF?style=flat)](https://dusk-network.github.io/dusk-ui-kit/docs/)
 
 ## Authors
 
