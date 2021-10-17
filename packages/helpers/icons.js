@@ -68,6 +68,7 @@ export default {
   SAFE: "safe",
   SHARE_VARIANT: "share-variant",
   STORE_OUTLINE: "store-outline",
+  STORYBOOK: "storybook",
   TELEGRAM: "telegram",
   TIMELINE_CLOCK_OUTLINE: "timeline-clock-outline",
   TIMER_SAND: "timer-sand",

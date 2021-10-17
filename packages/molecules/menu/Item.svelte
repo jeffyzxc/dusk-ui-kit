@@ -14,6 +14,7 @@
     <a href="{href}" class="duk-menu__item-wrapper" class:duk-menu__item-wrapper--active="{active}">
       <slot />
     </a>
+    <slot name="menu" />
   {:else}
     <span href="{href}" class="duk-menu__item-wrapper"><slot /></span>
   {/if}
