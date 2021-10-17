@@ -4,11 +4,18 @@
 
 ## Installation
 
-```
-npm i -D @dusk-network/drop-down
+```bash
+pnpm i
 ```
 
-## Usage
+## Start
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/DropDown.svelte) -->
-<!-- MARKDOWN-AUTO-DOCS:END -->
+```bash
+pnpm start
+```
+
+## Build
+
+```bash
+pnpm build
+```
