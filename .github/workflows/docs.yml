@@ -2,9 +2,10 @@ name: Docs
 
 on:
   push:
-    # paths:
-    #   - ".changeset/**"
-    #   - "storybook/**"
+    paths:
+      - ".changeset/**"
+      - "docs/**"
+      - "examples/*"
     branches:
       - main
 
