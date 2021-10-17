@@ -1,5 +1,5 @@
 /**
- * This script is executed immediately before the changeset CLI is executed. It
+ * This script is executed immediately before the changeset CLI is. It
  * reads the `HEAD` commit hash and adds it to every package's `package.json`before
  * committing the changes. This ensures that the changeset version will apply to
  * every package in the UI Kit, thus maintaining the approach that every package is
