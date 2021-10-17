@@ -18,14 +18,18 @@
 
 <script>
   import Menu, { Item } from "@dusk-network/menu";
-  import Card, { Content } from "@dusk-network/card";
+  import Card, { Content, Title } from "@dusk-network/card";
   import { page } from "$app/stores";
   export let group;
+
+  $: groupTitle = $page.params.group;
+  $: navTitle = groupTitle.charAt(0).toUpperCase() + groupTitle.slice(1);
 </script>
 
 <div class="flex flex-row flex-wrap py-4">
   <aside class="w-full lg:w-1/4 px-2 lg:pr-20">
     <Card class="sticky top-0">
+      <Title><h2>{navTitle.slice(0, -1)} Packages</h2></Title>
       <Content>
         <Menu>
           {#each Object.entries(group) as groupe}

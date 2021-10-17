@@ -1,3 +1,4 @@
+import adapter from "@sveltejs/adapter-static";
 import dusk from "@dusk-network/styles/plugin/index.js";
 import metadata from "@dusk-network/meta/index.cjs";
 import fs from "fs";
@@ -73,6 +74,7 @@ const virtualExamplePlugin = () => {
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
+    adapter: adapter(),
     target: "#dusk",
     vite: () => ({
       plugins: [
