@@ -46,14 +46,10 @@
     return type;
   };
 
-  console.log(Examples);
-
   $: examples =
     Examples[$page.params.group] &&
     Examples[$page.params.group][convertToClassCase($page.params.package)];
   $: sources = Code[$page.params.group] && Code[$page.params.group][$page.params.package];
-
-  // console.log(examples)
 </script>
 
 <RichText class="w-full max-w-full">
