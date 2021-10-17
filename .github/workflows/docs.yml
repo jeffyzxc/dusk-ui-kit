@@ -41,7 +41,7 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GH_PACKAGES_TOKEN}}
 
       - name: Build Docs
-        run: BASE=/docs pnpm run build
+        run: BASE=/dusk-ui-kit/docs pnpm run build
         working-directory: ./docs
 
       - name: Publish Docs to Github Pages
