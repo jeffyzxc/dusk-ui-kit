@@ -12,4 +12,12 @@ npm i -D @dusk-network/button
 ## Usage
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/Button.svelte) -->
+<!-- The below code snippet is automatically added from ../../../examples/src/Button.svelte -->
+```svelte
+<script>
+  import Button from "@dusk-network/button";
+</script>
+
+<Button>Hi there</Button>
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->
