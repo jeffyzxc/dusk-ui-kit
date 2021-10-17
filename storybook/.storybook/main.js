@@ -48,7 +48,11 @@ module.exports = {
   core: {
     builder: "storybook-builder-vite",
   },
-  stories: ["../stories/**/*.stories.svelte", "../stories/*.stories.mdx"],
+  stories: [
+    "../stories/**/*.stories.svelte",
+    "../stories/*.stories.mdx",
+    "../stories/atoms/drop-down/*.stories.mdx",
+  ],
   addons: [
     "@storybook/addon-docs",
     "@storybook/addon-viewport",
