@@ -1,6 +1,7 @@
 <script>
   import Card, { Content, Title } from "@dusk-network/card";
   import Menu, { Item } from "@dusk-network/menu";
+  import Icon from "@dusk-network/icon";
   import { base } from "$app/paths";
   import { page } from "$app/stores";
 
@@ -13,8 +14,13 @@
   <Content>
     <Menu>
       {#each Object.entries(group) as groupe}
-        <Item href="{base}/components/{$page.params.group}/{groupe[0]}/{Object.keys(groupe[1])[0]}">
-          {groupe[0]}
+        <Item
+          active="{$page.path.includes(groupe[0])}"
+          href="{base}/components/{$page.params.group}/{groupe[0]}/{Object.keys(groupe[1])[0]}"
+        >
+          <Icon
+            name="{$page.path.includes(groupe[0]) ? 'folder-open-outline' : 'folder-outline'}"
+          /><span>{groupe[0]}</span>
           <svelte:fragment slot="menu">
             {#if $page.params.package && $page.params.package == groupe[0]}
               <Menu>

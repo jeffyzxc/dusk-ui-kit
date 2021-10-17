@@ -21,7 +21,7 @@
           >{group.toUpperCase()}</Item
         >
       {/each}
-      <Item href="{base}/helpers">HELPERS</Item>
+      <Item href="{base}/helpers" active="{$page.path.includes('helpers')}">HELPERS</Item>
     </Menu>
   </svelte:fragment>
   <svelte:fragment slot="links">
