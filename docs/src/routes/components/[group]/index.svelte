@@ -7,7 +7,7 @@
   export async function load({ page, stuff }) {
     const { group } = page.params;
 
-    let redirect = `${base}/${Object.entries(stuff.components[group])[0][0]}`;
+    let redirect = `${base}/components/${group}/${Object.entries(stuff.components[group])[0][0]}`;
 
     return {
       status: 301,
