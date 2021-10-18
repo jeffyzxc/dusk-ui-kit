@@ -12,4 +12,15 @@ npm i -D @dusk-network/wizard
 ## Usage
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/organisms/wizard/Wizard_01.svelte) -->
+<!-- The below code snippet is automatically added from ../../../examples/src/organisms/wizard/Wizard_01.svelte -->
+```svelte
+<script>
+  import Wizard, { Step } from "@dusk-network/wizard";
+</script>
+
+<Wizard stepCount="{2}">
+  <Step step="{1}">step 1</Step>
+  <Step step="{2}">step 2</Step>
+</Wizard>
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->

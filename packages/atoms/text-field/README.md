@@ -12,4 +12,12 @@ npm i -D @dusk-network/text-field
 ## Usage
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/atoms/text-field/TextField_01.svelte) -->
+<!-- The below code snippet is automatically added from ../../../examples/src/atoms/text-field/TextField_01.svelte -->
+```svelte
+<script>
+  import TextField from "@dusk-network/text-field";
+</script>
+
+<TextField name="simple_text-field" placeholder="A simple text field" />
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->

@@ -12,4 +12,15 @@ npm i -D @dusk-network/control
 ## Usage
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/control/Control_01.svelte) -->
+<!-- The below code snippet is automatically added from ../../../examples/src/molecules/control/Control_01.svelte -->
+```svelte
+<script>
+  import Control from "@dusk-network/control";
+  import TextField from "@dusk-network/text-field";
+</script>
+
+<Control width="full" label="Control label" let:id>
+  <TextField name="control_test" placeholder="A controlled text field" id="{id}" />
+</Control>
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->

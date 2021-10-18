@@ -12,4 +12,12 @@ npm i -D @dusk-network/loading-indicator
 ## Usage
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/atoms/loading-indicator/LoadingIndicator_01.svelte) -->
+<!-- The below code snippet is automatically added from ../../../examples/src/atoms/loading-indicator/LoadingIndicator_01.svelte -->
+```svelte
+<script>
+  import LoadingIndicator from "@dusk-network/loading-indicator";
+</script>
+
+<LoadingIndicator />
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->

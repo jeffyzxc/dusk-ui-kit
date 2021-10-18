@@ -12,4 +12,14 @@ npm i -D @dusk-network/drop-down
 ## Usage
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/atoms/drop-down/DropDown_01.svelte) -->
+<!-- The below code snippet is automatically added from ../../../examples/src/atoms/drop-down/DropDown_01.svelte -->
+```svelte
+<script>
+  import DropDown from "@dusk-network/drop-down";
+
+  const options = ["option 1", "option 2", "option 3", "option 4", "option 5"];
+</script>
+
+<DropDown options="{options}" />
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->

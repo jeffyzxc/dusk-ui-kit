@@ -13,7 +13,6 @@ npm i -D @dusk-network/button
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/button/Button_01.svelte) -->
 <!-- The below code snippet is automatically added from ../../../examples/src/molecules/button/Button_01.svelte -->
-
 ```svelte
 <script>
   import Button from "@dusk-network/button";
@@ -21,5 +20,4 @@ npm i -D @dusk-network/button
 
 <Button>Hi there</Button>
 ```
-
 <!-- MARKDOWN-AUTO-DOCS:END -->
