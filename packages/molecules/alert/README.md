@@ -11,5 +11,5 @@ npm i -D @dusk-network/alert
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/Alert_01.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/alert/Alert_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

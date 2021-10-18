@@ -11,5 +11,5 @@ npm i -D @dusk-network/loading-indicator
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/atoms/LoadingIndicator_01.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/atoms/loading-indicator/LoadingIndicator_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

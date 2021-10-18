@@ -11,5 +11,5 @@ npm i -D @dusk-network/password-strength
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/PasswordStrength_01.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/password-strength/PasswordStrength_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

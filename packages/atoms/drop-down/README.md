@@ -11,5 +11,5 @@ npm i -D @dusk-network/drop-down
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/atoms/DropDown_01.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/atoms/drop-down/DropDown_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

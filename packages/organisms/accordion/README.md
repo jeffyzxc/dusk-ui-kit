@@ -11,5 +11,5 @@ npm i -D @dusk-network/accordion
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/organisms/Accordion_01.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/organisms/accordion/Accordion_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

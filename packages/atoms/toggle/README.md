@@ -11,5 +11,5 @@ npm i -D @dusk-network/toggle
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/atoms/Toggle_01.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/atoms/toggle/Toggle_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

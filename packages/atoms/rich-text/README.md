@@ -11,5 +11,5 @@ npm i -D @dusk-network/rich-text
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/atoms/RichText_01.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/atoms/rich-text/RichText_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

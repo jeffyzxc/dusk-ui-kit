@@ -11,5 +11,5 @@ npm i -D @dusk-network/heading
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/Heading_01.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/heading/Heading_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

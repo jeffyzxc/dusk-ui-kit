@@ -11,5 +11,5 @@ npm i -D @dusk-network/search-list
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/organisms/SearchList_01.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/organisms/search-list/SearchList_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

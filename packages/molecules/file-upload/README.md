@@ -11,5 +11,5 @@ npm i -D @dusk-network/file-upload
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/Alert_01.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/file-upload/FileUpload_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

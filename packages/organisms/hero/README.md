@@ -11,5 +11,5 @@ npm i -D @dusk-network/hero
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/organisms/Hero_01.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/organisms/hero/Hero_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

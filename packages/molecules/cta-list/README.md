@@ -11,5 +11,5 @@ npm i -D @dusk-network/cta-list
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/CtaList_01.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/cta-list/CtaList_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

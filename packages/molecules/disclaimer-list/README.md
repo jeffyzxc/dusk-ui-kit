@@ -11,5 +11,5 @@ npm i -D @dusk-network/disclaimer-list
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/DisclaimerList_01.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/disclaimer-list/DisclaimerList_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

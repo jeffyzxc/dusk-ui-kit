@@ -11,5 +11,5 @@ npm i -D @dusk-network/wizard
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/organisms/Wizard_01.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/organisms/wizard/Wizard_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

@@ -11,5 +11,5 @@ npm i -D @dusk-network/table
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/organisms/Table_01.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/organisms/table/Table_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

@@ -11,5 +11,5 @@ npm i -D @dusk-network/text-field
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/atoms/TextField_01.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/atoms/text-field/TextField_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->
