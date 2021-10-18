@@ -36,6 +36,8 @@ import EyeCircleOutline from "./EyeCircleOutline.svelte";
 import EyeOutline from "./EyeOutline.svelte";
 import EyeSettingsOutline from "./EyeSettingsOutline.svelte";
 import FileExportOutline from "./FileExportOutline.svelte";
+import FileEyeOutline from "./FileEyeOutline.svelte";
+import FileOutline from "./FileOutline.svelte";
 import FolderDownloadOutline from "./FolderDownloadOutline.svelte";
 import FolderOpenOutline from "./FolderOpenOutline.svelte";
 import FolderOutline from "./FolderOutline.svelte";
@@ -121,6 +123,8 @@ export default {
   EyeOutline,
   EyeSettingsOutline,
   FileExportOutline,
+  FileEyeOutline,
+  FileOutline,
   FolderDownloadOutline,
   FolderOpenOutline,
   FolderOutline,

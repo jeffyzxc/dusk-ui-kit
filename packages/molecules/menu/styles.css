@@ -4,11 +4,15 @@
   }
   &__item {
     > ^& {
-      @apply pl-5 mt-3;
+      @apply pl-3 mt-3;
     }
   }
   &__item-wrapper {
     @apply flex items-center space-x-2;
+
+    &--active {
+      @apply font-bold;
+    }
   }
   &--vertical {
     ^&__list {

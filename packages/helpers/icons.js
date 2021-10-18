@@ -35,6 +35,8 @@ export default {
   EYE_CIRCLE_OUTLINE: "eye-circle-outline",
   EYE_SETTINGS_OUTLINE: "eye-settings-outline",
   FILE_EXPORT_OUTLINE: "file-export-outline",
+  FILE_EYE_OUTLINE: "file-eye-outline",
+  FILE_OUTLINE: "file-outline",
   FOLDER_OPEN_OUTLINE: "folder-open-outline",
   FOLDER_OUTLINE: "folder-outline",
   FOLDER_DOWNLOAD_OUTLINE: "folder-download-outline",

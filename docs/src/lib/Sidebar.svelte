@@ -30,7 +30,11 @@
                       active="{$page.path.includes(component[0])}"
                       href="{base}/components/{$page.params.group}/{groupe[0]}/{component[0]}"
                     >
-                      {component[0]}
+                      <Icon
+                        name="{$page.path.includes(component[0])
+                          ? 'file-eye-outline'
+                          : 'file-outline'}"
+                      /><span>{component[0]}</span>
                     </Item>
                   {/each}
                 </Menu>
