@@ -92,6 +92,8 @@
     "storybook-static"
   ],
   "jest": {
+    "collectCoverage": true,
+    "coverageDirectory": "./coverage/",
     "moduleDirectories": [
       "node_modules"
     ],
