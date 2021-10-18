@@ -11,5 +11,5 @@ npm i -D @dusk-network/footer
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/Footer.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/organisms/Footer_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

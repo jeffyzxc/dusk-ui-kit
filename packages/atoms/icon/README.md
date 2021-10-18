@@ -11,5 +11,5 @@ npm i -D @dusk-network/icon
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/Icon.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/atoms/Icon_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

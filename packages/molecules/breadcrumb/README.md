@@ -11,5 +11,5 @@ npm i -D @dusk-network/breadcrumb
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/Breadcrumb.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/Breadcrumb_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

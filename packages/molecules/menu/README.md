@@ -11,5 +11,5 @@ npm i -D @dusk-network/menu
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/Menu.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/Menu_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

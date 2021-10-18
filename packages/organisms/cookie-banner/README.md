@@ -11,5 +11,5 @@ npm i -D @dusk-network/cookie-banner
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/CookieBanner.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/organisms/CookieBanner_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

@@ -11,5 +11,5 @@ npm i -D @dusk-network/progress-bar
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/ProgressBar.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/atoms/ProgressBar_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

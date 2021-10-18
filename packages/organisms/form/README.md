@@ -11,5 +11,5 @@ npm i -D @dusk-network/form
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/Form.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/organisms/Form_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

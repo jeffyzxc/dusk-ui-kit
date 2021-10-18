@@ -11,5 +11,5 @@ npm i -D @dusk-network/mnemonic
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/Mnemonic.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/Mnemonic_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

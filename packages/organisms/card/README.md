@@ -11,8 +11,8 @@ npm i -D @dusk-network/card
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/Card.svelte) -->
-<!-- The below code snippet is automatically added from ../../../examples/src/Card.svelte -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/organisms/Card_01.svelte) -->
+<!-- The below code snippet is automatically added from ../../../examples/src/organisms/Card_01.svelte -->
 
 ```svelte
 <script>

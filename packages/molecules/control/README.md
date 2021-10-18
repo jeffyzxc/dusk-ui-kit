@@ -11,5 +11,5 @@ npm i -D @dusk-network/control
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/Control.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/Control_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

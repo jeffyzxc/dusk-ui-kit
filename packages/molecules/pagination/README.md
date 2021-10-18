@@ -11,5 +11,5 @@ npm i -D @dusk-network/pagination
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/Pagination.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/Pagination_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

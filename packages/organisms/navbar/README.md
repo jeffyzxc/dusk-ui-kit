@@ -11,5 +11,5 @@ npm i -D @dusk-network/navbar
 
 ## Usage
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/Navbar.svelte) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/organisms/Navbar_01.svelte) -->
 <!-- MARKDOWN-AUTO-DOCS:END -->

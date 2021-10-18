@@ -7,8 +7,3 @@
 ```
 npm i -D @dusk-network/helpers
 ```
-
-## Usage
-
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/Helpers.svelte) -->
-<!-- MARKDOWN-AUTO-DOCS:END -->
