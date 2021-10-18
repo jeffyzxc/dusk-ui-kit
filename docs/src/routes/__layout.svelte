@@ -21,6 +21,7 @@
 
 <script>
   import "@dusk-network/styles/tailwind.css";
+  import "svelte-highlight/src/styles/github-dark.css";
   import Nav from "$lib/Nav.svelte";
   import Footer from "@dusk-network/footer";
 

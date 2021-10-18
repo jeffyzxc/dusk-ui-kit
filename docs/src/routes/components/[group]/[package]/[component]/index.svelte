@@ -15,6 +15,7 @@
 </script>
 
 <script>
+  import { HighlightSvelte } from "svelte-highlight";
   import RichText from "@dusk-network/rich-text";
   import { page } from "$app/stores";
 
@@ -52,7 +53,7 @@
   $: sources = Code[$page.params.group] && Code[$page.params.group][$page.params.package];
 </script>
 
-<RichText class="w-full max-w-full">
+<RichText class="w-full max-w-full mb-10">
   <h1>{$page.params.component}</h1>
 
   <h2>Installation</h2>
@@ -85,7 +86,9 @@
       {/each}
     </tbody>
   </table>
+</RichText>
 
+<RichText class="w-full max-w-full mb-10">
   <h2>Examples</h2>
 </RichText>
 
@@ -94,16 +97,10 @@
     <div class="my-10">
       <svelte:component this="{example[1]}" />
     </div>
-    <RichText>
-      <pre>
-          <code>
-            {sources[example[index]]}
-          </code>
-        </pre>
-    </RichText>
+    <HighlightSvelte code="{sources[example[index]]}" langtag="{true}" />
   {/each}
 {:else}
-  <RichText>
+  <RichText class="w-full max-w-full mb-10">
     <p>No examples found!</p>
   </RichText>
 {/if}

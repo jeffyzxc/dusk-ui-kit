@@ -80,6 +80,9 @@ const config = {
     },
     target: "#dusk",
     vite: () => ({
+      optimizeDeps: {
+        include: ["highlight.js/lib/core"],
+      },
       plugins: [
         virtualExamplePlugin(),
         virtualMetaPlugin(),
