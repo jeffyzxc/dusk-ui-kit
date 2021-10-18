@@ -87,16 +87,23 @@
   </table>
 
   <h2>Examples</h2>
-  {#if examples}
-    {#each Object.entries(examples) as example, index}
-      <svelte:component this="{example[1]}" />
-      <pre>
-        <code>
-          {sources[example[index]]}
-        </code>
-      </pre>
-    {/each}
-  {:else}
-    <p>No examples found!</p>
-  {/if}
 </RichText>
+
+{#if examples}
+  {#each Object.entries(examples) as example, index}
+    <div class="my-10">
+      <svelte:component this="{example[1]}" />
+    </div>
+    <RichText>
+      <pre>
+          <code>
+            {sources[example[index]]}
+          </code>
+        </pre>
+    </RichText>
+  {/each}
+{:else}
+  <RichText>
+    <p>No examples found!</p>
+  </RichText>
+{/if}
