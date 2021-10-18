@@ -51,7 +51,7 @@ module.exports = {
   stories: [
     "../stories/**/*.stories.svelte",
     "../stories/*.stories.mdx",
-    "../stories/atoms/drop-down/*.stories.mdx",
+    // "../stories/atoms/drop-down/*.stories.mdx",
   ],
   addons: [
     "@storybook/addon-docs",
