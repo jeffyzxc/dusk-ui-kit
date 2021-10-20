@@ -22,20 +22,22 @@ const virtualMetaPlugin = () => {
 };
 
 function getFiles(dir) {
-  var results = [];
-  var list = fs.readdirSync(dir);
-  list.forEach(function (file) {
+  let results = [];
+
+  fs.readdirSync(dir).forEach(function (file) {
     file = dir + "/" + file;
-    var stat = fs.statSync(file);
+
+    let stat = fs.statSync(file);
+
     if (stat && stat.isDirectory()) {
-      /* Recurse into a subdirectory */
       results = results.concat(getFiles(file));
     } else {
-      /* Is a file */
-      const file_type = file.split(".").pop();
-      if (file_type == "svelte") results.push(file);
+      const extension = file.split(".").pop();
+
+      if (extension == "svelte") results.push(file);
     }
   });
+
   return results;
 }
 
