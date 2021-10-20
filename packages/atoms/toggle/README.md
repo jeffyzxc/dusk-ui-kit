@@ -12,4 +12,15 @@ npm i -D @dusk-network/toggle
 ## Usage
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/atoms/toggle/Toggle_01.svelte) -->
+<!-- The below code snippet is automatically added from ../../../examples/src/atoms/toggle/Toggle_01.svelte -->
+```svelte
+<script>
+  import Toggle from "@dusk-network/toggle";
+
+  let value = false;
+  let variant = "brand";
+</script>
+
+<Toggle type="switch" value="{value}" variant="{variant}" />
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->
