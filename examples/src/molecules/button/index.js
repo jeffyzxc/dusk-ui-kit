@@ -1,2 +1,3 @@
 import Button_01 from "./Button_01.svelte";
-export { Button_01 };
+import Button_02 from "./Button_02.svelte";
+export { Button_01, Button_02 };
