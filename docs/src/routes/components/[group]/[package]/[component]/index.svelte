@@ -8,7 +8,6 @@
     const meta = stuff.components[page.params.group][page.params.package][page.params.component];
     const Examples = await import("@dusk-network/dusk-ui-kit-examples");
 
-    console.log(Examples.molecules.Control);
     return {
       props: { meta, Examples, Code: SourceCode },
     };
@@ -93,12 +92,12 @@
   <h2>Examples</h2>
 </RichText>
 
-{#if examples}hi
+{#if examples}
   {#each Object.entries(examples) as example, index}
     <div class="my-10">
       <svelte:component this="{example[1]}" />
     </div>
-    <HighlightSvelte code="{sources[example[index]]}" langtag="{true}" />
+    <HighlightSvelte code="{sources[example[0]]}" langtag="{true}" />
   {/each}
 {:else}
   <RichText class="w-full max-w-full mb-10">
