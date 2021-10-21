@@ -1,6 +1,9 @@
 const sveltePreprocess = require("svelte-preprocess");
 const dusk = require("@dusk-network/styles/plugin/vite-plugin-dusk-storybook.cjs");
 const metadata = require("@dusk-network/meta");
+// const mdPlugin = require("vite-plugin-markdown");
+
+// console.log(mdPlugin);
 
 const virtualMetaPlugin = () => {
   const virtualFileId = "@ui-kit-meta";
@@ -27,6 +30,7 @@ module.exports = {
       }),
     );
     config.plugins.push(virtualMetaPlugin());
+    // config.plugins.push(mdPlugin.default);
     config.resolve.dedupe = ["@storybook/client-api"]; // 🔧 for hoisted packages
 
     if (process.env.NODE_ENV === "production") config.base = ""; // 🔧 for embedding storybook on GH Pages
@@ -48,13 +52,15 @@ module.exports = {
   core: {
     builder: "storybook-builder-vite",
   },
-  stories: [
-    "../stories/**/*.stories.svelte",
-    "../stories/*.stories.mdx",
-    // "../stories/atoms/drop-down/*.stories.mdx",
-  ],
+  stories: ["../stories/**/*.stories.svelte", "../stories/*.stories.mdx"],
   addons: [
-    "@storybook/addon-docs",
+    {
+      name: "@storybook/addon-docs",
+      options: {
+        configureJSX: true,
+        transcludeMarkdown: true,
+      },
+    },
     "@storybook/addon-viewport",
     "@storybook/addon-controls",
     {
