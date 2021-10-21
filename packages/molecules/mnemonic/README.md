@@ -12,4 +12,30 @@ npm i -D @dusk-network/mnemonic
 ## Usage
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/mnemonic/Mnemonic_01.svelte) -->
+<!-- The below code snippet is automatically added from ../../../examples/src/molecules/mnemonic/Mnemonic_01.svelte -->
+```svelte
+<script>
+  import Mnemonic from "@dusk-network/mnemonic";
+
+  function onComplete() {}
+  function onPassed() {}
+  const seed = [
+    "oyster",
+    "close",
+    "apple",
+    "unfold",
+    "wood",
+    "alone",
+    "during",
+    "storm",
+    "pulp",
+    "glow",
+    "album",
+    "shop",
+  ];
+  const type = "preview";
+</script>
+
+<Mnemonic on:complete="{onComplete}" on:passed="{onPassed}" seed="{seed}" type="{type}" />
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->

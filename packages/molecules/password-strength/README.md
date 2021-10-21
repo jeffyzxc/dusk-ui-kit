@@ -12,4 +12,14 @@ npm i -D @dusk-network/password-strength
 ## Usage
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/password-strength/PasswordStrength_01.svelte) -->
+<!-- The below code snippet is automatically added from ../../../examples/src/molecules/password-strength/PasswordStrength_01.svelte -->
+```svelte
+<script>
+  //import PasswordStrength from "@dusk-network/password-strength";
+
+  //let password = "";
+</script>
+
+<!-- <PasswordStrength password="{password}" /> -->
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->
