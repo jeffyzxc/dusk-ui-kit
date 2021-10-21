@@ -12,4 +12,17 @@ npm i -D @dusk-network/accordion
 ## Usage
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/organisms/accordion/Accordion_01.svelte) -->
+<!-- The below code snippet is automatically added from ../../../examples/src/organisms/accordion/Accordion_01.svelte -->
+```svelte
+<script>
+  import Accordion, { Item } from "@dusk-network/accordion";
+</script>
+
+<Accordion>
+  <Item title="First Item">First item content...</Item>
+  <Item title="Second Item">Second item content...</Item>
+  <Item title="Third Item">Third item content...</Item>
+  <Item title="Fourth Item">Fourth item content...</Item>
+</Accordion>
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->
