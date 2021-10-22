@@ -4,6 +4,6 @@
 </script>
 
 <Button>
-  <Icon name="check-decagram-outline" size="sm" />
   <Label>Hi there</Label>
+  <Icon name="check-decagram-outline" size="sm" />
 </Button>

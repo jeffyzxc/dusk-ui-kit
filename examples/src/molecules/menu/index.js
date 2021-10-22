@@ -1,2 +1,3 @@
 import Menu_01 from "./Menu_01.svelte";
-export { Menu_01 };
+import Menu_02 from "./Menu_02.svelte";
+export { Menu_01, Menu_02 };

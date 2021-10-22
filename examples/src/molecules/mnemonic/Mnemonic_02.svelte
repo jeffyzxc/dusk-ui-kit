@@ -4,21 +4,8 @@
 
   function onComplete() {}
   function onPassed() {}
-  const seed = [
-    "oyster",
-    "close",
-    "apple",
-    "unfold",
-    "wood",
-    "alone",
-    "during",
-    "storm",
-    "pulp",
-    "glow",
-    "album",
-    "shop",
-  ];
-  const type = types.MNEMONIC.PREVIEW;
+  const seed = [];
+  const type = types.MNEMONIC.AUTHENTICATE;
   const length = 12;
 </script>
 

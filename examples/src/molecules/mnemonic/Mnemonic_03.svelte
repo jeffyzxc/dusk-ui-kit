@@ -18,7 +18,7 @@
     "album",
     "shop",
   ];
-  const type = types.MNEMONIC.PREVIEW;
+  const type = types.MNEMONIC.CONFIRM;
   const length = 12;
 </script>
 
