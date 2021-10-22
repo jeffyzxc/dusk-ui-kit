@@ -1,0 +1,34 @@
+<script>
+  import Card, { Content } from "@dusk-network/card";
+  import Heading from "@dusk-network/heading";
+  import Icon from "@dusk-network/icon";
+</script>
+
+<Card>
+  <Content>
+    <Heading>
+      <svelte:fragment slot="icon">
+        <Icon name="wallet-plus" />
+      </svelte:fragment>
+      <h2>Additional Heading!</h2>
+    </Heading>
+    <Heading variant="danger">
+      <svelte:fragment slot="icon">
+        <Icon name="alert-outline" />
+      </svelte:fragment>
+      <h2>Error heading!</h2>
+    </Heading>
+    <Heading variant="warning">
+      <svelte:fragment slot="icon">
+        <Icon name="alert-outline" />
+      </svelte:fragment>
+      <h2>Warning heading!</h2>
+    </Heading>
+    <Heading variant="success">
+      <svelte:fragment slot="icon">
+        <Icon name="alert-outline" />
+      </svelte:fragment>
+      <h2>Success heading!</h2>
+    </Heading>
+  </Content>
+</Card>
