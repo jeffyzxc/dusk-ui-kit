@@ -16,6 +16,7 @@ npm i -D @dusk-network/mnemonic
 ```svelte
 <script>
   import Mnemonic from "@dusk-network/mnemonic";
+  import types from "@dusk-network/helpers/types.js";
 
   function onComplete() {}
   function onPassed() {}
@@ -33,9 +34,16 @@ npm i -D @dusk-network/mnemonic
     "album",
     "shop",
   ];
-  const type = "preview";
+  const type = types.MNEMONIC.PREVIEW;
+  const length = 12;
 </script>
 
-<Mnemonic on:complete="{onComplete}" on:passed="{onPassed}" seed="{seed}" type="{type}" />
+<Mnemonic
+  on:complete="{onComplete}"
+  on:passed="{onPassed}"
+  seed="{seed}"
+  type="{type}"
+  length="{length}"
+/>
 ```
 <!-- MARKDOWN-AUTO-DOCS:END -->
