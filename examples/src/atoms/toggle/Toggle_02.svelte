@@ -2,7 +2,7 @@
   import Toggle, { Group } from "@dusk-network/toggle";
 
   const type = "button";
-  let variant = "brand";
+  const variant = "brand";
   function onChange() {
     //Runs on triggered event
   }
@@ -15,9 +15,10 @@
   {#each Array(5) as _, i}
     <Toggle
       type="{type}"
-      name="button_{i}"
+      name="button_group"
       id="button_{i}"
       variant="{variant}"
+      value="button_{i}"
       on:change="{onChange}"
       on:click="{onClick}"
     >

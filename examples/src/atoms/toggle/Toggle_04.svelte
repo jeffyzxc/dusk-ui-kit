@@ -15,9 +15,10 @@
   {#each Array(5) as _, i}
     <Toggle
       type="{type}"
-      name="radio_{i}"
+      name="radio_group"
       id="radio_{i}"
       variant="{variant}"
+      value="radio_{i}"
       on:change="{onChange}"
       on:click="{onClick}"
     >
