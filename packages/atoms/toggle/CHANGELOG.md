@@ -1,5 +1,14 @@
 # @dusk-network/toggle
 
+## 4.0.2
+
+### Patch Changes
+
+- b7876f76: Releasing v4.0.2
+- Updated dependencies [b7876f76]
+  - @dusk-network/icon@4.0.2
+  - @dusk-network/helpers@4.0.2
+
 ## 4.0.1
 
 ### Patch Changes
