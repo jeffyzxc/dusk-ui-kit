@@ -26,5 +26,4 @@ fileSearch.forEach((file) => {
 
 if (fileSearch) {
   git.add(fileSearch).commit("🤖 (auto-commit) preparing packages for changeset");
-  console.log("Changes committed.");
 }
