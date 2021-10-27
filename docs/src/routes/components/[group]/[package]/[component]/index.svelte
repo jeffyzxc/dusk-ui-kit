@@ -94,10 +94,13 @@
 
 {#if examples}
   {#each Object.entries(examples) as example, index}
+    <RichText>
+      <h3>Example {index + 1}</h3>
+    </RichText>
     <div class="my-10">
       <svelte:component this="{example[1]}" />
     </div>
-    <HighlightSvelte code="{sources[example[index]]}" langtag="{true}" />
+    <HighlightSvelte class="mb-10" code="{sources[example[0]]}" langtag="{true}" />
   {/each}
 {:else}
   <RichText class="w-full max-w-full mb-10">

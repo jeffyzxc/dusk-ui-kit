@@ -12,4 +12,12 @@ npm i -D @dusk-network/logo
 ## Usage
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/atoms/logo/Logo_01.svelte) -->
+<!-- The below code snippet is automatically added from ../../../examples/src/atoms/logo/Logo_01.svelte -->
+```svelte
+<script>
+  import Logo from "@dusk-network/logo";
+</script>
+
+<Logo />
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->

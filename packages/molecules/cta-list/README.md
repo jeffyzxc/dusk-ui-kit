@@ -12,4 +12,22 @@ npm i -D @dusk-network/cta-list
 ## Usage
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/cta-list/CtaList_01.svelte) -->
+<!-- The below code snippet is automatically added from ../../../examples/src/molecules/cta-list/CtaList_01.svelte -->
+```svelte
+<script>
+  import CtaList, { Item } from "@dusk-network/cta-list";
+  import RichText from "@dusk-network/rich-text";
+
+  const type = 2;
+</script>
+
+<CtaList type="{type}">
+  <Item>
+    <RichText>First</RichText>
+  </Item>
+  <Item>
+    <RichText>Second</RichText>
+  </Item>
+</CtaList>
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->

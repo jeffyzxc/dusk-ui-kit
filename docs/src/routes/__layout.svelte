@@ -20,6 +20,7 @@
 </script>
 
 <script>
+  import "./styles.css";
   import "@dusk-network/styles/tailwind.css";
   import "svelte-highlight/src/styles/github-dark.css";
   import Nav from "$lib/Nav.svelte";

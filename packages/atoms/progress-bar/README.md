@@ -12,4 +12,16 @@ npm i -D @dusk-network/progress-bar
 ## Usage
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/atoms/progress-bar/ProgressBar_01.svelte) -->
+<!-- The below code snippet is automatically added from ../../../examples/src/atoms/progress-bar/ProgressBar_01.svelte -->
+```svelte
+<script>
+  import ProgressBar from "@dusk-network/progress-bar";
+
+  const step = 1;
+  const steps = 3;
+  const variant = "danger";
+</script>
+
+<ProgressBar step="{step}" steps="{steps}" variant="{variant}" />
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->
