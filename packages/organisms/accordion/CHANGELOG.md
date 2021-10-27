@@ -1,5 +1,16 @@
 # @dusk-network/accordion
 
+## 4.0.1
+
+### Patch Changes
+
+- 3d02510e: Patch release for some boilerplate issues
+- Updated dependencies [3d02510e]
+  - @dusk-network/icon@4.0.1
+  - @dusk-network/helpers@4.0.1
+  - @dusk-network/button@4.0.1
+  - @dusk-network/menu@4.0.1
+
 ## 4.0.0
 
 ### Major Changes
