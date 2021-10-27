@@ -12,4 +12,31 @@ npm i -D @dusk-network/toggle
 ## Usage
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/atoms/toggle/Toggle_01.svelte) -->
+<!-- The below code snippet is automatically added from ../../../examples/src/atoms/toggle/Toggle_01.svelte -->
+```svelte
+<script>
+  import Toggle from "@dusk-network/toggle";
+
+  let value = false;
+  const type = "switch";
+  let variant = "brand";
+
+  function onChange() {
+    //Runs on triggered event
+  }
+  function onClick() {
+    //Runs on triggered event
+  }
+</script>
+
+<Toggle
+  type="{type}"
+  name="switch"
+  id="switch"
+  variant="{variant}"
+  value="{value}"
+  on:change="{onChange}"
+  on:click="{onClick}"
+/>
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->

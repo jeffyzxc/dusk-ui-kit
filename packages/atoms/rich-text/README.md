@@ -12,4 +12,15 @@ npm i -D @dusk-network/rich-text
 ## Usage
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/atoms/rich-text/RichText_01.svelte) -->
+<!-- The below code snippet is automatically added from ../../../examples/src/atoms/rich-text/RichText_01.svelte -->
+```svelte
+<script>
+  import RichText from "@dusk-network/rich-text";
+
+  const size = "lg";
+  const strong = "**This is a strong text**";
+</script>
+
+<RichText size="{size}" markdown="{strong}" />
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->

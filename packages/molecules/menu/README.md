@@ -12,4 +12,18 @@ npm i -D @dusk-network/menu
 ## Usage
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/menu/Menu_01.svelte) -->
+<!-- The below code snippet is automatically added from ../../../examples/src/molecules/menu/Menu_01.svelte -->
+```svelte
+<script>
+  import Menu, { Item } from "@dusk-network/menu";
+
+  const orientation = "horizontal";
+</script>
+
+<Menu orientation="{orientation}">
+  <Item href="javascript:;">Link 1</Item>
+  <Item href="javascript:;">Link 2</Item>
+  <Item>No Link</Item>
+</Menu>
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->

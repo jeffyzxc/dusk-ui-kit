@@ -33,6 +33,8 @@
 
   $: isFilled($compared);
 
+  $: options.update({ type: type });
+
   onMount(() => {
     words.set(seed);
     options.set({ type: type });

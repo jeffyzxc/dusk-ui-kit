@@ -88,10 +88,10 @@
       ~ ^^&__label--button {
         @apply bg-indigo-500 text-white;
       }
-      &^^&__checkbox {
+      &.duk-toggle__checkbox {
         background-image: url("./icons/checkbox-brand.svg");
       }
-      &^^&__radio {
+      &.duk-toggle__radio {
         background-image: url("./icons/radio-brand.svg");
       }
     }
@@ -115,10 +115,10 @@
         @apply bg-orange-500;
       }
     }
-    &^^&__checkbox {
+    &.duk-toggle__checkbox {
       background-image: url("./icons/checkbox-cta.svg");
     }
-    &^^&__radio {
+    &.duk-toggle__radio {
       background-image: url("./icons/radio-cta.svg");
     }
   }
@@ -128,10 +128,10 @@
       ~ ^^&__label--button {
         @apply bg-blue-500;
       }
-      &^^&__checkbox {
+      &.duk-toggle__checkbox {
         background-image: url("./icons/checkbox-info.svg");
       }
-      &^^&__radio {
+      &.duk-toggle__radio {
         background-image: url("./icons/radio-info.svg");
       }
     }
@@ -142,10 +142,10 @@
       ~ ^^&__label--button {
         @apply bg-green-500;
       }
-      &^^&__checkbox {
+      &.duk-toggle__checkbox {
         background-image: url("./icons/checkbox-success.svg");
       }
-      &^^&__radio {
+      &.duk-toggle__radio {
         background-image: url("./icons/radio-success.svg");
       }
     }
@@ -156,10 +156,10 @@
       ~ ^^&__label--button {
         @apply bg-yellow-500;
       }
-      &^^&__checkbox {
+      &.duk-toggle__checkbox {
         background-image: url("./icons/checkbox-warning.svg");
       }
-      &^^&__radio {
+      &.duk-toggle__radio {
         background-image: url("./icons/radio-warning.svg");
       }
     }
@@ -170,10 +170,10 @@
       ~ ^^&__label--button {
         @apply bg-red-500;
       }
-      &^^&__checkbox {
+      &.duk-toggle__checkbox {
         background-image: url("./icons/checkbox-danger.svg");
       }
-      &^^&__radio {
+      &.duk-toggle__radio {
         background-image: url("./icons/radio-danger.svg");
       }
     }

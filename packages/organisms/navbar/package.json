@@ -15,13 +15,15 @@
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
   },
+  "dependencies": {
+    "svelte-dark-mode": "^2.0.0"
+  },
   "devDependencies": {
     "@dusk-network/helpers": "workspace:*",
     "@dusk-network/icon": "workspace:*",
     "@dusk-network/logo": "workspace:*",
     "@dusk-network/menu": "workspace:*",
-    "@dusk-network/toggle": "workspace:*",
-    "svelte-dark-mode": "^2.0.0"
+    "@dusk-network/toggle": "workspace:*"
   },
   "peerDependencies": {
     "@dusk-network/helpers": "workspace:*",
@@ -30,5 +32,5 @@
     "@dusk-network/menu": "workspace:*",
     "@dusk-network/toggle": "workspace:*"
   },
-  "gitHead": "d25a2e7c931f9d12455d8bf1895a013046cb3db6"
+  "gitHead": "8cfef45d193010caec5d3413ef6f74ec2496fc1b"
 }
