@@ -1,5 +1,11 @@
 # @dusk-network/storybook
 
+## 4.0.1
+
+### Patch Changes
+
+- 3d02510e: Patch release for some boilerplate issues
+
 ## 4.0.0
 
 ### Major Changes
