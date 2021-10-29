@@ -1,5 +1,5 @@
 ---
-to: _templates/<%= name %>/<%= action || 'new' %>/prompt.js
+to: _templates/<%= name %>/<%= action || 'new' %>/prompt.cjs
 ---
 
 // see types of prompts:
