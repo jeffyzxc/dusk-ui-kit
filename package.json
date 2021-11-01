@@ -44,7 +44,8 @@
     "version:repo": "pnpm update:workspace",
     "update:deps": "pnpm up --latest --recursive --interactive",
     "update:workspace": "pnpm up --recursive --workspace",
-    "release:ci": "pnpm i -r && pnpm publish -r"
+    "release:ci": "pnpm i -r && pnpm publish -r",
+    "dusk": "hygen"
   },
   "commitlint": {
     "extends": [
@@ -144,6 +145,7 @@
     "eslint-plugin-tailwind": "^0.2.1",
     "git-cz": "^4.7.6",
     "husky": "^7.0.2",
+    "hygen": "^6.1.0",
     "is-ci": "^3.0.0",
     "jest": "^27.2.1",
     "lint-staged": "^11.1.2",
