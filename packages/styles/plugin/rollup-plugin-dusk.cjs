@@ -1,7 +1,9 @@
 const postcss = require("rollup-plugin-postcss");
 const path = require("path");
+// const postCssConfig = require("../postcss.config.cjs");
+
 const postcssProcessor = ({ postcss = [], purge = false }) => {
-  const tailwindConfig = require("../dusk.tailwind.config.js");
+  const tailwindConfig = require("../dusk.tailwind.config.cjs");
   return [
     require("postcss-import")(),
     require("postcss-url")(),
@@ -11,10 +13,6 @@ const postcssProcessor = ({ postcss = [], purge = false }) => {
     require("tailwindcss")(tailwindConfig),
     require("autoprefixer")(),
     ...postcss,
-    purge &&
-      require("cssnano")({
-        preset: "default",
-      }),
   ].filter(Boolean);
 };
 
@@ -50,7 +48,7 @@ const postcssProcessor = ({ postcss = [], purge = false }) => {
 const plugins = (config) => postcssProcessor(config || {});
 
 module.exports = (config = {}) => {
-  const defaultOutput = "./storybook-static/global.css";
+  const defaultOutput = "./global.css";
   const pcss = postcss({
     plugins: plugins(config),
     extract: path.basename(config.output || defaultOutput),
