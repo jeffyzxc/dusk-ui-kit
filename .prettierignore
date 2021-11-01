@@ -5,3 +5,4 @@ types
 .svelte-kit
 pnpm-lock.yaml
 storybook-static
+_templates

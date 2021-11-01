@@ -44,8 +44,7 @@
     "version:repo": "pnpm update:workspace",
     "update:deps": "pnpm up --latest --recursive --interactive",
     "update:workspace": "pnpm up --recursive --workspace",
-    "release:ci": "pnpm i -r && pnpm publish -r",
-    "dusk": "hygen"
+    "release:ci": "pnpm i -r && pnpm publish -r"
   },
   "commitlint": {
     "extends": [
@@ -90,7 +89,8 @@
   },
   "eslintIgnore": [
     "*.test.js",
-    "storybook-static"
+    "storybook-static",
+    "_templates/"
   ],
   "jest": {
     "collectCoverage": true,
