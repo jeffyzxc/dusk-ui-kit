@@ -1,8 +1,9 @@
 ---
-to: packages/<%=type%>/<%=name%>/index.js
----
-import <%=Name%> from "./<%=Name%>.svelte";
+to: packages/<%= h.inflection.pluralize(type) %>/<%= h.inflection.dasherize(name) %>/index.js
 
-export default <%=Name%>;
+---
+import <%= h.inflection.classify(name) %> from "./<%= h.inflection.classify(name) %>.svelte";
+
+export default <%= h.inflection.classify(name) %>;
 
 

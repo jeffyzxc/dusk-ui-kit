@@ -1,5 +1,5 @@
 ---
-to: packages/<%=type%>/<%=name%>/<%=Name%>.test.js
+to: packages/<%= h.inflection.pluralize(type) %>/<%= h.inflection.dasherize(name) %>/<%= h.inflection.classify(name) %>.test.js
 ---
 
 /**
@@ -7,9 +7,9 @@ to: packages/<%=type%>/<%=name%>/<%=Name%>.test.js
  */
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/svelte";
-import <%=Name%> from "./<%=Name%>.svelte";
+import <%= h.inflection.classify(name) %> from "./<%= h.inflection.classify(name) %>.svelte";
 
 test("Component renders", () => {
-  const results = render(<%=Name%>, {});
-  expect(() => results.toHaveClass("duk-<%=name%>"));
+  const results = render(<%= h.inflection.classify(name) %>, {});
+  expect(() => results.toHaveClass("duk-<%= h.inflection.dasherize(name) %>"));
 });
