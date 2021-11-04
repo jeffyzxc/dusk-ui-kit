@@ -80,6 +80,7 @@ const config = {
     paths: {
       base: process.env.BASE || "",
     },
+    appDir: "internal",
     target: "#dusk",
     vite: () => ({
       optimizeDeps: {

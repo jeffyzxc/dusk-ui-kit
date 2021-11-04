@@ -1,7 +1,7 @@
 import * as Button from "./button";
 import * as Control from "./control";
 import * as Alert from "./alert";
-import * as Breadcrumb from "./Breadcrumb";
+import * as Breadcrumb from "./breadcrumb";
 import * as CtaList from "./cta-list";
 import * as DisclaimerList from "./disclaimer-list";
 import * as FileUpload from "./file-upload";

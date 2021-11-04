@@ -1,0 +1,19 @@
+{
+  "name": "@dusk-network/explorer-detail",
+  "version": "0.0.0",
+  "description": "Dusk UI Kit - ExplorerDetail",
+  "bugs": {
+    "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dusk-network/dusk-ui-kit.git",
+    "directory": "packages/templates/explorer-detail"
+  },
+  "type": "module",
+  "module": "index.js",
+  "scripts": {
+    "test": "echo \"Work in progress...\" && exit 1"
+  },
+  "gitHead": "1bb915721fbdd380bb696733dd7fee334a0e6f52"
+}
