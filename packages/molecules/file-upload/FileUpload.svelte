@@ -38,8 +38,13 @@
   }
 
   function inputFile(e) {
-    fields.file = e.target.files;
-    isFileLoaded = true;
+    if (e.target.files.length === 1) {
+      fields.file = e.target.files;
+      isFileLoaded = true;
+    } else {
+      fields.file = null;
+      isFileLoaded = false;
+    }
     dispatch("inputFile", fields);
   }
 </script>
