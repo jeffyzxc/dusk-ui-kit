@@ -9,6 +9,7 @@ const fs = require("fs");
 const path = require("path");
 const { execSync } = require("child_process");
 const simpleGit = require("simple-git");
+const { exit } = require("process");
 const git = simpleGit({
   config: ["core.hooksPath=/dev/null"], // 🔧 Disables hooks entirely
   baseDir: process.cwd(), // FIXME this should probably be set to the repo root.
@@ -17,3 +18,4 @@ const git = simpleGit({
 const versionFile = JSON.parse(fs.readFileSync(path.resolve("./versions.json"), "utf-8"));
 execSync(`npm version ${versionFile.releases[0].newVersion}`);
 git.add("./package.json").commit("🤖 (auto-commit) preparing package version for release");
+exit;
