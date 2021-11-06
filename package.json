@@ -28,6 +28,7 @@
     "publish:ci": "changeset publish",
     "prechangeset": "is-ci || node scripts/prechangeset.cjs",
     "changeset": "changeset",
+    "postchangeset": "is-ci || pnpm status && node scripts/postchangeset.cjs",
     "format": "prettier . -w --plugin-search-dir=.",
     "stage": "lint-staged",
     "start": "pnpm start:storybook",
@@ -44,7 +45,8 @@
     "version:repo": "pnpm update:workspace",
     "update:deps": "pnpm up --latest --recursive --interactive",
     "update:workspace": "pnpm up --recursive --workspace",
-    "release:ci": "pnpm i -r && pnpm publish -r"
+    "release:ci": "pnpm i -r && pnpm publish -r",
+    "status": "changeset status --verbose --output=versions.json"
   },
   "commitlint": {
     "extends": [

@@ -5,8 +5,8 @@ on:
     paths:
       - "packages/**"
       - "storybook/**"
-    branches:
-      - main
+    branches-ignore:
+      - dependabot/**
 
 jobs:
   chromatic:
