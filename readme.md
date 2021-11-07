@@ -31,4 +31,4 @@ pnpm test
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check [issues page](https://github.com/dusk-network/dusk-ui-kit/issues).
+Feel free to check out the [issues page](https://github.com/dusk-network/issues).
