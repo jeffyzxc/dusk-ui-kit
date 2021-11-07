@@ -38,6 +38,7 @@
 <dl
   class="{$$props.class || ''} duk-accordion"
   class:duk-accordion--card="{context === contexts.ACCORDION.CARD}"
+  class:duk-accordion--rich-text="{context === contexts.ACCORDION.RICH_TEXT}"
 >
   <slot />
 </dl>

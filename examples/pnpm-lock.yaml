@@ -34,7 +34,7 @@ specifiers:
   '@dusk-network/text-field': workspace:*
   '@dusk-network/toggle': workspace:*
   '@dusk-network/wizard': workspace:*
-  '@sveltejs/kit': 1.0.0-next.183
+  '@sveltejs/kit': 1.0.0-next.195
   svelte: ^3.43.0
   svelte-preprocess: ^4.9.5
   vite: ^2.5.0
@@ -73,7 +73,7 @@ devDependencies:
   '@dusk-network/text-field': link:../packages/atoms/text-field
   '@dusk-network/toggle': link:../packages/atoms/toggle
   '@dusk-network/wizard': link:../packages/organisms/wizard
-  '@sveltejs/kit': 1.0.0-next.183_svelte@3.43.2
+  '@sveltejs/kit': 1.0.0-next.195_svelte@3.43.2
   svelte: 3.43.2
   svelte-preprocess: 4.9.8_svelte@3.43.2
   vite: 2.6.7
@@ -88,18 +88,18 @@ packages:
       picomatch: 2.3.0
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.183_svelte@3.43.2:
-    resolution: {integrity: sha512-XS115RLu8mQk0wZ33BF6sKHEQD8BUFhErfxJhEkXoR4m2bW1h1JBLKHaZ1qnG9eAPkalmccCXDMxJjuYVCh/oQ==}
-    engines: {node: ^12.20 || >=14.13}
+  /@sveltejs/kit/1.0.0-next.195_svelte@3.43.2:
+    resolution: {integrity: sha512-R2X4FgzXQhp63XOik6S1Flw91S2CEA7sTxdsnNFrq3O+bIN7pQhJhkm6zgH68MZANdDcq8oIiSRkxT4M3t1+jQ==}
+    engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
-      svelte: ^3.43.0
+      svelte: ^3.44.0
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.0-next.28_svelte@3.43.2+vite@2.6.7
+      '@sveltejs/vite-plugin-svelte': 1.0.0-next.30_svelte@3.43.2+vite@2.6.13
       cheap-watch: 1.0.4
       sade: 1.7.4
       svelte: 3.43.2
-      vite: 2.6.7
+      vite: 2.6.13
     transitivePeerDependencies:
       - diff-match-patch
       - less
@@ -108,12 +108,12 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/vite-plugin-svelte/1.0.0-next.28_svelte@3.43.2+vite@2.6.7:
-    resolution: {integrity: sha512-NZlOSfogZHQFLp8Vp59tIc0grmmJeTyyxJt0o9uomeQC0hZJsA7jp8rRW7EMH7TRvo+tv1MtB9BU84lStv7xYw==}
-    engines: {node: ^12.20 || ^14.13.1 || >= 16}
+  /@sveltejs/vite-plugin-svelte/1.0.0-next.30_svelte@3.43.2+vite@2.6.13:
+    resolution: {integrity: sha512-YQqdMxjL1VgSFk4/+IY3yLwuRRapPafPiZTiaGEq1psbJYSNYUWx9F1zMm32GMsnogg3zn99mGJOqe3ld3HZSg==}
+    engines: {node: ^14.13.1 || >= 16}
     peerDependencies:
       diff-match-patch: ^1.0.5
-      svelte: ^3.34.0
+      svelte: ^3.44.0
       vite: ^2.6.0
     peerDependenciesMeta:
       diff-match-patch:
@@ -126,7 +126,7 @@ packages:
       require-relative: 0.8.7
       svelte: 3.43.2
       svelte-hmr: 0.14.7_svelte@3.43.2
-      vite: 2.6.7
+      vite: 2.6.13
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -619,6 +619,30 @@ packages:
   /svelte/3.43.2:
     resolution: {integrity: sha512-Lj+TJfSeod8UGnoG2opysdlCy4MCck/hHQsZwtNPXdYTwLTz+WC37QwewPhZtd+h3dpfps4h9QzFxWGVI4tzQw==}
     engines: {node: '>= 8'}
+    dev: true
+
+  /vite/2.6.13:
+    resolution: {integrity: sha512-+tGZ1OxozRirTudl4M3N3UTNJOlxdVo/qBl2IlDEy/ZpTFcskp+k5ncNjayR3bRYTCbqSOFz2JWGN1UmuDMScA==}
+    engines: {node: '>=12.2.0'}
+    hasBin: true
+    peerDependencies:
+      less: '*'
+      sass: '*'
+      stylus: '*'
+    peerDependenciesMeta:
+      less:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+    dependencies:
+      esbuild: 0.13.6
+      postcss: 8.3.9
+      resolve: 1.20.0
+      rollup: 2.58.0
+    optionalDependencies:
+      fsevents: 2.3.2
     dev: true
 
   /vite/2.6.7:
