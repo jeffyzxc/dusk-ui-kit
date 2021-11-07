@@ -1,5 +1,5 @@
 <script>
-  import { getContext } from "svelte";
+  import { getContext, setContext } from "svelte";
   import * as marked from "marked";
   import contexts from "@dusk-network/helpers/contexts.js";
   import sizes from "@dusk-network/helpers/sizes.js";
@@ -18,6 +18,7 @@
   export let size = sizes.RICH_TEXT.DEFAULT;
 
   const context = getContext("DUK:rich-text:context");
+  setContext("DUK:accordion:context", contexts.ACCORDION.RICH_TEXT);
 </script>
 
 <div
