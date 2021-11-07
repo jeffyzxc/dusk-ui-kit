@@ -21,8 +21,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "14.16.0"
-          # registry-url: "https://npm.pkg.github.com/"
-          # scope: "@dusk-network"
 
       - name: Install pnpm
         run: npm i pnpm@latest -g
@@ -93,7 +91,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: v${{ env.CURRENT_VERSION }}
-          # Copy Pull Request's tile and body to Release Note
           release_name: UI Kit v${{ env.CURRENT_VERSION }}
           body: |
             Release of UI Kit v${{ env.CURRENT_VERSION }}
