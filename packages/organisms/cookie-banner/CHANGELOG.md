@@ -1,5 +1,14 @@
 # @dusk-network/cookie-banner
 
+## 4.0.5
+
+### Patch Changes
+
+- 2043c055: Release 4.0.4
+- Updated dependencies [2043c055]
+  - @dusk-network/icon@4.0.5
+  - @dusk-network/helpers@4.0.5
+
 ## 4.0.4
 
 ### Patch Changes
