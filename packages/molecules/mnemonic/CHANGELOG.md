@@ -1,5 +1,15 @@
 # @dusk-network/mnemonic
 
+## 4.0.5
+
+### Patch Changes
+
+- 2043c055: Release 4.0.4
+- Updated dependencies [2043c055]
+  - @dusk-network/text-field@4.0.5
+  - @dusk-network/helpers@4.0.5
+  - @dusk-network/button@4.0.5
+
 ## 4.0.4
 
 ### Patch Changes

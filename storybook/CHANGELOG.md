@@ -1,5 +1,11 @@
 # @dusk-network/storybook
 
+## 4.0.5
+
+### Patch Changes
+
+- 2043c055: Release 4.0.4
+
 ## 4.0.4
 
 ### Patch Changes
