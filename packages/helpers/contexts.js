@@ -1,6 +1,7 @@
 export default {
   ACCORDION: {
     CARD: "accordion:card",
+    RICH_TEXT: "accordion:rich-text",
   },
   BREADCRUMB: {
     WIZARD: "breadcrumb:wizard",
