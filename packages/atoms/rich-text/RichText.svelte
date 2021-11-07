@@ -31,7 +31,7 @@
   class:duk-rich-text--card="{context === contexts.RICH_TEXT.CARD}"
 >
   {#if markdown}
-    {@html marked.default(markdown)}
+    {@html marked.parse(markdown)}
   {:else}
     <slot />
   {/if}
