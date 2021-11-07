@@ -1,6 +1,9 @@
 .env
 .DS_Store
 .pnpm-debug.log
+.pnpm-debug.log
+.jest-test-results.json
+versions.json
 .vscode/
 .svelte/
 .svelte-kit/
@@ -12,6 +15,4 @@ build-storybook.log
 /meta/**/pnpm-lock.yaml
 /storybook/**/pnpm-lock.yaml
 /docs/**/pnpm-lock.yaml
-.pnpm-debug.log
-.jest-test-results.json
 coverage/
