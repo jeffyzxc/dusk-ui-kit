@@ -3,6 +3,9 @@
   "version": "4.0.5",
   "private": true,
   "type": "module",
+  "dependencies": {
+    "yup": "^0.32.11"
+  },
   "devDependencies": {
     "@dusk-network/accordion": "workspace:*",
     "@dusk-network/alert": "workspace:*",
