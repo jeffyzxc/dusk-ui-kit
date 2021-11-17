@@ -44,7 +44,7 @@ module.exports = {
     };
 
     // config.optimizeDeps = {
-    //   include: ["@dusk-network/styles"],
+    //   exclude: ["@dusk-network/table"],
     // };
 
     return config;
