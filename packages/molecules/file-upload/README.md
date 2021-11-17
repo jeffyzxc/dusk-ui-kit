@@ -13,7 +13,6 @@ npm i -D @dusk-network/file-upload
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/file-upload/FileUpload_01.svelte) -->
 <!-- The below code snippet is automatically added from ../../../examples/src/molecules/file-upload/FileUpload_01.svelte -->
-
 ```svelte
 <script>
   import FileUpload from "@dusk-network/file-upload";
@@ -71,5 +70,4 @@ npm i -D @dusk-network/file-upload
   </Control>
 </Form>
 ```
-
 <!-- MARKDOWN-AUTO-DOCS:END -->
