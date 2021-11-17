@@ -1,5 +1,17 @@
 # @dusk-network/navbar
 
+## 4.0.6
+
+### Patch Changes
+
+- 72ad415f: Release 4.0.6
+- Updated dependencies [72ad415f]
+  - @dusk-network/icon@4.0.6
+  - @dusk-network/logo@4.0.6
+  - @dusk-network/toggle@4.0.6
+  - @dusk-network/helpers@4.0.6
+  - @dusk-network/menu@4.0.6
+
 ## 4.0.5
 
 ### Patch Changes
