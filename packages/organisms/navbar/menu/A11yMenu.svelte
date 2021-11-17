@@ -9,7 +9,6 @@
   let theme;
 
   $: switchTheme = theme === "dark" ? "light" : "dark";
-  // $: document.documentElement.className = theme;
   $: isDarkMode = theme === "dark";
 
   afterUpdate(() => {
@@ -40,6 +39,7 @@
       offIcon="brightness-5"
       bind:checked="{isDarkMode}"
       on:click="{() => (theme = switchTheme)}"
+      value="{isDarkMode ? true : false}"
     />
   </Item>
 </Menu>
