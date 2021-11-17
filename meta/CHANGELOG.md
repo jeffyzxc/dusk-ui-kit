@@ -1,5 +1,11 @@
 # @dusk-network/meta
 
+## 4.0.6
+
+### Patch Changes
+
+- 72ad415f: Release 4.0.6
+
 ## 4.0.0
 
 ### Minor Changes
