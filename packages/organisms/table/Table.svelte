@@ -1,12 +1,11 @@
 <script>
-  import { onMount, onDestroy, setContext } from "svelte";
-  // import Search from './components/Search.svelte'
+  import { onDestroy, setContext, getContext } from "svelte";
   import Pagination from "@dusk-network/pagination/Pagination.svelte";
   import DropDown from "@dusk-network/drop-down/DropDown.svelte";
   import contexts from "@dusk-network/helpers/contexts.js";
-  import { options } from "./stores/options.js";
-  import { pageNumber, activeRow } from "./stores/state.js";
-  import { table as dataTable } from "./table.js";
+  import { getTable } from "./table.js";
+  import { key } from "./key.js";
+  import { createContext } from "./context.js";
   import "./styles.css";
 
   /**
@@ -19,30 +18,26 @@
    */
   export let settings = {};
 
+  setContext(key, {});
+  createContext();
+
+  const table = getTable();
+  const { rows, id, options, pageNumber, columns, activeRow } = getContext(key);
+
+  export const dataRows = rows;
+
   $: {
-    dataTable.setRows(data);
+    table.setRows(data);
     options.update(settings);
   }
 
-  onMount(() => {
-    dataTable.init();
-  });
-  onDestroy(() => dataTable.reset());
-
-  const handlePagination = () => {
-    activeRow.set(null);
-  };
-
-  const handleLimit = (event) => {
-    activeRow.set(null);
-    settings = { ...settings, rowPerPage: event.detail };
-  };
+  onDestroy(() => table.reset());
 
   setContext("DUK:drop-down:context", contexts.DROP_DOWN.TABLE);
   setContext("DUK:pagination:context", contexts.PAGINATION.TABLE);
 </script>
 
-<div class="{$$props.class || ''} duk-table">
+<div id="{$id}" class="{$$props.class || ''} duk-table">
   <div class="duk-table__title">
     <slot name="title" />
   </div>
@@ -56,8 +51,11 @@
       <Pagination
         pageNumber="{pageNumber}"
         items="{data}"
-        itemsPerPage="{$options.rowPerPage}"
-        on:pagination="{handlePagination}"
+        itemsPerPage="{$options.rowsPerPage}"
+        on:pagination="{() => {
+          columns.redraw();
+          activeRow.set(null);
+        }}"
       />
     {/if}
     <slot name="actions" />
@@ -66,7 +64,11 @@
         dropUp="{true}"
         items="{data}"
         options="{[10, 20, 30, 40, 50]}"
-        on:select="{handleLimit}"
+        on:select="{(event) => {
+          settings = { ...settings, rowsPerPage: event.detail };
+          columns.redraw();
+          activeRow.set(null);
+        }}"
       />
     {/if}
   </div>

@@ -1,13 +1,14 @@
 <script>
-  import { setContext } from "svelte";
-  import { slide } from "svelte/transition";
+  import { setContext, getContext } from "svelte";
   import contexts from "@dusk-network/helpers/contexts.js";
   import variants from "@dusk-network/helpers/variants.js";
-  import { activeRow } from "./stores/state.js";
+  import { key } from "./key.js";
 
   export let type = null;
   export let variant = variants.TABLE.DEFAULT;
   export let id = "__DUK-table-row" + Math.random().toString(36);
+
+  const { activeRow } = getContext(key);
 
   function getDatumContext(type) {
     let context = contexts.DATUM.ROW.BODY;
@@ -32,9 +33,8 @@
   class:duk-table__row--warning="{variant === variants.TABLE.WARNING}"
   class:duk-table__row--danger="{variant === variants.TABLE.DANGER}"
   class:duk-table__row--active="{$activeRow === id}"
-  id="{id}"
   on:click="{handleClick}"
-  transition:slide
+  id="{id}"
 >
   <slot />
 </tr>
