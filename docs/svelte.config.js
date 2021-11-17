@@ -80,11 +80,12 @@ const config = {
     paths: {
       base: process.env.BASE || "",
     },
-    appDir: "internal",
+    appDir: "internal", // Needed to work with Github pages.
     target: "#dusk",
     vite: () => ({
       optimizeDeps: {
         include: ["highlight.js/lib/core"],
+        exclude: ["@dusk-network/table"],
       },
       plugins: [
         virtualExamplePlugin(),

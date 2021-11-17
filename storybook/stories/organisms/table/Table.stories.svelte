@@ -3,16 +3,17 @@
   import results from "../../../../.jest-test-results.json";
   import { withTests } from "@storybook/addon-jest";
   import Table, { Row, Datum } from "@dusk-network/table";
-  import { rows } from "@dusk-network/table/stores/data.js";
   import { data } from "./data.js";
   import meta from "../../meta.js";
 
-  $: settings = {
+  const settings = {
     sortable: true,
-    rowPerPage: 10,
+    rowsPerPage: 10,
     pagination: true,
     limiter: true,
   };
+
+  let rows;
 </script>
 
 <Meta
@@ -32,7 +33,7 @@
 />
 
 <Story name="Kitchen sink example" args="{{ data: data, settings: settings }}" let:args>
-  <Table data="{args.data}" settings="{args.settings}">
+  <Table data="{args.data}" bind:dataRows="{rows}" settings="{args.settings}">
     <h3 slot="title">Table title</h3>
     <thead slot="head">
       <Row type="head">
@@ -44,17 +45,19 @@
       </Row>
     </thead>
     <tbody>
-      {#each $rows as row}
-        <Row>
-          <Datum cols="2"><span>{row.id}</span></Datum>
-          <Datum cols="3"><span>{row.first_name}</span></Datum>
-          <Datum cols="3"><span>{row.last_name}</span></Datum>
-          <Datum cols="4"><span>{row.email}</span></Datum>
-          <Datum hidden="{true}">
-            <p>Some hidden info!</p>
-          </Datum>
-        </Row>
-      {/each}
+      {#if rows}
+        {#each $rows as row}
+          <Row>
+            <Datum cols="2"><span>{row.id}</span></Datum>
+            <Datum cols="3"><span>{row.first_name}</span></Datum>
+            <Datum cols="3"><span>{row.last_name}</span></Datum>
+            <Datum cols="4"><span>{row.email}</span></Datum>
+            <Datum hidden="{true}">
+              <p>Some hidden info!</p>
+            </Datum>
+          </Row>
+        {/each}
+      {/if}
     </tbody>
   </Table>
 </Story>
