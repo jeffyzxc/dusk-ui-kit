@@ -1,17 +1,18 @@
 <script>
   import Table, { Row, Datum } from "@dusk-network/table";
-  import { rows } from "@dusk-network/table/stores/data.js";
   import { data } from "./data.js";
 
-  $: settings = {
+  const settings = {
     sortable: true,
     rowPerPage: 10,
     pagination: true,
     limiter: true,
   };
+
+  let rows;
 </script>
 
-<Table data="{data}" settings="{settings}">
+<Table data="{JSON.parse(data)}" bind:dataRows="{rows}" settings="{settings}">
   <h3 slot="title">Table title</h3>
   <thead slot="head">
     <Row type="head">
@@ -23,16 +24,22 @@
     </Row>
   </thead>
   <tbody>
-    {#each $rows as row}
+    {#if rows}
+      {#each $rows as row}
+        <Row>
+          <Datum cols="2"><span>{row.id}</span></Datum>
+          <Datum cols="3"><span>{row.first_name}</span></Datum>
+          <Datum cols="3"><span>{row.last_name}</span></Datum>
+          <Datum cols="4"><span>{row.email}</span></Datum>
+          <Datum hidden="{true}">
+            <p>Some hidden info!</p>
+          </Datum>
+        </Row>
+      {/each}
+    {:else}
       <Row>
-        <Datum cols="2"><span>{row.id}</span></Datum>
-        <Datum cols="3"><span>{row.first_name}</span></Datum>
-        <Datum cols="3"><span>{row.last_name}</span></Datum>
-        <Datum cols="4"><span>{row.email}</span></Datum>
-        <Datum hidden="{true}">
-          <p>Some hidden info!</p>
-        </Datum>
+        <Datum cols="12">No data</Datum>
       </Row>
-    {/each}
+    {/if}
   </tbody>
 </Table>

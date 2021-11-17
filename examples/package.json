@@ -3,7 +3,7 @@
   "version": "4.0.5",
   "private": true,
   "type": "module",
-  "devDependencies": {
+  "dependencies": {
     "@dusk-network/accordion": "workspace:*",
     "@dusk-network/alert": "workspace:*",
     "@dusk-network/breadcrumb": "workspace:*",
@@ -36,11 +36,12 @@
     "@dusk-network/table": "workspace:*",
     "@dusk-network/text-field": "workspace:*",
     "@dusk-network/toggle": "workspace:*",
-    "@dusk-network/wizard": "workspace:*",
+    "@dusk-network/wizard": "workspace:*"
+  },
+  "peerDependencies": {
     "@sveltejs/kit": "1.0.0-next.195",
-    "svelte": "^3.43.0",
-    "svelte-preprocess": "^4.9.5",
-    "vite": "^2.5.0"
+    "svelte": "^3.44.1",
+    "svelte-preprocess": "^4.9.5"
   },
   "engines": {
     "node": "14.16.0"
