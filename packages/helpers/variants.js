@@ -1,4 +1,13 @@
 export default {
+  ADDRESS: {
+    BRAND: "brand",
+    CTA: "cta",
+    DEFAULT: "default",
+    INFO: "info",
+    SUCCESS: "success",
+    WARNING: "warning",
+    DANGER: "danger",
+  },
   BUTTON: {
     BRAND: "brand",
     CTA: "cta",
