@@ -43,6 +43,7 @@
 <div class="{$$props.class || ''} duk-wizard">
   <Breadcrumb on:exit="{handleExit}">
     <Item>Step {$step} of {stepCount}</Item>
+    <slot name="title" />
   </Breadcrumb>
   <ProgressBar steps="{stepCount}" step="{$step}" />
   <slot next="{next}" previous="{previous}" />
