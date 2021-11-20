@@ -5,32 +5,32 @@
   @apply lg:w-48;
 
   &--brand {
-    @apply text-indigo-900;
+    @apply text-indigo-600;
     @apply dark:text-indigo-100;
   }
 
   &--cta {
-    @apply text-orange-900;
+    @apply text-orange-600;
     @apply dark:text-orange-100;
   }
 
   &--info {
-    @apply text-blue-900;
+    @apply text-blue-600;
     @apply dark:text-blue-100;
   }
 
   &--success {
-    @apply text-green-900;
+    @apply text-green-600;
     @apply dark:text-green-100;
   }
 
   &--warning {
-    @apply text-yellow-900;
+    @apply text-yellow-600;
     @apply dark:text-yellow-100;
   }
 
   &--danger {
-    @apply text-red-900;
+    @apply text-red-600;
     @apply dark:text-red-100;
   }
 }
