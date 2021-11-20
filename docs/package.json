@@ -22,7 +22,7 @@
   "devDependencies": {
     "@dusk-network/meta": "workspace:*",
     "@sveltejs/adapter-static": "^1.0.0-next.21",
-    "@sveltejs/kit": "1.0.0-next.195",
+    "@sveltejs/kit": "1.0.0-next.196",
     "svelte": "^3.44.1",
     "svelte-highlight": "^5.1.3",
     "svelte-preprocess": "^4.9.8",
