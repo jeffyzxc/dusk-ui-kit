@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
+    "@cloudfour/simple-svg-placeholder": "^1.0.2",
     "@dusk-network/accordion": "workspace:*",
     "@dusk-network/alert": "workspace:*",
     "@dusk-network/breadcrumb": "workspace:*",
@@ -18,6 +19,8 @@
     "@dusk-network/cta-list": "workspace:*",
     "@dusk-network/disclaimer-list": "workspace:*",
     "@dusk-network/drop-down": "workspace:*",
+    "@dusk-network/error-block": "workspace:*",
+    "@dusk-network/explorer-homepage": "workspace:*",
     "@dusk-network/file-upload": "workspace:*",
     "@dusk-network/footer": "workspace:*",
     "@dusk-network/form": "workspace:*",
