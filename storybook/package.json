@@ -65,7 +65,7 @@
     "storybook-addon-designs": "^6.1.0",
     "storybook-builder-vite": "^0.1.0",
     "storybook-dark-mode": "^1.0.8",
-    "svelte": "3.43.2",
+    "svelte": "3.44.2",
     "svelte-jester": "^2.1.5",
     "svelte-loader": "^3.1.2",
     "svelte-preprocess": "^4.9.5",
