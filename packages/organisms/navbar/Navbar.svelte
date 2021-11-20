@@ -46,6 +46,14 @@
   };
 </script>
 
+<svelte:window
+  on:sveltekit:navigation-start="{() => {
+    if (expanded) {
+      toggleNavbar();
+    }
+  }}"
+/>
+
 <nav class="{$$props.class || ''} duk-navbar duk-navbar--hidden" id="{id}">
   <div class="duk-navbar__wrapper duk-navbar__wrapper--primary">
     <div class="duk-navbar__brand">
