@@ -20,7 +20,7 @@ npm i -D @dusk-network/table
 
   const settings = {
     sortable: true,
-    rowPerPage: 10,
+    rowsPerPage: 10,
     pagination: true,
     limiter: true,
   };

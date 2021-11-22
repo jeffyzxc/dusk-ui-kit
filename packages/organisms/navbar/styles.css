@@ -1,9 +1,6 @@
 .duk-navbar {
-  @apply flex flex-col w-full mb-5 bg-white;
+  @apply flex flex-col w-full bg-white pt-2;
   @apply dark:bg-black;
-  @apply sm:mb-12;
-  @apply lg:mb-32 pt-2;
-  @apply 2xl:mb-40;
 
   &__wrapper {
     @apply lg:flex-none lg:flex lg:w-full lg:justify-between lg:items-end;
