@@ -1,0 +1,9 @@
+.duk-template {
+  &__navbar {
+    @apply mb-12;
+  }
+
+  &__container {
+    @apply container;
+  }
+}

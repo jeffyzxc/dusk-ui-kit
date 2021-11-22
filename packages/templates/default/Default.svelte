@@ -9,6 +9,9 @@
   class:duk-template--loading="{isLoading}"
   class:duk-template--error="{isError}"
 >
+  <div class="duk-template__navbar">
+    <slot name="navbar" />
+  </div>
   {#if isLoading}
     <div class="duk-template__loading">
       <slot name="loading" />
@@ -20,4 +23,7 @@
   {:else}
     <slot />
   {/if}
+  <div class="duk-template__footer">
+    <slot name="footer" />
+  </div>
 </div>
