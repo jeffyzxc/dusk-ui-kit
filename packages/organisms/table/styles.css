@@ -43,7 +43,7 @@
         }
       }
       & th {
-        @apply flex items-center space-x-3 font-light;
+        @apply flex flex-nowrap items-center space-x-3 font-light;
 
         &.duk-table__datum--hidden {
           @apply hidden;
@@ -65,7 +65,7 @@
       }
 
       & td {
-        @apply flex items-center space-x-3;
+        @apply flex flex-nowrap items-center space-x-3;
 
         &.duk-table__datum--extra-information {
           @apply hidden;
