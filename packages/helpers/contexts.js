@@ -12,9 +12,6 @@ export default {
     HEADING: "button:heading",
     MNEMONIC: "button:mnemonic",
   },
-  CONTROL: {
-    SEARCH_LIST: "control:search-list",
-  },
   DATE_PICKER: {
     CONTROL: "date-picker:control",
   },
