@@ -1,3 +1,4 @@
+import * as Address from "./address";
 import * as DropDown from "./drop-down";
 import * as LoadingIndicator from "./loading-indicator";
 import * as TextField from "./text-field";
@@ -7,4 +8,14 @@ import * as ProgressBar from "./progress-bar";
 import * as RichText from "./rich-text";
 import * as Toggle from "./toggle";
 
-export { DropDown, LoadingIndicator, TextField, Icon, Logo, ProgressBar, RichText, Toggle };
+export {
+  Address,
+  DropDown,
+  LoadingIndicator,
+  TextField,
+  Icon,
+  Logo,
+  ProgressBar,
+  RichText,
+  Toggle,
+};

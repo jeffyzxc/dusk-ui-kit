@@ -1,0 +1,28 @@
+.duk-address {
+  @apply flex flex-col w-full rounded border border-gray-900 text-gray-900 p-3 break-all;
+  font-family: "IBM Plex Mono", monospace;
+
+  &--brand {
+    @apply border-indigo-500 text-indigo-500;
+  }
+
+  &--cta {
+    @apply border-gold-500 text-gold-500;
+  }
+
+  &--info {
+    @apply border-blue-500 text-blue-500;
+  }
+
+  &--success {
+    @apply border-green-500 text-green-500;
+  }
+
+  &--warning {
+    @apply border-yellow-500 text-yellow-500;
+  }
+
+  &--danger {
+    @apply border-red-300 text-red-300;
+  }
+}

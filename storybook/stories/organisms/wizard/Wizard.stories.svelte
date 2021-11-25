@@ -27,8 +27,16 @@
   argTypes="{meta('organisms/wizard/Wizard', {})}"
 />
 
-<Story name="Kitchen Skin" args="{{}}" let:args>
+<Story name="Default Wizard" args="{{}}" let:args>
   <Wizard stepCount="{2}">
+    <Step step="{1}">step 1</Step>
+    <Step step="{2}">step 2</Step>
+  </Wizard>
+</Story>
+
+<Story name="Default Wizard with title" args="{{}}" let:args>
+  <Wizard stepCount="{2}">
+    <h3 slot="title">Wizard title</h3>
     <Step step="{1}">step 1</Step>
     <Step step="{2}">step 2</Step>
   </Wizard>
