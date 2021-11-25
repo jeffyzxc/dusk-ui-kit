@@ -46,6 +46,7 @@
     <slot />
     <slot name="foot" />
   </table>
+  <!-- {#if $$slots.actions || $options.pagination || $options.limiter} -->
   <div class="duk-table__actions">
     {#if $options.pagination === true}
       <Pagination
@@ -72,4 +73,5 @@
       />
     {/if}
   </div>
+  <!-- {/if} -->
 </div>

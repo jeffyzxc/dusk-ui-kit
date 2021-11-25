@@ -67,6 +67,11 @@
       & td {
         @apply flex flex-nowrap items-center space-x-3;
 
+        & a {
+          @apply text-indigo-500;
+          @apply dark:text-indigo-200;
+        }
+
         &.duk-table__datum--extra-information {
           @apply hidden;
         }
@@ -77,7 +82,10 @@
     @apply flex items-center justify-between py-2 px-5 mt-3 bg-white shadow-table rounded-tl-md rounded-tr-md rounded-bl-xl rounded-br-xl;
     @apply dark:bg-gray-700 dark:text-gray-100;
 
-    & .duk-button-wrapper {
+    min-height: 2.5rem;
+
+    & .duk-button-wrapper,
+    & .duk-button-group {
       @apply mx-auto;
     }
   }
