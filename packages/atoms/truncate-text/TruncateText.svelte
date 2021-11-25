@@ -9,8 +9,7 @@
   export let width = widths.TRUNCATE_TEXT.HALF;
 
   /**
-   * Sets the width of the Control inside current container.
-   * @type { "full" | "half" | "quarter" }
+   * Sets title attribute of the truncated text.
    */
   export let title = "";
 </script>
