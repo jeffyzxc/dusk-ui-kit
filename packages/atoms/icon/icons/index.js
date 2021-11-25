@@ -10,6 +10,8 @@ import BlockGenerator from "./BlockGenerator.svelte";
 import Brightness4 from "./Brightness4.svelte";
 import Brightness5 from "./Brightness5.svelte";
 import CardSearchOutline from "./CardSearchOutline.svelte";
+import ChartAreaspline from "./ChartAreaspline.svelte";
+import ChartBellCurve from "./ChartBellCurve.svelte";
 import ChartLineVariant from "./ChartLineVariant.svelte";
 import CheckCircleOutline from "./CheckCircleOutline.svelte";
 import CheckDecagramOutline from "./CheckDecagramOutline.svelte";
@@ -25,6 +27,7 @@ import Contract from "./Contract.svelte";
 import CreditCard from "./CreditCard.svelte";
 import CrownOutline from "./CrownOutline.svelte";
 import CubeOutline from "./CubeOutline.svelte";
+import Database from "./Database.svelte";
 import Decimal from "./Decimal.svelte";
 import DiceMultipleOutline from "./DiceMultipleOutline.svelte";
 import DownloadCircleOutline from "./DownloadCircleOutline.svelte";
@@ -43,6 +46,7 @@ import FolderOpenOutline from "./FolderOpenOutline.svelte";
 import FolderOutline from "./FolderOutline.svelte";
 import FolderSearchOutline from "./FolderSearchOutline.svelte";
 import FolderUploadOutline from "./FolderUploadOutline.svelte";
+import Gauge from "./Gauge.svelte";
 import GasAverage from "./GasAverage.svelte";
 import GasLimit from "./GasLimit.svelte";
 import GasStationOutline from "./GasStationOutline.svelte";
@@ -52,6 +56,7 @@ import InformationVariant from "./InformationVariant.svelte";
 import KeyOutline from "./KeyOutline.svelte";
 import Lifebuoy from "./Lifebuoy.svelte";
 import LinkedIn from "./LinkedIn.svelte";
+import LinkVariant from "./LinkVariant.svelte";
 import Magnify from "./Magnify.svelte";
 import MarketCap from "./MarketCap.svelte";
 import MenuBurger from "./MenuBurger.svelte";
@@ -69,7 +74,9 @@ import Provisioner from "./Provisioner.svelte";
 import Qrcode from "./Qrcode.svelte";
 import Refresh from "./Refresh.svelte";
 import Safe from "./Safe.svelte";
+import Server from "./Server.svelte";
 import ShareVariant from "./ShareVariant.svelte";
+import Sigma from "./Sigma.svelte";
 import StoreOutline from "./StoreOutline.svelte";
 import Storybook from "./Storybook.svelte";
 import Telegram from "./Telegram.svelte";
@@ -97,6 +104,8 @@ export default {
   Brightness4,
   Brightness5,
   CardSearchOutline,
+  ChartAreaspline,
+  ChartBellCurve,
   ChartLineVariant,
   CheckCircleOutline,
   CheckDecagramOutline,
@@ -112,6 +121,7 @@ export default {
   CreditCard,
   CrownOutline,
   CubeOutline,
+  Database,
   Decimal,
   DiceMultipleOutline,
   DownloadCircleOutline,
@@ -130,6 +140,7 @@ export default {
   FolderOutline,
   FolderSearchOutline,
   FolderUploadOutline,
+  Gauge,
   GasAverage,
   GasLimit,
   GasStationOutline,
@@ -139,6 +150,7 @@ export default {
   KeyOutline,
   Lifebuoy,
   LinkedIn,
+  LinkVariant,
   Magnify,
   MarketCap,
   MenuBurger,
@@ -156,7 +168,9 @@ export default {
   Qrcode,
   Refresh,
   Safe,
+  Server,
   ShareVariant,
+  Sigma,
   StoreOutline,
   Storybook,
   Telegram,
