@@ -13,6 +13,8 @@
   import Form from "@dusk-network/form";
   import TextField from "@dusk-network/text-field";
   import TruncateText from "@dusk-network/truncate-text";
+  import DateText from "@dusk-network/date-text";
+  import Statistic, { Group } from "@dusk-network/statistic";
   import Table, { Row, Datum } from "@dusk-network/table";
   import meta from "../../../meta";
   import * as yup from "yup";
@@ -92,16 +94,49 @@
                 id="{id}"
                 state="{state}"
               />
-              <Button
-                variant="{state == 'danger' ? 'danger' : 'brand'}"
-                slot="buttonPostfix"
-                type="submit"
-                disable="{submitted}"
-              >
+              <Button slot="buttonPostfix" type="submit" disable="{submitted}">
                 <Icon name="magnify" size="sm" />
               </Button>
             </Control>
           </Form>
+          <Group>
+            <Statistic title="DUSK Price">
+              <svelte:fragment slot="icon">
+                <Icon name="dusk-ticker" variant="brand" size="xxxl" />
+              </svelte:fragment>
+              <p>$0,2947 (<span class="text-green-500">+1.76%</span>)</p>
+            </Statistic>
+            <Statistic title="Estimated Total Staked">
+              <svelte:fragment slot="icon">
+                <Icon name="database" variant="brand" size="xxxl" />
+              </svelte:fragment>
+              <p>100.000.000 DUSK</p>
+            </Statistic>
+            <Statistic title="Market Cap">
+              <svelte:fragment slot="icon">
+                <Icon name="chart-areaspline" variant="brand" size="xxxl" />
+              </svelte:fragment>
+              <p>$108.048.497</p>
+            </Statistic>
+            <Statistic title="Transactions">
+              <svelte:fragment slot="icon">
+                <Icon name="pound-box-outline" variant="brand" size="xxxl" />
+              </svelte:fragment>
+              <p>150786</p>
+            </Statistic>
+            <Statistic title="Average Gas Price">
+              <svelte:fragment slot="icon">
+                <Icon name="gauge" variant="brand" size="xxxl" />
+              </svelte:fragment>
+              <p>1.54 DUSK</p>
+            </Statistic>
+            <Statistic title="Provisioners">
+              <svelte:fragment slot="icon">
+                <Icon name="contacts" variant="brand" size="xxxl" />
+              </svelte:fragment>
+              <p>88,880</p>
+            </Statistic>
+          </Group>
         </Content>
       </Card>
     </svelte:fragment>
@@ -113,28 +148,31 @@
         bind:dataRows="{blockRows}"
       >
         <h2 slot="title">Latest Blocks</h2>
+        <thead slot="head">
+          <Row type="head">
+            <Datum cols="4"
+              ><Icon name="cube-outline" tooltip="Block height" /> <span>Block</span></Datum
+            >
+            <Datum cols="5"><Icon name="timer-sand" tooltip="Block time" /> <span>Age</span></Datum>
+            <Datum cols="3"><abbr title="Transactions">Txns</abbr></Datum>
+          </Row>
+        </thead>
         <tbody>
           {#if blockRows}
             {#each $blockRows as block}
               {#if block.header}
                 <Row on:click="{() => alert('Row clicked')}">
                   {#if block}
-                    <Datum cols="3">
-                      <!-- <span class="flex flex-no-wrap items-center space-x-2"> -->
-                      <Icon name="cube-outline" tooltip="Block height" />
+                    <Datum cols="4">
                       <a href="{`/blocks/block?id=${block.header.hash}`}">
                         {block.header.height}
                       </a>
-                      <!-- </span> -->
                     </Datum>
-                    <Datum cols="6">
-                      <!-- <span class="flex flex-no-wrap items-center space-x-2"> -->
-                      <Icon name="timer-sand" tooltip="Block time" />
-                      {block.header.timestamp}
-                      <!-- </span> -->
+                    <Datum cols="5">
+                      <DateText time="{block.header.timestamp}" />
                     </Datum>
                     <Datum cols="3">
-                      <abbr title="Transactions">Txns</abbr>: {block.transactions.length}
+                      {block.transactions.length}
                     </Datum>
                   {/if}
                 </Row>
@@ -161,18 +199,29 @@
         bind:dataRows="{transactionRows}"
       >
         <h2 slot="title">Latest Transactions</h2>
+        <thead slot="head">
+          <Row type="head">
+            <Datum cols="5"
+              ><Icon name="cube-outline" tooltip="Block height" /> <span>Hash</span></Datum
+            >
+            <Datum cols="4"><Icon name="timer-sand" tooltip="Block time" /> <span>Age</span></Datum>
+            <Datum cols="3">Method</Datum>
+          </Row>
+        </thead>
         <tbody>
           {#if transactionRows}
             {#each $transactionRows as transaction}
               <Row on:click="{() => alert('Transaction clicked')}">
-                <Datum cols="12">
+                <Datum cols="5">
                   <Icon name="pound-box-outline" tooltip="transaction" />
                   <a href="{`/transactions/transaction?id=${transaction.txid}`}">
-                    <TruncateText width="half">
+                    <TruncateText width="quarter">
                       {transaction.txid}
                     </TruncateText>
                   </a>
                 </Datum>
+                <Datum cols="4">???</Datum>
+                <Datum cols="3">???</Datum>
               </Row>
             {/each}
           {:else}
@@ -184,7 +233,7 @@
           {/if}
         </tbody>
         <svelte:fragment slot="actions">
-          <Button variant="brand" outline="{true}">View all blocks</Button>
+          <Button variant="brand" outline="{true}">View all transactions</Button>
         </svelte:fragment>
       </Table>
     </svelte:fragment>
