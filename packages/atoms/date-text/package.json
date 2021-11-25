@@ -14,5 +14,14 @@
   "module": "index.js",
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
+  },
+  "dependencies": {
+    "dayjs": "^1.10.7"
+  },
+  "devDependencies": {
+    "@dusk-network/helpers": "workspace:*"
+  },
+  "peerDependencies": {
+    "@dusk-network/helpers": "workspace:*"
   }
 }
