@@ -15,6 +15,7 @@
     "@dusk-network/breadcrumb": "workspace:*",
     "@dusk-network/button": "workspace:*",
     "@dusk-network/card": "workspace:*",
+    "@dusk-network/chart": "workspace:*",
     "@dusk-network/control": "workspace:*",
     "@dusk-network/cookie-banner": "workspace:*",
     "@dusk-network/cta-list": "workspace:*",

@@ -1,0 +1,31 @@
+{
+  "name": "@dusk-network/chart",
+  "version": "0.0.0",
+  "description": "Dusk UI Kit - Chart",
+  "bugs": {
+    "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dusk-network/dusk-ui-kit.git",
+    "directory": "packages/molecules/chart"
+  },
+  "type": "module",
+  "module": "index.js",
+  "scripts": {
+    "test": "echo \"Work in progress...\" && exit 1"
+  },
+  "dependencies": {
+    "d3-geo": "^3.0.1",
+    "d3-tile": "^1.0.0",
+    "d3-zoom": "^3.0.0",
+    "layercake": "^5.0.1",
+    "topojson-client": "^3.1.0"
+  },
+  "devDependencies": {
+    "@dusk-network/helpers": "workspace:*"
+  },
+  "peerDependencies": {
+    "@dusk-network/helpers": "workspace:*"
+  }
+}
