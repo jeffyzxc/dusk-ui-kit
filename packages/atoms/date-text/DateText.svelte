@@ -1,8 +1,8 @@
 <script>
   import "./styles.css";
-  import dayjs from "dayjs";
-  import relativeTime from "dayjs/plugin/relativeTime.js";
-  import customParseFormat from "dayjs/plugin/customParseFormat.js";
+  import * as dayjs from "dayjs";
+  import * as relativeTime from "dayjs/plugin/relativeTime.js";
+  import * as customParseFormat from "dayjs/plugin/customParseFormat.js";
 
   /**
    * The time string that needs to be formatted
@@ -21,8 +21,7 @@
 
   const TIMESTAMP_FORMAT = "MMM-DD-YYYY HH:mm:ss A ZZ";
 
-  dayjs.extend(relativeTime);
-  dayjs.extend(customParseFormat);
+  dayjs.extend(relativeTime).extend(customParseFormat);
 </script>
 
 <time class="{$$props.class || ''} duk-date-text" datetime="{time}" title="{time}">
