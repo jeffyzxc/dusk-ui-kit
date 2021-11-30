@@ -1,8 +1,8 @@
 <script>
   import "./styles.css";
-  import dayjs from "dayjs";
-  import relativeTime from "dayjs/plugin/relativeTime.js";
-  import customParseFormat from "dayjs/plugin/customParseFormat.js";
+  import * as dayjs from "dayjs";
+  import * as relativeTime from "dayjs/plugin/relativeTime.js";
+  import * as customParseFormat from "dayjs/plugin/customParseFormat.js";
 
   /**
    * The time string that needs to be formatted
