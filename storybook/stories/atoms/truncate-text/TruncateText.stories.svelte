@@ -1,15 +1,14 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { widths } from "@dusk-network/helpers";
-  import results from "../../../../.jest-test-results.json";
-  import { withTests } from "@storybook/addon-jest";
+  // import results from "../../../../.jest-test-results.json";
+  // import { withTests } from "@storybook/addon-jest";
   import TruncateText from "@dusk-network/truncate-text";
   import meta from "../../meta.js";
 </script>
 
 <Meta
   title="Components/Atoms/Truncate Text"
-  decorators="{[withTests({ results })]}"
   parameters="{{
     layout: 'centered',
     docs: {

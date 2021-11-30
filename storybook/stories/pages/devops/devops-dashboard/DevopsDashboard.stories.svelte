@@ -2,8 +2,8 @@
   import { Meta, Story } from "@storybook/addon-svelte-csf";
   // import { variants, states } from "@dusk-network/helpers";
   import Template from "@dusk-network/devops-dashboard";
-  import results from "../../../../../.jest-test-results.json";
-  import { withTests } from "@storybook/addon-jest";
+  // import results from "../../../../../.jest-test-results.json";
+  // import { withTests } from "@storybook/addon-jest";
   import Card, { Content } from "@dusk-network/card";
   import Navbar from "../_Navbar.svelte";
   import Footer from "../_Footer.svelte";
@@ -49,7 +49,6 @@
 
 <Meta
   title="Pages/DevOps/Dashboard"
-  decorators="{[withTests({ results })]}"
   component="{Template}"
   parameters="{{
     layout: 'fullscreen',

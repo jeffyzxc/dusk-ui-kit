@@ -1,7 +1,7 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
-  import results from "../../../../.jest-test-results.json";
-  import { withTests } from "@storybook/addon-jest";
+  // import results from "../../../../.jest-test-results.json";
+  // import { withTests } from "@storybook/addon-jest";
   import { variants } from "@dusk-network/helpers";
   import Address from "@dusk-network/address";
   import meta from "../../meta.js";
@@ -12,7 +12,6 @@
 
 <Meta
   title="Components/Atoms/Address"
-  decorators="{[withTests({ results })]}"
   parameters="{{
     layout: 'centered',
     docs: {

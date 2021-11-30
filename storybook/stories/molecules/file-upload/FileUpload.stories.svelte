@@ -1,7 +1,7 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
-  import results from "../../../../.jest-test-results.json";
-  import { withTests } from "@storybook/addon-jest";
+  // import results from "../../../../.jest-test-results.json";
+  // import { withTests } from "@storybook/addon-jest";
   import FileUpload from "@dusk-network/file-upload";
   import Form from "@dusk-network/form";
   import Control from "@dusk-network/control";
@@ -42,7 +42,6 @@
 
 <Meta
   title="Components/Molecules/File Upload"
-  decorators="{[withTests({ results })]}"
   component="{FileUpload}"
   parameters="{{
     layout: 'padded',

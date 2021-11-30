@@ -1,15 +1,14 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { types, variants, icons } from "@dusk-network/helpers";
-  import results from "../../../../.jest-test-results.json";
-  import { withTests } from "@storybook/addon-jest";
+  // import results from "../../../../.jest-test-results.json";
+  // import { withTests } from "@storybook/addon-jest";
   import Toggle, { Group } from "@dusk-network/toggle";
   import meta from "../../meta.js";
 </script>
 
 <Meta
   title="Components/Atoms/Toggle"
-  decorators="{[withTests({ results })]}"
   parameters="{{
     layout: 'centered',
     docs: {

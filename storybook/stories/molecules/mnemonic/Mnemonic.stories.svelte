@@ -1,7 +1,7 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
-  import results from "../../../../.jest-test-results.json";
-  import { withTests } from "@storybook/addon-jest";
+  // import results from "../../../../.jest-test-results.json";
+  // import { withTests } from "@storybook/addon-jest";
   import Mnemonic from "@dusk-network/mnemonic";
   import { types } from "@dusk-network/helpers";
   import { seedPhrase } from "./data.js";
@@ -10,7 +10,6 @@
 
 <Meta
   title="Components/Molecules/Mnemonic"
-  decorators="{[withTests({ results })]}"
   component="{Mnemonic}"
   parameters="{{
     layout: 'padded',

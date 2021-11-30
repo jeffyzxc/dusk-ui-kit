@@ -1,14 +1,13 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
-  import results from "../../../../.jest-test-results.json";
-  import { withTests } from "@storybook/addon-jest";
+  // import results from "../../../../.jest-test-results.json";
+  // import { withTests } from "@storybook/addon-jest";
   import DateText from "@dusk-network/date-text";
   import meta from "../../meta.js";
 </script>
 
 <Meta
   title="Components/Atoms/Date Text"
-  decorators="{[withTests({ results })]}"
   parameters="{{
     layout: 'centered',
     docs: {

@@ -1,7 +1,7 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
-  import results from "../../../../.jest-test-results.json";
-  import { withTests } from "@storybook/addon-jest";
+  // import results from "../../../../.jest-test-results.json";
+  // import { withTests } from "@storybook/addon-jest";
   import { variants } from "@dusk-network/helpers";
   import LoadingIndicator from "@dusk-network/loading-indicator";
   import meta from "../../meta.js";
@@ -9,7 +9,6 @@
 
 <Meta
   title="Components/Atoms/Loading Indicator"
-  decorators="{[withTests({ results })]}"
   parameters="{{
     layout: 'centered',
     docs: {

@@ -1,15 +1,14 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { types, states } from "@dusk-network/helpers";
-  import results from "../../../../.jest-test-results.json";
-  import { withTests } from "@storybook/addon-jest";
+  // import results from "../../../../.jest-test-results.json";
+  // import { withTests } from "@storybook/addon-jest";
   import TextField from "@dusk-network/text-field";
   import meta from "../../meta.js";
 </script>
 
 <Meta
   title="Components/Atoms/Text Field"
-  decorators="{[withTests({ results })]}"
   parameters="{{
     layout: 'centered',
     docs: {

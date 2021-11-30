@@ -1,8 +1,8 @@
 <script>
   // TODO Clean up content in template etc.
   import { Meta, Story } from "@storybook/addon-svelte-csf";
-  import results from "../../../../.jest-test-results.json";
-  import { withTests } from "@storybook/addon-jest";
+  // import results from "../../../../.jest-test-results.json";
+  // import { withTests } from "@storybook/addon-jest";
   import Hero from "@dusk-network/hero";
   import Heading from "@dusk-network/heading";
   import Button from "@dusk-network/button";
@@ -13,7 +13,6 @@
 
 <Meta
   title="Components/Organisms/Hero"
-  decorators="{[withTests({ results })]}"
   component="{Hero}"
   parameters="{{
     layout: 'padded',

@@ -1,14 +1,13 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
-  import results from "../../../../.jest-test-results.json";
-  import { withTests } from "@storybook/addon-jest";
+  // import results from "../../../../.jest-test-results.json";
+  // import { withTests } from "@storybook/addon-jest";
   import Logo from "@dusk-network/logo";
   import meta from "../../meta.js";
 </script>
 
 <Meta
   title="Components/Atoms/Logo"
-  decorators="{[withTests({ results })]}"
   component="{Logo}"
   parameters="{{
     layout: 'centered',
