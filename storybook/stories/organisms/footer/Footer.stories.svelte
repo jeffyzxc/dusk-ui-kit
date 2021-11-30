@@ -1,7 +1,7 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
-  import results from "../../../../.jest-test-results.json";
-  import { withTests } from "@storybook/addon-jest";
+  // import results from "../../../../.jest-test-results.json";
+  // import { withTests } from "@storybook/addon-jest";
   import Footer from "@dusk-network/footer";
   import { types } from "@dusk-network/helpers";
   import meta from "../../meta.js";
@@ -123,7 +123,6 @@
 
 <Meta
   title="Components/Organisms/Footer"
-  decorators="{[withTests({ results })]}"
   component="{Footer}"
   parameters="{{
     layout: 'fullscreen',

@@ -1,8 +1,8 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { variants, states } from "@dusk-network/helpers";
-  import results from "../../../../.jest-test-results.json";
-  import { withTests } from "@storybook/addon-jest";
+  // import results from "../../../../.jest-test-results.json";
+  // import { withTests } from "@storybook/addon-jest";
   import Card, { Content, Title, Footer, Actions } from "@dusk-network/card";
   import RichText from "@dusk-network/rich-text";
   import Icon from "@dusk-network/icon";
@@ -14,7 +14,6 @@
 
 <Meta
   title="Components/Organisms/Card"
-  decorators="{[withTests({ results })]}"
   component="{Card}"
   parameters="{{
     layout: 'padded',

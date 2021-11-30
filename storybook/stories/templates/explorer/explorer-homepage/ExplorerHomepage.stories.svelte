@@ -1,15 +1,14 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
   import Template from "@dusk-network/explorer-homepage";
-  import results from "../../../../../.jest-test-results.json";
-  import { withTests } from "@storybook/addon-jest";
+  // import results from "../../../../../.jest-test-results.json";
+  // import { withTests } from "@storybook/addon-jest";
   import meta from "../../../meta";
   import Placeholder from "../../_Placeholder.svelte";
 </script>
 
 <Meta
   title="Components/Templates/Explorer/Homepage"
-  decorators="{[withTests({ results })]}"
   component="{Template}"
   parameters="{{
     layout: 'fullscreen',

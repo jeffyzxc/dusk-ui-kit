@@ -1,7 +1,7 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
-  import results from "../../../../.jest-test-results.json";
-  import { withTests } from "@storybook/addon-jest";
+  // import results from "../../../../.jest-test-results.json";
+  // import { withTests } from "@storybook/addon-jest";
   import Table, { Row, Datum } from "@dusk-network/table";
   import { data } from "./data.js";
   import meta from "../../meta.js";
@@ -18,7 +18,6 @@
 
 <Meta
   title="Components/Organisms/Table"
-  decorators="{[withTests({ results })]}"
   component="{Table}"
   parameters="{{
     layout: 'padded',

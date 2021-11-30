@@ -37,10 +37,10 @@ module.exports = {
 
     config.resolve = {
       ...config.resolve,
-      alias: {
-        ...config.resolve.alias,
-        path: require.resolve("path-browserify"),
-      },
+      // alias: {
+      //   ...config.resolve.alias,
+      //   path: require.resolve("path-browserify"),
+      // },
     };
 
     // config.optimizeDeps = {
