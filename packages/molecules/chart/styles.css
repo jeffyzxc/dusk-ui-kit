@@ -1,2 +1,28 @@
 .duk-chart {
+  @apply relative w-full h-full;
+}
+
+.duk-chart-world-map {
+  /* @apply overflow-hidden; */
+
+  svg {
+    @apply pointer-events-auto;
+  }
+
+  &__background-dot {
+    @apply stroke-0 fill-current text-gray-400;
+  }
+
+  &__marker-background {
+    @apply stroke-1 fill-current text-indigo-300;
+    @apply animate-pulse;
+  }
+
+  &__marker-foreground {
+    @apply fill-current text-indigo-400;
+  }
+
+  &__marker-text {
+    @apply text-xs font-medium leading-none text-gray-100 fill-current;
+  }
 }

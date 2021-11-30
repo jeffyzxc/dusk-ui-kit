@@ -4,47 +4,33 @@
   import Template from "@dusk-network/devops-dashboard";
   import results from "../../../../../.jest-test-results.json";
   import { withTests } from "@storybook/addon-jest";
-  import Card, { Content } from "@dusk-network/card";
+  import Card from "@dusk-network/card";
   import Navbar from "../_Navbar.svelte";
   import Footer from "../_Footer.svelte";
   import Button, { Label, Group } from "@dusk-network/button";
   import Icon from "@dusk-network/icon";
   import Toggle from "@dusk-network/toggle";
   import Table, { Row, Datum } from "@dusk-network/table";
+  import Chart from "@dusk-network/chart";
   import meta from "../../../meta";
-  // import * as yup from "yup";
-  // import { latest } from "./data.js";
 
-  // JSON.parse(latest.data);
+  const chartData = {
+    title: "Nodes: 142",
+    markers: [
+      { long: 5, lat: 52, count: 55 },
+      { long: -78, lat: 41, count: 77 },
+      { long: -70, lat: 53, count: 10 },
+    ],
+    height: 214,
+    width: 479,
+  };
 
-  // const blocks = JSON.parse(latest).data.blocks;
-  // const blocksSettings = {
-  //   sortable: false,
-  //   rowsPerPage: 10,
-  //   pagination: false,
-  //   limiter: false,
-  // };
-  // const transactions = JSON.parse(latest).data.transactions;
   const settings = {
     sortable: false,
     rowsPerPage: 10,
     pagination: false,
     limiter: false,
   };
-
-  // let submitted = false;
-  // let fields = {
-  //   search_term: "",
-  // };
-  // let schema = yup.object().shape({
-  //   search_term: yup
-  //     .string()
-  //     .required()
-  //     .label("Search term")
-  //     .matches(/^([0-9a-fA-F]{64}|\d+)$/g, "should either be a hash or block height value"),
-  // });
-  // let blockRows;
-  // let transactionRows;
 </script>
 
 <Meta
@@ -70,7 +56,7 @@
     </svelte:fragment>
     <svelte:fragment slot="map">
       <Card>
-        <Content>MAP Chart here!</Content>
+        <Chart type="world-map" data="{chartData}" />
       </Card>
     </svelte:fragment>
     <svelte:fragment slot="node-status">

@@ -23,9 +23,11 @@
     "topojson-client": "^3.1.0"
   },
   "devDependencies": {
+    "@dusk-network/heading": "workspace:*",
     "@dusk-network/helpers": "workspace:*"
   },
   "peerDependencies": {
+    "@dusk-network/heading": "workspace:*",
     "@dusk-network/helpers": "workspace:*"
   }
 }

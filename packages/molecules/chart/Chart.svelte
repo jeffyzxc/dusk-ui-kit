@@ -1,5 +1,5 @@
 <script>
-  import { charts } from "@dusk-network/helpers";
+  // import { charts } from "@dusk-network/helpers";
   import * as Charts from "./charts/index.js";
   import "./styles.css";
 
@@ -13,6 +13,11 @@
    */
   export let data = null;
 
+  /**
+   * The data object passed to the chart.
+   */
+  export let aspectRatio = null;
+
   function getChartComponent(type) {
     let componentName = type.replace(/-([a-z,0-9])/g, function (g) {
       return g[1].toUpperCase();
@@ -25,11 +30,11 @@
 </script>
 
 {#if type}
-  <div
+  <!-- <div
     class="{$$props.class || ''} duk-chart"
-    class:duk-chart--world-map="{type === charts.WORLD_MAP}"
-    style="height: {data.height}px; width: {data.width}px; overflow: hidden"
-  >
-    <svelte:component this="{chart}" data="{data}" />
-  </div>
+    class:duk-chart-world-map="{type === charts.WORLD_MAP}"
+    style="padding-bottom: {100 / aspectRatio}; height: {data.height}"
+  > -->
+  <svelte:component this="{chart}" data="{data}" aspectRatio="{aspectRatio}" />
+  <!-- </div> -->
 {/if}
