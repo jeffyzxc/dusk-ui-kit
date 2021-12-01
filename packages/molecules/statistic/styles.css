@@ -23,7 +23,14 @@
 
 .duk-statistic-group {
   @apply grid grid-cols-1 gap-4;
-  @apply md:grid-cols-3 md:p-5;
+
+  &--2-col {
+    @apply md:grid-cols-2;
+  }
+
+  &--3-col {
+    @apply md:grid-cols-3;
+  }
 }
 
 .duk-form + .duk-statistic-group {
