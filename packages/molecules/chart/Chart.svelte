@@ -14,7 +14,7 @@
   export let data = null;
 
   /**
-   * The data object passed to the chart.
+   * Forces the aspect ratio of the chart.
    */
   export let aspectRatio = null;
 
