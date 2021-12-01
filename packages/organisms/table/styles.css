@@ -13,8 +13,9 @@
     }
   }
   &__table {
-    @apply block shadow-table bg-white rounded-md;
+    @apply block shadow-table bg-white rounded-md overflow-x-scroll;
     @apply dark:bg-gray-700;
+    @apply md:overflow-x-auto;
     & thead,
     & tbody,
     & tfoot,
@@ -25,7 +26,8 @@
     }
 
     tr {
-      @apply grid grid-cols-12;
+      @apply grid grid-cols-12 min-w-max;
+      @apply md:min-w-0;
     }
 
     td,
@@ -34,8 +36,9 @@
     }
 
     & thead {
-      @apply bg-gray-200;
+      @apply bg-gray-200 min-w-max;
       @apply dark:bg-indigo-900;
+      @apply md:min-w-0;
 
       & tr {
         &:not(:first-child) {
@@ -52,6 +55,8 @@
     }
 
     & tbody {
+      @apply min-w-max;
+      @apply md:min-w-0;
       & tr {
         &:nth-child(odd) {
           @apply bg-gray-100;
