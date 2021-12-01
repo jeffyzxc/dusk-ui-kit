@@ -2,9 +2,10 @@
   import { Meta, Story } from "@storybook/addon-svelte-csf";
   // import { variants, states } from "@dusk-network/helpers";
   import Template from "@dusk-network/devops-dashboard";
-  import results from "../../../../../.jest-test-results.json";
-  import { withTests } from "@storybook/addon-jest";
+  // import results from "../../../../../.jest-test-results.json";
+  // import { withTests } from "@storybook/addon-jest";
   import Card from "@dusk-network/card";
+  import Statistic, { Group as StatGroup } from "@dusk-network/statistic";
   import Navbar from "../_Navbar.svelte";
   import Footer from "../_Footer.svelte";
   import Button, { Label, Group } from "@dusk-network/button";
@@ -15,14 +16,13 @@
   import meta from "../../../meta";
 
   const chartData = {
-    title: "Nodes: 142",
     markers: [
       { long: 5, lat: 52, count: 55 },
       { long: -78, lat: 41, count: 77 },
       { long: -70, lat: 53, count: 10 },
     ],
-    height: 214,
-    width: 479,
+    aspectRatio: 1.5,
+    width: 424,
   };
 
   const settings = {
@@ -35,7 +35,6 @@
 
 <Meta
   title="Pages/DevOps/Dashboard"
-  decorators="{[withTests({ results })]}"
   component="{Template}"
   parameters="{{
     layout: 'fullscreen',
@@ -44,7 +43,7 @@
         type: 'code',
       },
     },
-    jest: ['packages/templates/devops-dashboard/DevopsDashboard.test.js'],
+    // jest: ['packages/templates/devops-dashboard/DevopsDashboard.test.js'],
   }}"
   argTypes="{meta('templates/devops-dashboard/DevopsDashboard', {})}"
 />
@@ -56,47 +55,36 @@
     </svelte:fragment>
     <svelte:fragment slot="map">
       <Card>
-        <Chart type="world-map" data="{chartData}" />
+        <Chart aspectRatio="1.7" type="world-map" data="{chartData}" />
       </Card>
     </svelte:fragment>
     <svelte:fragment slot="node-status">
-      <Table settings="{settings}">
-        <h2 slot="title">Node Status</h2>
-        <thead slot="head">
-          <Row type="head">
-            <Datum cols="3"><strong>Total</strong></Datum>
-            <Datum cols="3"><strong>Free</strong></Datum>
-            <Datum cols="3"><strong>Used</strong></Datum>
-            <Datum cols="3"><strong>Offline</strong></Datum>
-          </Row>
-        </thead>
-        <tbody>
-          <Row>
-            <Datum cols="3">
-              <strong>228</strong>
-            </Datum>
-            <Datum cols="3">
-              <strong>48</strong>
-            </Datum>
-            <Datum cols="3">
-              <strong>210</strong>
-            </Datum>
-            <Datum cols="3">
-              <strong>70</strong>
-            </Datum>
-          </Row>
-        </tbody>
-        <svelte:fragment slot="actions">
-          <Group>
-            <Button variant="brand" outline="{true}"
-              ><Icon name="plus-circle-outline" /> <Label>CREATE TESTNET</Label></Button
-            >
-            <Button variant="danger" outline="{true}"
-              ><Icon name="trash-can-outline" /> <Label>DELETE TESTNET</Label></Button
-            >
-          </Group>
-        </svelte:fragment>
-      </Table>
+      <StatGroup cols="{2}">
+        <Statistic title="Total">
+          <svelte:fragment slot="icon">
+            <Icon name="server" variant="brand" size="xxxl" />
+          </svelte:fragment>
+          <p>228</p>
+        </Statistic>
+        <Statistic title="Free">
+          <svelte:fragment slot="icon">
+            <Icon name="nodes" variant="success" size="xxxl" />
+          </svelte:fragment>
+          <p>48</p>
+        </Statistic>
+        <Statistic title="Used">
+          <svelte:fragment slot="icon">
+            <Icon name="nodes" variant="warning" size="xxxl" />
+          </svelte:fragment>
+          <p>210</p>
+        </Statistic>
+        <Statistic title="Offline">
+          <svelte:fragment slot="icon">
+            <Icon name="nodes" variant="danger" size="xxxl" />
+          </svelte:fragment>
+          <p>79</p>
+        </Statistic>
+      </StatGroup>
     </svelte:fragment>
     <svelte:fragment slot="deployed-networks">
       <Table settings="{settings}">
@@ -144,6 +132,16 @@
             </Datum>
           </Row>
         </tbody>
+        <svelte:fragment slot="actions">
+          <Group>
+            <Button variant="danger" outline="{true}"
+              ><Icon name="trash-can-outline" /> <Label>DELETE TESTNET</Label></Button
+            >
+            <Button variant="brand" outline="{true}"
+              ><Icon name="plus-circle-outline" /> <Label>CREATE TESTNET</Label></Button
+            >
+          </Group>
+        </svelte:fragment>
       </Table>
     </svelte:fragment>
     <svelte:fragment slot="footer">
