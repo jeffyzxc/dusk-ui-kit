@@ -27,6 +27,7 @@
     "@dusk-network/error-block": "workspace:*",
     "@dusk-network/explorer-detail": "workspace:*",
     "@dusk-network/explorer-homepage": "workspace:*",
+    "@dusk-network/explorer-list": "workspace:*",
     "@dusk-network/file-upload": "workspace:*",
     "@dusk-network/footer": "workspace:*",
     "@dusk-network/form": "workspace:*",
