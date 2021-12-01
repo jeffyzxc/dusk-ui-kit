@@ -23,6 +23,7 @@
     "@dusk-network/disclaimer-list": "workspace:*",
     "@dusk-network/drop-down": "workspace:*",
     "@dusk-network/error-block": "workspace:*",
+    "@dusk-network/explorer-detail": "workspace:*",
     "@dusk-network/explorer-homepage": "workspace:*",
     "@dusk-network/file-upload": "workspace:*",
     "@dusk-network/footer": "workspace:*",
