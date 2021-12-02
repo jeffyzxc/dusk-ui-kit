@@ -51,7 +51,7 @@
 <Story name="Loaded State" args="{{}}" let:args>
   <Template>
     <svelte:fragment slot="navbar">
-      <Navbar />
+      <Navbar activePage="dashboard" />
     </svelte:fragment>
     <svelte:fragment slot="map">
       <Card>
@@ -64,7 +64,7 @@
           <svelte:fragment slot="icon">
             <Icon name="server" variant="brand" size="xxxl" />
           </svelte:fragment>
-          <p>228</p>
+          <p>337</p>
         </Statistic>
         <Statistic title="Free">
           <svelte:fragment slot="icon">
