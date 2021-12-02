@@ -105,9 +105,9 @@
       </label>
     {/if}
     <div class="duk-control__controls-wrapper">
-      <slot name="buttonPrefix" />
+      <slot name="buttonPrefix" variant="{state === 'default' ? 'brand' : state}" />
       <slot id="{id}" state="{state}" />
-      <slot name="buttonPostfix" />
+      <slot name="buttonPostfix" variant="{state === 'default' ? 'brand' : state}" />
     </div>
   </div>
   <Message

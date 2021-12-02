@@ -2,8 +2,8 @@
   import { Meta, Story } from "@storybook/addon-svelte-csf";
   // import { variants, states } from "@dusk-network/helpers";
   import Wizard, { Step } from "@dusk-network/wizard";
-  import results from "../../../../.jest-test-results.json";
-  import { withTests } from "@storybook/addon-jest";
+  // import results from "../../../../.jest-test-results.json";
+  // import { withTests } from "@storybook/addon-jest";
   // import RichText from "@dusk-network/rich-text";
   // import Icon from "@dusk-network/icon";
   // import Heading from "@dusk-network/heading";
@@ -13,7 +13,6 @@
 
 <Meta
   title="Components/Organisms/Wizard"
-  decorators="{[withTests({ results })]}"
   component="{Wizard}"
   parameters="{{
     layout: 'padded',
@@ -27,8 +26,16 @@
   argTypes="{meta('organisms/wizard/Wizard', {})}"
 />
 
-<Story name="Kitchen Skin" args="{{}}" let:args>
+<Story name="Default Wizard" args="{{}}" let:args>
   <Wizard stepCount="{2}">
+    <Step step="{1}">step 1</Step>
+    <Step step="{2}">step 2</Step>
+  </Wizard>
+</Story>
+
+<Story name="Default Wizard with title" args="{{}}" let:args>
+  <Wizard stepCount="{2}">
+    <h3 slot="title">Wizard title</h3>
     <Step step="{1}">step 1</Step>
     <Step step="{2}">step 2</Step>
   </Wizard>

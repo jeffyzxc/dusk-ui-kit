@@ -1,0 +1,11 @@
+.duk-template {
+  @apply flex flex-col justify-between min-h-screen;
+
+  &__navbar {
+    @apply mb-12;
+  }
+
+  &__container {
+    @apply container;
+  }
+}

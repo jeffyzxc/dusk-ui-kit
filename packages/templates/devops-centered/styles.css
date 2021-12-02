@@ -1,0 +1,11 @@
+.duk-template-devops-centered {
+  background-image: url(background.svg);
+
+  &__content {
+    @apply mb-6;
+
+    & .duk-card {
+      @apply max-w-md mx-auto;
+    }
+  }
+}

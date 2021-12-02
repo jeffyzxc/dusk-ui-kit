@@ -1,8 +1,8 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { variants } from "@dusk-network/helpers";
-  import results from "../../../../.jest-test-results.json";
-  import { withTests } from "@storybook/addon-jest";
+  // import results from "../../../../.jest-test-results.json";
+  // import { withTests } from "@storybook/addon-jest";
   import Alert from "@dusk-network/alert";
   import Icon from "@dusk-network/icon/Icon.svelte";
   import Button from "@dusk-network/button/Button.svelte";
@@ -12,7 +12,6 @@
 
 <Meta
   title="Components/Molecules/Alert"
-  decorators="{[withTests({ results })]}"
   component="{Alert}"
   parameters="{{
     layout: 'centered',

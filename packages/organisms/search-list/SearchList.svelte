@@ -1,4 +1,5 @@
 <script>
+  import { slide } from "svelte/transition";
   import { onMount, onDestroy } from "svelte";
   import { store, searchTerm } from "./stores/store.js";
   import { setContext } from "svelte";
@@ -49,5 +50,7 @@
       <TextField placeholder="Search" bind:value="{$searchTerm}" />
     </Control>
   {/if}
-  <slot />
+  <div transition:slide>
+    <slot />
+  </div>
 </div>

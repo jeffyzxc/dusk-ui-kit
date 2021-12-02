@@ -13,8 +13,9 @@
     }
   }
   &__table {
-    @apply block shadow-table bg-white rounded-md;
+    @apply block shadow-table bg-white rounded-md overflow-x-scroll;
     @apply dark:bg-gray-700;
+    @apply md:overflow-x-auto;
     & thead,
     & tbody,
     & tfoot,
@@ -25,17 +26,19 @@
     }
 
     tr {
-      @apply grid grid-cols-12;
+      @apply grid grid-cols-12 min-w-max;
+      @apply md:min-w-0;
     }
 
     td,
     th {
-      @apply py-3 px-6;
+      @apply py-3 px-6 overflow-hidden;
     }
 
     & thead {
-      @apply bg-gray-200;
+      @apply bg-gray-200 min-w-max;
       @apply dark:bg-indigo-900;
+      @apply md:min-w-0;
 
       & tr {
         &:not(:first-child) {
@@ -43,7 +46,7 @@
         }
       }
       & th {
-        @apply flex items-center space-x-3 font-light;
+        @apply flex flex-nowrap items-center space-x-3 font-light;
 
         &.duk-table__datum--hidden {
           @apply hidden;
@@ -52,6 +55,8 @@
     }
 
     & tbody {
+      @apply min-w-max;
+      @apply md:min-w-0;
       & tr {
         &:nth-child(odd) {
           @apply bg-gray-100;
@@ -65,7 +70,12 @@
       }
 
       & td {
-        @apply flex items-center space-x-3;
+        @apply flex flex-nowrap items-center space-x-3;
+
+        & a {
+          @apply text-indigo-500;
+          @apply dark:text-indigo-200;
+        }
 
         &.duk-table__datum--extra-information {
           @apply hidden;
@@ -77,7 +87,10 @@
     @apply flex items-center justify-between py-2 px-5 mt-3 bg-white shadow-table rounded-tl-md rounded-tr-md rounded-bl-xl rounded-br-xl;
     @apply dark:bg-gray-700 dark:text-gray-100;
 
-    & .duk-button-wrapper {
+    min-height: 2.5rem;
+
+    & .duk-button-wrapper,
+    & .duk-button-group {
       @apply mx-auto;
     }
   }

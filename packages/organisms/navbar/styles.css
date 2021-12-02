@@ -1,9 +1,6 @@
 .duk-navbar {
-  @apply flex flex-col w-full mb-5 bg-white;
-  @apply dark:bg-black;
-  @apply sm:mb-12;
-  @apply lg:mb-32 pt-2;
-  @apply 2xl:mb-40;
+  @apply flex flex-col w-full bg-gray-100 pt-2;
+  @apply dark:bg-gray-900;
 
   &__wrapper {
     @apply lg:flex-none lg:flex lg:w-full lg:justify-between lg:items-end;
@@ -137,8 +134,11 @@
   }
 
   &--hidden {
-    @apply h-auto bg-transparent;
+    @apply h-auto;
+    @apply bg-transparent;
     @apply dark:bg-transparent;
+    @apply md:bg-gray-100;
+    @apply md:dark:bg-gray-900;
 
     & ^&__navigation,
     & ^&__wrapper--secondary {

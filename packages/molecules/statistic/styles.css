@@ -1,0 +1,40 @@
+.duk-statistic {
+  @apply rounded-lg overflow-hidden bg-white;
+  @apply dark:bg-gray-800;
+
+  &__icon {
+    @apply p-3 mr-4;
+  }
+
+  &__content {
+    @apply p-4 flex items-center justify-around;
+    @apply sm:justify-start;
+  }
+
+  &__title {
+    @apply mb-2 text-sm font-bold text-indigo-500;
+    @apply dark:text-indigo-300;
+  }
+
+  &__value {
+    @apply text-lg font-semibold text-gray-700 text-right;
+    @apply dark:text-gray-200;
+    @apply sm:text-left;
+  }
+}
+
+.duk-statistic-group {
+  @apply grid grid-cols-1 gap-4;
+
+  &--2-col {
+    @apply md:grid-cols-2;
+  }
+
+  &--3-col {
+    @apply md:grid-cols-3;
+  }
+}
+
+.duk-form + .duk-statistic-group {
+  @apply -mt-5;
+}

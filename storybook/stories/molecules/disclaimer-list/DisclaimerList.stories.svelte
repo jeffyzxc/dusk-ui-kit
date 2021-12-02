@@ -1,7 +1,7 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
-  import results from "../../../../.jest-test-results.json";
-  import { withTests } from "@storybook/addon-jest";
+  // import results from "../../../../.jest-test-results.json";
+  // import { withTests } from "@storybook/addon-jest";
   import DisclaimerList, { Item } from "@dusk-network/disclaimer-list";
   import Icon from "@dusk-network/icon";
   import RichText from "@dusk-network/rich-text";
@@ -11,7 +11,6 @@
 
 <Meta
   title="Components/Molecules/Disclaimer List"
-  decorators="{[withTests({ results })]}"
   component="{DisclaimerList}"
   parameters="{{
     layout: 'padded',
