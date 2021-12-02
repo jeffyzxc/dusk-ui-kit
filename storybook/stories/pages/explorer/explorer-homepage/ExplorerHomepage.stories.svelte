@@ -62,7 +62,7 @@
         type: 'code',
       },
     },
-    jest: ['packages/templates/explorer-homepage/ExplorerHomepage.test.js'],
+    // jest: ['packages/templates/explorer-homepage/ExplorerHomepage.test.js'],
   }}"
   argTypes="{meta('templates/explorer-homepage/ExplorerHomepage', {})}"
 />
