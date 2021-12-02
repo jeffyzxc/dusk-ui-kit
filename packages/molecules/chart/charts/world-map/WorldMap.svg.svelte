@@ -2,12 +2,12 @@
   import { getContext } from "svelte";
   import { geoPath } from "d3-geo";
 
+  const { data, height, width } = getContext("LayerCake");
+
   export let projection;
   export let aspectRatio;
   export let features = $data.features;
   export let markers;
-
-  const { data, height, width } = getContext("LayerCake");
 
   $: fitSizeRange = aspectRatio ? [100, 100 / aspectRatio] : [$width, $height];
   $: projectionFn = projection
@@ -26,13 +26,16 @@
 <g>
   {#each markers as marker}
     <g
+      data-tooltip="{marker.count}"
       transform="translate ({projectionFn([marker.long, marker.lat])[0]}, {projectionFn([
         marker.long,
         marker.lat,
       ])[1]})"
     >
-      <circle class="duk-chart-world-map__marker-background" r="0.5"> </circle>
-      <circle class="duk-chart-world-map__marker-foreground" r="0.4"> </circle>
+      <circle class="duk-chart-world-map__marker-background" r="0.8"></circle>
+      <circle class="duk-chart-world-map__marker-foreground" r="0.7">
+        <title>{marker.count}</title>
+      </circle>
     </g>
   {/each}
 </g>
