@@ -1,4 +1,6 @@
 .duk-template-devops-dashboard {
+  background-image: url(background.svg);
+
   &__deployed-networks {
     @apply mb-6;
   }
