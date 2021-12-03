@@ -11,7 +11,8 @@
 
   &__map,
   &__node-status {
-    @apply w-full lg:w-1/2 px-8 mb-6;
+    @apply w-full px-8 mb-6;
     @apply md:mb-12;
+    @apply lg:w-1/2;
   }
 }
