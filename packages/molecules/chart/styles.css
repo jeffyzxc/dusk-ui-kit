@@ -1,13 +1,13 @@
 .duk-chart {
   @apply relative w-full h-full overflow-hidden;
-}
-
-.duk-chart-world-map {
-  /* @apply overflow-hidden; */
 
   svg {
     @apply pointer-events-auto;
   }
+}
+
+.duk-chart-world-map {
+  /* @apply overflow-hidden; */
 
   &__background-dot {
     @apply stroke-0 fill-current text-gray-400;
@@ -26,5 +26,27 @@
 
   &__marker-text {
     @apply text-xs font-medium leading-none text-gray-100 fill-current;
+  }
+}
+
+.duk-chart-bar-horizontal {
+  @apply rounded bg-gray-100 shadow-marketing;
+  @apply dark:bg-gray-800;
+
+  &__bar {
+    @apply text-indigo-500 fill-current;
+    @apply dark:text-indigo-200;
+  }
+}
+
+.duk-chart-line {
+  @apply rounded bg-gray-100 shadow-marketing;
+  @apply dark:bg-gray-800;
+
+  &__line {
+    @apply text-indigo-500 stroke-current stroke-2;
+    @apply dark:text-indigo-200;
+
+    fill: none;
   }
 }
