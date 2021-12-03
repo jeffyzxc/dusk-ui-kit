@@ -1,6 +1,4 @@
 .duk-template-explorer-detail {
-  @apply flex flex-wrap;
-
   &__details,
   &__list {
     @apply w-full px-8 mb-6;
