@@ -1,0 +1,19 @@
+{
+  "name": "@dusk-network/explorer-charts",
+  "version": "4.0.6",
+  "description": "Dusk UI Kit - ExplorerCharts",
+  "bugs": {
+    "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dusk-network/dusk-ui-kit.git",
+    "directory": "packages/templates/explorer-charts"
+  },
+  "type": "module",
+  "module": "index.js",
+  "scripts": {
+    "test": "echo \"Work in progress...\" && exit 1"
+  },
+  "gitHead": "cfc5482b7e790e1e9606f750aa24d0bdde106bf9"
+}
