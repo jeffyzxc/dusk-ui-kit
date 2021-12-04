@@ -20,6 +20,7 @@ import CheckboxBlankCircle from "./CheckboxBlankCircle.svelte";
 import CloseCircleOutline from "./CloseCircleOutline.svelte";
 import CogOutline from "./CogOutline.svelte";
 import CoinMarketCap from "./CoinMarketCap.svelte";
+import Connection from "./Connection.svelte";
 import Contacts from "./Contacts.svelte";
 import ContentCopy from "./ContentCopy.svelte";
 import ContentSaveAlertOutline from "./ContentSaveAlertOutline.svelte";
@@ -114,6 +115,7 @@ export default {
   CloseCircleOutline,
   CogOutline,
   CoinMarketCap,
+  Connection,
   Contacts,
   ContentCopy,
   ContentSaveAlertOutline,

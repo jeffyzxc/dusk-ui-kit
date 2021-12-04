@@ -17,6 +17,7 @@ export default {
   CHECK_DECAGRAM_OUTLINE: "check-decagram-outline",
   CHECK_NETWORK_OUTLINE: "check-network-outline",
   COIN_MARKET_CAP: "coin-market-cap",
+  CONNECTION: "connection",
   CONTENT_COPY: "content-copy",
   CONTENT_SAVE_ALERT_OUTLINE: "content-save-alert-outline",
   CONTRACT: "contract",
