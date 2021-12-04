@@ -23,6 +23,7 @@
     "build": "pnpm build:storybook",
     "build:storybook": "cd storybook && pnpm build",
     "build:docs": "cd docs && pnpm build",
+    "clean": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}'",
     "preinstall": "npx only-allow pnpm",
     "prepare": "is-ci || husky install",
     "publish:ci": "changeset publish",
