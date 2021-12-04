@@ -15,7 +15,7 @@
   &__table {
     @apply block shadow-table bg-white rounded-md overflow-x-scroll;
     @apply dark:bg-gray-700;
-    @apply md:overflow-x-auto;
+    @apply md:overflow-visible;
     & thead,
     & tbody,
     & tfoot,
@@ -32,7 +32,7 @@
 
     td,
     th {
-      @apply py-3 px-6 overflow-hidden;
+      @apply py-3 px-6;
     }
 
     & thead {
