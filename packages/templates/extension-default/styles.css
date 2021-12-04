@@ -1,5 +1,5 @@
 .duk-template-extension-default {
-  @apply p-12 h-full bg-gray-900;
+  @apply p-12 h-full bg-gray-900 text-gray-100 fill-current;
 
   min-height: 375px;
   width: 375px;

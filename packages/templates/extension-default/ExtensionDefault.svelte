@@ -3,7 +3,10 @@
   import "./styles.css";
 </script>
 
-<Template class="{$$props.class || ''} duk-template-extension-default" $$restProps="{$$restProps}">
+<Template
+  class="{$$props.class || ''} dark duk-template-extension-default"
+  $$restProps="{$$restProps}"
+>
   <svelte:fragment slot="navbar">
     <slot name="logo" />
   </svelte:fragment>
