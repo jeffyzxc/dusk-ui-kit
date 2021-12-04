@@ -5,25 +5,31 @@
 
   export let data;
 
+  $: filteredData = data.groups.filter((_, i) => i % 2 == 0); // Filter out ever other (odd) datapoint
+
   function getYDomain(groups) {
-    const lowest = groups.reduce((prev, curr) => {
-      return prev.price < curr.price ? prev : curr;
+    const lowest = groups.reduce((prev, current) => {
+      return prev.price < current.price ? prev : current;
     });
 
-    return [lowest.price - lowest.price * 0.1, null];
+    const highest = groups.reduce((prev, current) => {
+      return prev.price > current.price ? prev : current;
+    });
+
+    return [lowest.price - lowest.price * 0.1, highest.price + highest.price * 0.1];
   }
 </script>
 
 <div class="duk-chart duk-chart-bar-horizontal">
   <LayerCake
     ssr="{true}"
-    data="{data.groups.filter((_, i) => i % 2 == 0)}"
+    data="{filteredData}"
     position="absolute"
     percentRange="{true}"
     padding="{{ top: 3, right: 3, bottom: 3, left: 3 }}"
     x="{data.xKey}"
     y="{(d) => d[data.yKey]}"
-    yDomain="{getYDomain(data.groups.filter((_, i) => i % 2 == 0))}"
+    yDomain="{getYDomain(filteredData)}"
   >
     {#if data.title}
       <Html>
