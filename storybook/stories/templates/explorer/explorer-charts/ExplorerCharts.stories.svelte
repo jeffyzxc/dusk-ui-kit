@@ -25,13 +25,19 @@
 <Story name="Loaded State" args="{{}}" let:args>
   <Template>
     <svelte:fragment slot="navbar">
-      <Placeholder text="Navbar" width="{1920}" height="{104}" />
+      <Placeholder text="Navbar" height="104px" />
     </svelte:fragment>
-    <svelte:fragment slot="charts">
-      <Placeholder text="Charts" height="{565}" />
+    <svelte:fragment slot="map">
+      <Placeholder text="Node Map" height="350px" />
+    </svelte:fragment>
+    <svelte:fragment slot="market-data">
+      <Placeholder text="Market Charts" height="400px" />
+    </svelte:fragment>
+    <svelte:fragment slot="blockchain-data">
+      <Placeholder text="Blockchain Charts" height="400px" />
     </svelte:fragment>
     <svelte:fragment slot="footer">
-      <Placeholder text="Footer" width="{1920}" height="{108}" />
+      <Placeholder text="Footer" height="108px" />
     </svelte:fragment>
   </Template>
 </Story>

@@ -25,11 +25,11 @@
 <Story name="Loaded State" args="{{}}" let:args>
   <Template>
     <svelte:fragment slot="navbar">
-      <Placeholder text="Navbar" height="{104}" />
+      <Placeholder text="Navbar" height="104px" />
     </svelte:fragment>
-    <Placeholder text="Centered Content" height="{450}" />
+    <Placeholder text="Centered Content" height="450px" />
     <svelte:fragment slot="footer">
-      <Placeholder text="Footer" height="{108}" />
+      <Placeholder text="Footer" height="108px" />
     </svelte:fragment>
   </Template>
 </Story>

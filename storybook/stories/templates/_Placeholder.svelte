@@ -1,22 +1,23 @@
-<script>
-  import * as svgGenerator from "@cloudfour/simple-svg-placeholder";
+<style>
+  .placeholder {
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
 
-  export let width = 1440;
-  export let height = 500;
-  // export let fontSize = 32;
-  export let bgColor = "#261457";
+<script>
+  export let width = "100%";
+  export let height = "100%";
+  export let backgroundColor = "#261457";
   export let textColor = "#C1B1ED";
   export let text = undefined;
 </script>
 
-<img
-  alt="placeholder for component"
-  src="{svgGenerator({
-    width,
-    height,
-    bgColor,
-    textColor,
-    text,
-    // fontSize
-  })}"
-/>
+<div
+  class="placeholder"
+  style="background-color: {backgroundColor}; height: {height}; width: {width}"
+>
+  <p style="color: {textColor}">{text}</p>
+</div>
