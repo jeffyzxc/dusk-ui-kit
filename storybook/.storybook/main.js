@@ -76,6 +76,7 @@ module.exports = {
     "@storybook/addon-svelte-csf",
     "storybook-dark-mode",
     "@storybook/addon-jest",
+    "@storybook/addon-links",
   ],
   features: {
     postcss: false,
