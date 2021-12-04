@@ -1,0 +1,10 @@
+.duk-template-extension-default {
+  @apply p-12 h-full bg-gray-900;
+
+  min-height: 375px;
+  width: 375px;
+
+  &__content {
+    @apply mb-6;
+  }
+}
