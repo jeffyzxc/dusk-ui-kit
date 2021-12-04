@@ -3,7 +3,8 @@
   @apply dark:bg-gray-800;
 
   &__icon {
-    @apply p-3 mr-4;
+    @apply p-3 mr-auto;
+    @apply md:mr-4;
   }
 
   &__content {
