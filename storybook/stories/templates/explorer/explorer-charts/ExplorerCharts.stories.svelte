@@ -34,7 +34,7 @@
       <Placeholder text="Market Charts" height="400px" />
     </svelte:fragment>
     <svelte:fragment slot="blockchain-data">
-      <Placeholder text="Blockchain Charts" height="400px" />
+      <Placeholder text="Blockchain Charts" height="1000px" />
     </svelte:fragment>
     <svelte:fragment slot="footer">
       <Placeholder text="Footer" height="108px" />
