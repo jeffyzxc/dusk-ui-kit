@@ -58,7 +58,6 @@
       submitHandler="{async () => {
         submitted = true;
         if (schema.isValidSync(fields)) {
-          console.log('send to generation...');
           linkTo('Pages/Extension/Key Generation', 'Loading State');
         }
       }}"

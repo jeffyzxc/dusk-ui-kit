@@ -92,7 +92,7 @@ const getEntries = (obj) => {
     entries.push(`/helpers/${key}`);
   });
 
-  console.log(entries);
+  // console.log(entries);
 
   return entries;
 };

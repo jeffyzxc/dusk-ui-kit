@@ -59,7 +59,6 @@
           fields="{fields}"
           submitHandler="{async () => {
             submitted = true;
-            console.log('submitted');
             if (schema.isValidSync(fields)) {
               alert('Form is valid, search can proceed.');
             }
