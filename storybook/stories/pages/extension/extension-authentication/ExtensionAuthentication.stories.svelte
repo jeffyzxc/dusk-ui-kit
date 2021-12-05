@@ -12,6 +12,7 @@
   import Icon from "@dusk-network/icon";
   import Button, { Group, Label } from "@dusk-network/button";
   import meta from "../../../meta";
+  import { VIEWPORTS } from "../viewports.js";
   import * as yup from "yup";
 
   let submitted = false;
@@ -27,11 +28,15 @@
   title="Pages/Extension/Authentication"
   component="{Template}"
   parameters="{{
-    layout: 'centered',
+    layout: 'fullscreen',
     docs: {
       source: {
         type: 'code',
       },
+    },
+    viewport: {
+      viewports: VIEWPORTS,
+      defaultViewport: 'extension',
     },
     // jest: ['packages/templates/devops-dashboard/DevopsDashboard.test.js'],
   }}"

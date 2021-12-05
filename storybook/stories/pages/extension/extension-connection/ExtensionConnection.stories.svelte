@@ -10,6 +10,7 @@
   import RichText from "@dusk-network/rich-text";
   import Logo from "../_Logo.svelte";
   import Icon from "@dusk-network/icon";
+  import { VIEWPORTS } from "../viewports.js";
   import meta from "../../../meta";
 </script>
 
@@ -17,11 +18,15 @@
   title="Pages/Extension/Connection"
   component="{Template}"
   parameters="{{
-    layout: 'centered',
+    layout: 'fullscreen',
     docs: {
       source: {
         type: 'code',
       },
+    },
+    viewport: {
+      viewports: VIEWPORTS,
+      defaultViewport: 'extension',
     },
     // jest: ['packages/templates/devops-dashboard/DevopsDashboard.test.js'],
   }}"

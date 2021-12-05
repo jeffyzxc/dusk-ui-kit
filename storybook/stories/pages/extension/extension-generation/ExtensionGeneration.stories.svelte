@@ -11,6 +11,7 @@
   import Icon from "@dusk-network/icon";
   import ProgressBar from "@dusk-network/progress-bar";
   import Button, { Group, Label } from "@dusk-network/button";
+  import { VIEWPORTS } from "../viewports.js";
   import meta from "../../../meta";
 
   let displayKey = false;
@@ -20,11 +21,15 @@
   title="Pages/Extension/Key Generation"
   component="{Template}"
   parameters="{{
-    layout: 'centered',
+    layout: 'fullscreen',
     docs: {
       source: {
         type: 'code',
       },
+    },
+    viewport: {
+      viewports: VIEWPORTS,
+      defaultViewport: 'extension',
     },
     // jest: ['packages/templates/devops-dashboard/DevopsDashboard.test.js'],
   }}"
