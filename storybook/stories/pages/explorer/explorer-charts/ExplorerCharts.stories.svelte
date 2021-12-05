@@ -25,8 +25,6 @@
     ],
   };
 
-  console.log("prices", prices);
-
   let priceData = {};
   priceData.title = undefined;
   priceData.xKey = "date";
@@ -59,6 +57,9 @@
       source: {
         type: 'code',
       },
+    },
+    darkMode: {
+      stylePreview: false,
     },
     // jest: ['packages/templates/explorer-charts/ExplorerCharts.test.js'],
   }}"

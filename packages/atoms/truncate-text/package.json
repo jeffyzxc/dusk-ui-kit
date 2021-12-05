@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/truncate-text",
-  "version": "0.0.0",
+  "version": "4.0.6",
   "description": "Dusk UI Kit - TruncateText",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -20,5 +20,6 @@
   },
   "peerDependencies": {
     "@dusk-network/helpers": "workspace:*"
-  }
+  },
+  "gitHead": "ea482b8985a5d0594dc37e7547748629fd285960"
 }

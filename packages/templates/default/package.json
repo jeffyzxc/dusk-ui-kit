@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/default",
-  "version": "0.0.0",
+  "version": "4.0.6",
   "description": "Dusk UI Kit - Default",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -14,5 +14,6 @@
   "module": "index.js",
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
-  }
+  },
+  "gitHead": "ea482b8985a5d0594dc37e7547748629fd285960"
 }

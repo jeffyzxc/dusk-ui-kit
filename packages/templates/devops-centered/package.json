@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/devops-centered",
-  "version": "4.0.5",
+  "version": "4.0.6",
   "description": "Dusk UI Kit - DevOps Centered",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -15,5 +15,5 @@
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
   },
-  "gitHead": "cfc5482b7e790e1e9606f750aa24d0bdde106bf9"
+  "gitHead": "ea482b8985a5d0594dc37e7547748629fd285960"
 }

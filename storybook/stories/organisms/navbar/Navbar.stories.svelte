@@ -51,7 +51,10 @@ Basic.args = {
         type: 'code',
       },
     },
-    jest: ['packages/organisms/navbar/Navbar.test.js'],
+    darkMode: {
+      stylePreview: false,
+    },
+    // jest: ['packages/organisms/navbar/Navbar.test.js'],
   }}"
   argTypes="{meta('organisms/navbar/Navbar', {})}"
 />

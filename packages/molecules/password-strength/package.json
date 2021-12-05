@@ -26,5 +26,5 @@
     "@dusk-network/helpers": "workspace:*",
     "@dusk-network/progress-bar": "workspace:*"
   },
-  "gitHead": "cfc5482b7e790e1e9606f750aa24d0bdde106bf9"
+  "gitHead": "ea482b8985a5d0594dc37e7547748629fd285960"
 }
