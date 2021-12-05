@@ -18,7 +18,7 @@
   /**
    * Sets the object used to define the sitemap and it's links.
    */
-  export let categories;
+  export let categories = undefined;
 
   let today = new Date();
   let year = today.getFullYear();

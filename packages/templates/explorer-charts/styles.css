@@ -7,13 +7,13 @@
     @apply w-full px-8 mb-6;
     @apply md:mb-12;
 
+    & > .duk-heading {
+      @apply pl-6;
+    }
+
     & .duk-card,
     & .duk-table {
       @apply mb-5;
     }
-  }
-
-  & .duk-heading {
-    @apply pl-6;
   }
 }

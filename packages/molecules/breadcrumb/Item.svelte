@@ -1,5 +1,5 @@
 <script>
-  export let href;
+  export let href = undefined;
 </script>
 
 <li class="{$$props.class || ''} duk-breadcrumb__item" on:click on:mouseover on:focus>
