@@ -81,7 +81,7 @@
             />
           </Control>
           <Control width="full">
-            <Group>
+            <Group align="center">
               <Button type="submit" size="lg" variant="brand" disable="{submitted}">
                 <Label>Login</Label>
               </Button>
