@@ -92,6 +92,8 @@ const getEntries = (obj) => {
     entries.push(`/helpers/${key}`);
   });
 
+  console.log(entries);
+
   return entries;
 };
 
@@ -103,7 +105,9 @@ const config = {
     adapter: adapter(),
     prerender: {
       crawl: false,
-      entries,
+      enabled: true,
+      entries: entries,
+      fallback: "index.html",
     },
     paths: {
       base: process.env.BASE || "",
