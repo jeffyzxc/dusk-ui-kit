@@ -14,5 +14,6 @@
   "module": "index.js",
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
-  }
+  },
+  "gitHead": "12408a424aeff515b166507a20458dc4953533d5"
 }
