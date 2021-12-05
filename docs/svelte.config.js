@@ -103,7 +103,7 @@ const entries = getEntries(metadata);
 const config = {
   kit: {
     adapter: adapter({
-      fallback: "/docs/index.html",
+      fallback: "index.html",
     }),
     prerender: {
       crawl: false,
