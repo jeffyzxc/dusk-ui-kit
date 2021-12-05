@@ -35,6 +35,9 @@
         type: 'code',
       },
     },
+    darkMode: {
+      stylePreview: false,
+    },
     // jest: ['packages/templates/devops-dashboard/DevopsDashboard.test.js'],
   }}"
   argTypes="{meta('templates/default/Default', {})}"

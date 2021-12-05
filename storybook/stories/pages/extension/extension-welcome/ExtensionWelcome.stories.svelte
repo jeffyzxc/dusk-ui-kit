@@ -26,6 +26,9 @@
       viewports: VIEWPORTS,
       defaultViewport: 'extension',
     },
+    darkMode: {
+      stylePreview: false,
+    },
     // jest: ['packages/templates/devops-dashboard/DevopsDashboard.test.js'],
   }}"
   argTypes="{meta('templates/default/Default', {})}"

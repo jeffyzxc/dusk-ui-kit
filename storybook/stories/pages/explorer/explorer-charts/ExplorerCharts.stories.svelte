@@ -58,6 +58,9 @@
         type: 'code',
       },
     },
+    darkMode: {
+      stylePreview: false,
+    },
     // jest: ['packages/templates/explorer-charts/ExplorerCharts.test.js'],
   }}"
   argTypes="{meta('templates/explorer-charts/ExplorerCharts', {})}"

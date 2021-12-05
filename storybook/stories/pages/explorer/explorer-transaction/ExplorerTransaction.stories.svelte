@@ -38,7 +38,10 @@
         type: 'code',
       },
     },
-    jest: ['packages/templates/explorer-list/ExplorerList.test.js'],
+    darkMode: {
+      stylePreview: false,
+    },
+    // jest: ['packages/templates/explorer-list/ExplorerList.test.js'],
   }}"
   argTypes="{meta('templates/explorer-list/ExplorerList', {})}"
 />

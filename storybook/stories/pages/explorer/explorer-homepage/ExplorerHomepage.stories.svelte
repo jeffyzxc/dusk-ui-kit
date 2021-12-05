@@ -46,6 +46,9 @@
         type: 'code',
       },
     },
+    darkMode: {
+      stylePreview: false,
+    },
     // jest: ['packages/templates/explorer-homepage/ExplorerHomepage.test.js'],
   }}"
   argTypes="{meta('templates/explorer-homepage/ExplorerHomepage', {})}"
