@@ -17,6 +17,8 @@
    */
   export let variant = variants.HEADING.DEFAULT;
 
+  export let align = "left";
+
   const context = getContext("DUK:heading:context");
 
   setContext("DUK:icon:context", contexts.ICON.HEADING);
@@ -34,8 +36,11 @@
   class:duk-heading--success="{variant === variants.HEADING.SUCCESS}"
   class:duk-heading--warning="{variant === variants.HEADING.WARNING}"
   class:duk-heading--danger="{variant === variants.HEADING.DANGER}"
+  class:duk-heading--left="{align === 'left'}"
+  class:duk-heading--center="{align === 'center'}"
+  class:duk-heading--right="{align === 'right'}"
 >
-  <slot name="icon" />
   <slot />
+  <slot name="icon" />
   <slot name="button" />
 </div>
