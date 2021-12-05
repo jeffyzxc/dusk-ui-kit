@@ -39,6 +39,41 @@
 
   &__content {
     @apply font-light py-5 px-6;
+
+    &--left {
+      @apply text-left;
+      & .duk-icon {
+        @apply mr-auto;
+      }
+
+      & .duk-heading {
+        @apply justify-start;
+      }
+    }
+
+    &--right {
+      @apply text-right;
+
+      & .duk-icon {
+        @apply ml-auto;
+      }
+
+      & .duk-heading {
+        @apply justify-end;
+      }
+    }
+
+    &--center {
+      @apply text-center;
+
+      & .duk-icon {
+        @apply mx-auto;
+      }
+
+      & .duk-heading {
+        @apply justify-center;
+      }
+    }
   }
 
   &--brand {
