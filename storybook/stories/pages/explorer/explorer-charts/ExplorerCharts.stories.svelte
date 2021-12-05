@@ -7,6 +7,7 @@
   import Card, { Content, Title } from "@dusk-network/card";
   import Chart from "@dusk-network/chart";
   import Heading from "@dusk-network/heading";
+  import RichText from "@dusk-network/rich-text";
   import Navbar from "../_Navbar.svelte";
   import Search from "../_Search.svelte";
   import Footer from "../_Footer.svelte";
@@ -88,6 +89,9 @@
           <h3>Dusk Price</h3>
         </Title>
         <Content>
+          <RichText>
+            <h4>$0.23 <small class="success">+2%</small></h4>
+          </RichText>
           <div style="height: 65px">
             <Chart type="line" data="{priceData}" />
           </div>
@@ -98,6 +102,9 @@
           <h3>Dusk Market Cap</h3>
         </Title>
         <Content>
+          <RichText>
+            <h4>$92.44 M</h4>
+          </RichText>
           <div style="height: 65px">
             <Chart type="bar-horizontal" data="{marketCapData}" />
           </div>
