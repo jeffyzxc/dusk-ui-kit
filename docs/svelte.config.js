@@ -102,12 +102,13 @@ const entries = getEntries(metadata);
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      fallback: "index.html",
+    }),
     prerender: {
       crawl: false,
       enabled: true,
       entries: entries,
-      fallback: "index.html",
     },
     paths: {
       base: process.env.BASE || "",
