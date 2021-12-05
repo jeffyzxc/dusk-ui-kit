@@ -1,5 +1,11 @@
 # @dusk-network/explorer-homepage
 
+## 4.1.0
+
+### Minor Changes
+
+- b8dfbe58: Release 4.1.0
+
 ## 4.0.6
 
 ### Patch Changes
