@@ -5,7 +5,7 @@
 
   export let variant = variants.TABLE.DEFAULT;
   export let cols = "1";
-  export let key;
+  export let key = undefined;
   export let hidden = false;
   export let id = "__DUK-table-datum" + Math.random().toString(36);
 
