@@ -6,16 +6,18 @@
   // import Card from "@dusk-network/card";
   import Chart from "@dusk-network/chart";
   import meta from "../../meta.js";
+  import { mapData, barData } from "./data.js";
 
-  const data = {
-    // title: "Nodes: 142",
-    markers: [
-      { long: 5, lat: 52, count: 55 },
-      { long: -78, lat: 41, count: 77 },
-      { long: -70, lat: 53, count: 10 },
-    ],
-    width: 550,
-  };
+  let transformedData = {};
+  transformedData.title = barData.title;
+  transformedData.xKey = barData.xKey;
+  transformedData.yKey = barData.yKey;
+  transformedData.groups = barData.groups.map((group) => {
+    return {
+      [barData.xKey]: group[0],
+      [barData.yKey]: group[1],
+    };
+  });
 </script>
 
 <Meta
@@ -38,11 +40,37 @@
   args="{{
     aspectRatio: 1.7,
     type: charts.WORLD_MAP,
-    data: data,
+    data: mapData,
   }}"
   let:args
 >
   <div style="width: 100%; height: auto">
+    <Chart {...args} />
+  </div>
+</Story>
+
+<Story
+  name="Horizontal Bar Chart"
+  args="{{
+    type: charts.BAR_HORIZONTAL,
+    data: transformedData,
+  }}"
+  let:args
+>
+  <div style="width: 100%; height: 200px">
+    <Chart {...args} />
+  </div>
+</Story>
+
+<Story
+  name="Line Chart"
+  args="{{
+    type: charts.LINE,
+    data: transformedData,
+  }}"
+  let:args
+>
+  <div style="width: 100%; height: 200px">
     <Chart {...args} />
   </div>
 </Story>

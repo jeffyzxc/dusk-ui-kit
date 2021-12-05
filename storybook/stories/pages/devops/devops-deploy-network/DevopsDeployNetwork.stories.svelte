@@ -77,7 +77,7 @@
               id="{id}"
               options="{branches}"
               on:select="{(e) => {
-                fields.branch = e.detail.value;
+                fields.branch = e.detail;
               }}"
             />
           </Control>
@@ -139,7 +139,7 @@
             />
           </Control>
           <Control width="full">
-            <Group>
+            <Group align="center">
               <Button size="lg" variant="brand" disable="{submitted}">
                 <Label>Cancel</Label>
               </Button>

@@ -20,6 +20,7 @@ import CheckboxBlankCircle from "./CheckboxBlankCircle.svelte";
 import CloseCircleOutline from "./CloseCircleOutline.svelte";
 import CogOutline from "./CogOutline.svelte";
 import CoinMarketCap from "./CoinMarketCap.svelte";
+import Connection from "./Connection.svelte";
 import Contacts from "./Contacts.svelte";
 import ContentCopy from "./ContentCopy.svelte";
 import ContentSaveAlertOutline from "./ContentSaveAlertOutline.svelte";
@@ -36,6 +37,7 @@ import Earth from "./Earth.svelte";
 import EmailOutline from "./EmailOutline.svelte";
 import EmailSendOutline from "./EmailSendOutline.svelte";
 import EyeCircleOutline from "./EyeCircleOutline.svelte";
+import EyeOffOutline from "./EyeOffOutline.svelte";
 import EyeOutline from "./EyeOutline.svelte";
 import EyeSettingsOutline from "./EyeSettingsOutline.svelte";
 import FileExportOutline from "./FileExportOutline.svelte";
@@ -114,6 +116,7 @@ export default {
   CloseCircleOutline,
   CogOutline,
   CoinMarketCap,
+  Connection,
   Contacts,
   ContentCopy,
   ContentSaveAlertOutline,
@@ -130,6 +133,7 @@ export default {
   EmailOutline,
   EmailSendOutline,
   EyeCircleOutline,
+  EyeOffOutline,
   EyeOutline,
   EyeSettingsOutline,
   FileExportOutline,

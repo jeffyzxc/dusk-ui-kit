@@ -61,6 +61,7 @@
     class:duk-icon--heading="{context === contexts.ICON.HEADING}"
     data-tooltip="{tooltip || undefined}"
     title="{$$props.title || undefined}"
+    on:click
   >
     <svelte:component this="{icon}" viewbox="{viewbox}" />
   </div>

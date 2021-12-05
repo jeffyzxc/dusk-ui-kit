@@ -8,4 +8,8 @@
   &__container {
     @apply container;
   }
+
+  & .duk-heading {
+    @apply mb-6;
+  }
 }

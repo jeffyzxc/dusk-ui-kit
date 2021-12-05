@@ -30,11 +30,5 @@
 </script>
 
 {#if type}
-  <!-- <div
-    class="{$$props.class || ''} duk-chart"
-    class:duk-chart-world-map="{type === charts.WORLD_MAP}"
-    style="padding-bottom: {100 / aspectRatio}; height: {data.height}"
-  > -->
   <svelte:component this="{chart}" data="{data}" aspectRatio="{aspectRatio}" />
-  <!-- </div> -->
 {/if}

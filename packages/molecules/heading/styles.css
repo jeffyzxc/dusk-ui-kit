@@ -1,13 +1,39 @@
 .duk-heading {
   @apply flex items-center space-x-4;
 
-  /* FIXME should really live with the Button styles */
-  > .duk-button-wrapper {
-    @apply flex flex-grow justify-end;
+  &--left {
+    @apply justify-start;
   }
 
-  & > *:not(button) {
-    @apply block text-2xl text-indigo-500 leading-7;
+  &--center {
+    @apply justify-center;
+  }
+
+  &--right {
+    @apply justify-end;
+  }
+
+  /* FIXME should really live with the Button styles */
+  > .duk-button-wrapper,
+  > .duk-button-group {
+    @apply flex flex-grow justify-end order-last;
+  }
+
+  & > .duk-icon {
+    @apply block order-first pr-4;
+  }
+
+  & h1 + .duk-icon {
+    @apply text-indigo-500;
+    @apply dark:text-indigo-100;
+  }
+
+  & h1,
+  & h2,
+  & h3,
+  & h4,
+  & h5 {
+    @apply text-2xl text-indigo-500 leading-7 order-2;
     @apply dark:text-indigo-100;
   }
 
@@ -41,8 +67,14 @@
 
   &--card {
     > *:not(button) {
-      @apply text-black;
-      @apply dark:text-indigo-200;
+      & h1,
+      & h2,
+      & h3,
+      & h4,
+      & h5 {
+        @apply text-black;
+        @apply dark:text-indigo-200;
+      }
     }
   }
 

@@ -54,6 +54,26 @@
 </Story>
 
 <Story
+  name="Using a strong style"
+  args="{{ heading: '<strong>I am not a heading tag</strong>' }}"
+  let:args
+>
+  <Heading {...args}>
+    <svelte:fragment slot="icon">
+      {#if args.icon}
+        <Icon name="{args.icon}" />
+      {/if}
+    </svelte:fragment>
+    {@html args.heading}
+    <svelte:fragment slot="button">
+      {#if args.button}
+        <Button>{args.button}</Button>
+      {/if}
+    </svelte:fragment>
+  </Heading>
+</Story>
+
+<Story
   name="With icon"
   args="{{ heading: '<h1>I am a heading with an icon<h1>', icon: 'wallet-plus' }}"
   let:args

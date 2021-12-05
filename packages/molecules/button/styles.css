@@ -1,5 +1,17 @@
 .duk-button-group {
   @apply flex items-center justify-between gap-4;
+
+  &--left {
+    @apply justify-start;
+  }
+
+  &--center {
+    @apply justify-center;
+  }
+
+  &--right {
+    @apply justify-end;
+  }
 }
 
 .duk-button-wrapper {

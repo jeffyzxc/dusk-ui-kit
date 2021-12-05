@@ -25,19 +25,19 @@
 <Story name="Loaded State" args="{{}}" let:args>
   <Template>
     <svelte:fragment slot="navbar">
-      <Placeholder text="Navbar" height="{104}" />
+      <Placeholder text="Navbar" height="104px" />
     </svelte:fragment>
     <svelte:fragment slot="map">
-      <Placeholder text="Map" height="{214}" />
+      <Placeholder text="Map" height="214px" />
     </svelte:fragment>
     <svelte:fragment slot="node-status">
-      <Placeholder text="Node Status" height="{214}" />
+      <Placeholder text="Node Status" height="214px" />
     </svelte:fragment>
     <svelte:fragment slot="deployed-networks">
-      <Placeholder text="Deployed Testnets" height="{333}" />
+      <Placeholder text="Deployed Testnets" height="333px" />
     </svelte:fragment>
     <svelte:fragment slot="footer">
-      <Placeholder text="Footer" height="{108}" />
+      <Placeholder text="Footer" height="108px" />
     </svelte:fragment>
   </Template>
 </Story>

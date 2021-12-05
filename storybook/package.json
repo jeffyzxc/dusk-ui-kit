@@ -8,7 +8,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
-    "@cloudfour/simple-svg-placeholder": "^1.0.2",
     "@dusk-network/accordion": "workspace:*",
     "@dusk-network/address": "workspace:*",
     "@dusk-network/alert": "workspace:*",
@@ -25,7 +24,11 @@
     "@dusk-network/disclaimer-list": "workspace:*",
     "@dusk-network/drop-down": "workspace:*",
     "@dusk-network/error-block": "workspace:*",
+    "@dusk-network/explorer-charts": "workspace:*",
+    "@dusk-network/explorer-detail": "workspace:*",
     "@dusk-network/explorer-homepage": "workspace:*",
+    "@dusk-network/explorer-list": "workspace:*",
+    "@dusk-network/extension-default": "workspace:*",
     "@dusk-network/file-upload": "workspace:*",
     "@dusk-network/footer": "workspace:*",
     "@dusk-network/form": "workspace:*",
@@ -55,6 +58,7 @@
     "@storybook/addon-backgrounds": "^6.3.8",
     "@storybook/addon-controls": "^6.3.8",
     "@storybook/addon-docs": "^6.3.8",
+    "@storybook/addon-links": "^6.3.8",
     "@storybook/addon-queryparams": "^6.2.9",
     "@storybook/addon-storysource": "^6.3.8",
     "@storybook/addon-svelte-csf": "^1.1.0",
@@ -81,7 +85,6 @@
     "tailwindcss": "^2.2.15",
     "vite": "^2.5.10",
     "vite-plugin-markdown": "^2.0.2",
-    "webpack-virtual-modules": "^0.4.3",
     "yup": "^0.32.9"
   }
 }

@@ -17,6 +17,11 @@
   export let index;
 
   /**
+   * Sets if the Word is disabled.
+   */
+  export let disabled;
+
+  /**
    * Sets the `id` of the Word if set, otherwise the ID is generated.
    */
   export let id = "__DUK-mnemonic-word" + Math.random().toString(36);
@@ -30,8 +35,13 @@
       type="{types.TEXT_FIELD.TEXT}"
       placeholder="_____"
       maxlength="8"
+      disabled="{disabled}"
       bind:value="{$compared[index]}"
     />
+  {:else if disabled}
+    <del>
+      {value || $compared[index] || ""}
+    </del>
   {:else}
     {value || $compared[index] || ""}
   {/if}

@@ -25,19 +25,19 @@
 <Story name="Loaded State" args="{{}}" let:args>
   <Template>
     <svelte:fragment slot="navbar">
-      <Placeholder text="Navbar" height="{104}" />
+      <Placeholder text="Navbar" height="104px" />
     </svelte:fragment>
     <svelte:fragment slot="control-panel">
-      <Placeholder text="Control Panel" height="{135}" />
+      <Placeholder text="Control Panel" height="135px" />
     </svelte:fragment>
     <svelte:fragment slot="latest-blocks">
-      <Placeholder text="Latest Blocks" height="{565}" />
+      <Placeholder text="Latest Blocks" height="565px" />
     </svelte:fragment>
     <svelte:fragment slot="latest-transactions">
-      <Placeholder text="Latest Transactions" height="{565}" />
+      <Placeholder text="Latest Transactions" height="565px" />
     </svelte:fragment>
     <svelte:fragment slot="footer">
-      <Placeholder text="Footer" height="{108}" />
+      <Placeholder text="Footer" height="108px" />
     </svelte:fragment>
   </Template>
 </Story>
