@@ -16,7 +16,8 @@ npm i -D @dusk-network/table
 ```svelte
 <script>
   import Table, { Row, Datum } from "@dusk-network/table";
-  import { data } from "./data.js";
+  import { useQuery } from "@sveltestack/svelte-query";
+  import { apiData } from "./data.js";
 
   const settings = {
     sortable: true,
@@ -26,38 +27,48 @@ npm i -D @dusk-network/table
   };
 
   let rows;
+
+  async function getTransactions() {
+    return apiData;
+  }
+
+  const transactions = useQuery("content", getTransactions);
 </script>
 
-<Table data="{JSON.parse(data)}" bind:dataRows="{rows}" settings="{settings}">
-  <h3 slot="title">Table title</h3>
-  <thead slot="head">
-    <Row type="head">
-      <Datum key="id" cols="2">ID</Datum>
-      <Datum key="first_name" cols="3">First Name</Datum>
-      <Datum key="last_name" cols="3">Last Name</Datum>
-      <Datum key="email" cols="4">Email</Datum>
-      <Datum hidden="{true}">Extra Details</Datum>
-    </Row>
-  </thead>
-  <tbody>
-    {#if rows}
-      {#each $rows as row}
-        <Row>
-          <Datum cols="2"><span>{row.id}</span></Datum>
-          <Datum cols="3"><span>{row.first_name}</span></Datum>
-          <Datum cols="3"><span>{row.last_name}</span></Datum>
-          <Datum cols="4"><span>{row.email}</span></Datum>
-          <Datum hidden="{true}">
-            <p>Some hidden info!</p>
-          </Datum>
-        </Row>
-      {/each}
-    {:else}
-      <Row>
-        <Datum cols="12">No data</Datum>
+{#if $transactions.isLoading}
+  <p>Loading...</p>
+{:else if $transactions.isError}
+  <p>Error: {$transactions.error}</p>
+{:else}
+  <Table data="{$transactions.data}" bind:dataRows="{rows}" settings="{settings}">
+    <h3 slot="title">Recent transactions</h3>
+    <thead slot="head">
+      <Row type="head">
+        <Datum key="id" cols="1">ID</Datum>
+        <Datum key="first_name" cols="5">Status</Datum>
+        <Datum key="last_name" cols="3">Time</Datum>
+        <Datum key="email" cols="3">Amount</Datum>
       </Row>
-    {/if}
-  </tbody>
-</Table>
+    </thead>
+    <tbody>
+      {#if rows}
+        {#each $rows as row}
+          <Row>
+            <Datum cols="1">{row.id}</Datum>
+            <Datum cols="5">
+              {row.status}
+            </Datum>
+            <Datum cols="3">
+              {row.timeStamp}
+            </Datum>
+            <Datum cols="3">
+              {row.amount}
+            </Datum>
+          </Row>
+        {/each}
+      {/if}
+    </tbody>
+  </Table>
+{/if}
 ```
 <!-- MARKDOWN-AUTO-DOCS:END -->
