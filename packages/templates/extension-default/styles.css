@@ -4,6 +4,10 @@
   min-height: 375px;
   width: 375px;
 
+  & .duk-template__navbar {
+    @apply mb-6;
+  }
+
   &__content {
     @apply mb-6;
   }

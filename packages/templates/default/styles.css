@@ -10,6 +10,6 @@
   }
 
   & .duk-heading {
-    @apply mb-4;
+    @apply mb-6;
   }
 }
