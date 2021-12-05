@@ -25,8 +25,6 @@
     ],
   };
 
-  console.log("prices", prices);
-
   let priceData = {};
   priceData.title = undefined;
   priceData.xKey = "date";
