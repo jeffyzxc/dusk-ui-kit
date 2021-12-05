@@ -26,6 +26,11 @@
    */
   export let length = 12;
 
+  /**
+   * Sets if the Mnemonic should be disabled.
+   */
+  export let disabled = false;
+
   const dispatch = createEventDispatcher();
   const context = getContext("DUK:mnemonic:context");
 
@@ -66,7 +71,7 @@
   class="{$$props.class || ''} duk-mnemonic"
   class:duk-mnemonic--card="{context === contexts.MNEMONIC.CARD}"
 >
-  {#if $options.type === types.MNEMONIC.CONFIRM}
+  {#if $options.type === types.MNEMONIC.CONFIRM && !disabled}
     <Group class="duk-mnemonic__buttons">
       {#each $shuffled as word}
         <Button
@@ -82,19 +87,19 @@
   <ol class="duk-mnemonic__list">
     {#if $options.type === types.MNEMONIC.AUTHENTICATE}
       {#each Array(length) as _, i}
-        <Word index="{i}" />
+        <Word index="{i}" disabled="{disabled}" />
       {/each}
     {:else if $options.type === types.MNEMONIC.CONFIRM}
       {#each $shuffled as _, i}
-        <Word index="{i}" />
+        <Word index="{i}" disabled="{disabled}" />
       {/each}
     {:else}
       {#each $words as word}
-        <Word value="{word}" />
+        <Word value="{word}" disabled="{disabled}" />
       {/each}
     {/if}
   </ol>
-  {#if $options.type === types.MNEMONIC.CONFIRM}
+  {#if $options.type === types.MNEMONIC.CONFIRM && !disabled}
     <Group class="duk-mnemonic__buttons">
       <Button variant="{variants.BUTTON.DANGER}" on:click="{reset}">Reset</Button>
     </Group>
