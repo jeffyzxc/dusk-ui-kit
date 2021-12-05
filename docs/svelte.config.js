@@ -3,6 +3,7 @@ import dusk from "@dusk-network/styles/plugin/index.js";
 import metadata from "@dusk-network/meta/index.cjs";
 import fs from "fs";
 import path from "path";
+import * as Helpers from "@dusk-network/helpers";
 
 const virtualMetaPlugin = () => {
   const virtualFileId = "@ui-kit-meta";
@@ -73,10 +74,42 @@ const virtualExamplePlugin = () => {
   };
 };
 
+const getEntries = (obj) => {
+  let entries = ["/", "/components", "/helpers"];
+  Object.keys(obj).forEach((group) => {
+    entries.push(`/components/${group}`);
+
+    Object.keys(obj[group]).forEach((pkg) => {
+      entries.push(`/components/${group}/${pkg}`);
+
+      Object.keys(obj[group][pkg]).forEach((component) => {
+        entries.push(`/components/${group}/${pkg}/${component}`);
+      });
+    });
+  });
+
+  Object.entries(Helpers).forEach(([key]) => {
+    entries.push(`/helpers/${key}`);
+  });
+
+  console.log(entries);
+
+  return entries;
+};
+
+const entries = getEntries(metadata);
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      fallback: "index.html",
+    }),
+    prerender: {
+      crawl: false,
+      enabled: true,
+      entries: entries,
+    },
     paths: {
       base: process.env.BASE || "",
     },
@@ -84,7 +117,7 @@ const config = {
     target: "#dusk",
     vite: () => ({
       optimizeDeps: {
-        include: ["highlight.js/lib/core"],
+        include: ["highlight.js/lib/core", "broadcast-channel"],
         exclude: ["@dusk-network/table"],
       },
       plugins: [

@@ -21,16 +21,21 @@
 
 <script>
   import "./styles.css";
+  import { QueryClient, QueryClientProvider } from "@sveltestack/svelte-query";
   import "@dusk-network/styles/tailwind.css";
   import "svelte-highlight/src/styles/github-dark.css";
   import Nav from "$lib/Nav.svelte";
   import Footer from "@dusk-network/footer";
+
+  const queryClient = new QueryClient();
 
   export let components;
 </script>
 
 <Nav components="{components}" />
 <main class="container">
-  <slot />
+  <QueryClientProvider client="{queryClient}">
+    <slot />
+  </QueryClientProvider>
 </main>
 <Footer type="minimal" variant="brand" />

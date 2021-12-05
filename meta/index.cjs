@@ -21,7 +21,7 @@ fileSearch.forEach((file) => {
     module: undefined,
   });
 
-  console.log(`Generated docs for ${group}/${component}/${filename}`);
+  // console.log(`Generated docs for ${group}/${component}/${filename}`);
 });
 
 module.exports = output;
