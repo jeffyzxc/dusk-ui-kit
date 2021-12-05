@@ -78,8 +78,10 @@ const getEntries = (obj) => {
   let entries = ["/", "/components", "/helpers"];
   Object.keys(obj).forEach((group) => {
     entries.push(`/components/${group}`);
+
     Object.keys(obj[group]).forEach((pkg) => {
       entries.push(`/components/${group}/${pkg}`);
+
       Object.keys(obj[group][pkg]).forEach((component) => {
         entries.push(`/components/${group}/${pkg}/${component}`);
       });
@@ -110,7 +112,7 @@ const config = {
     target: "#dusk",
     vite: () => ({
       optimizeDeps: {
-        include: ["highlight.js/lib/core"],
+        include: ["highlight.js/lib/core", "broadcast-channel"],
         exclude: ["@dusk-network/table"],
       },
       plugins: [
