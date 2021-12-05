@@ -27,8 +27,9 @@
     <svelte:fragment slot="logo">
       <Placeholder text="Logo" height="94px" />
     </svelte:fragment>
+    <Placeholder text="Status / Key Output" height="150px" />
     <svelte:fragment slot="footer">
-      <Placeholder text="Progress Indicator Flow" height="70px" />
+      <Placeholder text="Progress Indicator" height="70px" />
     </svelte:fragment>
   </Template>
 </Story>

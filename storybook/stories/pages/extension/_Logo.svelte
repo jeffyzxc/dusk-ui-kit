@@ -9,6 +9,10 @@
   .logo-wrapper--danger {
     color: #d96a8a;
   }
+
+  .logo-wrapper--success {
+    color: #88b178;
+  }
 </style>
 
 <script>
@@ -17,7 +21,11 @@
   export let state = "default";
 </script>
 
-<div class="logo-wrapper" class:logo-wrapper--danger="{state === 'danger'}">
+<div
+  class="logo-wrapper"
+  class:logo-wrapper--danger="{state === 'danger'}"
+  class:logo-wrapper--success="{state === 'success'}"
+>
   <Logo class="logo" />
   <span>Wallet Extension</span>
 </div>

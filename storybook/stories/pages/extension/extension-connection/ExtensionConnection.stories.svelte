@@ -5,6 +5,9 @@
   // import { withTests } from "@storybook/addon-jest";
   import Card, { Content } from "@dusk-network/card";
   import Wizard from "./_Wizard.svelte";
+  import Connection from "./_Connection.svelte";
+  import Heading from "./_Heading.svelte";
+  import RichText from "@dusk-network/rich-text";
   import Logo from "../_Logo.svelte";
   import Icon from "@dusk-network/icon";
   import meta from "../../../meta";
@@ -30,16 +33,14 @@
     <svelte:fragment slot="logo">
       <Logo />
     </svelte:fragment>
-    <Icon name="connection" />
-    Connect your wallet
+    <Heading />
     <Card>
       <Content>
-        <Wizard />
+        <Wizard connected="{true}" />
       </Content>
     </Card>
     <svelte:fragment slot="footer">
-      <Icon name="checkbox-blank-circle" variant="success" />
-      Linked to <strong>wallet.dusk.network</strong>
+      <Connection connected="{true}" />
     </svelte:fragment>
   </Template>
 </Story>
@@ -47,19 +48,16 @@
 <Story name="Invalid Connection" args="{{}}" let:args>
   <Template>
     <svelte:fragment slot="logo">
-      <Logo />
+      <Logo state="danger" />
     </svelte:fragment>
-    <Icon name="connection" />
-    Connect your wallet
+    <Heading />
     <Card>
       <Content>
-        <Wizard disabled="{true}" />
+        <Wizard connected="{false}" />
       </Content>
     </Card>
     <svelte:fragment slot="footer">
-      <Icon name="checkbox-blank-circle" variant="danger" />
-      Not linked to
-      <strong><a href="https://wallet.dusk.network" target="_blank">wallet.dusk.network</a></strong>
+      <Connection connected="{false}" />
     </svelte:fragment>
   </Template>
 </Story>
@@ -67,20 +65,20 @@
 <Story name="Success State" args="{{}}" let:args>
   <Template>
     <svelte:fragment slot="logo">
-      <Logo />
+      <Logo state="success" />
     </svelte:fragment>
-    <Icon name="connection" />
-    Connect your wallet
+    <Heading />
     <Card>
-      <Content>
+      <Content align="center">
         <Icon name="wallet-plus" size="xxxl" />
-        <p>Congratulations!</p>
-        <p>You're all set to start making transactions on Dusk Network.</p>
+        <RichText>
+          <h3>Congratulations!</h3>
+          <p>You're all set to start making transactions on Dusk Network.</p>
+        </RichText>
       </Content>
     </Card>
     <svelte:fragment slot="footer">
-      <Icon name="checkbox-blank-circle" variant="success" />
-      Linked to <strong>wallet.dusk.network</strong>
+      <Connection connected="{true}" />
     </svelte:fragment>
   </Template>
 </Story>

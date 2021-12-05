@@ -5,11 +5,12 @@
   import Template from "@dusk-network/extension-default";
   // import results from "../../../../../.jest-test-results.json";
   // import { withTests } from "@storybook/addon-jest";
+  import Heading from "@dusk-network/heading";
   import RichText from "@dusk-network/rich-text";
   import Logo from "../_Logo.svelte";
   import Icon from "@dusk-network/icon";
   import ProgressBar from "@dusk-network/progress-bar";
-  import Button, { Label } from "@dusk-network/button";
+  import Button, { Group, Label } from "@dusk-network/button";
   import meta from "../../../meta";
 
   let displayKey = false;
@@ -35,21 +36,41 @@
     <svelte:fragment slot="logo">
       <Logo />
     </svelte:fragment>
-    <Icon name="timer-sand" /> Generating Key
+    <Heading>
+      <svelte:fragment slot="icon">
+        <Icon name="timer-sand" />
+      </svelte:fragment>
+      <strong>Generating key</strong>
+    </Heading>
     <svelte:fragment slot="footer">
       <ProgressBar variant="brand" steps="{2}" step="{1}" />
     </svelte:fragment>
   </Template>
 </Story>
 
-<Story name="Loaded State" args="{{}}" let:args>
+<Story name="Success State" args="{{}}" let:args>
   <Template>
     <svelte:fragment slot="logo">
-      <Logo />
+      <Logo state="success" />
     </svelte:fragment>
-    <Icon variant="success" name="check-decagram-outline" />
-    Your key is ready
-    <Icon name="eye-outline" on:click="{() => (displayKey = !displayKey)}" />
+    <Heading>
+      <svelte:fragment slot="icon">
+        <Icon variant="success" name="check-decagram-outline" />
+      </svelte:fragment>
+      <strong>Your key is ready</strong>
+      <svelte:fragment slot="button">
+        <Group>
+          {#if displayKey}
+            <Button on:click="{() => console.log('copy')}">
+              <Icon name="content-copy" />
+            </Button>
+          {/if}
+          <Button on:click="{() => (displayKey = !displayKey)}">
+            <Icon name="{displayKey ? 'eye-off-outline' : 'eye-outline'}" />
+          </Button>
+        </Group>
+      </svelte:fragment>
+    </Heading>
     {#if displayKey}
       <RichText>
         <pre>
@@ -60,13 +81,15 @@
       </RichText>
     {/if}
     <svelte:fragment slot="footer">
-      <Button
-        outline="{true}"
-        variant="brand"
-        on:click="{linkTo('Pages/Extension/Generate Key', 'Loading State')}"
-      >
-        <Label>Generate a new key</Label>
-      </Button>
+      <Group align="center">
+        <Button
+          outline="{true}"
+          variant="brand"
+          on:click="{linkTo('Pages/Extension/Key Generation', 'Loading State')}"
+        >
+          <Label>Generate a new key</Label>
+        </Button>
+      </Group>
     </svelte:fragment>
   </Template>
 </Story>
@@ -76,15 +99,22 @@
     <svelte:fragment slot="logo">
       <Logo state="danger" />
     </svelte:fragment>
-    <Icon variant="danger" name="alert-outline" /> Something went wrong
+    <Heading>
+      <svelte:fragment slot="icon">
+        <Icon variant="danger" name="alert-outline" />
+      </svelte:fragment>
+      <strong>Something went wrong</strong>
+    </Heading>
     <svelte:fragment slot="footer">
-      <Button
-        outline="{true}"
-        variant="brand"
-        on:click="{linkTo('Pages/Extension/Generate Key', 'Loading State')}"
-      >
-        <Label>Generate key</Label>
-      </Button>
+      <Group align="center">
+        <Button
+          outline="{true}"
+          variant="brand"
+          on:click="{linkTo('Pages/Extension/Key Generation', 'Loading State')}"
+        >
+          <Label>Generate key</Label>
+        </Button>
+      </Group>
     </svelte:fragment>
   </Template>
 </Story>

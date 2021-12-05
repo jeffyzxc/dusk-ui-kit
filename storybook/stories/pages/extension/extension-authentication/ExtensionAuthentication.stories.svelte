@@ -1,5 +1,6 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
+  import { linkTo } from "@storybook/addon-links";
   // import { variants, states } from "@dusk-network/helpers";
   import Template from "@dusk-network/extension-default";
   // import results from "../../../../../.jest-test-results.json";
@@ -9,7 +10,7 @@
   import TextField from "@dusk-network/text-field";
   import Logo from "../_Logo.svelte";
   import Icon from "@dusk-network/icon";
-  import Button from "@dusk-network/button";
+  import Button, { Group, Label } from "@dusk-network/button";
   import meta from "../../../meta";
   import * as yup from "yup";
 
@@ -48,9 +49,9 @@
       fields="{fields}"
       submitHandler="{async () => {
         submitted = true;
-        console.log('submitted');
         if (schema.isValidSync(fields)) {
-          alert('Form is valid, authentication can proceed.');
+          console.log('send to generation...');
+          linkTo('Pages/Extension/Key Generation', 'Loading State');
         }
       }}"
     >
@@ -73,5 +74,16 @@
         </Button>
       </Control>
     </Form>
+    <svelte:fragment slot="footer">
+      <Group align="center">
+        <Button
+          variant="brand"
+          outline="{true}"
+          on:click="{linkTo('Pages/Extension/Connection', 'Loaded State')}"
+        >
+          <Label>Reset Password</Label>
+        </Button>
+      </Group>
+    </svelte:fragment>
   </Template>
 </Story>

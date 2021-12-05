@@ -7,7 +7,7 @@
   import Heading from "@dusk-network/heading";
   import RichText from "@dusk-network/rich-text";
   import Logo from "../_Logo.svelte";
-  import Button, { Label } from "@dusk-network/button";
+  import Button, { Label, Group } from "@dusk-network/button";
   import meta from "../../../meta";
 </script>
 
@@ -31,7 +31,7 @@
     <svelte:fragment slot="logo">
       <Logo />
     </svelte:fragment>
-    <Heading><h2>Welcome</h2></Heading>
+    <Heading align="center"><h2>Welcome</h2></Heading>
     <RichText>
       <p>
         Please visit <a href="https://wallet.dusk.network">wallet.dusk.network</a>
@@ -39,13 +39,15 @@
       <p>The extension needs to be linked to your wallet.</p>
     </RichText>
     <svelte:fragment slot="footer">
-      <Button
-        variant="brand"
-        outline="{true}"
-        on:click="{linkTo('Pages/Extension/Connection', 'Loaded State')}"
-      >
-        <Label>Start</Label>
-      </Button>
+      <Group align="center">
+        <Button
+          variant="brand"
+          outline="{true}"
+          on:click="{linkTo('Pages/Extension/Connection', 'Loaded State')}"
+        >
+          <Label>Start</Label>
+        </Button>
+      </Group>
     </svelte:fragment>
   </Template>
 </Story>
