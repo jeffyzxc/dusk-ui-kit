@@ -18,6 +18,10 @@
 
   &__controls-wrapper {
     @apply flex items-center;
+
+    & .duk-button-group {
+      @apply flex-grow;
+    }
   }
 
   &__input {
@@ -67,6 +71,14 @@
 
     ^&__input {
       flex: 1;
+    }
+  }
+
+  /* FIXME This is to improve the display of a circle button post- or pre-fixed to a Control*/
+  &--with-postfix,
+  &--with-prefix {
+    & .duk-button--circle {
+      padding: 0.35rem;
     }
   }
 
