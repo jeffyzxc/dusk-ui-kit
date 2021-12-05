@@ -37,6 +37,7 @@ import Earth from "./Earth.svelte";
 import EmailOutline from "./EmailOutline.svelte";
 import EmailSendOutline from "./EmailSendOutline.svelte";
 import EyeCircleOutline from "./EyeCircleOutline.svelte";
+import EyeOffOutline from "./EyeOffOutline.svelte";
 import EyeOutline from "./EyeOutline.svelte";
 import EyeSettingsOutline from "./EyeSettingsOutline.svelte";
 import FileExportOutline from "./FileExportOutline.svelte";
@@ -132,6 +133,7 @@ export default {
   EmailOutline,
   EmailSendOutline,
   EyeCircleOutline,
+  EyeOffOutline,
   EyeOutline,
   EyeSettingsOutline,
   FileExportOutline,
