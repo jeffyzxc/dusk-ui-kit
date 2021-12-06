@@ -52,6 +52,7 @@
     "@dusk-network/text-field": "workspace:*",
     "@dusk-network/toggle": "workspace:*",
     "@dusk-network/truncate-text": "workspace:*",
+    "@dusk-network/wallet-dashboard": "workspace:*",
     "@dusk-network/wallet-homepage": "workspace:*",
     "@dusk-network/wallet-option": "workspace:*",
     "@dusk-network/wallet-wizard": "workspace:*",
