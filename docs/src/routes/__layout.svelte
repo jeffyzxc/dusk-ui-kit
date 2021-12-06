@@ -25,6 +25,7 @@
   import "@dusk-network/styles/tailwind.css";
   import "svelte-highlight/src/styles/github-dark.css";
   import Nav from "$lib/Nav.svelte";
+  import Template from "@dusk-network/default";
   import Footer from "@dusk-network/footer";
 
   const queryClient = new QueryClient();
@@ -32,10 +33,16 @@
   export let components;
 </script>
 
-<Nav components="{components}" />
-<main class="container">
-  <QueryClientProvider client="{queryClient}">
-    <slot />
-  </QueryClientProvider>
-</main>
-<Footer type="minimal" variant="brand" />
+<Template>
+  <svelte:fragment slot="navbar">
+    <Nav components="{components}" />
+  </svelte:fragment>
+  <main class="container">
+    <QueryClientProvider client="{queryClient}">
+      <slot />
+    </QueryClientProvider>
+  </main>
+  <svelte:fragment slot="footer">
+    <Footer type="minimal" variant="brand" />
+  </svelte:fragment>
+</Template>
