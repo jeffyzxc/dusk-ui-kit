@@ -48,10 +48,6 @@ specifiers:
   '@dusk-network/toggle': workspace:*
   '@dusk-network/truncate-text': workspace:*
   '@dusk-network/wizard': workspace:*
-  yup: ^0.32.11
-
-dependencies:
-  yup: 0.32.11
 
 devDependencies:
   '@dusk-network/accordion': link:../packages/organisms/accordion
@@ -101,53 +97,3 @@ devDependencies:
   '@dusk-network/toggle': link:../packages/atoms/toggle
   '@dusk-network/truncate-text': link:../packages/atoms/truncate-text
   '@dusk-network/wizard': link:../packages/organisms/wizard
-
-packages:
-
-  /@babel/runtime/7.16.3:
-    resolution: {integrity: sha512-WBwekcqacdY2e9AF/Q7WLFUWmdJGJTkbjqTjoMDgXkVZ3ZRUvOPsLb5KdwISoQVsbP+DQzVZW4Zhci0DvpbNTQ==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      regenerator-runtime: 0.13.9
-    dev: false
-
-  /@types/lodash/4.14.177:
-    resolution: {integrity: sha512-0fDwydE2clKe9MNfvXHBHF9WEahRuj+msTuQqOmAApNORFvhMYZKNGGJdCzuhheVjMps/ti0Ak/iJPACMaevvw==}
-    dev: false
-
-  /lodash-es/4.17.21:
-    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
-    dev: false
-
-  /lodash/4.17.21:
-    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: false
-
-  /nanoclone/0.2.1:
-    resolution: {integrity: sha512-wynEP02LmIbLpcYw8uBKpcfF6dmg2vcpKqxeH5UcoKEYdExslsdUA4ugFauuaeYdTB76ez6gJW8XAZ6CgkXYxA==}
-    dev: false
-
-  /property-expr/2.0.4:
-    resolution: {integrity: sha512-sFPkHQjVKheDNnPvotjQmm3KD3uk1fWKUN7CrpdbwmUx3CrG3QiM8QpTSimvig5vTXmTvjz7+TDvXOI9+4rkcg==}
-    dev: false
-
-  /regenerator-runtime/0.13.9:
-    resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==}
-    dev: false
-
-  /toposort/2.0.2:
-    resolution: {integrity: sha1-riF2gXXRVZ1IvvNUILL0li8JwzA=}
-    dev: false
-
-  /yup/0.32.11:
-    resolution: {integrity: sha512-Z2Fe1bn+eLstG8DRR6FTavGD+MeAwyfmouhHsIUgaADz8jvFKbO/fXc2trJKZg+5EBjh4gGm3iU/t3onKlXHIg==}
-    engines: {node: '>=10'}
-    dependencies:
-      '@babel/runtime': 7.16.3
-      '@types/lodash': 4.14.177
-      lodash: 4.17.21
-      lodash-es: 4.17.21
-      nanoclone: 0.2.1
-      property-expr: 2.0.4
-      toposort: 2.0.2
-    dev: false
