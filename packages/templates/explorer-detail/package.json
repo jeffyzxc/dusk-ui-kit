@@ -15,5 +15,11 @@
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
   },
+  "devDependencies": {
+    "@dusk-network/default": "workspace:*"
+  },
+  "peerDependencies": {
+    "@dusk-network/default": "workspace:*"
+  },
   "gitHead": "ea482b8985a5d0594dc37e7547748629fd285960"
 }

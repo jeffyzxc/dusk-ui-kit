@@ -1,5 +1,5 @@
 <script>
-  import Template from "../default";
+  import Template from "@dusk-network/default";
   import "./styles.css";
 </script>
 
