@@ -5,17 +5,22 @@
   // import { withTests } from "@storybook/addon-jest";
   import meta from "../../../meta";
   import Placeholder from "../../_Placeholder.svelte";
+  import { VIEWPORTS } from "../viewports.js";
 </script>
 
 <Meta
   title="Components/Templates/Extension/Connection"
   component="{Template}"
   parameters="{{
-    layout: 'centered',
+    layout: 'fullscreen',
     docs: {
       source: {
         type: 'code',
       },
+    },
+    viewport: {
+      viewports: VIEWPORTS,
+      defaultViewport: 'extension',
     },
     // jest: ['packages/templates/devops-dashboard/DevopsDashboard.test.js'],
   }}"
