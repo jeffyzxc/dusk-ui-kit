@@ -19,6 +19,7 @@
     "@dusk-network/cookie-banner": "workspace:*",
     "@dusk-network/cta-list": "workspace:*",
     "@dusk-network/date-text": "workspace:*",
+    "@dusk-network/default": "workspace:*",
     "@dusk-network/devops-centered": "workspace:*",
     "@dusk-network/devops-dashboard": "workspace:*",
     "@dusk-network/disclaimer-list": "workspace:*",
