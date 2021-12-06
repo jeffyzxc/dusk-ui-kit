@@ -1,5 +1,22 @@
 # @dusk-network/dusk-ui-kit-docs
 
+## 4.1.1
+
+### Patch Changes
+
+- 03b53db4: Release 4.1.1
+- Updated dependencies [03b53db4]
+  - @dusk-network/dusk-ui-kit-examples@4.1.1
+  - @dusk-network/icon@4.1.1
+  - @dusk-network/rich-text@4.1.1
+  - @dusk-network/helpers@4.1.1
+  - @dusk-network/menu@4.1.1
+  - @dusk-network/card@4.1.1
+  - @dusk-network/footer@4.1.1
+  - @dusk-network/navbar@4.1.1
+  - @dusk-network/styles@4.1.1
+  - @dusk-network/default@4.1.1
+
 ## 4.1.0
 
 ### Minor Changes

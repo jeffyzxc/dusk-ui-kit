@@ -1,5 +1,17 @@
 # @dusk-network/navbar
 
+## 4.1.1
+
+### Patch Changes
+
+- 03b53db4: Release 4.1.1
+- Updated dependencies [03b53db4]
+  - @dusk-network/icon@4.1.1
+  - @dusk-network/logo@4.1.1
+  - @dusk-network/toggle@4.1.1
+  - @dusk-network/helpers@4.1.1
+  - @dusk-network/menu@4.1.1
+
 ## 4.1.0
 
 ### Minor Changes
