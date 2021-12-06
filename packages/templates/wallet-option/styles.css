@@ -1,0 +1,23 @@
+.duk-template-wallet-option {
+  @apply flex flex-grow flex-col;
+
+  &__heading-mobile {
+    @apply flex justify-center mb-12;
+    @apply sm:hidden sm:mb-0;
+  }
+
+  &__block {
+    @apply grid gap-y-16;
+    @apply sm:gap-y-32;
+  }
+
+  &__lead-question {
+    @apply order-2;
+    @apply sm:order-1;
+  }
+
+  &__option {
+    @apply order-1 mb-12;
+    @apply sm:order-2;
+  }
+}
