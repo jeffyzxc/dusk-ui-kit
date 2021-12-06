@@ -53,6 +53,7 @@
     "@dusk-network/toggle": "workspace:*",
     "@dusk-network/truncate-text": "workspace:*",
     "@dusk-network/wallet-homepage": "workspace:*",
+    "@dusk-network/wallet-option": "workspace:*",
     "@dusk-network/wizard": "workspace:*",
     "@storybook/addon-a11y": "^6.3.8",
     "@storybook/addon-backgrounds": "^6.3.8",
