@@ -1,0 +1,88 @@
+.cta__card {
+  @apply flex-grow;
+  p {
+    @apply hidden;
+    @apply sm:block;
+  }
+
+  .duk-heading {
+    @apply !mb-0;
+    @apply sm:!mb-5;
+  }
+}
+.banner-layout {
+  @apply grid grid-cols-12 container bg-bottom bg-no-repeat;
+  @apply md:bg-right;
+  background-image: url("/wallet-hero-mobile.png");
+  background-origin: content-box;
+  @screen sm {
+    background-image: url("/wallet-hero.png");
+  }
+
+  &__wrapper {
+    @apply col-span-12 pt-6 pb-128;
+    @apply sm:col-span-8 pb-52;
+    @apply md:pt-52;
+  }
+
+  &__heading {
+    @apply text-2xl text-white font-bold pt-6 mb-6;
+    @apply sm:text-5xl mb-3;
+  }
+
+  &__text {
+    @apply text-base text-white font-normal;
+    @apply sm:text-lg;
+  }
+}
+
+.usp {
+  &__card {
+    @apply relative flex-1 flex-grow !shadow-marketing !overflow-visible;
+
+    h3 {
+      @apply font-bold text-center flex-grow;
+    }
+  }
+
+  &__image {
+    @apply absolute left-1/2;
+    transform: translateX(-50%);
+    top: -60px;
+    @screen sm {
+      top: -95px;
+    }
+  }
+
+  &__image--security {
+    width: 77px;
+    @screen sm {
+      width: auto;
+    }
+  }
+
+  &__image--access {
+    width: 100px;
+    @screen sm {
+      width: auto;
+    }
+  }
+
+  &__text--first {
+    @apply text-2xl pt-6 font-bold text-center;
+  }
+  &__text--second {
+    @apply text-base font-normal;
+  }
+}
+
+.faq {
+  &__block {
+    @apply mt-5;
+    @apply sm:mt-8;
+  }
+
+  &__block-wrapper {
+    @apply !max-w-full;
+  }
+}
