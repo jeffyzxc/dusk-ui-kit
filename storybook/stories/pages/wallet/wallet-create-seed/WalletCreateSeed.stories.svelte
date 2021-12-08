@@ -40,7 +40,7 @@
 </script>
 
 <Meta
-  title="Pages/Wallet/Walet Create Seed"
+  title="Pages/Wallet/Create Seed"
   component="{Template}"
   parameters="{{
     layout: 'fullscreen',
