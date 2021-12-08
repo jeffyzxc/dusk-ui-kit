@@ -1,5 +1,4 @@
 <script>
-  import { slide } from "svelte/transition";
   import { onMount, onDestroy } from "svelte";
   import { store, searchTerm } from "./stores/store.js";
   import { setContext } from "svelte";
@@ -50,7 +49,7 @@
       <TextField placeholder="Search" bind:value="{$searchTerm}" />
     </Control>
   {/if}
-  <div transition:slide>
+  <div class="duk-search-list__results">
     <slot />
   </div>
 </div>
