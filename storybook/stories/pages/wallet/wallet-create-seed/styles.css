@@ -1,0 +1,22 @@
+.seed-phrase {
+  &__wrapper {
+    @apply mx-auto;
+    @apply sm:max-w-2xl;
+  }
+
+  &__generator {
+    @apply !mb-10;
+  }
+
+  &__mnemonic {
+    @apply mt-6;
+  }
+
+  &__cta {
+    @apply mx-auto mt-6 mb-3;
+  }
+
+  &__image {
+    @apply mx-auto mb-3;
+  }
+}
