@@ -1,0 +1,57 @@
+.wallet-transactions {
+  &__icon {
+    min-width: 1.375rem !important;
+  }
+
+  &__block {
+    @apply flex items-center gap-x-2;
+    &--success {
+      @apply text-green-900 not-italic;
+      @apply dark:text-green-600;
+    }
+    &--warning {
+      @apply text-yellow-900 not-italic;
+      @apply dark:text-yellow-600;
+    }
+    &--danger {
+      @apply text-red-900 not-italic;
+      @apply dark:text-red-600;
+    }
+  }
+
+  &__details--row {
+    @apply flex flex-col justify-center !items-stretch;
+  }
+
+  &__details--wrapper {
+    @apply flex flex-col gap-2;
+  }
+
+  &__details {
+    @apply flex flex-col gap-2;
+    &--info {
+      @apply flex flex-row items-center justify-start gap-x-2;
+
+      .text--first {
+        @apply text-indigo-500 underline break-all;
+        @apply 2xl:break-normal;
+      }
+    }
+
+    &--block {
+      @apply flex flex-row justify-between;
+    }
+  }
+
+  &__none {
+    @apply text-center w-full;
+
+    p {
+      @apply text-lg font-normal py-3;
+    }
+
+    img {
+      @apply mx-auto pb-6;
+    }
+  }
+}

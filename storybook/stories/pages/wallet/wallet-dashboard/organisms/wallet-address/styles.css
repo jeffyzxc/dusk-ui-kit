@@ -1,0 +1,107 @@
+.wallet-address {
+  @apply relative px-6 pb-5 pt-2;
+
+  &__first {
+    @apply flex flex-row justify-between items-center mb-3.5;
+
+    &--heading {
+      @apply flex items-center gap-x-0.5;
+
+      h4 {
+        @apply text-indigo-500 text-xl font-normal;
+        @apply dark:text-indigo-200;
+      }
+
+      &-text {
+        @apply !mb-0;
+      }
+    }
+  }
+
+  &__second {
+    @apply flex flex-row justify-between;
+  }
+
+  &__first--mobile {
+    @apply col-span-12 rounded border border-gray-900 p-3 mt-6;
+    @apply xl:hidden;
+  }
+
+  &__image {
+    @apply !w-4 !h-4;
+  }
+
+  &__image:hover + &__tooltip {
+    @apply block;
+  }
+
+  &__text {
+    @apply flex text-xs font-bold text-indigo-500;
+  }
+
+  &__text--first {
+    @apply hidden text-lg font-normal;
+    @apply xl:block;
+  }
+
+  &__text--mobile {
+    @apply block text-lg font-normal break-words;
+    @apply xl:hidden;
+  }
+
+  &__block {
+    @apply flex flex-row items-center gap-x-5 mt-8;
+    @apply lg:mt-0;
+  }
+
+  &__button {
+    @apply p-2;
+  }
+  &__button-image--second {
+    @apply mt-1 mb-0.5;
+  }
+  &__button-image--first {
+    @apply mx-px;
+  }
+}
+
+.wallet-addresses {
+  @apply block relative;
+}
+.wallet-key {
+  &__code {
+    @apply block mx-auto w-52;
+  }
+
+  &__header {
+    @apply flex justify-between items-center px-3 pt-5;
+
+    p {
+      @apply text-xs font-bold text-indigo-500;
+    }
+
+    .duk-icon {
+      @apply cursor-pointer;
+    }
+  }
+}
+.wallet-key,
+.wallet-info {
+  @apply hidden col-span-12 px-5 py-3;
+
+  &__text {
+    @apply hidden text-lg break-words font-normal rounded border border-gray-900 p-3 mt-6;
+    @apply xl:block;
+    font-family: "IBM Plex Mono", monospace;
+  }
+}
+
+.wallet-info {
+  &__warning {
+    @apply flex justify-center mt-3 mb-6;
+  }
+}
+
+.open {
+  @apply block;
+}

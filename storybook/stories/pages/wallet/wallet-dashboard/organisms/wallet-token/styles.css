@@ -1,0 +1,60 @@
+.wallet-token {
+  @apply px-6 pt-2 pb-5;
+  &__tokens {
+    .header {
+      @apply flex justify-between items-center text-xs font-bold text-indigo-500 mb-8;
+      @apply sm:mb-2;
+
+      div:nth-child(2) {
+        @apply cursor-pointer;
+      }
+
+      &__heading {
+        h4 {
+          @apply text-indigo-500 text-xl font-normal;
+          @apply dark:text-indigo-200;
+        }
+        &--text-first {
+          @apply !mb-0;
+        }
+
+        &--text-second {
+          @apply text-xs font-bold text-indigo-500;
+          @apply dark:text-white;
+        }
+      }
+    }
+  }
+
+  &__custom {
+    div:first-child {
+      p {
+        @apply inline-block text-lg font-bold ml-3;
+        @apply sm:text-xs sm:text-indigo-500 sm:uppercase;
+      }
+    }
+
+    .custom-token {
+      @apply rounded bg-indigo-100 px-5 pt-5 mt-12;
+      @apply sm:mt-3;
+
+      :global(&__input) {
+        @apply w-full border border-gray-900 rounded outline-none px-4 py-2;
+      }
+
+      :global(&__input::placeholder) {
+        @apply text-sm font-light;
+      }
+    }
+
+    .save {
+      @apply hidden mt-6 mb-5;
+      @apply sm:block;
+    }
+
+    .save-mobile {
+      @apply flex justify-center mt-3;
+      @apply sm:hidden;
+    }
+  }
+}

@@ -1,0 +1,190 @@
+.wallet-transfer {
+  @apply px-6 py-5;
+
+  &__cta {
+    @apply hidden;
+  }
+
+  &__block {
+    @apply hidden;
+  }
+
+  .visible {
+    @apply block;
+  }
+
+  &__text {
+    @apply text-base font-bold mb-5;
+
+    &--second {
+      @apply text-2xl font-semibold text-indigo-500 mb-5;
+    }
+
+    &--first {
+      @apply text-xs font-normal;
+
+      span {
+        @apply font-bold;
+      }
+    }
+  }
+  .send {
+    @apply mt-6 mb-3;
+  }
+
+  .to {
+    @apply mb-3;
+    @apply sm:mb-6;
+    &__textarea {
+      @apply text-lg break-all w-full resize-none border border-gray-900 rounded p-3 h-32;
+      font-family: "IBM Plex Mono", monospace;
+    }
+    &__textarea::placeholder {
+      @apply text-lg;
+      font-family: "IBM Plex Mono", monospace;
+    }
+
+    .duk-control {
+      @apply p-0;
+    }
+  }
+
+  .amount {
+    @apply grid grid-cols-12 mb-3;
+    @apply sm:mb-6;
+    .amount--first {
+      @apply col-span-12;
+      @apply sm:col-span-2;
+      @apply md:col-span-12;
+      @apply xl:col-span-2;
+    }
+    .amount--second {
+      @apply col-span-12;
+      @apply sm:col-span-10;
+      @apply md:col-span-12;
+      @apply xl:col-span-10;
+
+      .duk-control {
+        @apply p-0;
+      }
+      .duk-control__controls-wrapper {
+        @apply flex-col items-start;
+      }
+    }
+
+    &__amount {
+      @apply border-none text-xl font-light text-indigo-500 outline-none pb-2 w-full;
+    }
+
+    &__block {
+      @apply grid grid-cols-12 border-b border-indigo-500;
+    }
+
+    &__block--first {
+      @apply col-span-8;
+      @apply 2xl:col-span-10;
+
+      :global(.duk-control) {
+        @apply p-0;
+      }
+    }
+    &__block--second {
+      @apply col-span-2;
+      @apply 2xl:col-span-1;
+    }
+  }
+
+  .priority {
+    @apply grid grid-cols-12 mb-3;
+    @apply sm:mb-6;
+    .priority--first {
+      @apply col-span-12;
+      @apply sm:col-span-2;
+      @apply md:col-span-8;
+      @apply lg:col-span-2;
+    }
+    .priority--second {
+      @apply col-span-12;
+      @apply sm:col-span-10;
+      @apply md:col-span-12;
+      @apply lg:col-span-10;
+
+      > div {
+        @apply flex;
+      }
+    }
+  }
+
+  .details {
+    @apply grid grid-cols-12;
+    .details--first {
+      @apply col-span-12 mb-3;
+      @apply sm:col-span-8 sm:mb-0;
+      @apply md:col-span-12 md:mb-3;
+      @apply xl:col-span-8 xl:mb-0;
+    }
+
+    &__table {
+      td {
+        @apply text-xs font-light;
+      }
+    }
+  }
+
+  .proceed {
+    @apply hidden flex-row justify-end mb-5;
+    @apply sm:flex;
+  }
+
+  .proceed-mobile {
+    @apply flex flex-row justify-end mt-3;
+    @apply sm:hidden;
+  }
+
+  .prepare {
+    @apply flex flex-col gap-y-6;
+
+    &__amount {
+      @apply hidden flex-row gap-x-5 items-center;
+      @apply sm:flex;
+      @apply md:flex-col md:items-start;
+      @apply lg:flex-row lg:items-center;
+    }
+
+    &__from {
+      @apply hidden flex-col;
+      @apply sm:flex;
+    }
+
+    &__to {
+      @apply hidden flex-col;
+      @apply sm:flex;
+    }
+  }
+
+  .prepare-transaction {
+    @apply flex justify-center;
+
+    .duk-loading-indicator {
+      @apply !h-6 !w-6;
+    }
+
+    .duk-icon {
+      @apply !w-14 !h-14;
+    }
+  }
+
+  .actions {
+    @apply flex gap-x-6 justify-center;
+  }
+
+  .actions-transaction {
+    @apply flex justify-center;
+    @apply sm:gap-x-6;
+
+    &__overview {
+      @apply hidden;
+      @apply sm:flex;
+    }
+  }
+}
