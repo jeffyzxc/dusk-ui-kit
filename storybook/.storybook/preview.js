@@ -3,6 +3,7 @@ import "../stories/pages/wallet/wallet-homepage/styles.css";
 import "../stories/pages/wallet/wallet-create-options/styles.css";
 import "../stories/pages/wallet/wallet-create-seed/styles.css";
 import "../stories/pages/wallet/wallet-create-keystore/styles.css";
+import "../stories/pages/wallet/wallet-access-seed/styles.css";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
