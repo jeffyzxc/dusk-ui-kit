@@ -1,0 +1,31 @@
+.keystore {
+  @apply container;
+
+  &__wrapper {
+    @apply mx-auto;
+    @apply sm:max-w-2xl;
+  }
+
+  &__heading {
+    @apply !mb-10;
+
+    &--centered {
+      @apply !justify-center;
+    }
+  }
+
+  &__image {
+    @apply hidden mx-auto my-6;
+    @apply sm:block;
+  }
+
+  &__agreement {
+    @apply my-5;
+  }
+
+  &__cta {
+    .duk-button-wrapper {
+      @apply mx-auto;
+    }
+  }
+}
