@@ -60,7 +60,7 @@
     <svelte:fragment slot="option">
       <Card>
         <Content>
-          <Heading class="wallet-options__heading">
+          <Heading align="center" class="wallet-options__heading">
             <svelte:fragment slot="icon">
               <Icon
                 class="wallet-options__heading-icon"
@@ -75,7 +75,7 @@
             <Card class="wallet-options__option-card" href="/create/seed">
               <Content>
                 <img class="wallet-options__option-icon" src="/seed.svg" alt="Seed Phrases" />
-                <Heading class="wallet-options__option-heading"
+                <Heading align="center" class="wallet-options__option-heading"
                   ><strong>Seed Phrase</strong></Heading
                 >
               </Content>
@@ -83,7 +83,7 @@
             <Card class="wallet-options__option-card" href="/create/keystore">
               <Content>
                 <img class="wallet-options__option-icon" src="/keystore.svg" alt="Keystore File" />
-                <Heading class="wallet-options__option-heading"
+                <Heading align="center" class="wallet-options__option-heading"
                   ><strong>Keystore File</strong></Heading
                 >
               </Content>
