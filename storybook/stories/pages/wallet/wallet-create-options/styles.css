@@ -37,13 +37,11 @@
   &__option-heading {
     @apply !mt-10 !mb-0;
     > strong {
-      /* @apply sm:text-center sm:flex-grow; */
       @apply text-center flex-grow;
     }
 
     &--disabled {
       > strong {
-        /* @apply sm:text-right; */
         @apply text-right;
       }
     }
