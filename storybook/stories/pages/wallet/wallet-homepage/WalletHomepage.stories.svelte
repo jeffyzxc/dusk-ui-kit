@@ -65,9 +65,9 @@
     <svelte:fragment slot="cta-create">
       <Card class="cta__card" href="/create" state="{states.CARD.PASSED}">
         <Content>
-          <Heading>
+          <Heading size="lg">
             <svelte:fragment slot="icon">
-              <Icon size="xxl" name="wallet-plus" />
+              <Icon name="wallet-plus" />
             </svelte:fragment>
             <RichText>
               <h4>Create New Wallet</h4>
@@ -79,7 +79,7 @@
               to access and recover your wallet.
             </p>
           </RichText>
-          <RichText size="xl">
+          <RichText size="xxl">
             <p>
               <strong>Get Started</strong>
             </p>
@@ -90,9 +90,9 @@
     <svelte:fragment slot="cta-access">
       <Card class="cta__card" href="/access">
         <Content>
-          <Heading>
+          <Heading size="lg">
             <svelte:fragment slot="icon">
-              <Icon size="xxl" name="wallet-plus" />
+              <Icon name="wallet-arrow" viewbox="0 0 53 51" />
             </svelte:fragment>
             <RichText>
               <h4>Access My Wallet</h4>
@@ -128,7 +128,9 @@
       <Card class="usp__card">
         <Content>
           <img class="usp__image usp__image--security" src="/security.png" alt="web access" />
-          <Heading><h3>Security</h3></Heading>
+          <Heading align="center">
+            <h3>Security</h3>
+          </Heading>
           <RichText>
             <p>
               DuskWallet is open-source and secure. With DuskWallet you are your own bank and you
@@ -143,7 +145,7 @@
       <Card class="usp__card">
         <Content>
           <img class="usp__image usp__image--access" src="/web-access.png" alt="web access" />
-          <Heading><h3>Web Access</h3></Heading>
+          <Heading align="center"><h3>Web Access</h3></Heading>
           <RichText>
             <p>
               Creating a new wallet is simple and convenient. Get started within minutes, access

@@ -9,7 +9,12 @@
     @apply !mb-0;
     @apply sm:!mb-5;
   }
+
+  .duk-icon--heading {
+    @apply !ml-0;
+  }
 }
+
 .banner-layout {
   @apply grid grid-cols-12 container bg-bottom bg-no-repeat;
   @apply md:bg-right;
