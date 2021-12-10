@@ -1,4 +1,5 @@
 <script>
+  import DateText from "@dusk-network/date-text";
   import Icon from "@dusk-network/icon";
   import Table, { Row, Datum } from "@dusk-network/table";
   import RichText from "@dusk-network/rich-text";
@@ -61,7 +62,7 @@
               <div class="wallet-transactions__block">
                 <Icon name="timeline-clock-outline" size="sm" />
               </div>
-              <span>{row.timeStamp}</span>
+              <DateText time="{row.timeStamp}" />
             </Datum>
             <Datum cols="3">
               <div class="wallet-transactions__block">

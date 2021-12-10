@@ -37,6 +37,7 @@
     @apply sm:mb-6;
     &__textarea {
       @apply text-lg break-all w-full resize-none border border-gray-900 rounded p-3 h-32;
+      @apply dark:bg-gray-800 dark:border-white;
       font-family: "IBM Plex Mono", monospace;
     }
     &__textarea::placeholder {
@@ -74,6 +75,7 @@
 
     &__amount {
       @apply border-none text-xl font-light text-indigo-500 outline-none pb-2 w-full;
+      @apply dark:text-white dark:bg-gray-700;
     }
 
     &__block {

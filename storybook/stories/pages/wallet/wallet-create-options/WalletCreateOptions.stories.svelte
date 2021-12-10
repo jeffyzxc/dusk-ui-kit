@@ -10,6 +10,7 @@
   import Card, { Content } from "@dusk-network/card";
   import Icon from "@dusk-network/icon";
   import Heading from "@dusk-network/heading";
+  import RichText from "@dusk-network/rich-text";
   import meta from "../../../meta";
 </script>
 
@@ -46,7 +47,7 @@
             name="wallet-plus"
           />
         </svelte:fragment>
-        <h2><strong>Create A New Wallet</strong></h2>
+        <h2>Create A New Wallet</h2>
       </Heading>
     </svelte:fragment>
     <svelte:fragment slot="lead-question">
@@ -59,8 +60,8 @@
     </svelte:fragment>
     <svelte:fragment slot="option">
       <Card>
-        <Content>
-          <Heading align="center" class="wallet-options__heading">
+        <Content align="center">
+          <Heading size="lg" align="center" class="wallet-options__heading">
             <svelte:fragment slot="icon">
               <Icon
                 class="wallet-options__heading-icon"
@@ -69,53 +70,59 @@
                 name="wallet-plus"
               />
             </svelte:fragment>
-            <h2>Create A New Wallet</h2>
+            <h1>Create A New Wallet</h1>
           </Heading>
           <div class="wallet-options__option-group">
             <Card class="wallet-options__option-card" href="/create/seed">
-              <Content>
-                <img class="wallet-options__option-icon" src="/seed.svg" alt="Seed Phrases" />
-                <Heading align="center" class="wallet-options__option-heading"
-                  ><strong>Seed Phrase</strong></Heading
-                >
+              <Content align="center">
+                <Icon
+                  class="wallet-options__option-icon"
+                  size="xxl"
+                  name="seed-phrase-outline"
+                  viewbox="0 0 28 35"
+                />
+                <RichText
+                  class="wallet-options__option-heading"
+                  size="xxl"
+                  markdown="**Seed Phrase**"
+                />
               </Content>
             </Card>
             <Card class="wallet-options__option-card" href="/create/keystore">
-              <Content>
-                <img class="wallet-options__option-icon" src="/keystore.svg" alt="Keystore File" />
-                <Heading align="center" class="wallet-options__option-heading"
-                  ><strong>Keystore File</strong></Heading
-                >
+              <Content align="center">
+                <Icon
+                  class="wallet-options__option-icon"
+                  size="xxl"
+                  name="keystore-file-outline"
+                  viewbox="0 0 28 35"
+                />
+                <RichText
+                  class="wallet-options__option-heading"
+                  size="xxl"
+                  markdown="**Keystore File**"
+                />
               </Content>
             </Card>
             <Card disabled="{true}" class="wallet-options__option-card">
               <Content>
-                <Heading size="sm" class="wallet-options__option-heading--disabled-mobile">
+                <Heading class="wallet-options__option-disabled-mobile">
                   <svelte:fragment slot="icon">
-                    <img src="/hardware.png" alt="Hardware" />
+                    <Icon name="hardware-outline" />
                   </svelte:fragment>
-                  <strong>Hardware</strong>
+                  <h1>Hardware</h1>
                 </Heading>
-                <Heading
-                  class="wallet-options__option-heading wallet-options__option-heading--disabled"
-                >
-                  <strong>Planned</strong>
-                </Heading>
+                <RichText class="wallet-options__option-disabled" size="xxl" markdown="Planned" />
               </Content>
             </Card>
             <Card disabled="{true}" class="wallet-options__option-card">
               <Content>
-                <Heading size="sm" class="wallet-options__option-heading--disabled-mobile">
+                <Heading class="wallet-options__option-disabled-mobile">
                   <svelte:fragment slot="icon">
                     <Icon name="wallet" />
                   </svelte:fragment>
-                  <strong>Mobile App</strong>
+                  <h1>Mobile App</h1>
                 </Heading>
-                <Heading
-                  class="wallet-options__option-heading wallet-options__option-heading--disabled"
-                >
-                  <strong>Planned</strong>
-                </Heading>
+                <RichText class="wallet-options__option-disabled" size="xxl" markdown="Planned" />
               </Content>
             </Card>
           </div>

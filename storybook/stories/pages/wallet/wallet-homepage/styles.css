@@ -45,8 +45,11 @@
   &__card {
     @apply relative flex-1 flex-grow !shadow-marketing !overflow-visible;
 
-    h3 {
-      @apply font-bold text-center flex-grow;
+    .duk-heading {
+      @apply !justify-center;
+    }
+    strong {
+      @apply font-semibold;
     }
   }
 

@@ -128,9 +128,7 @@
       <Card class="usp__card">
         <Content>
           <img class="usp__image usp__image--security" src="/security.png" alt="web access" />
-          <Heading align="center">
-            <h3>Security</h3>
-          </Heading>
+          <Heading align="center" size="lg"><strong>Security</strong></Heading>
           <RichText>
             <p>
               DuskWallet is open-source and secure. With DuskWallet you are your own bank and you
@@ -145,7 +143,7 @@
       <Card class="usp__card">
         <Content>
           <img class="usp__image usp__image--access" src="/web-access.png" alt="web access" />
-          <Heading align="center"><h3>Web Access</h3></Heading>
+          <Heading align="center" size="lg"><strong>Web Access</strong></Heading>
           <RichText>
             <p>
               Creating a new wallet is simple and convenient. Get started within minutes, access

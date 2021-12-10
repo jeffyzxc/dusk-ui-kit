@@ -2,15 +2,10 @@
   &__heading {
     @apply !mb-12 !hidden;
     @apply sm:!flex;
-    > h2 {
-      @apply sm:text-center sm:flex-grow;
-    }
   }
 
   &__heading-icon {
-    @screen sm {
-      display: none !important;
-    }
+    @apply sm:!hidden;
   }
 
   &__heading--mobile {
@@ -19,9 +14,9 @@
   }
 
   &__option-group {
-    @apply grid grid-cols-1 gap-12 text-center;
+    @apply grid grid-cols-1 gap-12;
     @apply sm:gap-8 sm:px-32;
-    @apply md:grid-cols-2 md:text-left md:mb-11;
+    @apply md:grid-cols-2 md:text-left md:mb-6;
     @apply lg:grid-cols-2;
     @apply xl:grid-cols-4;
   }
@@ -35,20 +30,15 @@
   }
 
   &__option-heading {
-    @apply !mt-10 !mb-0;
-    > strong {
-      @apply text-center flex-grow;
-    }
+    @apply !mt-10;
+  }
 
-    &--disabled {
-      > strong {
-        @apply text-right;
-      }
-    }
+  &__option-disabled {
+    @apply !mt-10 text-right;
+  }
 
-    &--disabled-mobile {
-      @apply !justify-center;
-      @apply sm:!justify-start;
-    }
+  &__option-disabled-mobile {
+    @apply pb-2 !justify-center;
+    @apply sm:!justify-start;
   }
 }

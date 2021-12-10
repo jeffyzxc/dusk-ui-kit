@@ -112,7 +112,7 @@
     </Button>
   </div>
   <div class="wallet-transfer__block" class:visible="{isTransfer === true}">
-    <Wizard stepCount="{noOfSteps}" on:exit="{() => {}}">
+    <Wizard stepCount="{noOfSteps}" on:exit="{() => (isTransfer = false)}">
       <Step number="{1}" let:next>
         <Form
           submitted="{submitted}"

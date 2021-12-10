@@ -22,6 +22,10 @@
   &__block-first--address {
     @apply col-span-12 order-2;
     @apply sm:order-1;
+
+    .duk-card {
+      @apply overflow-visible;
+    }
   }
 
   &__block-first--transfer {
@@ -36,6 +40,10 @@
   &__block-second--network {
     @apply col-span-12 order-3;
     @apply sm:order-2;
+
+    .duk-card {
+      @apply overflow-visible;
+    }
   }
 
   &__block-second--token {
