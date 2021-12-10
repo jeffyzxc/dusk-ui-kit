@@ -3,7 +3,7 @@ export let apiData = [
     id: 1,
     status: "Sent",
     amount: 6.09,
-    timeStamp: "15s",
+    timeStamp: "2021-11-21 11:59:56 +0000 UTC",
     details: {
       confirmation: 1234,
       hash: "RNd0rJlHuwh6b8xFTGhluhsmvgMLDBSw5nzztAkJSYoA9urdrTVbAyQZnwy0JLyvz",
@@ -16,7 +16,7 @@ export let apiData = [
     id: 2,
     status: "Received",
     amount: 16.21,
-    timeStamp: "45s",
+    timeStamp: "2021-11-21 11:59:56 +0000 UTC",
     details: {
       confirmation: 3568,
       hash: "RNd0rJlHuwh6b8xFTGhluhsmvgMLDBSw5nzztAkJSYoA9urdrTVbAyQZnwy0JLyvz",
@@ -29,7 +29,7 @@ export let apiData = [
     id: 3,
     status: "Sent",
     amount: 6.09,
-    timeStamp: "15s",
+    timeStamp: "2021-11-21 11:59:56 +0000 UTC",
     details: {
       confirmation: 1234,
       hash: "RNd0rJlHuwh6b8xFTGhluhsmvgMLDBSw5nzztAkJSYoA9urdrTVbAyQZnwy0JLyvz",
@@ -42,7 +42,7 @@ export let apiData = [
     id: 4,
     status: "Received",
     amount: 16.21,
-    timeStamp: "45s",
+    timeStamp: "2021-11-21 11:59:56 +0000 UTC",
     details: {
       confirmation: 3568,
       hash: "RNd0rJlHuwh6b8xFTGhluhsmvgMLDBSw5nzztAkJSYoA9urdrTVbAyQZnwy0JLyvz",
@@ -55,7 +55,7 @@ export let apiData = [
     id: 5,
     status: "Sent",
     amount: 6.09,
-    timeStamp: "15s",
+    timeStamp: "2021-11-21 11:59:56 +0000 UTC",
     details: {
       confirmation: 1234,
       hash: "RNd0rJlHuwh6b8xFTGhluhsmvgMLDBSw5nzztAkJSYoA9urdrTVbAyQZnwy0JLyvz",
@@ -68,7 +68,7 @@ export let apiData = [
     id: 6,
     status: "Received",
     amount: 16.21,
-    timeStamp: "45s",
+    timeStamp: "2021-11-21 11:59:56 +0000 UTC",
     details: {
       confirmation: 3568,
       hash: "RNd0rJlHuwh6b8xFTGhluhsmvgMLDBSw5nzztAkJSYoA9urdrTVbAyQZnwy0JLyvz",
@@ -81,7 +81,7 @@ export let apiData = [
     id: 7,
     status: "Sent",
     amount: 6.09,
-    timeStamp: "15s",
+    timeStamp: "2021-11-21 11:59:56 +0000 UTC",
     details: {
       confirmation: 1234,
       hash: "RNd0rJlHuwh6b8xFTGhluhsmvgMLDBSw5nzztAkJSYoA9urdrTVbAyQZnwy0JLyvz",
@@ -94,7 +94,7 @@ export let apiData = [
     id: 8,
     status: "Received",
     amount: 16.21,
-    timeStamp: "45s",
+    timeStamp: "2021-11-21 11:59:56 +0000 UTC",
     details: {
       confirmation: 3568,
       hash: "RNd0rJlHuwh6b8xFTGhluhsmvgMLDBSw5nzztAkJSYoA9urdrTVbAyQZnwy0JLyvz",
@@ -107,7 +107,7 @@ export let apiData = [
     id: 9,
     status: "Sent",
     amount: 6.09,
-    timeStamp: "15s",
+    timeStamp: "2021-11-21 11:59:56 +0000 UTC",
     details: {
       confirmation: 1234,
       hash: "RNd0rJlHuwh6b8xFTGhluhsmvgMLDBSw5nzztAkJSYoA9urdrTVbAyQZnwy0JLyvz",
@@ -120,7 +120,7 @@ export let apiData = [
     id: 10,
     status: "Received",
     amount: 16.21,
-    timeStamp: "45s",
+    timeStamp: "2021-11-21 11:59:56 +0000 UTC",
     details: {
       confirmation: 3568,
       hash: "RNd0rJlHuwh6b8xFTGhluhsmvgMLDBSw5nzztAkJSYoA9urdrTVbAyQZnwy0JLyvz",
@@ -133,7 +133,7 @@ export let apiData = [
     id: 11,
     status: "Sent",
     amount: 6.09,
-    timeStamp: "15s",
+    timeStamp: "2021-11-21 11:59:56 +0000 UTC",
     details: {
       confirmation: 1234,
       hash: "RNd0rJlHuwh6b8xFTGhluhsmvgMLDBSw5nzztAkJSYoA9urdrTVbAyQZnwy0JLyvz",
@@ -146,7 +146,7 @@ export let apiData = [
     id: 12,
     status: "Received",
     amount: 16.21,
-    timeStamp: "45s",
+    timeStamp: "2021-11-21 11:59:56 +0000 UTC",
     details: {
       confirmation: 3568,
       hash: "RNd0rJlHuwh6b8xFTGhluhsmvgMLDBSw5nzztAkJSYoA9urdrTVbAyQZnwy0JLyvz",
