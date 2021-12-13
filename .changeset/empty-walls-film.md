@@ -1,20 +1,9 @@
 ---
 "@dusk-network/address": minor
-"@dusk-network/date-text": minor
-"@dusk-network/icon": minor
-"@dusk-network/helpers": minor
-"@dusk-network/breadcrumb": minor
-"@dusk-network/search-list": minor
-"@dusk-network/wallet-dashboard": minor
-"@dusk-network/wallet-homepage": minor
-"@dusk-network/wallet-option": minor
-"@dusk-network/wallet-wizard": minor
-"@dusk-network/dusk-ui-kit-storybook": minor
-"@dusk-network/dusk-ui-kit-docs": minor
-"@dusk-network/dusk-ui-kit-examples": minor
-"@dusk-network/meta": minor
 "@dusk-network/chip": minor
+"@dusk-network/date-text": minor
 "@dusk-network/drop-down": minor
+"@dusk-network/icon": minor
 "@dusk-network/loading-indicator": minor
 "@dusk-network/logo": minor
 "@dusk-network/progress-bar": minor
@@ -22,7 +11,9 @@
 "@dusk-network/text-field": minor
 "@dusk-network/toggle": minor
 "@dusk-network/truncate-text": minor
+"@dusk-network/helpers": minor
 "@dusk-network/alert": minor
+"@dusk-network/breadcrumb": minor
 "@dusk-network/button": minor
 "@dusk-network/chart": minor
 "@dusk-network/control": minor
@@ -43,6 +34,7 @@
 "@dusk-network/form": minor
 "@dusk-network/hero": minor
 "@dusk-network/navbar": minor
+"@dusk-network/search-list": minor
 "@dusk-network/table": minor
 "@dusk-network/wizard": minor
 "@dusk-network/styles": minor
@@ -54,6 +46,11 @@
 "@dusk-network/explorer-homepage": minor
 "@dusk-network/explorer-list": minor
 "@dusk-network/extension-default": minor
+"@dusk-network/wallet-dashboard": minor
+"@dusk-network/wallet-homepage": minor
+"@dusk-network/wallet-option": minor
+"@dusk-network/wallet-wizard": minor
+"@dusk-network/dusk-ui-kit-storybook": minor
 ---
 
 Release 4.1.2
