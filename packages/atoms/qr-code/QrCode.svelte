@@ -9,7 +9,7 @@
   export let value = "";
 
   /**
-   * Sets the width of the rendered QR Code
+   * Sets the width in pixels for the rendered QR Code
    */
   export let width = 200;
 
