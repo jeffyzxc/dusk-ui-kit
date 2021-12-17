@@ -9,7 +9,7 @@
 </script>
 
 <Meta
-  title="Components/Molecules/Skeleton Loader"
+  title="Components/Atoms/Skeleton Loader"
   component="{SkeletonLoader}"
   parameters="{{
     layout: 'centered',
@@ -18,9 +18,9 @@
         type: 'code',
       },
     },
-    jest: ['packages/molecules/skeleton-loader/SkeletonLoader.test.js'],
+    jest: ['packages/atoms/skeleton-loader/SkeletonLoader.test.js'],
   }}"
-  argTypes="{meta('molecules/skeleton-loader/SkeletonLoader', {
+  argTypes="{meta('atoms/skeleton-loader/SkeletonLoader', {
     variant: {
       options: Object.values(variants.SKELETON_LOADER),
       control: {

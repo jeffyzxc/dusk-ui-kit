@@ -1,14 +1,14 @@
 {
   "name": "@dusk-network/skeleton-loader",
   "version": "0.0.0",
-  "description": "Dusk UI Kit - SkeletonLoader",
+  "description": "Dusk UI Kit - Skeleton Loader",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:dusk-network/dusk-ui-kit.git",
-    "directory": "packages/molecules/skeleton-loader"
+    "directory": "packages/atoms/skeleton-loader"
   },
   "type": "module",
   "module": "index.js",
