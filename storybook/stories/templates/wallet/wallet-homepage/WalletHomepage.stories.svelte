@@ -25,31 +25,31 @@
 <Story name="Loaded State" args="{{}}" let:args>
   <Template>
     <svelte:fragment slot="navbar">
-      <Placeholder text="Navbar" width="1920" height="{104}" />
+      <Placeholder text="Navbar" width="1920" height="104px" />
     </svelte:fragment>
     <svelte:fragment slot="hero">
-      <Placeholder text="Hero" height="{365}" />
+      <Placeholder text="Hero" height="365px" />
     </svelte:fragment>
     <svelte:fragment slot="cta-create">
-      <Placeholder text="Create Wallet" height="{170}" />
+      <Placeholder text="Create Wallet" height="170px" />
     </svelte:fragment>
     <svelte:fragment slot="cta-access">
-      <Placeholder text="Access Wallet" height="{170}" />
+      <Placeholder text="Access Wallet" height="170px" />
     </svelte:fragment>
     <svelte:fragment slot="about-dusk">
-      <Placeholder text="About Dusk" height="{570}" />
+      <Placeholder text="About Dusk" height="570px" />
     </svelte:fragment>
     <svelte:fragment slot="info-security">
-      <Placeholder text="Wallet Security" height="{250}" />
+      <Placeholder text="Wallet Security" height="250px" />
     </svelte:fragment>
     <svelte:fragment slot="info-access">
-      <Placeholder text="Wallet Web Access" height="{250}" />
+      <Placeholder text="Wallet Web Access" height="250px" />
     </svelte:fragment>
     <svelte:fragment slot="faq">
-      <Placeholder text="FAQ" height="{325}" />
+      <Placeholder text="FAQ" height="325px" />
     </svelte:fragment>
     <svelte:fragment slot="footer">
-      <Placeholder text="Footer" width="1920" height="{108}" />
+      <Placeholder text="Footer" width="1920" height="108px" />
     </svelte:fragment>
   </Template>
 </Story>

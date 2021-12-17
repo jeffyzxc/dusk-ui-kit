@@ -25,28 +25,28 @@
 <Story name="Loaded State" args="{{}}" let:args>
   <Template>
     <svelte:fragment slot="navbar">
-      <Placeholder text="Navbar" width="1920" height="{104}" />
+      <Placeholder text="Navbar" width="1920" height="104px" />
     </svelte:fragment>
     <svelte:fragment slot="balance">
-      <Placeholder text="Balance" height="{200}" />
+      <Placeholder text="Balance" height="200px" />
     </svelte:fragment>
     <svelte:fragment slot="address">
-      <Placeholder text="Address" height="{200}" />
+      <Placeholder text="Address" height="200px" />
     </svelte:fragment>
     <svelte:fragment slot="transfer">
-      <Placeholder text="Transfer" height="{200}" />
+      <Placeholder text="Transfer" height="200px" />
     </svelte:fragment>
     <svelte:fragment slot="transaction">
-      <Placeholder text="Transaction" height="{200}" />
+      <Placeholder text="Transaction" height="200px" />
     </svelte:fragment>
     <svelte:fragment slot="network">
-      <Placeholder text="Network" height="{200}" />
+      <Placeholder text="Network" height="200px" />
     </svelte:fragment>
     <svelte:fragment slot="token">
-      <Placeholder text="Token" height="{200}" />
+      <Placeholder text="Token" height="200px" />
     </svelte:fragment>
     <svelte:fragment slot="footer">
-      <Placeholder text="Footer" width="1920" height="{108}" />
+      <Placeholder text="Footer" width="1920" height="108px" />
     </svelte:fragment>
   </Template>
 </Story>

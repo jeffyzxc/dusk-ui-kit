@@ -25,7 +25,7 @@
 
   &__info-security,
   &__info-access {
-    @apply mt-28;
+    @apply w-full mt-28;
     @apply sm:mt-72;
   }
 

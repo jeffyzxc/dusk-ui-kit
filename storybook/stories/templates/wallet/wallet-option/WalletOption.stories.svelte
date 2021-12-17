@@ -25,20 +25,20 @@
 <Story name="Loaded State" args="{{}}" let:args>
   <Template>
     <svelte:fragment slot="navbar">
-      <Placeholder text="Navbar" width="1920" height="{104}" />
+      <Placeholder text="Navbar" width="1920" height="104px" />
     </svelte:fragment>
     <svelte:fragment slot="heading-mobile">
-      <Placeholder text="Mobile Heading" height="{105}" />
+      <Placeholder text="Mobile Heading" height="105px" />
     </svelte:fragment>
     <svelte:fragment slot="lead-question">
-      <Placeholder text="Lead Question" height="{105}" />
+      <Placeholder text="Lead Question" height="105px" />
     </svelte:fragment>
     <svelte:fragment slot="option">
-      <Placeholder text="Options" height="{365}" />
+      <Placeholder text="Options" height="365px" />
     </svelte:fragment>
 
     <svelte:fragment slot="footer">
-      <Placeholder text="Footer" width="1920" height="{108}" />
+      <Placeholder text="Footer" width="1920" height="108px" />
     </svelte:fragment>
   </Template>
 </Story>
