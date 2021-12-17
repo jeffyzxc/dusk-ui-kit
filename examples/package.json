@@ -44,6 +44,7 @@
     "@dusk-network/progress-bar": "workspace:*",
     "@dusk-network/rich-text": "workspace:*",
     "@dusk-network/search-list": "workspace:*",
+    "@dusk-network/skeleton-loader": "workspace:*",
     "@dusk-network/statistic": "workspace:*",
     "@dusk-network/styles": "workspace:*",
     "@dusk-network/table": "workspace:*",
