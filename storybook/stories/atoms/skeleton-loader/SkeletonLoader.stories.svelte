@@ -12,7 +12,7 @@
   title="Components/Atoms/Skeleton Loader"
   component="{SkeletonLoader}"
   parameters="{{
-    layout: 'centered',
+    layout: 'padded',
     docs: {
       source: {
         type: 'code',
@@ -30,6 +30,10 @@
   })}"
 />
 
-<Story name="Default Skeleton Loader" args="{{ height: '300' }}" let:args>
+<Story
+  name="Default Skeleton Loader"
+  args="{{ height: '50px', variant: variants.SKELETON_LOADER.DEFAULT }}"
+  let:args
+>
   <SkeletonLoader {...args} />
 </Story>
