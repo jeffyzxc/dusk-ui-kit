@@ -53,9 +53,11 @@ import GasAverage from "./GasAverage.svelte";
 import GasLimit from "./GasLimit.svelte";
 import GasStationOutline from "./GasStationOutline.svelte";
 import Github from "./Github.svelte";
+import HardwareOutline from "./HardwareOutline.svelte";
 import HelpCircleOutline from "./HelpCircleOutline.svelte";
 import InformationVariant from "./InformationVariant.svelte";
 import KeyOutline from "./KeyOutline.svelte";
+import KeystoreFileOutline from "./KeystoreFileOutline.svelte";
 import Lifebuoy from "./Lifebuoy.svelte";
 import LinkedIn from "./LinkedIn.svelte";
 import LinkVariant from "./LinkVariant.svelte";
@@ -76,6 +78,7 @@ import Provisioner from "./Provisioner.svelte";
 import Qrcode from "./Qrcode.svelte";
 import Refresh from "./Refresh.svelte";
 import Safe from "./Safe.svelte";
+import SeedPhraseOutline from "./SeedPhraseOutline.svelte";
 import Server from "./Server.svelte";
 import ShareVariant from "./ShareVariant.svelte";
 import Sigma from "./Sigma.svelte";
@@ -149,9 +152,11 @@ export default {
   GasLimit,
   GasStationOutline,
   Github,
+  HardwareOutline,
   HelpCircleOutline,
   InformationVariant,
   KeyOutline,
+  KeystoreFileOutline,
   Lifebuoy,
   LinkedIn,
   LinkVariant,
@@ -172,6 +177,7 @@ export default {
   Qrcode,
   Refresh,
   Safe,
+  SeedPhraseOutline,
   Server,
   ShareVariant,
   Sigma,

@@ -1,4 +1,5 @@
 import "@dusk-network/styles/tailwind.css";
+import "../stories/pages/wallet/styles.css";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

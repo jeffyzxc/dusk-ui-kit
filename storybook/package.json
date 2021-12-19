@@ -79,6 +79,7 @@
     "babel-loader": "^8.2.2",
     "chromatic": "6.0.6",
     "merge-anything": "^4.0.1",
+    "qrcode": "^1.4.4",
     "storybook-addon-designs": "^6.1.0",
     "storybook-builder-vite": "^0.1.0",
     "storybook-dark-mode": "^1.0.8",
