@@ -7,6 +7,7 @@ import * as Logo from "./logo";
 import * as ProgressBar from "./progress-bar";
 import * as QrCode from "./qr-code";
 import * as RichText from "./rich-text";
+import * as SkeletonLoader from "./skeleton-loader";
 import * as Toggle from "./toggle";
 
 export {
@@ -19,5 +20,6 @@ export {
   ProgressBar,
   QrCode,
   RichText,
+  SkeletonLoader,
   Toggle,
 };
