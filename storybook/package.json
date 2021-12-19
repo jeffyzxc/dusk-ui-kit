@@ -46,6 +46,7 @@
     "@dusk-network/pagination": "workspace:*",
     "@dusk-network/password-strength": "workspace:*",
     "@dusk-network/progress-bar": "workspace:*",
+    "@dusk-network/qr-code": "workspace:*",
     "@dusk-network/rich-text": "workspace:*",
     "@dusk-network/search-list": "workspace:*",
     "@dusk-network/statistic": "workspace:*",
