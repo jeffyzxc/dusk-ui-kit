@@ -1,10 +1,12 @@
 <script>
-  import { createEventDispatcher, setContext } from "svelte";
+  import { createEventDispatcher, setContext, getContext } from "svelte";
   import contexts from "@dusk-network/helpers/contexts.js";
   import ProgressBar from "@dusk-network/progress-bar/ProgressBar.svelte";
   import Breadcrumb from "@dusk-network/breadcrumb/Breadcrumb.svelte";
   import Item from "@dusk-network/breadcrumb/Item.svelte";
-  import { step } from "./stores/state.js";
+  //import { step } from "./stores/state.js";
+  import { key } from "./key.js";
+  import { createContext } from "./context.js";
   import "./styles.css";
 
   /**
@@ -13,6 +15,11 @@
   export let stepCount = 2;
 
   const dispatch = createEventDispatcher();
+
+  setContext(key, {});
+  createContext();
+  const { step } = getContext(key);
+
   const next = () => {
     step.increment();
   };
