@@ -1,6 +1,5 @@
 <script>
   import { onDestroy } from "svelte";
-  //import { store, searchTerm } from "./stores/store.js";
   import { setContext, getContext } from "svelte";
   import contexts from "@dusk-network/helpers/contexts.js";
   import Control from "@dusk-network/control";
@@ -28,10 +27,6 @@
   const { store, searchTerm, searchResults } = getContext(key);
 
   export const dataSearchResults = searchResults;
-
-  // onMount(() => {
-  //   store.set(data);
-  // });
 
   $: store.set(data);
 
