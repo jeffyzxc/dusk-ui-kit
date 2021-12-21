@@ -2,14 +2,6 @@ import { writable } from "svelte/store";
 import { getContext, setContext } from "svelte";
 import { key } from "../key.js";
 
-// const store = writable(1);
-
-// export const step = {
-//   subscribe: store.subscribe,
-//   increment: () => store.update((store) => store + 1),
-//   decrement: () => store.update((store) => store - 1),
-// };
-
 function getStep() {
   const getStore = () => {
     const store = writable(1);
