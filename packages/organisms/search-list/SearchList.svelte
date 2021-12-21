@@ -1,12 +1,14 @@
 <script>
-  import { onMount, onDestroy } from "svelte";
-  import { store, searchTerm } from "./stores/store.js";
-  import { setContext } from "svelte";
+  import { onDestroy } from "svelte";
+  //import { store, searchTerm } from "./stores/store.js";
+  import { setContext, getContext } from "svelte";
   import contexts from "@dusk-network/helpers/contexts.js";
   import Control from "@dusk-network/control";
   import TextField from "@dusk-network/text-field";
   import Button from "@dusk-network/button";
   import Icon from "@dusk-network/icon";
+  import { key } from "./key.js";
+  import { createContext } from "./context.js";
   import "./styles.css";
 
   /**
@@ -21,9 +23,17 @@
 
   let searchValue;
 
-  onMount(() => {
-    store.set(data);
-  });
+  setContext(key, {});
+  createContext();
+  const { store, searchTerm, searchResults } = getContext(key);
+
+  export const dataSearchResults = searchResults;
+
+  // onMount(() => {
+  //   store.set(data);
+  // });
+
+  $: store.set(data);
 
   onDestroy(() => {
     store.reset();
