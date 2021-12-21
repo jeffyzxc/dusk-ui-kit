@@ -3,7 +3,6 @@
   import RichText from "@dusk-network/rich-text";
   import { useQuery } from "@sveltestack/svelte-query";
   import { tokens } from "./data.js";
-  // import { searchResults } from "@dusk-network/search-list/stores/store.js";
 
   let searchResults;
 
