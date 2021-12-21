@@ -4,7 +4,6 @@
   import ProgressBar from "@dusk-network/progress-bar/ProgressBar.svelte";
   import Breadcrumb from "@dusk-network/breadcrumb/Breadcrumb.svelte";
   import Item from "@dusk-network/breadcrumb/Item.svelte";
-  //import { step } from "./stores/state.js";
   import { key } from "./key.js";
   import { createContext } from "./context.js";
   import "./styles.css";

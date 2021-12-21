@@ -4,7 +4,6 @@
 </script>
 
 <Wizard stepCount="{2}">
-  <h3 slot="title">Wizard title</h3>
   <Step number="{1}" let:next>
     step 1
     <Button on:click="{next}">Next</Button>
