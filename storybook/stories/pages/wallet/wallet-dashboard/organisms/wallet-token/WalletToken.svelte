@@ -7,7 +7,6 @@
   import Control from "@dusk-network/control";
   import Heading from "@dusk-network/heading";
   import SearchList from "@dusk-network/search-list";
-  import { searchResults } from "@dusk-network/search-list/stores/store.js";
   import { data } from "./mock-data.js";
   import * as yup from "yup";
   import { number } from "svelte-i18n";
@@ -42,6 +41,7 @@
   }
 
   const formatOptions = { minimumFractionDigits: 0, maximumFractionDigits: 10 };
+  let searchResults;
 </script>
 
 <div class="wallet-token">
@@ -59,24 +59,26 @@
           </RichText>
         </div>
       </div>
-      <SearchList data="{data}" fieldButton="{true}">
-        {#each $searchResults as token}
-          <div class="duk-search-list__item">
-            <div class="duk-search-list__item--token">
-              <div class="duk-search-list__item--border">
-                {#if token.image}
-                  <img src="{token.image}" alt="symbol" />
-                {/if}
+      <SearchList data="{data}" fieldButton="{true}" bind:dataSearchResults="{searchResults}">
+        {#if searchResults}
+          {#each $searchResults as token}
+            <div class="duk-search-list__item">
+              <div class="duk-search-list__item--token">
+                <div class="duk-search-list__item--border">
+                  {#if token.image}
+                    <img src="{token.image}" alt="symbol" />
+                  {/if}
+                </div>
+                <RichText>
+                  <p>{token.token}</p>
+                </RichText>
               </div>
               <RichText>
-                <p>{token.token}</p>
+                <p>{$number(token.amount, formatOptions)}</p>
               </RichText>
             </div>
-            <RichText>
-              <p>{$number(token.amount, formatOptions)}</p>
-            </RichText>
-          </div>
-        {/each}
+          {/each}
+        {/if}
       </SearchList>
     </div>
   {:else}
