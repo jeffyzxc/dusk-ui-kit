@@ -90,4 +90,7 @@ export default {
   TOGGLE: {
     CONTROL: "toggle:control",
   },
+  WIZARD: {
+    CARD: "wizard:card",
+  },
 };

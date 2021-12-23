@@ -14,6 +14,7 @@
   export let stepCount = 2;
 
   const dispatch = createEventDispatcher();
+  const context = getContext("DUK:wizard:context");
 
   setContext(key, {});
   createContext();
@@ -46,7 +47,10 @@
   };
 </script>
 
-<div class="{$$props.class || ''} duk-wizard">
+<div
+  class="{$$props.class || ''} duk-wizard"
+  class:duk-wizard--card="{context === contexts.WIZARD.CARD}"
+>
   <Breadcrumb on:exit="{handleExit}">
     <Item>Step {$step} of {stepCount}</Item>
     <slot name="title" />
