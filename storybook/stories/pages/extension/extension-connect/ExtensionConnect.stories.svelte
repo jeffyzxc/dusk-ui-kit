@@ -5,7 +5,7 @@
   // import { withTests } from "@storybook/addon-jest";
   import Card, { Content } from "@dusk-network/card";
   import Wizard from "./_Wizard.svelte";
-  import Connection from "./_Connection.svelte";
+  import Connection from "../_Connection.svelte";
   import Heading from "./_Heading.svelte";
   import RichText from "@dusk-network/rich-text";
   import Logo from "../_Logo.svelte";
@@ -15,7 +15,7 @@
 </script>
 
 <Meta
-  title="Pages/Extension/Connection"
+  title="Pages/Extension/Connect"
   component="{Template}"
   parameters="{{
     layout: 'fullscreen',
