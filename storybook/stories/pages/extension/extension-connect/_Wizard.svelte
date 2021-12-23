@@ -45,7 +45,7 @@
   let:next
 >
   <Step number="{1}">
-    <Heading>
+    <Heading size="sm">
       <strong>Your seed phrase</strong>
     </Heading>
     <Mnemonic seed="{seedPhrase}" type="authenticate" disabled="{!connected}" />
@@ -60,7 +60,7 @@
     </Group>
   </Step>
   <Step number="{2}">
-    <Heading>
+    <Heading size="sm">
       <strong>Set password</strong>
     </Heading>
     <Form
