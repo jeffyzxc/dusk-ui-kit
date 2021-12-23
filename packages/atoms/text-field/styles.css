@@ -5,7 +5,7 @@
   /* min-height: 30px; */
 
   &--mnemonic {
-    @apply bg-transparent p-0 border-0 text-lg placeholder-gray-900;
+    @apply bg-transparent p-0 border-0 text-lg placeholder-gray-900 w-full;
     @apply dark:bg-transparent dark:border-0 dark:placeholder-gray-100;
   }
 
