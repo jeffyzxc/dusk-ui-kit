@@ -7,7 +7,7 @@
 
   &__list {
     @apply bg-gray-200 rounded-xl border border-black list-none flex flex-wrap p-6 mx-auto mb-6 mt-0 items-center max-w-xl;
-    @apply dark:bg-gray-800 dark:border-white;
+    @apply dark:bg-gray-800;
     counter-reset: duk-counter;
   }
 
