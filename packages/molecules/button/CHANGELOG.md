@@ -1,5 +1,16 @@
 # @dusk-network/button
 
+## 4.2.0
+
+### Minor Changes
+
+- 770e3502: Release 4.1.2
+
+### Patch Changes
+
+- Updated dependencies [770e3502]
+  - @dusk-network/helpers@4.2.0
+
 ## 4.1.1
 
 ### Patch Changes
