@@ -1,7 +1,6 @@
 <script>
   import { createEventDispatcher, setContext, getContext } from "svelte";
   import contexts from "@dusk-network/helpers/contexts.js";
-  import ProgressBar from "@dusk-network/progress-bar/ProgressBar.svelte";
   import Breadcrumb from "@dusk-network/breadcrumb/Breadcrumb.svelte";
   import Item from "@dusk-network/breadcrumb/Item.svelte";
   import { key } from "./key.js";
@@ -55,6 +54,6 @@
     <Item>Step {$step} of {stepCount}</Item>
     <slot name="title" />
   </Breadcrumb>
-  <ProgressBar steps="{stepCount}" step="{$step}" />
+  <slot name="progress-bar" steps="{stepCount}" step="{$step}" />
   <slot next="{next}" previous="{previous}" />
 </div>
