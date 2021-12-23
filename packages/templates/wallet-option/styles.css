@@ -1,0 +1,30 @@
+.duk-template-wallet-option {
+  @apply flex flex-grow flex-col;
+
+  &__heading-mobile {
+    @apply flex justify-center mb-12;
+    @apply sm:hidden sm:mb-0;
+  }
+
+  &__block {
+    @apply grid gap-y-16;
+    @apply sm:gap-y-32;
+  }
+
+  &__lead-question {
+    @apply order-2;
+    @apply sm:order-1;
+
+    @apply flex flex-row justify-between items-center text-center border-t border-b border-gray-200 py-6 gap-y-6;
+    @apply sm:py-0 sm:border-none sm:flex sm:flex-grow sm:flex-row sm:justify-center sm:gap-x-4;
+    > div {
+      @apply w-full justify-between;
+      @apply sm:w-auto sm:justify-center;
+    }
+  }
+
+  &__option {
+    @apply order-1 mb-12;
+    @apply sm:order-2;
+  }
+}

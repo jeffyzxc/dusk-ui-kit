@@ -23,7 +23,12 @@
     @apply block order-first pr-4;
   }
 
-  & h1 + .duk-icon {
+  /* & h1 + .duk-icon {
+    @apply text-indigo-500;
+    @apply dark:text-indigo-100;
+  } */
+
+  & > *:not(button) {
     @apply text-indigo-500;
     @apply dark:text-indigo-100;
   }

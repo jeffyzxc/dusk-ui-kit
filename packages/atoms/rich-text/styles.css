@@ -4,20 +4,20 @@
   @apply lg:prose-xl;
 
   &--small {
-    @apply prose-sm;
+    @apply !prose-sm;
   }
 
   &--large {
-    @apply prose-lg;
+    @apply !prose-lg;
   }
 
   &--hero,
   &--xl {
-    @apply prose-xl;
+    @apply !prose-xl;
   }
 
   &--xxl {
-    @apply prose-2xl;
+    @apply !prose-2xl;
   }
 
   &--card {

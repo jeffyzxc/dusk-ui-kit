@@ -5,7 +5,9 @@ import * as TextField from "./text-field";
 import * as Icon from "./icon";
 import * as Logo from "./logo";
 import * as ProgressBar from "./progress-bar";
+import * as QrCode from "./qr-code";
 import * as RichText from "./rich-text";
+import * as SkeletonLoader from "./skeleton-loader";
 import * as Toggle from "./toggle";
 
 export {
@@ -16,6 +18,8 @@ export {
   Icon,
   Logo,
   ProgressBar,
+  QrCode,
   RichText,
+  SkeletonLoader,
   Toggle,
 };

@@ -1,5 +1,10 @@
 .duk-search-list {
   @apply flex flex-col gap-y-2.5;
+
+  &__results {
+    @apply flex flex-col gap-y-4;
+  }
+
   &__item {
     @apply flex flex-row justify-between items-center;
 

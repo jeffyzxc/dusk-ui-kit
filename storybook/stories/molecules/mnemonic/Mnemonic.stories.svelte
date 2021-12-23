@@ -18,7 +18,7 @@
         type: 'code',
       },
     },
-    jest: ['packages/molecules/mnemonic/Mnemonic.test.js'],
+    // jest: ['packages/molecules/mnemonic/Mnemonic.test.js'],
   }}"
   argTypes="{meta('molecules/mnemonic/Mnemonic', {
     onComplete: {

@@ -1,5 +1,5 @@
 .duk-mnemonic {
-  @apply max-w-2xl;
+  @apply max-w-2xl mx-auto;
 
   &__buttons {
     @apply flex-wrap justify-center gap-6 mb-6 mx-0 px-5;

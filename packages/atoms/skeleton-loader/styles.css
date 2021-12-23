@@ -1,0 +1,78 @@
+.duk-skeleton-loader {
+  &__wrapper {
+    @apply w-full;
+  }
+
+  &__placeholder {
+    @apply bg-gray-300 relative overflow-hidden w-full;
+  }
+
+  &--pulse {
+    ^&__placeholder {
+      @apply animate-pulse;
+    }
+  }
+
+  &--loader {
+    ^&__placeholder::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform: translateX(-100%);
+      background-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0,
+        rgba(255, 255, 255, 0.2) 20%,
+        rgba(255, 255, 255, 0.5) 60%,
+        rgba(255, 255, 255, 0)
+      );
+      -webkit-animation: shimmer 2s infinite;
+      animation: shimmer 2s infinite;
+      content: "";
+    }
+
+    @keyframes shimmer {
+      100% {
+        transform: translateX(100%);
+      }
+    }
+  }
+
+  &--brand {
+    ^&__placeholder {
+      @apply bg-indigo-500;
+    }
+  }
+
+  &--cta {
+    ^&__placeholder {
+      @apply bg-gold-500;
+    }
+  }
+
+  &--info {
+    ^&__placeholder {
+      @apply bg-blue-500;
+    }
+  }
+
+  &--success {
+    ^&__placeholder {
+      @apply bg-green-500;
+    }
+  }
+
+  &--warning {
+    ^&__placeholder {
+      @apply bg-yellow-500;
+    }
+  }
+
+  &--danger {
+    ^&__placeholder {
+      @apply bg-red-300;
+    }
+  }
+}

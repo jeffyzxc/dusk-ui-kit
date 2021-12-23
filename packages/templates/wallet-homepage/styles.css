@@ -1,0 +1,35 @@
+.duk-template-wallet-homepage {
+  &__hero {
+    @apply mb-16;
+    @apply sm:mb-40;
+  }
+
+  &__cta {
+    @apply flex flex-wrap gap-20 mb-16;
+    @apply sm:mb-40 sm:flex-nowrap;
+  }
+
+  &__cta-create,
+  &__cta-access {
+    @apply w-full lg:w-1/2;
+  }
+
+  &__about {
+    @apply bg-indigo-400;
+  }
+
+  &__info {
+    @apply flex flex-wrap gap-6 mb-16;
+    @apply sm:mb-40 sm:flex-nowrap;
+  }
+
+  &__info-security,
+  &__info-access {
+    @apply w-full mt-28;
+    @apply sm:mt-72;
+  }
+
+  &__faq {
+    @apply mb-16;
+  }
+}

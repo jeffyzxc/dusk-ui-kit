@@ -1,0 +1,19 @@
+{
+  "name": "@dusk-network/wallet-option",
+  "version": "0.0.0",
+  "description": "Dusk UI Kit - WalletOption",
+  "bugs": {
+    "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dusk-network/dusk-ui-kit.git",
+    "directory": "packages/templates/wallet-option"
+  },
+  "type": "module",
+  "module": "index.js",
+  "scripts": {
+    "test": "echo \"Work in progress...\" && exit 1"
+  },
+  "gitHead": "66bee4a7b36a857a50ac98403d64dc26dbed6c50"
+}

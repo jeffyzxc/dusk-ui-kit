@@ -39,8 +39,10 @@ specifiers:
   '@dusk-network/pagination': workspace:*
   '@dusk-network/password-strength': workspace:*
   '@dusk-network/progress-bar': workspace:*
+  '@dusk-network/qr-code': workspace:*
   '@dusk-network/rich-text': workspace:*
   '@dusk-network/search-list': workspace:*
+  '@dusk-network/skeleton-loader': workspace:*
   '@dusk-network/statistic': workspace:*
   '@dusk-network/styles': workspace:*
   '@dusk-network/table': workspace:*
@@ -88,8 +90,10 @@ devDependencies:
   '@dusk-network/pagination': link:../packages/molecules/pagination
   '@dusk-network/password-strength': link:../packages/molecules/password-strength
   '@dusk-network/progress-bar': link:../packages/atoms/progress-bar
+  '@dusk-network/qr-code': link:../packages/atoms/qr-code
   '@dusk-network/rich-text': link:../packages/atoms/rich-text
   '@dusk-network/search-list': link:../packages/organisms/search-list
+  '@dusk-network/skeleton-loader': link:../packages/atoms/skeleton-loader
   '@dusk-network/statistic': link:../packages/molecules/statistic
   '@dusk-network/styles': link:../packages/styles
   '@dusk-network/table': link:../packages/organisms/table

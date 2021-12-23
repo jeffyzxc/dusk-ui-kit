@@ -15,6 +15,6 @@
   }
 
   &--wizard {
-    @apply mb-3 flex-wrap;
+    @apply mb-3 px-5 flex-wrap;
   }
 }

@@ -1,0 +1,52 @@
+.duk-template-wallet-dashboard {
+  &__wrapper {
+    @apply grid grid-cols-1 gap-y-6 gap-x-16 mb-12;
+    @apply md:grid-cols-2;
+  }
+
+  &__block-first,
+  &__block-second {
+    @apply grid grid-cols-12 gap-y-5 content-start;
+  }
+
+  &__block-first--balance {
+    @apply col-span-12 order-1;
+    @apply md:hidden;
+  }
+
+  &__block-second--balance {
+    @apply col-span-12 hidden;
+    @apply md:order-1 md:block;
+  }
+
+  &__block-first--address {
+    @apply col-span-12 order-2;
+    @apply sm:order-1;
+
+    .duk-card {
+      @apply overflow-visible;
+    }
+  }
+
+  &__block-first--transfer {
+    @apply col-span-12 order-4;
+    @apply sm:order-2;
+  }
+
+  &__block-first--transaction {
+    @apply col-span-12 order-3;
+  }
+
+  &__block-second--network {
+    @apply col-span-12 order-3;
+    @apply sm:order-2;
+
+    .duk-card {
+      @apply overflow-visible;
+    }
+  }
+
+  &__block-second--token {
+    @apply col-span-12 order-3;
+  }
+}
