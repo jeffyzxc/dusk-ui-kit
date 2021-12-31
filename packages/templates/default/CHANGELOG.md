@@ -1,5 +1,11 @@
 # @dusk-network/default
 
+## 4.2.1
+
+### Patch Changes
+
+- b66edd71: Release 4.2.1
+
 ## 4.2.0
 
 ### Minor Changes
