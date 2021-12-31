@@ -21,5 +21,9 @@
       @apply flex flex-shrink-0 border border-gray-900 rounded h-10 w-10 items-center justify-center mr-3;
       content: counter(duk-counter);
     }
+
+    input {
+      @apply overflow-hidden;
+    }
   }
 }
