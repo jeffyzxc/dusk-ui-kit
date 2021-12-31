@@ -21,7 +21,7 @@
   }
 
   &--wizard {
-    @apply mb-6 px-5;
+    @apply mb-6;
   }
 
   &--brand {

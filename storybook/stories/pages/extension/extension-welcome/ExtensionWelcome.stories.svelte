@@ -51,9 +51,16 @@
         <Button
           variant="brand"
           outline="{true}"
-          on:click="{linkTo('Pages/Extension/Connection', 'Loaded State')}"
+          on:click="{linkTo('Pages/Extension/Create', 'Loaded State')}"
         >
-          <Label>Start</Label>
+          <Label>Create Wallet</Label>
+        </Button>
+        <Button
+          variant="brand"
+          outline="{true}"
+          on:click="{linkTo('Pages/Extension/Connect', 'Loaded State')}"
+        >
+          <Label>Connect Wallet</Label>
         </Button>
       </Group>
     </svelte:fragment>

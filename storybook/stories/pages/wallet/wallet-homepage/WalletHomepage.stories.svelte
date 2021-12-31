@@ -58,7 +58,7 @@
           </Heading>
         </div>
         <div slot="image">
-          <img src="/wallet-introduction.png" alt="Wallet Introduction" />
+          <img src="../wallet-intro.png" alt="Wallet Introduction" />
         </div>
       </Hero>
     </svelte:fragment>
@@ -127,7 +127,11 @@
     <svelte:fragment slot="info-security">
       <Card class="usp__card">
         <Content>
-          <img class="usp__image usp__image--security" src="/security.png" alt="web access" />
+          <img
+            class="usp__image usp__image--security"
+            src="../security-icon.png"
+            alt="web access"
+          />
           <Heading align="center" size="lg"><strong>Security</strong></Heading>
           <RichText>
             <p>
@@ -142,7 +146,11 @@
     <svelte:fragment slot="info-access">
       <Card class="usp__card">
         <Content>
-          <img class="usp__image usp__image--access" src="/web-access.png" alt="web access" />
+          <img
+            class="usp__image usp__image--access"
+            src="../web-access-icon.png"
+            alt="web access"
+          />
           <Heading align="center" size="lg"><strong>Web Access</strong></Heading>
           <RichText>
             <p>

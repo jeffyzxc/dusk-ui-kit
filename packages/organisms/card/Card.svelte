@@ -31,6 +31,7 @@
   setContext("DUK:rich-text:context", contexts.RICH_TEXT.CARD);
   setContext("DUK:heading:context", contexts.HEADING.CARD);
   setContext("DUK:mnemonic:context", contexts.MNEMONIC.CARD);
+  setContext("DUK:wizard:context", contexts.WIZARD.CARD);
 </script>
 
 {#if href}

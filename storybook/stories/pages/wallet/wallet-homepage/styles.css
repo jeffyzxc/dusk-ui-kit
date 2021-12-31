@@ -18,10 +18,10 @@
 .banner-layout {
   @apply grid grid-cols-12 container bg-bottom bg-no-repeat;
   @apply md:bg-right;
-  background-image: url("/wallet-hero-mobile.png");
+  background-image: url("../wallet-banner-mobile.png");
   background-origin: content-box;
   @screen sm {
-    background-image: url("/wallet-hero.png");
+    background-image: url("../wallet-banner.png");
   }
 
   &__wrapper {
