@@ -1,5 +1,14 @@
 # @dusk-network/chart
 
+## 4.2.1
+
+### Patch Changes
+
+- b66edd71: Release 4.2.1
+- Updated dependencies [b66edd71]
+  - @dusk-network/helpers@4.2.1
+  - @dusk-network/heading@4.2.1
+
 ## 4.2.0
 
 ### Minor Changes
