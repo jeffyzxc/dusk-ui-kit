@@ -8,11 +8,13 @@
   &__placeholder {
     @apply bg-gray-200 relative overflow-hidden w-full;
     @apply dark:bg-gray-800;
+
+    height: var(--height);
   }
 
   &--rounded {
     ^&__placeholder {
-      @apply rounded-lg;
+      @apply rounded-xl;
     }
   }
 
@@ -36,6 +38,42 @@
       100% {
         transform: translateX(100%);
       }
+    }
+  }
+
+  @screen xs {
+    &__placeholder {
+      height: var(--xs-height);
+    }
+  }
+
+  @screen sm {
+    &__placeholder {
+      height: var(--sm-height);
+    }
+  }
+
+  @screen md {
+    &__placeholder {
+      height: var(--md-height);
+    }
+  }
+
+  @screen lg {
+    &__placeholder {
+      height: var(--lg-height);
+    }
+  }
+
+  @screen xl {
+    &__placeholder {
+      height: var(--xl-height);
+    }
+  }
+
+  @screen 2xl {
+    &__placeholder {
+      height: var(--jumbo-height);
     }
   }
 }

@@ -15,7 +15,7 @@
     setTimeout(function () {
       loading = false;
       timeout();
-    }, 5000);
+    }, 4000);
   }
 
   timeout();
@@ -45,7 +45,16 @@
 
 <Story
   name="Default Skeleton Loader"
-  args="{{ height: '50px', variant: variants.SKELETON_LOADER.DEFAULT }}"
+  args="{{
+    height: '272px',
+    extraSmallScreenHeight: '188px',
+    smallScreenHeight: '180px',
+    mediumScreenHeight: '175px',
+    largeScreenHeight: '150px',
+    extraLargeScreenHeight: '140px',
+    jumboScreenHeight: '120px',
+    variant: variants.SKELETON_LOADER.DEFAULT,
+  }}"
   let:args
 >
   <SkeletonLoader {...args} />
@@ -53,7 +62,17 @@
 
 <Story
   name="Card Example"
-  args="{{ height: '188px', variant: variants.SKELETON_LOADER.DEFAULT, rounded: true }}"
+  args="{{
+    height: '272px',
+    extraSmallScreenHeight: '188px',
+    smallScreenHeight: '188px',
+    mediumScreenHeight: '188px',
+    largeScreenHeight: '188px',
+    extraLargeScreenHeight: '188px',
+    jumboScreenHeight: '188px',
+    variant: variants.SKELETON_LOADER.DEFAULT,
+    rounded: true,
+  }}"
   let:args
 >
   <div style="max-width: 500px;">
