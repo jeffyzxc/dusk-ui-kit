@@ -1,6 +1,6 @@
 <script>
   import "./styles.css";
-  import QRCode from "qrcode";
+  import * as QRCode from "qrcode";
   import { onMount } from "svelte";
 
   /**
@@ -30,6 +30,7 @@
   $: bgColor, renderQr();
 
   function renderQr() {
+    if (typeof window === "undefined") return;
     QRCode.toDataURL(value, { width: width, color: { dark: qrColor, light: bgColor } })
       .then((url) => {
         src = url;
