@@ -5,7 +5,20 @@
   // import results from "../../../../.jest-test-results.json";
   // import { withTests } from "@storybook/addon-jest";
   import SkeletonLoader from "@dusk-network/skeleton-loader";
+  import RichText from "@dusk-network/rich-text";
+  import Card, { Content } from "@dusk-network/card";
   import meta from "../../meta.js";
+
+  let loading = true;
+
+  function timeout() {
+    setTimeout(function () {
+      loading = false;
+      timeout();
+    }, 5000);
+  }
+
+  timeout();
 </script>
 
 <Meta
@@ -36,4 +49,29 @@
   let:args
 >
   <SkeletonLoader {...args} />
+</Story>
+
+<Story
+  name="Card Example"
+  args="{{ height: '188px', variant: variants.SKELETON_LOADER.DEFAULT, rounded: true }}"
+  let:args
+>
+  <div style="max-width: 500px;">
+    {#if loading}
+      <SkeletonLoader {...args} />
+    {:else}
+      <Card>
+        <Content>
+          <RichText>
+            <h3>This took a while to load!</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, urna eu
+              tempor consectetur, nisl nunc consequat nunc, eget consectetur nisl nunc eget
+              consectetur nisl nunc.
+            </p>
+          </RichText>
+        </Content>
+      </Card>
+    {/if}
+  </div>
 </Story>
