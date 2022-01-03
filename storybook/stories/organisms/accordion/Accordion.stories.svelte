@@ -3,7 +3,8 @@
   // import results from "../../../../.jest-test-results.json";
   // import { withTests } from "@storybook/addon-jest";
   import Accordion, { Item } from "@dusk-network/accordion";
-  import Card, { Content } from "@dusk-network/card";
+  import Card from "@dusk-network/card";
+  import Content from "@dusk-network/content";
   import RichText from "@dusk-network/rich-text";
   import meta from "../../meta.js";
 </script>

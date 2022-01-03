@@ -7,7 +7,8 @@
   import Navbar from "../_Navbar.svelte";
   import Footer from "../_Footer.svelte";
   import Button from "@dusk-network/button";
-  import Card, { Content } from "@dusk-network/card";
+  import Card from "@dusk-network/card";
+  import Content from "@dusk-network/content";
   import Icon from "@dusk-network/icon";
   import Heading from "@dusk-network/heading";
   import RichText from "@dusk-network/rich-text";

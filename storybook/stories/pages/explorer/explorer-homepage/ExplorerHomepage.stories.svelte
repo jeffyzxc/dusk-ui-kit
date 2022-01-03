@@ -4,7 +4,8 @@
   import Template from "@dusk-network/explorer-homepage";
   // import results from "../../../../../.jest-test-results.json";
   // import { withTests } from "@storybook/addon-jest";
-  import Card, { Content } from "@dusk-network/card";
+  import Card from "@dusk-network/card";
+  import Content from "@dusk-network/content";
   import Navbar from "../_Navbar.svelte";
   import Search from "../_Search.svelte";
   import Footer from "../_Footer.svelte";

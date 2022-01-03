@@ -6,7 +6,8 @@
   // import { withTests } from "@storybook/addon-jest";
   import Navbar from "../_Navbar.svelte";
   import Footer from "../_Footer.svelte";
-  import Card, { Content } from "@dusk-network/card";
+  import Card from "@dusk-network/card";
+  import Content from "@dusk-network/content";
   import Wizard, { Step } from "@dusk-network/wizard";
   import Button from "@dusk-network/button";
   import Heading from "@dusk-network/heading";

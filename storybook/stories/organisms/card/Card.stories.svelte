@@ -3,7 +3,8 @@
   import { variants, states } from "@dusk-network/helpers";
   // import results from "../../../../.jest-test-results.json";
   // import { withTests } from "@storybook/addon-jest";
-  import Card, { Content, Title, Footer, Actions } from "@dusk-network/card";
+  import Card, { Footer, Actions } from "@dusk-network/card";
+  import Content from "@dusk-network/content";
   import RichText from "@dusk-network/rich-text";
   import Icon from "@dusk-network/icon";
   import Heading from "@dusk-network/heading";
@@ -74,9 +75,9 @@
 
 <Story name="With Rich Text & Title" args="{{ content: `${content}`, title: `${title}` }}" let:args>
   <Card {...args}>
-    <Title>
+    <Heading>
       <h3>{args.title}</h3>
-    </Title>
+    </Heading>
     <Content>
       <RichText markdown="{args.content}" />
       <Heading>
@@ -117,9 +118,9 @@
   let:args
 >
   <Card {...args}>
-    <Title>
+    <Heading>
       <h3>{args.title}</h3>
-    </Title>
+    </Heading>
     <Content>
       <RichText markdown="{args.content}" />
       <Heading>
@@ -164,9 +165,9 @@
   let:args
 >
   <Card {...args}>
-    <Title>
+    <Heading>
       <h3>{args.title}</h3>
-    </Title>
+    </Heading>
     <Content>
       <RichText markdown="{args.content}" />
       <Heading>

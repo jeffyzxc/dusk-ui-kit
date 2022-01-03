@@ -1,6 +1,8 @@
 <script>
-  import Card, { Content, Title } from "@dusk-network/card";
+  import Card from "@dusk-network/card";
+  import Content from "@dusk-network/content";
   import Menu, { Item } from "@dusk-network/menu";
+  import Heading from "@dusk-network/heading";
   import Icon from "@dusk-network/icon";
   import { base } from "$app/paths";
   import { page } from "$app/stores";
@@ -10,7 +12,7 @@
 </script>
 
 <Card class="sticky top-5 mb-10">
-  <Title><h2>{title.slice(0, -1)} Packages</h2></Title>
+  <Heading><h2>{title.slice(0, -1)} Packages</h2></Heading>
   <Content>
     <Menu>
       {#each Object.entries(group) as groupe}

@@ -4,7 +4,8 @@
   import Template from "@dusk-network/explorer-charts";
   // import results from "../../../../../.jest-test-results.json";
   // import { withTests } from "@storybook/addon-jest";
-  import Card, { Content, Title } from "@dusk-network/card";
+  import Card from "@dusk-network/card";
+  import Content from "@dusk-network/content";
   import Chart from "@dusk-network/chart";
   import Heading from "@dusk-network/heading";
   import RichText from "@dusk-network/rich-text";
@@ -86,9 +87,9 @@
     <svelte:fragment slot="market-data">
       <Heading><h2>Market Data</h2></Heading>
       <Card>
-        <Title>
+        <Heading>
           <h3>Dusk Price</h3>
-        </Title>
+        </Heading>
         <Content>
           <RichText>
             <h4>$0.23 <small class="success">+2%</small></h4>
@@ -99,9 +100,9 @@
         </Content>
       </Card>
       <Card>
-        <Title>
+        <Heading>
           <h3>Dusk Market Cap</h3>
-        </Title>
+        </Heading>
         <Content>
           <RichText>
             <h4>$92.44 M</h4>
@@ -115,25 +116,25 @@
     <!-- <svelte:fragment slot="blockchain-data">
       <Heading><h2>Blockchain Data</h2></Heading>
       <Card>
-        <Title>
+        <Heading>
           <h3>Transaction per second</h3>
-        </Title>
+        </Heading>
         <Content>
           Chart here
         </Content>
       </Card>
       <Card>
-        <Title>
+        <Heading>
           <h3>Average Block Time</h3>
-        </Title>
+        </H>
         <Content>
           Chart here
         </Content>
       </Card>
       <Card>
-        <Title>
+        <Heading>
           <h3>Average Gas Price</h3>
-        </Title>
+        </Heading>
         <Content>
           Chart here
         </Content>

@@ -3,7 +3,9 @@
   import Template from "@dusk-network/devops-centered";
   // import results from "../../../../../.jest-test-results.json";
   // import { withTests } from "@storybook/addon-jest";
-  import Card, { Content, Title } from "@dusk-network/card";
+  import Card from "@dusk-network/card";
+  import Content from "@dusk-network/content";
+  import Heading from "@dusk-network/heading";
   import Control from "@dusk-network/control";
   import Toggle from "@dusk-network/toggle";
   import DropDown from "@dusk-network/drop-down";
@@ -59,9 +61,9 @@
       <Navbar activePage="deploy-network" />
     </svelte:fragment>
     <Card>
-      <Title>
+      <Heading>
         <h1>Add Testnet Cluster</h1>
-      </Title>
+      </Heading>
       <Content>
         <Form
           submitted="{submitted}"

@@ -6,7 +6,9 @@
   // import { withTests } from "@storybook/addon-jest";
   import Navbar from "../_Navbar.svelte";
   import Footer from "../_Footer.svelte";
-  import Card, { Content, Title } from "@dusk-network/card";
+  import Card from "@dusk-network/card";
+  import Content from "@dusk-network/content";
+  import Heading from "@dusk-network/heading";
   import Accordion, { Item } from "@dusk-network/accordion";
   import RichText from "@dusk-network/rich-text";
   import meta from "../../../meta";
@@ -37,7 +39,7 @@
     </svelte:fragment>
     <svelte:fragment slot="list">
       <Card>
-        <Title><h2>FAQs</h2></Title>
+        <Heading><h2>FAQs</h2></Heading>
         <Content>
           <Accordion>
             <Item title="What is demo mode?">

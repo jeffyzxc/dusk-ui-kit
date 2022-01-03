@@ -1,5 +1,6 @@
 <script>
-  import Card, { Content } from "@dusk-network/card";
+  import Card from "@dusk-network/card";
+  import Content from "@dusk-network/content";
   import Heading from "@dusk-network/heading";
   import Icon from "@dusk-network/icon";
 </script>
