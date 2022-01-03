@@ -1,6 +1,4 @@
 .duk-template-explorer-charts {
-  @apply flex flex-wrap;
-
   &__map,
   &__market-data,
   &__blockchain-data {
