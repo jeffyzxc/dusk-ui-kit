@@ -1,0 +1,5 @@
+.duk-content {
+  &--card {
+    @apply font-light py-5 px-6;
+  }
+}
