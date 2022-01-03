@@ -1,3 +1,5 @@
+/* TODO Refactor @keyframes, transform and animation to styles package tailwind condfig */
+
 .duk-skeleton-loader {
   &__wrapper {
     @apply w-full;
