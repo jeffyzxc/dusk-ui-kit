@@ -6,6 +6,7 @@
   // import { withTests } from "@storybook/addon-jest";
   import Navbar from "../_Navbar.svelte";
   import Footer from "../_Footer.svelte";
+  import Placeholder from "../_Placeholder.svelte";
   import Card, { Content } from "@dusk-network/card";
   import RichText from "@dusk-network/rich-text";
   import Heading from "@dusk-network/heading";
@@ -58,7 +59,8 @@
           </Heading>
         </div>
         <div slot="image">
-          <img src="../wallet-intro.png" alt="Wallet Introduction" />
+          <Placeholder text="Image" width="100%" />
+          <!-- <img src="../wallet-intro.png" alt="Wallet Introduction" /> -->
         </div>
       </Hero>
     </svelte:fragment>
@@ -127,12 +129,15 @@
     <svelte:fragment slot="info-security">
       <Card class="usp__card">
         <Content>
-          <img
+          <!-- <img
             class="usp__image usp__image--security"
             src="../security-icon.png"
             alt="web access"
-          />
-          <Heading align="center" size="lg"><strong>Security</strong></Heading>
+          /> -->
+          <div class="usp__image usp__image--security">
+            <Placeholder text="Image" width="100px" height="100px" />
+          </div>
+          <RichText class="usp__text" size="xxl"><strong>Security</strong></RichText>
           <RichText>
             <p>
               DuskWallet is open-source and secure. With DuskWallet you are your own bank and you
@@ -146,12 +151,15 @@
     <svelte:fragment slot="info-access">
       <Card class="usp__card">
         <Content>
-          <img
+          <!-- <img
             class="usp__image usp__image--access"
             src="../web-access-icon.png"
             alt="web access"
-          />
-          <Heading align="center" size="lg"><strong>Web Access</strong></Heading>
+          /> -->
+          <div class="usp__image usp__image--access">
+            <Placeholder text="Image" height="100px" width="100px" />
+          </div>
+          <RichText class="usp__text" size="xxl"><strong>Web Access</strong></RichText>
           <RichText>
             <p>
               Creating a new wallet is simple and convenient. Get started within minutes, access

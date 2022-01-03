@@ -1,5 +1,7 @@
 .cta__card {
-  @apply flex-grow;
+  @apply h-auto;
+  @apply sm:h-full;
+
   p {
     @apply hidden;
     @apply sm:block;
@@ -11,17 +13,17 @@
   }
 
   .duk-icon--heading {
-    @apply !ml-0;
+    @apply !ml-0 text-black;
   }
 }
 
 .banner-layout {
   @apply grid grid-cols-12 container bg-bottom bg-no-repeat;
   @apply md:bg-right;
-  background-image: url("../wallet-banner-mobile.png");
+  background-image: url("/wallet-banner-mobile.png");
   background-origin: content-box;
   @screen sm {
-    background-image: url("../wallet-banner.png");
+    background-image: url("/wallet-banner.png");
   }
 
   &__wrapper {
@@ -43,7 +45,7 @@
 
 .usp {
   &__card {
-    @apply relative flex-1 flex-grow !shadow-marketing !overflow-visible;
+    @apply relative flex-1 h-full !shadow-marketing !overflow-visible;
 
     .duk-heading {
       @apply !justify-center;
@@ -63,24 +65,21 @@
   }
 
   &__image--security {
-    width: 77px;
+    /* width: 77px; */
     @screen sm {
       width: auto;
     }
   }
 
   &__image--access {
-    width: 100px;
+    /* width: 100px; */
     @screen sm {
       width: auto;
     }
   }
 
-  &__text--first {
-    @apply text-2xl pt-6 font-bold text-center;
-  }
-  &__text--second {
-    @apply text-base font-normal;
+  &__text {
+    @apply text-center mt-12 mb-6;
   }
 }
 
