@@ -12,6 +12,9 @@ export default {
     HEADING: "button:heading",
     MNEMONIC: "button:mnemonic",
   },
+  CONTENT: {
+    CARD: "content:card",
+  },
   CONTROL: {
     SEARCH_LIST: "control:search-list",
   },
