@@ -1,4 +1,5 @@
 <script>
+  // FIXME This needs to be mobile first and support sm, md and lg screens.
   import "./styles.css";
   import variants from "@dusk-network/helpers/variants.js";
 
@@ -22,11 +23,17 @@
    * Sets the animation type to pulse when true.
    */
   export let pulse = false;
+
+  /**
+   * Sets corners to be rounded when true.
+   */
+  export let rounded = false;
 </script>
 
 <div
   class="{$$props.class || ''} duk-skeleton-loader"
   class:duk-skeleton-loader--pulse="{pulse === true}"
+  class:duk-skeleton-loader--rounded="{rounded === true}"
   class:duk-skeleton-loader--loader="{pulse === false}"
   class:duk-skeleton-loader--brand="{variant === variants.SKELETON_LOADER.BRAND}"
   class:duk-skeleton-loader--cta="{variant === variants.SKELETON_LOADER.CTA}"
