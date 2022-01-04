@@ -41,9 +41,7 @@
       <Navbar />
     </svelte:fragment>
     <svelte:fragment slot="balance">
-      <Card>
-        <WalletBalance />
-      </Card>
+      <WalletBalance />
     </svelte:fragment>
     <svelte:fragment slot="address">
       <WalletAddress />
@@ -60,9 +58,7 @@
       <WalletNetwork />
     </svelte:fragment>
     <svelte:fragment slot="token">
-      <Card>
-        <WalletToken />
-      </Card>
+      <WalletToken />
     </svelte:fragment>
     <svelte:fragment slot="footer">
       <Footer />
