@@ -62,6 +62,11 @@
 
   &--hero,
   &--card {
+    @apply pt-5 px-6;
+
+    &:first-child {
+      @apply !mb-0;
+    }
     &:not(:first-child) {
       @apply mt-12;
     }
