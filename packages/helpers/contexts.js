@@ -51,6 +51,7 @@ export default {
   },
   HEADING: {
     CARD: "heading:card",
+    CONTENT: "heading:content",
     DISCLAIMER_LIST: "heading:disclaimer-list",
     HERO: "heading:hero",
   },

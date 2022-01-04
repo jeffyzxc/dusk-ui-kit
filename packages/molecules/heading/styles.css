@@ -1,5 +1,5 @@
 .duk-heading {
-  @apply flex items-center space-x-4;
+  @apply flex items-center space-x-2;
 
   &--left {
     @apply justify-start;
@@ -19,9 +19,9 @@
     @apply flex flex-grow justify-end order-last;
   }
 
-  & > .duk-icon {
+  /* & > .duk-icon {
     @apply block order-first pr-4;
-  }
+  } */
 
   /* & h1 + .duk-icon {
     @apply text-indigo-500;
@@ -38,7 +38,7 @@
   & h3,
   & h4,
   & h5 {
-    @apply text-2xl text-indigo-500 leading-7 order-2;
+    @apply text-2xl text-indigo-500 leading-7;
     @apply dark:text-indigo-100;
   }
 
