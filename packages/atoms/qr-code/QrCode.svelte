@@ -1,7 +1,9 @@
 <script>
   import "./styles.css";
+  import { getContext } from "svelte";
   import * as QRCode from "qrcode";
   import { onMount } from "svelte";
+  import contexts from "@dusk-network/helpers/contexts.js";
 
   /**
    * Value used in generating the QR Code
@@ -27,6 +29,8 @@
    * Sets the alignment of the QR Code
    */
   export let align = "center";
+
+  const context = getContext("DUK:qr-code:context");
 
   let src;
 
@@ -55,6 +59,7 @@
   class:duk-qr-code--left="{align === 'left'}"
   class:duk-qr-code--center="{align === 'center'}"
   class:duk-qr-code--right="{align === 'right'}"
+  class:duk-qr-code--content="{context === contexts.QR_CODE.CONTENT}"
 >
   <img src="{src}" alt="Key QR code" />
 </div>

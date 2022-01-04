@@ -1,5 +1,6 @@
 <script>
-  import Button, { Group } from "@dusk-network/button";
+  import Button from "@dusk-network/button";
+  import Group from "@dusk-network/group";
 </script>
 
 <Group>

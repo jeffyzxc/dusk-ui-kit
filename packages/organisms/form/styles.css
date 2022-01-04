@@ -1,3 +1,11 @@
 .duk-form {
   @apply block;
+
+  &--content {
+    @apply py-5;
+
+    &:first-child {
+      @apply mt-0;
+    }
+  }
 }

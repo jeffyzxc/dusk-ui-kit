@@ -13,7 +13,8 @@
   import TextField from "@dusk-network/text-field";
   import Navbar from "../_Navbar.svelte";
   import Footer from "../_Footer.svelte";
-  import Button, { Label, Group } from "@dusk-network/button";
+  import Button, { Label } from "@dusk-network/button";
+  import Group from "@dusk-network/group";
   import meta from "../../../meta";
   import * as yup from "yup";
 

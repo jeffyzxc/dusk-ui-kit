@@ -28,6 +28,7 @@
   setContext("DUK:icon:context", contexts.ICON.HEADING);
   setContext("DUK:loading-indicator:context", contexts.LOADING_INDICATOR.HEADING);
   setContext("DUK:button:context", contexts.BUTTON.HEADING);
+  setContext("DUK:group:context", contexts.GROUP.HEADING);
 </script>
 
 <div

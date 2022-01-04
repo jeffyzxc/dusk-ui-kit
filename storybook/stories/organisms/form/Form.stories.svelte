@@ -8,7 +8,8 @@
   import PasswordStrength from "@dusk-network/password-strength";
   import Control from "@dusk-network/control";
   import TextField from "@dusk-network/text-field";
-  import Toggle, { Group } from "@dusk-network/toggle";
+  import Toggle from "@dusk-network/toggle";
+  import Group from "@dusk-network/group";
   import FileUpload from "@dusk-network/file-upload";
   import Form from "@dusk-network/form";
   import * as yup from "yup";

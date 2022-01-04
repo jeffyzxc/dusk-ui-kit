@@ -9,7 +9,7 @@
   const formatter = (number) => getNumberFormatter(formatOptions).formatToParts(number);
 
   let balance = {
-    amount: 10000000.68468,
+    amount: 10000000.68468424,
     currency: "DUSK",
   };
 

@@ -3,7 +3,8 @@
   import { types, variants, icons } from "@dusk-network/helpers";
   // import results from "../../../../.jest-test-results.json";
   // import { withTests } from "@storybook/addon-jest";
-  import Toggle, { Group } from "@dusk-network/toggle";
+  import Toggle from "@dusk-network/toggle";
+  import Group from "@dusk-network/group";
   import meta from "../../meta.js";
 </script>
 

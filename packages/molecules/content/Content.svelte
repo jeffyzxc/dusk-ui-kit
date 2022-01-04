@@ -6,6 +6,10 @@
   const context = getContext("DUK:content:context");
 
   setContext("DUK:heading:context", contexts.HEADING.CONTENT);
+  setContext("DUK:group:context", contexts.GROUP.CONTENT);
+  setContext("DUK:address:context", contexts.ADDRESS.CONTENT);
+  setContext("DUK:qr-code:context", contexts.QR_CODE.CONTENT);
+  setContext("DUK:form:context", contexts.FORM.CONTENT);
 </script>
 
 <div

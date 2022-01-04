@@ -1,5 +1,7 @@
 <script>
+  import { getContext } from "svelte";
   import variants from "@dusk-network/helpers/variants.js";
+  import contexts from "@dusk-network/helpers/contexts.js";
   import "./styles.css";
 
   /**
@@ -7,6 +9,8 @@
    * @type {"brand" | "cta" | "info" | "default" | "success" | "warning" | "danger" }
    */
   export let variant;
+
+  const context = getContext("DUK:address:context");
 </script>
 
 <div
@@ -17,6 +21,7 @@
   class:duk-address--success="{variant === variants.ADDRESS.SUCCESS}"
   class:duk-address--warning="{variant === variants.ADDRESS.WARNING}"
   class:duk-address--danger="{variant === variants.ADDRESS.DANGER}"
+  class:duk-address--content="{context === contexts.ADDRESS.CONTENT}"
 >
   <slot />
 </div>

@@ -2,7 +2,8 @@
   import { linkTo } from "@storybook/addon-links";
   import Form from "@dusk-network/form";
   import Control from "@dusk-network/control";
-  import Button, { Label, Group } from "@dusk-network/button";
+  import Button, { Label } from "@dusk-network/button";
+  import Group from "@dusk-network/group";
   import TextField from "@dusk-network/text-field";
   import PasswordStrength from "@dusk-network/password-strength";
   import * as yup from "yup";

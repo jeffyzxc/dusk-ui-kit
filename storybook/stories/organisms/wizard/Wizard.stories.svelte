@@ -5,10 +5,6 @@
   import ProgressBar from "@dusk-network/progress-bar";
   // import results from "../../../../.jest-test-results.json";
   // import { withTests } from "@storybook/addon-jest";
-  // import RichText from "@dusk-network/rich-text";
-  // import Icon from "@dusk-network/icon";
-  // import Heading from "@dusk-network/heading";
-  // import Button, { Group } from "@dusk-network/button";
   import meta from "../../meta";
 </script>
 

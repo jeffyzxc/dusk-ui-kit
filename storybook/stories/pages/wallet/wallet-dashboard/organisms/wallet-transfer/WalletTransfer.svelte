@@ -7,7 +7,8 @@
   import TextField from "@dusk-network/text-field";
   import Icon from "@dusk-network/icon/Icon.svelte";
   import Wizard, { Step } from "@dusk-network/wizard";
-  import Toggle, { Group } from "@dusk-network/toggle";
+  import Toggle from "@dusk-network/toggle";
+  import Group from "@dusk-network/group";
   import DropDown from "@dusk-network/drop-down";
   import Form from "@dusk-network/form";
   import Control from "@dusk-network/control";

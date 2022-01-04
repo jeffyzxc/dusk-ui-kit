@@ -13,7 +13,8 @@
   import Icon from "@dusk-network/icon";
   import TruncateText from "@dusk-network/truncate-text";
   import DateText from "@dusk-network/date-text";
-  import Statistic, { Group } from "@dusk-network/statistic";
+  import Statistic from "@dusk-network/statistic";
+  import Group from "@dusk-network/group";
   import Table, { Row, Datum } from "@dusk-network/table";
   import meta from "../../../meta";
   import { latest } from "./data.js";

@@ -13,6 +13,11 @@
     @apply justify-end;
   }
 
+  a {
+    @apply text-xs font-bold text-indigo-500 text-right uppercase;
+    @apply dark:text-white;
+  }
+
   /* FIXME should really live with the Button styles */
   > .duk-button-wrapper,
   > .duk-button-group {
@@ -28,7 +33,7 @@
     @apply dark:text-indigo-100;
   } */
 
-  & > *:not(button) {
+  & > *:not(button):not(a) {
     @apply text-indigo-500;
     @apply dark:text-indigo-100;
   }
@@ -75,6 +80,10 @@
     }
   }
 
+  &--content {
+    @apply !mb-5;
+  }
+
   &--card {
     > *:not(button) {
       & h1,
@@ -90,22 +99,22 @@
 
   &--success {
     & > *:not(button) {
-      @apply text-green-900;
-      @apply dark:text-green-200;
+      @apply !text-green-900;
+      @apply dark:!text-green-200;
     }
   }
 
   &--warning {
     & > *:not(button) {
-      @apply text-yellow-900;
-      @apply dark:text-yellow-200;
+      @apply !text-yellow-900;
+      @apply dark:!text-yellow-200;
     }
   }
 
   &--danger {
     & > *:not(button) {
-      @apply text-red-900;
-      @apply dark:text-red-200;
+      @apply !text-red-900;
+      @apply dark:!text-red-200;
     }
   }
 }

@@ -3,7 +3,11 @@ export default {
     CARD: "accordion:card",
     RICH_TEXT: "accordion:rich-text",
   },
+  ADDRESS: {
+    CONTENT: "address:content",
+  },
   BREADCRUMB: {
+    CARD: "breadcrumb:card",
     WIZARD: "breadcrumb:wizard",
   },
   BUTTON: {
@@ -38,7 +42,13 @@ export default {
     FORM: "file-upload:form",
   },
   FORM: {
+    CONTENT: "form:content",
     WIZARD: "form:wizard",
+  },
+  GROUP: {
+    CONTENT: "group:content",
+    FORM: "group:form",
+    HEADING: "group:heading",
   },
   ICON: {
     ALERT: "icon:alert",
@@ -82,6 +92,9 @@ export default {
   PROGRESS_BAR: {
     PASSWORD_STRENGTH: "progress-bar:password-strength",
     WIZARD: "progress-bar:wizard",
+  },
+  QR_CODE: {
+    CONTENT: "qr-code:content",
   },
   RICH_TEXT: {
     CARD: "rich-text:card",

@@ -33,6 +33,7 @@
   setContext("DUK:mnemonic:context", contexts.MNEMONIC.CARD);
   setContext("DUK:wizard:context", contexts.WIZARD.CARD);
   setContext("DUK:content:context", contexts.CONTENT.CARD);
+  setContext("DUK:breadcrumb:context", contexts.BREADCRUMB.CARD);
 </script>
 
 {#if href}

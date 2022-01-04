@@ -17,11 +17,13 @@
   },
   "devDependencies": {
     "@dusk-network/button": "workspace:*",
+    "@dusk-network/group": "workspace:*",
     "@dusk-network/helpers": "workspace:*",
     "@dusk-network/text-field": "workspace:*"
   },
   "peerDependencies": {
     "@dusk-network/button": "workspace:*",
+    "@dusk-network/group": "workspace:*",
     "@dusk-network/helpers": "workspace:*",
     "@dusk-network/text-field": "workspace:*"
   },

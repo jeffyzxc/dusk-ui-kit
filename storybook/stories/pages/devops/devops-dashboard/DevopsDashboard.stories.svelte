@@ -5,10 +5,11 @@
   // import results from "../../../../../.jest-test-results.json";
   // import { withTests } from "@storybook/addon-jest";
   import Card from "@dusk-network/card";
-  import Statistic, { Group as StatGroup } from "@dusk-network/statistic";
+  import Statistic from "@dusk-network/statistic";
+  import Group from "@dusk-network/group";
   import Navbar from "../_Navbar.svelte";
   import Footer from "../_Footer.svelte";
-  import Button, { Label, Group } from "@dusk-network/button";
+  import Button, { Label } from "@dusk-network/button";
   import Icon from "@dusk-network/icon";
   import Toggle from "@dusk-network/toggle";
   import Table, { Row, Datum } from "@dusk-network/table";
@@ -62,7 +63,7 @@
       </Card>
     </svelte:fragment>
     <svelte:fragment slot="node-status">
-      <StatGroup cols="{2}">
+      <Group cols="{2}">
         <Statistic title="Total">
           <svelte:fragment slot="icon">
             <Icon name="server" variant="brand" size="xxxl" />
@@ -87,7 +88,7 @@
           </svelte:fragment>
           <p>79</p>
         </Statistic>
-      </StatGroup>
+      </Group>
     </svelte:fragment>
     <svelte:fragment slot="deployed-networks">
       <Table settings="{settings}">

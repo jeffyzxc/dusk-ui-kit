@@ -13,12 +13,13 @@ npm i -D @dusk-network/alert
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/alert/Alert_01.svelte) -->
 <!-- The below code snippet is automatically added from ../../../examples/src/molecules/alert/Alert_01.svelte -->
+
 ```svelte
 <script>
   import Alert from "@dusk-network/alert";
   import Icon from "@dusk-network/icon/Icon.svelte";
   import Button from "@dusk-network/button/Button.svelte";
-  import Group from "@dusk-network/button/Group.svelte";
+  import Group from "@dusk-network/group/Group.svelte";
 
   function onClick() {}
   function onMouseover() {}
@@ -43,4 +44,5 @@ npm i -D @dusk-network/alert
   </div>
 </Alert>
 ```
+
 <!-- MARKDOWN-AUTO-DOCS:END -->

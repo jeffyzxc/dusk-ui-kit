@@ -1,5 +1,6 @@
 <script>
-  import Toggle, { Group } from "@dusk-network/toggle";
+  import Toggle from "@dusk-network/toggle";
+  import Group from "@dusk-network/group";
 
   const type = "button";
   const variant = "brand";

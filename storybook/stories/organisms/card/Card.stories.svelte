@@ -8,7 +8,8 @@
   import RichText from "@dusk-network/rich-text";
   import Icon from "@dusk-network/icon";
   import Heading from "@dusk-network/heading";
-  import Button, { Group } from "@dusk-network/button";
+  import Button from "@dusk-network/button";
+  import Group from "@dusk-network/group";
   import { content, title, footer } from "./data.js";
   import meta from "../../meta.js";
 </script>

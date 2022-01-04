@@ -13,12 +13,14 @@ npm i -D @dusk-network/form
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/organisms/form/Form_01.svelte) -->
 <!-- The below code snippet is automatically added from ../../../examples/src/organisms/form/Form_01.svelte -->
+
 ```svelte
 <script>
   import Button from "@dusk-network/button";
   import Control from "@dusk-network/control";
   import TextField from "@dusk-network/text-field";
-  import Toggle, { Group } from "@dusk-network/toggle";
+  import Toggle from "@dusk-network/toggle";
+  import Group from "@dusk-network/group";
   import FileUpload from "@dusk-network/file-upload";
   import Form from "@dusk-network/form";
 
@@ -168,4 +170,5 @@ npm i -D @dusk-network/form
   </Control>
 </Form>
 ```
+
 <!-- MARKDOWN-AUTO-DOCS:END -->

@@ -3,7 +3,8 @@
   import Card from "@dusk-network/card";
   import Content from "@dusk-network/content";
   import Heading from "@dusk-network/heading";
-  import Button, { Group } from "@dusk-network/button";
+  import Button from "@dusk-network/button";
+  import Group from "@dusk-network/group";
   import Icon from "@dusk-network/icon";
   import RichText from "@dusk-network/rich-text";
   import QrCode from "@dusk-network/qr-code";
@@ -57,7 +58,7 @@
     </svelte:fragment>
     <svelte:fragment slot="button">
       <!-- <h5>REQUEST & AUDIT KEY</h5> -->
-      <Group>
+      <Group align="right">
         <Button
           variant="brand"
           outline="{actionQr}"

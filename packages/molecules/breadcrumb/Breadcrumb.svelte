@@ -20,6 +20,7 @@
 <ul
   class="{$$props.class || ''} duk-breadcrumb"
   class:duk-breadcrumb--wizard="{context === contexts.BREADCRUMB.WIZARD}"
+  class:duk-breadcrumb--card="{context === contexts.BREADCRUMB.CARD}"
 >
   <Item href="{href}" on:click="{handleClick}">
     <Icon class="duk-breadcrumb__back-link" name="backspace-outline" />

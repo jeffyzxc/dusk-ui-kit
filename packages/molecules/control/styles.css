@@ -39,6 +39,10 @@
   }
 
   &--stacked {
+    &:not(:last-child) {
+      @apply pb-0;
+    }
+
     ^&__label {
       @apply mb-1;
     }
