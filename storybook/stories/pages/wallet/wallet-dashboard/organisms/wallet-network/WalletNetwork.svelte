@@ -64,7 +64,7 @@
     </Heading>
     <Content>
       <Group align="between">
-        <DropDown options="{networks}" on:select />
+        <DropDown selectedIndex="{1}" disabled="{true}" options="{networks}" on:select />
         <p>Lastest block# : {lastBlock}</p>
       </Group>
     </Content>

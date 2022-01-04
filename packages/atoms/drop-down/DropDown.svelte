@@ -6,7 +6,7 @@
   import "./styles.css";
 
   /**
-   * Used as an array to hold the dropdown options
+   * Used as an array to hold the DropDown options
    */
   export let options = [];
 
@@ -16,16 +16,20 @@
   export let selectedIndex = 0;
 
   /**
-   * Sets the opened direction of the dropdown to up when true
+   * Sets the opened direction of the DropDown to up when true
    */
   export let dropUp = false;
+
+  /**
+   * Disables to the DropDown when true
+   */
+  export let disabled = false;
 
   const dispatch = createEventDispatcher();
   const context = getContext("DUK:drop-down:context");
 
   let selectedOption = options[selectedIndex];
   let isOpen = false;
-  let disabled = false;
 
   function selectOption(value) {
     selectedOption = value;
@@ -34,20 +38,22 @@
   }
 
   onMount(() => {
-    if (options.length === 0) {
-      disabled = true;
-      selectedOption = "No options";
-    } else {
-      disabled = false;
+    if (!disabled) {
+      if (options.length === 0) {
+        disabled = true;
+        selectedOption = "No options";
+      } else {
+        disabled = false;
+      }
+      selectOption(selectedOption);
     }
-    selectOption(selectedOption);
   });
 </script>
 
 <div
   class="{$$props.class || ''} duk-drop-down"
-  class:duk-drop-down--drop-up="{dropUp}"
-  class:duk-drop-down--disabled="{disabled}"
+  class:duk-drop-down--drop-up="{dropUp === true}"
+  class:duk-drop-down--disabled="{disabled === true}"
   class:duk-drop-down--menu="{context === contexts.DROP_DOWN.MENU}"
 >
   <div class="duk-drop-down__layout">
