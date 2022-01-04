@@ -46,9 +46,7 @@
       </Card>
     </svelte:fragment>
     <svelte:fragment slot="address">
-      <Card>
-        <WalletAddress />
-      </Card>
+      <WalletAddress />
     </svelte:fragment>
     <svelte:fragment slot="transfer">
       <Card>
