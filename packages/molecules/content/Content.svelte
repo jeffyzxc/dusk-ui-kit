@@ -1,9 +1,11 @@
 <script>
   import "./styles.css";
-  import { getContext } from "svelte";
+  import { getContext, setContext } from "svelte";
   import contexts from "@dusk-network/helpers/contexts.js";
 
   const context = getContext("DUK:content:context");
+
+  setContext("DUK:heading:context", contexts.HEADING.CONTENT);
 </script>
 
 <div
