@@ -60,7 +60,7 @@ devDependencies:
   '@dusk-network/button': link:../packages/molecules/button
   '@dusk-network/card': link:../packages/organisms/card
   '@dusk-network/chart': link:../packages/molecules/chart
-  '@dusk-network/content': link:../packages/atoms/content
+  '@dusk-network/content': link:../packages/molecules/content
   '@dusk-network/control': link:../packages/molecules/control
   '@dusk-network/cookie-banner': link:../packages/organisms/cookie-banner
   '@dusk-network/cta-list': link:../packages/molecules/cta-list

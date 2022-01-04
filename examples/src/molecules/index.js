@@ -1,4 +1,5 @@
 import * as Button from "./button";
+import * as Content from "./content";
 import * as Control from "./control";
 import * as Alert from "./alert";
 import * as Breadcrumb from "./breadcrumb";
@@ -12,6 +13,7 @@ import * as Pagination from "./pagination";
 import * as PasswordStrength from "./password-strength";
 export {
   Button,
+  Content,
   Control,
   Alert,
   Breadcrumb,
