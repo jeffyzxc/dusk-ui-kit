@@ -5,6 +5,8 @@ export default {
     LARGE: "lg",
   },
   ICON: {
+    XS: "xs",
+    SMALL: "sm",
     DEFAULT: "default",
     LARGE: "lg",
     XL: "xl",

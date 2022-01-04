@@ -13,7 +13,7 @@
 
   /**
    * Sets the size of the Icon.
-   * @type {"sm" | "lg" | "xl" | "xxl" | "xxxl" }
+   * @type {"xs" | "sm" | "lg" | "xl" | "xxl" | "xxxl" }
    */
   export let size = sizes.ICON.DEFAULT;
 
@@ -51,6 +51,7 @@
     class:duk-icon--success="{variant === variants.ICON.SUCCESS}"
     class:duk-icon--warning="{variant === variants.ICON.WARNING}"
     class:duk-icon--danger="{variant === variants.ICON.DANGER}"
+    class:duk-icon--extra-small="{size === sizes.ICON.XS}"
     class:duk-icon--small="{size === sizes.ICON.SMALL}"
     class:duk-icon--large="{size === sizes.ICON.LARGE}"
     class:duk-icon--xl="{size === sizes.ICON.XL}"
