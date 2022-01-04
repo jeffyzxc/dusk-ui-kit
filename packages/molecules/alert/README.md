@@ -13,7 +13,6 @@ npm i -D @dusk-network/alert
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/molecules/alert/Alert_01.svelte) -->
 <!-- The below code snippet is automatically added from ../../../examples/src/molecules/alert/Alert_01.svelte -->
-
 ```svelte
 <script>
   import Alert from "@dusk-network/alert";
@@ -44,5 +43,4 @@ npm i -D @dusk-network/alert
   </div>
 </Alert>
 ```
-
 <!-- MARKDOWN-AUTO-DOCS:END -->
