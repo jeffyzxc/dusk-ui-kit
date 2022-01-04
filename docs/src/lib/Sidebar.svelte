@@ -12,7 +12,7 @@
 </script>
 
 <Card class="sticky top-5 mb-10">
-  <Heading><h2>{title.slice(0, -1)} Packages</h2></Heading>
+  <Heading size="sm"><h2>{title.slice(0, -1)} Packages</h2></Heading>
   <Content>
     <Menu>
       {#each Object.entries(group) as groupe}

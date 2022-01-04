@@ -14,6 +14,7 @@
     "@dusk-network/default": "workspace:*",
     "@dusk-network/dusk-ui-kit-examples": "workspace:*",
     "@dusk-network/footer": "workspace:*",
+    "@dusk-network/heading": "workspace:*",
     "@dusk-network/helpers": "workspace:*",
     "@dusk-network/icon": "workspace:*",
     "@dusk-network/menu": "workspace:*",
