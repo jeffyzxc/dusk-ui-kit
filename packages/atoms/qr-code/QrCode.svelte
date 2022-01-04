@@ -23,6 +23,11 @@
    */
   export let bgColor = "#fff";
 
+  /**
+   * Sets the alignment of the QR Code
+   */
+  export let align = "center";
+
   let src;
 
   $: width, renderQr();
@@ -45,6 +50,11 @@
   });
 </script>
 
-<div class="{$$props.class || ''} duk-qr-code">
+<div
+  class="{$$props.class || ''} duk-qr-code"
+  class:duk-qr-code--left="{align === 'left'}"
+  class:duk-qr-code--center="{align === 'center'}"
+  class:duk-qr-code--right="{align === 'right'}"
+>
   <img src="{src}" alt="Key QR code" />
 </div>
