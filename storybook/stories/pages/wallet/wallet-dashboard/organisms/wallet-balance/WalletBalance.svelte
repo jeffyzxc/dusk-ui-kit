@@ -1,4 +1,6 @@
 <script>
+  import Card from "@dusk-network/card";
+  import Content from "@dusk-network/content";
   import Heading from "@dusk-network/heading";
   import RichText from "@dusk-network/rich-text";
   import { getNumberFormatter } from "svelte-i18n";
@@ -21,23 +23,23 @@
     .join("");
 </script>
 
-<div class="wallet-balance">
-  <div class="wallet-balance__heading">
-    <Heading class="wallet-balance__heading--text">
-      <h4>Your Balance</h4>
-    </Heading>
-  </div>
-  {#if fractionParts === ""}
-    <RichText>
-      <p class="wallet-balance__amount">
-        {integerParts} <span>{balance.currency}</span>
-      </p>
-    </RichText>
-  {:else}
-    <RichText>
-      <p class="wallet-balance__amount">
-        {integerParts}<span>{fractionParts} {balance.currency}</span>
-      </p>
-    </RichText>
-  {/if}
-</div>
+<Card>
+  <Heading>
+    <h4>Your Balance</h4>
+  </Heading>
+  <Content>
+    {#if fractionParts === ""}
+      <RichText>
+        <p class="wallet-balance">
+          {integerParts} <span>{balance.currency}</span>
+        </p>
+      </RichText>
+    {:else}
+      <RichText>
+        <p class="wallet-balance">
+          {integerParts}<span>{fractionParts} {balance.currency}</span>
+        </p>
+      </RichText>
+    {/if}
+  </Content>
+</Card>
