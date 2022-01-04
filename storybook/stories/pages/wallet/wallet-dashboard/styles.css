@@ -1,5 +1,4 @@
 @import "./organisms/wallet-balance/styles.css";
-@import "./organisms/wallet-network/styles.css";
 @import "./organisms/wallet-token/styles.css";
 @import "./organisms/wallet-transactions/styles.css";
 @import "./organisms/wallet-transfer/styles.css";

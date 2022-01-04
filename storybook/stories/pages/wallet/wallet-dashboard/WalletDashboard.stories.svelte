@@ -57,9 +57,7 @@
       <WalletTransactions transactions="{apiData}" />
     </svelte:fragment>
     <svelte:fragment slot="network">
-      <Card>
-        <WalletNetwork />
-      </Card>
+      <WalletNetwork />
     </svelte:fragment>
     <svelte:fragment slot="token">
       <Card>
