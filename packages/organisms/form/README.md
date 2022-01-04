@@ -13,7 +13,6 @@ npm i -D @dusk-network/form
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../../../examples/src/organisms/form/Form_01.svelte) -->
 <!-- The below code snippet is automatically added from ../../../examples/src/organisms/form/Form_01.svelte -->
-
 ```svelte
 <script>
   import Button from "@dusk-network/button";
@@ -170,5 +169,4 @@ npm i -D @dusk-network/form
   </Control>
 </Form>
 ```
-
 <!-- MARKDOWN-AUTO-DOCS:END -->
