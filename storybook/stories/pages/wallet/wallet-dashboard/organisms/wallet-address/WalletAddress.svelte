@@ -7,21 +7,11 @@
   import Icon from "@dusk-network/icon";
   import RichText from "@dusk-network/rich-text";
   import QrCode from "@dusk-network/qr-code";
+  import { onMount } from "svelte";
 
   let actionQr = false;
   let actionKey = false;
-  let theme = localStorage.getItem("theme");
-
-  $: QRstyles = {
-    dark: {
-      background: "#646464",
-      qr: "#fff",
-    },
-    light: {
-      background: "#fff",
-      qr: "#343434",
-    },
-  };
+  let theme, bgColor, qrColor;
 
   let walletKey =
     "0x66D30033B4E0BAF8970e9c8A0aD1D02Cc3e21115fhkllA9urdrTVbAyQZnwy0JLyvbCVZBHpzfBU87Gy4USFWaA6sZ0";
@@ -31,6 +21,32 @@
   function copyToClipboard() {
     navigator.clipboard.writeText(walletKey);
   }
+
+  function qrTheme() {
+    if (theme === "dark") {
+      qrColor = "#fff";
+      bgColor = "#4c4c4c";
+    } else {
+      qrColor = "#343434";
+      bgColor = "#fff";
+    }
+  }
+
+  onMount(() => {
+    theme = localStorage.getItem("theme");
+    const target = document.documentElement;
+    const callback = function (mutationList) {
+      for (const mutation of mutationList) {
+        if (mutation.type === "attributes") {
+          theme = mutation.target.className;
+          qrTheme();
+        }
+      }
+    };
+    const observer = new MutationObserver(callback);
+    observer.observe(target, { attributes: true });
+    qrTheme();
+  });
 </script>
 
 <Card>
@@ -72,11 +88,7 @@
   </Heading>
   <Content>
     <div style="display: {actionQr === true ? 'block' : 'none'}">
-      <QrCode
-        value="{walletKey}"
-        bgColor="{QRstyles[theme].background}"
-        qrColor="{QRstyles[theme].qr}"
-      />
+      <QrCode value="{walletKey}" bgColor="{bgColor}" qrColor="{qrColor}" />
     </div>
     <div style="display: {actionKey ? 'block' : 'none'}">
       <Heading variant="danger" align="center">
