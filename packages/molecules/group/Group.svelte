@@ -1,0 +1,28 @@
+<script>
+  import { getContext } from "svelte";
+  import contexts from "@dusk-network/helpers/contexts.js";
+  import "./styles.css";
+
+  /**
+   * Sets the alignment of the Group.
+   * @type {"left" | "center" | "right" | "around" | "between" | "evenly"}
+   */
+  export let align = "left";
+
+  const context = getContext("DUK:group:context");
+</script>
+
+<div
+  class="{$$props.class || ''} duk-group"
+  class:duk-group--heading="{context === contexts.GROUP.HEADING}"
+  class:duk-group--content="{context === contexts.GROUP.CONTENT}"
+  class:duk-group--form="{context === contexts.GROUP.FORM}"
+  class:duk-group--left="{align === 'left'}"
+  class:duk-group--center="{align === 'center'}"
+  class:duk-group--right="{align === 'right'}"
+  class:duk-group--around="{align === 'around'}"
+  class:duk-group--between="{align === 'between'}"
+  class:duk-group--evenly="{align === 'evenly'}"
+>
+  <slot />
+</div>

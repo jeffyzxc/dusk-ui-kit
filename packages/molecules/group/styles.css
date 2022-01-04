@@ -1,0 +1,39 @@
+.duk-group {
+  @apply flex items-center justify-between gap-4;
+
+  &--left {
+    @apply justify-start;
+  }
+
+  &--center {
+    @apply justify-center;
+  }
+
+  &--right {
+    @apply justify-end;
+  }
+
+  &--around {
+    @apply justify-around;
+  }
+
+  &--between {
+    @apply justify-between;
+  }
+
+  &--evenly {
+    @apply justify-evenly;
+  }
+
+  &--heading {
+    @apply flex-grow;
+  }
+
+  &--content {
+    @apply py-5;
+  }
+
+  &--form {
+    @apply pt-5;
+  }
+}
