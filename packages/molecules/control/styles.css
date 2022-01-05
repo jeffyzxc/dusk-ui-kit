@@ -53,6 +53,10 @@
   }
 
   &--inline-fixed {
+    &:not(:last-child) {
+      @apply pb-0;
+    }
+
     ^&__wrapper {
       @apply flex w-full justify-center items-center mb-3 text-right;
       @apply md:justify-start;
@@ -68,6 +72,10 @@
   }
 
   &--inline-flex {
+    &:not(:last-child) {
+      @apply pb-0;
+    }
+
     ^&__wrapper {
       @apply flex w-full justify-center items-center mb-3;
       @apply md:justify-start;
