@@ -9,6 +9,11 @@
    */
   export let align = "left";
 
+  /**
+   * Sets the Group to use a Grid layout.
+   */
+  export let grid = false;
+
   const context = getContext("DUK:group:context");
 </script>
 
@@ -23,6 +28,7 @@
   class:duk-group--around="{align === 'around'}"
   class:duk-group--between="{align === 'between'}"
   class:duk-group--evenly="{align === 'evenly'}"
+  class:duk-group--grid="{grid}"
 >
   <slot />
 </div>
