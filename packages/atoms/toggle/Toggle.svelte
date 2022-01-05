@@ -1,4 +1,6 @@
 <script>
+  import { getContext } from "svelte";
+  import contexts from "@dusk-network/helpers/contexts.js";
   import types from "@dusk-network/helpers/types.js";
   import variants from "@dusk-network/helpers/variants.js";
   import Icon from "@dusk-network/icon/Icon.svelte";
@@ -60,10 +62,13 @@
    * Used to set the Off icon of the Toggle switch thumb.
    */
   export let offIcon = "";
+
+  const context = getContext("DUK:toggle:context");
 </script>
 
 <div
   class="{$$props.class || ''} duk-toggle"
+  class:duk-toggle--control="{context === contexts.TOGGLE.CONTROL}"
   class:duk-toggle--brand="{variant === variants.TOGGLE.BRAND}"
   class:duk-toggle--brand-invert="{variant === variants.TOGGLE.BRAND_INVERT}"
   class:duk-toggle--cta="{variant === variants.TOGGLE.CTA}"
