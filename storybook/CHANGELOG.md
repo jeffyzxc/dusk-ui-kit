@@ -1,5 +1,11 @@
 # @dusk-network/storybook
 
+## 4.3.0
+
+### Minor Changes
+
+- 7d390f05: Release 4.3.0
+
 ## 4.2.1
 
 ### Patch Changes
