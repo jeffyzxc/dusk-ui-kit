@@ -20,5 +20,6 @@
   },
   "peerDependencies": {
     "@dusk-network/helpers": "workspace:*"
-  }
+  },
+  "gitHead": "3cf19d721c867ced61ecde6c2a54f98abfeadaa4"
 }
