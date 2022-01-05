@@ -34,6 +34,6 @@
   }
 
   &--form {
-    @apply pt-5;
+    @apply pt-5 px-5;
   }
 }

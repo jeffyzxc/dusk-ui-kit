@@ -45,6 +45,7 @@
 <form
   class="{$$props.class || ''} duk-form"
   class:duk-form--content="{context === contexts.FORM.CONTENT}"
+  class:duk-form--wizard="{context === contexts.FORM.WIZARD}"
   on:submit|preventDefault="{submitHandler}"
   {...$$props}
 >

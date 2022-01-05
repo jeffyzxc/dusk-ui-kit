@@ -19,7 +19,7 @@
   &__controls-wrapper {
     @apply flex items-center;
 
-    & .duk-button-group {
+    & .duk-group {
       @apply flex-grow;
     }
   }
@@ -93,11 +93,12 @@
       }
     }
 
-    .duk-button--control {
+    .duk-button--control,
+    .duk-toggle--control > label {
       @apply border border-solid border-gray-900 border-l-0 rounded-tl-none rounded-bl-none px-5;
       @apply dark:border-gray-100;
 
-      line-height: inherit;
+      line-height: 1.6;
     }
   }
 
@@ -108,7 +109,8 @@
       }
     }
 
-    .duk-button--control {
+    .duk-button--control,
+    .duk-toggle--control > label {
       @apply border border-solid border-gray-900 border-r-0 rounded-tr-none rounded-br-none px-5;
       @apply dark:border-gray-100;
 
@@ -151,9 +153,6 @@
   }
 
   &--group {
-    ^&__label {
-      @apply font-bold;
-    }
     & .duk-toggle-group {
       @apply my-5;
     }
