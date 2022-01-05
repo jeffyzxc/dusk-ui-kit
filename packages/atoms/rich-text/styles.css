@@ -11,6 +11,18 @@
     @apply !prose-lg;
   }
 
+  &--left {
+    @apply text-left;
+  }
+
+  &--right {
+    @apply text-right;
+  }
+
+  &--center {
+    @apply text-center;
+  }
+
   &--hero,
   &--xl {
     @apply !prose-xl;
@@ -23,5 +35,13 @@
   &--card {
     @apply max-w-full;
     @apply lg:prose lg:max-w-full;
+  }
+
+  &--content {
+    @apply my-5;
+
+    &:first-child {
+      @apply mt-0;
+    }
   }
 }

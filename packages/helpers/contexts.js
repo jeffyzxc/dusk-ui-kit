@@ -98,6 +98,7 @@ export default {
   },
   RICH_TEXT: {
     CARD: "rich-text:card",
+    CONTENT: "rich-text:content",
     HERO: "rich-text:hero",
   },
   TEXT_FIELD: {
