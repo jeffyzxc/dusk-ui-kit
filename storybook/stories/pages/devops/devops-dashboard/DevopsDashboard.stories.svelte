@@ -63,7 +63,7 @@
       </Card>
     </svelte:fragment>
     <svelte:fragment slot="node-status">
-      <Group cols="{2}">
+      <Group grid="{true}">
         <Statistic title="Total">
           <svelte:fragment slot="icon">
             <Icon name="server" variant="brand" size="xxxl" />

@@ -5,7 +5,6 @@
   import Content from "@dusk-network/content";
   import Group from "@dusk-network/group";
   import TextField from "@dusk-network/text-field";
-  import RichText from "@dusk-network/rich-text";
   import Form from "@dusk-network/form";
   import Control from "@dusk-network/control";
   import Heading from "@dusk-network/heading";
@@ -68,7 +67,7 @@
       <SearchList data="{data}" fieldButton="{true}" bind:dataSearchResults="{searchResults}">
         {#if searchResults}
           {#each $searchResults as token}
-            <!-- TODO Component needed for this type of list: TokenList-->
+            <!-- TODO Component needed for this type of list: BalanceList or so? -->
             <div class="duk-search-list__item">
               <div class="duk-search-list__item--token">
                 <div class="duk-search-list__item--border">
@@ -76,13 +75,9 @@
                     <img src="{token.image}" alt="symbol" />
                   {/if}
                 </div>
-                <RichText>
-                  <p>{token.token}</p>
-                </RichText>
+                <div>{token.token}</div>
               </div>
-              <RichText>
-                <p>{$number(token.amount, formatOptions)}</p>
-              </RichText>
+              <div>{$number(token.amount, formatOptions)}</div>
             </div>
           {/each}
         {/if}

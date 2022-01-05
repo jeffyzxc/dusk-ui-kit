@@ -65,7 +65,7 @@
       <Card>
         <Content>
           <Search />
-          <Group>
+          <Group grid="{true}">
             <Statistic title="DUSK Price">
               <svelte:fragment slot="icon">
                 <Icon name="dusk-ticker" variant="brand" size="xxxl" />
