@@ -11,7 +11,8 @@
   import RichText from "@dusk-network/rich-text";
   import Icon from "@dusk-network/icon";
   import Heading from "@dusk-network/heading";
-  import Card, { Content } from "@dusk-network/card";
+  import Card from "@dusk-network/card";
+  import Content from "@dusk-network/content";
   import Wizard, { Step } from "@dusk-network/wizard";
   import Toggle from "@dusk-network/toggle";
   import Control from "@dusk-network/control";

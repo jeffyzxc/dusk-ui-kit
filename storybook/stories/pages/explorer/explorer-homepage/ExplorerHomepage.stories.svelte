@@ -4,7 +4,8 @@
   import Template from "@dusk-network/explorer-homepage";
   // import results from "../../../../../.jest-test-results.json";
   // import { withTests } from "@storybook/addon-jest";
-  import Card, { Content } from "@dusk-network/card";
+  import Card from "@dusk-network/card";
+  import Content from "@dusk-network/content";
   import Navbar from "../_Navbar.svelte";
   import Search from "../_Search.svelte";
   import Footer from "../_Footer.svelte";
@@ -12,7 +13,8 @@
   import Icon from "@dusk-network/icon";
   import TruncateText from "@dusk-network/truncate-text";
   import DateText from "@dusk-network/date-text";
-  import Statistic, { Group } from "@dusk-network/statistic";
+  import Statistic from "@dusk-network/statistic";
+  import Group from "@dusk-network/group";
   import Table, { Row, Datum } from "@dusk-network/table";
   import meta from "../../../meta";
   import { latest } from "./data.js";
@@ -63,7 +65,7 @@
       <Card>
         <Content>
           <Search />
-          <Group>
+          <Group grid="{true}">
             <Statistic title="DUSK Price">
               <svelte:fragment slot="icon">
                 <Icon name="dusk-ticker" variant="brand" size="xxxl" />

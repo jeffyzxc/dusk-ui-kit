@@ -19,7 +19,7 @@
   &__controls-wrapper {
     @apply flex items-center;
 
-    & .duk-button-group {
+    & .duk-group {
       @apply flex-grow;
     }
   }
@@ -39,6 +39,10 @@
   }
 
   &--stacked {
+    &:not(:last-child) {
+      @apply pb-0;
+    }
+
     ^&__label {
       @apply mb-1;
     }
@@ -49,6 +53,10 @@
   }
 
   &--inline-fixed {
+    &:not(:last-child) {
+      @apply pb-0;
+    }
+
     ^&__wrapper {
       @apply flex w-full justify-center items-center mb-3 text-right;
       @apply md:justify-start;
@@ -64,6 +72,10 @@
   }
 
   &--inline-flex {
+    &:not(:last-child) {
+      @apply pb-0;
+    }
+
     ^&__wrapper {
       @apply flex w-full justify-center items-center mb-3;
       @apply md:justify-start;
@@ -89,11 +101,12 @@
       }
     }
 
-    .duk-button--control {
+    .duk-button--control,
+    .duk-toggle--control > label {
       @apply border border-solid border-gray-900 border-l-0 rounded-tl-none rounded-bl-none px-5;
       @apply dark:border-gray-100;
 
-      line-height: inherit;
+      line-height: 1.6;
     }
   }
 
@@ -104,7 +117,8 @@
       }
     }
 
-    .duk-button--control {
+    .duk-button--control,
+    .duk-toggle--control > label {
       @apply border border-solid border-gray-900 border-r-0 rounded-tr-none rounded-br-none px-5;
       @apply dark:border-gray-100;
 
@@ -147,9 +161,6 @@
   }
 
   &--group {
-    ^&__label {
-      @apply font-bold;
-    }
     & .duk-toggle-group {
       @apply my-5;
     }

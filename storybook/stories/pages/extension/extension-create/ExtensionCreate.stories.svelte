@@ -3,7 +3,8 @@
   import Template from "@dusk-network/extension-default";
   // import results from "../../../../../.jest-test-results.json";
   // import { withTests } from "@storybook/addon-jest";
-  import Card, { Content } from "@dusk-network/card";
+  import Card from "@dusk-network/card";
+  import Content from "@dusk-network/content";
   import Wizard from "./_Wizard.svelte";
   import Connection from "../_Connection.svelte";
   import Heading from "./_Heading.svelte";

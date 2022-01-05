@@ -1,8 +1,12 @@
 <script>
   import Breadcrumb, { Item } from "@dusk-network/breadcrumb";
-  import DropDown from "@dusk-network/drop-down/DropDown.svelte";
-  import Button from "@dusk-network/button/Button.svelte";
-  import TextField from "@dusk-network/text-field/TextField.svelte";
+  import DropDown from "@dusk-network/drop-down";
+  import Button from "@dusk-network/button";
+  import Icon from "@dusk-network/icon";
+  import Group from "@dusk-network/group";
+  import Card from "@dusk-network/card";
+  import Content from "@dusk-network/content";
+  import TextField from "@dusk-network/text-field";
   import RichText from "@dusk-network/rich-text";
   import Form from "@dusk-network/form";
   import Control from "@dusk-network/control";
@@ -41,82 +45,82 @@
   }
 </script>
 
-<div class="wallet-network">
+<Card>
   {#if !addCustom}
-    <div class="wallet-network__connected">
-      <div class="header">
-        <div class="header__heading">
-          <Heading class="header__heading--text-first">
-            <h4>Connected Network</h4>
-          </Heading>
-        </div>
-        <div on:click="{() => (addCustom = true)}">
-          <RichText>
-            <p class="header__heading--text-second">+ CUSTOM NET</p>
-          </RichText>
-        </div>
-      </div>
-      <div class="wallet-network__connected--block">
-        <div>
-          <DropDown options="{networks}" on:select />
-        </div>
-        <div>
-          <p>Lastest block# : {lastBlock}</p>
-        </div>
-      </div>
-    </div>
+    <Heading>
+      <h4>Connected Network</h4>
+      <svelte:fragment slot="button">
+        <Group align="right">
+          <a
+            href="javascript:;"
+            on:click="{() => {
+              addCustom = true;
+            }}"
+          >
+            + Add Network
+          </a>
+        </Group>
+      </svelte:fragment>
+    </Heading>
+    <Content>
+      <Group align="between">
+        <DropDown selectedIndex="{1}" disabled="{true}" options="{networks}" on:select />
+        <p>Lastest block# : {lastBlock}</p>
+      </Group>
+    </Content>
   {:else}
-    <div class="wallet-network__custom">
-      <Breadcrumb on:exit="{returnToList}">
-        <Item>
-          <div>Add Custom Network</div>
-        </Item>
-      </Breadcrumb>
-      <div class="disclaimer">
+    <Breadcrumb on:exit="{returnToList}">
+      <Item>
+        <div>Add Network</div>
+      </Item>
+    </Breadcrumb>
+    <Content>
+      <Heading variant="danger" align="center">
+        <svelte:fragment slot="icon">
+          <Icon name="alert-outline" />
+        </svelte:fragment>
+        <h4>Warning</h4>
+      </Heading>
+      <RichText>
         <p>
           A malicious network provider can lie about the state of the blockchain and record your
           network activity. Only add custom network you trust.
         </p>
-      </div>
+      </RichText>
       <Form
         submitted="{submitted}"
         schema="{schema}"
         fields="{fields}"
         submitHandler="{formSubmit}"
       >
-        <div class="custom-network">
-          <Control width="full" name="networkName" let:id let:state>
-            <TextField
-              bind:value="{fields.networkName}"
-              state="base"
-              type="text"
-              placeholder="Network name"
-            />
-          </Control>
-          <Control width="full" name="rpcUrl" let:id let:state>
-            <TextField
-              bind:value="{fields.rpcUrl}"
-              state="base"
-              type="text"
-              placeholder="New RPC URL"
-            />
-          </Control>
-          <Control width="full" name="chainId" let:id let:state>
-            <TextField
-              bind:value="{fields.chainId}"
-              state="base"
-              type="text"
-              placeholder="Chain ID"
-            />
-          </Control>
-        </div>
-        <div class="save">
-          <Button variant="brand" block="{true}" size="base" type="submit">Save</Button>
-        </div>
-        <div class="save-mobile">
-          <Button variant="brand" size="base" type="submit">Save</Button>
-        </div>
+        <Control width="full" name="networkName" let:id let:state>
+          <TextField
+            bind:value="{fields.networkName}"
+            state="base"
+            type="text"
+            placeholder="Network name"
+          />
+        </Control>
+        <Control width="full" name="rpcUrl" let:id let:state>
+          <TextField
+            bind:value="{fields.rpcUrl}"
+            state="base"
+            type="text"
+            placeholder="New RPC URL"
+          />
+        </Control>
+        <Control width="full" name="chainId" let:id let:state>
+          <TextField
+            bind:value="{fields.chainId}"
+            state="base"
+            type="text"
+            placeholder="Chain ID"
+          />
+        </Control>
+        <Group align="center">
+          <Button variant="brand" size="lg" type="submit">Save</Button>
+        </Group>
       </Form>
-    </div>
+    </Content>
   {/if}
-</div>
+</Card>

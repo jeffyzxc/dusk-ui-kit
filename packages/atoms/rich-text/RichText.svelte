@@ -17,6 +17,12 @@
    */
   export let size = sizes.RICH_TEXT.DEFAULT;
 
+  /**
+   * Sets the alignment of the Rich Text.
+   * @type {"left" | "center" | "right" }
+   */
+  export let align = "left";
+
   const context = getContext("DUK:rich-text:context");
   setContext("DUK:accordion:context", contexts.ACCORDION.RICH_TEXT);
 </script>
@@ -29,6 +35,10 @@
   class:duk-rich-text--xxl="{size === sizes.RICH_TEXT.XXL}"
   class:duk-rich-text--hero="{context === contexts.RICH_TEXT.HERO}"
   class:duk-rich-text--card="{context === contexts.RICH_TEXT.CARD}"
+  class:duk-rich-text--content="{context === contexts.RICH_TEXT.CONTENT}"
+  class:duk-rich-text--left="{align === 'left'}"
+  class:duk-rich-text--center="{align === 'center'}"
+  class:duk-rich-text--right="{align === 'right'}"
 >
   {#if markdown}
     {@html marked.parse(markdown)}

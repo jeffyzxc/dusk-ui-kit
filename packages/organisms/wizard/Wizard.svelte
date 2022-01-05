@@ -5,6 +5,7 @@
   import Item from "@dusk-network/breadcrumb/Item.svelte";
   import { key } from "./key.js";
   import { createContext } from "./context.js";
+  import { onMount } from "svelte";
   import "./styles.css";
 
   /**
@@ -44,6 +45,12 @@
       step.decrement();
     }
   };
+
+  $: $step, dispatch("step", $step);
+
+  onMount(() => {
+    dispatch("step", $step);
+  });
 </script>
 
 <div

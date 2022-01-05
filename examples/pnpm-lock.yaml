@@ -8,6 +8,7 @@ specifiers:
   '@dusk-network/button': workspace:*
   '@dusk-network/card': workspace:*
   '@dusk-network/chart': workspace:*
+  '@dusk-network/content': workspace:*
   '@dusk-network/control': workspace:*
   '@dusk-network/cookie-banner': workspace:*
   '@dusk-network/cta-list': workspace:*
@@ -26,6 +27,7 @@ specifiers:
   '@dusk-network/file-upload': workspace:*
   '@dusk-network/footer': workspace:*
   '@dusk-network/form': workspace:*
+  '@dusk-network/group': workspace:*
   '@dusk-network/heading': workspace:*
   '@dusk-network/helpers': workspace:*
   '@dusk-network/hero': workspace:*
@@ -59,6 +61,7 @@ devDependencies:
   '@dusk-network/button': link:../packages/molecules/button
   '@dusk-network/card': link:../packages/organisms/card
   '@dusk-network/chart': link:../packages/molecules/chart
+  '@dusk-network/content': link:../packages/molecules/content
   '@dusk-network/control': link:../packages/molecules/control
   '@dusk-network/cookie-banner': link:../packages/organisms/cookie-banner
   '@dusk-network/cta-list': link:../packages/molecules/cta-list
@@ -77,6 +80,7 @@ devDependencies:
   '@dusk-network/file-upload': link:../packages/molecules/file-upload
   '@dusk-network/footer': link:../packages/organisms/footer
   '@dusk-network/form': link:../packages/organisms/form
+  '@dusk-network/group': link:../packages/molecules/group
   '@dusk-network/heading': link:../packages/molecules/heading
   '@dusk-network/helpers': link:../packages/helpers
   '@dusk-network/hero': link:../packages/organisms/hero

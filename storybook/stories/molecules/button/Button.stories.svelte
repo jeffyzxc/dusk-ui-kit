@@ -4,7 +4,8 @@
   import { variants, sizes, icons } from "@dusk-network/helpers";
   // import results from "../../../../.jest-test-results.json";
   // import { withTests } from "@storybook/addon-jest";
-  import Button, { Label, Group } from "@dusk-network/button";
+  import Button, { Label } from "@dusk-network/button";
+  import Group from "@dusk-network/group";
   import Icon from "@dusk-network/icon";
   import meta from "../../meta.js";
 </script>

@@ -6,7 +6,6 @@
   // import { withTests } from "@storybook/addon-jest";
   import Navbar from "../_Navbar.svelte";
   import Footer from "../_Footer.svelte";
-  import Card from "@dusk-network/card/Card.svelte";
   import WalletAddress from "./organisms/wallet-address/WalletAddress.svelte";
   import WalletTransfer from "./organisms/wallet-transfer/WalletTransfer.svelte";
   import WalletTransactions from "./organisms/wallet-transactions/WalletTransactions.svelte";
@@ -41,32 +40,22 @@
       <Navbar />
     </svelte:fragment>
     <svelte:fragment slot="balance">
-      <Card>
-        <WalletBalance />
-      </Card>
+      <WalletBalance />
     </svelte:fragment>
     <svelte:fragment slot="address">
-      <Card>
-        <WalletAddress />
-      </Card>
+      <WalletAddress />
     </svelte:fragment>
     <svelte:fragment slot="transfer">
-      <Card>
-        <WalletTransfer />
-      </Card>
+      <WalletTransfer />
     </svelte:fragment>
     <svelte:fragment slot="transaction">
       <WalletTransactions transactions="{apiData}" />
     </svelte:fragment>
     <svelte:fragment slot="network">
-      <Card>
-        <WalletNetwork />
-      </Card>
+      <WalletNetwork />
     </svelte:fragment>
     <svelte:fragment slot="token">
-      <Card>
-        <WalletToken />
-      </Card>
+      <WalletToken />
     </svelte:fragment>
     <svelte:fragment slot="footer">
       <Footer />

@@ -73,5 +73,6 @@
 
   &--disabled {
     @apply pointer-events-none opacity-60;
+    @apply hover:cursor-not-allowed;
   }
 }

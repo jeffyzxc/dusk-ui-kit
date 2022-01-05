@@ -18,7 +18,7 @@ npm i -D @dusk-network/alert
   import Alert from "@dusk-network/alert";
   import Icon from "@dusk-network/icon/Icon.svelte";
   import Button from "@dusk-network/button/Button.svelte";
-  import Group from "@dusk-network/button/Group.svelte";
+  import Group from "@dusk-network/group/Group.svelte";
 
   function onClick() {}
   function onMouseover() {}

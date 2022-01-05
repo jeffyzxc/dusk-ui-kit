@@ -10,7 +10,8 @@
   import TextField from "@dusk-network/text-field";
   import Logo from "../_Logo.svelte";
   import Icon from "@dusk-network/icon";
-  import Button, { Group, Label } from "@dusk-network/button";
+  import Button, { Label } from "@dusk-network/button";
+  import Group from "@dusk-network/group";
   import meta from "../../../meta";
   import { VIEWPORTS } from "../viewports.js";
   import * as yup from "yup";

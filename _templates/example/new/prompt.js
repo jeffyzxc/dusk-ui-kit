@@ -2,17 +2,17 @@ module.exports = [
     {
       type: 'select',
       name: 'type',
-      message: "What is the component type?",
+      message: "What type of component is in the example?",
       choices: ['atoms', 'molecules', 'organisms']
     },
     {
       type: 'input',
       name: 'name',
-      message: "What is the component name?"
+      message: "What component is the example demonstrating? e.g. Button"
     },
     {
       type: 'input',
       name: 'Name',
-      message: "What is the component file name?"
+      message: "What should the example file name be? e.g. Button_01"
     },
   ]

@@ -1,7 +1,8 @@
 <script>
   import { linkTo } from "@storybook/addon-links";
   // import { action } from "@storybook/addon-actions";
-  import Button, { Group } from "@dusk-network/button";
+  import Button from "@dusk-network/button";
+  import Group from "@dusk-network/group";
   import Wizard, { Step } from "@dusk-network/wizard";
   import Mnemonic from "@dusk-network/mnemonic";
   import Heading from "@dusk-network/heading";

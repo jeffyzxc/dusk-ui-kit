@@ -7,7 +7,8 @@
   import Heading from "@dusk-network/heading";
   import RichText from "@dusk-network/rich-text";
   import Logo from "../_Logo.svelte";
-  import Button, { Label, Group } from "@dusk-network/button";
+  import Button, { Label } from "@dusk-network/button";
+  import Group from "@dusk-network/group";
   import { VIEWPORTS } from "../viewports.js";
   import meta from "../../../meta";
 </script>

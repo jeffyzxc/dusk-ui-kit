@@ -1,4 +1,5 @@
 <script>
+  // FIXME This needs to be mobile first and support sm, md and lg screens.
   import "./styles.css";
   import variants from "@dusk-network/helpers/variants.js";
 
@@ -9,9 +10,39 @@
   export let variant;
 
   /**
-   * Sets the height of the skeleton loader.
+   * Sets the default height of the skeleton loader.
    */
   export let height = "100%";
+
+  /**
+   * Sets the height of the skeleton loader on an extra small screen.
+   */
+  export let extraSmallScreenHeight = "100%";
+
+  /**
+   * Sets the height of the skeleton loader on a small screen.
+   */
+  export let smallScreenHeight = "100%";
+
+  /**
+   * Sets the height of the skeleton loader on a medium screen.
+   */
+  export let mediumScreenHeight = "100%";
+
+  /**
+   * Sets the height of the skeleton loader on a large screen.
+   */
+  export let largeScreenHeight = "100%";
+
+  /**
+   * Sets the height of the skeleton loader on an extra large screen.
+   */
+  export let extraLargeScreenHeight = "100%";
+
+  /**
+   * Sets the height of the skeleton loader on a jumbo screen.
+   */
+  export let jumboScreenHeight = "100%";
 
   /**
    * Sets the width of the skeleton loader.
@@ -22,11 +53,17 @@
    * Sets the animation type to pulse when true.
    */
   export let pulse = false;
+
+  /**
+   * Sets corners to be rounded when true.
+   */
+  export let rounded = false;
 </script>
 
 <div
   class="{$$props.class || ''} duk-skeleton-loader"
   class:duk-skeleton-loader--pulse="{pulse === true}"
+  class:duk-skeleton-loader--rounded="{rounded === true}"
   class:duk-skeleton-loader--loader="{pulse === false}"
   class:duk-skeleton-loader--brand="{variant === variants.SKELETON_LOADER.BRAND}"
   class:duk-skeleton-loader--cta="{variant === variants.SKELETON_LOADER.CTA}"
@@ -36,6 +73,9 @@
   class:duk-skeleton-loader--danger="{variant === variants.SKELETON_LOADER.DANGER}"
 >
   <div class="duk-skeleton-loader__wrapper">
-    <div style="height:{height}; width:{width}" class="duk-skeleton-loader__placeholder"></div>
+    <div
+      style="--height:{height};--xs-height:{extraSmallScreenHeight};--sm-height:{smallScreenHeight};--md-height:{mediumScreenHeight};--lg-height:{largeScreenHeight};--xl-height:{extraLargeScreenHeight};--jumbo-height:{jumboScreenHeight};width:{width}"
+      class="duk-skeleton-loader__placeholder"
+    ></div>
   </div>
 </div>

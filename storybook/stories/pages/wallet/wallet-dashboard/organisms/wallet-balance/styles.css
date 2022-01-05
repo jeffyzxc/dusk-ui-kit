@@ -1,27 +1,14 @@
+/* TODO Do we need a component for displaying a balance? This may become more useful in the future. */
 .wallet-balance {
-  @apply px-6 pt-2 pb-px;
+  @apply text-2xl font-normal;
+  @apply xs:text-3xl;
+  @apply lg:text-4xl;
+
   p,
   span {
-    @apply text-indigo-500;
+    @apply text-sm font-normal text-indigo-500;
     @apply dark:text-white;
-  }
-
-  &__amount {
-    @apply text-4xl font-normal;
-
-    span {
-      @apply text-xl font-normal;
-    }
-  }
-
-  &__heading {
-    h4 {
-      @apply text-indigo-500 text-xl font-normal;
-      @apply dark:text-indigo-200;
-    }
-
-    &--text {
-      @apply !mb-0;
-    }
+    @apply sm:text-lg;
+    @apply lg:text-xl;
   }
 }

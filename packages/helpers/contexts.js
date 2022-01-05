@@ -3,7 +3,11 @@ export default {
     CARD: "accordion:card",
     RICH_TEXT: "accordion:rich-text",
   },
+  ADDRESS: {
+    CONTENT: "address:content",
+  },
   BREADCRUMB: {
+    CARD: "breadcrumb:card",
     WIZARD: "breadcrumb:wizard",
   },
   BUTTON: {
@@ -11,6 +15,9 @@ export default {
     HERO: "button:hero",
     HEADING: "button:heading",
     MNEMONIC: "button:mnemonic",
+  },
+  CONTENT: {
+    CARD: "content:card",
   },
   CONTROL: {
     SEARCH_LIST: "control:search-list",
@@ -35,7 +42,13 @@ export default {
     FORM: "file-upload:form",
   },
   FORM: {
+    CONTENT: "form:content",
     WIZARD: "form:wizard",
+  },
+  GROUP: {
+    CONTENT: "group:content",
+    FORM: "group:form",
+    HEADING: "group:heading",
   },
   ICON: {
     ALERT: "icon:alert",
@@ -48,6 +61,7 @@ export default {
   },
   HEADING: {
     CARD: "heading:card",
+    CONTENT: "heading:content",
     DISCLAIMER_LIST: "heading:disclaimer-list",
     HERO: "heading:hero",
   },
@@ -79,8 +93,12 @@ export default {
     PASSWORD_STRENGTH: "progress-bar:password-strength",
     WIZARD: "progress-bar:wizard",
   },
+  QR_CODE: {
+    CONTENT: "qr-code:content",
+  },
   RICH_TEXT: {
     CARD: "rich-text:card",
+    CONTENT: "rich-text:content",
     HERO: "rich-text:hero",
   },
   TEXT_FIELD: {

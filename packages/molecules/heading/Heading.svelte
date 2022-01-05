@@ -17,6 +17,10 @@
    */
   export let variant = variants.HEADING.DEFAULT;
 
+  /**
+   * Sets the alignment of the Heading.
+   * @type { "left" | "center" | "right" }
+   */
   export let align = "left";
 
   const context = getContext("DUK:heading:context");
@@ -24,12 +28,14 @@
   setContext("DUK:icon:context", contexts.ICON.HEADING);
   setContext("DUK:loading-indicator:context", contexts.LOADING_INDICATOR.HEADING);
   setContext("DUK:button:context", contexts.BUTTON.HEADING);
+  setContext("DUK:group:context", contexts.GROUP.HEADING);
 </script>
 
 <div
   class="{$$props.class || ''} duk-heading"
   class:duk-heading--card="{context === contexts.HEADING.CARD}"
   class:duk-heading--hero="{context === contexts.HEADING.HERO}"
+  class:duk-heading--content="{context === contexts.HEADING.CONTENT}"
   class:duk-heading--disclaimer-list="{context === contexts.HEADING.DISCLAIMER_LIST}"
   class:duk-heading--small="{size === sizes.HEADING.SMALL}"
   class:duk-heading--large="{size === sizes.HEADING.LARGE}"
@@ -40,7 +46,8 @@
   class:duk-heading--center="{align === 'center'}"
   class:duk-heading--right="{align === 'right'}"
 >
-  <slot />
   <slot name="icon" />
+  <slot />
+  <slot name="help" />
   <slot name="button" />
 </div>

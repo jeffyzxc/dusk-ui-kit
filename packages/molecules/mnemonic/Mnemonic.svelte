@@ -6,8 +6,8 @@
   import { words, compared, shuffled } from "./stores/words.js";
   import { options } from "./stores/options.js";
   import Word from "./Word.svelte";
-  import Button from "@dusk-network/button/Button.svelte";
-  import Group from "@dusk-network/button/Group.svelte";
+  import Button from "@dusk-network/button";
+  import Group from "@dusk-network/group";
   import "./styles.css";
 
   /**
@@ -37,13 +37,13 @@
   setContext("DUK:button:context", contexts.BUTTON.MNEMONIC);
 
   $: isFilled($compared);
-
   $: options.update({ type: type });
 
   onMount(() => {
     words.set(seed);
     options.set({ type: type });
   });
+
   onDestroy(() => {
     words.set([]);
     compared.set([]);
