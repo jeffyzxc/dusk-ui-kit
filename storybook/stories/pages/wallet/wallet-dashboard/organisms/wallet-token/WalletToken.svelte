@@ -49,7 +49,7 @@
 
 <Card>
   {#if !addCustom}
-    <Heading class="header__heading--text-first">
+    <Heading>
       <h4>Add Token</h4>
       <svelte:fragment slot="button">
         <Group align="right">
@@ -68,6 +68,7 @@
       <SearchList data="{data}" fieldButton="{true}" bind:dataSearchResults="{searchResults}">
         {#if searchResults}
           {#each $searchResults as token}
+            <!-- TODO Component needed for this type of list: TokenList-->
             <div class="duk-search-list__item">
               <div class="duk-search-list__item--token">
                 <div class="duk-search-list__item--border">
@@ -90,7 +91,7 @@
   {:else}
     <Breadcrumb on:exit="{returnToList}">
       <Item>
-        <div>Add Token</div>
+        <h4>Add Token</h4>
       </Item>
     </Breadcrumb>
     <Content>

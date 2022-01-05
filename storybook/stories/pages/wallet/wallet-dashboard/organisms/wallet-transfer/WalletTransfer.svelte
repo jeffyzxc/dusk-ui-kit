@@ -2,6 +2,8 @@
   import Address from "@dusk-network/address";
   import LoadingIndicator from "@dusk-network/loading-indicator";
   import Heading from "@dusk-network/heading";
+  import Card from "@dusk-network/card";
+  import Content from "@dusk-network/content";
   import RichText from "@dusk-network/rich-text";
   import Button, { Label } from "@dusk-network/button";
   import TextField from "@dusk-network/text-field";
@@ -47,7 +49,7 @@
   let submitted = false;
   let maskAmount = "";
   let fields = {
-    crypto: "",
+    crypto: "DUSK",
     address: "",
     amount: 0,
     priority: "Normal",
@@ -99,206 +101,155 @@
   const formatOptions = { minimumFractionDigits: 0, maximumFractionDigits: 10 };
 </script>
 
-<div class="wallet-transfer">
-  <div class="wallet-transfer__cta" class:visible="{isTransfer === false}">
-    <Button
-      variant="success"
-      size="lg"
-      class="wallet-transfer__cta-button"
-      block="{true}"
-      on:click="{() => (isTransfer = true)}"
-    >
-      <Icon size="lg" name="arrow-right-circle" />
-      <p>TRANSFER</p>
-    </Button>
-  </div>
-  <div class="wallet-transfer__block" class:visible="{isTransfer === true}">
-    <Wizard stepCount="{noOfSteps}" on:exit="{() => (isTransfer = false)}">
-      <Step number="{1}" let:next>
-        <Form
-          submitted="{submitted}"
-          fields="{fields}"
-          schema="{schema}"
-          submitHandler="{() => {
-            submitted = true;
-            maskAmount === '' || maskAmount === null
-              ? (fields.amount = 0)
-              : (fields.amount = maskAmount);
+<Card>
+  <Content>
+    <div style="display: {isTransfer === false ? 'block' : 'none'}">
+      <Button variant="success" size="lg" block="{true}" on:click="{() => (isTransfer = true)}">
+        <Icon size="lg" name="arrow-right-circle" />
+        <p>TRANSFER</p>
+      </Button>
+    </div>
+    <div style="display: {isTransfer === true ? 'block' : 'none'}">
+      <Wizard stepCount="{noOfSteps}" on:exit="{() => (isTransfer = false)}">
+        <Step number="{1}" let:next>
+          <Form
+            submitted="{submitted}"
+            fields="{fields}"
+            schema="{schema}"
+            submitHandler="{() => {
+              submitted = true;
+              maskAmount === '' || maskAmount === null
+                ? (fields.amount = 0)
+                : (fields.amount = maskAmount);
 
-            if (schema.isValidSync(fields)) {
-              next();
-            }
-          }}"
-        >
-          <div class="send">
-            <RichText>
-              <p class="wallet-transfer__text">Send</p>
-            </RichText>
-            <DropDown
-              options="{cryptoType}"
-              on:select="{(e) => {
-                fields.crypto = e.detail;
-              }}"
-            />
-          </div>
-          <div class="to">
-            <RichText>
-              <p class="wallet-transfer__text">To</p>
-            </RichText>
-            <Control width="full" name="address" let:id let:state>
+              if (schema.isValidSync(fields)) {
+                next();
+              }
+            }}"
+          >
+            <Control width="full" label="Send" name="crypto" let:id>
+              <DropDown
+                id="{id}"
+                disabled="{true}"
+                options="{cryptoType}"
+                on:select="{(e) => {
+                  fields.crypto = e.detail;
+                }}"
+              />
+            </Control>
+            <Control width="full" label="Recipient address" name="address" let:id>
               <TextField
+                id="{id}"
                 bind:value="{fields.address}"
-                class="to__textarea"
-                state="base"
-                type="multi"
+                multiline="{true}"
                 placeholder="Enter recipient address."
               />
             </Control>
-          </div>
-          <div class="amount">
-            <div class="amount--first">
-              <RichText>
-                <p class="wallet-transfer__text">Amount</p>
-              </RichText>
-            </div>
-            <div class="amount--second">
-              <Control width="full" name="amount" let:id let:state>
-                <div class="amount__block">
-                  <div class="amount__block--first">
-                    <TextField
-                      state="base"
-                      class="amount__amount"
-                      type="text"
-                      bind:value="{maskAmount}"
-                    />
-                  </div>
-                  <div class="amount__block--second">
-                    <Toggle
-                      type="button"
-                      name="set_amount"
-                      id="amount"
-                      value="{availableBalance}"
-                      bind:group="{isAllBalance}"
-                      on:click="{setAmountAll}">All</Toggle
-                    >
-                  </div>
-                </div>
-                <p class="wallet-transfer__text--first">
-                  The amount of {fields.crypto} you're sending is equivalent to $USD
-                  <span>{$number(evalCurrency, formatOptions)}</span>
-                </p>
-              </Control>
-            </div>
-          </div>
-          <div class="priority">
-            <div class="priority--first">
-              <RichText>
-                <p class="wallet-transfer__text">Priority</p>
-              </RichText>
-            </div>
-            <div class="priority--second">
-              <div>
-                <Group>
-                  {#each priorities as priority}
-                    <Toggle
-                      type="button"
-                      name="priority"
-                      id="priority_{priority.id}"
-                      value="{priority.type}"
-                      bind:group="{fields.priority}"
-                    >
-                      {priority.type}
-                    </Toggle>
-                  {/each}
-                </Group>
-              </div>
-            </div>
-          </div>
-          <div class="proceed">
-            <Button variant="cta" size="lg" type="submit">Sign & Proceed</Button>
-          </div>
-          <div class="details">
-            <div class="details--first">
-              <table class="details__table">
-                <tr>
-                  <td>Gas Price</td>
-                  <td>10 nDusk</td>
-                </tr>
-                <tr>
-                  <td>Transaction Fee</td>
-                  <td
-                    >{$number(transactionFee, formatOptions)} DUSK - $USD {$number(
-                      convertedTransactionFee,
-                      formatOptions,
-                    )}</td
+            <Control
+              width="full"
+              label="Amount"
+              name="amount"
+              message="The amount of {fields.crypto} you're sending is equivalent to $USD {$number(
+                evalCurrency,
+                formatOptions,
+              )}"
+              let:id
+            >
+              <TextField id="{id}" bind:value="{maskAmount}" />
+              <Toggle
+                slot="buttonPostfix"
+                type="button"
+                name="set_amount"
+                id="amount"
+                value="{availableBalance}"
+                bind:group="{isAllBalance}"
+                on:click="{setAmountAll}">All</Toggle
+              >
+            </Control>
+            <Control width="full" label="Priority" group="{true}" name="priority">
+              <Group>
+                {#each priorities as priority}
+                  <Toggle
+                    type="button"
+                    name="priority"
+                    id="priority_{priority.id}"
+                    value="{priority.type}"
+                    bind:group="{fields.priority}"
                   >
-                </tr>
-                <tr>
-                  <td>Remaining Balance</td>
-                  <td
-                    >{$number(remainingBalance, formatOptions)} DUSK - $USD {$number(
-                      convertedBalance,
-                      formatOptions,
-                    )}</td
-                  >
-                </tr>
-              </table>
-            </div>
-          </div>
-          <div class="proceed-mobile">
-            <Button variant="cta" size="lg" type="submit">Sign & Proceed</Button>
-          </div>
-        </Form>
-      </Step>
-      <Step number="{2}" let:next let:previous>
-        <div class="prepare">
+                    {priority.type}
+                  </Toggle>
+                {/each}
+              </Group>
+            </Control>
+            <Group>
+              <Button variant="cta" size="lg" type="submit">Sign & Proceed</Button>
+            </Group>
+          </Form>
+          <RichText>
+            <table>
+              <tr>
+                <td>Gas Price</td>
+                <td>10 nDusk</td>
+              </tr>
+              <tr>
+                <td>Transaction Fee</td>
+                <td
+                  >{$number(transactionFee, formatOptions)} DUSK - $USD {$number(
+                    convertedTransactionFee,
+                    formatOptions,
+                  )}</td
+                >
+              </tr>
+              <tr>
+                <td>Remaining Balance</td>
+                <td
+                  >{$number(remainingBalance, formatOptions)} DUSK - $USD {$number(
+                    convertedBalance,
+                    formatOptions,
+                  )}</td
+                >
+              </tr>
+            </table>
+          </RichText>
+        </Step>
+        <Step number="{2}" let:next let:previous>
           {#if !preparingTransaction}
-            <div class="prepare__amount">
-              <RichText>
-                <p class="wallet-transfer__text">You are going to send:</p>
-              </RichText>
-              <RichText size="xxl">
-                <p class="wallet-transfer__text--second">
-                  {$number(maskAmount, formatOptions)} DUSK
-                </p>
-              </RichText>
-            </div>
-            <div class="prepare__from">
-              <RichText>
-                <p class="wallet-transfer__text">From (stealth address):</p>
-              </RichText>
-              <Address>
-                <p>{walletAddress}</p>
-              </Address>
-            </div>
-            <div class="prepare__to">
-              <RichText>
-                <p class="wallet-transfer__text">To:</p>
-              </RichText>
-              <Address variant="brand">
-                <p>{fields.address}</p>
-              </Address>
-            </div>
+            <Heading align="center">
+              <h4>You are going to send</h4>
+            </Heading>
+            <RichText size="xxl" align="center">
+              <span>{$number(maskAmount, formatOptions)} DUSK</span>
+            </RichText>
+            <RichText size="sm">
+              <strong>From (stealth address):</strong>
+            </RichText>
+            <Address>
+              <strong>{walletAddress}</strong>
+            </Address>
+            <RichText size="sm">
+              <strong>To:</strong>
+            </RichText>
+            <Address variant="brand">
+              <p>{fields.address}</p>
+            </Address>
           {/if}
-          <div class="prepare-transaction">
-            {#if transactionReady}
-              <Heading variant="success">
-                <h4>Transaction Ready</h4>
-              </Heading>
-            {/if}
-            {#if preparingTransaction}
-              <Heading variant="danger">
-                <svelte:fragment slot="icon">
-                  <LoadingIndicator variant="danger" class="prepare-transaction__icon" />
-                </svelte:fragment>
-                <h4>Preparing Transaction</h4>
-              </Heading>
-            {/if}
-          </div>
-          <div class="actions">
+          {#if transactionReady}
+            <Heading variant="success" align="center">
+              <h4>Transaction Ready</h4>
+            </Heading>
+          {/if}
+          {#if preparingTransaction}
+            <Heading variant="danger" align="center">
+              <svelte:fragment slot="icon">
+                <LoadingIndicator variant="danger" />
+              </svelte:fragment>
+              <h4>Preparing Transaction</h4>
+            </Heading>
+          {/if}
+          <Group align="center">
             <Button
               variant="brand"
-              size="sm"
+              size="lg"
               disabled="{preparingTransaction}"
               on:click="{() => {
                 previous();
@@ -310,7 +261,7 @@
             {#if !transactionReady && !preparingTransaction}
               <Button
                 variant="cta"
-                size="sm"
+                size="lg"
                 disabled="{preparingTransaction}"
                 on:click="{() => {
                   startTransaction();
@@ -319,7 +270,7 @@
             {:else}
               <Button
                 variant="cta"
-                size="sm"
+                size="lg"
                 disabled="{preparingTransaction}"
                 on:click="{() => {
                   next();
@@ -327,33 +278,27 @@
                 >Send Transaction
               </Button>
             {/if}
-          </div>
-        </div>
-      </Step>
-      <Step number="{3}">
-        <div class="prepare">
-          <div class="prepare__amount">
-            <RichText>
-              <p class="wallet-transfer__text">You sent:</p>
-            </RichText>
-            <RichText size="xxl">
-              <p class="wallet-transfer__text--second">{$number(maskAmount, formatOptions)} DUSK</p>
-            </RichText>
-          </div>
-          <div class="prepare-transaction">
-            <Icon name="check-decagram-outline" />
-          </div>
-          <div class="actions-transaction">
-            <Button class="actions-transaction__overview" variant="brand" on:click
-              >Wallet Overview</Button
-            >
+          </Group>
+        </Step>
+        <Step number="{3}">
+          <Heading align="center">
+            <h4>You sent</h4>
+            <svelte:fragment slot="icon">
+              <Icon name="check-decagram-outline" />
+            </svelte:fragment>
+          </Heading>
+          <RichText size="xxl" align="center">
+            <span>{$number(maskAmount, formatOptions)} DUSK</span>
+          </RichText>
+          <Group align="center">
+            <Button variant="brand" on:click>Wallet Overview</Button>
             <Button variant="brand" on:click>
               <Icon name="check-network-outline" />
               <Label>View Transaction</Label>
             </Button>
-          </div>
-        </div>
-      </Step>
-    </Wizard>
-  </div>
-</div>
+          </Group>
+        </Step>
+      </Wizard>
+    </div>
+  </Content>
+</Card>
