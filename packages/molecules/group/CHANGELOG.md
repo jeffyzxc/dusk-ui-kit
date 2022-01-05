@@ -1,7 +1,6 @@
-# @dusk-network/qr-code
+# @dusk-network/group
 
 ## 4.3.0
-
 ### Minor Changes
 
 - 7d390f05: Release 4.3.0
@@ -10,9 +9,3 @@
 
 - Updated dependencies [7d390f05]
   - @dusk-network/helpers@4.3.0
-
-## 4.2.1
-
-### Patch Changes
-
-- b66edd71: Release 4.2.1
