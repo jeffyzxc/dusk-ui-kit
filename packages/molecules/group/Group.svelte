@@ -41,7 +41,7 @@
   <slot />
   {#if $$slots.labelRight}
     <span class="duk-group__label">
-      <slot name="labelLeft" />
+      <slot name="labelRight" />
     </span>
   {/if}
 </div>
