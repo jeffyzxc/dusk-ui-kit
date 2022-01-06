@@ -90,7 +90,7 @@
 />
 
 <Story name="Loaded State" args="{{}}" let:args>
-  <Template>
+  <Template let:width let:height>
     <svelte:fragment slot="navbar">
       <Navbar />
     </svelte:fragment>
@@ -109,7 +109,8 @@
           <ListItem helpText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
             <span slot="term"> Height </span>
             <svelte:fragment slot="definition">
-              <Group align="left">
+              <!-- TODO We should use a lib for responsive props -->
+              <Group align="{width >= 640 ? 'left' : 'center'}">
                 <svelte:fragment slot="labelLeft">
                   {$number(block.header.height)}
                 </svelte:fragment>
@@ -157,7 +158,7 @@
           <ListItem helpText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
             <span slot="term"> Block Gas Limit </span>
             <svelte:fragment slot="definition">
-              {$number(getGasUsed(block.transactions))}
+              {$number(getGasLimit(block.transactions))}
             </svelte:fragment>
           </ListItem>
           <ListItem helpText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
@@ -168,8 +169,6 @@
                 compactDisplay: "long",
               })}
               <small>DUSK</small>
-              ({$number(getAverageGasPrice(block.transactions))}
-              <small><acronym title="nanoDUSK"><sub>n</sub>DUSK</acronym></small>)
             </svelte:fragment>
           </ListItem>
           <ListItem helpText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
@@ -215,6 +214,7 @@
                     notation: "compact",
                     compactDisplay: "long",
                   })}
+                  &nbsp;
                   <small>DUSK</small>
                 </Datum>
                 <Datum cols="3">
