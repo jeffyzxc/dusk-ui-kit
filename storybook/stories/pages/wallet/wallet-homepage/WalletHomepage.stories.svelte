@@ -138,7 +138,7 @@
           <div class="usp__image usp__image--security">
             <Placeholder text="Image" width="100px" height="100px" />
           </div>
-          <RichText class="usp__text" size="xxl"><strong>Security</strong></RichText>
+          <RichText class="usp__text" size="xxl" align="center"><strong>Security</strong></RichText>
           <RichText>
             <p>
               DuskWallet is open-source and secure. With DuskWallet you are your own bank and you
@@ -160,7 +160,9 @@
           <div class="usp__image usp__image--access">
             <Placeholder text="Image" height="100px" width="100px" />
           </div>
-          <RichText class="usp__text" size="xxl"><strong>Web Access</strong></RichText>
+          <RichText class="usp__text" size="xxl" align="center"
+            ><strong>Web Access</strong></RichText
+          >
           <RichText>
             <p>
               Creating a new wallet is simple and convenient. Get started within minutes, access
