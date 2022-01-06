@@ -1,5 +1,5 @@
 <script>
-  import { getContext } from "svelte";
+  import { getContext, setContext } from "svelte";
   import contexts from "@dusk-network/helpers/contexts.js";
   import "./styles.css";
 
@@ -15,6 +15,9 @@
   export let grid = false;
 
   const context = getContext("DUK:group:context");
+
+  setContext("DUK:button:context", contexts.BUTTON.GROUP);
+  setContext("DUK:icon:context", contexts.ICON.GROUP);
 </script>
 
 <div
@@ -30,5 +33,15 @@
   class:duk-group--evenly="{align === 'evenly'}"
   class:duk-group--grid="{grid}"
 >
+  {#if $$slots.labelLeft}
+    <span class="duk-group__label">
+      <slot name="labelLeft" />
+    </span>
+  {/if}
   <slot />
+  {#if $$slots.labelRight}
+    <span class="duk-group__label">
+      <slot name="labelLeft" />
+    </span>
+  {/if}
 </div>

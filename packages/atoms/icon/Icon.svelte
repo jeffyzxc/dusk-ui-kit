@@ -60,6 +60,8 @@
     class:duk-button__icon="{context === contexts.ICON.BUTTON}"
     class:duk-alert__icon="{context === contexts.ICON.ALERT}"
     class:duk-icon--heading="{context === contexts.ICON.HEADING}"
+    class:duk-icon--detail-list="{context === contexts.ICON.DETAIL_LIST}"
+    class:duk-icon--group="{context === contexts.ICON.GROUP}"
     data-tooltip="{tooltip || undefined}"
     title="{$$props.title || undefined}"
     on:click
