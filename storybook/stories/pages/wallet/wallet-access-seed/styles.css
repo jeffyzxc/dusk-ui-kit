@@ -1,19 +1,26 @@
 .seed-login {
   &__wrapper {
     @apply mx-auto;
-    @apply sm:max-w-2xl;
+    @apply sm:max-w-lg;
+
+    .duk-form {
+      @apply pb-5;
+    }
   }
 
-  &__breadcrumb,
-  &__heading {
+  &__breadcrumb + .duk-icon {
+    @apply mx-auto mt-6;
+  }
+
+  &__breadcrumb {
     @apply !justify-center;
   }
 
   &__mnemonic {
     @apply mt-6;
-  }
 
-  &__cta {
-    @apply mx-auto mt-6 mb-3;
+    .duk-mnemonic__list {
+      @apply mb-0;
+    }
   }
 }
