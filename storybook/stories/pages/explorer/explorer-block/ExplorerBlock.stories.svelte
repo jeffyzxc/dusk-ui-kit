@@ -253,7 +253,18 @@
         jumboScreenHeight="520px"
       />
     </svelte:fragment>
-    <svelte:fragment slot="detail-list" />
+    <svelte:fragment slot="detail-list">
+      <SkeletonLoader
+        rounded="{true}"
+        height="200px"
+        extraSmallScreenHeight="200px"
+        smallScreenHeight="200px"
+        mediumScreenHeight="200px"
+        largeScreenHeight="200px"
+        extraLargeScreenHeight="200px"
+        jumboScreenHeight="200px"
+      />
+    </svelte:fragment>
     <svelte:fragment slot="footer">
       <Footer />
     </svelte:fragment>
