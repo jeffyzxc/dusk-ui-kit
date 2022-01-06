@@ -59,7 +59,7 @@
 >
   <div class="duk-file-upload__layout">
     {#if !isFileLoaded && !uploaded}
-      <RichText>
+      <RichText align="center">
         <p class="duk-file-upload__text">
           Drag your file here
           <br />or<br />
@@ -68,7 +68,7 @@
       </RichText>
     {/if}
     {#if isFileLoaded && !uploaded}
-      <RichText>
+      <RichText align="center">
         <p class="duk-file-upload__text">{fields.file[0].name}</p>
       </RichText>
     {/if}
