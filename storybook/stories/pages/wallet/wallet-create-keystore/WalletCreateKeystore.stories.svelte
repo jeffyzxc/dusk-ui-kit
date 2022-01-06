@@ -19,6 +19,7 @@
   import PasswordStrength from "@dusk-network/password-strength";
   import Form from "@dusk-network/form";
   import DisclaimerList, { Item } from "@dusk-network/disclaimer-list";
+  import ProgressBar from "@dusk-network/progress-bar";
   import * as yup from "yup";
   import meta from "../../../meta";
 
@@ -76,6 +77,9 @@
       <Card class="keystore__wrapper">
         <Content>
           <Wizard stepCount="{3}" on:exit="{() => {}}">
+            <div slot="progress-bar" let:steps let:step>
+              <ProgressBar steps="{steps}" step="{step}" />
+            </div>
             <Step number="{1}" let:next>
               <Heading size="sm" class="keystore__heading--centered">
                 <svelte:fragment slot="icon">

@@ -14,6 +14,7 @@
   import Control from "@dusk-network/control";
   import TextField from "@dusk-network/text-field";
   import FileUpload from "@dusk-network/file-upload";
+  import ProgressBar from "@dusk-network/progress-bar";
   import * as yup from "yup";
   import meta from "../../../meta";
 
@@ -85,6 +86,9 @@
       <Card class="keystore-login__wrapper">
         <Content>
           <Wizard stepCount="{2}" on:exit="{() => {}}">
+            <div slot="progress-bar" let:steps let:step>
+              <ProgressBar steps="{steps}" step="{step}" />
+            </div>
             <Step number="{1}" let:next>
               <Form
                 submitted="{fileSubmitted}"

@@ -14,6 +14,7 @@
   import DropDown from "@dusk-network/drop-down";
   import Form from "@dusk-network/form";
   import Control from "@dusk-network/control";
+  import ProgressBar from "@dusk-network/progress-bar";
   import * as yup from "yup";
   import { number } from "svelte-i18n";
 
@@ -111,6 +112,9 @@
     </div>
     <div style="display: {isTransfer === true ? 'block' : 'none'}">
       <Wizard stepCount="{noOfSteps}" on:exit="{() => (isTransfer = false)}">
+        <div slot="progress-bar" let:steps let:step>
+          <ProgressBar steps="{steps}" step="{step}" />
+        </div>
         <Step number="{1}" let:next>
           <Form
             submitted="{submitted}"
