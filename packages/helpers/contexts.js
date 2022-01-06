@@ -37,6 +37,10 @@ export default {
     CARD: "detail-list:card",
     CONTENT: "detail-list:content",
   },
+  DISCLAIMER_LIST: {
+    CARD: "disclaimer-list:card",
+    CONTENT: "disclaimer-list:content",
+  },
   DROP_DOWN: {
     CONTROL: "drop-down:control",
     MENU: "drop-down:menu",
