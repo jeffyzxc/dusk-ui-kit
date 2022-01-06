@@ -22,6 +22,9 @@
   export let walletAddress =
     "0x66D30033B4E0BAF8970e9c8A0aD1D02Cc3e21115fhkllA9urdrTVbAyQZnwy0JLyvbCVZBHpzfBU87Gy4USFWaA6sZ0";
 
+  let stepTitles = ["Enter Transaction Details", "Preparing Transaction", "Transaction Complete"];
+  let currentStep;
+
   let noOfSteps = 3;
   let isTransfer = false;
   let transactionReady = false;
@@ -111,7 +114,12 @@
       </Button>
     </div>
     <div style="display: {isTransfer === true ? 'block' : 'none'}">
-      <Wizard stepCount="{noOfSteps}" on:exit="{() => (isTransfer = false)}">
+      <Wizard
+        stepCount="{noOfSteps}"
+        on:exit="{() => (isTransfer = false)}"
+        on:step="{(event) => (currentStep = event.detail - 1)}"
+      >
+        <h3 slot="title">{stepTitles[currentStep]}</h3>
         <div slot="progress-bar" let:steps let:step>
           <ProgressBar steps="{steps}" step="{step}" />
         </div>

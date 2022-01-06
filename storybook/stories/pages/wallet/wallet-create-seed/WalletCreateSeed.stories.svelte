@@ -21,6 +21,9 @@
   import { types } from "@dusk-network/helpers";
   import meta from "../../../meta";
 
+  let stepTitles = ["Seed Phrase Generation", "Seed Phrase Verification", ""];
+  let currentStep;
+
   let agreement = {
     checkbox1: false,
     checkbox2: false,
@@ -67,7 +70,12 @@
     <svelte:fragment slot="wizard">
       <Card class="seed-phrase__wrapper">
         <Content>
-          <Wizard stepCount="{noOfSteps}" on:exit="{() => {}}">
+          <Wizard
+            stepCount="{noOfSteps}"
+            on:exit="{() => {}}"
+            on:step="{(event) => (currentStep = event.detail - 1)}"
+          >
+            <h3 slot="title">{stepTitles[currentStep]}</h3>
             <div slot="progress-bar" let:steps let:step>
               <ProgressBar steps="{steps}" step="{step}" />
             </div>
