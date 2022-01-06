@@ -41,12 +41,7 @@
     <svelte:fragment slot="heading-mobile">
       <Heading class="wallet-options__heading--mobile">
         <svelte:fragment slot="icon">
-          <Icon
-            class="wallet-options__heading-icon"
-            variant="brand"
-            size="xxl"
-            name="wallet-plus"
-          />
+          <Icon class="wallet-options__heading-icon" size="xxl" name="wallet-plus" />
         </svelte:fragment>
         <h2>Access Your Wallet</h2>
       </Heading>
@@ -83,7 +78,8 @@
                   viewbox="0 0 28 35"
                 />
                 <RichText
-                  class="wallet-options__option-heading"
+                  align="center"
+                  class="wallet-options__option--heading"
                   size="xxl"
                   markdown="**Seed Phrase**"
                 />
@@ -98,32 +94,43 @@
                   viewbox="0 0 28 35"
                 />
                 <RichText
-                  class="wallet-options__option-heading"
+                  align="center"
+                  class="wallet-options__option--heading"
                   size="xxl"
                   markdown="**Keystore File**"
                 />
               </Content>
             </Card>
             <Card disabled="{true}" class="wallet-options__option-card">
+              <Heading class="wallet-options__option-disabled--heading">
+                <svelte:fragment slot="icon">
+                  <Icon name="hardware-outline" />
+                </svelte:fragment>
+                <h1>Hardware</h1>
+              </Heading>
               <Content>
-                <Heading class="wallet-options__option-disabled-mobile">
-                  <svelte:fragment slot="icon">
-                    <Icon name="hardware-outline" />
-                  </svelte:fragment>
-                  <h1>Hardware</h1>
-                </Heading>
-                <RichText class="wallet-options__option-disabled" size="xxl" markdown="Planned" />
+                <RichText
+                  align="right"
+                  class="wallet-options__option-disabled"
+                  size="xxl"
+                  markdown="Planned"
+                />
               </Content>
             </Card>
             <Card disabled="{true}" class="wallet-options__option-card">
+              <Heading class="wallet-options__option-disabled--heading">
+                <svelte:fragment slot="icon">
+                  <Icon name="wallet" />
+                </svelte:fragment>
+                <h1>Mobile App</h1>
+              </Heading>
               <Content>
-                <Heading class="wallet-options__option-disabled-mobile">
-                  <svelte:fragment slot="icon">
-                    <Icon name="wallet" />
-                  </svelte:fragment>
-                  <h1>Mobile App</h1>
-                </Heading>
-                <RichText class="wallet-options__option-disabled" size="xxl" markdown="Planned" />
+                <RichText
+                  align="right"
+                  class="wallet-options__option-disabled"
+                  size="xxl"
+                  markdown="Planned"
+                />
               </Content>
             </Card>
           </div>
