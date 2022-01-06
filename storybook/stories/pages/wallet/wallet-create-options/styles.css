@@ -1,6 +1,6 @@
 .wallet-options {
   &__heading {
-    @apply !mb-12 !hidden;
+    @apply !mb-12 !hidden mt-4 font-semibold;
     @apply sm:!flex;
   }
 
@@ -19,26 +19,26 @@
     @apply md:grid-cols-2 md:text-left md:mb-6;
     @apply lg:grid-cols-2;
     @apply xl:grid-cols-4;
-  }
 
-  &__option-card {
-    @apply !shadow-marketing;
+    .duk-rich-text {
+      @apply mb-0;
+    }
   }
 
   &__option-icon {
     @apply mx-auto;
   }
 
-  &__option-heading {
-    @apply !mt-10;
+  &__option--heading {
+    @apply !mt-16;
   }
 
   &__option-disabled {
-    @apply !mt-10 text-right;
-  }
+    @apply !mt-10;
 
-  &__option-disabled-mobile {
-    @apply pb-2 !justify-center;
-    @apply sm:!justify-start;
+    &--heading {
+      @apply !justify-center;
+      @apply sm:!justify-start;
+    }
   }
 }

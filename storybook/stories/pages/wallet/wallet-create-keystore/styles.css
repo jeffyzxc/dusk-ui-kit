@@ -1,17 +1,23 @@
 .keystore {
-  @apply container;
-
   &__wrapper {
     @apply mx-auto;
-    @apply sm:max-w-2xl;
+    @apply sm:max-w-lg;
+
+    .keystore__disclaimer {
+      &--heading {
+        @apply font-semibold mb-0 !text-red-900;
+        @apply dark:!text-red-200;
+      }
+
+      &--heading + p {
+        @apply !m-0 text-sm;
+        @apply sm:text-base;
+      }
+    }
   }
 
   &__heading {
-    @apply !mb-10;
-
-    &--centered {
-      @apply !justify-center;
-    }
+    @apply !mb-10 font-semibold;
   }
 
   &__image {
@@ -21,11 +27,5 @@
 
   &__agreement {
     @apply my-5;
-  }
-
-  &__cta {
-    .duk-button-wrapper {
-      @apply mx-auto;
-    }
   }
 }
