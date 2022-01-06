@@ -15,6 +15,7 @@ export default {
     HERO: "button:hero",
     HEADING: "button:heading",
     MNEMONIC: "button:mnemonic",
+    GROUP: "button:group",
   },
   CONTENT: {
     CARD: "content:card",
@@ -31,6 +32,10 @@ export default {
       HEAD: "datum:row:head",
       FOOT: "datum:row:foot",
     },
+  },
+  DETAIL_LIST: {
+    CARD: "detail-list:card",
+    CONTENT: "detail-list:content",
   },
   DROP_DOWN: {
     CONTROL: "drop-down:control",
@@ -55,6 +60,8 @@ export default {
     BUTTON: "icon:button",
     CONTROL: "icon:control",
     HEADING: "icon:heading",
+    DETAIL_LIST: "icon:detail-list",
+    GROUP: "icon:group",
   },
   INPUT: {
     TEXT: "input:text",
