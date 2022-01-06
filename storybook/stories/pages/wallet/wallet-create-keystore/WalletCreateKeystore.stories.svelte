@@ -19,12 +19,15 @@
   import PasswordStrength from "@dusk-network/password-strength";
   import Form from "@dusk-network/form";
   import DisclaimerList, { Item } from "@dusk-network/disclaimer-list";
+  import ProgressBar from "@dusk-network/progress-bar";
   import * as yup from "yup";
   import meta from "../../../meta";
 
+  let stepTitles = ["Keystore File Generation", "Keystore File Generation", ""];
+
   let agreement = false;
   let submitted = false;
-  let passwordStrength;
+  let passwordStrength, currentStep;
 
   let fields = {
     password: "",
@@ -75,7 +78,15 @@
     <svelte:fragment slot="wizard">
       <Card class="keystore__wrapper">
         <Content>
-          <Wizard stepCount="{3}" on:exit="{() => {}}">
+          <Wizard
+            stepCount="{3}"
+            on:exit="{() => {}}"
+            on:step="{(event) => (currentStep = event.detail - 1)}"
+          >
+            <h3 slot="title">{stepTitles[currentStep]}</h3>
+            <div slot="progress-bar" let:steps let:step>
+              <ProgressBar steps="{steps}" step="{step}" />
+            </div>
             <Step number="{1}" let:next>
               <Heading size="sm" class="keystore__heading--centered">
                 <svelte:fragment slot="icon">

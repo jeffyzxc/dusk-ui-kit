@@ -14,8 +14,12 @@
   import Control from "@dusk-network/control";
   import TextField from "@dusk-network/text-field";
   import FileUpload from "@dusk-network/file-upload";
+  import ProgressBar from "@dusk-network/progress-bar";
   import * as yup from "yup";
   import meta from "../../../meta";
+
+  let stepTitles = ["Upload Your Keystore File", "Enter Your Password", ""];
+  let currentStep;
 
   let fields = {
     password: "",
@@ -84,7 +88,15 @@
     <svelte:fragment slot="wizard">
       <Card class="keystore-login__wrapper">
         <Content>
-          <Wizard stepCount="{2}" on:exit="{() => {}}">
+          <Wizard
+            stepCount="{2}"
+            on:exit="{() => {}}"
+            on:step="{(event) => (currentStep = event.detail - 1)}"
+          >
+            <h3 slot="title">{stepTitles[currentStep]}</h3>
+            <div slot="progress-bar" let:steps let:step>
+              <ProgressBar steps="{steps}" step="{step}" />
+            </div>
             <Step number="{1}" let:next>
               <Form
                 submitted="{fileSubmitted}"

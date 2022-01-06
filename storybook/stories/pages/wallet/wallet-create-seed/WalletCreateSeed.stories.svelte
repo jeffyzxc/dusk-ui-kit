@@ -17,8 +17,12 @@
   import Toggle from "@dusk-network/toggle";
   import Control from "@dusk-network/control";
   import Mnemonic from "@dusk-network/mnemonic";
+  import ProgressBar from "@dusk-network/progress-bar";
   import { types } from "@dusk-network/helpers";
   import meta from "../../../meta";
+
+  let stepTitles = ["Seed Phrase Generation", "Seed Phrase Verification", ""];
+  let currentStep;
 
   let agreement = {
     checkbox1: false,
@@ -66,7 +70,15 @@
     <svelte:fragment slot="wizard">
       <Card class="seed-phrase__wrapper">
         <Content>
-          <Wizard stepCount="{noOfSteps}" on:exit="{() => {}}">
+          <Wizard
+            stepCount="{noOfSteps}"
+            on:exit="{() => {}}"
+            on:step="{(event) => (currentStep = event.detail - 1)}"
+          >
+            <h3 slot="title">{stepTitles[currentStep]}</h3>
+            <div slot="progress-bar" let:steps let:step>
+              <ProgressBar steps="{steps}" step="{step}" />
+            </div>
             <Step number="{1}" let:next>
               <Heading size="sm" class="seed-phrase__generator">
                 <svelte:fragment slot="icon">

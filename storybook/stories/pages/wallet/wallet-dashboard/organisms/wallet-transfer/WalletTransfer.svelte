@@ -14,12 +14,16 @@
   import DropDown from "@dusk-network/drop-down";
   import Form from "@dusk-network/form";
   import Control from "@dusk-network/control";
+  import ProgressBar from "@dusk-network/progress-bar";
   import * as yup from "yup";
   import { number } from "svelte-i18n";
 
   export let availableBalance = 10000000;
   export let walletAddress =
     "0x66D30033B4E0BAF8970e9c8A0aD1D02Cc3e21115fhkllA9urdrTVbAyQZnwy0JLyvbCVZBHpzfBU87Gy4USFWaA6sZ0";
+
+  let stepTitles = ["Enter Transaction Details", "Preparing Transaction", "Transaction Complete"];
+  let currentStep;
 
   let noOfSteps = 3;
   let isTransfer = false;
@@ -110,7 +114,15 @@
       </Button>
     </div>
     <div style="display: {isTransfer === true ? 'block' : 'none'}">
-      <Wizard stepCount="{noOfSteps}" on:exit="{() => (isTransfer = false)}">
+      <Wizard
+        stepCount="{noOfSteps}"
+        on:exit="{() => (isTransfer = false)}"
+        on:step="{(event) => (currentStep = event.detail - 1)}"
+      >
+        <h3 slot="title">{stepTitles[currentStep]}</h3>
+        <div slot="progress-bar" let:steps let:step>
+          <ProgressBar steps="{steps}" step="{step}" />
+        </div>
         <Step number="{1}" let:next>
           <Form
             submitted="{submitted}"
