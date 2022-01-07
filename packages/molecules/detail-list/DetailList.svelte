@@ -6,6 +6,8 @@
   const context = getContext("DUK:detail-list:context");
 
   setContext("DUK:icon:context", contexts.ICON.DETAIL_LIST);
+  setContext("DUK:rich-text:context", contexts.RICH_TEXT.DETAIL_LIST);
+  setContext("DUK:group:context", contexts.GROUP.DETAIL_LIST);
 </script>
 
 <dl

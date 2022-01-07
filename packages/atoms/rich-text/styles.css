@@ -37,7 +37,8 @@
     @apply lg:prose lg:max-w-full;
   }
 
-  &--content {
+  &--content,
+  &--detail-list {
     @apply my-5;
 
     &:first-child {

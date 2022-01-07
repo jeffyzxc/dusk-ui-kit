@@ -7,6 +7,7 @@
   import Footer from "../_Footer.svelte";
   import Chip from "@dusk-network/chip";
   import Card from "@dusk-network/card";
+  import Button from "@dusk-network/button";
   import Group from "@dusk-network/group";
   import DetailList, { Item as ListItem } from "@dusk-network/detail-list";
   import Breadcrumb, { Item } from "@dusk-network/breadcrumb";
@@ -14,6 +15,7 @@
   import RichText from "@dusk-network/rich-text";
   import Icon from "@dusk-network/icon";
   import DateText from "@dusk-network/date-text";
+  import DropDown from "@dusk-network/drop-down";
   import meta from "../../../meta";
   import "../../../i18n.svelte";
   import { transactions } from "./data.js";
@@ -164,6 +166,10 @@ MethodID: 0xa9059cbb
                   </code>
                 </pre>
               </RichText>
+              <Group>
+                <DropDown options="{['Input data', 'Output data']}" />
+                <Button size="sm">Decode input data</Button>
+              </Group>
             </svelte:fragment>
           </ListItem>
         </DetailList>

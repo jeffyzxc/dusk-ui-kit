@@ -56,6 +56,7 @@ export default {
   },
   GROUP: {
     CONTENT: "group:content",
+    DETAIL_LIST: "group:detail-list",
     FORM: "group:form",
     HEADING: "group:heading",
   },
@@ -110,6 +111,7 @@ export default {
   RICH_TEXT: {
     CARD: "rich-text:card",
     CONTENT: "rich-text:content",
+    DETAIL_LIST: "rich-text:detail-list",
     HERO: "rich-text:hero",
   },
   TEXT_FIELD: {
