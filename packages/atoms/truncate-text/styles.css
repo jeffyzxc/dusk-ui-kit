@@ -18,4 +18,10 @@
   &__value {
     @apply block truncate;
   }
+
+  &--datum {
+    ^&__value {
+      @apply inline overflow-visible;
+    }
+  }
 }
