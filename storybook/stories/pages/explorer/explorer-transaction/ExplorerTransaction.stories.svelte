@@ -22,6 +22,8 @@
   import { number } from "svelte-i18n";
 
   const transaction = JSON.parse(transactions).data.transactions[0];
+  const decodeOptions = ["Input data", "Output data"];
+  let selectedDecodeOptionIndex = 0;
 </script>
 
 <Meta
@@ -62,7 +64,7 @@
           <ListItem helpText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
             <span slot="term">Status</span>
             <svelte:fragment slot="definition">
-              <Chip>Success</Chip>
+              <Chip variant="success">Success</Chip>
             </svelte:fragment>
           </ListItem>
           <ListItem helpText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
@@ -153,7 +155,7 @@
             </svelte:fragment>
           </ListItem>
           <ListItem helpText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
-            <span slot="term">Input data</span>
+            <span slot="term">{decodeOptions[selectedDecodeOptionIndex]}</span>
             <svelte:fragment slot="definition">
               <RichText>
                 <pre>
@@ -167,8 +169,13 @@ MethodID: 0xa9059cbb
                 </pre>
               </RichText>
               <Group>
-                <DropDown options="{['Input data', 'Output data']}" />
-                <Button size="sm">Decode input data</Button>
+                <DropDown
+                  options="{decodeOptions}"
+                  on:select="{(event) => {
+                    selectedDecodeOptionIndex = decodeOptions.indexOf(event.detail);
+                  }}"
+                />
+                <Button size="sm">Decode {decodeOptions[selectedDecodeOptionIndex]}</Button>
               </Group>
             </svelte:fragment>
           </ListItem>

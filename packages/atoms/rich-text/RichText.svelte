@@ -9,7 +9,7 @@
    * If set, this string will be parsed as Markdown and rendered as HTML.
    * @type {?string}
    */
-  export let markdown;
+  export let markdown = null;
 
   /**
    * Sets the size of the Rich Text.
