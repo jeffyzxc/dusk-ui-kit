@@ -51,8 +51,9 @@
   class:duk-truncate-text--three-quarters="{width === widths.TRUNCATE_TEXT.THREE_QUARTERS}"
   class:duk-truncate-text--max="{width === widths.TRUNCATE_TEXT.MAX}"
   class:duk-truncate-text--datum="{context === contexts.TRUNCATE_TEXT.DATUM}"
+  class:duk-truncate-text--slice="{text.length > 0}"
 >
-  <span class="duk-truncate-text__value" title="{title}">
+  <span title="{title}" class="duk-truncate-text__value">
     {#if text.length > 0}
       {truncateText}
     {:else}
