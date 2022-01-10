@@ -44,7 +44,7 @@
       .test(
         "fileFormat",
         "Unsupported file format",
-        (value) => value && ["image/png", "image/jpeg"].includes(value[0].type),
+        (value) => value && ["application/json"].includes(value[0].type),
       ),
   });
 
@@ -88,7 +88,7 @@
       <Navbar />
     </svelte:fragment>
     <svelte:fragment slot="wizard">
-      <Card class="keystore-login__wrapper">
+      <Card>
         <Content>
           <Wizard
             stepCount="{2}"
@@ -113,10 +113,11 @@
                   }
                 }}"
               >
-                <Icon name="keystore-file-outline" viewbox="0 0 28 35" size="xxl" />
+                <Group align="center">
+                  <Icon name="keystore-file-outline" viewbox="0 0 28 35" size="xxl" />
+                </Group>
                 <Control width="full" name="file" let:id let:state>
                   <FileUpload
-                    class="keystore-login__file"
                     id="{id}"
                     state="{state}"
                     uploaded="{uploaded}"
@@ -125,17 +126,12 @@
                 </Control>
                 <Group align="center">
                   {#if !uploaded}
-                    <Button
-                      class="keystore-login__cta"
-                      variant="cta"
-                      size="base"
-                      disabled="{!isFileLoaded}"
-                      type="submit">Upload</Button
+                    <Button variant="cta" size="base" disabled="{!isFileLoaded}" type="submit"
+                      >Upload</Button
                     >
                   {/if}
                   {#if uploaded}
                     <Button
-                      class="keystore-login__cta"
                       variant="cta"
                       size="base"
                       on:click="{() => {
@@ -159,14 +155,10 @@
                   }
                 }}"
               >
-                <Icon name="keystore-file-outline" viewbox="0 0 28 35" size="xxl" />
-                <Control
-                  class="keystore-login__control"
-                  width="full"
-                  name="password"
-                  let:id
-                  let:state
-                >
+                <Group align="center">
+                  <Icon name="keystore-file-outline" viewbox="0 0 28 35" size="xxl" />
+                </Group>
+                <Control width="full" name="password" let:id let:state>
                   <TextField
                     id="{id}"
                     state="{state}"
