@@ -33,4 +33,8 @@
     @apply text-red-600;
     @apply dark:text-red-100;
   }
+
+  &--datum {
+    @apply w-5 h-5;
+  }
 }
