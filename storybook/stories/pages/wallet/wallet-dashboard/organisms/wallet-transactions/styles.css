@@ -33,7 +33,7 @@
       @apply flex flex-row items-center justify-start gap-x-2;
 
       .text--first {
-        @apply text-indigo-500 underline break-all;
+        @apply text-indigo-500 underline;
         @apply 2xl:break-normal;
       }
     }

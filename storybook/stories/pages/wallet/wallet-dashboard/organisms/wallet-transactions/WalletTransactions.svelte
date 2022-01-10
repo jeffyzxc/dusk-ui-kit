@@ -23,11 +23,11 @@
     <h3 slot="title">Recent transactions</h3>
     <thead slot="head">
       <Row type="head">
-        <Datum key="id" cols="1">ID</Datum>
-        <Datum key="first_name" cols="5">Status</Datum>
-        <Datum key="last_name" cols="3">Time</Datum>
-        <Datum key="email" cols="3">Amount</Datum>
-        <Datum hidden="{true}">Extra Details</Datum>
+        <Datum key="id" cols="1"><span>ID</span></Datum>
+        <Datum key="first_name" cols="4"><span>Status</span></Datum>
+        <Datum key="last_name" cols="4"><span>Time</span></Datum>
+        <Datum key="email" cols="3"><span>Amount</span></Datum>
+        <Datum hidden="{true}" />
       </Row>
     </thead>
     <tbody>
@@ -35,7 +35,7 @@
         {#each $transactionRows as row}
           <Row>
             <Datum cols="1"><span>{row.id}</span></Datum>
-            <Datum cols="5">
+            <Datum cols="4">
               <div
                 class="wallet-transactions__block"
                 class:wallet-transactions__block--success="{row.status.toLowerCase() ===
@@ -58,18 +58,18 @@
                 {/if}
               </div>
             </Datum>
-            <Datum cols="3">
+            <Datum cols="4">
               <div class="wallet-transactions__block">
                 <Icon name="timeline-clock-outline" size="sm" />
+                <DateText time="{row.timeStamp}" />
               </div>
-              <DateText time="{row.timeStamp}" />
             </Datum>
             <Datum cols="3">
               <div class="wallet-transactions__block">
                 <Icon name="dusk-ticker" size="sm" />
+                <span>{$number(row.amount)}</span>
               </div>
-              <span>{$number(row.amount)}</span></Datum
-            >
+            </Datum>
             <Datum hidden="{true}" class="wallet-transactions__details--row">
               <div class="wallet-transactions__details--wrapper">
                 <div class="wallet-transactions__details">
