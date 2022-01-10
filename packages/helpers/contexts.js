@@ -82,6 +82,7 @@ export default {
   },
   LOADING_INDICATOR: {
     HEADING: "loading-indicator:heading",
+    DATUM: "loading-indicator:datum",
   },
   LOGO: {
     NAVBAR: "logo:navbar",
@@ -120,6 +121,9 @@ export default {
   },
   TOGGLE: {
     CONTROL: "toggle:control",
+  },
+  TRUNCATE_TEXT: {
+    DATUM: "truncate-text:datum",
   },
   WIZARD: {
     CARD: "wizard:card",
