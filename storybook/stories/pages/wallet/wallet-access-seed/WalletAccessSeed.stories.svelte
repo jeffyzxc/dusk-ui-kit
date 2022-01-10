@@ -11,13 +11,40 @@
   import Breadcrumb, { Item } from "@dusk-network/breadcrumb";
   import Button from "@dusk-network/button";
   import Icon from "@dusk-network/icon";
-  import Heading from "@dusk-network/heading";
+  import Group from "@dusk-network/group";
+  import Control from "@dusk-network/control";
   import Mnemonic from "@dusk-network/mnemonic";
+  import Form from "@dusk-network/form";
+  import * as yup from "yup";
   import { types } from "@dusk-network/helpers";
+  import { seedPhrase } from "../wallet-create-seed/seed.mock.js";
   import meta from "../../../meta";
 
-  let seed;
-  let warning = false;
+  let submitted = false;
+  let seed = seedPhrase;
+  let disabled = true;
+  let valid = false;
+
+  let fields = {
+    mnemonic: "",
+  };
+  let schema = yup.object().shape({
+    mnemonic: yup.string().test("mnemonic", "Seed phrase does not match!", function () {
+      return valid === true;
+    }),
+  });
+
+  function validate(arr) {
+    if (arr.indexOf("") === -1) {
+      disabled = false;
+      if (JSON.stringify(seed) === JSON.stringify(arr)) {
+        valid = true;
+      }
+    } else {
+      disabled = true;
+      valid = false;
+    }
+  }
 </script>
 
 <Meta
@@ -49,26 +76,33 @@
           <Breadcrumb class="seed-login__breadcrumb" on:exit="{() => {}}">
             <Item><strong>Enter Your Seed Phrase</strong></Item>
           </Breadcrumb>
-          <Heading size="sm" class="seed-login__heading">
-            <svelte:fragment slot="icon">
-              <Icon name="key-outline" />
-            </svelte:fragment>
-          </Heading>
-          <Mnemonic
-            class="seed-login__mnemonic"
-            type="{types.MNEMONIC.AUTHENTICATE}"
-            on:complete="{(completedSeed) => {
-              seed = completedSeed;
+          <Icon name="key-outline" size="xxl" />
+          <Form
+            submitted="{submitted}"
+            schema="{schema}"
+            fields="{fields}"
+            submitHandler="{() => {
+              submitted = true;
+              if (schema.isValidSync(fields)) {
+                // goto('/dashboard');
+                console.log('link to dashboard');
+              }
             }}"
-          />
-          {#if warning}
-            <Heading size="sm" variant="danger" class="seed-login__heading">
-              <strong>Seed phrase does not match!</strong>
-            </Heading>
-          {/if}
-          <Button class="seed-login__cta" variant="cta" disabled="{!seed}" on:click="{() => {}}"
-            >Access My Wallet</Button
           >
+            <Control name="mnemonic" let:id let:state width="full">
+              <Mnemonic
+                class="seed-login__mnemonic"
+                seed="{seedPhrase}"
+                type="{types.MNEMONIC.AUTHENTICATE}"
+                on:complete="{(completedSeed) => {
+                  validate(completedSeed.detail);
+                }}"
+              />
+            </Control>
+            <Group align="center">
+              <Button variant="cta" disabled="{disabled}" type="submit">Access My Wallet</Button>
+            </Group>
+          </Form>
         </Content>
       </Card>
     </svelte:fragment>

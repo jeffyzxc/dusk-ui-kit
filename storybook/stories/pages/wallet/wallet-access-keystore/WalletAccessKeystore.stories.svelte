@@ -10,12 +10,18 @@
   import Content from "@dusk-network/content";
   import Wizard, { Step } from "@dusk-network/wizard";
   import Button from "@dusk-network/button";
+  import Group from "@dusk-network/group";
   import Form from "@dusk-network/form";
   import Control from "@dusk-network/control";
   import TextField from "@dusk-network/text-field";
   import FileUpload from "@dusk-network/file-upload";
+  import ProgressBar from "@dusk-network/progress-bar";
+  import Icon from "@dusk-network/icon";
   import * as yup from "yup";
   import meta from "../../../meta";
+
+  let stepTitles = ["Upload Your Keystore File", "Enter Your Password", ""];
+  let currentStep;
 
   let fields = {
     password: "",
@@ -84,7 +90,15 @@
     <svelte:fragment slot="wizard">
       <Card class="keystore-login__wrapper">
         <Content>
-          <Wizard stepCount="{2}" on:exit="{() => {}}">
+          <Wizard
+            stepCount="{2}"
+            on:exit="{() => {}}"
+            on:step="{(event) => (currentStep = event.detail - 1)}"
+          >
+            <h3 slot="title">{stepTitles[currentStep]}</h3>
+            <div slot="progress-bar" let:steps let:step>
+              <ProgressBar steps="{steps}" step="{step}" />
+            </div>
             <Step number="{1}" let:next>
               <Form
                 submitted="{fileSubmitted}"
@@ -99,35 +113,38 @@
                   }
                 }}"
               >
+                <Icon name="keystore-file-outline" viewbox="0 0 28 35" size="xxl" />
                 <Control width="full" name="file" let:id let:state>
                   <FileUpload
+                    class="keystore-login__file"
                     id="{id}"
                     state="{state}"
                     uploaded="{uploaded}"
                     on:inputFile="{inputChange}"
                   />
                 </Control>
-
-                {#if !uploaded}
-                  <Button
-                    class="keystore-login__cta"
-                    variant="cta"
-                    size="base"
-                    disabled="{!isFileLoaded}"
-                    type="submit">Upload</Button
-                  >
-                {/if}
-                {#if uploaded}
-                  <Button
-                    class="keystore-login__cta"
-                    variant="cta"
-                    size="base"
-                    on:click="{() => {
-                      next();
-                      uploaded = false;
-                    }}">Continue</Button
-                  >
-                {/if}
+                <Group align="center">
+                  {#if !uploaded}
+                    <Button
+                      class="keystore-login__cta"
+                      variant="cta"
+                      size="base"
+                      disabled="{!isFileLoaded}"
+                      type="submit">Upload</Button
+                    >
+                  {/if}
+                  {#if uploaded}
+                    <Button
+                      class="keystore-login__cta"
+                      variant="cta"
+                      size="base"
+                      on:click="{() => {
+                        next();
+                        uploaded = false;
+                      }}">Continue</Button
+                    >
+                  {/if}
+                </Group>
               </Form>
             </Step>
             <Step number="{2}">
@@ -142,7 +159,14 @@
                   }
                 }}"
               >
-                <Control width="full" name="password" let:id let:state>
+                <Icon name="keystore-file-outline" viewbox="0 0 28 35" size="xxl" />
+                <Control
+                  class="keystore-login__control"
+                  width="full"
+                  name="password"
+                  let:id
+                  let:state
+                >
                   <TextField
                     id="{id}"
                     state="{state}"
@@ -151,10 +175,9 @@
                     placeholder="Password"
                   />
                 </Control>
-
-                <Button class="keystore-login__cta" type="submit" variant="cta"
-                  >Access My Wallet</Button
-                >
+                <Group align="center">
+                  <Button type="submit" variant="cta">Access My Wallet</Button>
+                </Group>
               </Form>
             </Step>
           </Wizard>

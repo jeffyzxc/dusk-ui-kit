@@ -1,35 +1,33 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
-  // import { variants, states } from "@dusk-network/helpers";
-  import Template from "@dusk-network/explorer-list";
+  import Template from "@dusk-network/explorer-detail";
   // import results from "../../../../../.jest-test-results.json";
   // import { withTests } from "@storybook/addon-jest";
   import Navbar from "../_Navbar.svelte";
   import Footer from "../_Footer.svelte";
+  import Chip from "@dusk-network/chip";
+  import Card from "@dusk-network/card";
+  import Button from "@dusk-network/button";
+  import Group from "@dusk-network/group";
+  import DetailList, { Item as ListItem } from "@dusk-network/detail-list";
   import Breadcrumb, { Item } from "@dusk-network/breadcrumb";
+  import SkeletonLoader from "@dusk-network/skeleton-loader";
+  import RichText from "@dusk-network/rich-text";
   import Icon from "@dusk-network/icon";
-  import TruncateText from "@dusk-network/truncate-text";
-  import Table, { Row, Datum } from "@dusk-network/table";
-  import "../../../i18n.svelte";
+  import DateText from "@dusk-network/date-text";
+  import DropDown from "@dusk-network/drop-down";
   import meta from "../../../meta";
+  import "../../../i18n.svelte";
   import { transactions } from "./data.js";
   import { number } from "svelte-i18n";
 
-  // JSON.parse(latest.data);
-
-  const transaction = JSON.parse(transactions).data.transactions;
-  const transactionSettings = {
-    sortable: false,
-    rowsPerPage: 10,
-    pagination: true,
-    limiter: false,
-  };
-
-  let transactionRows;
+  const transaction = JSON.parse(transactions).data.transactions[0];
+  const decodeOptions = ["Input data", "Output data"];
+  let selectedDecodeOptionIndex = 0;
 </script>
 
 <Meta
-  title="Pages/Explorer/All Transactions"
+  title="Pages/Explorer/Transaction Details"
   component="{Template}"
   parameters="{{
     layout: 'fullscreen',
@@ -43,75 +41,169 @@
     },
     // jest: ['packages/templates/explorer-list/ExplorerList.test.js'],
   }}"
-  argTypes="{meta('templates/explorer-list/ExplorerList', {})}"
+  argTypes="{meta('templates/explorer-detail/ExplorerDetail', {})}"
 />
 
 <Story name="Loaded State" args="{{}}" let:args>
+  <Template let:width let:height>
+    <svelte:fragment slot="navbar">
+      <Navbar />
+    </svelte:fragment>
+    <svelte:fragment slot="detail-details">
+      <Card>
+        <Breadcrumb href="javascript:;" on:exit="{() => {}}">
+          <Item><strong>Transaction</strong></Item>
+        </Breadcrumb>
+        <DetailList>
+          <ListItem helpText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+            <span slot="term">Hash</span>
+            <svelte:fragment slot="definition">
+              {transaction.txid}
+            </svelte:fragment>
+          </ListItem>
+          <ListItem helpText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+            <span slot="term">Status</span>
+            <svelte:fragment slot="definition">
+              <Chip variant="success">Success</Chip>
+            </svelte:fragment>
+          </ListItem>
+          <ListItem helpText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+            <span slot="term">Age</span>
+            <svelte:fragment slot="definition">
+              <DateText time="" showTimestamp="{true}" />
+            </svelte:fragment>
+          </ListItem>
+          <ListItem helpText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+            <span slot="term">Type</span>
+            <svelte:fragment slot="definition" />
+          </ListItem>
+          <ListItem helpText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+            <span slot="term">Input(s)</span>
+            <svelte:fragment slot="definition">
+              <Group>
+                <Icon name="eye-off-outline" />
+                <svelte:fragment slot="labelRight">Secret</svelte:fragment>
+              </Group>
+            </svelte:fragment>
+          </ListItem>
+          <ListItem helpText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+            <span slot="term">Outputs(s)</span>
+            <svelte:fragment slot="definition">
+              {transaction.txid}
+              <Group>
+                <svelte:fragment slot="labelLeft">
+                  <strong>DUSK transferred:</strong>
+                </svelte:fragment>
+                <Icon name="eye-off-outline" />
+                <svelte:fragment slot="labelRight">Secret</svelte:fragment>
+              </Group>
+            </svelte:fragment>
+          </ListItem>
+          <ListItem helpText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+            <span slot="term">Token input(s)</span>
+            <svelte:fragment slot="definition">
+              <Group>
+                <Icon name="eye-off-outline" />
+                <svelte:fragment slot="labelRight">Secret</svelte:fragment>
+              </Group>
+            </svelte:fragment>
+          </ListItem>
+          <ListItem helpText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+            <span slot="term">Token output(s)</span>
+            <svelte:fragment slot="definition">
+              {transaction.txid}
+              <Group>
+                <svelte:fragment slot="labelLeft">
+                  <strong>DUSK transferred:</strong>
+                </svelte:fragment>
+                <Icon name="eye-off-outline" />
+                <svelte:fragment slot="labelRight">Secret</svelte:fragment>
+              </Group>
+            </svelte:fragment>
+          </ListItem>
+          <ListItem helpText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+            <span slot="term">Transaction fee</span>
+            <svelte:fragment slot="definition">
+              {$number(transaction.feepaid * 0.0000000001, {
+                notation: "compact",
+                compactDisplay: "long",
+              })}
+              <small>DUSK</small>
+            </svelte:fragment>
+          </ListItem>
+          <ListItem helpText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+            <span slot="term">Gas price</span>
+            <svelte:fragment slot="definition">
+              {$number(transaction.gasprice * 0.0000000001, {
+                notation: "compact",
+                compactDisplay: "long",
+              })}
+              <small>DUSK</small>
+            </svelte:fragment>
+          </ListItem>
+          <ListItem helpText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+            <span slot="term">Gas limit</span>
+            <svelte:fragment slot="definition">
+              {$number(transaction.gaslimit)}
+            </svelte:fragment>
+          </ListItem>
+          <ListItem helpText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+            <span slot="term">Gas spend</span>
+            <svelte:fragment slot="definition">
+              {$number(879765)}
+              &nbsp; ({Number.parseFloat((879765 / 1000000) * 100).toPrecision(4)}%)
+            </svelte:fragment>
+          </ListItem>
+          <ListItem helpText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+            <span slot="term">{decodeOptions[selectedDecodeOptionIndex]}</span>
+            <svelte:fragment slot="definition">
+              <RichText>
+                <pre>
+                  <code>
+Function: transfer(address recipient, uint256 amount)
+
+MethodID: 0xa9059cbb
+[0]:  000000000000000000000000dfc1d851c198f925eaf33c540a682640b730d16f
+[1]:  0000000000000000000000000000000000000000002a37bfc38f196182200000
+                  </code>
+                </pre>
+              </RichText>
+              <Group>
+                <DropDown
+                  options="{decodeOptions}"
+                  on:select="{(event) => {
+                    selectedDecodeOptionIndex = decodeOptions.indexOf(event.detail);
+                  }}"
+                />
+                <Button size="sm">Decode {decodeOptions[selectedDecodeOptionIndex]}</Button>
+              </Group>
+            </svelte:fragment>
+          </ListItem>
+        </DetailList>
+      </Card>
+    </svelte:fragment>
+    <svelte:fragment slot="footer">
+      <Footer />
+    </svelte:fragment>
+  </Template>
+</Story>
+
+<Story name="Loading State" args="{{}}" let:args>
   <Template>
     <svelte:fragment slot="navbar">
       <Navbar />
     </svelte:fragment>
-    <svelte:fragment slot="list">
-      <Table
-        class="explorer-homepage__blocks"
-        data="{transaction}"
-        settings="{transactionSettings}"
-        bind:dataRows="{transactionRows}"
-      >
-        <div slot="title">
-          <Breadcrumb href="javascript:;" on:exit="{() => {}}">
-            <Item>Transactions</Item>
-          </Breadcrumb>
-        </div>
-        <thead slot="head">
-          <Row type="head">
-            <Datum cols="4"><Icon name="pound-box-outline" /> <span>Transaction Hash</span></Datum>
-            <Datum cols="1"><Icon name="cube-outline" /> <span>Block</span></Datum>
-            <Datum cols="1">Method</Datum>
-            <Datum cols="2"><Icon name="timer-sand" /> <span>Age</span></Datum>
-            <Datum cols="2"><Icon name="crown-outline" /> <span>Reward</span></Datum>
-            <Datum cols="2"><abbr title="Paid Transaction Fee">Tx Fee Paid</abbr></Datum>
-          </Row>
-        </thead>
-        <tbody>
-          {#if transactionRows}
-            {#each $transactionRows as transaction}
-              {#if transaction}
-                <Row on:click="{() => alert('Row clicked')}">
-                  {#if transaction}
-                    <Datum cols="4">
-                      <a
-                        style="display:flex;column-gap: 8px"
-                        href="{`/transaction?id=${transaction.blockhash}/details`}"
-                      >
-                        <Icon name="eye-circle-outline" />
-                        <TruncateText width="quarter">
-                          {transaction.blockhash}
-                        </TruncateText>
-                      </a>
-                    </Datum>
-                    <Datum cols="1">??</Datum>
-                    <Datum cols="1">
-                      {transaction.txtype}
-                    </Datum>
-                    <Datum cols="2">??</Datum>
-                    <Datum cols="2">??</Datum>
-                    <Datum cols="2">
-                      {$number(transaction.feepaid)}
-                    </Datum>
-                  {/if}
-                </Row>
-              {/if}
-            {/each}
-          {:else}
-            <Row>
-              <Datum cols="12">
-                <span class="color-purple-500">No transactions found.</span>
-              </Datum>
-            </Row>
-          {/if}
-        </tbody>
-      </Table>
+    <svelte:fragment slot="detail-details">
+      <SkeletonLoader
+        rounded="{true}"
+        height="1480px"
+        extraSmallScreenHeight="1480px"
+        smallScreenHeight="1332px"
+        mediumScreenHeight="864px"
+        largeScreenHeight="520px"
+        extraLargeScreenHeight="520px"
+        jumboScreenHeight="520px"
+      />
     </svelte:fragment>
     <svelte:fragment slot="footer">
       <Footer />

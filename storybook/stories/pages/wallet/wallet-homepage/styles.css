@@ -13,7 +13,7 @@
   }
 
   .duk-icon--heading {
-    @apply !ml-0 text-black;
+    @apply !ml-0;
   }
 }
 
@@ -79,7 +79,7 @@
   }
 
   &__text {
-    @apply text-center mt-12 mb-6;
+    @apply mt-12 mb-6;
   }
 }
 

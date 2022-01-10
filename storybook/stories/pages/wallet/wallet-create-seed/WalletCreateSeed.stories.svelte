@@ -8,6 +8,7 @@
   import Footer from "../_Footer.svelte";
   import { seedPhrase } from "./seed.mock.js"; // TODO Replace with call to seed phrase.
   import Button from "@dusk-network/button";
+  import Group from "@dusk-network/group";
   import RichText from "@dusk-network/rich-text";
   import Icon from "@dusk-network/icon";
   import Heading from "@dusk-network/heading";
@@ -17,8 +18,12 @@
   import Toggle from "@dusk-network/toggle";
   import Control from "@dusk-network/control";
   import Mnemonic from "@dusk-network/mnemonic";
+  import ProgressBar from "@dusk-network/progress-bar";
   import { types } from "@dusk-network/helpers";
   import meta from "../../../meta";
+
+  let stepTitles = ["Seed Phrase Generation", "Seed Phrase Verification", ""];
+  let currentStep;
 
   let agreement = {
     checkbox1: false,
@@ -66,7 +71,15 @@
     <svelte:fragment slot="wizard">
       <Card class="seed-phrase__wrapper">
         <Content>
-          <Wizard stepCount="{noOfSteps}" on:exit="{() => {}}">
+          <Wizard
+            stepCount="{noOfSteps}"
+            on:exit="{() => {}}"
+            on:step="{(event) => (currentStep = event.detail - 1)}"
+          >
+            <h3 slot="title">{stepTitles[currentStep]}</h3>
+            <div slot="progress-bar" let:steps let:step>
+              <ProgressBar steps="{steps}" step="{step}" />
+            </div>
             <Step number="{1}" let:next>
               <Heading size="sm" class="seed-phrase__generator">
                 <svelte:fragment slot="icon">
@@ -82,21 +95,34 @@
 
               <RichText>
                 <p>
-                  <span>Copy</span> these words in the order given below and <span>store</span> them
-                  securely.
+                  <strong>Copy</strong> these words in the order given below and
+                  <strong>store</strong> them securely.
                 </p>
               </RichText>
 
-              <Mnemonic class="seed-phrase__mnemonic" seed="{seedPhrase}" />
-
-              <Heading size="sm" variant="danger">
+              <Heading
+                size="sm"
+                variant="danger"
+                class="seed-phrase__heading seed-phrase__warning-mobile"
+              >
                 <svelte:fragment slot="icon">
                   <Icon name="alert-outline" />
                 </svelte:fragment>
-                <strong>Never share your seed phrase with anyone.</strong>
+                <p>Never share your seed phrase with anyone.</p>
               </Heading>
 
-              <Button class="seed-phrase__cta" variant="cta" on:click="{next}">Continue</Button>
+              <Mnemonic class="seed-phrase__mnemonic" seed="{seedPhrase}" />
+
+              <Heading size="sm" variant="danger" class="seed-phrase__heading seed-phrase__warning">
+                <svelte:fragment slot="icon">
+                  <Icon name="alert-outline" />
+                </svelte:fragment>
+                <p>Never share your seed phrase with anyone.</p>
+              </Heading>
+
+              <Group align="center">
+                <Button class="seed-phrase__cta" variant="cta" on:click="{next}">Continue</Button>
+              </Group>
             </Step>
 
             <Step number="{2}" let:next>
@@ -120,24 +146,22 @@
                 }}"
               />
 
-              <Button
-                class="seed-phrase__cta"
-                variant="cta"
-                disabled="{!continueDisabled}"
-                on:click="{next}"
-              >
-                Continue
-              </Button>
+              <Group align="center">
+                <Button variant="cta" disabled="{!continueDisabled}" on:click="{next}">
+                  Continue
+                </Button>
+              </Group>
             </Step>
+
             <Step number="{3}">
-              <Heading size="sm" variant="danger">
+              <Heading align="center" size="sm" variant="danger" class="seed-phrase__heading">
                 <svelte:fragment slot="icon">
                   <Icon name="alert-outline" />
                 </svelte:fragment>
-                <strong>Securely store your seed phrase!</strong>
+                <p>Securely store your seed phrase!</p>
               </Heading>
 
-              <RichText>
+              <RichText align="center" size="lg">
                 <p>Your seed phrase provides access to your wallet.</p>
               </RichText>
 
@@ -159,14 +183,10 @@
                   have access to my recovery phrase.
                 </Toggle>
               </Control>
-
-              <Button
-                class="seed-phrase__cta"
-                variant="cta"
-                disabled="{!check}"
-                on:click="{() => {}}">Continue</Button
-              >
-              <img class="seed-phrase__image" src="/images/wallet-introduction.png" alt="" />
+              <Group align="center">
+                <Button variant="cta" disabled="{!check}" on:click="{() => {}}">Continue</Button>
+              </Group>
+              <img class="seed-phrase__image" src="/wallet-intro.png" alt="" />
             </Step>
           </Wizard>
         </Content>

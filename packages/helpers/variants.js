@@ -26,6 +26,15 @@ export default {
     WARNING: "warning",
     DANGER: "danger",
   },
+  CHIP: {
+    BRAND: "brand",
+    CTA: "cta",
+    DEFAULT: "default",
+    INFO: "info",
+    SUCCESS: "success",
+    WARNING: "warning",
+    DANGER: "danger",
+  },
   CTALIST: {
     BRAND: "brand",
     CTA: "cta",

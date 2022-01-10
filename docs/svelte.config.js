@@ -115,7 +115,7 @@ const config = {
     target: "#dusk",
     vite: () => ({
       optimizeDeps: {
-        include: ["highlight.js/lib/core", "broadcast-channel"],
+        include: ["highlight.js/lib/core", "broadcast-channel", "qrcode"],
         exclude: ["@dusk-network/table"],
       },
       plugins: [

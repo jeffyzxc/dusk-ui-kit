@@ -1,7 +1,19 @@
 .keystore-login {
   &__wrapper {
     @apply mx-auto;
-    @apply sm:max-w-2xl;
+    @apply sm:max-w-lg;
+
+    .duk-form > .duk-icon {
+      @apply mx-auto;
+    }
+  }
+
+  &__control {
+    @apply mt-6;
+  }
+
+  &__file {
+    @apply !mt-6 !mb-0;
   }
 
   &__image {
@@ -11,9 +23,5 @@
   &__text {
     @apply inline text-lg font-bold;
     @apply sm:text-xl;
-  }
-
-  &__cta {
-    @apply mx-auto;
   }
 }

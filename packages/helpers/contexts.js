@@ -15,6 +15,7 @@ export default {
     HERO: "button:hero",
     HEADING: "button:heading",
     MNEMONIC: "button:mnemonic",
+    GROUP: "button:group",
   },
   CONTENT: {
     CARD: "content:card",
@@ -32,6 +33,14 @@ export default {
       FOOT: "datum:row:foot",
     },
   },
+  DETAIL_LIST: {
+    CARD: "detail-list:card",
+    CONTENT: "detail-list:content",
+  },
+  DISCLAIMER_LIST: {
+    CARD: "disclaimer-list:card",
+    CONTENT: "disclaimer-list:content",
+  },
   DROP_DOWN: {
     CONTROL: "drop-down:control",
     MENU: "drop-down:menu",
@@ -47,6 +56,7 @@ export default {
   },
   GROUP: {
     CONTENT: "group:content",
+    DETAIL_LIST: "group:detail-list",
     FORM: "group:form",
     HEADING: "group:heading",
   },
@@ -55,6 +65,8 @@ export default {
     BUTTON: "icon:button",
     CONTROL: "icon:control",
     HEADING: "icon:heading",
+    DETAIL_LIST: "icon:detail-list",
+    GROUP: "icon:group",
   },
   INPUT: {
     TEXT: "input:text",
@@ -99,6 +111,7 @@ export default {
   RICH_TEXT: {
     CARD: "rich-text:card",
     CONTENT: "rich-text:content",
+    DETAIL_LIST: "rich-text:detail-list",
     HERO: "rich-text:hero",
   },
   TEXT_FIELD: {

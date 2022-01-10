@@ -10,6 +10,7 @@
   import Content from "@dusk-network/content";
   import Wizard, { Step } from "@dusk-network/wizard";
   import Button from "@dusk-network/button";
+  import Group from "@dusk-network/group";
   import Heading from "@dusk-network/heading";
   import RichText from "@dusk-network/rich-text";
   import Toggle from "@dusk-network/toggle";
@@ -19,12 +20,15 @@
   import PasswordStrength from "@dusk-network/password-strength";
   import Form from "@dusk-network/form";
   import DisclaimerList, { Item } from "@dusk-network/disclaimer-list";
+  import ProgressBar from "@dusk-network/progress-bar";
   import * as yup from "yup";
   import meta from "../../../meta";
 
+  let stepTitles = ["Keystore File Generation", "Keystore File Generation", ""];
+
   let agreement = false;
   let submitted = false;
-  let passwordStrength;
+  let passwordStrength, currentStep;
 
   let fields = {
     password: "",
@@ -75,9 +79,17 @@
     <svelte:fragment slot="wizard">
       <Card class="keystore__wrapper">
         <Content>
-          <Wizard stepCount="{3}" on:exit="{() => {}}">
+          <Wizard
+            stepCount="{3}"
+            on:exit="{() => {}}"
+            on:step="{(event) => (currentStep = event.detail - 1)}"
+          >
+            <h3 slot="title">{stepTitles[currentStep]}</h3>
+            <div slot="progress-bar" let:steps let:step>
+              <ProgressBar steps="{steps}" step="{step}" />
+            </div>
             <Step number="{1}" let:next>
-              <Heading size="sm" class="keystore__heading--centered">
+              <Heading align="center" size="sm">
                 <svelte:fragment slot="icon">
                   <Icon name="key-outline" />
                 </svelte:fragment>
@@ -123,15 +135,16 @@
                     <strong>Password strength: </strong>
                   </PasswordStrength>
                 </Control>
-                <Control width="full" class="keystore__cta">
+                <Group align="center">
                   <Button type="submit" variant="cta">Proceed</Button>
-                </Control>
+                </Group>
               </Form>
             </Step>
+
             <Step number="{2}" let:next>
               <DisclaimerList>
                 <svelte:fragment slot="heading">
-                  <Heading variant="danger">
+                  <Heading variant="danger" class="keystore__heading">
                     <svelte:fragment slot="icon">
                       <Icon variant="danger" name="alert-outline" />
                     </svelte:fragment>
@@ -142,8 +155,8 @@
                   <svelte:fragment slot="icon">
                     <Icon name="safe" size="xxxl" variant="danger" />
                   </svelte:fragment>
-                  <RichText size="sm">
-                    <h2>Don't Lose It</h2>
+                  <RichText>
+                    <p class="keystore__disclaimer--heading">Don't Lose It</p>
                     <p>If you lose your keystore file, your wallet will be lost.</p>
                   </RichText>
                 </Item>
@@ -151,8 +164,8 @@
                   <svelte:fragment slot="icon">
                     <Icon name="eye-outline" size="xxxl" variant="danger" />
                   </svelte:fragment>
-                  <RichText size="sm">
-                    <h2>Don't Share It</h2>
+                  <RichText>
+                    <p class="keystore__disclaimer--heading">Don't Share It</p>
                     <p>
                       Anyone with your keystore file can access your funds.<br /> Beware of malicious
                       phishing sites.
@@ -163,8 +176,8 @@
                   <svelte:fragment slot="icon">
                     <Icon name="content-save-alert-outline" size="xxxl" variant="danger" />
                   </svelte:fragment>
-                  <RichText size="sm">
-                    <h2>Store It Securely</h2>
+                  <RichText>
+                    <p class="keystore__disclaimer--heading">Store It Securely</p>
                     <p>Secure it like the milions of dollars it may one day be worth</p>
                   </RichText>
                 </Item>
@@ -176,23 +189,24 @@
                 </Toggle>
               </div>
 
-              <Control width="full" class="keystore__cta">
+              <Group align="center">
                 <Button variant="cta" disabled="{!agreement}" on:click="{next}">
                   Download Keystore File
                 </Button>
-              </Control>
+              </Group>
             </Step>
+
             <Step number="{3}">
-              <Heading variant="success" class="keystore__heading keystore__heading--centered">
+              <Heading align="center" variant="success" class="keystore__heading">
                 <svelte:fragment slot="icon">
                   <Icon name="check-circle-outline" />
                 </svelte:fragment>
-                <strong>Success</strong>
+                <h3>Success</h3>
               </Heading>
-              <Control width="full" class="keystore__cta">
+              <Group align="center">
                 <Button variant="cta" on:click="{() => {}}">Access My Wallet</Button>
-              </Control>
-              <img class="keystore__image" src="/images/wallet-introduction.svg" alt="" />
+              </Group>
+              <img class="keystore__image" src="/wallet-intro.png" alt="" />
             </Step>
           </Wizard>
         </Content>

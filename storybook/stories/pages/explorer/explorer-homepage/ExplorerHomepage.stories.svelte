@@ -4,6 +4,7 @@
   import Template from "@dusk-network/explorer-homepage";
   // import results from "../../../../../.jest-test-results.json";
   // import { withTests } from "@storybook/addon-jest";
+  import SkeletonLoader from "@dusk-network/skeleton-loader";
   import Card from "@dusk-network/card";
   import Content from "@dusk-network/content";
   import Navbar from "../_Navbar.svelte";
@@ -202,6 +203,53 @@
           <Button variant="brand" outline="{true}">View all transactions</Button>
         </svelte:fragment>
       </Table>
+    </svelte:fragment>
+    <svelte:fragment slot="footer">
+      <Footer />
+    </svelte:fragment>
+  </Template>
+</Story>
+
+<Story name="Loading State" args="{{}}" let:args>
+  <Template>
+    <svelte:fragment slot="navbar">
+      <Navbar />
+    </svelte:fragment>
+    <svelte:fragment slot="control-panel">
+      <SkeletonLoader
+        rounded="{true}"
+        height="656px"
+        extraSmallScreenHeight="656px"
+        smallScreenHeight="404px"
+        mediumScreenHeight="404px"
+        largeScreenHeight="320px"
+        extraLargeScreenHeight="320px"
+        jumboScreenHeight="320px"
+      />
+    </svelte:fragment>
+    <svelte:fragment slot="latest-blocks">
+      <SkeletonLoader
+        rounded="{true}"
+        height="779px"
+        extraSmallScreenHeight="779px"
+        smallScreenHeight="779px"
+        mediumScreenHeight="779px"
+        largeScreenHeight="779px"
+        extraLargeScreenHeight="779px"
+        jumboScreenHeight="779px"
+      />
+    </svelte:fragment>
+    <svelte:fragment slot="latest-transactions">
+      <SkeletonLoader
+        rounded="{true}"
+        height="779px"
+        extraSmallScreenHeight="779px"
+        smallScreenHeight="779px"
+        mediumScreenHeight="779px"
+        largeScreenHeight="779px"
+        extraLargeScreenHeight="779px"
+        jumboScreenHeight="779px"
+      />
     </svelte:fragment>
     <svelte:fragment slot="footer">
       <Footer />

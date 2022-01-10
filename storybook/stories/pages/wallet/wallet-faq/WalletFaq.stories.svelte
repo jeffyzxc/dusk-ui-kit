@@ -10,7 +10,6 @@
   import Content from "@dusk-network/content";
   import Heading from "@dusk-network/heading";
   import Accordion, { Item } from "@dusk-network/accordion";
-  import RichText from "@dusk-network/rich-text";
   import meta from "../../../meta";
 </script>
 
@@ -43,13 +42,11 @@
         <Content>
           <Accordion>
             <Item title="What is demo mode?">
-              <RichText>
-                <p>
-                  Demo mode is an experimental lab. We use it to share state-of-the-art applications
-                  built for Dusk Network. While you’re here, please let us know how we can do better
-                  and help us build the future of decentralised applications.
-                </p>
-              </RichText>
+              <p>
+                Demo mode is an experimental lab. We use it to share state-of-the-art applications
+                built for Dusk Network. While you’re here, please let us know how we can do better
+                and help us build the future of decentralised applications.
+              </p>
             </Item>
             <Item title="How can I send a transaction?">
               <p>

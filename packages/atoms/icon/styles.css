@@ -95,28 +95,46 @@
     @apply !text-red-500 !fill-current;
   }
 
-  &--extra-small > svg {
-    @apply !h-4 !w-4;
+  &--extra-small {
+    @apply h-4 w-4;
+    > svg {
+      @apply !h-4 !w-4;
+    }
   }
 
-  &--small > svg {
-    @apply !h-5 !w-5;
+  &--small {
+    @apply h-5 w-5;
+    > svg {
+      @apply !h-5 !w-5;
+    }
   }
 
-  &--large > svg {
-    @apply !h-8 !w-8;
+  &--large {
+    @apply h-8 w-8;
+    > svg {
+      @apply h-8 w-8;
+    }
   }
 
-  &--xl > svg {
-    @apply !h-10 !w-10;
+  &--xl {
+    @apply h-10 w-10;
+    > svg {
+      @apply !h-10 !w-10;
+    }
   }
 
-  &--xxl > svg {
+  &--xxl {
     @apply h-12 w-12;
+    > svg {
+      @apply h-12 w-12;
+    }
   }
 
-  &--xxxl > svg {
+  &--xxxl {
     @apply h-16 w-16;
+    > svg {
+      @apply h-16 w-16;
+    }
   }
 
   &--heading {

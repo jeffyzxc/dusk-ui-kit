@@ -1,0 +1,27 @@
+{
+  "name": "@dusk-network/detail-list",
+  "version": "0.0.0",
+  "description": "Dusk UI Kit - DetailList",
+  "bugs": {
+    "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dusk-network/dusk-ui-kit.git",
+    "directory": "packages/molecules/detail-list"
+  },
+  "type": "module",
+  "module": "index.js",
+  "scripts": {
+    "test": "echo \"Work in progress...\" && exit 1"
+  },
+  "devDependencies": {
+    "@dusk-network/helpers": "workspace:*",
+    "@dusk-network/icon": "workspace:*"
+  },
+  "peerDependencies": {
+    "@dusk-network/helpers": "workspace:*",
+    "@dusk-network/icon": "workspace:*"
+  },
+  "gitHead": "875f717e64dae5720efa9d1ca8ba5e236393207c"
+}

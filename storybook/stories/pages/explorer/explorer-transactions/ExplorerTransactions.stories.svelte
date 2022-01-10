@@ -7,29 +7,30 @@
   import Navbar from "../_Navbar.svelte";
   import Footer from "../_Footer.svelte";
   import Breadcrumb, { Item } from "@dusk-network/breadcrumb";
+  import SkeletonLoader from "@dusk-network/skeleton-loader";
   import Icon from "@dusk-network/icon";
-  import DateText from "@dusk-network/date-text";
+  import TruncateText from "@dusk-network/truncate-text";
   import Table, { Row, Datum } from "@dusk-network/table";
-  import meta from "../../../meta";
   import "../../../i18n.svelte";
-  import { blocks } from "./data.js";
+  import meta from "../../../meta";
+  import { transactions } from "./data.js";
   import { number } from "svelte-i18n";
 
   // JSON.parse(latest.data);
 
-  const block = JSON.parse(blocks).data.blocks;
-  const blockSettings = {
+  const transaction = JSON.parse(transactions).data.transactions;
+  const transactionSettings = {
     sortable: false,
     rowsPerPage: 10,
     pagination: true,
     limiter: false,
   };
 
-  let blockRows;
+  let transactionRows;
 </script>
 
 <Meta
-  title="Pages/Explorer/All Blocks"
+  title="Pages/Explorer/All Transactions"
   component="{Template}"
   parameters="{{
     layout: 'fullscreen',
@@ -54,55 +55,50 @@
     <svelte:fragment slot="list">
       <Table
         class="explorer-homepage__blocks"
-        data="{block}"
-        settings="{blockSettings}"
-        bind:dataRows="{blockRows}"
+        data="{transaction}"
+        settings="{transactionSettings}"
+        bind:dataRows="{transactionRows}"
       >
         <div slot="title">
           <Breadcrumb href="javascript:;" on:exit="{() => {}}">
-            <Item>Blocks</Item>
+            <Item>Transactions</Item>
           </Breadcrumb>
         </div>
         <thead slot="head">
           <Row type="head">
+            <Datum cols="4"><Icon name="pound-box-outline" /> <span>Transaction Hash</span></Datum>
             <Datum cols="1"><Icon name="cube-outline" /> <span>Block</span></Datum>
-            <Datum cols="2"><Icon name="timer-sand" /> <span>Finalised</span></Datum>
-            <Datum cols="2"><Icon name="gas-station-outline" /> <span>Gas used</span></Datum>
-            <Datum cols="2"><Icon name="gas-limit" /> <span>Gas limit</span></Datum>
-            <Datum cols="2"><Icon name="gas-average" /> <span>Gas avg. price</span></Datum>
-            <Datum cols="1"><abbr title="Transactions">#Txns</abbr></Datum>
+            <Datum cols="1">Method</Datum>
+            <Datum cols="2"><Icon name="timer-sand" /> <span>Age</span></Datum>
             <Datum cols="2"><Icon name="crown-outline" /> <span>Reward</span></Datum>
+            <Datum cols="2"><abbr title="Paid Transaction Fee">Tx Fee Paid</abbr></Datum>
           </Row>
         </thead>
         <tbody>
-          {#if blockRows}
-            {#each $blockRows as block}
-              {#if block.header}
+          {#if transactionRows}
+            {#each $transactionRows as transaction}
+              {#if transaction}
                 <Row on:click="{() => alert('Row clicked')}">
-                  {#if block}
-                    <Datum cols="1">
+                  {#if transaction}
+                    <Datum cols="4">
                       <a
                         style="display:flex;column-gap: 8px"
-                        href="{`/block?id=${block.header.hash}/details`}"
+                        href="{`/transaction?id=${transaction.blockhash}/details`}"
                       >
-                        <Icon name="eye-circle-outline" /> <span>{block.header.height}</span>
+                        <Icon name="eye-circle-outline" />
+                        <TruncateText width="quarter">
+                          {transaction.blockhash}
+                        </TruncateText>
                       </a>
                     </Datum>
-                    <Datum cols="2">
-                      <DateText time="{block.header.timestamp}" />
-                    </Datum>
-                    <Datum cols="2">
-                      {$number(block.transactions[0].gasprice)}
-                    </Datum>
-                    <Datum cols="2">
-                      {$number(block.transactions[0].gaslimit)}
+                    <Datum cols="1">??</Datum>
+                    <Datum cols="1">
+                      {transaction.txtype}
                     </Datum>
                     <Datum cols="2">??</Datum>
-                    <Datum cols="1">
-                      {block.transactions.length}
-                    </Datum>
+                    <Datum cols="2">??</Datum>
                     <Datum cols="2">
-                      {$number(block.header.reward)}
+                      {$number(transaction.feepaid)}
                     </Datum>
                   {/if}
                 </Row>
@@ -111,12 +107,35 @@
           {:else}
             <Row>
               <Datum cols="12">
-                <span class="color-purple-500">No blocks found.</span>
+                <span class="color-purple-500">No transactions found.</span>
               </Datum>
             </Row>
           {/if}
         </tbody>
       </Table>
+    </svelte:fragment>
+    <svelte:fragment slot="footer">
+      <Footer />
+    </svelte:fragment>
+  </Template>
+</Story>
+
+<Story name="Loading State" args="{{}}" let:args>
+  <Template>
+    <svelte:fragment slot="navbar">
+      <Navbar />
+    </svelte:fragment>
+    <svelte:fragment slot="list">
+      <SkeletonLoader
+        rounded="{true}"
+        height="578px"
+        extraSmallScreenHeight="578px"
+        smallScreenHeight="578px"
+        mediumScreenHeight="578px"
+        largeScreenHeight="578px"
+        extraLargeScreenHeight="578px"
+        jumboScreenHeight="578px"
+      />
     </svelte:fragment>
     <svelte:fragment slot="footer">
       <Footer />

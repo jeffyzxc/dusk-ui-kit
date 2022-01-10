@@ -1,7 +1,7 @@
 .seed-phrase {
   &__wrapper {
     @apply mx-auto;
-    @apply sm:max-w-2xl;
+    @apply sm:max-w-lg;
   }
 
   &__generator {
@@ -12,11 +12,23 @@
     @apply mt-6;
   }
 
-  &__cta {
-    @apply mx-auto mt-6 mb-3;
-  }
-
   &__image {
     @apply mx-auto mb-3;
+  }
+
+  &__warning {
+    @apply !hidden;
+    @apply sm:!flex;
+  }
+
+  &__warning-mobile {
+    @apply !flex;
+    @apply sm:!hidden;
+  }
+
+  &__heading {
+    > p {
+      @apply !font-semibold;
+    }
   }
 }

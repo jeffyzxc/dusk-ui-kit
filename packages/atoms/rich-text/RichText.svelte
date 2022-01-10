@@ -9,7 +9,7 @@
    * If set, this string will be parsed as Markdown and rendered as HTML.
    * @type {?string}
    */
-  export let markdown;
+  export let markdown = null;
 
   /**
    * Sets the size of the Rich Text.
@@ -24,6 +24,7 @@
   export let align = "left";
 
   const context = getContext("DUK:rich-text:context");
+
   setContext("DUK:accordion:context", contexts.ACCORDION.RICH_TEXT);
 </script>
 
@@ -36,6 +37,7 @@
   class:duk-rich-text--hero="{context === contexts.RICH_TEXT.HERO}"
   class:duk-rich-text--card="{context === contexts.RICH_TEXT.CARD}"
   class:duk-rich-text--content="{context === contexts.RICH_TEXT.CONTENT}"
+  class:duk-rich-text--detail-list="{context === contexts.RICH_TEXT.DETAIL_LIST}"
   class:duk-rich-text--left="{align === 'left'}"
   class:duk-rich-text--center="{align === 'center'}"
   class:duk-rich-text--right="{align === 'right'}"
