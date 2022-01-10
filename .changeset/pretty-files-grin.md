@@ -20,10 +20,13 @@
 "@dusk-network/breadcrumb": patch
 "@dusk-network/button": patch
 "@dusk-network/chart": patch
+"@dusk-network/content": patch
 "@dusk-network/control": patch
 "@dusk-network/cta-list": patch
+"@dusk-network/detail-list": patch
 "@dusk-network/disclaimer-list": patch
 "@dusk-network/file-upload": patch
+"@dusk-network/group": patch
 "@dusk-network/heading": patch
 "@dusk-network/menu": patch
 "@dusk-network/mnemonic": patch
