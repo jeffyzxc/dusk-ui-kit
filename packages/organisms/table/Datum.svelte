@@ -1,5 +1,5 @@
 <script>
-  import { getContext, onMount } from "svelte";
+  import { setContext, getContext, onMount } from "svelte";
   import contexts from "@dusk-network/helpers/contexts.js";
   import variants from "@dusk-network/helpers/variants.js";
 
@@ -10,7 +10,11 @@
   export let id = "__DUK-table-datum" + Math.random().toString(36);
 
   let context = getContext("DUK:table:row:datum:context");
+  let gridType = getContext("DUK:datum:context");
   let ref;
+
+  setContext("DUK:loading-indicator:context", contexts.LOADING_INDICATOR.DATUM);
+  setContext("DUK:truncate-text:context", contexts.TRUNCATE_TEXT.DATUM);
 
   onMount(() => {
     if (ref && hidden && context === contexts.DATUM.ROW.BODY) {
@@ -46,7 +50,7 @@
 {:else}
   <td
     class="{$$props.class || ''} duk-table__datum duk-table__datum--cols-{hidden === true
-      ? '12'
+      ? gridType
       : cols}"
     class:duk-table__datum--cta="{variant === variants.TABLE.CTA}"
     class:duk-table__datum--success="{variant === variants.TABLE.SUCCESS}"
