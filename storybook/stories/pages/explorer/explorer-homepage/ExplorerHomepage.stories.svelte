@@ -182,9 +182,7 @@
                 <Datum cols="5">
                   <Icon name="pound-box-outline" tooltip="transaction" />
                   <a href="{`/transactions/transaction?id=${transaction.txid}`}">
-                    <TruncateText width="quarter">
-                      {transaction.txid}
-                    </TruncateText>
+                    <TruncateText width="quarter" text="{transaction.txid}" />
                   </a>
                 </Datum>
                 <Datum cols="4">???</Datum>
