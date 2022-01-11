@@ -1,7 +1,7 @@
 .duk-template-wallet-dashboard {
   &__wrapper {
     @apply grid grid-cols-1 gap-y-6 gap-x-16 mb-12;
-    @apply md:grid-cols-2;
+    @apply lg:grid-cols-2;
   }
 
   &__block-first,
@@ -11,17 +11,17 @@
 
   &__block-first--balance {
     @apply col-span-12 order-1;
-    @apply md:hidden;
+    @apply lg:hidden;
   }
 
   &__block-second--balance {
     @apply col-span-12 hidden;
-    @apply md:order-1 md:block;
+    @apply lg:order-1 lg:block;
   }
 
   &__block-first--address {
     @apply col-span-12 order-2;
-    @apply sm:order-1;
+    @apply lg:order-1;
 
     .duk-card {
       @apply overflow-visible;
@@ -30,7 +30,7 @@
 
   &__block-first--transfer {
     @apply col-span-12 order-4;
-    @apply sm:order-2;
+    @apply lg:order-2;
   }
 
   &__block-first--transaction {
@@ -39,7 +39,7 @@
 
   &__block-second--network {
     @apply col-span-12 order-3;
-    @apply sm:order-2;
+    @apply lg:order-2;
 
     .duk-card {
       @apply overflow-visible;
