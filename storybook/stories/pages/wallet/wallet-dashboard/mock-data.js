@@ -1,4 +1,4 @@
-export let apiData = [
+export let transactionData = [
   {
     id: 1,
     status: "Sent",
