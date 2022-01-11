@@ -20,6 +20,7 @@
 
   setContext("DUK:loading-indicator:context", contexts.LOADING_INDICATOR.DATUM);
   setContext("DUK:truncate-text:context", contexts.TRUNCATE_TEXT.DATUM);
+  setContext("DUK:heading:context", contexts.HEADING.DATUM);
 
   onMount(() => {
     if (ref && hidden && context === contexts.DATUM.ROW.BODY) {

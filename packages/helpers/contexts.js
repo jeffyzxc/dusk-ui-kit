@@ -76,6 +76,7 @@ export default {
     CONTENT: "heading:content",
     DISCLAIMER_LIST: "heading:disclaimer-list",
     HERO: "heading:hero",
+    DATUM: "heading:datum",
   },
   LABEL: {
     BUTTON: "label:button",
