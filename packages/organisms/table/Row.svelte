@@ -18,12 +18,6 @@
   }
 
   setContext("DUK:table:row:datum:context", getDatumContext(type));
-
-  const handleClick = () => {
-    if (getDatumContext(type) === contexts.DATUM.ROW.BODY) {
-      $activeRow === id ? activeRow.set(null) : activeRow.set(id);
-    }
-  };
 </script>
 
 <tr
@@ -33,7 +27,6 @@
   class:duk-table__row--warning="{variant === variants.TABLE.WARNING}"
   class:duk-table__row--danger="{variant === variants.TABLE.DANGER}"
   class:duk-table__row--active="{$activeRow === id}"
-  on:click="{handleClick}"
   id="{id}"
 >
   <slot />

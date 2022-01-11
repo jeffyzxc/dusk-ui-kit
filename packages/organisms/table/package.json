@@ -18,11 +18,13 @@
   "devDependencies": {
     "@dusk-network/drop-down": "workspace:*",
     "@dusk-network/helpers": "workspace:*",
+    "@dusk-network/icon": "workspace:*",
     "@dusk-network/pagination": "workspace:*"
   },
   "peerDependencies": {
     "@dusk-network/drop-down": "workspace:*",
     "@dusk-network/helpers": "workspace:*",
+    "@dusk-network/icon": "workspace:*",
     "@dusk-network/pagination": "workspace:*"
   },
   "gitHead": "875f717e64dae5720efa9d1ca8ba5e236393207c"

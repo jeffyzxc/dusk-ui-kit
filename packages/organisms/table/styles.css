@@ -230,5 +230,13 @@
     &--cols-24 {
       @apply col-span-24;
     }
+
+    &--actions-icon {
+      @apply transform duration-200 ease-in-out transition-all rotate-0;
+
+      &--open {
+        transform: rotate(180deg);
+      }
+    }
   }
 }
