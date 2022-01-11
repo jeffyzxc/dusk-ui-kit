@@ -13,7 +13,7 @@
     }
   }
   &__table {
-    @apply block shadow-table bg-white rounded-md overflow-x-scroll;
+    @apply grid shadow-table bg-white rounded-md overflow-x-scroll;
     @apply dark:bg-gray-700;
     @apply md:overflow-visible;
     & thead,
@@ -22,8 +22,7 @@
     tr,
     td,
     th {
-      @apply text-left;
-      @apply sm:block;
+      @apply text-left block;
     }
 
     tr {
