@@ -37,4 +37,8 @@
   &--datum {
     @apply w-5 h-5;
   }
+
+  &--heading {
+    @apply w-5 h-5;
+  }
 }

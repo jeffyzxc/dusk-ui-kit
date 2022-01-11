@@ -27,6 +27,7 @@
   class:duk-loading-indicator--warning="{variant === variants.LOADING_INDICATOR.WARNING}"
   class:duk-loading-indicator--danger="{variant === variants.LOADING_INDICATOR.DANGER}"
   class:duk-loading-indicator--datum="{context === contexts.LOADING_INDICATOR.DATUM}"
+  class:duk-loading-indicator--heading="{context === contexts.LOADING_INDICATOR.HEADING}"
 >
   <svg
     version="1.1"
