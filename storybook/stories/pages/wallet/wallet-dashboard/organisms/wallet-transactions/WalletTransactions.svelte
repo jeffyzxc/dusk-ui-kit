@@ -9,7 +9,7 @@
   export let transactions = [];
 
   const settings = {
-    sortable: true,
+    sortable: false,
     rowsPerPage: 10,
     pagination: true,
     limiter: false,
@@ -23,10 +23,10 @@
     <h3 slot="title">Recent transactions</h3>
     <thead slot="head">
       <Row type="head">
-        <Datum key="id" cols="1"><span>ID</span></Datum>
-        <Datum key="first_name" cols="4"><span>Status</span></Datum>
-        <Datum key="last_name" cols="4"><span>Time</span></Datum>
-        <Datum key="email" cols="3"><span>Amount</span></Datum>
+        <Datum dataKey="id" cols="1"><span>ID</span></Datum>
+        <Datum dataKey="first_name" cols="4"><span>Status</span></Datum>
+        <Datum dataKey="last_name" cols="4"><span>Time</span></Datum>
+        <Datum dataKey="email" cols="3"><span>Amount</span></Datum>
         <Datum hidden="{true}" />
       </Row>
     </thead>
@@ -64,12 +64,13 @@
                 <DateText time="{row.timeStamp}" />
               </div>
             </Datum>
-            <Datum cols="3">
+            <Datum cols="2">
               <div class="wallet-transactions__block">
                 <Icon name="dusk-ticker" size="sm" />
                 <span>{$number(row.amount)}</span>
               </div>
             </Datum>
+            <Datum cols="1" actions="{true}" />
             <Datum hidden="{true}" class="wallet-transactions__details--row">
               <div class="wallet-transactions__details--wrapper">
                 <div class="wallet-transactions__details">
