@@ -92,6 +92,9 @@
     & .duk-button--circle {
       padding: 0.35rem;
     }
+    .duk-icon {
+      height: calc(1.375rem - 1px);
+    }
   }
 
   &--with-postfix {
