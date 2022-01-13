@@ -4,7 +4,7 @@
   max-width: fit-content;
 
   &__text {
-    @apply text-sm font-normal leading-none max-w-full flex-initial;
+    @apply text-sm font-normal leading-none max-w-full flex-initial whitespace-nowrap;
   }
 
   &--brand {
