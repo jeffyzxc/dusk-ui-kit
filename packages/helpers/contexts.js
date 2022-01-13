@@ -76,12 +76,14 @@ export default {
     CONTENT: "heading:content",
     DISCLAIMER_LIST: "heading:disclaimer-list",
     HERO: "heading:hero",
+    DATUM: "heading:datum",
   },
   LABEL: {
     BUTTON: "label:button",
   },
   LOADING_INDICATOR: {
     HEADING: "loading-indicator:heading",
+    DATUM: "loading-indicator:datum",
   },
   LOGO: {
     NAVBAR: "logo:navbar",
@@ -120,6 +122,9 @@ export default {
   },
   TOGGLE: {
     CONTROL: "toggle:control",
+  },
+  TRUNCATE_TEXT: {
+    DATUM: "truncate-text:datum",
   },
   WIZARD: {
     CARD: "wizard:card",

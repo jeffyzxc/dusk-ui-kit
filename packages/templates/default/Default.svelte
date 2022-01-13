@@ -1,6 +1,17 @@
 <script>
   import "./styles.css";
+
+  /**
+   * Toggles the template loading state if a boolean, otherwise an object that maps to the slots
+   * that are loading can be provided and used in the app template.
+   *
+   * @type { "boolean" | "object" }
+   */
   export let isLoading = false;
+
+  /**
+   * Toggles the template error state.
+   */
   export let isError = false;
 
   let width;
@@ -18,7 +29,7 @@
     <slot name="navbar" />
   </div>
   <main>
-    {#if isLoading}
+    {#if isLoading && typeof isLoading === "boolean"}
       <div class="duk-template__loading">
         <slot name="loading" />
       </div>

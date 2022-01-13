@@ -117,4 +117,8 @@
       @apply dark:!text-red-200;
     }
   }
+
+  &--datum {
+    @apply ml-0 !mb-0;
+  }
 }

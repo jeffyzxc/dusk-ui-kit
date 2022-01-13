@@ -9,6 +9,7 @@ import * as QrCode from "./qr-code";
 import * as RichText from "./rich-text";
 import * as SkeletonLoader from "./skeleton-loader";
 import * as Toggle from "./toggle";
+import * as TruncateText from "./truncate-text";
 
 export {
   Address,
@@ -22,4 +23,5 @@ export {
   RichText,
   SkeletonLoader,
   Toggle,
+  TruncateText,
 };

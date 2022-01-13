@@ -4,6 +4,7 @@ specifiers:
   '@dusk-network/accordion': workspace:*
   '@dusk-network/address': workspace:*
   '@dusk-network/alert': workspace:*
+  '@dusk-network/balance': workspace:*
   '@dusk-network/breadcrumb': workspace:*
   '@dusk-network/button': workspace:*
   '@dusk-network/card': workspace:*
@@ -59,6 +60,7 @@ devDependencies:
   '@dusk-network/accordion': link:../packages/organisms/accordion
   '@dusk-network/address': link:../packages/atoms/address
   '@dusk-network/alert': link:../packages/molecules/alert
+  '@dusk-network/balance': link:../packages/atoms/balance
   '@dusk-network/breadcrumb': link:../packages/molecules/breadcrumb
   '@dusk-network/button': link:../packages/molecules/button
   '@dusk-network/card': link:../packages/organisms/card

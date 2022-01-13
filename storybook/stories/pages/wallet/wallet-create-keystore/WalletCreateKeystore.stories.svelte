@@ -12,7 +12,6 @@
   import Button from "@dusk-network/button";
   import Group from "@dusk-network/group";
   import Heading from "@dusk-network/heading";
-  import RichText from "@dusk-network/rich-text";
   import Toggle from "@dusk-network/toggle";
   import TextField from "@dusk-network/text-field";
   import Icon from "@dusk-network/icon";
@@ -77,7 +76,7 @@
       <Navbar />
     </svelte:fragment>
     <svelte:fragment slot="wizard">
-      <Card class="keystore__wrapper">
+      <Card>
         <Content>
           <Wizard
             stepCount="{3}"
@@ -144,7 +143,7 @@
             <Step number="{2}" let:next>
               <DisclaimerList>
                 <svelte:fragment slot="heading">
-                  <Heading variant="danger" class="keystore__heading">
+                  <Heading variant="danger" align="center" size="sm">
                     <svelte:fragment slot="icon">
                       <Icon variant="danger" name="alert-outline" />
                     </svelte:fragment>
@@ -155,39 +154,42 @@
                   <svelte:fragment slot="icon">
                     <Icon name="safe" size="xxxl" variant="danger" />
                   </svelte:fragment>
-                  <RichText>
-                    <p class="keystore__disclaimer--heading">Don't Lose It</p>
+                  <div>
+                    <Heading><strong>Don't Lose It</strong></Heading>
                     <p>If you lose your keystore file, your wallet will be lost.</p>
-                  </RichText>
+                  </div>
                 </Item>
                 <Item>
                   <svelte:fragment slot="icon">
                     <Icon name="eye-outline" size="xxxl" variant="danger" />
                   </svelte:fragment>
-                  <RichText>
-                    <p class="keystore__disclaimer--heading">Don't Share It</p>
+                  <div>
+                    <Heading><strong>Don't Share It</strong></Heading>
                     <p>
                       Anyone with your keystore file can access your funds.<br /> Beware of malicious
                       phishing sites.
                     </p>
-                  </RichText>
+                  </div>
                 </Item>
                 <Item>
                   <svelte:fragment slot="icon">
                     <Icon name="content-save-alert-outline" size="xxxl" variant="danger" />
                   </svelte:fragment>
-                  <RichText>
-                    <p class="keystore__disclaimer--heading">Store It Securely</p>
+
+                  <div>
+                    <Heading><strong>Store It Securely</strong></Heading>
                     <p>Secure it like the milions of dollars it may one day be worth</p>
-                  </RichText>
+                  </div>
                 </Item>
               </DisclaimerList>
-              <div class="keystore__agreement">
-                <Toggle type="checkbox" on:click="{() => (agreement = !agreement)}">
-                  I understand that I need to keep my keystore file safe, private, and securely
-                  stored.
-                </Toggle>
-              </div>
+              <Control width="full" let:id>
+                <Group>
+                  <Toggle id="{id}" type="checkbox" on:click="{() => (agreement = !agreement)}">
+                    I understand that I need to keep my keystore file safe, private, and securely
+                    stored.
+                  </Toggle>
+                </Group>
+              </Control>
 
               <Group align="center">
                 <Button variant="cta" disabled="{!agreement}" on:click="{next}">
@@ -197,7 +199,7 @@
             </Step>
 
             <Step number="{3}">
-              <Heading align="center" variant="success" class="keystore__heading">
+              <Heading align="center" variant="success" size="sm">
                 <svelte:fragment slot="icon">
                   <Icon name="check-circle-outline" />
                 </svelte:fragment>
@@ -206,7 +208,7 @@
               <Group align="center">
                 <Button variant="cta" on:click="{() => {}}">Access My Wallet</Button>
               </Group>
-              <img class="keystore__image" src="/wallet-intro.png" alt="" />
+              <img src="/wallet-intro.png" alt="" />
             </Step>
           </Wizard>
         </Content>

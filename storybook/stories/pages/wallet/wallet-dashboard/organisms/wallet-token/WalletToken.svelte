@@ -9,9 +9,10 @@
   import Control from "@dusk-network/control";
   import Heading from "@dusk-network/heading";
   import SearchList from "@dusk-network/search-list";
-  import { data } from "./mock-data.js";
   import * as yup from "yup";
   import { number } from "svelte-i18n";
+
+  export let tokens = [];
 
   let addCustom = false;
   let submitted = false;
@@ -64,7 +65,7 @@
       </svelte:fragment>
     </Heading>
     <Content>
-      <SearchList data="{data}" fieldButton="{true}" bind:dataSearchResults="{searchResults}">
+      <SearchList data="{tokens}" fieldButton="{true}" bind:dataSearchResults="{searchResults}">
         {#if searchResults}
           {#each $searchResults as token}
             <!-- TODO Component needed for this type of list: BalanceList or so? -->

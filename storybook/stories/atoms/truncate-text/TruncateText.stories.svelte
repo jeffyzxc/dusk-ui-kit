@@ -51,3 +51,14 @@
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   </TruncateText>
 </Story>
+
+<Story
+  name="Half width with value passed as prop"
+  args="{{
+    width: widths.TRUNCATE_TEXT.HALF,
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  }}"
+  let:args
+>
+  <TruncateText {...args} width="{args.width || undefined}" />
+</Story>

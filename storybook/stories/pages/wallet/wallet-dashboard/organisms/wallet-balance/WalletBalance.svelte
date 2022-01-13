@@ -1,8 +1,8 @@
 <script>
+  import Balance from "@dusk-network/balance";
   import Card from "@dusk-network/card";
   import Content from "@dusk-network/content";
   import Heading from "@dusk-network/heading";
-  import RichText from "@dusk-network/rich-text";
   import { getNumberFormatter } from "svelte-i18n";
 
   const formatOptions = { minimumFractionDigits: 0, maximumFractionDigits: 10 };
@@ -29,17 +29,13 @@
   </Heading>
   <Content>
     {#if fractionParts === ""}
-      <RichText>
-        <p class="wallet-balance">
-          {integerParts} <span>{balance.currency}</span>
-        </p>
-      </RichText>
+      <Balance>
+        {integerParts} <span>{balance.currency}</span>
+      </Balance>
     {:else}
-      <RichText>
-        <p class="wallet-balance">
-          {integerParts}<span>{fractionParts} {balance.currency}</span>
-        </p>
-      </RichText>
+      <Balance>
+        {integerParts}<span>{fractionParts} {balance.currency}</span>
+      </Balance>
     {/if}
   </Content>
 </Card>

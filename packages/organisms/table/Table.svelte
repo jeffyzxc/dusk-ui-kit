@@ -18,6 +18,11 @@
    */
   export let settings = {};
 
+  /**
+   * Sets the number of columns of the Table Row, default is 12 columns but can be extended to 24.
+   */
+  export let gridType = "12";
+
   setContext(key, {});
   createContext();
 
@@ -35,13 +40,14 @@
 
   setContext("DUK:drop-down:context", contexts.DROP_DOWN.TABLE);
   setContext("DUK:pagination:context", contexts.PAGINATION.TABLE);
+  setContext("DUK:datum:context", gridType);
 </script>
 
 <div id="{$id}" class="{$$props.class || ''} duk-table">
   <div class="duk-table__title">
     <slot name="title" />
   </div>
-  <table class="duk-table__table">
+  <table class="duk-table__table" class:duk-table__table--extended="{gridType === '24'}">
     <slot name="head" />
     <slot />
     <slot name="foot" />

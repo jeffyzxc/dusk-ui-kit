@@ -1,6 +1,9 @@
 .duk-template-wallet-wizard {
   &__wizard {
-    @apply mx-auto my-12;
-    @apply sm:max-w-2xl;
+    @apply mb-6;
+
+    & .duk-card {
+      @apply max-w-md mx-auto;
+    }
   }
 }

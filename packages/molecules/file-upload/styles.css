@@ -24,4 +24,8 @@
   &__layout {
     @apply hidden;
   }
+
+  &--control {
+    @apply mt-0 mb-0;
+  }
 }

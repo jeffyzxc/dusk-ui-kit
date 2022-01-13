@@ -4,6 +4,7 @@
   import { types, states } from "@dusk-network/helpers";
   // import results from "../../../../.jest-test-results.json";
   // import { withTests } from "@storybook/addon-jest";
+  import Icon from "@dusk-network/icon";
   import Control from "@dusk-network/control";
   import TextField from "@dusk-network/text-field";
   import Toggle from "@dusk-network/toggle";
@@ -133,6 +134,21 @@
     let:id
   >
     <Button slot="buttonPostfix">Postfixed</Button>
+    <TextField id="{id}" state="{args.state}" />
+  </Control>
+</Story>
+
+<Story name="Search example" args="{{ buttonPrefix: true }}" let:args>
+  <Control
+    width="full"
+    {...args}
+    on:click="{args.onClick}"
+    on:mouseover="{args.onMouseover}"
+    let:id
+  >
+    <Button slot="buttonPostfix">
+      <Icon name="magnify" />
+    </Button>
     <TextField id="{id}" state="{args.state}" />
   </Control>
 </Story>

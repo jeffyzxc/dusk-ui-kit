@@ -182,9 +182,7 @@
                 <Datum cols="5">
                   <Icon name="pound-box-outline" tooltip="transaction" />
                   <a href="{`/transactions/transaction?id=${transaction.txid}`}">
-                    <TruncateText width="quarter">
-                      {transaction.txid}
-                    </TruncateText>
+                    <TruncateText width="quarter" text="{transaction.txid}" />
                   </a>
                 </Datum>
                 <Datum cols="4">???</Datum>
@@ -210,8 +208,12 @@
   </Template>
 </Story>
 
-<Story name="Loading State" args="{{}}" let:args>
-  <Template>
+<Story
+  name="Loading State"
+  args="{{ isLoading: { control_panel: true, latest_blocks: true, latest_transactions: true } }}"
+  let:args
+>
+  <Template isLoading="{args.isLoading}">
     <svelte:fragment slot="navbar">
       <Navbar />
     </svelte:fragment>

@@ -1,0 +1,19 @@
+{
+  "name": "@dusk-network/balance",
+  "version": "0.0.0",
+  "description": "Dusk UI Kit - Balance",
+  "bugs": {
+    "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dusk-network/dusk-ui-kit.git",
+    "directory": "packages/atoms/balance"
+  },
+  "type": "module",
+  "module": "index.js",
+  "scripts": {
+    "test": "echo \"Work in progress...\" && exit 1"
+  },
+  "gitHead": "323f0f39b03981474ca4a48ba8e06a8396b15635"
+}

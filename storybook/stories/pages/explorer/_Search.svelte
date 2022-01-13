@@ -38,7 +38,7 @@
       state="{state}"
     />
     <Button slot="buttonPostfix" type="submit" disable="{submitted}">
-      <Icon name="magnify" size="sm" />
+      <Icon name="magnify" />
     </Button>
   </Control>
 </Form>
