@@ -23,6 +23,7 @@
 
   const transaction = JSON.parse(transactions).data.transactions[0];
   const decodeOptions = ["Input data", "Output data"];
+
   let selectedDecodeOptionIndex = 0;
 </script>
 
@@ -188,7 +189,7 @@ MethodID: 0xa9059cbb
   </Template>
 </Story>
 
-<Story name="Loading State" args="{{}}" let:args>
+<Story name="Loading State" args="{{ isLoading: { detail_details: true } }}" let:args>
   <Template>
     <svelte:fragment slot="navbar">
       <Navbar />

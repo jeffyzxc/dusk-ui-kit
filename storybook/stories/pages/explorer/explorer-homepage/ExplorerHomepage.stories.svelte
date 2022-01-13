@@ -210,8 +210,12 @@
   </Template>
 </Story>
 
-<Story name="Loading State" args="{{}}" let:args>
-  <Template>
+<Story
+  name="Loading State"
+  args="{{ isLoading: { control_panel: true, latest_blocks: true, latest_transactions: true } }}"
+  let:args
+>
+  <Template isLoading="{args.isLoading}">
     <svelte:fragment slot="navbar">
       <Navbar />
     </svelte:fragment>

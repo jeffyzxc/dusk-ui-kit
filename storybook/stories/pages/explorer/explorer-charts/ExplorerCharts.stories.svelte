@@ -4,13 +4,13 @@
   import Template from "@dusk-network/explorer-charts";
   // import results from "../../../../../.jest-test-results.json";
   // import { withTests } from "@storybook/addon-jest";
+  import SkeletonLoader from "@dusk-network/skeleton-loader";
   import Card from "@dusk-network/card";
   import Content from "@dusk-network/content";
   import Chart from "@dusk-network/chart";
   import Heading from "@dusk-network/heading";
   import RichText from "@dusk-network/rich-text";
   import Navbar from "../_Navbar.svelte";
-  import Search from "../_Search.svelte";
   import Footer from "../_Footer.svelte";
   import meta from "../../../meta";
   import { marketData } from "./data.js";
@@ -67,17 +67,10 @@
   argTypes="{meta('templates/explorer-charts/ExplorerCharts', {})}"
 />
 
-<Story name="Loaded State" args="{{}}" let:args>
-  <Template>
+<Story name="Loaded State" args="{{ isLoading: false }}" let:args>
+  <Template isError="{args.isError}" isLoading="{args.isLoading}">
     <svelte:fragment slot="navbar">
       <Navbar />
-    </svelte:fragment>
-    <svelte:fragment slot="control-panel">
-      <Card>
-        <Content>
-          <Search />
-        </Content>
-      </Card>
     </svelte:fragment>
     <svelte:fragment slot="map">
       <Card>
@@ -113,7 +106,73 @@
         </Content>
       </Card>
     </svelte:fragment>
-    <!-- <svelte:fragment slot="blockchain-data">
+    <!-- <svelte:fragment slot="blockchain-data" let:isLoading>
+      <Heading><h2>Blockchain Data</h2></Heading>
+      <Card>
+        <Heading>
+          <h3>Transaction per second</h3>
+        </Heading>
+        <Content>
+          Chart here
+        </Content>
+      </Card>
+      <Card>
+        <Heading>
+          <h3>Average Block Time</h3>
+        </H>
+        <Content>
+          Chart here
+        </Content>
+      </Card>
+      <Card>
+        <Heading>
+          <h3>Average Gas Price</h3>
+        </Heading>
+        <Content>
+          Chart here
+        </Content>
+      </Card> 
+    </svelte:fragment>-->
+    <svelte:fragment slot="footer">
+      <Footer />
+    </svelte:fragment>
+  </Template>
+</Story>
+
+<Story
+  name="Loading State"
+  args="{{ isLoading: { map: true, market_data: true, blockchain_data: true } }}"
+  let:args
+>
+  <Template isError="{args.isError}" isLoading="{args.isLoading}">
+    <svelte:fragment slot="navbar">
+      <Navbar />
+    </svelte:fragment>
+    <svelte:fragment slot="map">
+      <SkeletonLoader
+        rounded="{true}"
+        height="656px"
+        extraSmallScreenHeight="656px"
+        smallScreenHeight="404px"
+        mediumScreenHeight="404px"
+        largeScreenHeight="320px"
+        extraLargeScreenHeight="320px"
+        jumboScreenHeight="320px"
+      />
+    </svelte:fragment>
+    <svelte:fragment slot="market-data">
+      <SkeletonLoader
+        rounded="{true}"
+        height="656px"
+        extraSmallScreenHeight="656px"
+        smallScreenHeight="404px"
+        mediumScreenHeight="404px"
+        largeScreenHeight="320px"
+        extraLargeScreenHeight="320px"
+        jumboScreenHeight="320px"
+      />
+    </svelte:fragment>
+    <!-- <svelte:fragment slot="blockchain-data" let:isLoading>
       <Heading><h2>Blockchain Data</h2></Heading>
       <Card>
         <Heading>
