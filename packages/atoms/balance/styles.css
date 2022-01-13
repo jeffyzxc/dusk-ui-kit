@@ -1,0 +1,13 @@
+.duk-balance {
+  @apply text-2xl font-normal;
+  @apply xs:text-3xl;
+  @apply lg:text-4xl;
+
+  p,
+  span {
+    @apply text-sm font-normal text-indigo-500;
+    @apply dark:text-white;
+    @apply sm:text-lg;
+    @apply lg:text-xl;
+  }
+}
