@@ -1,5 +1,11 @@
 # @dusk-network/dusk-ui-kit-examples
 
+## 4.4.0
+
+### Minor Changes
+
+- ca37e869: Release 4.3.0
+
 ## 4.3.1
 
 ### Patch Changes

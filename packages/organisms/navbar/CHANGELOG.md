@@ -1,5 +1,20 @@
 # @dusk-network/navbar
 
+## 4.4.0
+
+### Minor Changes
+
+- ca37e869: Release 4.3.0
+
+### Patch Changes
+
+- Updated dependencies [ca37e869]
+  - @dusk-network/icon@4.4.0
+  - @dusk-network/logo@4.4.0
+  - @dusk-network/toggle@4.4.0
+  - @dusk-network/helpers@4.4.0
+  - @dusk-network/menu@4.4.0
+
 ## 4.3.1
 
 ### Patch Changes
