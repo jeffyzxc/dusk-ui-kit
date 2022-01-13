@@ -71,12 +71,11 @@
       <Navbar />
     </svelte:fragment>
     <svelte:fragment slot="wizard">
-      <Card class="seed-login__wrapper">
+      <Card>
+        <Breadcrumb on:exit="{() => {}}">
+          <Item><strong>Enter Your Seed Phrase</strong></Item>
+        </Breadcrumb>
         <Content>
-          <Breadcrumb class="seed-login__breadcrumb" on:exit="{() => {}}">
-            <Item><strong>Enter Your Seed Phrase</strong></Item>
-          </Breadcrumb>
-          <Icon name="key-outline" size="xxl" />
           <Form
             submitted="{submitted}"
             schema="{schema}"
@@ -89,9 +88,11 @@
               }
             }}"
           >
+            <Group align="center">
+              <Icon name="key-outline" size="xxl" />
+            </Group>
             <Control name="mnemonic" let:id let:state width="full">
               <Mnemonic
-                class="seed-login__mnemonic"
                 seed="{seedPhrase}"
                 type="{types.MNEMONIC.AUTHENTICATE}"
                 on:complete="{(completedSeed) => {
