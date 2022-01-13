@@ -1,7 +1,18 @@
 <script>
   import Template from "@dusk-network/default";
   import "./styles.css";
+
+  /**
+   * Toggles the template global loading state if a boolean, otherwise an object that maps to the slots
+   * that are loading.
+   *
+   * @type { "boolean" | "object" }
+   */
   export let isLoading = false;
+
+  /**
+   * Toggles the template error state.
+   */
   export let isError = false;
 </script>
 
@@ -23,16 +34,16 @@
   <section class="duk-template__container">
     <div class="duk-template-devops-dashboard__overview">
       <div class="duk-template-devops-dashboard__map">
-        <slot name="map" />
+        <slot name="map" isLoading="{isLoading['map']}" />
       </div>
       <div class="duk-template-devops-dashboard__node-status">
-        <slot name="node-status" />
+        <slot name="node-status" isLoading="{isLoading['node_status']}" />
       </div>
     </div>
   </section>
   <section class="duk-template__container">
     <div class="duk-template-devops-dashboard__deployed-networks">
-      <slot name="deployed-networks" />
+      <slot name="deployed-networks" isLoading="{isLoading['deployed_networks']}" />
     </div>
   </section>
   <svelte:fragment slot="footer">

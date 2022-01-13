@@ -1,7 +1,18 @@
 <script>
   import Template from "@dusk-network/default";
   import "./styles.css";
+
+  /**
+   * Toggles the template global loading state if a boolean, otherwise an object that maps to the slots
+   * that are loading.
+   *
+   * @type { "boolean" | "object" }
+   */
   export let isLoading = false;
+
+  /**
+   * Toggles the template error state.
+   */
   export let isError = false;
 </script>
 
