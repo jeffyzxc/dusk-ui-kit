@@ -13,7 +13,7 @@
     }
   }
   &__table {
-    @apply block shadow-table bg-white rounded-md overflow-x-scroll;
+    @apply grid shadow-table bg-white rounded-md overflow-x-scroll;
     @apply dark:bg-gray-700;
     @apply md:overflow-visible;
     & thead,
@@ -22,7 +22,7 @@
     tr,
     td,
     th {
-      @apply block text-left;
+      @apply text-left block;
     }
 
     tr {
@@ -82,6 +82,12 @@
         }
       }
     }
+
+    &--extended {
+      tr {
+        @apply grid-cols-24;
+      }
+    }
   }
   &__actions {
     @apply flex items-center justify-between py-2 px-5 mt-3 bg-white shadow-table rounded-tl-md rounded-tr-md rounded-bl-xl rounded-br-xl;
@@ -108,12 +114,6 @@
   }
 
   &__datum {
-    /* FIXME These styles should be covered under LoadingIndicator and Icon with context styles! */
-    & .duk-loading-indicator,
-    & .duk-icon {
-      @apply w-6;
-    }
-
     &--sortable {
       @apply cursor-pointer;
     }
@@ -180,6 +180,62 @@
 
     &--cols-12 {
       @apply col-span-12;
+    }
+
+    &--cols-13 {
+      @apply col-span-13;
+    }
+
+    &--cols-14 {
+      @apply col-span-14;
+    }
+
+    &--cols-15 {
+      @apply col-span-15;
+    }
+
+    &--cols-16 {
+      @apply col-span-16;
+    }
+
+    &--cols-17 {
+      @apply col-span-17;
+    }
+
+    &--cols-18 {
+      @apply col-span-18;
+    }
+
+    &--cols-19 {
+      @apply col-span-19;
+    }
+
+    &--cols-20 {
+      @apply col-span-20;
+    }
+
+    &--cols-21 {
+      @apply col-span-21;
+    }
+
+    &--cols-22 {
+      @apply col-span-22;
+    }
+
+    &--cols-23 {
+      @apply col-span-23;
+    }
+
+    &--cols-24 {
+      @apply col-span-24;
+    }
+
+    &--actions-icon {
+      @apply transform duration-200 ease-in-out transition-all rotate-0;
+
+      &--open {
+        transform: rotate(180deg);
+      }
     }
   }
 }

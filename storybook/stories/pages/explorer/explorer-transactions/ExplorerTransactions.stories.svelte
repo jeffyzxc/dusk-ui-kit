@@ -86,9 +86,7 @@
                         href="{`/transaction?id=${transaction.blockhash}/details`}"
                       >
                         <Icon name="eye-circle-outline" />
-                        <TruncateText width="quarter">
-                          {transaction.blockhash}
-                        </TruncateText>
+                        <TruncateText width="quarter" text="{transaction.blockhash}" />
                       </a>
                     </Datum>
                     <Datum cols="1">??</Datum>

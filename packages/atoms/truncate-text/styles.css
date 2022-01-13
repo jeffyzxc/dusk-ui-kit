@@ -18,4 +18,11 @@
   &__value {
     @apply block truncate;
   }
+
+  &--datum,
+  &--slice {
+    ^&__value {
+      @apply inline overflow-visible;
+    }
+  }
 }

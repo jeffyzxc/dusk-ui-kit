@@ -37,6 +37,7 @@
   class:duk-heading--hero="{context === contexts.HEADING.HERO}"
   class:duk-heading--content="{context === contexts.HEADING.CONTENT}"
   class:duk-heading--disclaimer-list="{context === contexts.HEADING.DISCLAIMER_LIST}"
+  class:duk-heading--datum="{context === contexts.HEADING.DATUM}"
   class:duk-heading--small="{size === sizes.HEADING.SMALL}"
   class:duk-heading--large="{size === sizes.HEADING.LARGE}"
   class:duk-heading--success="{variant === variants.HEADING.SUCCESS}"

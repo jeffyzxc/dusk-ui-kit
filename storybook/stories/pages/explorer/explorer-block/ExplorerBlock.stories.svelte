@@ -203,7 +203,7 @@
               <Row>
                 <Datum cols="3">
                   <a href="#">
-                    <TruncateText width="quarter">{transaction.blockhash}</TruncateText>
+                    <TruncateText width="quarter" text="{transaction.blockhash}" />
                   </a>
                 </Datum>
                 <Datum cols="3">
