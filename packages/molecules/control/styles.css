@@ -92,6 +92,10 @@
     & .duk-button--circle {
       padding: 0.35rem;
     }
+
+    & .duk-icon {
+      max-height: 21px;
+    }
   }
 
   &--with-postfix {
