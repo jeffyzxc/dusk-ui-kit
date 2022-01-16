@@ -114,9 +114,17 @@ const config = {
     appDir: "internal", // Needed to work with Github pages.
     target: "#dusk",
     vite: () => ({
+      build: {
+        target: ["es2020"],
+      },
       optimizeDeps: {
-        include: ["highlight.js/lib/core", "broadcast-channel", "qrcode"],
-        exclude: ["@dusk-network/table"],
+        include: ["highlight.js/lib/core", "qrcode"],
+        exclude: ["fsevents", "purgecss", "rollup-pluginutils"],
+      },
+      resolve: {
+        alias: {
+          "node:stream": "stream-browserify",
+        },
       },
       plugins: [
         virtualExamplePlugin(),

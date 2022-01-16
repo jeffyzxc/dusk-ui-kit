@@ -11,12 +11,13 @@
     "directory": "packages/helpers"
   },
   "type": "module",
+  "main": "index.js",
   "module": "index.js",
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
   },
   "dependencies": {
-    "merge-anything": "^4.0.1"
+    "merge-anything": "^4.0.2"
   },
   "devDependencies": {
     "@dusk-network/styles": "workspace:*"
@@ -24,5 +25,6 @@
   "peerDependencies": {
     "@dusk-network/styles": "workspace:*"
   },
-  "gitHead": "323f0f39b03981474ca4a48ba8e06a8396b15635"
+  "gitHead": "323f0f39b03981474ca4a48ba8e06a8396b15635",
+  "svelte": "index.js"
 }

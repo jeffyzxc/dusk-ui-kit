@@ -11,9 +11,11 @@
     "directory": "packages/atoms/balance"
   },
   "type": "module",
+  "main": "index.js",
   "module": "index.js",
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
   },
-  "gitHead": "323f0f39b03981474ca4a48ba8e06a8396b15635"
+  "gitHead": "323f0f39b03981474ca4a48ba8e06a8396b15635",
+  "svelte": "index.js"
 }

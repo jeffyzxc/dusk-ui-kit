@@ -6,7 +6,6 @@ const postcssNestedAncestors = require("postcss-nested-ancestors");
 const nesting = require("tailwindcss/nesting");
 const tailwindcss = require("tailwindcss");
 const autoprefixer = require("autoprefixer");
-const each = require("postcss-each");
 const customSelectors = require("postcss-custom-selectors");
 
 module.exports = {
@@ -14,7 +13,6 @@ module.exports = {
     postcssImport,
     postcssUrl,
     customSelectors,
-    each,
     postcssInputRange,
     postcssNestedAncestors,
     nesting,
