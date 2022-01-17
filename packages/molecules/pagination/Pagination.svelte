@@ -55,7 +55,6 @@
 <nav
   class="{$$props.class || ''} duk-pagination"
   class:duk-pagination--table="{context === contexts.PAGINATION.TABLE}"
-  role="navigation"
   aria-label="Pagination Navigation"
   ref="{ref}"
 >
