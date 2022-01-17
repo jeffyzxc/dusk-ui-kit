@@ -29,6 +29,6 @@
     "tailwind-config-viewer": "^1.6.3",
     "tailwindcss": "^2.2.19"
   },
-  "gitHead": "323f0f39b03981474ca4a48ba8e06a8396b15635",
+  "gitHead": "3040550fcac5293abdaba8e44591cd07b104b8a9",
   "svelte": "index.js"
 }
