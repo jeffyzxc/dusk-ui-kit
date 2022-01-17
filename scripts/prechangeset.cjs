@@ -15,13 +15,19 @@ const git = simpleGit({
   baseDir: process.cwd(), // FIXME this should probably be set to the repo root.
 });
 const gitHead = require("child_process").execSync("git rev-parse HEAD").toString().trim();
-const fileSearch = glob("packages/**/package.json");
+const fileSearch = glob("packages/!(node_modules)/**/package.json");
 fileSearch.forEach((file) => {
   const newData = {
     gitHead,
   };
-  const data = Object.assign({}, JSON.parse(fs.readFileSync(path.resolve(file), "utf-8")), newData);
-  fs.writeFileSync(path.resolve(file), JSON.stringify(data, true, 2));
+  if (!file.includes("node_modules")) {
+    const data = Object.assign(
+      {},
+      JSON.parse(fs.readFileSync(path.resolve(file), "utf-8")),
+      newData,
+    );
+    fs.writeFileSync(path.resolve(file), JSON.stringify(data, true, 2));
+  }
 });
 
 if (fileSearch) {
