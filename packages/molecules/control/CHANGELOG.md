@@ -1,5 +1,17 @@
 # @dusk-network/control
 
+## 4.5.0
+
+### Minor Changes
+
+- 023ecf0d: Release
+
+### Patch Changes
+
+- Updated dependencies [023ecf0d]
+  - @dusk-network/icon@4.5.0
+  - @dusk-network/helpers@4.5.0
+
 ## 4.4.0
 
 ### Minor Changes
