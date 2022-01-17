@@ -23,29 +23,25 @@ const virtualMetaPlugin = () => {
 };
 
 module.exports = {
-  async viteFinal(config) {
+  async viteFinal(config, { configType }) {
     config.plugins.push(
       dusk({
         cssPath: "./node_modules/@dusk-network/styles/tailwind.css",
       }),
     );
+    console.log("configType", configType);
+    if (configType === "DEVELOPMENT") config.build = {};
+    config.build.target = "es2020";
     config.plugins.push(virtualMetaPlugin());
-    // config.plugins.push(mdPlugin.default);
     config.resolve.dedupe = ["@storybook/client-api"]; // 🔧 for hoisted packages
 
     if (process.env.NODE_ENV === "production") config.base = ""; // 🔧 for embedding storybook on GH Pages
 
-    config.resolve = {
-      ...config.resolve,
-      // alias: {
-      //   ...config.resolve.alias,
-      //   path: require.resolve("path-browserify"),
-      // },
+    config.optimizeDeps = {
+      exclude: ["fsevents", "purgecss", "rollup-pluginutils"],
     };
 
-    // config.optimizeDeps = {
-    //   exclude: ["@dusk-network/table"],
-    // };
+    console.log("config", config);
 
     return config;
   },
