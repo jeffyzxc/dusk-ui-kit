@@ -4,9 +4,9 @@
   /**
    * @type {import('@sveltejs/kit').Load}
    */
-  export async function load({ page, stuff }) {
-    const redirect = `${base}/components/${page.params.group}/${page.params.package}/${
-      Object.entries(stuff.components[page.params.group][page.params.package])[0][0]
+  export async function load({ params, stuff }) {
+    const redirect = `${base}/components/${params.group}/${params.package}/${
+      Object.entries(stuff.components[params.group][params.package])[0][0]
     }`;
 
     return {

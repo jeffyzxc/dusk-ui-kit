@@ -2,9 +2,9 @@
   /**
    * @type {import('@sveltejs/kit').Load}
    */
-  export async function load({ page, stuff }) {
+  export async function load({ params, stuff }) {
     const group = Object.keys(stuff.components)
-      .filter((key) => key === page.params.group)
+      .filter((key) => key === params.group)
       .reduce((obj, key) => {
         obj = stuff.components[key];
         return obj;
