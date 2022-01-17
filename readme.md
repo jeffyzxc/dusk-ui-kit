@@ -6,8 +6,8 @@
 
 ## Prerequisites
 
-- node ^14.16.0
-- pnpm ^6.15.0
+- node ^17.0.0
+- pnpm ^6.0.0
 
 ## Install
 
