@@ -11,12 +11,10 @@
     "directory": "packages/atoms/progress-bar"
   },
   "type": "module",
+  "main": "index.js",
   "module": "index.js",
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
-  },
-  "dependencies": {
-    "marked": "^3.0.7"
   },
   "devDependencies": {
     "@dusk-network/helpers": "workspace:*"
@@ -24,5 +22,6 @@
   "peerDependencies": {
     "@dusk-network/helpers": "workspace:*"
   },
-  "gitHead": "323f0f39b03981474ca4a48ba8e06a8396b15635"
+  "gitHead": "3040550fcac5293abdaba8e44591cd07b104b8a9",
+  "svelte": "index.js"
 }

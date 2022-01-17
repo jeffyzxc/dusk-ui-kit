@@ -4,8 +4,8 @@
   /**
    * @type {import('@sveltejs/kit').Load}
    */
-  export async function load({ page, stuff }) {
-    const meta = stuff.components[page.params.group][page.params.package][page.params.component];
+  export async function load({ params, stuff }) {
+    const meta = stuff.components[params.group][params.package][params.component];
     const Examples = await import("@dusk-network/dusk-ui-kit-examples");
 
     return {

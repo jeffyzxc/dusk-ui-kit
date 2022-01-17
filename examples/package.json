@@ -60,10 +60,10 @@
     "@dusk-network/wizard": "workspace:*"
   },
   "peerDependencies": {
-    "svelte": "^3.44.1",
-    "svelte-preprocess": "^4.9.5"
+    "svelte": "^3.46.2",
+    "svelte-preprocess": "^4.10.1"
   },
   "engines": {
-    "node": "14.16.0"
+    "node": "^17.0.0"
   }
 }

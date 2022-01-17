@@ -33,7 +33,6 @@
   class:duk-menu--navbar="{context === contexts.MENU.NAVBAR}"
   class:duk-menu--footer="{context === contexts.MENU.FOOTER}"
   id="{id}"
-  role="navigation"
   aria-label="{name || undefined}"
 >
   <slot name="title" />

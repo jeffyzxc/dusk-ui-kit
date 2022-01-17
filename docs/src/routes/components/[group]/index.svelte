@@ -4,8 +4,8 @@
   /**
    * @type {import('@sveltejs/kit').Load}
    */
-  export async function load({ page, stuff }) {
-    const { group } = page.params;
+  export async function load({ params, stuff }) {
+    const { group } = params;
 
     let redirect = `${base}/components/${group}/${Object.entries(stuff.components[group])[0][0]}`;
 

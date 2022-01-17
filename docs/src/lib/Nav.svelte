@@ -17,11 +17,11 @@
   <svelte:fragment slot="navigation">
     <Menu orientation="horizontal" name="App Navigation">
       {#each Object.keys(components) as group}
-        <Item href="{base}/components/{group}" active="{$page.path.includes(group)}">
+        <Item href="{base}/components/{group}" active="{$page.url.pathname.includes(group)}">
           {group.toUpperCase()}
         </Item>
       {/each}
-      <Item href="{base}/helpers" active="{$page.path.includes('helpers')}">HELPERS</Item>
+      <Item href="{base}/helpers" active="{$page.url.pathname.includes('helpers')}">HELPERS</Item>
     </Menu>
   </svelte:fragment>
   <svelte:fragment slot="links">
