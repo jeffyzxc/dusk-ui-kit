@@ -1,5 +1,6 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
+  import { linkTo } from "@storybook/addon-links";
   // import { variants, states } from "@dusk-network/helpers";
   import Template from "@dusk-network/explorer-detail";
   // import results from "../../../../../.jest-test-results.json";
@@ -115,14 +116,14 @@
                   {$number(block.header.height)}
                 </svelte:fragment>
                 {#if block.header.prevblockhash}
-                  <a sveltekit:prefetch href="#">
+                  <a href="{linkTo('Pages/Explorer/Block', 'Loaded State')}">
                     <Icon name="arrow-left-circle" size="sm" />
                   </a>
                 {:else}
                   <Icon class="disabled" name="arrow-left-circle" size="sm" />
                 {/if}
                 {#if block.header.next}
-                  <a sveltekit:prefetch href="#">
+                  <a href="{linkTo('Pages/Explorer/Block', 'Loaded State')}">
                     <Icon name="arrow-right-circle" size="sm" />
                   </a>
                 {:else}
@@ -174,7 +175,9 @@
           <ListItem helpText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
             <span slot="term"> Parent Hash </span>
             <svelte:fragment slot="definition">
-              <a href="#">cad12d6b925fc5c0b02e51d1b3128c2d60e84f262786f2ba35d743957cda458f</a>
+              <a href="{linkTo('Pages/Explorer/Block', 'Loaded State')}"
+                >cad12d6b925fc5c0b02e51d1b3128c2d60e84f262786f2ba35d743957cda458f</a
+              >
             </svelte:fragment>
           </ListItem>
           <ListItem helpText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
@@ -202,7 +205,7 @@
             {#each $rows as transaction}
               <Row>
                 <Datum cols="3">
-                  <a href="#">
+                  <a href="{linkTo('Pages/Explorer/Transaction', 'Loaded State')}">
                     <TruncateText width="quarter" text="{transaction.blockhash}" />
                   </a>
                 </Datum>
