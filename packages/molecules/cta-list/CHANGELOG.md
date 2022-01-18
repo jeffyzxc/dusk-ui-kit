@@ -1,5 +1,16 @@
 # @dusk-network/cta-list
 
+## 4.5.1
+
+### Patch Changes
+
+- bf08b6df: Release
+- Updated dependencies [bf08b6df]
+  - @dusk-network/icon@4.5.1
+  - @dusk-network/helpers@4.5.1
+  - @dusk-network/button@4.5.1
+  - @dusk-network/menu@4.5.1
+
 ## 4.5.0
 
 ### Minor Changes
