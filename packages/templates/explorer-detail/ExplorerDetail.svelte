@@ -44,8 +44,8 @@
     </div>
   </section>
   <section class="duk-template__container">
-    <div class="duk-template-explorer-detail__list" isLoading="{isLoading['list']}">
-      <slot name="detail-list" height="{height}" width="{width}" />
+    <div class="duk-template-explorer-detail__list">
+      <slot name="detail-list" height="{height}" width="{width}" isLoading="{isLoading['list']}" />
     </div>
   </section>
   <svelte:fragment slot="footer">
