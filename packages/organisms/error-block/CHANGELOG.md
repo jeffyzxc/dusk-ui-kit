@@ -1,5 +1,11 @@
 # @dusk-network/error-block
 
+## 4.5.0
+
+### Minor Changes
+
+- 023ecf0d: Release
+
 ## 4.4.0
 
 ### Minor Changes

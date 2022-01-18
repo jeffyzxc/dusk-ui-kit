@@ -1,5 +1,27 @@
 # @dusk-network/dusk-ui-kit-docs
 
+## 4.5.0
+
+### Minor Changes
+
+- 023ecf0d: Release
+
+### Patch Changes
+
+- Updated dependencies [023ecf0d]
+  - @dusk-network/dusk-ui-kit-examples@4.5.0
+  - @dusk-network/icon@4.5.0
+  - @dusk-network/rich-text@4.5.0
+  - @dusk-network/helpers@4.5.0
+  - @dusk-network/content@4.5.0
+  - @dusk-network/heading@4.5.0
+  - @dusk-network/menu@4.5.0
+  - @dusk-network/card@4.5.0
+  - @dusk-network/footer@4.5.0
+  - @dusk-network/navbar@4.5.0
+  - @dusk-network/styles@4.5.0
+  - @dusk-network/default@4.5.0
+
 ## 4.4.0
 
 ### Patch Changes

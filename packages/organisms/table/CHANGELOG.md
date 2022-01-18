@@ -1,5 +1,19 @@
 # @dusk-network/table
 
+## 4.5.0
+
+### Minor Changes
+
+- 023ecf0d: Release
+
+### Patch Changes
+
+- Updated dependencies [023ecf0d]
+  - @dusk-network/drop-down@4.5.0
+  - @dusk-network/icon@4.5.0
+  - @dusk-network/helpers@4.5.0
+  - @dusk-network/pagination@4.5.0
+
 ## 4.4.0
 
 ### Minor Changes
