@@ -1,5 +1,11 @@
 # @dusk-network/dusk-ui-kit-examples
 
+## 4.5.2
+
+### Patch Changes
+
+- b252568f: Release
+
 ## 4.5.0
 
 ### Minor Changes
