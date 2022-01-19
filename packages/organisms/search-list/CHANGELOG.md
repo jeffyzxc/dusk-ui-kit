@@ -1,5 +1,18 @@
 # @dusk-network/search-list
 
+## 4.5.2
+
+### Patch Changes
+
+- b252568f: Release
+- Updated dependencies [b252568f]
+  - @dusk-network/icon@4.5.2
+  - @dusk-network/rich-text@4.5.2
+  - @dusk-network/text-field@4.5.2
+  - @dusk-network/helpers@4.5.2
+  - @dusk-network/button@4.5.2
+  - @dusk-network/control@4.5.2
+
 ## 4.5.1
 
 ### Patch Changes

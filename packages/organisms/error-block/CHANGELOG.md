@@ -1,5 +1,11 @@
 # @dusk-network/error-block
 
+## 4.5.2
+
+### Patch Changes
+
+- b252568f: Release
+
 ## 4.5.1
 
 ### Patch Changes
