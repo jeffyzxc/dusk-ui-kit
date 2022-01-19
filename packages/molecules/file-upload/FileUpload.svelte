@@ -2,8 +2,8 @@
   //TODO Use ES6 syntax more effectively
   import { getContext, createEventDispatcher } from "svelte";
   import contexts from "@dusk-network/helpers/contexts.js";
-  import RichText from "@dusk-network/rich-text/RichText.svelte";
-  import Icon from "@dusk-network/icon/Icon.svelte";
+  import RichText from "@dusk-network/rich-text";
+  import Icon from "@dusk-network/icon";
   import "./styles.css";
 
   /**

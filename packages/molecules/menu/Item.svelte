@@ -14,7 +14,7 @@
   {#if href}
     <a
       href="{href}"
-      rel="{external ? 'external' : ''}"
+      rel="{external ? 'external' : null}"
       class="duk-menu__item-wrapper"
       class:duk-menu__item-wrapper--active="{active}"
     >
