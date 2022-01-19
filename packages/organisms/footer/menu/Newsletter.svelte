@@ -1,6 +1,6 @@
 <script>
-  import TextField from "@dusk-network/text-field/TextField.svelte";
-  import Button from "@dusk-network/button/Button.svelte";
+  import TextField from "@dusk-network/text-field";
+  import Button from "@dusk-network/button";
 </script>
 
 <form class="duk-footer__newsletter">

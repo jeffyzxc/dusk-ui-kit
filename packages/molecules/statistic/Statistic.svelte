@@ -1,10 +1,14 @@
 <script>
+  import { setContext } from "svelte";
+  import { contexts } from "@dusk-network/helpers";
   import "./styles.css";
 
   /**
    * The title to be displayed with the statistic.
    * */
   export let title = "";
+
+  setContext("DUK:chip:context", contexts.CHIP.STATISTIC);
 </script>
 
 <div class="{$$props.class || ''} duk-statistic">

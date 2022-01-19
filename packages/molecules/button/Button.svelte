@@ -1,5 +1,5 @@
 <script>
-  // FIXME This needs DRYing (with a ButtonSkeleton.svelte file).
+  // FIXME This needs DRYing (with a ButtonSkeleton component).
   import { setContext, getContext } from "svelte";
   import variants from "@dusk-network/helpers/variants.js";
   import sizes from "@dusk-network/helpers/sizes.js";

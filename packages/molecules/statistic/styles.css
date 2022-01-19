@@ -20,6 +20,6 @@
   &__value {
     @apply text-lg font-semibold text-gray-700 text-right;
     @apply dark:text-gray-200;
-    @apply sm:text-left;
+    @apply md:text-left;
   }
 }

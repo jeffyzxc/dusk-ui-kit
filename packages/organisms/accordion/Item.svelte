@@ -2,8 +2,8 @@
   import { getContext, setContext, onMount } from "svelte";
   import sizes from "@dusk-network/helpers/sizes.js";
   import contexts from "@dusk-network/helpers/contexts.js";
-  import Button from "@dusk-network/button/Button.svelte";
-  import Icon from "@dusk-network/icon/Icon.svelte";
+  import Button from "@dusk-network/button";
+  import Icon from "@dusk-network/icon";
 
   export let id = "__DUK-accordion-item" + Math.random().toString(36);
   export let title = "Title";

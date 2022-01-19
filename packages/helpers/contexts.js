@@ -17,6 +17,9 @@ export default {
     MNEMONIC: "button:mnemonic",
     GROUP: "button:group",
   },
+  CHIP: {
+    STATISTIC: "chip:statistic",
+  },
   CONTENT: {
     CARD: "content:card",
   },

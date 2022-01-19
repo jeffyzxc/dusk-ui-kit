@@ -1,6 +1,6 @@
 <script>
   import icons from "@dusk-network/helpers/icons.js";
-  import Icon from "@dusk-network/icon/Icon.svelte";
+  import Icon from "@dusk-network/icon";
 
   export let message;
   export let submitted;

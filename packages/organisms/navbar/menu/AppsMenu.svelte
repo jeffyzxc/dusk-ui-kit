@@ -1,7 +1,6 @@
 <script>
   import { setContext } from "svelte";
-  import Menu from "@dusk-network/menu/Menu.svelte";
-  import Item from "@dusk-network/menu/Item.svelte";
+  import Menu, { Item } from "@dusk-network/menu";
   import contexts from "@dusk-network/helpers/contexts.js";
 
   export let apps;

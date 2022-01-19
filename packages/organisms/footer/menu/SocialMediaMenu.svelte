@@ -1,7 +1,6 @@
 <script>
-  import Icon from "@dusk-network/icon/Icon.svelte";
-  import Menu from "@dusk-network/menu/Menu.svelte";
-  import Item from "@dusk-network/menu/Item.svelte";
+  import Icon from "@dusk-network/icon";
+  import Menu, { Item } from "@dusk-network/menu";
 
   export let orientation;
   export let social;

@@ -1,6 +1,5 @@
 <script>
-  import Menu from "@dusk-network/menu/Menu.svelte";
-  import Item from "@dusk-network/menu/Item.svelte";
+  import Menu, { Item } from "@dusk-network/menu";
 
   export let orientation;
 </script>

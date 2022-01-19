@@ -11,6 +11,8 @@ import * as Menu from "./menu";
 import * as Mnemonic from "./mnemonic";
 import * as Pagination from "./pagination";
 import * as PasswordStrength from "./password-strength";
+import * as Statistic from "./statistic";
+
 export {
   Button,
   Content,
@@ -25,4 +27,5 @@ export {
   Mnemonic,
   Pagination,
   PasswordStrength,
+  Statistic,
 };

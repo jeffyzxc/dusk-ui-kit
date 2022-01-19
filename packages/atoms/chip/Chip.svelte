@@ -1,5 +1,6 @@
 <script>
-  import variants from "@dusk-network/helpers/variants.js";
+  import { getContext } from "svelte";
+  import { variants, contexts } from "@dusk-network/helpers";
   import "./styles.css";
 
   /**
@@ -7,6 +8,8 @@
    * @type {"brand" | "cta" | "info" | "success" | "warning" | "danger" }
    */
   export let variant = variants.CHIP.BRAND;
+
+  const context = getContext("DUK:chip:context");
 </script>
 
 <div
@@ -17,6 +20,7 @@
   class:duk-chip--success="{variant === variants.CHIP.SUCCESS}"
   class:duk-chip--warning="{variant === variants.CHIP.WARNING}"
   class:duk-chip--danger="{variant === variants.CHIP.DANGER}"
+  class:duk-chip--statistic="{context === contexts.CHIP.STATISTIC}"
 >
   <div class="duk-chip__text">
     <span><slot /></span>
