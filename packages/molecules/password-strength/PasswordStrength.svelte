@@ -1,7 +1,7 @@
 <script>
   import { getContext, setContext, createEventDispatcher } from "svelte";
   import { passwordStrength } from "check-password-strength";
-  import ProgressBar from "@dusk-network/progress-bar/ProgressBar.svelte";
+  import ProgressBar from "@dusk-network/progress-bar";
   import contexts from "@dusk-network/helpers/contexts.js";
   import variants from "@dusk-network/helpers/variants.js";
   import "./styles.css";

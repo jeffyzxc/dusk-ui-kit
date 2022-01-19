@@ -3,7 +3,7 @@
   import contexts from "@dusk-network/helpers/contexts.js";
   import types from "@dusk-network/helpers/types.js";
   import variants from "@dusk-network/helpers/variants.js";
-  import Icon from "@dusk-network/icon/Icon.svelte";
+  import Icon from "@dusk-network/icon";
   import "./styles.css";
 
   /**

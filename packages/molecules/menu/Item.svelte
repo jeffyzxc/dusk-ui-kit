@@ -1,6 +1,7 @@
 <script>
   export let href = undefined;
   export let active = false;
+  export let external = false;
 </script>
 
 <li
@@ -11,11 +12,16 @@
   on:focus
 >
   {#if href}
-    <a href="{href}" class="duk-menu__item-wrapper" class:duk-menu__item-wrapper--active="{active}">
+    <a
+      href="{href}"
+      rel="{external ? 'external' : ''}"
+      class="duk-menu__item-wrapper"
+      class:duk-menu__item-wrapper--active="{active}"
+    >
       <slot />
     </a>
     <slot name="menu" />
   {:else}
-    <span href="{href}" class="duk-menu__item-wrapper"><slot /></span>
+    <span class="duk-menu__item-wrapper"><slot /></span>
   {/if}
 </li>

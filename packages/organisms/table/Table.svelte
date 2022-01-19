@@ -1,7 +1,7 @@
 <script>
   import { onDestroy, setContext, getContext } from "svelte";
-  import Pagination from "@dusk-network/pagination/Pagination.svelte";
-  import DropDown from "@dusk-network/drop-down/DropDown.svelte";
+  import Pagination from "@dusk-network/pagination";
+  import DropDown from "@dusk-network/drop-down";
   import contexts from "@dusk-network/helpers/contexts.js";
   import { getTable } from "./table.js";
   import { key } from "./key.js";

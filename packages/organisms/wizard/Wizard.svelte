@@ -1,8 +1,7 @@
 <script>
   import { createEventDispatcher, setContext, getContext } from "svelte";
   import contexts from "@dusk-network/helpers/contexts.js";
-  import Breadcrumb from "@dusk-network/breadcrumb/Breadcrumb.svelte";
-  import Item from "@dusk-network/breadcrumb/Item.svelte";
+  import Breadcrumb, { Item } from "@dusk-network/breadcrumb";
   import { key } from "./key.js";
   import { createContext } from "./context.js";
   import { onMount } from "svelte";

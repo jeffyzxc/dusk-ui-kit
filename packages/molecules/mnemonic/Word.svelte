@@ -2,7 +2,7 @@
   import { setContext } from "svelte";
   import types from "@dusk-network/helpers/types.js";
   import contexts from "@dusk-network/helpers/contexts.js";
-  import TextField from "@dusk-network/text-field/TextField.svelte";
+  import TextField from "@dusk-network/text-field";
   import { compared } from "./stores/words.js";
   import { options } from "./stores/options.js";
 

@@ -2,10 +2,10 @@
   // FIXME remove Button (molecule) dependency and add context for menu
   // FIXME This uses a Menu (molecule) while also being used by Table (organism)
   import { createEventDispatcher, setContext, getContext } from "svelte";
-  import Button from "@dusk-network/button/Button.svelte";
-  import Icon from "@dusk-network/icon/Icon.svelte";
-  import Menu from "@dusk-network/menu/Menu.svelte";
-  import Item from "@dusk-network/menu/Item.svelte";
+  import Button from "@dusk-network/button";
+  import Icon from "@dusk-network/icon";
+  import Menu from "@dusk-network/menu";
+  import Item from "@dusk-network/menu";
   import contexts from "@dusk-network/helpers/contexts.js";
   import "./styles.css";
 
