@@ -46,4 +46,8 @@
     @apply mx-auto my-1;
     @apply sm:m-1;
   }
+
+  &--datum {
+    @apply m-0;
+  }
 }

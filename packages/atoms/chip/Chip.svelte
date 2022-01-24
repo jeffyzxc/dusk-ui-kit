@@ -22,6 +22,7 @@
   class:duk-chip--danger="{variant === variants.CHIP.DANGER}"
   class:duk-chip--statistic="{context === contexts.CHIP.STATISTIC}"
   class:duk-chip--detail-list="{context === contexts.CHIP.DETAIL_LIST}"
+  class:duk-chip--datum="{context === contexts.CHIP.DATUM}"
 >
   <div class="duk-chip__text">
     <span><slot /></span>
