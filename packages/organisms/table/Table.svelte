@@ -23,6 +23,12 @@
    */
   export let gridType = "12";
 
+  /**
+   * Sets Table overflow property to `scroll` dependent on the screen width breakpoint.
+   * @type { "sm" | "lg" | "xl" | "xxl" }
+   */
+  export let overflowBreakpoint = "md";
+
   setContext(key, {});
   createContext();
 
@@ -47,7 +53,15 @@
   <div class="duk-table__title">
     <slot name="title" />
   </div>
-  <table class="duk-table__table" class:duk-table__table--extended="{gridType === '24'}">
+  <table
+    class="duk-table__table"
+    class:duk-table__table--extended="{gridType === '24'}"
+    class:duk-table__table--sm="{overflowBreakpoint === 'sm'}"
+    class:duk-table__table--md="{overflowBreakpoint === 'md'}"
+    class:duk-table__table--lg="{overflowBreakpoint === 'lg'}"
+    class:duk-table__table--xl="{overflowBreakpoint === 'xl'}"
+    class:duk-table__table--2xl="{overflowBreakpoint === '2xl'}"
+  >
     <slot name="head" />
     <slot />
     <slot name="foot" />
