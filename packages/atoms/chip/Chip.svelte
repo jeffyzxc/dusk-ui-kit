@@ -21,6 +21,7 @@
   class:duk-chip--warning="{variant === variants.CHIP.WARNING}"
   class:duk-chip--danger="{variant === variants.CHIP.DANGER}"
   class:duk-chip--statistic="{context === contexts.CHIP.STATISTIC}"
+  class:duk-chip--detail-list="{context === contexts.CHIP.DETAIL_LIST}"
 >
   <div class="duk-chip__text">
     <span><slot /></span>
