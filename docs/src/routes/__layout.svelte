@@ -37,7 +37,7 @@
   <svelte:fragment slot="navbar">
     <Nav components="{components}" />
   </svelte:fragment>
-  <main class="container">
+  <main class="container overflow-x-scroll">
     <QueryClientProvider client="{queryClient}">
       <slot />
     </QueryClientProvider>

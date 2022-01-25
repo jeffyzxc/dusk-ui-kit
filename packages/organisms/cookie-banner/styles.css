@@ -1,152 +1,23 @@
 .duk-cookie-banner {
-  & * {
-    fill: currentColor;
+  @apply w-full h-screen bg-gray-100 flex items-center justify-center px-5 py-5 relative;
+
+  &__banner {
+    @apply w-full p-5 lg:px-24 absolute bottom-0 bg-gray-600 md:flex items-center -mx-3;
   }
 
-  & > .cookieConsentToggle {
-    @apply w-16 h-16 fixed p-3 border-none bg-white opacity-100 z-40;
-
-    will-change: transform;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    border-radius: 50%;
-    bottom: 40px;
-    right: 20px;
-    transition: 200ms;
-
-    /* z-index: 99980; */
-
-    &:hover {
-      @apply text-white bg-indigo-400;
-    }
+  &__disclaimer {
+    @apply md:flex-1 px-3 mb-5 md:mb-0;
   }
 
-  & .cookieConsentWrapper {
-    @apply z-50 fixed left-0 right-0 bottom-0 bg-indigo-300 text-white p-6;
-
-    transition: 200ms;
+  &__controls {
+    @apply px-3 text-center;
   }
 
-  & .cookieConsent {
-    @apply block mx-auto justify-between;
-    @apply lg:flex;
+  &__settings {
+    @apply z-10;
 
-    &__Right {
-      @apply flex flex-wrap items-center mt-6;
-      @apply lg:flex-nowrap lg:items-end lg:mt-0;
-    }
-
-    &__Content {
-      @apply mr-16;
-    }
-
-    &__Title {
-      @apply m-0 font-bold text-xl;
-    }
-
-    &__Description {
-      @apply mt-3 mb-0;
-
-      & a {
-        @apply text-white underline;
-
-        &:hover {
-          @apply no-underline;
-        }
-      }
-    }
-
-    &__Button {
-      @apply py-5 px-16 ml-3 mr-3 mb-3 block bg-indigo-500 text-white whitespace-nowrap border-none text-base cursor-pointer;
-      @apply lg:mr-0 lg:mb-0;
-
-      transition: 200ms;
-
-      &:hover {
-        @apply bg-purple-900;
-      }
-
-      &--Close {
-        @apply mt-16 mb-0 mx-auto pt-5 px-24;
-        @apply lg:mt-40;
-      }
-    }
-  }
-
-  & .cookieConsentOperations {
-    @apply fixed inset-0 flex z-50;
-
-    background: rgba(0, 0, 0, 0.8);
-    transition: 300ms;
-    will-change: transform;
-
-    &__List {
-      @apply p-16 m-auto bg-white text-black max-w-6xl max-h-screen overflow-y-auto box-border;
-
-      transition: 200ms transform;
-      will-change: transform;
-      transform: scale(0.95);
-    }
-
-    &__Item {
-      @apply block pl-24 mb-6;
-
-      & label {
-        @apply block items-center text-2xl font-bold relative;
-
-        &::before {
-          @apply block bg-gray-200 h-6 w-16 absolute;
-
-          content: "";
-          left: -60px;
-          border-radius: 20px;
-          top: 50%;
-          transform: translateY(-50%);
-        }
-
-        &::after {
-          @apply block w-6 h-6 bg-black absolute;
-
-          content: "";
-          border-radius: 50%;
-          top: 50%;
-          transform: translateY(-50%);
-          left: -60px;
-          transition: 200ms;
-        }
-      }
-
-      &.disabled {
-        @apply text-gray-900;
-
-        & label::after {
-          @apply opacity-25;
-        }
-      }
-
-      & input {
-        @apply hidden;
-
-        &:checked + label::after {
-          @apply bg-purple-700;
-
-          transform: translate(20px, -50%);
-        }
-      }
-    }
-
-    & &__List {
-      transform: scale(1);
+    & > .duk-card {
+      @apply w-max;
     }
   }
 }
-
-/* @media only screen and (max-width: 900px) {
-
-  div :global(.cookieConsent__Button) {
-    margin: 0 10px 10px 0;
-  }
-
-  div :global(.cookieConsent__Button--Close) {
-    margin: 40px 0 0;
-  }
-} */
