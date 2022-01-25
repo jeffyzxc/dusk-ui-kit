@@ -1,5 +1,13 @@
 # @dusk-network/wallet-option
 
+## 4.5.3
+
+### Patch Changes
+
+- 55558e72: Release
+- Updated dependencies [55558e72]
+  - @dusk-network/default@4.5.3
+
 ## 4.5.2
 
 ### Patch Changes
