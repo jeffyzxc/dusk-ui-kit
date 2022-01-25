@@ -21,7 +21,7 @@
 }
 
 .duk-button {
-  @apply transition transition-all duration-300 ease-in-out flex space-x-2 items-center border border-solid rounded-md text-sm leading-relaxed py-2 px-4 relative overflow-hidden shadow-marketing;
+  @apply transition transition-all duration-300 ease-in-out flex space-x-2 items-center border border-solid rounded-md text-sm leading-relaxed py-2 px-4 relative overflow-hidden;
 
   &--block {
     @apply w-full;
@@ -30,13 +30,15 @@
   &--brand {
     @apply bg-indigo-500 text-white border-none;
 
+    box-shadow: 1px 1px 0px #c1b1ed;
+
     &:hover:not(:disabled),
     &^&--active {
       @apply bg-indigo-600 text-white;
     }
 
     &:hover:not(:disabled) {
-      @apply shadow-marketing-hover;
+      box-shadow: 4px 4px 0px #c1b1ed;
     }
 
     &^&--outline {
@@ -45,7 +47,7 @@
 
       &:hover:not(:disabled),
       &^^&--active {
-        @apply bg-indigo-400 text-white border-indigo-400 shadow-marketing-hover;
+        @apply bg-indigo-400 text-white border-indigo-400;
       }
     }
   }
@@ -54,13 +56,15 @@
   &--cta {
     @apply bg-gold-500 text-gray-900 border-none;
 
+    box-shadow: 1px 1px 0px #cdb123;
+
     &:hover:not(:disabled),
     &^&--active {
       @apply bg-gold-400 text-white;
     }
 
     &:hover:not(:disabled) {
-      @apply shadow-marketing-hover;
+      box-shadow: 4px 4px 4px #cdb123;
     }
 
     &^&--outline {
@@ -69,7 +73,7 @@
 
       &:hover:not(:disabled),
       &^^&--active {
-        @apply bg-gold-400 text-gray-900 border-gold-400 shadow-marketing-hover;
+        @apply bg-gold-400 text-gray-900 border-gold-400;
       }
     }
   }
@@ -77,13 +81,15 @@
   &--info {
     @apply bg-blue-500 text-gray-900 border-none;
 
+    box-shadow: 1px 1px 0px #f8fbff;
+
     &:hover:not(:disabled),
     &^&--active {
       @apply bg-blue-400 text-gray-900;
     }
 
     &:hover:not(:disabled) {
-      @apply shadow-marketing-hover;
+      box-shadow: 4px 4px 0px #f8fbff;
     }
 
     &^&--outline {
@@ -92,7 +98,7 @@
 
       &:hover:not(:disabled),
       &^^&--active {
-        @apply bg-blue-400 text-blue-900 border-blue-400 shadow-marketing-hover;
+        @apply bg-blue-400 text-blue-900 border-blue-400;
       }
     }
   }
@@ -100,13 +106,15 @@
   &--success {
     @apply bg-green-500 text-gray-900 border-none;
 
+    box-shadow: 1px 1px 0px #c1deb6;
+
     &:hover:not(:disabled),
     &^&--active {
       @apply bg-green-400 text-gray-900;
     }
 
     &:hover:not(:disabled) {
-      @apply shadow-marketing-hover;
+      box-shadow: 4px 4px 0px #c1deb6;
     }
 
     &^&--outline {
@@ -115,13 +123,15 @@
 
       &:hover:not(:disabled),
       &^^&--active {
-        @apply bg-green-400 text-gray-900 border-green-400 shadow-marketing-hover;
+        @apply bg-green-400 text-gray-900 border-green-400;
       }
     }
   }
 
   &--warning {
     @apply bg-yellow-900 text-gray-900 border-none;
+
+    box-shadow: 1px 1px 0px #e7d36f;
 
     &:hover:not(:disabled),
     &^&--active {
@@ -130,7 +140,7 @@
     }
 
     &:hover:not(:disabled) {
-      @apply shadow-marketing-hover;
+      box-shadow: 4px 4px 0px #e7d36f;
     }
 
     &^&--outline {
@@ -139,7 +149,7 @@
 
       &:hover:not(:disabled),
       &^^&--active {
-        @apply bg-yellow-900 text-gray-900 border-yellow-900 shadow-marketing-hover;
+        @apply bg-yellow-900 text-gray-900 border-yellow-900;
       }
     }
   }
@@ -147,13 +157,15 @@
   &--danger {
     @apply bg-red-300 text-gray-900 border-none;
 
+    box-shadow: 1px 1px 0px #e496ad;
+
     &:hover:not(:disabled),
     &^&--active {
       @apply bg-red-500 text-black;
     }
 
     &:hover:not(:disabled) {
-      @apply shadow-marketing-hover;
+      box-shadow: 4px 4px 0px #e496ad;
     }
 
     &^&--outline {
@@ -162,7 +174,7 @@
 
       &:hover:not(:disabled),
       &^^&--active {
-        @apply bg-red-400 text-black border-red-400 shadow-marketing-hover;
+        @apply bg-red-400 text-black border-red-400;
       }
     }
   }

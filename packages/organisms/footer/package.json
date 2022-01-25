@@ -18,6 +18,8 @@
   },
   "devDependencies": {
     "@dusk-network/button": "workspace:*",
+    "@dusk-network/control": "workspace:*",
+    "@dusk-network/form": "workspace:*",
     "@dusk-network/helpers": "workspace:*",
     "@dusk-network/icon": "workspace:*",
     "@dusk-network/logo": "workspace:*",
@@ -26,6 +28,8 @@
   },
   "peerDependencies": {
     "@dusk-network/button": "workspace:*",
+    "@dusk-network/control": "workspace:*",
+    "@dusk-network/form": "workspace:*",
     "@dusk-network/helpers": "workspace:*",
     "@dusk-network/icon": "workspace:*",
     "@dusk-network/logo": "workspace:*",
