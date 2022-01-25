@@ -1,5 +1,14 @@
 <script>
-  import GdprBanner from "@beyonk/gdpr-cookie-consent-banner";
+  import { onMount } from "svelte";
+  import Cookies from "js-cookie";
+  import Button from "@dusk-network/button";
+  import Content from "@dusk-network/content";
+  import Heading from "@dusk-network/heading";
+  import Control from "@dusk-network/control";
+  import Toggle from "@dusk-network/toggle";
+  import Card from "@dusk-network/card";
+  import Group from "@dusk-network/group";
+  import Icon from "@dusk-network/icon";
   import "./styles.css";
 
   /**
@@ -11,25 +20,173 @@
   /**
    * Sets the cookie name for the Cookie Banner.
    */
-  export let cookie = "DUSK-GDPR";
+  export let cookieName = "DUSK-GDPR";
 
   /**
-   * Sets the configuration object used by the Cookie Banner.
-   * Which contains the cookie options and their description and the domain and path where the Cookie Banner resides.
+   * Sets the configuration object used by the cookie.
+   * Contains the cookie options as defined here: https://github.com/js-cookie/js-cookie#cookie-attributes
    */
-  export let config = {};
+  export let cookieConfig = {
+    expires: 365,
+    path: "/",
+  };
 
   /**
-   * Sets the desrciption text of the Cookie Banner.
+   * Sets the accept Button text.
    */
-  export let description;
+  export let acceptLabel;
+
+  /**
+   * Sets the settings Button text.
+   */
+  export let settingsLabel;
+
+  export let showBanner = false;
+
+  export let showSettings = false;
+
+  let fields = {
+    essential: true,
+    tracking: true,
+    analytics: true,
+    marketing: true,
+  };
+
+  onMount(() => {
+    if (!cookieName) {
+      throw new Error("cookieName is required");
+    }
+
+    const cookie = Cookies.get(cookieName);
+
+    if (!cookie) {
+      showBanner = true;
+      return;
+    }
+
+    try {
+      const settings = JSON.parse(cookie);
+      fields = settings;
+    } catch (e) {
+      removeCookie();
+      showBanner = true;
+    }
+  });
+
+  const setCookie = () => {
+    const expires = new Date();
+    expires.setDate(expires.getDate() + cookieConfig.expires);
+    const options = Object.assign({}, cookieConfig, { expires });
+    Cookies.set(cookieName, JSON.stringify(fields), options);
+  };
+
+  const removeCookie = () => {
+    const { path } = cookieConfig;
+    Cookies.remove(cookieName, Object.assign({}, path ? { path } : {}));
+  };
 </script>
 
-<aside id="{id}" class="{$$props.class || ''} duk-cookie-banner">
-  <GdprBanner
-    cookieName="{cookie}"
-    cookieConfig="{config.cookieConfig}"
-    choices="{config.choices}"
-    description="{description}"
-  />
-</aside>
+{#if showBanner}
+  <div class="duk-cookie-banner">
+    <div id="{id}" class="{$$props.class || ''} duk-cookie-banner__banner">
+      <div class="duk-cookie-banner__disclaimer">
+        <slot />
+      </div>
+      <div class="duk-cookie-banner__controls">
+        <Group>
+          <Button
+            variant="success"
+            on:click="{() => {
+              setCookie();
+              showBanner = false;
+              showSettings = false;
+            }}"
+          >
+            {acceptLabel}
+          </Button>
+          <Button on:click="{() => (showSettings = true)}">
+            {settingsLabel}
+          </Button>
+        </Group>
+      </div>
+    </div>
+    {#if showSettings}
+      <div class="duk-cookie-banner__settings">
+        <Card>
+          <Heading>
+            <h2>Cookie settings</h2>
+            <svelte:fragment slot="button">
+              <Button
+                size="sm"
+                circle="{true}"
+                variant="brand"
+                outline="{true}"
+                on:click="{() => (showSettings = false)}"
+              >
+                <Icon name="menu-burger-close" size="sm" />
+              </Button>
+            </svelte:fragment>
+          </Heading>
+          <Content>
+            <Control
+              name="essential"
+              type="inline-fixed"
+              width="full"
+              label="Essential cookies"
+              message="Used for privacy settings. Can't be turned off."
+            >
+              <Toggle
+                name="essential"
+                bind:value="{fields.essential}"
+                checked="{true}"
+                disabled="{true}"
+              />
+            </Control>
+            <Control
+              name="tracking"
+              type="inline-fixed"
+              width="full"
+              label="Tracking cookies"
+              message="Used for advertising purposes."
+            >
+              <Toggle
+                name="tracking"
+                bind:value="{fields.tracking}"
+                checked="{fields.tracking}"
+                on:change="{setCookie}"
+              />
+            </Control>
+            <Control
+              name="analytics"
+              type="inline-fixed"
+              width="full"
+              label="Analytics cookies"
+              message="Used to enable Google Analytics."
+            >
+              <Toggle
+                name="analytics"
+                bind:value="{fields.analytics}"
+                checked="{fields.analytics}"
+                on:change="{setCookie}"
+              />
+            </Control>
+            <Control
+              name="marketing"
+              type="inline-fixed"
+              width="full"
+              label="Marketing cookies"
+              message="Used for marketing data."
+            >
+              <Toggle
+                name="marketing"
+                bind:value="{fields.marketing}"
+                checked="{fields.marketing}"
+                on:change="{setCookie}"
+              />
+            </Control>
+          </Content>
+        </Card>
+      </div>
+    {/if}
+  </div>
+{/if}

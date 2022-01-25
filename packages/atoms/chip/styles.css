@@ -41,4 +41,13 @@
     @apply ml-auto;
     @apply md:ml-0;
   }
+
+  &--detail-list {
+    @apply mx-auto my-1;
+    @apply sm:m-1;
+  }
+
+  &--datum {
+    @apply m-0;
+  }
 }

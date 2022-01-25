@@ -7,7 +7,7 @@
 
   &__button {
     @apply relative w-full bg-indigo-600 text-white rounded-md shadow-marketing pl-5 pr-10 py-0.5 text-left cursor-pointer;
-    @apply sm:text-sm dark:bg-white dark:border border-gray-500 dark:text-gray-900;
+    @apply sm:text-sm dark:bg-gray-800 dark:border border-gray-500 dark:text-gray-100;
   }
 
   &__selected {
@@ -30,7 +30,7 @@
 
   &__options {
     @apply bg-indigo-600 text-white absolute mt-1 w-full z-10 rounded border border-gray-500 shadow-marketing;
-    @apply dark:bg-white dark:border-0 dark:text-gray-900;
+    @apply dark:bg-gray-800 dark:border-0 dark:text-gray-100;
   }
 
   &__list {

@@ -31,6 +31,6 @@
     "@dusk-network/heading": "workspace:*",
     "@dusk-network/helpers": "workspace:*"
   },
-  "gitHead": "8a1d4ff38ee8580ef15609bcb06520b11612b7a8",
+  "gitHead": "57563b429a15466d263666bd0b76147605ab5e8b",
   "svelte": "index.js"
 }

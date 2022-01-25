@@ -30,7 +30,7 @@
 }
 
 .duk-chart-bar-horizontal {
-  @apply rounded bg-gray-100 shadow-marketing;
+  @apply rounded bg-gray-100;
   @apply dark:bg-gray-800;
 
   &__bar {
@@ -40,7 +40,7 @@
 }
 
 .duk-chart-line {
-  @apply rounded bg-gray-100 shadow-marketing;
+  @apply rounded bg-gray-100;
   @apply dark:bg-gray-800;
 
   &__line {

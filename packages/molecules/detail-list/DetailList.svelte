@@ -8,6 +8,7 @@
   setContext("DUK:icon:context", contexts.ICON.DETAIL_LIST);
   setContext("DUK:rich-text:context", contexts.RICH_TEXT.DETAIL_LIST);
   setContext("DUK:group:context", contexts.GROUP.DETAIL_LIST);
+  setContext("DUK:chip:context", contexts.CHIP.DETAIL_LIST);
 </script>
 
 <dl

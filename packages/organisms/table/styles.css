@@ -15,7 +15,6 @@
   &__table {
     @apply grid shadow-table bg-white rounded-md overflow-x-scroll;
     @apply dark:bg-gray-700;
-    @apply md:overflow-visible;
     & thead,
     & tbody,
     & tfoot,
@@ -37,8 +36,7 @@
 
     & thead {
       @apply bg-gray-200 min-w-max;
-      @apply dark:bg-indigo-900;
-      @apply md:min-w-0;
+      @apply dark:bg-gray-800;
 
       & tr {
         &:not(:first-child) {
@@ -86,6 +84,42 @@
     &--extended {
       tr {
         @apply grid-cols-24;
+      }
+    }
+
+    &--sm {
+      @apply sm:overflow-visible;
+
+      & thead {
+        @apply sm:min-w-0;
+      }
+    }
+    &--md {
+      @apply md:overflow-visible;
+
+      & thead {
+        @apply md:min-w-0;
+      }
+    }
+    &--lg {
+      @apply lg:overflow-visible;
+
+      & thead {
+        @apply lg:min-w-0;
+      }
+    }
+    &--xl {
+      @apply xl:overflow-visible;
+
+      & thead {
+        @apply xl:min-w-0;
+      }
+    }
+    &--xxl {
+      @apply 2xl:overflow-visible;
+
+      & thead {
+        @apply 2xl:min-w-0;
       }
     }
   }

@@ -4,7 +4,7 @@
   const labelRight = "I am a label";
 </script>
 
-<Button>
+<Button variant="danger">
   {default_slot}
   <svelte:fragment slot="labelRight">
     {labelRight}

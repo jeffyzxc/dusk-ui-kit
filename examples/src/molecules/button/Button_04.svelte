@@ -2,4 +2,4 @@
   import Button from "@dusk-network/button";
 </script>
 
-<Button block="{true}">Hi there</Button>
+<Button variant="warning" block="{true}">Hi there</Button>

@@ -3,7 +3,7 @@
   import Icon from "@dusk-network/icon";
 </script>
 
-<Button>
+<Button variant="cta">
   <Icon name="check-decagram-outline" size="sm" />
   <Label>Hi there</Label>
 </Button>

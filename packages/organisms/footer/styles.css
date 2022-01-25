@@ -10,7 +10,11 @@
   }
 
   &__maximal {
-    @apply items-start justify-between;
+    @apply items-start justify-between mb-20;
+
+    & a {
+      @apply text-sm !no-underline;
+    }
   }
 
   &__minimal {
@@ -23,7 +27,7 @@
   }
 
   &__title {
-    @apply text-lg mb-4;
+    @apply mb-4;
   }
 
   &__copyright {
@@ -69,6 +73,6 @@
   }
 
   &__newsletter {
-    @apply block;
+    @apply block text-center;
   }
 }

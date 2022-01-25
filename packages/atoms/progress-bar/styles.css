@@ -1,23 +1,23 @@
 .duk-progress-bar {
   &__wrapper {
     @apply relative rounded-md w-full;
-    height: 4px;
-    max-height: 4px;
+    height: 6px;
+    max-height: 6px;
   }
 
   &__step {
     @apply absolute rounded-md bg-gray-300 bottom-px left-0;
     @apply dark:bg-white;
-    height: 2px;
-    max-height: 2px;
+    height: 4px;
+    max-height: 4px;
     transition: width 0.5s;
   }
 
   &__bar {
     @apply bg-gray-900 rounded-md w-full;
     @apply dark:bg-gray-600;
-    height: 4px;
-    max-height: 4px;
+    height: 6px;
+    max-height: 6px;
   }
 
   &--wizard {
