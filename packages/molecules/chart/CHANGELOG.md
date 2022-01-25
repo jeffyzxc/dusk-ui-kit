@@ -1,5 +1,14 @@
 # @dusk-network/chart
 
+## 4.5.3
+
+### Patch Changes
+
+- 55558e72: Release
+- Updated dependencies [55558e72]
+  - @dusk-network/helpers@4.5.3
+  - @dusk-network/heading@4.5.3
+
 ## 4.5.2
 
 ### Patch Changes
