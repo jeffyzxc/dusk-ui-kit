@@ -13,8 +13,9 @@
   }
 
   &__title {
-    @apply mb-2 text-sm font-bold text-indigo-500;
+    @apply mb-2 text-sm font-bold text-indigo-500 text-right;
     @apply dark:text-indigo-300;
+    @apply md:text-left;
   }
 
   &__value {

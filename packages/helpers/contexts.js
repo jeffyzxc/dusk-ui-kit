@@ -19,6 +19,8 @@ export default {
   },
   CHIP: {
     STATISTIC: "chip:statistic",
+    DETAIL_LIST: "chip:detail-list",
+    DATUM: "chip:datum",
   },
   CONTENT: {
     CARD: "content:card",
