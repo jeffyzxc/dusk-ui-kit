@@ -37,7 +37,6 @@
     & thead {
       @apply bg-gray-200 min-w-max;
       @apply dark:bg-indigo-900;
-      /* @apply md:min-w-0; */
 
       & tr {
         &:not(:first-child) {

@@ -60,7 +60,7 @@
     class:duk-table__table--md="{overflowBreakpoint === 'md'}"
     class:duk-table__table--lg="{overflowBreakpoint === 'lg'}"
     class:duk-table__table--xl="{overflowBreakpoint === 'xl'}"
-    class:duk-table__table--2xl="{overflowBreakpoint === 'xxl'}"
+    class:duk-table__table--xxl="{overflowBreakpoint === 'xxl'}"
   >
     <slot name="head" />
     <slot />
