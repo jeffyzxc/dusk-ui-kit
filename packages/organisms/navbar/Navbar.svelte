@@ -82,11 +82,6 @@
       {:else}
         <LinksMenu links="{links}" />
       {/if}
-      {#if $$slots.a11y}
-        <slot name="a11y" />
-      {:else}
-        <A11yMenu />
-      {/if}
     </div>
     <div id="{id}-content" class="duk-navbar__collapse">
       <button
@@ -108,5 +103,10 @@
     <div class="duk-navbar__navigation duk-navbar__navigation--secondary">
       <slot name="navigation" />
     </div>
+    {#if $$slots.a11y}
+      <slot name="a11y" />
+    {:else}
+      <A11yMenu on:settings />
+    {/if}
   </div>
 </nav>

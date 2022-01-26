@@ -15,6 +15,10 @@
       @apply pl-0 pr-0 pb-3 pt-4 bg-indigo-400 text-white;
       @apply lg:px-6 lg:bg-indigo-500;
       @apply dark:bg-indigo-200 dark:text-gray-900;
+
+      & .duk-button {
+        @apply border-0;
+      }
     }
   }
 
@@ -144,6 +148,12 @@
     & ^&__wrapper--secondary {
       @apply hidden;
       @apply lg:flex;
+    }
+  }
+
+  &__a11y-menu {
+    & .duk-menu__list {
+      @apply !space-x-2;
     }
   }
 }

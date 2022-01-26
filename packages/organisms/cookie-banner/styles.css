@@ -1,12 +1,26 @@
 .duk-cookie-banner {
-  @apply w-full h-screen bg-gray-100 flex items-center justify-center px-5 py-5 relative;
+  @apply flex items-center justify-center fixed w-screen h-auto bottom-0 left-0;
+
+  &--with-settings {
+    @apply h-screen px-5 py-5 top-0 z-50;
+
+    backdrop-filter: blur(2px);
+  }
 
   &__banner {
-    @apply w-full p-5 lg:px-24 absolute bottom-0 bg-gray-600 md:flex items-center -mx-3;
+    @apply w-full p-5 absolute bottom-0 bg-indigo-900 text-gray-100 items-center -mx-3;
+    @apply dark:bg-indigo-100 dark:text-gray-900;
+    @apply md:flex md:p-20;
+    @apply lg:px-24;
   }
 
   &__disclaimer {
+    @apply px-3 mb-5;
     @apply md:flex-1 px-3 mb-5 md:mb-0;
+
+    & a {
+      @apply underline;
+    }
   }
 
   &__controls {

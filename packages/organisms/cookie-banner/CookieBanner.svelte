@@ -1,5 +1,5 @@
 <script>
-  import { onMount } from "svelte";
+  import { onMount, createEventDispatcher } from "svelte";
   import Cookies from "js-cookie";
   import Button from "@dusk-network/button";
   import Content from "@dusk-network/content";
@@ -41,9 +41,17 @@
    */
   export let settingsLabel;
 
+  /**
+   * Sets the visibility of the banner
+   */
   export let showBanner = false;
 
+  /**
+   * Sets the visibility of the settings modal
+   */
   export let showSettings = false;
+
+  const dispatch = createEventDispatcher();
 
   let fields = {
     essential: true,
@@ -86,107 +94,121 @@
   };
 </script>
 
-{#if showBanner}
-  <div class="duk-cookie-banner">
-    <div id="{id}" class="{$$props.class || ''} duk-cookie-banner__banner">
+<svelte:window
+  on:keydown="{(event) => {
+    if (event.key === 'Escape') {
+      if (showSettings) {
+        dispatch('closeSettings');
+      }
+    }
+  }}"
+/>
+
+<div
+  id="{id}"
+  class="duk-cookie-banner"
+  class:duk-cookie-banner--with-settings="{showSettings === true}"
+>
+  {#if showBanner === true}
+    <div class="{$$props.class || ''} duk-cookie-banner__banner">
       <div class="duk-cookie-banner__disclaimer">
         <slot />
       </div>
       <div class="duk-cookie-banner__controls">
-        <Group>
+        <Group align="center">
           <Button
-            variant="success"
+            variant="cta"
             on:click="{() => {
               setCookie();
               showBanner = false;
-              showSettings = false;
+              dispatch('closeSettings');
             }}"
           >
             {acceptLabel}
           </Button>
-          <Button on:click="{() => (showSettings = true)}">
+          <Button on:click="{() => dispatch('openSettings')}">
             {settingsLabel}
           </Button>
         </Group>
       </div>
     </div>
-    {#if showSettings}
-      <div class="duk-cookie-banner__settings">
-        <Card>
-          <Heading>
-            <h2>Cookie settings</h2>
-            <svelte:fragment slot="button">
-              <Button
-                size="sm"
-                circle="{true}"
-                variant="brand"
-                outline="{true}"
-                on:click="{() => (showSettings = false)}"
-              >
-                <Icon name="menu-burger-close" size="sm" />
-              </Button>
-            </svelte:fragment>
-          </Heading>
-          <Content>
-            <Control
+  {/if}
+  {#if showSettings === true}
+    <div class="duk-cookie-banner__settings">
+      <Card>
+        <Heading>
+          <h2>Cookie settings</h2>
+          <svelte:fragment slot="button">
+            <Button
+              size="sm"
+              circle="{true}"
+              variant="brand"
+              outline="{true}"
+              on:click="{() => dispatch('closeSettings')}"
+            >
+              <Icon name="menu-burger-close" size="sm" />
+            </Button>
+          </svelte:fragment>
+        </Heading>
+        <Content>
+          <Control
+            name="essential"
+            type="inline-fixed"
+            width="full"
+            label="Essential cookies"
+            message="Used for privacy settings. Can't be turned off."
+          >
+            <Toggle
               name="essential"
-              type="inline-fixed"
-              width="full"
-              label="Essential cookies"
-              message="Used for privacy settings. Can't be turned off."
-            >
-              <Toggle
-                name="essential"
-                bind:value="{fields.essential}"
-                checked="{true}"
-                disabled="{true}"
-              />
-            </Control>
-            <Control
+              bind:value="{fields.essential}"
+              checked="{true}"
+              disabled="{true}"
+            />
+          </Control>
+          <Control
+            name="tracking"
+            type="inline-fixed"
+            width="full"
+            label="Tracking cookies"
+            message="Used for advertising purposes."
+          >
+            <Toggle
               name="tracking"
-              type="inline-fixed"
-              width="full"
-              label="Tracking cookies"
-              message="Used for advertising purposes."
-            >
-              <Toggle
-                name="tracking"
-                bind:value="{fields.tracking}"
-                checked="{fields.tracking}"
-                on:change="{setCookie}"
-              />
-            </Control>
-            <Control
+              bind:value="{fields.tracking}"
+              checked="{fields.tracking}"
+              on:change="{setCookie}"
+            />
+          </Control>
+          <Control
+            name="analytics"
+            type="inline-fixed"
+            width="full"
+            label="Analytics cookies"
+            message="Used to enable Google Analytics."
+          >
+            <Toggle
               name="analytics"
-              type="inline-fixed"
-              width="full"
-              label="Analytics cookies"
-              message="Used to enable Google Analytics."
-            >
-              <Toggle
-                name="analytics"
-                bind:value="{fields.analytics}"
-                checked="{fields.analytics}"
-                on:change="{setCookie}"
-              />
-            </Control>
-            <Control
+              bind:value="{fields.analytics}"
+              checked="{fields.analytics}"
+              on:change="{setCookie}"
+            />
+          </Control>
+          <Control
+            name="marketing"
+            type="inline-fixed"
+            width="full"
+            label="Marketing cookies"
+            message="Used for marketing data."
+          >
+            <Toggle
               name="marketing"
-              type="inline-fixed"
-              width="full"
-              label="Marketing cookies"
-              message="Used for marketing data."
-            >
-              <Toggle
-                name="marketing"
-                bind:value="{fields.marketing}"
-                checked="{fields.marketing}"
-                on:change="{setCookie}"
-              />
-            </Control>
-          </Content>
-        </Card>
-      </div>
-    {/if}
-  </div>
-{/if}
+              bind:value="{fields.marketing}"
+              checked="{fields.marketing}"
+              on:change="{setCookie}"
+            />
+          </Control>
+        </Content>
+      </Card>
+    </div>
+  {/if}
+</div>

@@ -60,7 +60,7 @@
 
     &:hover:not(:disabled),
     &^&--active {
-      @apply bg-gold-400 text-white;
+      @apply bg-gold-400 text-gray-900;
     }
 
     &:hover:not(:disabled) {
@@ -161,7 +161,7 @@
 
     &:hover:not(:disabled),
     &^&--active {
-      @apply bg-red-500 text-black;
+      @apply bg-red-500 text-gray-900;
     }
 
     &:hover:not(:disabled) {

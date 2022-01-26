@@ -20,6 +20,7 @@
     "svelte-dark-mode": "^2.0.0"
   },
   "devDependencies": {
+    "@dusk-network/button": "workspace:*",
     "@dusk-network/helpers": "workspace:*",
     "@dusk-network/icon": "workspace:*",
     "@dusk-network/logo": "workspace:*",
@@ -27,6 +28,7 @@
     "@dusk-network/toggle": "workspace:*"
   },
   "peerDependencies": {
+    "@dusk-network/button": "workspace:*",
     "@dusk-network/helpers": "workspace:*",
     "@dusk-network/icon": "workspace:*",
     "@dusk-network/logo": "workspace:*",

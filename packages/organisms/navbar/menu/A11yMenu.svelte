@@ -1,9 +1,13 @@
 <script>
-  import { setContext, afterUpdate } from "svelte";
+  import { setContext, afterUpdate, createEventDispatcher } from "svelte";
   import DarkMode from "svelte-dark-mode";
   import Menu, { Item } from "@dusk-network/menu";
   import Toggle from "@dusk-network/toggle";
+  import Button from "@dusk-network/button";
+  import Icon from "@dusk-network/icon";
   import contexts from "@dusk-network/helpers/contexts.js";
+
+  const dispatch = createEventDispatcher();
 
   let theme;
 
@@ -14,20 +18,17 @@
     document.documentElement.className = theme;
   });
 
-  // const toggleDarkMode = () => {
-  //   if (darkMode) {
-  //     document.documentElement.classList.add("dark");
-  //   } else {
-  //     document.documentElement.classList.remove("dark");
-  //   }
-  // };
-
   setContext("DUK:menu:context", contexts.MENU.NAVBAR);
 </script>
 
 <DarkMode bind:theme />
 
 <Menu orientation="horizontal" class="duk-navbar__a11y-menu">
+  <Item>
+    <Button variant="default" on:click="{() => dispatch('settings')}">
+      <Icon name="cog-outline" />
+    </Button>
+  </Item>
   <Item>
     <Toggle
       type="switch"
