@@ -136,6 +136,10 @@
     }
     @apply opacity-50;
   }
+
+  &--overflow {
+    @apply overflow-hidden;
+  }
 }
 
 a > .duk-card {

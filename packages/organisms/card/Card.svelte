@@ -27,6 +27,11 @@
    */
   export let disabled = false;
 
+  /**
+   * Sets the `overflow hidden` attribute on the Card when true.
+   */
+  export let overflow = false;
+
   setContext("DUK:accordion:context", contexts.ACCORDION.CARD);
   setContext("DUK:rich-text:context", contexts.RICH_TEXT.CARD);
   setContext("DUK:heading:context", contexts.HEADING.CARD);
@@ -51,6 +56,7 @@
       class:duk-card--error="{state === states.CARD.ERROR}"
       class:duk-card--failed="{state === states.CARD.FAILED}"
       class:duk-card--disabled="{disabled}"
+      class:duk-card--overflow="{overflow}"
       on:*
     >
       <slot />
@@ -69,6 +75,7 @@
     class:duk-card--error="{state === states.CARD.ERROR}"
     class:duk-card--failed="{state === states.CARD.FAILED}"
     class:duk-card--disabled="{disabled}"
+    class:duk-card--overflow="{overflow}"
     on:*
   >
     <slot />
