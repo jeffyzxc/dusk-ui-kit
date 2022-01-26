@@ -22,6 +22,6 @@
   "peerDependencies": {
     "@dusk-network/default": "workspace:*"
   },
-  "gitHead": "57563b429a15466d263666bd0b76147605ab5e8b",
+  "gitHead": "fb8c1a53b3da846dd7857fcb8a738f894a486c34",
   "svelte": "index.js"
 }
