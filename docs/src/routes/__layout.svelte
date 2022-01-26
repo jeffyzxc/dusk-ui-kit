@@ -50,7 +50,7 @@
       }}"
     />
   </svelte:fragment>
-  <main class="container overflow-x-scroll">
+  <main class="container">
     <QueryClientProvider client="{queryClient}">
       <slot />
     </QueryClientProvider>
