@@ -1,5 +1,13 @@
 # @dusk-network/wallet-wizard
 
+## 4.5.4
+
+### Patch Changes
+
+- bfca367b: Release
+- Updated dependencies [bfca367b]
+  - @dusk-network/default@4.5.4
+
 ## 4.5.3
 
 ### Patch Changes
