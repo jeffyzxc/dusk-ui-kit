@@ -8,7 +8,7 @@
   export let components;
 </script>
 
-<Navbar variant="brand" id="__app-top-nav" appName="Dusk UI Kit">
+<Navbar variant="brand" id="__app-top-nav" appName="Dusk UI Kit" on:settings>
   <svelte:fragment slot="apps">
     <Menu orientation="horizontal" name="Portal Navigation">
       <Item href="{base}/" active="{true}">UI Kit Documentation</Item>

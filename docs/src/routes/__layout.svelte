@@ -27,22 +27,51 @@
   import Nav from "$lib/Nav.svelte";
   import Template from "@dusk-network/default";
   import Footer from "@dusk-network/footer";
+  import CookieBanner from "@dusk-network/cookie-banner";
+  import { settings } from "$lib/store";
+
+  export let components;
 
   const queryClient = new QueryClient();
 
-  export let components;
+  let showSettings = false;
+
+  settings.subscribe((value) => {
+    showSettings = value;
+  });
 </script>
 
 <Template>
   <svelte:fragment slot="navbar">
-    <Nav components="{components}" />
+    <Nav
+      components="{components}"
+      on:settings="{() => {
+        settings.update(() => true);
+      }}"
+    />
   </svelte:fragment>
-  <main class="container overflow-x-scroll">
+  <main class="container">
     <QueryClientProvider client="{queryClient}">
       <slot />
     </QueryClientProvider>
   </main>
   <svelte:fragment slot="footer">
     <Footer type="minimal" variant="brand" />
+    <CookieBanner
+      acceptLabel="Accept"
+      settingsLabel="Settings"
+      on:closeSettings="{() => settings.update(() => false)}"
+      on:openSettings="{() => settings.update(() => true)}"
+      showSettings="{showSettings}"
+    >
+      <p>
+        We and selected partners and related companies, use cookies and similar technologies as
+        specified in our <a href="https://dusk.network/footer-pages/privacy-policies"
+          >Privacy Policy</a
+        >. You agree to consent to the use of these technologies by clicking Accept, or by
+        continuing to browse this website. You can learn more about how we use cookies and set
+        cookie preferences in Settings.
+      </p>
+    </CookieBanner>
   </svelte:fragment>
 </Template>

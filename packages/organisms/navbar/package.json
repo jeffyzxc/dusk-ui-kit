@@ -20,6 +20,7 @@
     "svelte-dark-mode": "^2.0.0"
   },
   "devDependencies": {
+    "@dusk-network/button": "workspace:*",
     "@dusk-network/helpers": "workspace:*",
     "@dusk-network/icon": "workspace:*",
     "@dusk-network/logo": "workspace:*",
@@ -27,12 +28,13 @@
     "@dusk-network/toggle": "workspace:*"
   },
   "peerDependencies": {
+    "@dusk-network/button": "workspace:*",
     "@dusk-network/helpers": "workspace:*",
     "@dusk-network/icon": "workspace:*",
     "@dusk-network/logo": "workspace:*",
     "@dusk-network/menu": "workspace:*",
     "@dusk-network/toggle": "workspace:*"
   },
-  "gitHead": "57563b429a15466d263666bd0b76147605ab5e8b",
+  "gitHead": "fb8c1a53b3da846dd7857fcb8a738f894a486c34",
   "svelte": "index.js"
 }
