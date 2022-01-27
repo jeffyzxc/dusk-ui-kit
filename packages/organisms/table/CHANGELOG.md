@@ -1,5 +1,16 @@
 # @dusk-network/table
 
+## 4.5.4
+
+### Patch Changes
+
+- bfca367b: Release
+- Updated dependencies [bfca367b]
+  - @dusk-network/drop-down@4.5.4
+  - @dusk-network/icon@4.5.4
+  - @dusk-network/helpers@4.5.4
+  - @dusk-network/pagination@4.5.4
+
 ## 4.5.3
 
 ### Patch Changes

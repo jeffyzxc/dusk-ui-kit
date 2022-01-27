@@ -1,5 +1,14 @@
 # @dusk-network/chart
 
+## 4.5.4
+
+### Patch Changes
+
+- bfca367b: Release
+- Updated dependencies [bfca367b]
+  - @dusk-network/helpers@4.5.4
+  - @dusk-network/heading@4.5.4
+
 ## 4.5.3
 
 ### Patch Changes

@@ -1,5 +1,25 @@
 # @dusk-network/dusk-ui-kit-docs
 
+## 4.5.4
+
+### Patch Changes
+
+- bfca367b: Release
+- Updated dependencies [bfca367b]
+  - @dusk-network/icon@4.5.4
+  - @dusk-network/rich-text@4.5.4
+  - @dusk-network/helpers@4.5.4
+  - @dusk-network/content@4.5.4
+  - @dusk-network/heading@4.5.4
+  - @dusk-network/menu@4.5.4
+  - @dusk-network/card@4.5.4
+  - @dusk-network/cookie-banner@4.5.4
+  - @dusk-network/footer@4.5.4
+  - @dusk-network/navbar@4.5.4
+  - @dusk-network/styles@4.5.4
+  - @dusk-network/default@4.5.4
+  - @dusk-network/dusk-ui-kit-examples@4.5.3
+
 ## 4.5.3
 
 ### Patch Changes

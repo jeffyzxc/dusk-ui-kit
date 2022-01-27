@@ -1,5 +1,11 @@
 # @dusk-network/styles
 
+## 4.5.4
+
+### Patch Changes
+
+- bfca367b: Release
+
 ## 4.5.3
 
 ### Patch Changes
