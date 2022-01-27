@@ -1,5 +1,11 @@
 # @dusk-network/balance
 
+## 4.5.5
+
+### Patch Changes
+
+- d326f7f0: Release
+
 ## 4.5.4
 
 ### Patch Changes
