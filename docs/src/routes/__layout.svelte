@@ -62,6 +62,15 @@
       settingsLabel="Settings"
       on:closeSettings="{() => settings.update(() => false)}"
       on:openSettings="{() => settings.update(() => true)}"
+      on:tracking="{(event) => {
+        console.log(event.detail);
+      }}"
+      on:analytics="{(event) => {
+        console.log(event.detail);
+      }}"
+      on:marketing="{(event) => {
+        console.log(event.detail);
+      }}"
       showSettings="{showSettings}"
     >
       <p>
