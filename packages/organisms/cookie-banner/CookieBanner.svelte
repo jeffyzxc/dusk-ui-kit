@@ -55,9 +55,9 @@
 
   let fields = {
     essential: true,
-    tracking: true,
-    analytics: true,
-    marketing: true,
+    tracking: false,
+    analytics: false,
+    marketing: false,
   };
 
   onMount(() => {
@@ -81,7 +81,14 @@
     }
   });
 
-  const setCookie = () => {
+  // const setOption = (e) => {
+  //   console.log(e);
+  //   // fields[option] = value;
+  //   // dispatch("update", fields);
+  // };
+
+  const setCookie = (e) => {
+    console.log(e);
     const expires = new Date();
     expires.setDate(expires.getDate() + cookieConfig.expires);
     const options = Object.assign({}, cookieConfig, { expires });
@@ -177,6 +184,7 @@
               bind:value="{fields.tracking}"
               checked="{fields.tracking}"
               on:change="{setCookie}"
+              on:change="{() => dispatch('tracking', fields.tracking)}"
             />
           </Control>
           <Control
@@ -191,6 +199,7 @@
               bind:value="{fields.analytics}"
               checked="{fields.analytics}"
               on:change="{setCookie}"
+              on:change="{() => dispatch('analytics', fields.analytics)}"
             />
           </Control>
           <Control
@@ -205,6 +214,7 @@
               bind:value="{fields.marketing}"
               checked="{fields.marketing}"
               on:change="{setCookie}"
+              on:change="{() => dispatch('marketing', fields.marketing)}"
             />
           </Control>
         </Content>
