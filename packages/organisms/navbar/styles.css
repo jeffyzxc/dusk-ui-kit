@@ -147,7 +147,7 @@
     & ^&__navigation,
     & ^&__wrapper--secondary {
       @apply hidden;
-      @apply lg:flex;
+      @apply lg:flex lg:items-center;
     }
   }
 
