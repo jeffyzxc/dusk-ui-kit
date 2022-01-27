@@ -1,5 +1,14 @@
 # @dusk-network/password-strength
 
+## 4.5.4
+
+### Patch Changes
+
+- bfca367b: Release
+- Updated dependencies [bfca367b]
+  - @dusk-network/progress-bar@4.5.4
+  - @dusk-network/helpers@4.5.4
+
 ## 4.5.3
 
 ### Patch Changes
