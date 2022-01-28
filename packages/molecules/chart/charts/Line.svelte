@@ -25,7 +25,7 @@
 <div class="duk-chart duk-chart-bar-horizontal">
   <LayerCake
     data="{filteredData}"
-    flatData="{filteredData}"
+    flatData="{filteredData.groups}"
     padding="{{ top: 3, right: 3, bottom: 3, left: 3 }}"
     x="{data.xKey}"
     y="{data.yKey}"

@@ -16,7 +16,6 @@
 
   /** Tooltip width */
   const w = 150;
-  const w2 = w / 2;
 
   /**Offset to center point on chart line, in pixels*/
   let pointOffset = 4;
@@ -54,25 +53,24 @@
       class="duk-chart-line__dot"
     ></div>
     <div
-      class="duk-chart-line__tooltip"
+      class="duk-chart__tooltip duk-chart-line__tooltip"
       style="
         width:{w}px;
         display: {visible ? 'block' : 'none'};
         top:{$yScale(foundSorted[0].value) + offset}px;
-        left:{$width - x < w + leftOffset ? x - w2 - leftOffset : x + w2 + leftOffset}px;"
+        left:{$width - x < w + leftOffset ? x - w / 2 - leftOffset : x + w / 2 + leftOffset}px;"
     >
       {#if $width - x > w + leftOffset}
-        <!-- <div class="duk-chart-line__tooltip--arrow-left"></div> -->
-        <div class="duk-chart-line__tooltip--arrow-left">
-          <div class="duk-chart-line__tooltip--arrow-left-interior"></div>
+        <div class="duk-chart__tooltip--arrow-left">
+          <div class="duk-chart__tooltip--arrow-left-interior"></div>
         </div>
       {:else}
-        <div class="duk-chart-line__tooltip--arrow-right">
-          <div class="duk-chart-line__tooltip--arrow-right-interior"></div>
+        <div class="duk-chart__tooltip--arrow-right">
+          <div class="duk-chart__tooltip--arrow-right-interior"></div>
         </div>
       {/if}
       <div>
-        <span class="duk-chart-line__text">
+        <span class="duk-chart__tooltip--text">
           {formatKey($config.y)}:
           {$number(found[$config.y], {
             locale: "en",
