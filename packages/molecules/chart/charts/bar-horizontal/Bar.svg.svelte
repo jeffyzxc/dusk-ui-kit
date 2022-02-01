@@ -1,26 +1,29 @@
 <script>
-  import { getContext } from "svelte";
+  import { getContext, createEventDispatcher } from "svelte";
 
   const { data, xGet, yGet, yRange } = getContext("LayerCake");
+
+  const dispatch = createEventDispatcher();
 
   $: columnHeight = (d) => {
     return $yRange[0] - $yGet(d);
   };
 </script>
 
-<g>
+<g on:mouseout="{() => dispatch('mouseout')}" on:blur="{() => dispatch('mouseout')}">
   {#each $data as d, i}
     <rect
       class="duk-chart-bar-horizontal__bar"
       data-id="{i}"
-      rx="0.4"
+      rx="0.6"
       x="{$xGet(d)}"
       y="{$yGet(d)}"
-      width="0.4"
+      width="0.6"
       height="{columnHeight(d)}"
       stroke-width="{0}"
+      on:mouseover="{(e) => dispatch('mousemove', { e, props: d })}"
+      on:focus="{(e) => dispatch('mousemove', { e, props: d })}"
     >
-      <title>{$yGet(d)}</title>
     </rect>
   {/each}
 </g>

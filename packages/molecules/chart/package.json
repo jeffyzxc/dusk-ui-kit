@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/chart",
-  "version": "4.5.4",
+  "version": "4.5.5",
   "description": "Dusk UI Kit - Chart",
   "bugs": {
     "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
@@ -18,9 +18,11 @@
   },
   "dependencies": {
     "d3-geo": "^3.0.1",
+    "d3-quadtree": "^3.0.1",
     "d3-tile": "^1.0.0",
     "d3-zoom": "^3.0.0",
     "layercake": "^5.0.3",
+    "svelte-i18n": "^3.3.13",
     "topojson-client": "^3.1.0"
   },
   "devDependencies": {
