@@ -1,5 +1,5 @@
 .duk-rich-text {
-  @apply prose;
+  @apply prose max-w-none;
   @apply dark:prose-light;
   @apply lg:prose-xl;
 
@@ -32,11 +32,6 @@
     @apply !prose-2xl;
   }
 
-  &--card {
-    @apply max-w-full;
-    @apply lg:prose lg:max-w-full;
-  }
-
   &--content,
   &--detail-list {
     @apply my-5;
@@ -45,4 +40,8 @@
       @apply mt-0;
     }
   }
+
+  /* & .duk-button {
+    @apply not-prose;
+  } */
 }

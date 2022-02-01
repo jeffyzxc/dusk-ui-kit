@@ -1,4 +1,4 @@
-<!-- <script>
+<script>
   import Card from "@dusk-network/card";
   import Chart from "@dusk-network/chart";
   import { marketData } from "./data.js";
@@ -24,4 +24,4 @@
   <div style="height: 150px">
     <Chart type="line" data="{getData(prices)}" />
   </div>
-</Card> -->
+</Card>
