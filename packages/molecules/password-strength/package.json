@@ -27,6 +27,6 @@
     "@dusk-network/helpers": "workspace:*",
     "@dusk-network/progress-bar": "workspace:*"
   },
-  "gitHead": "b083d0a0f3d20dc3d4e81fe04ecf491c1efddcf6",
+  "gitHead": "fb08f8fe9ee203553bce48d350830997b8fea652",
   "svelte": "index.js"
 }
