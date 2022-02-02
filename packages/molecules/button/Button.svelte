@@ -54,6 +54,11 @@
    */
   export let disabled = false;
 
+  /**
+   * Sets the `aria-label` attribute on the Button
+   */
+  export let label;
+
   const context = getContext("DUK:button:context");
 
   setContext("DUK:icon:context", contexts.ICON.BUTTON);
@@ -92,6 +97,7 @@
         class:duk-button--control="{context === contexts.BUTTON.CONTROL}"
         class:duk-button--heading="{context === contexts.BUTTON.HEADING}"
         class:duk-button--group="{context === contexts.BUTTON.GROUP}"
+        aria-label="{label}"
         disabled="{disabled || undefined}"
         id="{id}"
         on:click="{() => (value = !value)}"
@@ -122,6 +128,7 @@
       class:duk-button--control="{context === contexts.BUTTON.CONTROL}"
       class:duk-button--heading="{context === contexts.BUTTON.HEADING}"
       class:duk-button--group="{context === contexts.BUTTON.GROUP}"
+      aria-label="{label}"
       disabled="{disabled || undefined}"
       id="{id}"
       on:click="{() => (value = !value)}"
