@@ -1,6 +1,7 @@
 import * as Button from "./button";
 import * as Content from "./content";
 import * as Control from "./control";
+import * as Chart from "./chart";
 import * as Alert from "./alert";
 import * as Breadcrumb from "./breadcrumb";
 import * as CtaList from "./cta-list";
@@ -17,6 +18,7 @@ export {
   Button,
   Content,
   Control,
+  Chart,
   Alert,
   Breadcrumb,
   CtaList,

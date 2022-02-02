@@ -81,14 +81,7 @@
     }
   });
 
-  // const setOption = (e) => {
-  //   console.log(e);
-  //   // fields[option] = value;
-  //   // dispatch("update", fields);
-  // };
-
-  const setCookie = (e) => {
-    console.log(e);
+  const setCookie = () => {
     const expires = new Date();
     expires.setDate(expires.getDate() + cookieConfig.expires);
     const options = Object.assign({}, cookieConfig, { expires });

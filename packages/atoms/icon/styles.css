@@ -8,6 +8,7 @@
   }
 
   &[data-tooltip] {
+    @apply break-normal;
     position: relative;
     z-index: 2;
     display: block;

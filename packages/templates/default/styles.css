@@ -12,4 +12,12 @@
   & .duk-heading {
     @apply mb-6;
   }
+
+  & main > section {
+    @apply container mb-32;
+
+    & > article {
+      @apply mb-20;
+    }
+  }
 }

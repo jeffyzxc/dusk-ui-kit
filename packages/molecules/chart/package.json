@@ -18,9 +18,11 @@
   },
   "dependencies": {
     "d3-geo": "^3.0.1",
+    "d3-quadtree": "^3.0.1",
     "d3-tile": "^1.0.0",
     "d3-zoom": "^3.0.0",
     "layercake": "^5.0.3",
+    "svelte-i18n": "^3.3.13",
     "topojson-client": "^3.1.0"
   },
   "devDependencies": {
@@ -31,6 +33,6 @@
     "@dusk-network/heading": "workspace:*",
     "@dusk-network/helpers": "workspace:*"
   },
-  "gitHead": "b083d0a0f3d20dc3d4e81fe04ecf491c1efddcf6",
+  "gitHead": "fb08f8fe9ee203553bce48d350830997b8fea652",
   "svelte": "index.js"
 }

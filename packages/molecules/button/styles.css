@@ -64,7 +64,7 @@
     }
 
     &:hover:not(:disabled) {
-      box-shadow: 4px 4px 4px #cdb123;
+      box-shadow: 4px 4px 0px #cdb123;
     }
 
     &^&--outline {
