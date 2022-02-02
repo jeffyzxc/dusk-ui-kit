@@ -1,5 +1,11 @@
 # @dusk-network/dusk-ui-kit-examples
 
+## 4.5.6
+
+### Patch Changes
+
+- 80a609dd: Release
+
 ## 4.5.3
 
 ### Patch Changes

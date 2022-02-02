@@ -1,5 +1,18 @@
 # @dusk-network/search-list
 
+## 4.5.6
+
+### Patch Changes
+
+- 80a609dd: Release
+- Updated dependencies [80a609dd]
+  - @dusk-network/icon@4.5.6
+  - @dusk-network/rich-text@4.5.6
+  - @dusk-network/text-field@4.5.6
+  - @dusk-network/helpers@4.5.6
+  - @dusk-network/button@4.5.6
+  - @dusk-network/control@4.5.6
+
 ## 4.5.5
 
 ### Patch Changes

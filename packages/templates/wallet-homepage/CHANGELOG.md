@@ -1,5 +1,13 @@
 # @dusk-network/wallet-homepage
 
+## 4.5.6
+
+### Patch Changes
+
+- 80a609dd: Release
+- Updated dependencies [80a609dd]
+  - @dusk-network/default@4.5.6
+
 ## 4.5.5
 
 ### Patch Changes
