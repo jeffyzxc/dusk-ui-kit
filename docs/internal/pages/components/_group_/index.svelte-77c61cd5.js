@@ -1,0 +1,1 @@
+import{S as o,i as r,s as a}from"../../../chunks/vendor-ed73bfee.js";import{b as u}from"../../../chunks/paths-4b3c6e7e.js";async function p({params:s,stuff:e}){const{group:t}=s;let n=`${u}/components/${t}/${Object.entries(e.components[t])[0][0]}`;return{status:301,redirect:n}}class i extends o{constructor(e){super();r(this,e,null,null,a,{})}}export{i as default,p as load};
