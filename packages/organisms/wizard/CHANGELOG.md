@@ -1,5 +1,15 @@
 # @dusk-network/wizard
 
+## 4.5.6
+
+### Patch Changes
+
+- 80a609dd: Release
+- Updated dependencies [80a609dd]
+  - @dusk-network/progress-bar@4.5.6
+  - @dusk-network/helpers@4.5.6
+  - @dusk-network/breadcrumb@4.5.6
+
 ## 4.5.5
 
 ### Patch Changes

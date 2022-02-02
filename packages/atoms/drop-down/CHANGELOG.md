@@ -1,5 +1,14 @@
 # @dusk-network/drop-down
 
+## 4.5.6
+
+### Patch Changes
+
+- 80a609dd: Release
+- Updated dependencies [80a609dd]
+  - @dusk-network/icon@4.5.6
+  - @dusk-network/helpers@4.5.6
+
 ## 4.5.5
 
 ### Patch Changes
