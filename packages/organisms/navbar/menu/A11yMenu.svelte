@@ -25,7 +25,7 @@
 
 <Menu orientation="horizontal" class="duk-navbar__a11y-menu">
   <Item>
-    <Button variant="default" on:click="{() => dispatch('settings')}">
+    <Button variant="default" label="settings" on:click="{() => dispatch('settings')}">
       <Icon name="cog-outline" />
     </Button>
   </Item>
