@@ -13,7 +13,7 @@
     @apply mb-6;
   }
 
-  & > section {
+  & main > section {
     @apply container mb-32;
 
     & > article {
