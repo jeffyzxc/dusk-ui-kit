@@ -38,6 +38,7 @@
     <ScaledSvg>
       <BarSvg
         on:mousemove="{(event) => (evt = hideTooltip = event)}"
+        on:click="{(event) => (evt = hideTooltip = event)}"
         on:mouseout="{() => (hideTooltip = true)}"
       />
     </ScaledSvg>
