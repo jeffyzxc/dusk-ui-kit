@@ -13,6 +13,6 @@ module.exports = [
     {
       type: 'input',
       name: 'Name',
-      message: "What should the example file name be? e.g. Button_01"
+      message: "What should the example file name be? e.g. Button"
     },
   ]
