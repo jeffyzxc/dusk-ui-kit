@@ -19,5 +19,6 @@ to: packages/<%= h.inflection.pluralize(type) %>/<%= h.inflection.dasherize(name
   "module": "index.js",
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
-  }
+  },
+  "svelte": "index.js"
 }
