@@ -1,5 +1,14 @@
 # @dusk-network/chart
 
+## 4.6.1
+
+### Patch Changes
+
+- 88042090: Release
+- Updated dependencies [88042090]
+  - @dusk-network/helpers@4.6.1
+  - @dusk-network/heading@4.6.1
+
 ## 4.6.0
 
 ### Minor Changes
