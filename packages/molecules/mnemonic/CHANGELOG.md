@@ -1,5 +1,30 @@
 # @dusk-network/mnemonic
 
+## 4.6.0
+
+### Minor Changes
+
+- 9320f3b5: Release
+
+### Patch Changes
+
+- Updated dependencies [9320f3b5]
+  - @dusk-network/text-field@4.6.0
+  - @dusk-network/helpers@4.6.0
+  - @dusk-network/button@4.6.0
+  - @dusk-network/group@4.6.0
+
+## 4.5.6
+
+### Patch Changes
+
+- 80a609dd: Release
+- Updated dependencies [80a609dd]
+  - @dusk-network/text-field@4.5.6
+  - @dusk-network/helpers@4.5.6
+  - @dusk-network/button@4.5.6
+  - @dusk-network/group@4.5.6
+
 ## 4.5.5
 
 ### Patch Changes
