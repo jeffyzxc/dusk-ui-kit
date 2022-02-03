@@ -15,6 +15,7 @@ to: packages/<%= h.inflection.pluralize(type) %>/<%= h.inflection.dasherize(name
     "directory": "packages/<%= h.inflection.pluralize(type) %>/<%= h.inflection.dasherize(name) %>"
   },
   "type": "module",
+  "main": "index.js",
   "module": "index.js",
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
