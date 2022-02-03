@@ -1,5 +1,11 @@
 # @dusk-network/balance
 
+## 4.6.2
+
+### Patch Changes
+
+- 182f1ea6: Release
+
 ## 4.6.1
 
 ### Patch Changes
