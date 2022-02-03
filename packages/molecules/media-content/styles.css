@@ -1,0 +1,33 @@
+.duk-media-content {
+  @apply inline-flex flex-col w-full;
+  @apply md:flex-row md:space-x-5;
+
+  &__media {
+    @apply w-max flex-1;
+
+    > * {
+      @apply mr-auto;
+    }
+  }
+
+  &__text {
+    @apply text-left;
+    @apply lg:flex-1;
+  }
+
+  &--reverse {
+    @apply md:flex-row-reverse;
+  }
+
+  &--top {
+    @apply items-start;
+  }
+
+  &--middle {
+    @apply items-center;
+  }
+
+  &--bottom {
+    @apply items-end;
+  }
+}
