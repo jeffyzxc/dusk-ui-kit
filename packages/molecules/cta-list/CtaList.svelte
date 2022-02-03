@@ -1,6 +1,6 @@
 <script>
-  // FIXME numerical types are unclear.  Use helper for constants.
   import variants from "@dusk-network/helpers/variants.js";
+  import types from "@dusk-network/helpers/types.js";
   import "./styles.css";
 
   /**
@@ -11,19 +11,29 @@
 
   /**
    * Sets the type of the CTA List.
+   * @type {"ordered" | "unordered" }
    */
-  export let type = 1;
+  export let type = types.CTA_LIST.ORDERED;
 </script>
 
-<ol
-  class="{$$props.class || ''} duk-cta-list"
-  class:duk-cta-list--counter="{type === 2}"
-  class:duk-cta-list--brand="{variant === variants.CTA_LIST.BRAND}"
-  class:duk-cta-list--cta="{variant === variants.CTA_LIST.CTA}"
-  class:duk-cta-list--info="{variant === variants.CTA_LIST.INFO}"
-  class:duk-cta-list--success="{variant === variants.CTA_LIST.SUCCESS}"
-  class:duk-cta-list--warning="{variant === variants.CTA_LIST.WARNING}"
-  class:duk-cta-list--danger="{variant === variants.CTA_LIST.DANGER}"
->
-  <slot />
-</ol>
+{#if type === types.CTA_LIST.ORDERED}
+  <ol
+    class="{$$props.class || ''} duk-cta-list"
+    class:duk-cta-list--ordered="{type === types.CTA_LIST.ORDERED}"
+    class:duk-cta-list--brand="{variant === variants.CTA_LIST.BRAND}"
+    class:duk-cta-list--cta="{variant === variants.CTA_LIST.CTA}"
+    class:duk-cta-list--info="{variant === variants.CTA_LIST.INFO}"
+    class:duk-cta-list--success="{variant === variants.CTA_LIST.SUCCESS}"
+    class:duk-cta-list--warning="{variant === variants.CTA_LIST.WARNING}"
+    class:duk-cta-list--danger="{variant === variants.CTA_LIST.DANGER}"
+  >
+    <slot />
+  </ol>
+{:else if type === types.CTA_LIST.UNORDERED}
+  <ul
+    class="{$$props.class || ''} duk-cta-list"
+    class:duk-cta-list--unordered="{type === types.CTA_LIST.UNORDERED}"
+  >
+    <slot />
+  </ul>
+{/if}
