@@ -1,5 +1,13 @@
 # @dusk-network/explorer-detail
 
+## 4.6.3
+
+### Patch Changes
+
+- 0dafd544: Release
+- Updated dependencies [0dafd544]
+  - @dusk-network/default@4.6.3
+
 ## 4.6.2
 
 ### Patch Changes

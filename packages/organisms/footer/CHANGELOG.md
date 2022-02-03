@@ -1,5 +1,20 @@
 # @dusk-network/footer
 
+## 4.6.3
+
+### Patch Changes
+
+- 0dafd544: Release
+- Updated dependencies [0dafd544]
+  - @dusk-network/icon@4.6.3
+  - @dusk-network/logo@4.6.3
+  - @dusk-network/text-field@4.6.3
+  - @dusk-network/helpers@4.6.3
+  - @dusk-network/button@4.6.3
+  - @dusk-network/control@4.6.3
+  - @dusk-network/menu@4.6.3
+  - @dusk-network/form@4.6.3
+
 ## 4.6.2
 
 ### Patch Changes
