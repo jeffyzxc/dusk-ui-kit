@@ -17,6 +17,9 @@ export default {
     MNEMONIC: "button:mnemonic",
     GROUP: "button:group",
   },
+  CARD: {
+    GROUP: "card:group",
+  },
   CHIP: {
     STATISTIC: "chip:statistic",
     DETAIL_LIST: "chip:detail-list",
@@ -41,6 +44,7 @@ export default {
   DETAIL_LIST: {
     CARD: "detail-list:card",
     CONTENT: "detail-list:content",
+    MEDIA_CONTENT: "detail-list:media-content",
   },
   DISCLAIMER_LIST: {
     CARD: "disclaimer-list:card",
@@ -61,6 +65,7 @@ export default {
   },
   GROUP: {
     CONTENT: "group:content",
+    MEDIA_CONTENT: "group:media-content",
     DETAIL_LIST: "group:detail-list",
     FORM: "group:form",
     HEADING: "group:heading",
@@ -79,6 +84,7 @@ export default {
   HEADING: {
     CARD: "heading:card",
     CONTENT: "heading:content",
+    MEDIA_CONTENT: "heading:media-content",
     DISCLAIMER_LIST: "heading:disclaimer-list",
     HERO: "heading:hero",
     DATUM: "heading:datum",
@@ -93,6 +99,9 @@ export default {
   LOGO: {
     NAVBAR: "logo:navbar",
     FOOTER: "logo:footer",
+  },
+  MEDIA_CONTENT: {
+    CARD: "media-content:card",
   },
   MENU: {
     FOOTER: "menu:footer",
@@ -118,6 +127,7 @@ export default {
   RICH_TEXT: {
     CARD: "rich-text:card",
     CONTENT: "rich-text:content",
+    MEDIA_CONTENT: "rich-text:media-content",
     DETAIL_LIST: "rich-text:detail-list",
     HERO: "rich-text:hero",
   },

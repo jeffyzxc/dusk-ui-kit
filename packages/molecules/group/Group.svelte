@@ -18,6 +18,7 @@
 
   setContext("DUK:button:context", contexts.BUTTON.GROUP);
   setContext("DUK:icon:context", contexts.ICON.GROUP);
+  setContext("DUK:card:context", contexts.CARD.GROUP);
 </script>
 
 <div
