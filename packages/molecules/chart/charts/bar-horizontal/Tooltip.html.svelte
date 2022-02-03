@@ -40,7 +40,7 @@
       <div class="duk-chart__tooltip--arrow-left">
         <div class="duk-chart__tooltip--arrow-left-interior"></div>
       </div>
-    {:else}
+    {:else if $width - evt.detail.e.layerX < w + offset}
       <div class="duk-chart__tooltip--arrow-right">
         <div class="duk-chart__tooltip--arrow-right-interior"></div>
       </div>
