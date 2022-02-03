@@ -1,5 +1,14 @@
 # @dusk-network/alert
 
+## 4.6.2
+
+### Patch Changes
+
+- 182f1ea6: Release
+- Updated dependencies [182f1ea6]
+  - @dusk-network/icon@4.6.2
+  - @dusk-network/helpers@4.6.2
+
 ## 4.6.1
 
 ### Patch Changes
