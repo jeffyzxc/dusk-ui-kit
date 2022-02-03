@@ -1,12 +1,21 @@
 .duk-cta-list {
-  @apply flex flex-col gap-y-2.5 list-decimal pl-5;
+  @apply flex flex-col gap-y-2.5;
 
-  &--counter {
+  &--unordered {
     @apply list-none;
+    & ^&__item {
+      &--content {
+        @apply pl-9 mb-20;
+      }
+    }
+  }
+
+  &--ordered {
+    @apply list-decimal list-none;
     counter-reset: duk-list-item;
 
     & ^&__item {
-      @apply flex items-center;
+      @apply flex items-center pl-5;
       counter-increment: duk-list-item;
 
       &:before {

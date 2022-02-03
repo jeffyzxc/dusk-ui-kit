@@ -1,0 +1,76 @@
+.duk-media-content {
+  @apply inline-flex flex-col w-full;
+  @apply md:flex-row md:space-x-5;
+
+  &__media {
+    @apply w-max flex-1;
+
+    > * {
+      @apply mr-auto;
+    }
+  }
+
+  &__text {
+    @apply text-left;
+    @apply lg:flex-1;
+  }
+
+  &--reverse {
+    @apply md:flex-row-reverse;
+  }
+
+  &--top {
+    @apply items-start;
+  }
+
+  &--middle {
+    @apply items-center;
+  }
+
+  &--bottom {
+    @apply items-end;
+  }
+
+  &--left {
+    ^&__media {
+      & > * {
+        @apply mr-auto;
+      }
+    }
+    ^&__text {
+      & > * {
+        @apply text-left;
+      }
+    }
+  }
+
+  &--center {
+    ^&__media {
+      & > * {
+        @apply mx-auto;
+      }
+    }
+    ^&__text {
+      & > * {
+        @apply text-center;
+      }
+    }
+  }
+
+  &--right {
+    ^&__media {
+      & > * {
+        @apply ml-auto;
+      }
+    }
+    ^&__text {
+      & > * {
+        @apply text-right;
+      }
+    }
+  }
+
+  &--card {
+    @apply font-light py-5 px-6;
+  }
+}

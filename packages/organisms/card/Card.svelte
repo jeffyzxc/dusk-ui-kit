@@ -1,5 +1,5 @@
 <script>
-  import { setContext } from "svelte";
+  import { setContext, getContext } from "svelte";
   import contexts from "@dusk-network/helpers/contexts.js";
   import variants from "@dusk-network/helpers/variants.js";
   import states from "@dusk-network/helpers/states.js";
@@ -32,12 +32,15 @@
    */
   export let overflow = false;
 
+  const context = getContext("DUK:card:context");
+
   setContext("DUK:accordion:context", contexts.ACCORDION.CARD);
   setContext("DUK:rich-text:context", contexts.RICH_TEXT.CARD);
   setContext("DUK:heading:context", contexts.HEADING.CARD);
   setContext("DUK:mnemonic:context", contexts.MNEMONIC.CARD);
   setContext("DUK:wizard:context", contexts.WIZARD.CARD);
   setContext("DUK:content:context", contexts.CONTENT.CARD);
+  setContext("DUK:media-content:context", contexts.MEDIA_CONTENT.CARD);
   setContext("DUK:breadcrumb:context", contexts.BREADCRUMB.CARD);
   setContext("DUK:detail-list:context", contexts.DETAIL_LIST.CARD);
 </script>
@@ -46,6 +49,7 @@
   <a href="{href}">
     <div
       class="{$$props.class || ''} duk-card"
+      class:duk-card--group="{context === contexts.CARD.GROUP}"
       class:duk-card--brand="{variant === variants.CARD.BRAND}"
       class:duk-card--cta="{variant === variants.CARD.CTA}"
       class:duk-card--info="{variant === variants.CARD.INFO}"
@@ -65,6 +69,7 @@
 {:else}
   <div
     class="{$$props.class || ''} duk-card"
+    class:duk-card--group="{context === contexts.CARD.GROUP}"
     class:duk-card--brand="{variant === variants.CARD.BRAND}"
     class:duk-card--cta="{variant === variants.CARD.CTA}"
     class:duk-card--info="{variant === variants.CARD.INFO}"

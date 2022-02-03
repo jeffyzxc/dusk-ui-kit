@@ -11,18 +11,6 @@
     @apply flex items-center justify-end py-5 px-6;
   }
 
-  /* &__title {
-    @apply flex items-start justify-between pt-5 px-6;
-
-    & h1,
-    & h2,
-    & h3,
-    & h4 {
-      @apply text-xl text-indigo-500 flex items-center space-x-4 mb-0;
-      @apply dark:text-indigo-200;
-    }
-  } */
-
   &__footer {
     @apply flex flex-col text-xs px-6 py-2 leading-tight font-light;
     @apply sm:flex-row sm:items-center sm:justify-between;
@@ -58,6 +46,12 @@
         @apply justify-center;
       }
     }
+  }
+
+  &--group {
+    @apply flex-grow self-stretch;
+
+    flex-basis: 0;
   }
 
   &--brand {
