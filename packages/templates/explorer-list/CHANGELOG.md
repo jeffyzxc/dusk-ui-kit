@@ -1,5 +1,13 @@
 # @dusk-network/explorer-list
 
+## 4.6.1
+
+### Patch Changes
+
+- 88042090: Release
+- Updated dependencies [88042090]
+  - @dusk-network/default@4.6.1
+
 ## 4.6.0
 
 ### Minor Changes

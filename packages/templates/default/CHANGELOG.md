@@ -1,5 +1,11 @@
 # @dusk-network/default
 
+## 4.6.1
+
+### Patch Changes
+
+- 88042090: Release
+
 ## 4.6.0
 
 ### Minor Changes
