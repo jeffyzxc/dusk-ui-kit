@@ -3,7 +3,7 @@
   import Icon from "@dusk-network/icon";
 </script>
 
-<DetailList>
+<DetailList split="25/75">
   <Item>
     <svelte:fragment slot="icon">
       <Icon name="check-circle-outline" />
