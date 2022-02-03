@@ -35,7 +35,7 @@ export default {
     WARNING: "warning",
     DANGER: "danger",
   },
-  CTALIST: {
+  CTA_LIST: {
     BRAND: "brand",
     CTA: "cta",
     DEFAULT: "default",

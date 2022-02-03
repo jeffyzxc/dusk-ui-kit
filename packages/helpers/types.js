@@ -22,6 +22,10 @@ export default {
     INLINE_FIXED: "inline-fixed",
     INLINE_FLEX: "inline-flex",
   },
+  CTA_LIST: {
+    ORDERED: "ordered",
+    UNORDERED: "unordered",
+  },
   FOOTER: {
     MAXIMAL: "maximal",
     MINIMAL: "minimal",

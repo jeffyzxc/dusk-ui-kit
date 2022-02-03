@@ -18,7 +18,7 @@ npm i -D @dusk-network/cta-list
   import CtaList, { Item } from "@dusk-network/cta-list";
   import RichText from "@dusk-network/rich-text";
 
-  const type = 2;
+  const type = "ordered";
 </script>
 
 <CtaList type="{type}">
