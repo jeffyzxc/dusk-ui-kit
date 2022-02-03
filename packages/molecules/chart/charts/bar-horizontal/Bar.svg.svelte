@@ -20,9 +20,10 @@
       y="{$yGet(d)}"
       width="0.6"
       height="{columnHeight(d)}"
-      stroke-width="{0}"
+      stroke-width="{0.6}"
       on:mouseover="{(e) => dispatch('mousemove', { e, props: d })}"
       on:focus="{(e) => dispatch('mousemove', { e, props: d })}"
+      on:click="{(e) => dispatch('click', { e, props: d })}"
     >
     </rect>
   {/each}
