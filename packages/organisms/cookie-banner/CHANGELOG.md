@@ -1,5 +1,21 @@
 # @dusk-network/cookie-banner
 
+## 4.6.1
+
+### Patch Changes
+
+- 88042090: Release
+- Updated dependencies [88042090]
+  - @dusk-network/icon@4.6.1
+  - @dusk-network/toggle@4.6.1
+  - @dusk-network/helpers@4.6.1
+  - @dusk-network/button@4.6.1
+  - @dusk-network/control@4.6.1
+  - @dusk-network/group@4.6.1
+  - @dusk-network/heading@4.6.1
+  - @dusk-network/card@4.6.1
+  - @dusk-network/form@4.6.1
+
 ## 4.6.0
 
 ### Minor Changes
