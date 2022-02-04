@@ -1,11 +1,11 @@
 .duk-template-wallet-homepage {
   &__hero {
-    @apply mb-16;
-    @apply sm:mb-40;
+    @apply mb-16 mt-8;
+    @apply sm:mb-40 sm:mt-0;
   }
 
   &__cta {
-    @apply flex flex-wrap gap-20 mb-16;
+    @apply flex flex-wrap gap-20 mb-14;
     @apply sm:mb-40 sm:flex-nowrap;
   }
 
@@ -19,7 +19,7 @@
   }
 
   &__info {
-    @apply flex flex-wrap gap-6 mb-16;
+    @apply flex flex-wrap gap-6 mb-14;
     @apply sm:mb-40 sm:flex-nowrap;
   }
 
@@ -27,9 +27,5 @@
   &__info-access {
     @apply w-full mt-28;
     @apply sm:mt-72;
-  }
-
-  &__faq {
-    @apply mb-16;
   }
 }
