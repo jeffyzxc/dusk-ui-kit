@@ -1,5 +1,13 @@
 # @dusk-network/explorer-charts
 
+## 4.6.4
+
+### Patch Changes
+
+- 8c74f26d: Release
+- Updated dependencies [8c74f26d]
+  - @dusk-network/default@4.6.4
+
 ## 4.6.3
 
 ### Patch Changes

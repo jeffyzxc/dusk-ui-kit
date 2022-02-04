@@ -1,5 +1,14 @@
 # @dusk-network/detail-list
 
+## 4.6.4
+
+### Patch Changes
+
+- 8c74f26d: Release
+- Updated dependencies [8c74f26d]
+  - @dusk-network/icon@4.6.4
+  - @dusk-network/helpers@4.6.4
+
 ## 4.6.3
 
 ### Patch Changes
