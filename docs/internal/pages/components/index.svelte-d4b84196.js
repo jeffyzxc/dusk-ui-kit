@@ -1,1 +1,0 @@
-import{S as t,i as n,s as o}from"../../chunks/vendor-ed73bfee.js";import{b as a}from"../../chunks/paths-4b3c6e7e.js";async function c(){let s=`${a}/components/atoms`;return{status:301,redirect:s}}class l extends t{constructor(e){super();n(this,e,null,null,o,{})}}export{l as default,c as load};
