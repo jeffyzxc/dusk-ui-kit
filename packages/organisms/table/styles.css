@@ -56,9 +56,9 @@
       @apply min-w-max;
       @apply md:min-w-0;
       & tr {
-        &:nth-child(odd) {
-          @apply bg-gray-800;
-          @apply dark:bg-gray-100;
+        &:nth-child(even) {
+          @apply bg-gray-100;
+          @apply dark:bg-gray-800;
         }
         &.duk-table__row--active {
           & > .duk-table__datum--extra-information {

@@ -12,15 +12,15 @@
   }
 
   &--left {
-    @apply text-left;
+    @apply !text-left;
   }
 
   &--right {
-    @apply text-right;
+    @apply !text-right;
   }
 
   &--center {
-    @apply text-center;
+    @apply !text-center;
   }
 
   &--hero,
