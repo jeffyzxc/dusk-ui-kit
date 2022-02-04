@@ -76,13 +76,13 @@
               <h4>Create New Wallet</h4>
             </RichText>
           </Heading>
-          <RichText size="lg">
+          <RichText size="lg" class="cta__card--content">
             <p>
               Create a new wallet. Unlock the ability to transact, and choose your preferred method
               to access and recover your wallet.
             </p>
           </RichText>
-          <RichText size="xxl">
+          <RichText size="xxl" class="cta__card--cta">
             <p>
               <strong>Get Started</strong>
             </p>
@@ -97,17 +97,17 @@
             <svelte:fragment slot="icon">
               <Icon name="wallet-arrow" viewbox="0 0 53 51" />
             </svelte:fragment>
-            <RichText>
+            <RichText size="xxl">
               <h4>Access My Wallet</h4>
             </RichText>
           </Heading>
-          <RichText size="lg">
+          <RichText size="lg" class="cta__card--content">
             <p>
               Access your wallet. Send and receive DUSK and tokens, interact with privacy-friendly
               smart contracts, and more!
             </p>
           </RichText>
-          <RichText size="xl">
+          <RichText size="xl" class="cta__card--cta">
             <p>
               <strong>Access Now</strong>
             </p>

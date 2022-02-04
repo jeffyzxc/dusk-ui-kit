@@ -2,7 +2,8 @@
   @apply h-auto;
   @apply sm:h-full;
 
-  p {
+  &--content,
+  &--cta {
     @apply hidden;
     @apply sm:block;
   }
@@ -10,10 +11,6 @@
   .duk-heading {
     @apply !mb-0;
     @apply sm:!mb-5;
-  }
-
-  .duk-icon--heading {
-    @apply !ml-0;
   }
 }
 
