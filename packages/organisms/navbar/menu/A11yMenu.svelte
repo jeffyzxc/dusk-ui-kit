@@ -11,7 +11,7 @@
   /**
    * Sets the cookie name for the Cookie Banner.
    */
-  export let cookieName = "DUSK-THEME";
+  export let cookieName = "DUSK-A11Y";
 
   /**
    * Sets the configuration object used by the cookie.
