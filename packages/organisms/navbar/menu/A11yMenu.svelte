@@ -1,11 +1,26 @@
 <script>
   import { setContext, afterUpdate, createEventDispatcher } from "svelte";
+  import { getCookie, setCookie, deleteCookie } from "@dusk-network/helpers/cookie-utils.js";
   import DarkMode from "svelte-dark-mode";
   import Menu, { Item } from "@dusk-network/menu";
   import Toggle from "@dusk-network/toggle";
   import Button from "@dusk-network/button";
   import Icon from "@dusk-network/icon";
   import contexts from "@dusk-network/helpers/contexts.js";
+
+  /**
+   * Sets the cookie name for the Cookie Banner.
+   */
+  export let cookieName = "DUSK-A11Y";
+
+  /**
+   * Sets the configuration object used by the cookie.
+   * Contains the cookie options as defined here: https://github.com/js-cookie/js-cookie#cookie-attributes
+   */
+  export let cookieConfig = {
+    expires: 365,
+    path: "/",
+  };
 
   const dispatch = createEventDispatcher();
 
@@ -16,6 +31,19 @@
 
   afterUpdate(() => {
     document.documentElement.className = theme;
+
+    if (!cookieName) {
+      throw new Error("cookieName is required");
+    }
+
+    const cookie = getCookie(cookieName);
+
+    if (!cookie) {
+      setCookie(cookieName, { theme }, cookieConfig);
+    } else {
+      deleteCookie(cookieName, cookieConfig);
+      setCookie(cookieName, { theme }, cookieConfig);
+    }
   });
 
   setContext("DUK:menu:context", contexts.MENU.NAVBAR);

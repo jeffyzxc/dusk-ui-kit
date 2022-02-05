@@ -31,6 +31,7 @@
     "broadcast-channel": "^4.9.0",
     "d3-geo": "^3.0.1",
     "d3-quadtree": "^3.0.1",
+    "d3-scale": "^4.0.2",
     "js-cookie": "^3.0.1",
     "layercake": "^6.0.2",
     "marked": "^4.0.10",
