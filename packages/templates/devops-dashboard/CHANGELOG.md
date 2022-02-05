@@ -1,5 +1,13 @@
 # @dusk-network/devops-dashboard
 
+## 4.6.5
+
+### Patch Changes
+
+- 10b60c57: Release
+- Updated dependencies [10b60c57]
+  - @dusk-network/default@4.6.5
+
 ## 4.6.4
 
 ### Patch Changes
