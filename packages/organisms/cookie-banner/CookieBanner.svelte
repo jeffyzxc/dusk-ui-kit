@@ -1,6 +1,6 @@
 <script>
   import { onMount, createEventDispatcher } from "svelte";
-  import Cookies from "js-cookie";
+  import { getCookie, setCookie, deleteCookie } from "@dusk-network/helpers/cookie-utils.js";
   import Button from "@dusk-network/button";
   import Content from "@dusk-network/content";
   import Heading from "@dusk-network/heading";
@@ -20,7 +20,7 @@
   /**
    * Sets the cookie name for the Cookie Banner.
    */
-  export let cookieName = "DUSK";
+  export let cookieName = "DUSK-GDPR";
 
   /**
    * Sets the configuration object used by the cookie.
@@ -65,7 +65,7 @@
       throw new Error("cookieName is required");
     }
 
-    const cookie = Cookies.get(cookieName);
+    const cookie = getCookie(cookieName);
 
     if (!cookie) {
       showBanner = true;
@@ -76,22 +76,22 @@
       const settings = JSON.parse(cookie);
       fields = settings;
     } catch (e) {
-      removeCookie();
+      deleteCookie(cookieName, cookieConfig);
       showBanner = true;
     }
   });
 
-  const setCookie = () => {
-    const expires = new Date();
-    expires.setDate(expires.getDate() + cookieConfig.expires);
-    const options = Object.assign({}, cookieConfig, { expires });
-    Cookies.set(cookieName, JSON.stringify(fields), options);
-  };
+  // const setCookie = () => {
+  //   const expires = new Date();
+  //   expires.setDate(expires.getDate() + cookieConfig.expires);
+  //   const options = Object.assign({}, cookieConfig, { expires });
+  //   Cookies.set(cookieName, JSON.stringify(fields), options);
+  // };
 
-  const removeCookie = () => {
-    const { path } = cookieConfig;
-    Cookies.remove(cookieName, Object.assign({}, path ? { path } : {}));
-  };
+  // const removeCookie = () => {
+  //   const { path } = cookieConfig;
+  //   Cookies.remove(cookieName, Object.assign({}, path ? { path } : {}));
+  // };
 </script>
 
 <svelte:window
@@ -119,7 +119,7 @@
           <Button
             variant="cta"
             on:click="{() => {
-              setCookie();
+              setCookie(cookieName, fields, cookieConfig);
               showBanner = false;
               dispatch('closeSettings');
             }}"
