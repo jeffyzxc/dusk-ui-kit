@@ -1,12 +1,12 @@
 .duk-navbar {
-  @apply flex flex-col w-full bg-gray-100 pt-2;
+  @apply flex flex-col w-full bg-gray-100;
   @apply dark:bg-gray-900;
 
   &__wrapper {
     @apply lg:flex-none lg:flex lg:w-full lg:justify-between lg:items-end;
 
     &--primary {
-      @apply fill-current text-indigo-500;
+      @apply fill-current text-indigo-500 pt-2;
       @apply dark:text-white;
       @apply lg:h-auto lg:px-6;
     }

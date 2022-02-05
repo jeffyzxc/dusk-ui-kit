@@ -20,7 +20,7 @@
   /**
    * Sets the cookie name for the Cookie Banner.
    */
-  export let cookieName = "DUSK-GDPR";
+  export let cookieName = "DUSK";
 
   /**
    * Sets the configuration object used by the cookie.
