@@ -1,0 +1,9 @@
+import{S as A,i as F,s as G,w as J,x as K,y as L,q as N,o as Q,B as U,e as m,t as r,k as M,c as f,a as u,h as p,d as a,m as O,g as _,M as o}from"../../chunks/vendor-dc822454.js";import{R as V}from"../../chunks/RichText-e52956a7.js";import"../../chunks/sizes-55dbb9c2.js";function W(D){let t,c,s,n,h,E,R,T,k,j,y,v,d,C,H,i,b,x,q,I;return{c(){t=m("h1"),c=r("Helpers"),s=M(),n=m("p"),h=r("The helpers package contains "),E=m("em"),R=r("helpful"),T=r(" mappings for "),k=m("code"),j=r("enum"),y=r(" component props."),v=M(),d=m("h2"),C=r("Installation"),H=M(),i=m("pre"),b=r(`
+    `),x=m("code"),q=r(`
+      npm i -D @dusk-network/helpers
+    `),I=r(`
+  `)},l(e){t=f(e,"H1",{});var l=u(t);c=p(l,"Helpers"),l.forEach(a),s=O(e),n=f(e,"P",{});var $=u(n);h=p($,"The helpers package contains "),E=f($,"EM",{});var P=u(E);R=p(P,"helpful"),P.forEach(a),T=p($," mappings for "),k=f($,"CODE",{});var S=u(k);j=p(S,"enum"),S.forEach(a),y=p($," component props."),$.forEach(a),v=O(e),d=f(e,"H2",{});var z=u(d);C=p(z,"Installation"),z.forEach(a),H=O(e),i=f(e,"PRE",{});var w=u(i);b=p(w,`
+    `),x=f(w,"CODE",{});var B=u(x);q=p(B,`
+      npm i -D @dusk-network/helpers
+    `),B.forEach(a),I=p(w,`
+  `),w.forEach(a)},m(e,l){_(e,t,l),o(t,c),_(e,s,l),_(e,n,l),o(n,h),o(n,E),o(E,R),o(n,T),o(n,k),o(k,j),o(n,y),_(e,v,l),_(e,d,l),o(d,C),_(e,H,l),_(e,i,l),o(i,b),o(i,x),o(x,q),o(i,I)},d(e){e&&a(t),e&&a(s),e&&a(n),e&&a(v),e&&a(d),e&&a(H),e&&a(i)}}}function X(D){let t,c;return t=new V({props:{$$slots:{default:[W]},$$scope:{ctx:D}}}),{c(){J(t.$$.fragment)},l(s){K(t.$$.fragment,s)},m(s,n){L(t,s,n),c=!0},p(s,[n]){const h={};n&1&&(h.$$scope={dirty:n,ctx:s}),t.$set(h)},i(s){c||(N(t.$$.fragment,s),c=!0)},o(s){Q(t.$$.fragment,s),c=!1},d(s){U(t,s)}}}class ee extends A{constructor(t){super();F(this,t,null,X,G,{})}}export{ee as default};
