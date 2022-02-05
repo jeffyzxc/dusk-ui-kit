@@ -4,6 +4,10 @@
   @apply 2xl:mt-48;
   @apply dark:bg-gray-900;
 
+  @media (display-mode: standalone) {
+    @apply hidden;
+  }
+
   & > * {
     @apply mx-auto flex flex-col;
     @apply lg:flex-row;

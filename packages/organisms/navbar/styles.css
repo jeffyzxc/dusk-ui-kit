@@ -49,6 +49,10 @@
       @apply mt-4;
       @apply lg:space-x-5 lg:mt-0 lg:items-end;
 
+      @media (display-mode: standalone) {
+        @apply hidden;
+      }
+
       & .duk-menu__list {
         @apply flex flex-col space-y-0 space-x-0;
         @apply lg:flex-row lg:flex-1 lg:justify-end lg:mb-0 lg:space-y-0 lg:space-x-5;
