@@ -33,6 +33,11 @@
   export let components;
 
   const queryClient = new QueryClient();
+  const cookieConfig = {
+    expires: 365,
+    path: "/",
+    domain: "localhost",
+  };
 
   let showSettings = false;
 
@@ -58,6 +63,7 @@
   <svelte:fragment slot="footer">
     <Footer type="minimal" variant="brand" />
     <CookieBanner
+      cookieConfig="{cookieConfig}"
       acceptLabel="Accept"
       settingsLabel="Settings"
       on:closeSettings="{() => settings.update(() => false)}"
