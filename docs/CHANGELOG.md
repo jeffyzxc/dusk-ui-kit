@@ -1,5 +1,44 @@
 # @dusk-network/dusk-ui-kit-docs
 
+## 4.6.5
+
+### Patch Changes
+
+- 10b60c57: Release
+- Updated dependencies [10b60c57]
+  - @dusk-network/icon@4.6.5
+  - @dusk-network/rich-text@4.6.5
+  - @dusk-network/helpers@4.6.5
+  - @dusk-network/content@4.6.5
+  - @dusk-network/heading@4.6.5
+  - @dusk-network/menu@4.6.5
+  - @dusk-network/card@4.6.5
+  - @dusk-network/cookie-banner@4.6.5
+  - @dusk-network/footer@4.6.5
+  - @dusk-network/navbar@4.6.5
+  - @dusk-network/styles@4.6.5
+  - @dusk-network/default@4.6.5
+  - @dusk-network/dusk-ui-kit-examples@4.6.0
+
+## 4.6.4
+
+### Patch Changes
+
+- Updated dependencies [8c74f26d]
+  - @dusk-network/icon@4.6.4
+  - @dusk-network/rich-text@4.6.4
+  - @dusk-network/helpers@4.6.4
+  - @dusk-network/content@4.6.4
+  - @dusk-network/heading@4.6.4
+  - @dusk-network/menu@4.6.4
+  - @dusk-network/card@4.6.4
+  - @dusk-network/cookie-banner@4.6.4
+  - @dusk-network/footer@4.6.4
+  - @dusk-network/navbar@4.6.4
+  - @dusk-network/styles@4.6.4
+  - @dusk-network/default@4.6.4
+  - @dusk-network/dusk-ui-kit-examples@4.6.0
+
 ## 4.6.3
 
 ### Patch Changes
