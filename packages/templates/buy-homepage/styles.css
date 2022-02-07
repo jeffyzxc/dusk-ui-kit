@@ -1,0 +1,24 @@
+.duk-template-buy-homepage {
+  &__hero {
+    @apply mb-24;
+  }
+
+  &__blocks {
+    @apply flex flex-wrap -mx-8;
+  }
+
+  &__steps {
+    @apply lg:w-2/5 mb-12;
+    @apply md:mb-0;
+  }
+
+  ,
+  &__markets {
+    @apply w-full lg:w-3/5;
+  }
+
+  &__steps,
+  &__markets {
+    @apply w-full md:w-1/2;
+  }
+}
