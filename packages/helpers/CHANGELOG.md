@@ -1,5 +1,13 @@
 # @dusk-network/helpers
 
+## 4.6.6
+
+### Patch Changes
+
+- a5caefeb: Release
+- Updated dependencies [a5caefeb]
+  - @dusk-network/styles@4.6.6
+
 ## 4.6.5
 
 ### Patch Changes
