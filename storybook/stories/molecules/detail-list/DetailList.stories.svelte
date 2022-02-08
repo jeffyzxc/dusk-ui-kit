@@ -18,9 +18,9 @@
         type: 'code',
       },
     },
-    // jest: ['packages/molecules/cta-list/CtaList.test.js'],
+    // jest: ['packages/molecules/detail-list/DetailList.test.js'],
   }}"
-  argTypes="{meta('molecules/cta-list/CtaList', {
+  argTypes="{meta('molecules/detail-list/DetailList', {
     variant: {
       control: {
         type: 'select',
