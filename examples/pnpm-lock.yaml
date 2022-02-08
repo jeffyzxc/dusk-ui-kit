@@ -49,6 +49,7 @@ specifiers:
   '@dusk-network/rich-text': workspace:*
   '@dusk-network/search-list': workspace:*
   '@dusk-network/skeleton-loader': workspace:*
+  '@dusk-network/slider': workspace:*
   '@dusk-network/statistic': workspace:*
   '@dusk-network/step-list': workspace:*
   '@dusk-network/styles': workspace:*
@@ -107,6 +108,7 @@ devDependencies:
   '@dusk-network/rich-text': link:../packages/atoms/rich-text
   '@dusk-network/search-list': link:../packages/organisms/search-list
   '@dusk-network/skeleton-loader': link:../packages/atoms/skeleton-loader
+  '@dusk-network/slider': link:../packages/atoms/slider
   '@dusk-network/statistic': link:../packages/molecules/statistic
   '@dusk-network/step-list': link:../packages/molecules/step-list
   '@dusk-network/styles': link:../packages/styles
