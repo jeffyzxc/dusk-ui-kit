@@ -176,7 +176,7 @@
               name="tracking"
               bind:value="{fields.tracking}"
               checked="{fields.tracking}"
-              on:change="{setCookie(cookieName, fields, cookieConfig)}"
+              on:change="{() => setCookie(cookieName, fields, cookieConfig)}"
               on:change="{() => dispatch('tracking', fields.tracking)}"
             />
           </Control>
@@ -191,7 +191,7 @@
               name="analytics"
               bind:value="{fields.analytics}"
               checked="{fields.analytics}"
-              on:change="{setCookie(cookieName, fields, cookieConfig)}"
+              on:change="{() => setCookie(cookieName, fields, cookieConfig)}"
               on:change="{() => dispatch('analytics', fields.analytics)}"
             />
           </Control>
@@ -206,7 +206,7 @@
               name="marketing"
               bind:value="{fields.marketing}"
               checked="{fields.marketing}"
-              on:change="{setCookie(cookieName, fields, cookieConfig)}"
+              on:change="{() => setCookie(cookieName, fields, cookieConfig)}"
               on:change="{() => dispatch('marketing', fields.marketing)}"
             />
           </Control>
