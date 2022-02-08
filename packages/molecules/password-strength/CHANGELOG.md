@@ -1,5 +1,14 @@
 # @dusk-network/password-strength
 
+## 4.6.6
+
+### Patch Changes
+
+- a5caefeb: Release
+- Updated dependencies [a5caefeb]
+  - @dusk-network/progress-bar@4.6.6
+  - @dusk-network/helpers@4.6.6
+
 ## 4.6.5
 
 ### Patch Changes

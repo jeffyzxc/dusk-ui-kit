@@ -1,5 +1,16 @@
 # @dusk-network/mnemonic
 
+## 4.6.6
+
+### Patch Changes
+
+- a5caefeb: Release
+- Updated dependencies [a5caefeb]
+  - @dusk-network/text-field@4.6.6
+  - @dusk-network/helpers@4.6.6
+  - @dusk-network/button@4.6.6
+  - @dusk-network/group@4.6.6
+
 ## 4.6.5
 
 ### Patch Changes
