@@ -8,6 +8,7 @@ import * as ProgressBar from "./progress-bar";
 import * as QrCode from "./qr-code";
 import * as RichText from "./rich-text";
 import * as SkeletonLoader from "./skeleton-loader";
+import * as Slider from "./slider";
 import * as Toggle from "./toggle";
 import * as TruncateText from "./truncate-text";
 
@@ -22,6 +23,7 @@ export {
   QrCode,
   RichText,
   SkeletonLoader,
+  Slider,
   Toggle,
   TruncateText,
 };

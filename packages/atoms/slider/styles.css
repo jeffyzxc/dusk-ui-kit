@@ -1,0 +1,30 @@
+.duk-slider {
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  @apply opacity-75 w-full h-4 bg-indigo-500 rounded-2xl;
+}
+
+.duk-slider:hover {
+  @apply opacity-100;
+}
+
+.duk-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #dfc543;
+  border: 2px solid #5e35cf;
+  @apply cursor-pointer rounded-full bg-yellow-500;
+}
+
+.duk-slider::-moz-range-thumb {
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #5e35cf;
+  @apply cursor-pointer rounded-full bg-yellow-500;
+}
