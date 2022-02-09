@@ -9,6 +9,8 @@
   import Control from "@dusk-network/control";
   import Heading from "@dusk-network/heading";
   import SearchList from "@dusk-network/search-list";
+  import DetailList from "@dusk-network/detail-list";
+  import RichText from "@dusk-network/rich-text";
   import * as yup from "yup";
   import { number } from "svelte-i18n";
 
@@ -67,20 +69,29 @@
     <Content>
       <SearchList data="{tokens}" fieldButton="{true}" bind:dataSearchResults="{searchResults}">
         {#if searchResults}
-          {#each $searchResults as token}
-            <!-- TODO Component needed for this type of list: BalanceList or so? -->
-            <div class="duk-search-list__item">
-              <div class="duk-search-list__item--token">
-                <div class="duk-search-list__item--border">
+          <DetailList>
+            {#each $searchResults as token}
+              <Item>
+                <svelte:fragment slot="icon">
                   {#if token.image}
-                    <img src="{token.image}" alt="symbol" />
+                    <div>
+                      <img src="{token.image}" alt="symbol" />
+                    </div>
                   {/if}
-                </div>
-                <div>{token.token}</div>
-              </div>
-              <div>{$number(token.amount, formatOptions)}</div>
-            </div>
-          {/each}
+                </svelte:fragment>
+                <svelte:fragment slot="term">
+                  <RichText>
+                    <p>{token.token}</p>
+                  </RichText>
+                </svelte:fragment>
+                <svelte:fragment slot="definition">
+                  <RichText align="right">
+                    <p>{$number(token.amount, formatOptions)}</p>
+                  </RichText>
+                </svelte:fragment>
+              </Item>
+            {/each}
+          </DetailList>
         {/if}
       </SearchList>
     </Content>
