@@ -45,6 +45,7 @@ export default {
     CARD: "detail-list:card",
     CONTENT: "detail-list:content",
     MEDIA_CONTENT: "detail-list:media-content",
+    SEARCH_LIST: "detail-list:search-list",
   },
   DISCLAIMER_LIST: {
     CARD: "disclaimer-list:card",

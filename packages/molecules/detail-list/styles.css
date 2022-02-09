@@ -63,4 +63,51 @@
   &--content {
     @apply py-0 px-0;
   }
+
+  &--search-list {
+    @apply flex flex-wrap gap-y-4;
+
+    dt,
+    dd {
+      @apply mb-0;
+    }
+
+    .duk-rich-text {
+      @apply m-0;
+    }
+
+    ^&__term {
+      @apply flex justify-start font-normal gap-x-4;
+    }
+  }
+
+  &--search-list&--25-75 {
+    ^&__term {
+      @apply w-1/4;
+    }
+
+    ^&__definition {
+      @apply w-3/4;
+    }
+  }
+
+  &--search-list&--50-50 {
+    ^&__term {
+      @apply w-1/2;
+    }
+
+    ^&__definition {
+      @apply w-1/2;
+    }
+  }
+
+  &--search-list&--75-25 {
+    ^&__term {
+      @apply w-3/4;
+    }
+
+    ^&__definition {
+      @apply w-1/4;
+    }
+  }
 }
