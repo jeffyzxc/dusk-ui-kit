@@ -15,11 +15,7 @@
 
     &:before,
     &:after {
-      visibility: hidden;
-      opacity: 0;
-      pointer-events: none;
-      transition: 0.2s ease-out;
-      transform: translate(-50%, 5px);
+      @apply pointer-events-none invisible opacity-0 -translate-x-2/4 -translate-y-1 duration-200 ease-out;
     }
 
     &:before {
@@ -45,10 +41,6 @@
     }
 
     &:after {
-      position: absolute;
-      bottom: 100%;
-      left: 50%;
-      width: 0;
       border-top: 5px solid #000;
       border-top: 5px solid hsla(0, 0%, 20%, 0.9);
       border-right: 5px solid transparent;
@@ -56,20 +48,18 @@
       content: " ";
       font-size: 0;
       line-height: 0;
+      @apply absolute bottom-full left-2/4 w-0;
     }
 
     &:hover:before,
     &:hover:after {
-      visibility: visible;
-      opacity: 1;
-      transform: translate(-50%, 0);
+      @apply visible opacity-100 -translate-x-2/4;
     }
   }
 
   &[data-tooltip="false"]:hover:before,
   &[data-tooltip="false"]:hover:after {
-    visibility: hidden;
-    opacity: 0;
+    @apply invisible opacity-0;
   }
 
   &--brand {
@@ -146,3 +136,5 @@
     }
   }
 }
+
+@tailwind base;

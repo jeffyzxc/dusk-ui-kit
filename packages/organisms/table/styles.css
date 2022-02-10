@@ -265,11 +265,12 @@
     }
 
     &--actions-icon {
-      @apply transform duration-200 ease-in-out transition-all rotate-0;
+      @apply duration-200 ease-in-out transition-all rotate-0;
 
       &--open {
-        transform: rotate(180deg);
+        @apply rotate-180;
       }
     }
   }
 }
+@tailwind base;

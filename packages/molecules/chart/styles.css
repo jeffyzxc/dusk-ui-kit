@@ -10,27 +10,21 @@
     transition: left 250ms ease-out, top 250ms ease-out;
 
     &--arrow-left {
-      @apply w-6 overflow-hidden inline-block absolute;
+      @apply w-6 overflow-hidden inline-block absolute -translate-y-2/4 top-1/2;
       left: -22px;
-      top: 50%;
-      transform: translateY(-50%);
     }
 
     &--arrow-left-interior {
-      @apply h-12 bg-indigo-100/75 origin-top-right;
-      transform: rotate(-45deg);
+      @apply h-12 bg-indigo-100/75 origin-top-right -rotate-45;
     }
 
     &--arrow-right {
-      @apply w-6 overflow-hidden inline-block absolute;
+      @apply w-6 overflow-hidden inline-block absolute -translate-y-2/4 top-1/2;
       right: -22px;
-      top: 50%;
-      transform: translateY(-50%);
     }
 
     &--arrow-right-interior {
-      @apply h-12 bg-indigo-100/75 origin-top-left;
-      transform: rotate(45deg);
+      @apply h-12 bg-indigo-100/75 origin-top-left rotate-45;
     }
 
     &--text {
@@ -73,8 +67,7 @@
   }
 
   &__tooltip {
-    top: 50%;
-    transform: translateY(-50%);
+    @apply -translate-y-2/4 top-1/2;
   }
 }
 
@@ -95,10 +88,12 @@
   }
 
   &__tooltip {
-    transform: translate(-50%, -100%);
+    @apply -translate-x-2/4 -translate-y-full;
   }
 
   &__quadtree {
     @apply absolute inset-0;
   }
 }
+
+@tailwind base;
