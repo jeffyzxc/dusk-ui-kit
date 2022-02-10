@@ -272,6 +272,16 @@ module.exports = {
         225: "26.25rem", // 420px
         256: "32rem", // 512px
       },
+      animation: {
+        'shimmer': 'shimmer 2s infinite'
+      },
+      keyframes: {
+        shimmer: {
+          '100%': {
+            transform: 'translateX(100%)'
+          }
+        }
+      },
       typography: (theme) => ({
         light: {
           css: [
