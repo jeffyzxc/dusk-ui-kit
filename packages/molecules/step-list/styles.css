@@ -15,12 +15,10 @@
   &__item:not(:last-child) {
     ^&__item--block::before {
       content: "";
-      transform: translate(50%, 50%);
-      top: -50%;
       left: 12px;
       height: calc(100% + 32px);
       z-index: -1;
-      @apply absolute w-1 bg-gray-200;
+      @apply absolute w-1 bg-gray-200 translate-x-2/4 translate-y-2/4 -top-1/2;
     }
   }
 
@@ -90,3 +88,5 @@
     }
   }
 }
+
+@tailwind base;
