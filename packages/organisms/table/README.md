@@ -45,9 +45,11 @@ npm i -D @dusk-network/table
     <thead slot="head">
       <Row type="head">
         <Datum key="id" cols="1">ID</Datum>
-        <Datum key="first_name" cols="5">Status</Datum>
+        <Datum key="first_name" cols="4">Status</Datum>
         <Datum key="last_name" cols="3">Time</Datum>
         <Datum key="email" cols="3">Amount</Datum>
+        <Datum cols="1" />
+        <Datum hidden="{true}" />
       </Row>
     </thead>
     <tbody>
@@ -55,7 +57,7 @@ npm i -D @dusk-network/table
         {#each $rows as row}
           <Row>
             <Datum cols="1">{row.id}</Datum>
-            <Datum cols="5">
+            <Datum cols="4">
               {row.status}
             </Datum>
             <Datum cols="3">
@@ -63,6 +65,10 @@ npm i -D @dusk-network/table
             </Datum>
             <Datum cols="3">
               {row.amount}
+            </Datum>
+            <Datum cols="1" actions="{true}" />
+            <Datum hidden="{true}">
+              <p>Extra information</p>
             </Datum>
           </Row>
         {/each}
