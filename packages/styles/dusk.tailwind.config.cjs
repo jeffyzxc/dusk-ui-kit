@@ -1,9 +1,8 @@
 const plugin = require("tailwindcss/plugin");
 module.exports = {
-  mode: "jit",
-  purge: {
+  content: {
     enabled: true,
-    content: ["./src/**/*.html", "./src/**/*.svelte"],
+    content: ["./src/**/*.{html,svelte}"],
     options: {
       safelist: ["body", "main", "#dusk"],
     },
@@ -336,11 +335,6 @@ module.exports = {
           ],
         },
       }),
-    },
-  },
-  variants: {
-    extend: {
-      typography: ["dark"],
     },
   },
   plugins: [
