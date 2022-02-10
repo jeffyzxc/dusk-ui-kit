@@ -2,7 +2,7 @@
   @apply inline-block fill-current transition-all duration-700;
 
   &--footer {
-    @apply p-0 transform duration-200 ease-in-out transition-all flex items-center justify-center;
+    @apply p-0 duration-200 ease-in-out transition-all flex items-center justify-center;
     @apply lg:justify-start;
 
     &:hover {

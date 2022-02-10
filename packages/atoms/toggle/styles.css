@@ -15,7 +15,7 @@
 
   & input:checked {
     ~ ^&__switch-track {
-      @apply transform transition-colors;
+      @apply transition-colors;
     }
 
     ~ ^&__switch-thumb {
