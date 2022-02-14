@@ -105,7 +105,10 @@ export default {
     CARD: "media-content:card",
   },
   MENU: {
-    FOOTER: "menu:footer",
+    FOOTER: {
+      BODY: "menu:footer",
+      SOCIAL: "menu:footer:social",
+    },
     NAVBAR: "menu:navbar",
     PAGINATION: "menu:pagination",
   },

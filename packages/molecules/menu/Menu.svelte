@@ -31,7 +31,8 @@
   class:duk-menu--horizontal="{orientation === orientations.MENU.HORIZONTAL}"
   class:duk-menu--vertical="{orientation === orientations.MENU.VERTICAL}"
   class:duk-menu--navbar="{context === contexts.MENU.NAVBAR}"
-  class:duk-menu--footer="{context === contexts.MENU.FOOTER}"
+  class:duk-menu--footer="{context === contexts.MENU.FOOTER.BODY}"
+  class:duk-menu--footer-social="{context === contexts.MENU.FOOTER.SOCIAL}"
   id="{id}"
   aria-label="{name || undefined}"
 >
