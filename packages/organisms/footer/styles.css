@@ -64,11 +64,6 @@
     &:not(:last-child) {
       @apply pr-5;
     }
-
-    /* FIXME These styles should be covered under Menu and Icon with context styles! */
-    &__item > .duk-menu__item-wrapper {
-      @apply p-0 mb-4;
-    }
   }
 
   &__newsletter {
