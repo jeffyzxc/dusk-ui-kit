@@ -108,6 +108,7 @@ export default {
     FOOTER: {
       BODY: "menu:footer",
       SOCIAL: "menu:footer:social",
+      CATEGORY: "menu:footer:category",
     },
     NAVBAR: "menu:navbar",
     PAGINATION: "menu:pagination",

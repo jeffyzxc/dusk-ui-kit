@@ -33,6 +33,7 @@
   class:duk-menu--navbar="{context === contexts.MENU.NAVBAR}"
   class:duk-menu--footer="{context === contexts.MENU.FOOTER.BODY}"
   class:duk-menu--footer-social="{context === contexts.MENU.FOOTER.SOCIAL}"
+  class:duk-menu--footer-category="{context === contexts.MENU.FOOTER.CATEGORY}"
   id="{id}"
   aria-label="{name || undefined}"
 >

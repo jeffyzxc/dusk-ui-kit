@@ -1,7 +1,11 @@
 <script>
+  import { setContext } from "svelte";
+  import contexts from "@dusk-network/helpers/contexts.js";
   import Menu, { Item } from "@dusk-network/menu";
 
   export let category;
+
+  setContext("DUK:menu:context", contexts.MENU.FOOTER.CATEGORY);
 </script>
 
 <Menu orientation="vertical" class="duk-footer__category-menu">
