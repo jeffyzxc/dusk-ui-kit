@@ -135,6 +135,14 @@
       height: 1.7em; /* Allows icon to scale with heading font size */
     }
   }
+
+  &--menu-social {
+    @apply p-0 duration-200 ease-in-out transition-all;
+
+    &:hover {
+      @apply rotate-360;
+    }
+  }
 }
 
 @tailwind base;
