@@ -1,4 +1,6 @@
 <script>
+  import { setContext } from "svelte";
+  import contexts from "@dusk-network/helpers/contexts.js";
   import types from "@dusk-network/helpers/types.js";
   import Minimal from "./Minimal.svelte";
   import Maximal from "./Maximal.svelte";
@@ -19,6 +21,8 @@
    * Sets the object used to define the sitemap and it's links.
    */
   export let categories = undefined;
+
+  setContext("DUK:menu:context", contexts.MENU.FOOTER.BODY);
 
   let today = new Date();
   let year = today.getFullYear();
