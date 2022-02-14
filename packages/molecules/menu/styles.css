@@ -40,4 +40,10 @@
 
   &--navbar {
   }
+
+  &--footer-social {
+    ^&__list {
+      @apply lg:space-x-3;
+    }
+  }
 }
