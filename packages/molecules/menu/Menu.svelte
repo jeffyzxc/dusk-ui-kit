@@ -22,6 +22,7 @@
   export let name = "";
 
   setContext("DUK:drop-down:context", contexts.DROP_DOWN.MENU);
+  setContext("DUK:icon:context", contexts.ICON.MENU_SOCIAL);
 
   const context = getContext("DUK:menu:context");
 </script>
