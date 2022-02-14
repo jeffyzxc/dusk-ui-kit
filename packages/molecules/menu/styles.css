@@ -46,4 +46,14 @@
       @apply lg:space-x-3;
     }
   }
+
+  &--footer-category {
+    ^&__list {
+      ^^&__item {
+        &-wrapper {
+          @apply p-0 mb-4;
+        }
+      }
+    }
+  }
 }
