@@ -18,7 +18,7 @@ npm i -D @dusk-network/accordion
   import Accordion, { Item } from "@dusk-network/accordion";
 </script>
 
-<Accordion>
+<Accordion multiselect="{true}">
   <Item title="First Item">First item content...</Item>
   <Item title="Second Item">Second item content...</Item>
   <Item title="Third Item">Third item content...</Item>
