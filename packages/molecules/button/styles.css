@@ -209,6 +209,10 @@
     }
   }
 
+  &--control&--circle {
+    @apply py-2;
+  }
+
   &:disabled {
     @apply opacity-75 cursor-not-allowed;
 
