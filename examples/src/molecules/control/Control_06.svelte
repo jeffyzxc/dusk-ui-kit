@@ -15,6 +15,6 @@
   on:mouseover="{onMouseover}"
   let:id
 >
-  <Button slot="buttonPostfix">Postfixed</Button>
+  <Button circle="{true}" slot="buttonPostfix">Postfixed</Button>
   <TextField id="{id}" state="{state}" />
 </Control>
