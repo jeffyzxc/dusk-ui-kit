@@ -3,7 +3,6 @@
 </script>
 
 <SkeletonLoader
-  height="50px"
   extraSmallScreenHeight="50px"
   smallScreenHeight="50px"
   mediumScreenHeight="50px"

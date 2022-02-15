@@ -6,8 +6,6 @@
   &__placeholder {
     @apply bg-gray-200 relative overflow-hidden w-full;
     @apply dark:bg-gray-800;
-
-    height: var(--height);
   }
 
   &--rounded {
