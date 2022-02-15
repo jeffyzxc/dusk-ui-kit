@@ -7,9 +7,6 @@
 
   &--search-list {
     @apply px-0;
-    .duk-icon {
-      height: calc(1.375rem - 1px);
-    }
   }
 
   &__label {
@@ -86,12 +83,8 @@
     }
   }
 
-  /* FIXME This is to improve the display of a circle button post- or pre-fixed to a Control*/
   &--with-postfix,
   &--with-prefix {
-    & .duk-button--circle {
-      padding: 0.35rem;
-    }
     .duk-icon {
       height: calc(1.375rem - 1px);
     }
@@ -109,7 +102,7 @@
       @apply border border-solid border-gray-900 border-l-0 rounded-tl-none rounded-bl-none px-5;
       @apply dark:border-gray-100;
 
-      line-height: 1.6;
+      line-height: 1.5;
     }
   }
 
