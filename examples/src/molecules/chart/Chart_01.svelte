@@ -9,7 +9,7 @@
     let marketCapData = {};
     marketCapData.title = undefined;
     marketCapData.xKey = "date";
-    marketCapData.yKey = "price";
+    marketCapData.yKey = "market";
     marketCapData.groups = data.map((group) => {
       return {
         [marketCapData.xKey]: group[0],
