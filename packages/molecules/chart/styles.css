@@ -28,7 +28,7 @@
     }
 
     &--text {
-      @apply text-base font-normal;
+      @apply text-base font-normal whitespace-nowrap;
     }
   }
 }

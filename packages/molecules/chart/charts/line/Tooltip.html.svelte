@@ -15,7 +15,7 @@
   let leftOffset = 25;
 
   /** Tooltip width */
-  const w = 150;
+  let w;
 
   /**Offset to center point on chart line, in pixels*/
   let pointOffset = 4;
@@ -53,6 +53,7 @@
       class="duk-chart-line__dot"
     ></div>
     <div
+      bind:clientWidth="{w}"
       class="duk-chart__tooltip duk-chart-line__tooltip"
       style="
         width:{w}px;
@@ -81,7 +82,7 @@
         </span>
       </div>
       <div>
-        <span>
+        <span class="duk-chart__tooltip--text">
           {formatKey($config.x)}: {formatTime(found[$config.x])}
         </span>
       </div>
