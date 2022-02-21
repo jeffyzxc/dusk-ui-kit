@@ -6,6 +6,7 @@
  * versioned identically.
  */
 
+console.log("Running pre-changeset script...");
 const glob = require("tiny-glob/sync");
 const fs = require("fs");
 const path = require("path");
