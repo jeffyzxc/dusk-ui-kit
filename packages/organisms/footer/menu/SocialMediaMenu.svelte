@@ -1,9 +1,13 @@
 <script>
+  import { setContext } from "svelte";
+  import contexts from "@dusk-network/helpers/contexts.js";
   import Icon from "@dusk-network/icon";
   import Menu, { Item } from "@dusk-network/menu";
 
   export let orientation;
   export let social;
+
+  setContext("DUK:menu:context", contexts.MENU.FOOTER.SOCIAL);
 </script>
 
 <Menu orientation="{orientation}" class="duk-footer__social-media-menu">

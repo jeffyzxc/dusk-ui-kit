@@ -9,27 +9,27 @@
 
   $: filteredData = data.groups.filter((_, i) => i % 2 == 0); // Filter out ever other (odd) datapoint
 
-  function getYDomain(groups) {
+  function getYDomain(groups, yKey) {
     const lowest = groups.reduce((prev, current) => {
-      return prev.price < current.price ? prev : current;
+      return prev[yKey] < current[yKey] ? prev : current;
     });
 
     const highest = groups.reduce((prev, current) => {
-      return prev.price > current.price ? prev : current;
+      return prev[yKey] > current[yKey] ? prev : current;
     });
 
-    return [lowest.price - lowest.price * 0.1, highest.price + highest.price * 0.1];
+    return [lowest[yKey] - lowest[yKey] * 0.1, highest[yKey] + highest[yKey] * 0.1];
   }
 </script>
 
 <div class="duk-chart duk-chart-bar-horizontal">
   <LayerCake
     data="{filteredData}"
-    flatData="{filteredData.groups}"
+    flatData="{filteredData}"
     padding="{{ top: 3, right: 3, bottom: 3, left: 3 }}"
     x="{data.xKey}"
     y="{data.yKey}"
-    yDomain="{getYDomain(filteredData)}"
+    yDomain="{getYDomain(filteredData, data.yKey)}"
   >
     {#if data.title}
       <Html>

@@ -1,0 +1,21 @@
+{
+  "name": "@dusk-network/slider",
+  "version": "4.6.3",
+  "description": "Dusk UI Kit - Slider",
+  "bugs": {
+    "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dusk-network/dusk-ui-kit.git",
+    "directory": "packages/atoms/slider"
+  },
+  "type": "module",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "test": "echo \"Work in progress...\" && exit 1"
+  },
+  "svelte": "index.js",
+  "gitHead": "b62b68061a65d4bb513dbff0835430d4d0741649"
+}

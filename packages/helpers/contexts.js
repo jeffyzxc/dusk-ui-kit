@@ -45,6 +45,7 @@ export default {
     CARD: "detail-list:card",
     CONTENT: "detail-list:content",
     MEDIA_CONTENT: "detail-list:media-content",
+    SEARCH_LIST: "detail-list:search-list",
   },
   DISCLAIMER_LIST: {
     CARD: "disclaimer-list:card",
@@ -77,6 +78,7 @@ export default {
     HEADING: "icon:heading",
     DETAIL_LIST: "icon:detail-list",
     GROUP: "icon:group",
+    MENU_SOCIAL: "icon:menu-social",
   },
   INPUT: {
     TEXT: "input:text",
@@ -104,7 +106,11 @@ export default {
     CARD: "media-content:card",
   },
   MENU: {
-    FOOTER: "menu:footer",
+    FOOTER: {
+      BODY: "menu:footer",
+      SOCIAL: "menu:footer:social",
+      CATEGORY: "menu:footer:category",
+    },
     NAVBAR: "menu:navbar",
     PAGINATION: "menu:pagination",
   },

@@ -3,8 +3,12 @@
   import DropDown from "@dusk-network/drop-down";
   import types from "@dusk-network/helpers/types.js";
 
-  function onComplete() {}
-  function onPassed() {}
+  function onComplete(e) {
+    console.log(e);
+  }
+  function onPassed(e) {
+    console.log(e);
+  }
   const seed = [
     "oyster",
     "close",

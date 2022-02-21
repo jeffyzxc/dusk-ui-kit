@@ -9,8 +9,7 @@
     }
 
     ^&__layout {
-      @apply flex justify-center relative top-1/2 transform -translate-y-1/2;
-      transform: translateY(-50%);
+      @apply flex justify-center relative top-1/2 -translate-y-1/2;
     }
 
     ^&__text {
@@ -29,3 +28,4 @@
     @apply mt-0 mb-0;
   }
 }
+@tailwind base;

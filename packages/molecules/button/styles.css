@@ -202,6 +202,15 @@
 
   &--heading {
     @apply p-2;
+
+    ^&-wrapper,
+    ^&-group {
+      @apply flex flex-grow justify-end order-last;
+    }
+  }
+
+  &--control&--circle {
+    @apply py-2;
   }
 
   &:disabled {

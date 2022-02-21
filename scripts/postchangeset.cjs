@@ -4,6 +4,7 @@
  * automatically commits the change.
  */
 
+console.log("Running post-changeset script...");
 const fs = require("fs");
 const path = require("path");
 const { execSync } = require("child_process");

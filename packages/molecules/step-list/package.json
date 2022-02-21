@@ -1,0 +1,29 @@
+{
+  "name": "@dusk-network/step-list",
+  "version": "4.6.5",
+  "description": "Dusk UI Kit - StepList",
+  "bugs": {
+    "url": "https://github.com/dusk-network/dusk-ui-kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dusk-network/dusk-ui-kit.git",
+    "directory": "packages/molecules/step-list"
+  },
+  "type": "module",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "test": "echo \"Work in progress...\" && exit 1"
+  },
+  "devDependencies": {
+    "@dusk-network/helpers": "workspace:*",
+    "@dusk-network/icon": "workspace:*"
+  },
+  "peerDependencies": {
+    "@dusk-network/helpers": "workspace:*",
+    "@dusk-network/icon": "workspace:*"
+  },
+  "svelte": "index.js",
+  "gitHead": "b62b68061a65d4bb513dbff0835430d4d0741649"
+}

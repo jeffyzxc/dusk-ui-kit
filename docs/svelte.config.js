@@ -133,6 +133,11 @@ const config = {
           cssPath: "./node_modules/@dusk-network/styles/tailwind.css",
         }),
       ],
+      server: {
+        fs: {
+          allow: [".."],
+        },
+      },
     }),
   },
 };

@@ -79,6 +79,15 @@ export default {
     WARNING: "warning",
     DANGER: "danger",
   },
+  STEP_LIST: {
+    BRAND: "brand",
+    CTA: "cta",
+    DEFAULT: "default",
+    INFO: "info",
+    SUCCESS: "success",
+    WARNING: "warning",
+    DANGER: "danger",
+  },
   TOGGLE: {
     BRAND: "brand",
     BRAND_INVERT: "brand-invert",

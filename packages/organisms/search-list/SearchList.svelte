@@ -39,6 +39,7 @@
   };
 
   setContext("DUK:control:context", contexts.CONTROL.SEARCH_LIST);
+  setContext("DUK:detail-list:context", contexts.DETAIL_LIST.SEARCH_LIST);
 </script>
 
 <div class="{$$props.class || ''} duk-search-list">

@@ -22,6 +22,7 @@
   export let name = "";
 
   setContext("DUK:drop-down:context", contexts.DROP_DOWN.MENU);
+  setContext("DUK:icon:context", contexts.ICON.MENU_SOCIAL);
 
   const context = getContext("DUK:menu:context");
 </script>
@@ -31,7 +32,9 @@
   class:duk-menu--horizontal="{orientation === orientations.MENU.HORIZONTAL}"
   class:duk-menu--vertical="{orientation === orientations.MENU.VERTICAL}"
   class:duk-menu--navbar="{context === contexts.MENU.NAVBAR}"
-  class:duk-menu--footer="{context === contexts.MENU.FOOTER}"
+  class:duk-menu--footer="{context === contexts.MENU.FOOTER.BODY}"
+  class:duk-menu--footer-social="{context === contexts.MENU.FOOTER.SOCIAL}"
+  class:duk-menu--footer-category="{context === contexts.MENU.FOOTER.CATEGORY}"
   id="{id}"
   aria-label="{name || undefined}"
 >

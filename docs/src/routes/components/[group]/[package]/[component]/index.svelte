@@ -15,7 +15,7 @@
 </script>
 
 <script>
-  import { HighlightSvelte } from "svelte-highlight";
+  import { Highlight } from "svelte-highlight";
   import RichText from "@dusk-network/rich-text";
   import { page } from "$app/stores";
 
@@ -100,7 +100,7 @@
     <div class="my-10">
       <svelte:component this="{example[1]}" />
     </div>
-    <HighlightSvelte class="mb-10" code="{sources[example[0]]}" langtag="{true}" />
+    <Highlight class="mb-10" code="{sources[example[0]]}" />
   {/each}
 {:else}
   <RichText class="w-full max-w-full mb-10">

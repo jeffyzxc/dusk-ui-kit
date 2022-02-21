@@ -13,7 +13,7 @@
   let offset = 22;
 
   /** Tooltip width */
-  const w = 175;
+  let w;
 
   /**Format timestamp to DD-MM-YYYY format*/
   function formatTime(timestamp) {
@@ -28,6 +28,7 @@
 
 {#if evt.detail.props}
   <div
+    bind:clientWidth="{w}"
     class="duk-chart__tooltip duk-chart-bar-horizontal__tooltip"
     style="
         width:{w}px;

@@ -1,9 +1,8 @@
 const plugin = require("tailwindcss/plugin");
 module.exports = {
-  mode: "jit",
-  purge: {
+  content: {
     enabled: true,
-    content: ["./src/**/*.html", "./src/**/*.svelte"],
+    content: ["./src/**/*.{html,svelte}"],
     options: {
       safelist: ["body", "main", "#dusk"],
     },
@@ -273,6 +272,16 @@ module.exports = {
         225: "26.25rem", // 420px
         256: "32rem", // 512px
       },
+      animation: {
+        'shimmer': 'shimmer 2s infinite'
+      },
+      keyframes: {
+        shimmer: {
+          '100%': {
+            transform: 'translateX(100%)'
+          }
+        }
+      },
       typography: (theme) => ({
         light: {
           css: [
@@ -336,11 +345,6 @@ module.exports = {
           ],
         },
       }),
-    },
-  },
-  variants: {
-    extend: {
-      typography: ["dark"],
     },
   },
   plugins: [

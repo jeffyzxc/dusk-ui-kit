@@ -10,39 +10,34 @@
   export let variant;
 
   /**
-   * Sets the default height of the skeleton loader.
+   * Sets the height of the skeleton loader on an extra small screen in pixels.
    */
-  export let height = "100%";
+  export let extraSmallScreenHeight;
 
   /**
-   * Sets the height of the skeleton loader on an extra small screen.
+   * Sets the height of the skeleton loader on a small screen in pixels.
    */
-  export let extraSmallScreenHeight = "100%";
+  export let smallScreenHeight;
 
   /**
-   * Sets the height of the skeleton loader on a small screen.
+   * Sets the height of the skeleton loader on a medium screen in pixels.
    */
-  export let smallScreenHeight = "100%";
+  export let mediumScreenHeight;
 
   /**
-   * Sets the height of the skeleton loader on a medium screen.
+   * Sets the height of the skeleton loader on a large screen in pixels.
    */
-  export let mediumScreenHeight = "100%";
+  export let largeScreenHeight;
 
   /**
-   * Sets the height of the skeleton loader on a large screen.
+   * Sets the height of the skeleton loader on an extra large screen in pixels.
    */
-  export let largeScreenHeight = "100%";
+  export let extraLargeScreenHeight;
 
   /**
-   * Sets the height of the skeleton loader on an extra large screen.
+   * Sets the height of the skeleton loader on a jumbo screen in pixels.
    */
-  export let extraLargeScreenHeight = "100%";
-
-  /**
-   * Sets the height of the skeleton loader on a jumbo screen.
-   */
-  export let jumboScreenHeight = "100%";
+  export let jumboScreenHeight;
 
   /**
    * Sets the width of the skeleton loader.
@@ -74,7 +69,7 @@
 >
   <div class="duk-skeleton-loader__wrapper">
     <div
-      style="--height:{height};--xs-height:{extraSmallScreenHeight};--sm-height:{smallScreenHeight};--md-height:{mediumScreenHeight};--lg-height:{largeScreenHeight};--xl-height:{extraLargeScreenHeight};--jumbo-height:{jumboScreenHeight};width:{width}"
+      style="--xs-height:{extraSmallScreenHeight};--sm-height:{smallScreenHeight};--md-height:{mediumScreenHeight};--lg-height:{largeScreenHeight};--xl-height:{extraLargeScreenHeight};--jumbo-height:{jumboScreenHeight};width:{width}"
       class="duk-skeleton-loader__placeholder"
     ></div>
   </div>

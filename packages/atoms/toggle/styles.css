@@ -15,13 +15,11 @@
 
   & input:checked {
     ~ ^&__switch-track {
-      @apply transform transition-colors;
+      @apply transition-colors;
     }
 
     ~ ^&__switch-thumb {
-      @apply bg-gray-500;
-      /* TODO Investigate why this is not possible with the trnsform translate-x-full utils */
-      transform: translateX(100%);
+      @apply bg-gray-500 translate-x-full;
     }
 
     ~ ^&__label--button {
@@ -179,3 +177,5 @@
     }
   }
 }
+
+@tailwind base;

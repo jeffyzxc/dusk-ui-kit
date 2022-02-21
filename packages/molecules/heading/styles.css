@@ -18,12 +18,6 @@
     @apply dark:text-white;
   }
 
-  /* FIXME should really live with the Button styles */
-  > .duk-button-wrapper,
-  > .duk-button-group {
-    @apply flex flex-grow justify-end order-last;
-  }
-
   /* & > .duk-icon {
     @apply block order-first pr-4;
   } */

@@ -1,5 +1,4 @@
 <script>
-  //TODO Use ES6 syntax more effectively
   import { getContext, createEventDispatcher } from "svelte";
   import contexts from "@dusk-network/helpers/contexts.js";
   import RichText from "@dusk-network/rich-text";
@@ -31,13 +30,13 @@
   };
   let isFileLoaded = false;
 
-  function dropFile(e) {
+  const dropFile = (e) => {
     fields.file = e.dataTransfer.files;
     isFileLoaded = true;
     dispatch("inputFile", fields);
-  }
+  };
 
-  function inputFile(e) {
+  const inputFile = (e) => {
     if (e.target.files.length === 1) {
       fields.file = e.target.files;
       isFileLoaded = true;
@@ -46,7 +45,7 @@
       isFileLoaded = false;
     }
     dispatch("inputFile", fields);
-  }
+  };
 </script>
 
 <div

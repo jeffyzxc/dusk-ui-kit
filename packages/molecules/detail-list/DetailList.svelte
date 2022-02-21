@@ -23,6 +23,7 @@
   class:duk-detail-list--25-75="{split === '25/75'}"
   class:duk-detail-list--75-25="{split === '75/25'}"
   class:duk-detail-list--card="{context === contexts.DETAIL_LIST.CARD}"
+  class:duk-detail-list--search-list="{context === contexts.DETAIL_LIST.SEARCH_LIST}"
 >
   <slot />
 </dl>
