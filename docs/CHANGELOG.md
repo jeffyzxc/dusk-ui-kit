@@ -1,5 +1,25 @@
 # @dusk-network/dusk-ui-kit-docs
 
+## 4.6.6
+
+### Patch Changes
+
+- a5caefeb: Release
+- Updated dependencies [a5caefeb]
+  - @dusk-network/icon@4.6.6
+  - @dusk-network/rich-text@4.6.6
+  - @dusk-network/helpers@4.6.6
+  - @dusk-network/content@4.6.6
+  - @dusk-network/heading@4.6.6
+  - @dusk-network/menu@4.6.6
+  - @dusk-network/card@4.6.6
+  - @dusk-network/cookie-banner@4.6.6
+  - @dusk-network/footer@4.6.6
+  - @dusk-network/navbar@4.6.6
+  - @dusk-network/styles@4.6.6
+  - @dusk-network/default@4.6.6
+  - @dusk-network/dusk-ui-kit-examples@4.6.0
+
 ## 4.6.5
 
 ### Patch Changes
