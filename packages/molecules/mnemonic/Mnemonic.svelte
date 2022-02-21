@@ -51,11 +51,14 @@
 
   const isFilled = (filledWords) => {
     const isIncomplete = filledWords.some(function (word) {
-      return word === null;
+      return word === null || word === undefined || word === "";
     });
 
     filledWords.length === length && !isIncomplete && dispatch("complete", filledWords);
-    JSON.stringify(filledWords) === JSON.stringify(seed) && dispatch("passed");
+
+    if ($options.type === types.MNEMONIC.CONFIRM) {
+      JSON.stringify(filledWords) === JSON.stringify(seed) && dispatch("passed");
+    }
   };
 
   const selectWord = (word) => {
@@ -87,7 +90,7 @@
   <ol class="duk-mnemonic__list">
     {#if $options.type === types.MNEMONIC.AUTHENTICATE}
       {#each Array(length) as _, i}
-        <Word index="{i}" disabled="{disabled}" />
+        <Word index="{i}" disabled="{disabled}" name="`mnemonic_auth_word_{i}`" />
       {/each}
     {:else if $options.type === types.MNEMONIC.CONFIRM}
       {#each $shuffled as _, i}

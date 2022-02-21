@@ -80,6 +80,7 @@
     on:keydown
     on:keypress
     on:keyup
+    on:paste
     placeholder="{placeholder || undefined}"></textarea>
 {:else}
   <input
@@ -106,6 +107,7 @@
     on:keydown
     on:keypress
     on:keyup
+    on:paste
     placeholder="{placeholder || undefined}"
     {...$$restProps}
   />

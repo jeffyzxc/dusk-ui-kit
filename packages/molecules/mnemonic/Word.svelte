@@ -1,5 +1,5 @@
 <script>
-  import { setContext } from "svelte";
+  import { setContext, createEventDispatcher } from "svelte";
   import types from "@dusk-network/helpers/types.js";
   import contexts from "@dusk-network/helpers/contexts.js";
   import TextField from "@dusk-network/text-field";
@@ -17,6 +17,11 @@
   export let index;
 
   /**
+   * Sets the name used in the TextField in authentication mode.
+   */
+  export let name;
+
+  /**
    * Sets if the Word is disabled.
    */
   export let disabled;
@@ -25,6 +30,8 @@
    * Sets the `id` of the Word if set, otherwise the ID is generated.
    */
   export let id = "__DUK-mnemonic-word" + Math.random().toString(36);
+
+  const dispatch = createEventDispatcher();
 
   setContext("DUK:text-field:context", contexts.TEXT_FIELD.MNEMONIC);
 </script>
@@ -36,7 +43,14 @@
       placeholder="_____"
       maxlength="8"
       disabled="{disabled}"
+      name="{name}"
       bind:value="{$compared[index]}"
+      on:paste="{(e) => {
+        dispatch('paste', {
+          index,
+          value: e.clipboardData.getData('text'),
+        });
+      }}"
     />
   {:else if disabled}
     <del>
