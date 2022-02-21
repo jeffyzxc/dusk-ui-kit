@@ -24,5 +24,6 @@
     "@dusk-network/helpers": "workspace:*",
     "@dusk-network/icon": "workspace:*"
   },
-  "svelte": "index.js"
+  "svelte": "index.js",
+  "gitHead": "b62b68061a65d4bb513dbff0835430d4d0741649"
 }

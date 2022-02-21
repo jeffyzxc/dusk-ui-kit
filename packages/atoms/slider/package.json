@@ -16,5 +16,6 @@
   "scripts": {
     "test": "echo \"Work in progress...\" && exit 1"
   },
-  "svelte": "index.js"
+  "svelte": "index.js",
+  "gitHead": "b62b68061a65d4bb513dbff0835430d4d0741649"
 }
