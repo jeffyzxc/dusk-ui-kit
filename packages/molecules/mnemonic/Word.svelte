@@ -17,11 +17,6 @@
   export let index;
 
   /**
-   * Sets the name used in the TextField in authentication mode.
-   */
-  export let name;
-
-  /**
    * Sets if the Word is disabled.
    */
   export let disabled;
@@ -43,7 +38,6 @@
       placeholder="_____"
       maxlength="8"
       disabled="{disabled}"
-      name="{name}"
       bind:value="{$compared[index]}"
       on:paste="{(e) => {
         dispatch('paste', {
