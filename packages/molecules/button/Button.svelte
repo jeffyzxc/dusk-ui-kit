@@ -50,6 +50,12 @@
   export let href = "";
 
   /**
+   * Sets the `active` attribute on the BUtton when true.
+   */
+
+  export let active = false;
+
+  /**
    * Sets the `disabled` attribute on the Button when true.
    */
   export let disabled = false;
@@ -91,6 +97,7 @@
         class:duk-button--outline="{outline}"
         class:duk-button--circle="{circle}"
         class:duk-button--block="{block}"
+        class:duk-button--active="{active}"
         class:duk-accordion__action="{context === contexts.BUTTON.ACCORDION}"
         class:duk-button--hero="{context === contexts.BUTTON.HERO}"
         class:duk-button--mnemonic="{context === contexts.BUTTON.MNEMONIC}"
@@ -122,6 +129,7 @@
       class:duk-button--outline="{outline}"
       class:duk-button--circle="{circle}"
       class:duk-button--block="{block}"
+      class:duk-button--active="{active}"
       class:duk-accordion__action="{context === contexts.BUTTON.ACCORDION}"
       class:duk-button--hero="{context === contexts.BUTTON.HERO}"
       class:duk-button--mnemonic="{context === contexts.BUTTON.MNEMONIC}"
