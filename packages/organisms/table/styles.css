@@ -68,7 +68,7 @@
       }
 
       & td {
-        @apply flex flex-nowrap items-center space-x-3;
+        @apply flex flex-nowrap items-center gap-x-1;
 
         & a {
           @apply text-indigo-500;
