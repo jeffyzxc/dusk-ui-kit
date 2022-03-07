@@ -8,6 +8,7 @@
   export let social;
 
   setContext("DUK:menu:context", contexts.MENU.FOOTER.SOCIAL);
+  setContext("DUK:icon:context", contexts.ICON.FOOTER.MENU_SOCIAL);
 </script>
 
 <Menu orientation="{orientation}" class="duk-footer__social-media-menu">

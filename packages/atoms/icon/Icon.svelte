@@ -62,7 +62,7 @@
     class:duk-icon--heading="{context === contexts.ICON.HEADING}"
     class:duk-icon--detail-list="{context === contexts.ICON.DETAIL_LIST}"
     class:duk-icon--group="{context === contexts.ICON.GROUP}"
-    class:duk-icon--menu-social="{context === contexts.ICON.MENU_SOCIAL}"
+    class:duk-icon--menu-social="{context === contexts.ICON.FOOTER.MENU_SOCIAL}"
     data-tooltip="{tooltip || undefined}"
     title="{$$props.title || undefined}"
     on:click
