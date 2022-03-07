@@ -78,7 +78,9 @@ export default {
     HEADING: "icon:heading",
     DETAIL_LIST: "icon:detail-list",
     GROUP: "icon:group",
-    MENU_SOCIAL: "icon:menu-social",
+    FOOTER: {
+      MENU_SOCIAL: "icon:menu-social",
+    },
   },
   INPUT: {
     TEXT: "input:text",

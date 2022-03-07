@@ -40,7 +40,9 @@
   $: options.update({ type: type });
 
   onMount(() => {
-    words.set(seed);
+    if ($options.type !== types.MNEMONIC.AUTHENTICATE) {
+      words.set(seed);
+    }
     options.set({ type: type });
   });
 
@@ -90,7 +92,21 @@
   <ol class="duk-mnemonic__list">
     {#if $options.type === types.MNEMONIC.AUTHENTICATE}
       {#each Array(length) as _, i}
-        <Word index="{i}" disabled="{disabled}" name="`mnemonic_auth_word_{i}`" />
+        <Word
+          index="{i}"
+          disabled="{disabled}"
+          name="`mnemonic_auth_word_{i}`"
+          on:paste="{(e) => {
+            const value = e.detail.value.trim().split(/\s+/);
+            if (value.length === length) {
+              e.preventDefault();
+              e.stopPropagation();
+              value.forEach((word, index) => {
+                $compared[index] = word;
+              });
+            }
+          }}"
+        />
       {/each}
     {:else if $options.type === types.MNEMONIC.CONFIRM}
       {#each $shuffled as _, i}
