@@ -65,7 +65,6 @@
 
   const selectWord = (word) => {
     compared.update((a) => [...a, word]);
-    console.log($compared);
   };
 
   const reset = () => {
@@ -99,7 +98,7 @@
           name="`mnemonic_auth_word_{i}`"
           on:paste="{(e) => {
             const value = e.detail.value.trim().split(/\s+/);
-            if (value.length === 12) {
+            if (value.length === length) {
               e.preventDefault();
               e.stopPropagation();
               value.forEach((word, index) => {
