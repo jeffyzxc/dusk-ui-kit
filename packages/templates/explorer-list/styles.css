@@ -1,6 +1,6 @@
 .duk-template-explorer-list {
   &__all {
-    @apply w-full px-8 mb-6;
-    @apply md:mb-12;
+    @apply w-full px-1 mb-6;
+    @apply md:mb-12 md:px-8;
   }
 }

@@ -1,7 +1,7 @@
 .duk-template-explorer-detail {
   &__details,
   &__list {
-    @apply w-full px-8 mb-6;
-    @apply md:mb-12;
+    @apply w-full px-1 mb-6;
+    @apply md:mb-12 md:px-8;
   }
 }
