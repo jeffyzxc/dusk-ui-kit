@@ -20,6 +20,12 @@
    */
   export let valign = "middle";
 
+  /**
+   * Image sizing policy
+   @type {"max-content", "fit-content", "min-content"}
+   */
+  export let imageFit = "max-content";
+
   const context = getContext("DUK:media-content:context");
 
   setContext("DUK:heading:context", contexts.HEADING.CONTENT);
@@ -41,6 +47,9 @@
   <div
     class="duk-media-content__media"
     class:duk-media-content--card="{context === contexts.MEDIA_CONTENT.CARD}"
+    class:duk-media-content--wmax="{imageFit === 'max-content'}"
+    class:duk-media-content--wmin="{imageFit === 'min-content'}"
+    class:duk-media-content--wfit="{imageFit === 'fit-content'}"
   >
     <slot name="media" />
   </div>

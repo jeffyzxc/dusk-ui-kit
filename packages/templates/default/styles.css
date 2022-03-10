@@ -7,6 +7,10 @@
 
   &__container {
     @apply container;
+
+    &--no-padding {
+      @apply !px-0;
+    }
   }
 
   & .duk-heading {
