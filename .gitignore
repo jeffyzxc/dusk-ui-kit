@@ -16,3 +16,4 @@ build-storybook.log
 /storybook/**/pnpm-lock.yaml
 /docs/**/pnpm-lock.yaml
 coverage/
+pnpm-global
