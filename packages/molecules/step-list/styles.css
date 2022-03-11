@@ -3,6 +3,15 @@
   &__item {
     @apply flex flex-row gap-x-6 relative;
 
+    &--block {
+      @apply relative;
+    }
+
+    &--axis {
+      left: 12px;
+      @apply relative w-1 h-full bg-gray-200 translate-x-2/4;
+    }
+
     &--icon {
       @apply flex items-center justify-center rounded-full  w-12 h-12 z-10;
     }
@@ -12,13 +21,9 @@
     }
   }
 
-  &__item:not(:last-child) {
-    ^&__item--block::before {
-      content: "";
-      left: 12px;
-      height: calc(100% + 32px);
-      z-index: -1;
-      @apply absolute w-1 bg-gray-200 translate-x-2/4 translate-y-2/4 -top-1/2;
+  &__item:last-child {
+    ^&__item--axis {
+      @apply hidden;
     }
   }
 
