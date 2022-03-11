@@ -1,5 +1,16 @@
 # @dusk-network/table
 
+## 4.6.10
+
+### Patch Changes
+
+- 85081744: Release
+- Updated dependencies [85081744]
+  - @dusk-network/drop-down@4.6.10
+  - @dusk-network/icon@4.6.10
+  - @dusk-network/helpers@4.6.10
+  - @dusk-network/pagination@4.6.10
+
 ## 4.6.9
 
 ### Patch Changes
