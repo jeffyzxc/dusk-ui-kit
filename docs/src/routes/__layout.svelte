@@ -55,11 +55,11 @@
       }}"
     />
   </svelte:fragment>
-  <main class="container">
-    <QueryClientProvider client="{queryClient}">
+  <QueryClientProvider client="{queryClient}">
+    <section>
       <slot />
-    </QueryClientProvider>
-  </main>
+    </section>
+  </QueryClientProvider>
   <svelte:fragment slot="footer">
     <Footer type="minimal" variant="brand" />
     <CookieBanner
