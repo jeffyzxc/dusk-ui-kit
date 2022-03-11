@@ -1,5 +1,11 @@
 # @dusk-network/styles
 
+## 4.6.10
+
+### Patch Changes
+
+- 85081744: Release
+
 ## 4.6.9
 
 ### Patch Changes
