@@ -28,8 +28,8 @@
   }
 
   &--danger {
-    @apply text-red-500 border border-yellow-500;
-    @apply dark:text-red-200 dark:border-yellow-200;
+    @apply text-red-500 border border-red-500;
+    @apply dark:text-red-200 dark:border-red-200;
   }
 
   &--warning {
