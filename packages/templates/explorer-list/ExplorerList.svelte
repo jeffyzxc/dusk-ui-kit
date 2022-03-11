@@ -31,7 +31,7 @@
   <svelte:fragment slot="error">
     <slot name="error" />
   </svelte:fragment>
-  <section class="duk-template__container--no-padding">
+  <section class="duk-template__container">
     <div class="duk-template-explorer-list__all">
       <slot name="list" isLoading="{isLoading['list']}" />
     </div>
