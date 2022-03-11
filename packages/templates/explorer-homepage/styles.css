@@ -4,12 +4,13 @@
   }
 
   &__latest {
-    @apply flex flex-wrap -mx-8;
+    @apply flex flex-wrap -mx-1;
+    @apply md:-mx-8;
   }
 
   &__latest-blocks,
   &__latest-transactions {
-    @apply w-full lg:w-1/2 px-8 mb-6;
-    @apply md:mb-12;
+    @apply w-full lg:w-1/2 px-1 mb-6;
+    @apply md:mb-12 md:px-8;
   }
 }
