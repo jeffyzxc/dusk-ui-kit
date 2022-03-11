@@ -1,5 +1,11 @@
 # @dusk-network/default
 
+## 4.6.11
+
+### Patch Changes
+
+- 771245ec: Release
+
 ## 4.6.10
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @dusk-network/heading
 
+## 4.6.11
+
+### Patch Changes
+
+- 771245ec: Release
+- Updated dependencies [771245ec]
+  - @dusk-network/icon@4.6.11
+  - @dusk-network/helpers@4.6.11
+
 ## 4.6.10
 
 ### Patch Changes
