@@ -34,7 +34,7 @@
         <slot name="loading" />
       </div>
     {:else if isError}
-      <div class="duk-template__error">
+      <div class="duk-template__container duk-template__error">
         <slot name="error" />
       </div>
     {:else}

@@ -11,6 +11,7 @@
       <div class="duk-step-list__item--icon">
         <Icon name="{iconName}" viewbox="{iconViewbox}" />
       </div>
+      <div class="duk-step-list__item--axis"></div>
     {/if}
   </div>
   <div class="duk-step-list__item--content">

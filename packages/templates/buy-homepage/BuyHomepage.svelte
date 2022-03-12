@@ -33,16 +33,16 @@
   </svelte:fragment>
   <section class="duk-template__container">
     <div class="duk-template-buy-homepage__hero">
-      <slot name="hero" isLoading="{isLoading['control_panel']}" />
+      <slot name="hero" isLoading="{isLoading['hero']}" />
     </div>
   </section>
   <section class="duk-template__container">
     <div class="duk-template-buy-homepage__blocks">
       <div class="duk-template-buy-homepage__steps">
-        <slot name="latest-blocks" isLoading="{isLoading['steps']}" />
+        <slot name="steps" isLoading="{isLoading['steps']}" />
       </div>
       <div class="duk-template-buy-homepage__markets">
-        <slot name="latest-transactions" isLoading="{isLoading['markets']}" />
+        <slot name="marketplace" isLoading="{isLoading['markets']}" />
       </div>
     </div>
   </section>

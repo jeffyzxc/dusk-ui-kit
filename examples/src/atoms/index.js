@@ -1,4 +1,5 @@
 import * as Address from "./address";
+import * as Chip from "./chip";
 import * as DropDown from "./drop-down";
 import * as LoadingIndicator from "./loading-indicator";
 import * as TextField from "./text-field";
@@ -14,6 +15,7 @@ import * as TruncateText from "./truncate-text";
 
 export {
   Address,
+  Chip,
   DropDown,
   LoadingIndicator,
   TextField,
