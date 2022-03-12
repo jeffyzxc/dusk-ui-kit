@@ -41,7 +41,7 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GH_PACKAGES_TOKEN}}
 
       - name: Build Storybook
-        run: pnpm run build
+        run: export NODE_OPTIONS=--openssl-legacy-provider && pnpm run build
         working-directory: ./storybook
 
       - name: Publish Storybook to Github Pages
