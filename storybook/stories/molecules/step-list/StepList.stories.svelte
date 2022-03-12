@@ -24,7 +24,7 @@
     variant: {
       control: {
         type: 'select',
-        options: Object.values(variants.CTALIST),
+        options: Object.values(variants.STEP_LIST),
       },
     },
   })}"

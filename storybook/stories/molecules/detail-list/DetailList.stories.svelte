@@ -1,11 +1,9 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
-  import { variants } from "@dusk-network/helpers";
   // import results from "../../../../.jest-test-results.json";
   // import { withTests } from "@storybook/addon-jest";
   import DetailList, { Item } from "@dusk-network/detail-list";
   import Icon from "@dusk-network/icon";
-  import meta from "../../meta.js";
 </script>
 
 <Meta
@@ -20,14 +18,6 @@
     },
     // jest: ['packages/molecules/detail-list/DetailList.test.js'],
   }}"
-  argTypes="{meta('molecules/detail-list/DetailList', {
-    variant: {
-      control: {
-        type: 'select',
-        options: Object.values(variants.CTALIST),
-      },
-    },
-  })}"
 />
 
 <Story name="Default" args="{{}}" let:args>
