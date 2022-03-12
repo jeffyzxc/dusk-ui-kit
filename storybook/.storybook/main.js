@@ -38,16 +38,50 @@ module.exports = {
     if (process.env.NODE_ENV === "production") config.base = ""; // 🔧 for embedding storybook on GH Pages
 
     config.optimizeDeps = {
-      exclude: ["fsevents", "purgecss", "rollup-pluginutils"],
+      include: [
+        "@storybook/svelte",
+        "@storybook/client-api",
+        "@storybook/client-logger",
+        "@storybook/addon-svelte-csf",
+        "@storybook/csf",
+        "yup",
+        "@storybook/addon-links",
+        "svelte-i18n",
+        "react",
+        "@mdx-js/react",
+        "@storybook/addon-docs",
+        "merge-anything",
+        "util-deprecate",
+        "fast-deep-equal",
+        "lodash/isPlainObject",
+        "lodash/mapValues",
+        "lodash/pickBy",
+        "lodash/pick",
+        "lodash/startCase",
+        "lodash/uniq",
+        "lodash/cloneDeep",
+        "global",
+        "synchronous-promise",
+        "memoizerific",
+        "slash",
+        "stable",
+        "qs",
+        "hoist-non-react-statics",
+        "prop-types",
+        "doctrine",
+        "overlayscrollbars",
+      ],
+      exclude: ["fsevents", "rollup-pluginutils"],
     };
 
-    console.log("config", config);
+    // console.log("config", config);
 
     return config;
   },
   core: {
     builder: "storybook-builder-vite",
   },
+  // stories: ["../stories/*.stories.mdx"],
   stories: ["../stories/**/*.stories.svelte", "../stories/*.stories.mdx"],
   addons: [
     {
