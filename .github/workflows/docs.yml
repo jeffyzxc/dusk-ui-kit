@@ -45,7 +45,7 @@ jobs:
         run: pnpm run build
         working-directory: ./docs
         env:
-          BASE: /dusk-ui-kit/docs
+          BASE: "/dusk-ui-kit/docs"
 
       - name: Publish Docs to Github Pages
         uses: peaceiris/actions-gh-pages@v3
