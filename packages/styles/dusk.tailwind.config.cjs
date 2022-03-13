@@ -1,13 +1,166 @@
 const plugin = require("tailwindcss/plugin");
+const palette = require("./config/dusk/palette.cjs");
+const space = require("./config/dusk/space.cjs");
+const typography = require("./config/dusk/typography.cjs");
+const fontFamily = require("./config/dusk/font-family.cjs");
+const fontSize = require("./config/dusk/font-size.cjs");
+const colorVariable = require("@mertasan/tailwindcss-variables/colorVariable");
+
 module.exports = {
   content: ["./src/**/*.{html,svelte}"],
   safelist: ["body", "main", "#dusk"],
   darkMode: "class",
   theme: {
+    colors: {
+      current: "currentColor",
+      transparent: "transparent",
+      black: colorVariable("var(--colors-black)"),
+      white: colorVariable("var(--colors-white)"),
+      gray: {
+        100: colorVariable("var(--colors-gray-100)"),
+        200: colorVariable("var(--colors-gray-200)"),
+        300: colorVariable("var(--colors-gray-300)"),
+        400: colorVariable("var(--colors-gray-400)"),
+        500: colorVariable("var(--colors-gray-500)"),
+        600: colorVariable("var(--colors-gray-600)"),
+        700: colorVariable("var(--colors-gray-700)"),
+        800: colorVariable("var(--colors-gray-800)"),
+        900: colorVariable("var(--colors-gray-900)"),
+      },
+      red: {
+        100: colorVariable("var(--colors-red-100)"),
+        200: colorVariable("var(--colors-red-200)"),
+        300: colorVariable("var(--colors-red-300)"),
+        400: colorVariable("var(--colors-red-400)"),
+        500: colorVariable("var(--colors-red-500)"),
+        600: colorVariable("var(--colors-red-600)"),
+        700: colorVariable("var(--colors-red-700)"),
+        800: colorVariable("var(--colors-red-800)"),
+        900: colorVariable("var(--colors-red-900)"),
+      },
+      orange: {
+        100: colorVariable("var(--colors-orange-100)"),
+        200: colorVariable("var(--colors-orange-200)"),
+        300: colorVariable("var(--colors-orange-300)"),
+        400: colorVariable("var(--colors-orange-400)"),
+        500: colorVariable("var(--colors-orange-500)"),
+        600: colorVariable("var(--colors-orange-600)"),
+        700: colorVariable("var(--colors-orange-700)"),
+        800: colorVariable("var(--colors-orange-800)"),
+        900: colorVariable("var(--colors-orange-900)"),
+      },
+      yellow: {
+        100: colorVariable("var(--colors-yellow-100)"),
+        200: colorVariable("var(--colors-yellow-200)"),
+        300: colorVariable("var(--colors-yellow-300)"),
+        400: colorVariable("var(--colors-yellow-400)"),
+        500: colorVariable("var(--colors-yellow-500)"),
+        600: colorVariable("var(--colors-yellow-600)"),
+        700: colorVariable("var(--colors-yellow-700)"),
+        800: colorVariable("var(--colors-yellow-800)"),
+        900: colorVariable("var(--colors-yellow-900)"),
+      },
+      green: {
+        100: colorVariable("var(--colors-green-100)"),
+        200: colorVariable("var(--colors-green-200)"),
+        300: colorVariable("var(--colors-green-300)"),
+        400: colorVariable("var(--colors-green-400)"),
+        500: colorVariable("var(--colors-green-500)"),
+        600: colorVariable("var(--colors-green-600)"),
+        700: colorVariable("var(--colors-green-700)"),
+        800: colorVariable("var(--colors-green-800)"),
+        900: colorVariable("var(--colors-green-900)"),
+      },
+      purple: {
+        100: colorVariable("var(--colors-purple-100)"),
+        200: colorVariable("var(--colors-purple-200)"),
+        300: colorVariable("var(--colors-purple-300)"),
+        400: colorVariable("var(--colors-purple-400)"),
+        500: colorVariable("var(--colors-purple-500)"),
+        600: colorVariable("var(--colors-purple-600)"),
+        700: colorVariable("var(--colors-purple-700)"),
+        800: colorVariable("var(--colors-purple-800)"),
+        900: colorVariable("var(--colors-purple-900)"),
+      },
+      indigo: {
+        100: colorVariable("var(--colors-indigo-100)"),
+        200: colorVariable("var(--colors-indigo-200)"),
+        300: colorVariable("var(--colors-indigo-300)"),
+        400: colorVariable("var(--colors-indigo-400)"),
+        500: colorVariable("var(--colors-indigo-500)"),
+        600: colorVariable("var(--colors-indigo-600)"),
+        700: colorVariable("var(--colors-indigo-700)"),
+        800: colorVariable("var(--colors-indigo-800)"),
+        900: colorVariable("var(--colors-indigo-900)"),
+      },
+      blue: {
+        100: colorVariable("var(--colors-blue-100)"),
+        200: colorVariable("var(--colors-blue-200)"),
+        300: colorVariable("var(--colors-blue-300)"),
+        400: colorVariable("var(--colors-blue-400)"),
+        500: colorVariable("var(--colors-blue-500)"),
+        600: colorVariable("var(--colors-blue-600)"),
+        700: colorVariable("var(--colors-blue-700)"),
+        800: colorVariable("var(--colors-blue-800)"),
+        900: colorVariable("var(--colors-blue-900)"),
+      },
+      gold: {
+        100: colorVariable("var(--colors-gold-100)"),
+        200: colorVariable("var(--colors-gold-200)"),
+        300: colorVariable("var(--colors-gold-300)"),
+        400: colorVariable("var(--colors-gold-400)"),
+        500: colorVariable("var(--colors-gold-500)"),
+        600: colorVariable("var(--colors-gold-600)"),
+        700: colorVariable("var(--colors-gold-700)"),
+        800: colorVariable("var(--colors-gold-800)"),
+        900: colorVariable("var(--colors-gold-900)"),
+      },
+    },
+    spacing: {
+      px: "var(--spacing-px)",
+      0: "var(--spacing-0)",
+      1: "var(--spacing-1)",
+      2: "var(--spacing-2)",
+      3: "var(--spacing-3)",
+      4: "var(--spacing-4)",
+      5: "var(--spacing-5)",
+      6: "var(--spacing-6)",
+      8: "var(--spacing-8)",
+      10: "var(--spacing-10)",
+      12: "var(--spacing-12)",
+      16: "var(--spacing-16)",
+      20: "var(--spacing-20)",
+      24: "var(--spacing-24)",
+      32: "var(--spacing-32)",
+      40: "var(--spacing-40)",
+      48: "var(--spacing-48)",
+      56: "var(--spacing-56)",
+      64: "var(--spacing-64)",
+      72: "var(--spacing-72)",
+      96: "var(--spacing-96)",
+      128: "var(--spacing-128)",
+      225: "var(--spacing-225)",
+      256: "var(--spacing-256)",
+    },
     extend: {
       boxShadow: {
-        marketing: "1px 1px 0px #D82E60;",
-        "marketing-hover": "4px 4px 0px #D82E60;",
+        "cta-list": "1px 1px 0px var(--colors-red-900);",
+        "card-hover": "1px 1px 0px var(--colors-red-900);",
+        toggle: "1px 1px 0px var(--colors-red-900);",
+        "toggle-hover": "4px 4px 0px var(--colors-red-900);",
+        "drop-down": "1px 1px 0px var(--colors-red-900);",
+        "button-brand": "1px 1px 0px var(--colors-indigo-200);",
+        "button-brand-hover": "4px 4px 0px var(--colors-indigo-200);",
+        "button-cta": "1px 1px 0px var(--colors-gold-600);",
+        "button-cta-hover": "4px 4px 0px var(--colors-gold-600);",
+        "button-info": "1px 1px 0px var(--colors-blue-200);",
+        "button-info-hover": "4px 4px 0px var(--colors-blue-200);",
+        "button-success": "1px 1px 0px var(--colors-green-100);",
+        "button-success-hover": "4px 4px 0px var(--colors-green-100);",
+        "button-warning": "1px 1px 0px var(--colors-gold-400);",
+        "button-warning-hover": "4px 4px 0px var(--colors-gold-400);",
+        "button-danger": "1px 1px 0px var(--colors-red-200);",
+        "button-danger-hover": "4px 4px 0px var(--colors-red-200);",
         none: "none",
         card: "0px 3px 6px rgba(0, 0, 0, .161)",
         switch: "0px 3px 6px rgba(0, 0, 0, .161)",
@@ -16,159 +169,37 @@ module.exports = {
       },
       borderRadius: {
         none: "0",
-        xl: "1.375rem",
+        xl: "var(--spacing-6)",
         full: "9999px",
-      },
-      colors: {
-        transparent: "transparent",
-        black: "#000000",
-        white: "#ffffff",
-        gray: {
-          100: "#f5f5f5",
-          200: "#dddddd",
-          300: "#c5c5c5",
-          400: "#adadad",
-          500: "#959595",
-          600: "#7c7c7c",
-          700: "#646464",
-          800: "#4c4c4c",
-          900: "#343434",
-        },
-        red: {
-          100: "#e8a5b9",
-          200: "#e496ad",
-          300: "#e188a2",
-          400: "#dd7996",
-          500: "#d96a8a",
-          600: "#d95b80",
-          700: "#d94c75",
-          800: "#d83d6b",
-          900: "#d82e60",
-        },
-        orange: {
-          100: "#F3C0A8",
-          200: "#f1b69a",
-          300: "#efab8b",
-          400: "#eda17d",
-          500: "#eb966e",
-          600: "#ed8757",
-          700: "#ee7840",
-          800: "#f06829",
-          900: "#f15912",
-        },
-        yellow: {
-          100: "#f4e2bf",
-          200: "#f7dfb1",
-          300: "#f9dca3",
-          400: "#fcd894",
-          500: "#fed586",
-          600: "#fad48a",
-          700: "#f6d28e",
-          800: "#f1d191",
-          900: "#edcf95",
-        },
-        green: {
-          100: "#c1deb6",
-          200: "#b7d9aa",
-          300: "#add49e",
-          400: "#a2ce91",
-          500: "#98c985",
-          600: "#94c382",
-          700: "#90bd7f",
-          800: "#8cb77b",
-          900: "#88b178",
-        },
-        purple: {
-          100: "#bdb4d2",
-          200: "#b2a8cb",
-          300: "#aba0c9",
-          400: "#9d91c0",
-          500: "#9183b5",
-          600: "#7362a6",
-          700: "#624d9f",
-          800: "#523b97",
-          900: "#3b218c",
-        },
-        indigo: {
-          100: "#E1DAF6",
-          200: "#C1B1ED",
-          300: "#A087E3",
-          400: "#7F5ED9",
-          500: "#5E35CF",
-          600: "#4A28A9",
-          700: "#381E80",
-          800: "#261457",
-          900: "#140B2D",
-        },
-        blue: {
-          100: "#F9FDFF",
-          200: "#F8FBFF",
-          300: "#F6F9FE",
-          400: "#C9D9F8",
-          500: "#9DBAF2",
-          600: "#6F98EC",
-          700: "#4178E6",
-          800: "#1C5BD9",
-          900: "#1648AC",
-        },
-        gold: {
-          100: "#FDFBF2",
-          200: "#F5EEC6",
-          300: "#EEE09B",
-          400: "#E7D36F",
-          500: "#DFC543",
-          600: "#CDB123",
-          700: "#A18B1B",
-          800: "#766514",
-          900: "#4A400D",
-        },
       },
       container: {
         center: true,
         padding: {
-          DEFAULT: ".25rem",
-          sm: "2rem",
-          lg: "4rem",
-          xl: "5rem",
-          "2xl": "6rem",
+          DEFAULT: "var(--spacing-1)",
+          sm: "var(--spacing-12)",
+          lg: "var(--spacing-32)",
+          xl: "var(--spacing-40)",
+          "2xl": "var(--spacing-48)",
         },
       },
       cursor: {
         "row-resize": "row-resize	",
         copy: "copy",
       },
-      fontFamily: {
-        sans: [
-          "Hind Siliguri",
-          "system-ui",
-          "-apple-system",
-          "BlinkMacSystemFont",
-          "'Segoe UI'",
-          "'Helvetica Neue'",
-          "Arial",
-          "'Noto Sans'",
-          "sans-serif",
-          "'Apple Color Emoji'",
-          "'Segoe UI Emoji'",
-          "'Segoe UI Symbol'",
-          "'Noto Color Emoji'",
-        ],
-        serif: ["Georgia", "Cambria", "'Times New Roman'", "Times", "serif"],
-        mono: ["Menlo", "Monaco", "Consolas", "'Liberation Mono'", "'Courier New'", "monospace"],
-      },
+      fontFamily,
       fontSize: {
-        xs: ".75rem",
-        sm: ".875rem",
-        base: "1rem",
-        lg: "1.125rem",
-        xl: "1.25rem",
-        "2xl": "1.5rem",
-        "3xl": "1.875rem",
-        "4xl": "2.25rem",
-        "5xl": "3rem",
-        "6xl": "4rem",
-        "7xl": "5rem",
-        "8xl": "6rem",
+        xs: "var(--font-size-xs)",
+        sm: "var(--font-size-sm)",
+        base: "var(--font-size-base)",
+        lg: "var(--font-size-lg)",
+        xl: "var(--font-size-xl)",
+        "2xl": "var(--font-size-2xl)",
+        "3xl": "var(--font-size-3xl)",
+        "4xl": "var(--font-size-4xl)",
+        "5xl": "var(--font-size-5xl)",
+        "6xl": "var(--font-size-6xl)",
+        "7xl": "var(--font-size-7xl)",
+        "8xl": "var(--font-size-8xl)",
       },
       fontWeight: {
         hairline: "100",
@@ -242,31 +273,6 @@ module.exports = {
       screens: {
         xs: "375px",
       },
-      spacing: {
-        0: "0",
-        1: ".25rem", // 4px
-        2: ".375rem", // 6px
-        3: ".5rem", // 8px
-        4: ".625rem", // 12px
-        5: "1rem", // 16px (base)
-        6: "1.375rem", // 22px
-        8: "1.5rem", // 24px
-        10: "1.75rem", // 28px
-        12: "2rem", // 32px
-        16: "2.5rem", // 40px
-        20: "3rem", // 48px
-        24: "3.5rem", // 56px
-        32: "4rem", // 64px
-        40: "5rem", // 80px
-        48: "6rem", // 96px
-        56: "8rem", // 128px
-        64: "10rem", // 160px
-        72: "12rem", // 192px
-        96: "14rem", // 224px
-        128: "16rem", // 256px
-        225: "26.25rem", // 420px
-        256: "32rem", // 512px
-      },
       animation: {
         shimmer: "shimmer 2s infinite",
       },
@@ -277,73 +283,21 @@ module.exports = {
           },
         },
       },
-      typography: (theme) => ({
-        light: {
-          css: [
-            {
-              color: theme("colors.gray.400"),
-              '[class~="lead"]': {
-                color: theme("colors.gray.300"),
-              },
-              a: {
-                color: theme("colors.white"),
-              },
-              strong: {
-                color: theme("colors.white"),
-              },
-              "ol > li::before": {
-                color: theme("colors.gray.400"),
-              },
-              "ul > li::before": {
-                backgroundColor: theme("colors.gray.600"),
-              },
-              hr: {
-                borderColor: theme("colors.gray.200"),
-              },
-              blockquote: {
-                color: theme("colors.gray.200"),
-                borderLeftColor: theme("colors.gray.600"),
-              },
-              h1: {
-                color: theme("colors.white"),
-              },
-              h2: {
-                color: theme("colors.white"),
-              },
-              h3: {
-                color: theme("colors.white"),
-              },
-              h4: {
-                color: theme("colors.white"),
-              },
-              "figure figcaption": {
-                color: theme("colors.gray.400"),
-              },
-              code: {
-                color: theme("colors.white"),
-              },
-              "a code": {
-                color: theme("colors.white"),
-              },
-              pre: {
-                color: theme("colors.gray.200"),
-                backgroundColor: theme("colors.gray.800"),
-              },
-              thead: {
-                color: theme("colors.white"),
-                borderBottomColor: theme("colors.gray.400"),
-              },
-              "tbody tr": {
-                borderBottomColor: theme("colors.gray.600"),
-              },
-            },
-          ],
-        },
-      }),
+      typography,
+    },
+    variables: {
+      DEFAULT: {
+        colors: palette,
+        spacing: space,
+        fontSize,
+      },
     },
   },
   plugins: [
     require("@tailwindcss/typography"),
+    require("@mertasan/tailwindcss-variables")({
+      colorVariables: true,
+    }),
     plugin(function ({ addBase, theme }) {
       addBase({
         "abbr[title]": {
