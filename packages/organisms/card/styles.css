@@ -140,7 +140,7 @@ a > .duk-card {
   @apply transition transition-all duration-300 ease-in-out;
 
   &:hover {
-    @apply sm:shadow-marketing-hover bg-indigo-100;
+    @apply sm:shadow-card-hover bg-indigo-100;
 
     & .duk-rich-text *:not(code),
     & .duk-heading *,

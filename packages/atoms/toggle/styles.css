@@ -54,7 +54,7 @@
 
   &__label {
     &--button {
-      @apply transition transition-shadow duration-300 ease-in-out shadow-marketing hover:shadow-marketing-hover cursor-pointer leading-tight z-50 px-4 py-1 inline-block bg-transparent border border-gray-900 rounded-md;
+      @apply transition transition-shadow duration-300 ease-in-out shadow-toggle hover:shadow-toggle-hover cursor-pointer leading-tight z-50 px-4 py-1 inline-block bg-transparent border border-gray-900 rounded-md;
       @apply dark:text-white dark:border-white;
     }
     &--switch {
@@ -67,14 +67,14 @@
   }
 
   &__checkbox {
-    @apply flex-shrink-0 appearance-none bg-white h-8 w-8 border border-gray-900 shadow-marketing rounded-md;
+    @apply flex-shrink-0 appearance-none bg-white h-8 w-8 border border-gray-900 shadow-toggle rounded-md;
     &:checked {
       background-image: url("./icons/checkbox.svg");
     }
   }
 
   &__radio {
-    @apply flex-shrink-0 appearance-none bg-white h-8 w-8 border border-gray-900 shadow-marketing rounded-full;
+    @apply flex-shrink-0 appearance-none bg-white h-8 w-8 border border-gray-900 shadow-toggle rounded-full;
     &:checked {
       background-image: url("./icons/radio.svg");
     }

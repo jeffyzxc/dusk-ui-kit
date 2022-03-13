@@ -28,9 +28,7 @@
   }
 
   &--brand {
-    @apply bg-indigo-500 text-white border-none;
-
-    box-shadow: 1px 1px 0px #c1b1ed;
+    @apply bg-indigo-500 text-white border-none shadow-button-brand;
 
     &:hover:not(:disabled),
     &^&--active {
@@ -38,7 +36,7 @@
     }
 
     &:hover:not(:disabled) {
-      box-shadow: 4px 4px 0px #c1b1ed;
+      @apply shadow-button-brand-hover;
     }
 
     &^&--outline {
@@ -54,9 +52,7 @@
 
   &--hero,
   &--cta {
-    @apply bg-gold-500 text-gray-900 border-none;
-
-    box-shadow: 1px 1px 0px #cdb123;
+    @apply bg-gold-500 text-gray-900 border-none shadow-button-cta;
 
     &:hover:not(:disabled),
     &^&--active {
@@ -64,7 +60,7 @@
     }
 
     &:hover:not(:disabled) {
-      box-shadow: 4px 4px 0px #cdb123;
+      @apply shadow-button-cta-hover;
     }
 
     &^&--outline {
@@ -79,9 +75,7 @@
   }
 
   &--info {
-    @apply bg-blue-500 text-gray-900 border-none;
-
-    box-shadow: 1px 1px 0px #f8fbff;
+    @apply bg-blue-500 text-gray-900 border-none shadow-button-info;
 
     &:hover:not(:disabled),
     &^&--active {
@@ -89,7 +83,7 @@
     }
 
     &:hover:not(:disabled) {
-      box-shadow: 4px 4px 0px #f8fbff;
+      @apply shadow-button-info-hover;
     }
 
     &^&--outline {
@@ -104,9 +98,7 @@
   }
 
   &--success {
-    @apply bg-green-500 text-gray-900 border-none;
-
-    box-shadow: 1px 1px 0px #c1deb6;
+    @apply bg-green-500 text-gray-900 border-none shadow-button-success;
 
     &:hover:not(:disabled),
     &^&--active {
@@ -114,7 +106,7 @@
     }
 
     &:hover:not(:disabled) {
-      box-shadow: 4px 4px 0px #c1deb6;
+      @apply shadow-button-success-hover;
     }
 
     &^&--outline {
@@ -129,9 +121,7 @@
   }
 
   &--warning {
-    @apply bg-yellow-900 text-gray-900 border-none;
-
-    box-shadow: 1px 1px 0px #e7d36f;
+    @apply bg-yellow-900 text-gray-900 border-none shadow-button-warning;
 
     &:hover:not(:disabled),
     &^&--active {
@@ -140,7 +130,7 @@
     }
 
     &:hover:not(:disabled) {
-      box-shadow: 4px 4px 0px #e7d36f;
+      @apply shadow-button-warning-hover;
     }
 
     &^&--outline {
@@ -155,9 +145,7 @@
   }
 
   &--danger {
-    @apply bg-red-300 text-gray-900 border-none;
-
-    box-shadow: 1px 1px 0px #e496ad;
+    @apply bg-red-300 text-gray-900 border-none shadow-button-danger;
 
     &:hover:not(:disabled),
     &^&--active {
@@ -165,7 +153,7 @@
     }
 
     &:hover:not(:disabled) {
-      box-shadow: 4px 4px 0px #e496ad;
+      @apply shadow-button-danger-hover;
     }
 
     &^&--outline {

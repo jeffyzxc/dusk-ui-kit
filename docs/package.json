@@ -32,6 +32,7 @@
     "d3-geo": "^3.0.1",
     "d3-quadtree": "^3.0.1",
     "d3-scale": "^4.0.2",
+    "highlight.js": "^11.5.0",
     "js-cookie": "^3.0.1",
     "layercake": "^6.0.2",
     "marked": "^4.0.10",
