@@ -5,6 +5,8 @@ import fs from "fs";
 import path from "path";
 import * as Helpers from "@dusk-network/helpers";
 
+const dev = process.env.NODE_ENV === "development";
+
 const virtualMetaPlugin = () => {
   const virtualFileId = "@ui-kit-meta";
   return {
@@ -109,7 +111,7 @@ const config = {
       entries: entries,
     },
     paths: {
-      base: process.env.BASE || "",
+      base: dev ? "" : "/dusk-ui-kit/docs",
     },
     appDir: "internal", // Needed to work with Github pages.
     target: "#dusk",
