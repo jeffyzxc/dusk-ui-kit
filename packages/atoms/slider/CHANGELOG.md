@@ -1,5 +1,11 @@
 # @dusk-network/slider
 
+## 4.6.12
+
+### Patch Changes
+
+- 7e97eb52: Release 4.6.12
+
 ## 4.6.11
 
 ### Patch Changes
