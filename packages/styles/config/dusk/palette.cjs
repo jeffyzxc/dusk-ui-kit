@@ -1,3 +1,5 @@
+// FIXME The design language should describe contextual names for colours, not just the colour name itself.
+
 module.exports = {
   black: "#000000",
   white: "#ffffff",
