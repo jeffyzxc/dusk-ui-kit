@@ -86,7 +86,7 @@
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.39",
     "babel-jest": "^27.5.1",
     "babel-loader": "^8.2.3",
-    "chromatic": "6.5.2",
+    "chromatic": "6.5.3",
     "merge-anything": "^5.0.2",
     "storybook-addon-designs": "^6.2.1",
     "storybook-builder-vite": "^0.1.18",
