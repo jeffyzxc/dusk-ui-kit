@@ -1,5 +1,13 @@
 # @dusk-network/explorer-list
 
+## 5.0.1
+
+### Patch Changes
+
+- f47dbc9c: Release
+- Updated dependencies [f47dbc9c]
+  - @dusk-network/default@5.0.1
+
 ## 5.0.0
 
 ### Minor Changes
