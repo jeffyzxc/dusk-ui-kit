@@ -29,6 +29,14 @@
   export let appName = "";
 
   /**
+   * Sets the configuration object used by the A11yMenu cookie.
+   * Contains the cookie options as defined here: https://github.com/js-cookie/js-cookie#cookie-attributes
+   */
+  export let cookieConfig = {
+    expires: 365,
+  };
+
+  /**
    * Sets the `id` of the Navbar if set, otherwise the ID is generated.
    * @type {string}
    */
@@ -106,7 +114,7 @@
     {#if $$slots.a11y}
       <slot name="a11y" />
     {:else}
-      <A11yMenu on:settings />
+      <A11yMenu on:settings cookieConfig="{cookieConfig}" />
     {/if}
   </div>
 </nav>

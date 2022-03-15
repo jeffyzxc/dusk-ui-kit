@@ -35,8 +35,6 @@
   const queryClient = new QueryClient();
   const cookieConfig = {
     expires: 365,
-    path: "/",
-    domain: "localhost",
   };
 
   let showSettings = false;
@@ -64,7 +62,7 @@
     <Footer type="minimal" variant="brand" />
     <CookieBanner
       cookieConfig="{cookieConfig}"
-      acceptLabel="Accept"
+      acceptLabel="Accept All"
       settingsLabel="Settings"
       on:closeSettings="{() => settings.update(() => false)}"
       on:openSettings="{() => settings.update(() => true)}"
@@ -83,7 +81,7 @@
         We and selected partners and related companies, use cookies and similar technologies as
         specified in our <a href="https://dusk.network/footer-pages/privacy-policies"
           >Privacy Policy</a
-        >. You agree to consent to the use of these technologies by clicking Accept, or by
+        >. You agree to consent to the use of these technologies by clicking Accept All, or by
         continuing to browse this website. You can learn more about how we use cookies and set
         cookie preferences in Settings.
       </p>

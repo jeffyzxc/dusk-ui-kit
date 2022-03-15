@@ -19,7 +19,6 @@
    */
   export let cookieConfig = {
     expires: 365,
-    path: "/",
   };
 
   const dispatch = createEventDispatcher();

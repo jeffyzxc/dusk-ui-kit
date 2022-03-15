@@ -28,7 +28,6 @@
    */
   export let cookieConfig = {
     expires: 365,
-    path: "/",
   };
 
   /**
@@ -119,6 +118,7 @@
           <Button
             variant="cta"
             on:click="{() => {
+              Object.keys(fields).forEach((v) => (fields[v] = true));
               setCookie(cookieName, fields, cookieConfig);
               showBanner = false;
               dispatch('closeSettings');
