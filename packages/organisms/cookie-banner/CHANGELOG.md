@@ -1,5 +1,21 @@
 # @dusk-network/cookie-banner
 
+## 5.0.1
+
+### Patch Changes
+
+- f47dbc9c: Release
+- Updated dependencies [f47dbc9c]
+  - @dusk-network/icon@5.0.1
+  - @dusk-network/toggle@5.0.1
+  - @dusk-network/helpers@5.0.1
+  - @dusk-network/button@5.0.1
+  - @dusk-network/control@5.0.1
+  - @dusk-network/group@5.0.1
+  - @dusk-network/heading@5.0.1
+  - @dusk-network/card@5.0.1
+  - @dusk-network/form@5.0.1
+
 ## 5.0.0
 
 ### Minor Changes

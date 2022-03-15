@@ -1,5 +1,11 @@
 # @dusk-network/styles
 
+## 5.0.1
+
+### Patch Changes
+
+- f47dbc9c: Release
+
 ## 5.0.0
 
 ### Minor Changes
