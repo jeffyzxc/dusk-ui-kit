@@ -84,6 +84,7 @@ import ShareVariant from "./ShareVariant.svelte";
 import Sigma from "./Sigma.svelte";
 import StoreOutline from "./StoreOutline.svelte";
 import Storybook from "./Storybook.svelte";
+import SwapHorizontal from "./SwapHorizontal.svelte";
 import Telegram from "./Telegram.svelte";
 import TimelineClockOutline from "./TimelineClockOutline.svelte";
 import TimerSand from "./TimerSand.svelte";
@@ -183,6 +184,7 @@ export default {
   Sigma,
   StoreOutline,
   Storybook,
+  SwapHorizontal,
   Telegram,
   TimelineClockOutline,
   TimerSand,
