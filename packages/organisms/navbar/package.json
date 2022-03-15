@@ -35,6 +35,6 @@
     "@dusk-network/menu": "workspace:*",
     "@dusk-network/toggle": "workspace:*"
   },
-  "gitHead": "4c07ac1b58695668fdfa0c500ef3ff782e82ad30",
+  "gitHead": "6549b90654de2c9bd88cd09444e9f721b1c01579",
   "svelte": "index.js"
 }
