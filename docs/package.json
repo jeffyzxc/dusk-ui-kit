@@ -1,6 +1,6 @@
 {
   "name": "@dusk-network/dusk-ui-kit-docs",
-  "version": "4.6.12",
+  "version": "5.0.0",
   "private": true,
   "type": "module",
   "scripts": {

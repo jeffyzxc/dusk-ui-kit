@@ -1,5 +1,21 @@
 # @dusk-network/navbar
 
+## 5.0.0
+
+### Minor Changes
+
+- 5a02600a: Release
+
+### Patch Changes
+
+- Updated dependencies [5a02600a]
+  - @dusk-network/icon@5.0.0
+  - @dusk-network/logo@5.0.0
+  - @dusk-network/toggle@5.0.0
+  - @dusk-network/helpers@5.0.0
+  - @dusk-network/button@5.0.0
+  - @dusk-network/menu@5.0.0
+
 ## 4.6.12
 
 ### Patch Changes
