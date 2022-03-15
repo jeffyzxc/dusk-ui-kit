@@ -1,11 +1,6 @@
 <script>
   import { onMount, createEventDispatcher } from "svelte";
-  import {
-    getCookie,
-    setCookie,
-    deleteCookie,
-    getCookieDomain,
-  } from "@dusk-network/helpers/cookie-utils.js";
+  import { getCookie, setCookie, deleteCookie } from "@dusk-network/helpers/cookie-utils.js";
   import Button from "@dusk-network/button";
   import Content from "@dusk-network/content";
   import Heading from "@dusk-network/heading";
@@ -33,7 +28,6 @@
    */
   export let cookieConfig = {
     expires: 365,
-    domain: getCookieDomain(),
   };
 
   /**
