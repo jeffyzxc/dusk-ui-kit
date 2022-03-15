@@ -1,5 +1,16 @@
 # @dusk-network/table
 
+## 5.0.2
+
+### Patch Changes
+
+- bd6220d3: Release
+- Updated dependencies [bd6220d3]
+  - @dusk-network/drop-down@5.0.2
+  - @dusk-network/icon@5.0.2
+  - @dusk-network/helpers@5.0.2
+  - @dusk-network/pagination@5.0.2
+
 ## 5.0.1
 
 ### Patch Changes

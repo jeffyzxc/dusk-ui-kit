@@ -1,5 +1,11 @@
 # @dusk-network/default
 
+## 5.0.2
+
+### Patch Changes
+
+- bd6220d3: Release
+
 ## 5.0.1
 
 ### Patch Changes
