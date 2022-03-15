@@ -23,5 +23,5 @@
     "@dusk-network/default": "workspace:*"
   },
   "svelte": "index.js",
-  "gitHead": "8636551123a470b4fbf54e14c3a0616ab6beee3e"
+  "gitHead": "b7c5d57d638264700fedbaf5d7f77f7487008bd5"
 }
