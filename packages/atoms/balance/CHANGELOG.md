@@ -1,5 +1,11 @@
 # @dusk-network/balance
 
+## 5.0.0
+
+### Minor Changes
+
+- 5a02600a: Release
+
 ## 4.6.12
 
 ### Patch Changes
