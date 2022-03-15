@@ -63,7 +63,7 @@
     disabled="{$pageNumber === 1}"
     on:click="{() => setPage($pageNumber - 1)}"
   >
-    <Icon name="backspace-outline" />
+    <Icon name="arrow-left-circle" />
   </Button>
   <Menu class="duk-pagination__menu" orientation="horizontal">
     <Item>
@@ -111,6 +111,6 @@
     disabled="{$pageNumber === pageCount.length}"
     on:click="{() => setPage($pageNumber + 1)}"
   >
-    <Icon name="backspace-reverse-outline" />
+    <Icon name="arrow-right-circle" />
   </Button>
 </nav>
