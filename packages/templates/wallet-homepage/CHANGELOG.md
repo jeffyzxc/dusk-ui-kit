@@ -1,5 +1,13 @@
 # @dusk-network/wallet-homepage
 
+## 5.0.2
+
+### Patch Changes
+
+- bd6220d3: Release
+- Updated dependencies [bd6220d3]
+  - @dusk-network/default@5.0.2
+
 ## 5.0.1
 
 ### Patch Changes
