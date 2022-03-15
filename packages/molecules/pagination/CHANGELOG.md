@@ -1,5 +1,16 @@
 # @dusk-network/pagination
 
+## 4.6.12
+
+### Patch Changes
+
+- 7e97eb52: Release 4.6.12
+- Updated dependencies [7e97eb52]
+  - @dusk-network/icon@4.6.12
+  - @dusk-network/helpers@4.6.12
+  - @dusk-network/button@4.6.12
+  - @dusk-network/menu@4.6.12
+
 ## 4.6.11
 
 ### Patch Changes
