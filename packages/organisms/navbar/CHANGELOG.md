@@ -1,5 +1,18 @@
 # @dusk-network/navbar
 
+## 5.0.2
+
+### Patch Changes
+
+- bd6220d3: Release
+- Updated dependencies [bd6220d3]
+  - @dusk-network/icon@5.0.2
+  - @dusk-network/logo@5.0.2
+  - @dusk-network/toggle@5.0.2
+  - @dusk-network/helpers@5.0.2
+  - @dusk-network/button@5.0.2
+  - @dusk-network/menu@5.0.2
+
 ## 5.0.1
 
 ### Patch Changes
