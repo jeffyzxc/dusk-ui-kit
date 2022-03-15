@@ -1,22 +1,24 @@
 <!DOCTYPE html>
+<!--suppress HtmlUnknownTarget -->
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Storybook</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script>
-            window.CONFIG_TYPE = 'PRODUCTION';
-            window.LOGLEVEL = 'info';
-            window.FRAMEWORK_OPTIONS = {"preprocess":[{"defaultLanguages":{"markup":"html","style":"css","script":"javascript"}}]};
-            window.CHANNEL_OPTIONS = {}
-            window.FEATURES = {"postcss":false,"emotionAlias":true,"warnOnLegacyHierarchySeparator":true};
-            window.SERVER_CHANNEL_URL = undefined
+  <head>
+    <meta charset="utf-8" />
+    <title>Storybook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      window.CONFIG_TYPE = 'PRODUCTION';
+      window.LOGLEVEL = 'info';
+      window.FRAMEWORK_OPTIONS = {"preprocess":[{"defaultLanguages":{"markup":"html","style":"css","script":"javascript"}}]};
+      window.CHANNEL_OPTIONS = {};
+      window.FEATURES = {"postcss":false,"emotionAlias":true,"warnOnLegacyHierarchySeparator":true};
+      window.STORIES = [{"titlePrefix":"","directory":"./stories","files":"**/*.stories.svelte","importPathMatcher":"^\\.[\\\\/](?:stories(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.stories\\.svelte)$"},{"titlePrefix":"","directory":"./stories","files":"*.stories.mdx","importPathMatcher":"^\\.[\\\\/](?:stories\\/(?!\\.)(?=.)[^/]*?\\.stories\\.mdx)$"}];
+      window.SERVER_CHANNEL_URL = undefined;
 
-            // We do this so that "module && module.hot" etc. in Storybook source code
-            // doesn't fail (it will simply be disabled)
-            window.module = undefined;
-        </script>
-        <base target="_parent" />
+      // We do this so that "module && module.hot" etc. in Storybook source code
+      // doesn't fail (it will simply be disabled)
+      window.module = undefined;
+    </script>
+    <base target="_parent" />
 
 <style>
   :not(.sb-show-preparing-story) > .sb-preparing-story,
@@ -369,19 +371,14 @@
   }
 </style>
 
-        <style>
-            #root[hidden],
-            #docs-root[hidden] {
-                display: none !important;
-            }
-        </style>
-      <script type="module" crossorigin src="assets/iframe.b6a57ec5.js"></script>
-      <link rel="modulepreload" href="assets/vendor.eccf71ea.js">
-      <link rel="stylesheet" href="assets/vendor.df253ed2.css">
-      <link rel="stylesheet" href="assets/iframe.66ad1f25.css">
-    </head>
-    <body>
-        <div class="sb-preparing-story sb-wrapper">
+    
+    <script type="module" crossorigin src="assets/iframe.26ddaee0.js"></script>
+    <link rel="modulepreload" href="assets/vendor.d74695bf.js">
+    <link rel="stylesheet" href="assets/vendor.df253ed2.css">
+    <link rel="stylesheet" href="assets/iframe.598d4c82.css">
+  </head>
+  <body>
+    <div class="sb-preparing-story sb-wrapper">
   <div class="sb-loader"></div>
 </div>
 
@@ -469,10 +466,9 @@
   <pre class="sb-errordisplay_code"><code id="error-stack"></code></pre>
 </div>
 
-        <div id="root"></div>
-        <div id="docs-root"></div>
+    <div id="root"></div>
+    <div id="docs-root"></div>
 
-        
-        
-    </body>
+    
+  </body>
 </html>
