@@ -1,5 +1,5 @@
 .duk-cookie-banner {
-  @apply flex items-center justify-center fixed w-screen h-auto bottom-0 left-0;
+  @apply flex items-center justify-center fixed w-screen h-auto bottom-0 left-0 z-50;
 
   &--with-settings {
     @apply h-screen px-5 py-5 top-0 z-50;
