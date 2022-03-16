@@ -27,7 +27,17 @@
    * Sets the Icon to have a tooltip when passed a string
    */
   export let tooltip = false;
+
+  /**
+   * Sets the Icon svg viewbox when a string is passed, default is "0 0 24 24"
+   */
   export let viewbox = "0 0 24 24";
+
+  /**
+   * Sets the variant of the Icon.
+   * @type {"xs" | "sm" | "md" | "lg" | "xl" | "xxl" }
+   */
+  export let tooltipVisible = null;
 
   let context = getContext("DUK:icon:context");
 
@@ -63,6 +73,11 @@
     class:duk-icon--detail-list="{context === contexts.ICON.DETAIL_LIST}"
     class:duk-icon--group="{context === contexts.ICON.GROUP}"
     class:duk-icon--menu-social="{context === contexts.ICON.FOOTER.MENU_SOCIAL}"
+    class:duk-icon--tooltip-visible-sm="{tooltipVisible === 'sm'}"
+    class:duk-icon--tooltip-visible-md="{tooltipVisible === 'md'}"
+    class:duk-icon--tooltip-visible-lg="{tooltipVisible === 'lg'}"
+    class:duk-icon--tooltip-visible-xl="{tooltipVisible === 'xl'}"
+    class:duk-icon--tooltip-visible-xxl="{tooltipVisible === 'xxl'}"
     data-tooltip="{tooltip || undefined}"
     title="{$$props.title || undefined}"
     on:click
