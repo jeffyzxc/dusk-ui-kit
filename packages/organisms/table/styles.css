@@ -14,8 +14,12 @@
     }
   }
 
+  &__wrapper {
+    @apply overflow-auto rounded-md shadow-table;
+  }
+
   &__table {
-    @apply w-full flex flex-row flex-nowrap shadow-table bg-white rounded-md overflow-hidden border-collapse;
+    @apply w-full flex flex-row flex-nowrap shadow-table bg-white border-collapse;
     @apply dark:bg-gray-700;
 
     & thead,
@@ -44,10 +48,6 @@
       }
       & th {
         @apply font-light;
-
-        &.duk-table__datum--hidden {
-          @apply hidden;
-        }
       }
     }
 
@@ -75,6 +75,10 @@
           @apply hidden;
         }
       }
+
+      & .duk-table__row--hidden {
+        @apply hidden;
+      }
     }
 
     &--sm {
@@ -92,6 +96,12 @@
 
         & tr {
           &:not(:first-child) {
+            @apply sm:hidden;
+          }
+        }
+
+        & th {
+          &.duk-table__datum--hidden {
             @apply sm:hidden;
           }
         }
@@ -120,6 +130,12 @@
             @apply md:hidden;
           }
         }
+
+        & th {
+          &.duk-table__datum--hidden {
+            @apply md:hidden;
+          }
+        }
       }
 
       & tbody {
@@ -142,6 +158,12 @@
 
         & tr {
           &:not(:first-child) {
+            @apply lg:hidden;
+          }
+        }
+
+        & th {
+          &.duk-table__datum--hidden {
             @apply lg:hidden;
           }
         }
@@ -170,6 +192,12 @@
             @apply xl:hidden;
           }
         }
+
+        & th {
+          &.duk-table__datum--hidden {
+            @apply xl:hidden;
+          }
+        }
       }
 
       & tbody {
@@ -192,6 +220,12 @@
 
         & tr {
           &:not(:first-child) {
+            @apply 2xl:hidden;
+          }
+        }
+
+        & th {
+          &.duk-table__datum--hidden {
             @apply 2xl:hidden;
           }
         }
@@ -221,7 +255,7 @@
     }
 
     &--active {
-      @apply border-indigo-500;
+      @apply border-indigo-500 !table-row;
     }
   }
 

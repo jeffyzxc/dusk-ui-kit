@@ -53,7 +53,7 @@
   <div class="duk-table__title">
     <slot name="title" />
   </div>
-  <div style="overflow:auto; border-radius:6px">
+  <div class="duk-table__wrapper">
     <table
       class="duk-table__table"
       class:duk-table__table--sm="{mobileBreakpoint === 'sm'}"
