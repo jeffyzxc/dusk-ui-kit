@@ -39,7 +39,7 @@
             <Datum key="first_name">Status</Datum>
             <Datum key="last_name">Time</Datum>
             <Datum key="email">Amount</Datum>
-            <!-- <Datum /> -->
+            <Datum hidden="{true}" />
           </Row>
         {/each}
       {/if}
@@ -47,7 +47,7 @@
     <tbody>
       {#if rows}
         {#each $rows as row}
-          <Row>
+          <Row info="{true}">
             <Datum>{row.id}</Datum>
             <Datum>
               {row.status}
@@ -58,13 +58,12 @@
             <Datum>
               {row.amount}
             </Datum>
-            <!-- <Datum actions="{true}" /> -->
           </Row>
-          <!-- <tr colspan="4">
-            <Datum hidden="{false}">
+          <Row hidden="{true}">
+            <Datum colspan="4">
               <p>Extra information</p>
             </Datum>
-          </tr> -->
+          </Row>
         {/each}
       {/if}
     </tbody>
