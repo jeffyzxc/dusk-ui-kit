@@ -24,10 +24,10 @@
   export let gridType = "12";
 
   /**
-   * Sets Table overflow property to `scroll` dependent on the screen width breakpoint.
-   * @type { "sm" | "lg" | "xl" | "xxl" }
+   * Sets Table mobile breakpoint.
+   * @type { "sm" | "md" | "lg" | "xl" | "xxl" }
    */
-  export let overflowBreakpoint = "md";
+  export let mobileBreakpoint = "sm";
 
   setContext(key, {});
   createContext();
@@ -53,19 +53,21 @@
   <div class="duk-table__title">
     <slot name="title" />
   </div>
-  <table
-    class="duk-table__table"
-    class:duk-table__table--extended="{gridType === '24'}"
-    class:duk-table__table--sm="{overflowBreakpoint === 'sm'}"
-    class:duk-table__table--md="{overflowBreakpoint === 'md'}"
-    class:duk-table__table--lg="{overflowBreakpoint === 'lg'}"
-    class:duk-table__table--xl="{overflowBreakpoint === 'xl'}"
-    class:duk-table__table--xxl="{overflowBreakpoint === 'xxl'}"
-  >
-    <slot name="head" />
-    <slot />
-    <slot name="foot" />
-  </table>
+  <div style="overflow:auto; border-radius:6px">
+    <table
+      class="duk-table__table"
+      class:duk-table__table--sm="{mobileBreakpoint === 'sm'}"
+      class:duk-table__table--md="{mobileBreakpoint === 'md'}"
+      class:duk-table__table--lg="{mobileBreakpoint === 'lg'}"
+      class:duk-table__table--xl="{mobileBreakpoint === 'xl'}"
+      class:duk-table__table--xxl="{mobileBreakpoint === 'xxl'}"
+    >
+      <slot name="head" />
+      <slot />
+      <slot name="foot" />
+    </table>
+  </div>
+
   <!-- {#if $$slots.actions || $options.pagination || $options.limiter} -->
   <div class="duk-table__actions">
     {#if $options.pagination === true}
