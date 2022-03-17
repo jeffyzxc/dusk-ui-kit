@@ -51,9 +51,9 @@ const getColumns = () => {
       },
       draw: () => {
         setTimeout(() => {
-          const tbody = document.querySelector(`[id='${id.get()} table tbody tr']`);
+          const tbody = document.querySelector(`[id='${id.get()} div table tbody tr']`);
           if (tbody === null) return;
-          const thead = document.querySelectorAll(`[id='${id.get()} table thead tr']`);
+          const thead = document.querySelectorAll(`[id='${id.get()} div table thead tr']`);
           const $columns = columns.get();
 
           // const th = thead[0].children[0];
