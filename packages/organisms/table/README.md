@@ -40,34 +40,43 @@ npm i -D @dusk-network/table
 {:else if $transactions.isError}
   <p>Error: {$transactions.error}</p>
 {:else}
-  <Table data="{$transactions.data}" bind:dataRows="{rows}" settings="{settings}">
+  <Table
+    data="{$transactions.data}"
+    bind:dataRows="{rows}"
+    settings="{settings}"
+    mobileBreakpoint="lg"
+  >
     <h3 slot="title">Recent transactions</h3>
     <thead slot="head">
-      <Row type="head">
-        <Datum key="id" cols="1">ID</Datum>
-        <Datum key="first_name" cols="4">Status</Datum>
-        <Datum key="last_name" cols="3">Time</Datum>
-        <Datum key="email" cols="3">Amount</Datum>
-        <Datum cols="1" />
-        <Datum hidden="{true}" />
-      </Row>
+      {#if rows}
+        {#each $rows as _}
+          <Row type="head">
+            <Datum key="id">ID</Datum>
+            <Datum key="first_name">Status</Datum>
+            <Datum key="last_name">Time</Datum>
+            <Datum key="email">Amount</Datum>
+            <Datum hidden="{true}" />
+          </Row>
+        {/each}
+      {/if}
     </thead>
     <tbody>
       {#if rows}
         {#each $rows as row}
-          <Row>
-            <Datum cols="1">{row.id}</Datum>
-            <Datum cols="4">
+          <Row info="{true}">
+            <Datum>{row.id}</Datum>
+            <Datum>
               {row.status}
             </Datum>
-            <Datum cols="3">
+            <Datum>
               {row.timeStamp}
             </Datum>
-            <Datum cols="3">
+            <Datum>
               {row.amount}
             </Datum>
-            <Datum cols="1" actions="{true}" />
-            <Datum hidden="{true}">
+          </Row>
+          <Row hidden="{true}">
+            <Datum colspan="4">
               <p>Extra information</p>
             </Datum>
           </Row>
