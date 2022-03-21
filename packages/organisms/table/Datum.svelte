@@ -13,16 +13,35 @@
   const { activeRow } = getContext(key);
 
   let context = getContext("DUK:table:row:datum:context");
-  let ref, activeRowId;
+  let h, ref, activeRowId;
 
   setContext("DUK:loading-indicator:context", contexts.LOADING_INDICATOR.DATUM);
   setContext("DUK:truncate-text:context", contexts.TRUNCATE_TEXT.DATUM);
   setContext("DUK:heading:context", contexts.HEADING.DATUM);
   setContext("DUK:chip:context", contexts.CHIP.DATUM);
 
+  const setCellHeight = (el) => {
+    if (el !== undefined && el !== null && el.hasAttribute("colspan")) {
+      let dataRowIndex = Array.prototype.indexOf.call(
+        el.parentNode.parentNode.children,
+        el.parentNode,
+      );
+      let headRowIndex = dataRowIndex - 1;
+      let headRows = el.parentNode.parentNode.previousElementSibling.childNodes[headRowIndex];
+      let headRowChildren = headRows.childNodes.length;
+      let headDataIndex = headRowChildren - 4;
+      let headDataCell = headRows.childNodes[headDataIndex];
+
+      if (headDataCell !== undefined && headDataCell !== null) {
+        headDataCell.style.height = `${h}px`;
+      }
+    }
+  };
+
   onMount(() => {
     if (ref && colspan && context === contexts.DATUM.ROW.BODY) {
       ref.parentNode.previousElementSibling.classList.add("duk-table__row--has-extra-information");
+      setCellHeight(ref);
     }
   });
   const handleClick = () => {
@@ -33,6 +52,7 @@
   };
 </script>
 
+<svelte:window on:resize="{setCellHeight(ref)}" />
 {#if context === contexts.DATUM.ROW.HEAD}
   <th
     class="{$$props.class || ''} duk-table__datum duk-table__datum--head"
@@ -66,6 +86,7 @@
     id="{id}"
     colspan="{colspan}"
     bind:this="{ref}"
+    bind:clientHeight="{h}"
   >
     <slot />
   </td>
