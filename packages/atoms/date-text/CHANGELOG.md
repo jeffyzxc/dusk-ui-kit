@@ -1,5 +1,13 @@
 # @dusk-network/date-text
 
+## 5.0.3
+
+### Patch Changes
+
+- d19e01e9: Release
+- Updated dependencies [d19e01e9]
+  - @dusk-network/helpers@5.0.3
+
 ## 5.0.2
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @dusk-network/dusk-ui-kit-examples
 
+## 5.0.3
+
+### Patch Changes
+
+- d19e01e9: Release
+
 ## 4.6.8
 
 ### Patch Changes
