@@ -7,25 +7,25 @@
     }
   }
 
-  &--tooltip-visible-sm {
-    .duk-icon[data-tooltip]:hover:before,
-    .duk-icon[data-tooltip]:hover::after {
+  &--tooltip-visible-sm[data-tooltip] {
+    &:hover:before,
+    &:hover::after {
       @apply !invisible;
       @apply sm:!visible;
     }
   }
 
-  &--tooltip-visible-md {
-    .duk-icon[data-tooltip]:hover:before,
-    .duk-icon[data-tooltip]:hover:after {
+  &--tooltip-visible-md[data-tooltip] {
+    &:hover:before,
+    &:hover:after {
       @apply !invisible;
       @apply md:!visible;
     }
   }
 
-  &--tooltip-visible-lg {
-    .duk-icon[data-tooltip]:hover:before,
-    .duk-icon[data-tooltip]:hover:after {
+  &--tooltip-visible-lg[data-tooltip] {
+    &:hover:before,
+    &:hover:after {
       @apply !invisible;
       @apply lg:!visible;
     }
