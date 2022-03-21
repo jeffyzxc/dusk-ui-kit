@@ -21,6 +21,8 @@
       &:before {
         @apply flex justify-center items-center text-2xl font-bold text-center rounded-full w-16 h-16 mr-6 shadow-cta-list;
         content: counter(duk-list-item);
+        min-width: 2.5rem;
+        min-height: 2.5rem;
       }
     }
 

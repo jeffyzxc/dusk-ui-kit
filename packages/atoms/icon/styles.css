@@ -7,6 +7,46 @@
     }
   }
 
+  &--tooltip-visible-sm {
+    .duk-icon[data-tooltip]:hover:before,
+    .duk-icon[data-tooltip]:hover::after {
+      @apply !invisible;
+      @apply sm:!visible;
+    }
+  }
+
+  &--tooltip-visible-md {
+    .duk-icon[data-tooltip]:hover:before,
+    .duk-icon[data-tooltip]:hover:after {
+      @apply !invisible;
+      @apply md:!visible;
+    }
+  }
+
+  &--tooltip-visible-lg {
+    .duk-icon[data-tooltip]:hover:before,
+    .duk-icon[data-tooltip]:hover:after {
+      @apply !invisible;
+      @apply lg:!visible;
+    }
+  }
+
+  &--tooltip-visible-xl[data-tooltip] {
+    &:hover:before,
+    &:hover:after {
+      @apply !invisible;
+      @apply xl:!visible;
+    }
+  }
+
+  &--tooltip-visible-xxl[data-tooltip] {
+    &:hover:before,
+    &:hover:after {
+      @apply !invisible;
+      @apply 2xl:!visible;
+    }
+  }
+
   &[data-tooltip] {
     @apply break-normal;
     position: relative;

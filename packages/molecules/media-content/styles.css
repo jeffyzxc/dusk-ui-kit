@@ -1,6 +1,6 @@
 .duk-media-content {
   @apply inline-flex flex-col w-full;
-  @apply md:flex-row md:space-x-5;
+  @apply lg:flex-row lg:gap-x-5;
 
   &__media {
     @apply flex-1;
@@ -28,7 +28,7 @@
   }
 
   &--reverse {
-    @apply md:flex-row-reverse;
+    @apply lg:flex-row-reverse;
   }
 
   &--top {

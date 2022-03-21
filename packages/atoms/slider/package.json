@@ -17,5 +17,5 @@
     "test": "echo \"Work in progress...\" && exit 1"
   },
   "svelte": "index.js",
-  "gitHead": "b7c5d57d638264700fedbaf5d7f77f7487008bd5"
+  "gitHead": "7c7b8b21cf2160d0b34cc2ff4b528db89f652e46"
 }
