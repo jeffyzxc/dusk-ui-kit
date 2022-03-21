@@ -1,5 +1,14 @@
 # @dusk-network/hero
 
+## 5.0.3
+
+### Patch Changes
+
+- d19e01e9: Release
+- Updated dependencies [d19e01e9]
+  - @dusk-network/icon@5.0.3
+  - @dusk-network/helpers@5.0.3
+
 ## 5.0.2
 
 ### Patch Changes
