@@ -1,6 +1,6 @@
 <script>
   import { getContext, setContext } from "svelte";
-  import * as marked from "marked";
+  import { marked } from "marked";
   import contexts from "@dusk-network/helpers/contexts.js";
   import sizes from "@dusk-network/helpers/sizes.js";
   import "./styles.css";
@@ -26,6 +26,16 @@
   const context = getContext("DUK:rich-text:context");
 
   setContext("DUK:accordion:context", contexts.ACCORDION.RICH_TEXT);
+
+  if (markdown) {
+    const renderer = new marked.Renderer();
+    const linkRenderer = renderer.link;
+    renderer.link = (href, title, text) => {
+      const html = linkRenderer.call(renderer, href, title, text);
+      return html.replace(/^<a /, '<a rel="external nofollow" ');
+    };
+    marked.use({ renderer });
+  }
 </script>
 
 <div
