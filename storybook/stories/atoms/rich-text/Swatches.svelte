@@ -10,6 +10,7 @@
   const heading_2 = "## This is a heading (level 2)";
   const heading_3 = "### This is a heading (level 3)";
   const heading_4 = "#### This is a heading (level 4)";
+  const link = "[This is a link](https://dusk.network)";
 </script>
 
 <RichText size="{size}" markdown="{paragraph}" />
@@ -19,3 +20,4 @@
 <RichText size="{size}" markdown="{heading_2}" />
 <RichText size="{size}" markdown="{heading_3}" />
 <RichText size="{size}" markdown="{heading_4}" />
+<RichText size="{size}" markdown="{link}" />
