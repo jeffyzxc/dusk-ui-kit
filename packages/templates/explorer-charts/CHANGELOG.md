@@ -1,5 +1,13 @@
 # @dusk-network/explorer-charts
 
+## 5.0.4
+
+### Patch Changes
+
+- fc9a835e: Release
+- Updated dependencies [fc9a835e]
+  - @dusk-network/default@5.0.4
+
 ## 5.0.3
 
 ### Patch Changes

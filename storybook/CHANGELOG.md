@@ -1,5 +1,11 @@
 # @dusk-network/storybook
 
+## 5.0.4
+
+### Patch Changes
+
+- fc9a835e: Release
+
 ## 4.6.8
 
 ### Patch Changes

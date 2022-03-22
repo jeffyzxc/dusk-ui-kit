@@ -1,5 +1,11 @@
 # @dusk-network/error-block
 
+## 5.0.4
+
+### Patch Changes
+
+- fc9a835e: Release
+
 ## 5.0.3
 
 ### Patch Changes

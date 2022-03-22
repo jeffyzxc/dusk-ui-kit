@@ -1,5 +1,18 @@
 # @dusk-network/search-list
 
+## 5.0.4
+
+### Patch Changes
+
+- fc9a835e: Release
+- Updated dependencies [fc9a835e]
+  - @dusk-network/icon@5.0.4
+  - @dusk-network/rich-text@5.0.4
+  - @dusk-network/text-field@5.0.4
+  - @dusk-network/helpers@5.0.4
+  - @dusk-network/button@5.0.4
+  - @dusk-network/control@5.0.4
+
 ## 5.0.3
 
 ### Patch Changes
