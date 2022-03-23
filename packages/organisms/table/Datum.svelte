@@ -40,8 +40,11 @@
 
   onMount(() => {
     if (ref && colspan && context === contexts.DATUM.ROW.BODY) {
-      ref.parentNode.previousElementSibling.classList.add("duk-table__row--has-extra-information");
+      ref.parentNode.previousElementSibling.classList.add("duk-table__row--expand");
+      ref.parentNode.classList.add("duk-table__row--extra-information");
       setCellHeight(ref);
+
+      ref.parentNode.parentNode.parentNode.classList.add("duk-table__table--expandable");
     }
   });
   const handleClick = () => {
@@ -64,7 +67,9 @@
     class:duk-table__datum--hidden="{hidden}"
     data-key="{dataKey}"
   >
-    <slot />
+    <div class="duk-table__datum--content">
+      <slot />
+    </div>
   </th>
 {:else if context === contexts.DATUM.ROW.FOOT}
   <td
@@ -88,7 +93,9 @@
     bind:this="{ref}"
     bind:clientHeight="{h}"
   >
-    <slot />
+    <div class="duk-table__datum--content">
+      <slot />
+    </div>
   </td>
 {:else}
   <td
@@ -102,6 +109,8 @@
     on:click="{handleClick}"
     bind:this="{ref}"
   >
-    <slot />
+    <div class="duk-table__datum--content">
+      <slot />
+    </div>
   </td>
 {/if}
