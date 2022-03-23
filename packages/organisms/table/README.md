@@ -55,7 +55,6 @@ npm i -D @dusk-network/table
             <Datum key="first_name">Status</Datum>
             <Datum key="last_name">Time</Datum>
             <Datum key="email">Amount</Datum>
-            <Datum hidden="{true}" />
           </Row>
         {/each}
       {/if}
@@ -73,11 +72,6 @@ npm i -D @dusk-network/table
             </Datum>
             <Datum>
               {row.amount}
-            </Datum>
-          </Row>
-          <Row hidden="{true}">
-            <Datum colspan="4">
-              <p>Extra information</p>
             </Datum>
           </Row>
         {/each}
