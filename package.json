@@ -45,7 +45,8 @@
     "update:deps": "pnpm up --latest --recursive --interactive",
     "update:workspace": "pnpm up --recursive --workspace",
     "release:ci": "pnpm i -r && pnpm publish -r",
-    "status": "changeset status --verbose --output=versions.json"
+    "status": "changeset status --verbose --output=versions.json",
+    "generate:types": "node types.cjs > generate-types.error.log"
   },
   "commitlint": {
     "extends": [
@@ -91,7 +92,8 @@
   "eslintIgnore": [
     "*.test.js",
     "storybook-static",
-    "_templates/"
+    "_templates/",
+    "types/"
   ],
   "jest": {
     "collectCoverage": true,
@@ -134,6 +136,7 @@
     "@changesets/cli": "^2.21.1",
     "@commitlint/cli": "^16.2.1",
     "@dusk-network/eslint-config": "1.1.0",
+    "@rollup/plugin-node-resolve": "^13.1.3",
     "@storybook/addon-jest": "^6.4.18",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/svelte": "^3.0.3",
@@ -148,6 +151,7 @@
     "eslint-plugin-svelte3": "^3.4.1",
     "eslint-plugin-tailwindcss": "^3.4.3",
     "git-cz": "^4.8.0",
+    "glob": "^7.2.0",
     "husky": "^7.0.4",
     "hygen": "^6.2.0",
     "is-ci": "^3.0.1",
@@ -157,9 +161,11 @@
     "prettier": "^2.5.1",
     "prettier-plugin-packagejson": "^2.2.16",
     "prettier-plugin-svelte": "^2.6.0",
+    "rollup-plugin-svelte": "^7.1.0",
     "simple-git": "^3.3.0",
     "stylelint": "^14.5.3",
     "stylelint-config-standard": "^25.0.0",
+    "sveld": "^0.13.4",
     "svelte": "3.46.4",
     "svelte-jester": "^2.3.2",
     "tiny-glob": "^0.2.9",

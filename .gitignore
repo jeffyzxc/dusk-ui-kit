@@ -17,3 +17,4 @@ build-storybook.log
 /docs/**/pnpm-lock.yaml
 coverage/
 pnpm-global
+types.errors*
