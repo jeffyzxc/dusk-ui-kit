@@ -26,7 +26,7 @@
   "devDependencies": {
     "@dusk-network/meta": "workspace:*",
     "@sveltejs/adapter-static": "^1.0.0-next.26",
-    "@sveltejs/kit": "1.0.0-next.232",
+    "@sveltejs/kit": "1.0.0-next.303",
     "@sveltestack/svelte-query": "^1.5.0",
     "broadcast-channel": "^4.9.0",
     "d3-geo": "^3.0.1",
